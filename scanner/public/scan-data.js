@@ -3,7 +3,7 @@ window.SKILL_SCAN_RESULTS = {
   "scanner": {
     "name": "local-skill-scanner",
     "mode": "canonical",
-    "root": "/Users/8bit/skills",
+    "root": "/Users/8bit/Downloads/skillhub-main",
     "rules": [
       {
         "id": "VETTER_AGENT_MEMORY_ACCESS",
@@ -91,11 +91,11 @@ window.SKILL_SCAN_RESULTS = {
       }
     ]
   },
-  "scannedAt": "2026-07-06T00:14:37.130Z",
+  "scannedAt": "2026-07-06T21:19:59.539Z",
   "source": {
     "catalog": "catalog.json",
-    "canonicalSkills": 222,
-    "localSkills": 222,
+    "canonicalSkills": 239,
+    "localSkills": 239,
     "duplicatePublicSkillsExcluded": true
   },
   "onchain": {
@@ -104,9 +104,9 @@ window.SKILL_SCAN_RESULTS = {
     "cluster": "mainnet-beta",
     "status": "anchor-ready",
     "anchorState": "planned",
-    "totalSkills": 222,
-    "catalogHash": "sha256-9ddadcac8d23165048db8756ae604f7847cc168f4fe74c4f4971796649d61775",
-    "merkleRoot": "sha256-574563840f0ec0ea0c99cd3eaa7220bac618220205b1ef9666144dc3cbbabf30",
+    "totalSkills": 239,
+    "catalogHash": "sha256-35f71fbfdfee9e4c946d5b946aa06a03269317cf6f53e40a490f72b80ac2403a",
+    "merkleRoot": "sha256-ffaddd505dd657c1aa4c62a26b553bf669efcc8124b4e4d89e50cb4509edfa3b",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -116,50 +116,571 @@ window.SKILL_SCAN_RESULTS = {
     "solanaSignature": null
   },
   "summary": {
-    "totalSkills": 222,
-    "localSkills": 222,
-    "onChainSkills": 138,
-    "offChainSkills": 84,
+    "totalSkills": 239,
+    "localSkills": 239,
+    "onChainSkills": 144,
+    "offChainSkills": 95,
     "categories": {
-      "Dev Tools / Agents": 11,
+      "Dev Tools / Agents": 17,
       "Google / Ads": 11,
       "Google / Analytics": 2,
       "Google / Cloud": 56,
-      "Local / Web Services": 5,
-      "Media / Devices": 18,
-      "Productivity / Messaging": 14,
-      "Solana / Blockchain": 97,
-      "Utilities": 8
+      "Local / Web Services": 6,
+      "Media / Devices": 22,
+      "Productivity / Messaging": 15,
+      "Solana / Blockchain": 98,
+      "Utilities": 12
     },
     "verification": {
-      "verified": 222,
+      "verified": 239,
       "changed": 0,
       "missing": 0,
       "error": 0
     },
     "risk": {
-      "pass": 157,
-      "review": 65,
+      "pass": 168,
+      "review": 71,
       "required": 0
     },
     "findings": {
-      "total": 953,
+      "total": 972,
       "bySeverity": {
         "INFO": 604,
         "LOW": 83,
-        "MEDIUM": 59,
-        "HIGH": 207,
+        "MEDIUM": 61,
+        "HIGH": 224,
         "CRITICAL": 0
       }
     },
     "installs": {
       "knownSkillCount": 0,
-      "unknownSkillCount": 222,
+      "unknownSkillCount": 239,
       "totalKnownInstalls": 0,
       "source": "not tracked locally"
     }
   },
   "skills": [
+    {
+      "slug": "anthropic-skills/algorithmic-art",
+      "name": "algorithmic-art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "off-chain",
+        "chain": null,
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/algorithmic-art",
+      "skillPath": "anthropic-skills/algorithmic-art/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/algorithmic-art",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-69cb5719ee0afef4dd3fc6b4326056cca6c677cc5ad40e118cb27d6588e920eb",
+        "localBundleHash": "sha256-69cb5719ee0afef4dd3fc6b4326056cca6c677cc5ad40e118cb27d6588e920eb",
+        "merkleLeaf": "sha256-6f82c7c81839fb8eb35767309f00f48df98ffb2ed012ccb5d14286132c7c14ef",
+        "localMerkleLeaf": "sha256-6f82c7c81839fb8eb35767309f00f48df98ffb2ed012ccb5d14286132c7c14ef",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 19769,
+        "lineCount": 405
+      },
+      "findings": []
+    },
+    {
+      "slug": "anthropic-skills/internal-comms",
+      "name": "internal-comms",
+      "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "off-chain",
+        "chain": "solana",
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/internal-comms",
+      "skillPath": "anthropic-skills/internal-comms/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/internal-comms",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-058c687b4a13f2848fc15d9019d92e6819c75f5d77ee7fce9e41126525b5a128",
+        "localBundleHash": "sha256-058c687b4a13f2848fc15d9019d92e6819c75f5d77ee7fce9e41126525b5a128",
+        "merkleLeaf": "sha256-c8ef82f837c93e168897bb5dae25e510b50cc91948a9a33b7e7b4a4b1becfae7",
+        "localMerkleLeaf": "sha256-c8ef82f837c93e168897bb5dae25e510b50cc91948a9a33b7e7b4a4b1becfae7",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 1511,
+        "lineCount": 33
+      },
+      "findings": []
+    },
+    {
+      "slug": "anthropic-skills/mcp-builder",
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "mixed",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "anthropic-skills/mcp-builder",
+      "skillPath": "anthropic-skills/mcp-builder/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/mcp-builder",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-048172f0ab6be95937ec73790d74b838c08cbac1e1fb47a90f7a0507a7c68d2a",
+        "localBundleHash": "sha256-048172f0ab6be95937ec73790d74b838c08cbac1e1fb47a90f7a0507a7c68d2a",
+        "merkleLeaf": "sha256-f36fa56fdf1d43d9b4363161baacb43cf4315eb124995bbf8ae2df45231ec40e",
+        "localMerkleLeaf": "sha256-f36fa56fdf1d43d9b4363161baacb43cf4315eb124995bbf8ae2df45231ec40e",
+        "fileCount": 5,
+        "localFileCount": 5,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 5,
+        "textFiles": 5,
+        "scriptFiles": 4,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 27769,
+        "lineCount": 789
+      },
+      "findings": []
+    },
+    {
+      "slug": "anthropic-skills/skill-creator",
+      "name": "anthropic-skill-creator",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "anthropic-skills/skill-creator",
+      "skillPath": "anthropic-skills/skill-creator/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/skill-creator",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-ee7bab17c0e288ef59e09f54fe0ad328018a2fa1e38ed7455d42ef5aa7fea966",
+        "localBundleHash": "sha256-ee7bab17c0e288ef59e09f54fe0ad328018a2fa1e38ed7455d42ef5aa7fea966",
+        "merkleLeaf": "sha256-4c377d8df46e5808a9d2265f232158bba01cf95dabbca512143216d9e8b7332b",
+        "localMerkleLeaf": "sha256-4c377d8df46e5808a9d2265f232158bba01cf95dabbca512143216d9e8b7332b",
+        "fileCount": 15,
+        "localFileCount": 15,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 15,
+        "textFiles": 15,
+        "scriptFiles": 9,
+        "referenceFiles": 1,
+        "assetFiles": 1,
+        "bytesScanned": 152294,
+        "lineCount": 3672
+      },
+      "findings": []
+    },
+    {
+      "slug": "anthropic-skills/web-artifacts-builder",
+      "name": "web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "off-chain",
+        "chain": "solana",
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/web-artifacts-builder",
+      "skillPath": "anthropic-skills/web-artifacts-builder/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/web-artifacts-builder",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-81206ebfc2d773dde8f65b1d115c8e10a921572dfec27691384a44165192a70e",
+        "localBundleHash": "sha256-81206ebfc2d773dde8f65b1d115c8e10a921572dfec27691384a44165192a70e",
+        "merkleLeaf": "sha256-3bc0a362ff06445d48c0db3884867e125e62b56e83116217766f1a5b7cb9bbbd",
+        "localMerkleLeaf": "sha256-3bc0a362ff06445d48c0db3884867e125e62b56e83116217766f1a5b7cb9bbbd",
+        "fileCount": 4,
+        "localFileCount": 4,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 100,
+        "maxSeverity": "HIGH",
+        "findingsCount": 8,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 8,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 4,
+        "textFiles": 3,
+        "scriptFiles": 3,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 34495,
+        "lineCount": 451
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "scripts/bundle-artifact.sh",
+          "line": 21,
+          "excerpt": "pnpm add -D parcel @parcel/config-default parcel-resolver-tspaths html-inline"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "scripts/init-artifact.sh",
+          "line": 36,
+          "excerpt": "npm install -g pnpm"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "scripts/init-artifact.sh",
+          "line": 69,
+          "excerpt": "pnpm install"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "scripts/init-artifact.sh",
+          "line": 74,
+          "excerpt": "pnpm add -D vite@$VITE_VERSION"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "scripts/init-artifact.sh",
+          "line": 78,
+          "excerpt": "pnpm install -D tailwindcss@3.4.1 postcss autoprefixer @types/node tailwindcss-animate"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "scripts/init-artifact.sh",
+          "line": 79,
+          "excerpt": "pnpm install class-variance-authority clsx tailwind-merge lucide-react next-themes"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "scripts/init-artifact.sh",
+          "line": 272,
+          "excerpt": "pnpm install @radix-ui/react-accordion @radix-ui/react-aspect-ratio @radix-ui/react-avatar @radix-ui/react-checkbox @radix-ui/react-collapsible @radix-ui/react-context-menu @radix-ui/react-dialog @radix-ui/react-dropdown"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "scripts/init-artifact.sh",
+          "line": 273,
+          "excerpt": "pnpm install sonner cmdk vaul embla-carousel-react react-day-picker react-resizable-panels date-fns react-hook-form @hookform/resolvers zod"
+        }
+      ]
+    },
+    {
+      "slug": "anthropic-skills/xlsx",
+      "name": "xlsx",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "mixed",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "anthropic-skills/xlsx",
+      "skillPath": "anthropic-skills/xlsx/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/xlsx",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-c50dd116903da6e0fb95bd2786f7145001dae52f55e6806a194354a600103872",
+        "localBundleHash": "sha256-c50dd116903da6e0fb95bd2786f7145001dae52f55e6806a194354a600103872",
+        "merkleLeaf": "sha256-986627b9132e8aaf09fcfd5c9059bce1881ed375916197bb95a89a9c275ff78f",
+        "localMerkleLeaf": "sha256-986627b9132e8aaf09fcfd5c9059bce1881ed375916197bb95a89a9c275ff78f",
+        "fileCount": 53,
+        "localFileCount": 53,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 6,
+        "maxSeverity": "MEDIUM",
+        "findingsCount": 1,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 1,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 53,
+        "textFiles": 53,
+        "scriptFiles": 52,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 1091596,
+        "lineCount": 23069
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "scripts/recalc.py",
+          "line": 18,
+          "excerpt": "MACRO_DIR_LINUX = \"~/.config/libreoffice/4/user/basic/Standard\""
+        }
+      ]
+    },
     {
       "slug": "clawdhub",
       "name": "clawdhub",
@@ -6906,6 +7427,79 @@ window.SKILL_SCAN_RESULTS = {
       ]
     },
     {
+      "slug": "anthropic-skills/webapp-testing",
+      "name": "webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "category": "Local / Web Services",
+      "surface": {
+        "type": "off-chain",
+        "chain": null,
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/webapp-testing",
+      "skillPath": "anthropic-skills/webapp-testing/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/webapp-testing",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-440600aaafd292d2a6e26d1626540e9a71ab542a1f89c4826fae14491e9dc917",
+        "localBundleHash": "sha256-440600aaafd292d2a6e26d1626540e9a71ab542a1f89c4826fae14491e9dc917",
+        "merkleLeaf": "sha256-529598acd496c04718fbdd5e877de5a697e1a9e7c618be7a893dea1cde1d2e9a",
+        "localMerkleLeaf": "sha256-529598acd496c04718fbdd5e877de5a697e1a9e7c618be7a893dea1cde1d2e9a",
+        "fileCount": 2,
+        "localFileCount": 2,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 2,
+        "textFiles": 2,
+        "scriptFiles": 1,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 7606,
+        "lineCount": 202
+      },
+      "findings": []
+    },
+    {
       "slug": "food-order",
       "name": "food-order",
       "description": "Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA.",
@@ -7296,6 +7890,337 @@ window.SKILL_SCAN_RESULTS = {
           "file": "SKILL.md",
           "line": 44,
           "excerpt": "curl -s \"https://api.open-meteo.com/v1/forecast?latitude=51.5&longitude=-0.12&current_weather=true\""
+        }
+      ]
+    },
+    {
+      "slug": "anthropic-skills/canvas-design",
+      "name": "canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
+      "category": "Media / Devices",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "anthropic-skills/canvas-design",
+      "skillPath": "anthropic-skills/canvas-design/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/canvas-design",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-8b2734a179026b1229b85da5a687b10b212a8ab1b9c1cf8b5d0d2d68ae288359",
+        "localBundleHash": "sha256-8b2734a179026b1229b85da5a687b10b212a8ab1b9c1cf8b5d0d2d68ae288359",
+        "merkleLeaf": "sha256-560df0b81f210f538f80a5e5010f89c65fc925cdd5a38ecf2ab2b3165309d0f2",
+        "localMerkleLeaf": "sha256-560df0b81f210f538f80a5e5010f89c65fc925cdd5a38ecf2ab2b3165309d0f2",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 11939,
+        "lineCount": 130
+      },
+      "findings": []
+    },
+    {
+      "slug": "anthropic-skills/docx",
+      "name": "docx",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
+      "category": "Media / Devices",
+      "surface": {
+        "type": "off-chain",
+        "chain": null,
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/docx",
+      "skillPath": "anthropic-skills/docx/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/docx",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-b62112948ab3f8ef70a0f4019da7bb5b0c3303fc7b8c73e0c7af75fd74398aca",
+        "localBundleHash": "sha256-b62112948ab3f8ef70a0f4019da7bb5b0c3303fc7b8c73e0c7af75fd74398aca",
+        "merkleLeaf": "sha256-737829668d79d700cc344679a1ac21270584ae51531ca5e37e924fdab196efd8",
+        "localMerkleLeaf": "sha256-737829668d79d700cc344679a1ac21270584ae51531ca5e37e924fdab196efd8",
+        "fileCount": 60,
+        "localFileCount": 60,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 28,
+        "maxSeverity": "HIGH",
+        "findingsCount": 2,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 2,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 60,
+        "textFiles": 60,
+        "scriptFiles": 59,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 1119836,
+        "lineCount": 23660
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 58,
+          "excerpt": "Generate .docx files with JavaScript, then validate. Install: `npm install -g docx`"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 588,
+          "excerpt": "- **docx**: `npm install -g docx` (new documents)"
+        }
+      ]
+    },
+    {
+      "slug": "anthropic-skills/pdf",
+      "name": "pdf",
+      "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
+      "category": "Media / Devices",
+      "surface": {
+        "type": "off-chain",
+        "chain": null,
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/pdf",
+      "skillPath": "anthropic-skills/pdf/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/pdf",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-0104d25ce717856fb86f5f1680486aa910a17439b1081dc92a31627a40dbd127",
+        "localBundleHash": "sha256-0104d25ce717856fb86f5f1680486aa910a17439b1081dc92a31627a40dbd127",
+        "merkleLeaf": "sha256-57090aef3c74f8de6c96452d0d7068279d2b078887ebb4eaa8e49b6266f07593",
+        "localMerkleLeaf": "sha256-57090aef3c74f8de6c96452d0d7068279d2b078887ebb4eaa8e49b6266f07593",
+        "fileCount": 11,
+        "localFileCount": 11,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "medium",
+        "score": 14,
+        "maxSeverity": "HIGH",
+        "findingsCount": 1,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 1,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 11,
+        "textFiles": 11,
+        "scriptFiles": 8,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 57225,
+        "lineCount": 1818
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 235,
+          "excerpt": "# Requires: pip install pytesseract pdf2image"
+        }
+      ]
+    },
+    {
+      "slug": "anthropic-skills/slack-gif-creator",
+      "name": "slack-gif-creator",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
+      "category": "Media / Devices",
+      "surface": {
+        "type": "off-chain",
+        "chain": "solana",
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/slack-gif-creator",
+      "skillPath": "anthropic-skills/slack-gif-creator/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/slack-gif-creator",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-5dc57a825da5a5b9a9a2c1cce612ddea6a21814bf9f123ae7678ec2c417e9595",
+        "localBundleHash": "sha256-5dc57a825da5a5b9a9a2c1cce612ddea6a21814bf9f123ae7678ec2c417e9595",
+        "merkleLeaf": "sha256-0ce4f23c48e432010f1f70c9de4348041930d0574cfb050d7d38dadbf02a9d03",
+        "localMerkleLeaf": "sha256-0ce4f23c48e432010f1f70c9de4348041930d0574cfb050d7d38dadbf02a9d03",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "medium",
+        "score": 14,
+        "maxSeverity": "HIGH",
+        "findingsCount": 1,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 1,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 7841,
+        "lineCount": 255
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 253,
+          "excerpt": "pip install pillow imageio numpy"
         }
       ]
     },
@@ -8692,6 +9617,116 @@ window.SKILL_SCAN_RESULTS = {
       "findings": []
     },
     {
+      "slug": "anthropic-skills/pptx",
+      "name": "pptx",
+      "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
+      "category": "Productivity / Messaging",
+      "surface": {
+        "type": "off-chain",
+        "chain": "solana",
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/pptx",
+      "skillPath": "anthropic-skills/pptx/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/pptx",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-b6ddbe8d2c34bb790d77a7de82131349a4fe54d159b59974260d8872f436bebe",
+        "localBundleHash": "sha256-b6ddbe8d2c34bb790d77a7de82131349a4fe54d159b59974260d8872f436bebe",
+        "merkleLeaf": "sha256-62aac00da2eb6a537ed637496a96496d6c98ba5a2fd41f2cf60f2706cb5cf645",
+        "localMerkleLeaf": "sha256-62aac00da2eb6a537ed637496a96496d6c98ba5a2fd41f2cf60f2706cb5cf645",
+        "fileCount": 58,
+        "localFileCount": 58,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 56,
+        "maxSeverity": "HIGH",
+        "findingsCount": 4,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 4,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 58,
+        "textFiles": 58,
+        "scriptFiles": 55,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 1128477,
+        "lineCount": 24226
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "pptxgenjs.md",
+          "line": 238,
+          "excerpt": "Install: `npm install -g react-icons react react-dom sharp`"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 228,
+          "excerpt": "- `pip install \"markitdown[pptx]\"` - text extraction"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 229,
+          "excerpt": "- `pip install Pillow` - thumbnail grids"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 230,
+          "excerpt": "- `npm install -g pptxgenjs` - creating from scratch"
+        }
+      ]
+    },
+    {
       "slug": "apple-notes",
       "name": "apple-notes",
       "description": "Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks Clawdbot to add a note, list notes, search notes, or manage note folders.",
@@ -10024,6 +11059,98 @@ window.SKILL_SCAN_RESULTS = {
         "lineCount": 43
       },
       "findings": []
+    },
+    {
+      "slug": "anthropic-skills/claude-api",
+      "name": "claude-api",
+      "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens). SKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai|langchain_openai|google.generativeai|genai|mistralai|cohere|ollama'` over the project hits (run this grep FIRST if no provider named — don't Read the file).",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "anthropic-skills/claude-api",
+      "skillPath": "anthropic-skills/claude-api/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/claude-api",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-d614d3782aba3d4c902ccd589da8b0fc25ddea2f96917ccb12efce0e13672f41",
+        "localBundleHash": "sha256-d614d3782aba3d4c902ccd589da8b0fc25ddea2f96917ccb12efce0e13672f41",
+        "merkleLeaf": "sha256-0faa44fb0724fb8c0606a0ddeeb9177eaf6bb259abd84eb1634f3abb47a87566",
+        "localMerkleLeaf": "sha256-0faa44fb0724fb8c0606a0ddeeb9177eaf6bb259abd84eb1634f3abb47a87566",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "medium",
+        "score": 20,
+        "maxSeverity": "HIGH",
+        "findingsCount": 2,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 1,
+          "HIGH": 1,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 73938,
+        "lineCount": 579
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_CREDENTIAL_REQUEST",
+          "severity": "HIGH",
+          "category": "hardcoded_secrets",
+          "message": "Prompts for credentials or secrets directly.",
+          "file": "SKILL.md",
+          "line": 5,
+          "excerpt": "TRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthr"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "SKILL.md",
+          "line": 228,
+          "excerpt": "Only ask the user for a key if `ant auth status` reports no active credential source (or `ant` itself isn't installed). Suggest `ant auth login` as the first option — it stores a profile under `~/.config/anthropic/` that"
+        }
+      ]
     },
     {
       "slug": "ask-mcp",
@@ -24456,6 +25583,298 @@ window.SKILL_SCAN_RESULTS = {
         "assetFiles": 0,
         "bytesScanned": 4122,
         "lineCount": 102
+      },
+      "findings": []
+    },
+    {
+      "slug": "anthropic-skills/brand-guidelines",
+      "name": "brand-guidelines",
+      "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
+      "category": "Utilities",
+      "surface": {
+        "type": "off-chain",
+        "chain": null,
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/brand-guidelines",
+      "skillPath": "anthropic-skills/brand-guidelines/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/brand-guidelines",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-7110fc8744b44d8177651ea3698b192ffcda3be99fae92c1e40708978893612d",
+        "localBundleHash": "sha256-7110fc8744b44d8177651ea3698b192ffcda3be99fae92c1e40708978893612d",
+        "merkleLeaf": "sha256-3c1ca08c72026b197f0a46f1384205ddfcb55e55262dba705fe5400fbfbc93b2",
+        "localMerkleLeaf": "sha256-3c1ca08c72026b197f0a46f1384205ddfcb55e55262dba705fe5400fbfbc93b2",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 2235,
+        "lineCount": 74
+      },
+      "findings": []
+    },
+    {
+      "slug": "anthropic-skills/doc-coauthoring",
+      "name": "doc-coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks.",
+      "category": "Utilities",
+      "surface": {
+        "type": "off-chain",
+        "chain": null,
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/doc-coauthoring",
+      "skillPath": "anthropic-skills/doc-coauthoring/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/doc-coauthoring",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-782e911998cb1f683ffd34f3803392864e8e49b18ead1d46ede1c9a0fae165d5",
+        "localBundleHash": "sha256-782e911998cb1f683ffd34f3803392864e8e49b18ead1d46ede1c9a0fae165d5",
+        "merkleLeaf": "sha256-7cc3577e2cdbf746b9569927d3f259110a1135c01c8d233992757257b59924cb",
+        "localMerkleLeaf": "sha256-7cc3577e2cdbf746b9569927d3f259110a1135c01c8d233992757257b59924cb",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 15815,
+        "lineCount": 376
+      },
+      "findings": []
+    },
+    {
+      "slug": "anthropic-skills/frontend-design",
+      "name": "frontend-design",
+      "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
+      "category": "Utilities",
+      "surface": {
+        "type": "on-chain",
+        "chain": "mixed",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "anthropic-skills/frontend-design",
+      "skillPath": "anthropic-skills/frontend-design/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/frontend-design",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-15bf8696337772ebcaaf5b43feffb81d254c7d66c0f3cc64f7595e7edc09f5c6",
+        "localBundleHash": "sha256-15bf8696337772ebcaaf5b43feffb81d254c7d66c0f3cc64f7595e7edc09f5c6",
+        "merkleLeaf": "sha256-e3fda3c3fb0af1b9dc9cfd8418dacc93e962754758edef7355586aade7dfca10",
+        "localMerkleLeaf": "sha256-e3fda3c3fb0af1b9dc9cfd8418dacc93e962754758edef7355586aade7dfca10",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 8260,
+        "lineCount": 56
+      },
+      "findings": []
+    },
+    {
+      "slug": "anthropic-skills/theme-factory",
+      "name": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
+      "category": "Utilities",
+      "surface": {
+        "type": "off-chain",
+        "chain": null,
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "anthropic-skills/theme-factory",
+      "skillPath": "anthropic-skills/theme-factory/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install anthropic-skills/theme-factory",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-8cccbc5dafb2cbf9dcec70ff7519c585f19d1b8328932e11966bb84e34eccc3a",
+        "localBundleHash": "sha256-8cccbc5dafb2cbf9dcec70ff7519c585f19d1b8328932e11966bb84e34eccc3a",
+        "merkleLeaf": "sha256-a6d8ba2f99e0e3d694095653437c350263f4da06f825649fe941cb6f2a8baa4b",
+        "localMerkleLeaf": "sha256-a6d8ba2f99e0e3d694095653437c350263f4da06f825649fe941cb6f2a8baa4b",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 3124,
+        "lineCount": 60
       },
       "findings": []
     },

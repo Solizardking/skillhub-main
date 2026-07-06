@@ -1,16 +1,16 @@
 # Skill Scanner Results
 
-Scanned at: 2026-07-06T00:14:37.130Z
+Scanned at: 2026-07-06T21:19:59.539Z
 
-- Skills scanned: 222
-- Local skills available: 222
-- On-chain skills: 138
-- Off-chain skills: 84
-- Verified skills: 222
+- Skills scanned: 239
+- Local skills available: 239
+- On-chain skills: 144
+- Off-chain skills: 95
+- Verified skills: 239
 - Changed skills: 0
 - Missing verification: 0
 - Critical findings: 0
-- High findings: 207
+- High findings: 224
 - Install telemetry source: not tracked locally
 
 ## On-Chain Registry
@@ -18,11 +18,12 @@ Scanned at: 2026-07-06T00:14:37.130Z
 - Status: anchor-ready
 - Anchor state: planned
 - Registry root valid: yes
-- Merkle root: sha256-574563840f0ec0ea0c99cd3eaa7220bac618220205b1ef9666144dc3cbbabf30
-- Catalog hash: sha256-9ddadcac8d23165048db8756ae604f7847cc168f4fe74c4f4971796649d61775
+- Merkle root: sha256-ffaddd505dd657c1aa4c62a26b553bf669efcc8124b4e4d89e50cb4509edfa3b
+- Catalog hash: sha256-35f71fbfdfee9e4c946d5b946aa06a03269317cf6f53e40a490f72b80ac2403a
 
 ## Skills Requiring Review
 
+- anthropic-skills/web-artifacts-builder: high risk, 8 findings, verification verified
 - notion: high risk, 12 findings, verification verified
 - trello: high risk, 10 findings, verification verified
 - dflow-phantom-connect: high risk, 55 findings, verification verified
@@ -40,6 +41,7 @@ Scanned at: 2026-07-06T00:14:37.130Z
 - google/ads/google-ads-api/google-ads-api-quickstart: high risk, 5 findings, verification verified
 - google/analytics/google-analytics-admin-api-basics: high risk, 4 findings, verification verified
 - google/analytics/google-analytics-data-api-basics: high risk, 4 findings, verification verified
+- anthropic-skills/pptx: high risk, 4 findings, verification verified
 - openrouter-typescript-sdk: high risk, 9 findings, verification verified
 - google/ads/google-ads-api/google-ads-api-mcp-setup: high risk, 4 findings, verification verified
 - solana-ralphy-skill: high risk, 43 findings, verification verified
@@ -61,5 +63,3 @@ Scanned at: 2026-07-06T00:14:37.130Z
 - google/cloud/gke-basics: high risk, 2 findings, verification verified
 - google/cloud/workload-manager-basics: high risk, 2 findings, verification verified
 - local-places: high risk, 2 findings, verification verified
-- clawdex: high risk, 2 findings, verification verified
-- dflow-docs: high risk, 2 findings, verification verified
