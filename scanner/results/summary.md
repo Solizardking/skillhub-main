@@ -1,16 +1,16 @@
 # Skill Scanner Results
 
-Scanned at: 2026-07-06T22:06:34.685Z
+Scanned at: 2026-07-06T22:40:37.153Z
 
-- Skills scanned: 239
-- Local skills available: 239
-- On-chain skills: 144
+- Skills scanned: 240
+- Local skills available: 240
+- On-chain skills: 145
 - Off-chain skills: 95
-- Verified skills: 239
+- Verified skills: 240
 - Changed skills: 0
 - Missing verification: 0
 - Critical findings: 0
-- High findings: 224
+- High findings: 279
 - Install telemetry source: not tracked locally
 
 ## On-Chain Registry
@@ -18,8 +18,8 @@ Scanned at: 2026-07-06T22:06:34.685Z
 - Status: anchor-ready
 - Anchor state: planned
 - Registry root valid: yes
-- Merkle root: sha256-79ecfe841f3d76a0fb6b4802f1e3528c4431fdeafddec6077007b5fc1bed1ae3
-- Catalog hash: sha256-35f71fbfdfee9e4c946d5b946aa06a03269317cf6f53e40a490f72b80ac2403a
+- Merkle root: sha256-d2b367fc09561e1b4f29d214813e7b021b02daf5f023500c2470c73bed01140f
+- Catalog hash: sha256-9cd5990835ddfbe89bdb5d399f4c671311ac2339f99c9530286c1fef98c65eb7
 
 ## Skills Requiring Review
 
@@ -29,6 +29,7 @@ Scanned at: 2026-07-06T22:06:34.685Z
 - dflow-phantom-connect: high risk, 55 findings, verification verified
 - helius-skills/helius-jupiter: high risk, 112 findings, verification verified
 - helius-skills/helius-phantom: high risk, 115 findings, verification verified
+- solana-clawd-agents: high risk, 692 findings, verification verified
 - solana-dev: high risk, 180 findings, verification verified
 - sponge-wallet: high risk, 12 findings, verification verified
 - google/cloud/agent-platform-eval-flywheel: high risk, 7 findings, verification verified
@@ -62,4 +63,3 @@ Scanned at: 2026-07-06T22:06:34.685Z
 - google/cloud/gemini-api: high risk, 2 findings, verification verified
 - google/cloud/gke-basics: high risk, 2 findings, verification verified
 - google/cloud/workload-manager-basics: high risk, 2 findings, verification verified
-- local-places: high risk, 2 findings, verification verified
