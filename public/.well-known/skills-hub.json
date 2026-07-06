@@ -1,0 +1,36 @@
+{
+  "name": "Onchain AI Skill Hub",
+  "url": "https://skills.onchainai.fund",
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "totalSkills": 239,
+  "categories": {
+    "Dev Tools / Agents": 17,
+    "Google / Ads": 11,
+    "Google / Analytics": 2,
+    "Google / Cloud": 56,
+    "Local / Web Services": 6,
+    "Media / Devices": 22,
+    "Productivity / Messaging": 15,
+    "Solana / Blockchain": 98,
+    "Utilities": 12
+  },
+  "endpoints": {
+    "ui": "https://skills.onchainai.fund/skills",
+    "catalog": "https://skills.onchainai.fund/api/skills.json",
+    "catalogIndex": "https://skills.onchainai.fund/api/skills",
+    "skillMetadata": "https://skills.onchainai.fund/api/skills/{skill}/metadata.json",
+    "skillSource": "https://skills.onchainai.fund/api/skills/{skill}/SKILL.md",
+    "skillVerification": "https://skills.onchainai.fund/api/skills/{skill}/verification.json",
+    "onchainRegistry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json"
+  },
+  "skillsSh": {
+    "install": "npx skills add Solizardking/skills",
+    "repoConfig": "skills.sh.json"
+  },
+  "verification": {
+    "chain": "solana",
+    "status": "anchor-ready",
+    "merkleRoot": "sha256-ffaddd505dd657c1aa4c62a26b553bf669efcc8124b4e4d89e50cb4509edfa3b",
+    "catalogHash": "sha256-35f71fbfdfee9e4c946d5b946aa06a03269317cf6f53e40a490f72b80ac2403a"
+  }
+}

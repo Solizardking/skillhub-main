@@ -1,0 +1,935 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skill Verification Hub</title>
+  <link rel="icon" href="./hub-graph.svg" type="image/svg+xml">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f5f6f3;
+      --panel: #ffffff;
+      --ink: #17211d;
+      --muted: #61706a;
+      --line: #d8dfd8;
+      --green: #0f766e;
+      --blue: #2563eb;
+      --amber: #a16207;
+      --red: #b42318;
+      --purple: #6d28d9;
+      --soft-green: #e8f3ef;
+      --soft-blue: #e9f0ff;
+      --soft-amber: #fff3d6;
+      --soft-red: #fde8e7;
+      --soft-purple: #f1eafe;
+      --shadow: 0 1px 2px rgba(23, 33, 29, 0.08), 0 14px 30px rgba(23, 33, 29, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.45;
+    }
+
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    .shell {
+      width: min(1440px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 22px 0 34px;
+    }
+
+    .topbar {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
+      gap: 18px;
+      align-items: stretch;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .brand {
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      min-width: 0;
+    }
+
+    .mark {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--green);
+      border-radius: 8px;
+      background:
+        linear-gradient(90deg, transparent 48%, rgba(15, 118, 110, 0.28) 48% 52%, transparent 52%),
+        linear-gradient(0deg, transparent 48%, rgba(37, 99, 235, 0.22) 48% 52%, transparent 52%),
+        #fff;
+      flex: 0 0 auto;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 31px;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .subhead {
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .hero-asset {
+      min-height: 126px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      background: var(--panel);
+      box-shadow: 0 1px 2px rgba(23, 33, 29, 0.06);
+    }
+
+    .hero-asset img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      min-height: 126px;
+      object-fit: cover;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 8px;
+      margin: 18px 0;
+    }
+
+    .metric {
+      min-height: 74px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 1px 2px rgba(23, 33, 29, 0.05);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 23px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .metric span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: minmax(240px, 1.4fr) repeat(5, minmax(130px, 1fr));
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    input,
+    select {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      padding: 0 11px;
+    }
+
+    input:focus,
+    select:focus,
+    button:focus-visible {
+      outline: 3px solid rgba(37, 99, 235, 0.24);
+      outline-offset: 1px;
+    }
+
+    .workspace {
+      display: grid;
+      grid-template-columns: minmax(360px, 0.95fr) minmax(420px, 1.35fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .list-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 8px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .list {
+      display: grid;
+      gap: 8px;
+      max-height: calc(100vh - 260px);
+      overflow: auto;
+      padding-right: 4px;
+    }
+
+    .skill-card {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 12px;
+      width: 100%;
+      min-height: 112px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--ink);
+      text-align: left;
+      box-shadow: 0 1px 2px rgba(23, 33, 29, 0.06);
+      transition: border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease;
+    }
+
+    .skill-card:hover {
+      border-color: rgba(37, 99, 235, 0.45);
+      box-shadow: var(--shadow);
+      transform: translateY(-1px);
+    }
+
+    .skill-card[aria-current="true"] {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2), var(--shadow);
+    }
+
+    .skill-title {
+      margin: 0;
+      font-size: 15px;
+      font-weight: 750;
+      line-height: 1.25;
+      overflow-wrap: anywhere;
+    }
+
+    .skill-desc {
+      display: -webkit-box;
+      margin: 6px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.35;
+      overflow: hidden;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+
+    .pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      align-content: start;
+      justify-content: flex-end;
+      max-width: 160px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1;
+      white-space: nowrap;
+    }
+
+    .pill.green {
+      border-color: rgba(15, 118, 110, 0.28);
+      background: var(--soft-green);
+      color: #0b5f59;
+    }
+
+    .pill.blue {
+      border-color: rgba(37, 99, 235, 0.26);
+      background: var(--soft-blue);
+      color: #1d4fb8;
+    }
+
+    .pill.amber {
+      border-color: rgba(161, 98, 7, 0.28);
+      background: var(--soft-amber);
+      color: #7c4b05;
+    }
+
+    .pill.red {
+      border-color: rgba(180, 35, 24, 0.28);
+      background: var(--soft-red);
+      color: var(--red);
+    }
+
+    .pill.purple {
+      border-color: rgba(109, 40, 217, 0.28);
+      background: var(--soft-purple);
+      color: var(--purple);
+    }
+
+    .detail {
+      position: sticky;
+      top: 14px;
+      max-height: calc(100vh - 28px);
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .detail-header {
+      padding: 18px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .detail-header h2 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.15;
+      letter-spacing: 0;
+      overflow-wrap: anywhere;
+    }
+
+    .detail-header p {
+      margin: 9px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .detail-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .copy {
+      min-height: 34px;
+      border: 1px solid var(--green);
+      border-radius: 8px;
+      background: var(--green);
+      color: #fff;
+      padding: 0 12px;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .copy.secondary {
+      border-color: var(--line);
+      background: #fff;
+      color: var(--ink);
+    }
+
+    .detail-body {
+      display: grid;
+      gap: 18px;
+      padding: 18px;
+    }
+
+    .section {
+      display: grid;
+      gap: 10px;
+    }
+
+    .section h3 {
+      margin: 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: #30413b;
+    }
+
+    .kv {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .kv div,
+    .check,
+    .finding,
+    .hash-row {
+      min-width: 0;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfa;
+      padding: 10px;
+    }
+
+    .kv span,
+    .hash-row span {
+      display: block;
+      color: var(--muted);
+      font-size: 11px;
+      line-height: 1.2;
+    }
+
+    .kv strong,
+    .hash-row code {
+      display: block;
+      margin-top: 4px;
+      font-size: 13px;
+      overflow-wrap: anywhere;
+    }
+
+    .checks {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .check {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      min-height: 48px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .check strong {
+      color: var(--ink);
+      font-size: 12px;
+    }
+
+    .hashes {
+      display: grid;
+      gap: 8px;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    }
+
+    .findings {
+      display: grid;
+      gap: 8px;
+    }
+
+    .finding {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 10px;
+    }
+
+    .finding p {
+      margin: 3px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .finding code {
+      display: block;
+      margin-top: 5px;
+      color: #384941;
+      font-size: 11px;
+      overflow-wrap: anywhere;
+    }
+
+    .empty {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--muted);
+      padding: 28px;
+      text-align: center;
+    }
+
+    @media (max-width: 1180px) {
+      .metrics {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .controls {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .controls input {
+        grid-column: 1 / -1;
+      }
+
+      .workspace {
+        grid-template-columns: 1fr;
+      }
+
+      .list,
+      .detail {
+        max-height: none;
+      }
+
+      .detail {
+        position: static;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .shell {
+        width: min(100% - 22px, 1440px);
+        padding-top: 14px;
+      }
+
+      .topbar,
+      .controls,
+      .metrics,
+      .kv,
+      .checks {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 26px;
+      }
+
+      .skill-card {
+        grid-template-columns: 1fr;
+      }
+
+      .pills {
+        justify-content: flex-start;
+        max-width: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 1ms !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="mark" aria-hidden="true"></div>
+        <div>
+          <h1>Skill Verification Hub</h1>
+          <p class="subhead" id="scanMeta">Loading scanner results</p>
+        </div>
+      </div>
+      <div class="hero-asset">
+        <img src="./hub-graph.svg" alt="Skill verification graph">
+      </div>
+    </header>
+
+    <section class="metrics" id="metrics" aria-label="Scan metrics"></section>
+
+    <section class="controls" aria-label="Filters">
+      <input id="search" type="search" autocomplete="off" placeholder="Search skills">
+      <select id="category" aria-label="Category"></select>
+      <select id="surface" aria-label="Surface">
+        <option value="">All surfaces</option>
+        <option value="on-chain">On-chain</option>
+        <option value="off-chain">Off-chain</option>
+      </select>
+      <select id="verification" aria-label="Verification">
+        <option value="">All verification</option>
+        <option value="verified">Verified</option>
+        <option value="changed">Changed</option>
+        <option value="missing">Missing</option>
+        <option value="error">Error</option>
+      </select>
+      <select id="risk" aria-label="Risk">
+        <option value="">All risk</option>
+        <option value="required">Required</option>
+        <option value="review">Review</option>
+        <option value="pass">Pass</option>
+      </select>
+      <select id="sort" aria-label="Sort">
+        <option value="risk">Sort by risk</option>
+        <option value="name">Sort by name</option>
+        <option value="category">Sort by category</option>
+        <option value="files">Sort by files</option>
+      </select>
+    </section>
+
+    <section class="workspace">
+      <div>
+        <div class="list-head">
+          <span id="resultCount">0 skills</span>
+          <span id="anchorState">Registry pending</span>
+        </div>
+        <div class="list" id="skillList"></div>
+      </div>
+      <aside class="detail" id="detail"></aside>
+    </section>
+  </main>
+
+  <script src="./scan-data.js"></script>
+  <script>
+    const data = window.SKILL_SCAN_RESULTS || { scannedAt: null, summary: {}, onchain: {}, skills: [] };
+    const state = {
+      search: "",
+      category: "",
+      surface: "",
+      verification: "",
+      risk: "",
+      sort: "risk",
+      selected: null,
+    };
+
+    const els = {
+      scanMeta: document.getElementById("scanMeta"),
+      metrics: document.getElementById("metrics"),
+      category: document.getElementById("category"),
+      surface: document.getElementById("surface"),
+      verification: document.getElementById("verification"),
+      risk: document.getElementById("risk"),
+      sort: document.getElementById("sort"),
+      search: document.getElementById("search"),
+      resultCount: document.getElementById("resultCount"),
+      anchorState: document.getElementById("anchorState"),
+      skillList: document.getElementById("skillList"),
+      detail: document.getElementById("detail"),
+    };
+
+    const riskRank = { required: 3, review: 2, pass: 1 };
+    const severityRank = { CRITICAL: 5, HIGH: 4, MEDIUM: 3, LOW: 2, INFO: 1 };
+
+    init();
+
+    function init() {
+      renderMeta();
+      renderMetrics();
+      renderCategoryOptions();
+      bindControls();
+      render();
+    }
+
+    function renderMeta() {
+      const scanned = data.scannedAt ? new Date(data.scannedAt).toLocaleString() : "not scanned";
+      const mode = data.scanner?.mode || "canonical";
+      els.scanMeta.textContent = `${formatNumber(data.summary?.totalSkills || 0)} skills scanned from ${mode} inventory at ${scanned}`;
+      const rootValid = data.onchain?.registryRootValid ? "root verified" : "root mismatch";
+      els.anchorState.textContent = `${data.onchain?.anchorState || "not configured"} / ${rootValid}`;
+    }
+
+    function renderMetrics() {
+      const summary = data.summary || {};
+      const metrics = [
+        ["Skills", summary.totalSkills],
+        ["On-chain", summary.onChainSkills],
+        ["Off-chain", summary.offChainSkills],
+        ["Verified", summary.verification?.verified],
+        ["Review", summary.risk?.review],
+        ["Known installs", summary.installs?.totalKnownInstalls],
+      ];
+      els.metrics.innerHTML = metrics.map(([label, value]) => `
+        <div class="metric">
+          <strong>${formatMetric(value, label)}</strong>
+          <span>${escapeHtml(label)}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderCategoryOptions() {
+      const categories = [...new Set(data.skills.map((skill) => skill.category))].sort((a, b) => a.localeCompare(b));
+      els.category.innerHTML = `<option value="">All categories</option>` + categories
+        .map((category) => `<option value="${escapeAttr(category)}">${escapeHtml(category)}</option>`)
+        .join("");
+    }
+
+    function bindControls() {
+      for (const key of ["category", "surface", "verification", "risk", "sort"]) {
+        els[key].addEventListener("change", () => {
+          state[key] = els[key].value;
+          render();
+        });
+      }
+      els.search.addEventListener("input", () => {
+        state.search = els.search.value.trim().toLowerCase();
+        render();
+      });
+    }
+
+    function render() {
+      const skills = filteredSkills();
+      if (!skills.some((skill) => skill.slug === state.selected)) {
+        state.selected = skills[0]?.slug || null;
+      }
+      els.resultCount.textContent = `${formatNumber(skills.length)} of ${formatNumber(data.skills.length)} skills`;
+      renderList(skills);
+      renderDetail(data.skills.find((skill) => skill.slug === state.selected) || skills[0] || null);
+    }
+
+    function filteredSkills() {
+      let skills = data.skills.filter((skill) => {
+        if (state.category && skill.category !== state.category) return false;
+        if (state.surface && skill.surface?.type !== state.surface) return false;
+        if (state.verification && skill.verification?.status !== state.verification) return false;
+        if (state.risk && skill.risk?.status !== state.risk) return false;
+        if (state.search) {
+          const haystack = `${skill.slug} ${skill.name} ${skill.description} ${skill.category}`.toLowerCase();
+          if (!haystack.includes(state.search)) return false;
+        }
+        return true;
+      });
+
+      skills = [...skills].sort((a, b) => {
+        if (state.sort === "name") return a.slug.localeCompare(b.slug);
+        if (state.sort === "category") return a.category.localeCompare(b.category) || a.slug.localeCompare(b.slug);
+        if (state.sort === "files") return (b.stats?.filesScanned || 0) - (a.stats?.filesScanned || 0);
+        return (riskRank[b.risk?.status] || 0) - (riskRank[a.risk?.status] || 0)
+          || (b.risk?.score || 0) - (a.risk?.score || 0)
+          || a.slug.localeCompare(b.slug);
+      });
+
+      return skills;
+    }
+
+    function renderList(skills) {
+      if (!skills.length) {
+        els.skillList.innerHTML = `<div class="empty">No skills match the current filters.</div>`;
+        return;
+      }
+
+      els.skillList.innerHTML = skills.map((skill) => {
+        const current = skill.slug === state.selected ? "true" : "false";
+        return `
+          <button class="skill-card" type="button" data-slug="${escapeAttr(skill.slug)}" aria-current="${current}">
+            <span>
+              <span class="skill-title">${escapeHtml(skill.slug)}</span>
+              <span class="skill-desc">${escapeHtml(skill.description)}</span>
+            </span>
+            <span class="pills">
+              ${pill(skill.surface?.type || "unknown", skill.surface?.type === "on-chain" ? "purple" : "blue")}
+              ${pill(skill.verification?.status || "missing", verificationColor(skill.verification?.status))}
+              ${pill(skill.risk?.status || "pass", riskColor(skill.risk?.status))}
+              ${pill(skill.install?.installs === null ? "installs unknown" : `${formatNumber(skill.install.installs)} installs`, "")}
+            </span>
+          </button>
+        `;
+      }).join("");
+
+      els.skillList.querySelectorAll(".skill-card").forEach((card) => {
+        card.addEventListener("click", () => {
+          state.selected = card.dataset.slug;
+          render();
+        });
+      });
+    }
+
+    function renderDetail(skill) {
+      if (!skill) {
+        els.detail.innerHTML = `<div class="empty">No skill selected.</div>`;
+        return;
+      }
+
+      const checks = skill.verification?.checks || {};
+      const findings = [...(skill.findings || [])].sort((a, b) => {
+        return (severityRank[b.severity] || 0) - (severityRank[a.severity] || 0)
+          || a.file.localeCompare(b.file)
+          || a.line - b.line;
+      });
+
+      els.detail.innerHTML = `
+        <div class="detail-header">
+          <div class="pills">
+            ${pill(skill.category, "")}
+            ${pill(skill.surface?.type || "unknown", skill.surface?.type === "on-chain" ? "purple" : "blue")}
+            ${pill(skill.verification?.status || "missing", verificationColor(skill.verification?.status))}
+            ${pill(skill.risk?.level || "low", riskColor(skill.risk?.status))}
+          </div>
+          <h2>${escapeHtml(skill.slug)}</h2>
+          <p>${escapeHtml(skill.description)}</p>
+          <div class="detail-actions">
+            <button class="copy" type="button" id="copyInstall">Copy install</button>
+            <button class="copy secondary" type="button" id="copyHash">Copy bundle hash</button>
+          </div>
+        </div>
+        <div class="detail-body">
+          <section class="section">
+            <h3>Snapshot</h3>
+            <div class="kv">
+              ${kv("Files", skill.stats?.filesScanned)}
+              ${kv("Lines", skill.stats?.lineCount)}
+              ${kv("Bytes", formatBytes(skill.stats?.bytesScanned || 0))}
+              ${kv("Findings", skill.findings?.length || 0)}
+              ${kv("Risk score", skill.risk?.score || 0)}
+              ${kv("Installs", skill.install?.installs === null ? "unknown" : formatNumber(skill.install.installs))}
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Verification</h3>
+            <div class="checks">
+              ${check("Verification file", checks.verificationFile)}
+              ${check("File hashes", checks.fileHashes)}
+              ${check("Bundle hash", checks.bundleHash)}
+              ${check("Merkle leaf", checks.merkleLeaf)}
+              ${check("Registry member", checks.registryMembership)}
+              ${check("Registry root", checks.registryRoot)}
+              ${check("On-chain anchor", checks.onchainAnchor)}
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Hashes</h3>
+            <div class="hashes">
+              ${hashRow("Bundle hash", skill.verification?.bundleHash || "missing")}
+              ${hashRow("Local bundle hash", skill.verification?.localBundleHash || "missing")}
+              ${hashRow("Merkle leaf", skill.verification?.merkleLeaf || "missing")}
+              ${hashRow("Local merkle leaf", skill.verification?.localMerkleLeaf || "missing")}
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Install</h3>
+            <div class="hashes">
+              ${hashRow("Command", skill.install?.command || "missing")}
+              ${hashRow("Telemetry source", skill.install?.source || "unknown")}
+            </div>
+          </section>
+
+          <section class="section">
+            <h3>Findings</h3>
+            <div class="findings">
+              ${renderFindings(findings)}
+            </div>
+          </section>
+        </div>
+      `;
+
+      document.getElementById("copyInstall").addEventListener("click", () => copyText(skill.install?.command || ""));
+      document.getElementById("copyHash").addEventListener("click", () => copyText(skill.verification?.bundleHash || ""));
+    }
+
+    function renderFindings(findings) {
+      if (!findings.length) return `<div class="empty">No scanner findings.</div>`;
+      return findings.slice(0, 80).map((finding) => `
+        <div class="finding">
+          ${pill(finding.severity, severityColor(finding.severity))}
+          <div>
+            <strong>${escapeHtml(finding.ruleId)}</strong>
+            <p>${escapeHtml(finding.message)} in ${escapeHtml(finding.file)}:${finding.line}</p>
+            <code>${escapeHtml(finding.excerpt)}</code>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function pill(label, color) {
+      return `<span class="pill ${escapeAttr(color || "")}">${escapeHtml(label)}</span>`;
+    }
+
+    function kv(label, value) {
+      return `<div><span>${escapeHtml(label)}</span><strong>${escapeHtml(formatMetric(value, label))}</strong></div>`;
+    }
+
+    function check(label, value) {
+      const ok = value === true || value === "anchored" || value === "planned" || value === "anchor-ready";
+      const text = typeof value === "boolean" ? (value ? "pass" : "fail") : (value || "missing");
+      return `<div class="check"><span>${escapeHtml(label)}</span>${pill(text, ok ? "green" : "amber")}</div>`;
+    }
+
+    function hashRow(label, value) {
+      return `<div class="hash-row"><span>${escapeHtml(label)}</span><code>${escapeHtml(value)}</code></div>`;
+    }
+
+    function verificationColor(status) {
+      if (status === "verified") return "green";
+      if (status === "changed") return "amber";
+      return "red";
+    }
+
+    function riskColor(status) {
+      if (status === "pass") return "green";
+      if (status === "review") return "amber";
+      if (status === "required") return "red";
+      return "";
+    }
+
+    function severityColor(severity) {
+      if (severity === "CRITICAL") return "red";
+      if (severity === "HIGH") return "amber";
+      if (severity === "MEDIUM") return "blue";
+      if (severity === "LOW") return "purple";
+      return "";
+    }
+
+    async function copyText(value) {
+      if (!value) return;
+      try {
+        await navigator.clipboard.writeText(value);
+      } catch {
+        const textarea = document.createElement("textarea");
+        textarea.value = value;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+      }
+    }
+
+    function formatMetric(value, label) {
+      if (value === null || value === undefined || value === "") {
+        return label === "Known installs" ? "0" : "unknown";
+      }
+      if (typeof value === "number") return formatNumber(value);
+      return String(value);
+    }
+
+    function formatNumber(value) {
+      return new Intl.NumberFormat().format(Number(value || 0));
+    }
+
+    function formatBytes(bytes) {
+      const units = ["B", "KB", "MB", "GB"];
+      let value = Number(bytes || 0);
+      let unit = 0;
+      while (value >= 1024 && unit < units.length - 1) {
+        value /= 1024;
+        unit += 1;
+      }
+      return `${value.toFixed(unit === 0 ? 0 : 1)} ${units[unit]}`;
+    }
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      })[char]);
+    }
+
+    function escapeAttr(value) {
+      return escapeHtml(value).replace(/`/g, "&#96;");
+    }
+  </script>
+</body>
+</html>

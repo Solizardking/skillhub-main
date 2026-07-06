@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "google/cloud/agent-platform-skill-registry",
+  "name": "agent-platform-skill-registry",
+  "description": "Interact with the Gemini Enterprise Agent Platform Skill Registry to create and search for available skills. Use this skill to enable agents to register functionality or discover new capabilities.",
+  "source": "https://skills.onchainai.fund/api/skills/google/cloud/agent-platform-skill-registry/SKILL.md",
+  "metadata": "https://skills.onchainai.fund/api/skills/google/cloud/agent-platform-skill-registry/metadata.json",
+  "bundleHash": "sha256-cd1f2b9ed4c3dad2a89e472a9bd17329959f54eef53eeadae0693473abf6f4da",
+  "merkleLeaf": "sha256-5cd7571c2a65347ab5372e28c67a02155712fb235d5d702ae574f34a3bbf6d38",
+  "files": [
+    {
+      "path": "references/generate-skill.md",
+      "bytes": 2612,
+      "sha256": "sha256-c9cde68c86489425dd67190b4813297fd3198a7a67adfbe83c48907c1a93a82c"
+    },
+    {
+      "path": "references/manage-skills.md",
+      "bytes": 2502,
+      "sha256": "sha256-3052e68e463bcbc240c9441075d77e2b004e02be25c22d202655fffcf039f3dd"
+    },
+    {
+      "path": "references/monitor-operations.md",
+      "bytes": 619,
+      "sha256": "sha256-409f32bacaadfbc78dcd74a6745e6159e0d13016a7d1fb145130e98ec59c38db"
+    },
+    {
+      "path": "references/query-skills.md",
+      "bytes": 1562,
+      "sha256": "sha256-56c6053681ea48d067980dbad16bc1436bcd0d40051882299ddedfba24a4c032"
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "bytes": 83,
+      "sha256": "sha256-3fbdea0caf83c5ebf2b3e400c647ae2688e58949111a759895ecf64946d578a1"
+    },
+    {
+      "path": "scripts/skill_registry_ops.py",
+      "bytes": 11073,
+      "sha256": "sha256-4d75b273faabfe368e08cab49dbbd9bd968ea7a9f09d380c4b1c051c2c8030df"
+    },
+    {
+      "path": "scripts/validate_env.py",
+      "bytes": 454,
+      "sha256": "sha256-1e80c1e76267d8d71360a6ef79c0b7d9d62ba248c8aa29acf7513f9291a1063a"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2314,
+      "sha256": "sha256-6cfc4cc1e7aa396f3ff0bfbeed232df7034c0300ba888bdceb9a43bab61319de"
+    }
+  ],
+  "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}
