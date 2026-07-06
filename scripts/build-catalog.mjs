@@ -959,28 +959,32 @@ function renderIndexHtml(catalog) {
   const grouped = Object.fromEntries(groupByCategory(catalog));
   const data = JSON.stringify(catalog).replace(/</g, "\\u003c");
   const categoryOptions = CATEGORY_ORDER.filter((category) => grouped[category]).map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("");
+  const categoryOrder = JSON.stringify(CATEGORY_ORDER.filter((category) => grouped[category]));
 
   return `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Skills Catalog</title>
+  <title>Skill Hub</title>
   <link rel="canonical" href="${SITE_URL}/skills">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
     :root {
       color-scheme: light;
-      --bg: #f7f7f2;
+      --bg: #f3f6f8;
       --panel: #ffffff;
-      --ink: #18201d;
-      --muted: #5e6964;
-      --line: #d8ddd5;
-      --accent: #0f766e;
-      --accent-2: #8a5a11;
-      --spark: #2563eb;
-      --chip: #ecf4f1;
-      --shadow: 0 1px 2px rgba(24, 32, 29, 0.08);
+      --ink: #17211f;
+      --muted: #60706d;
+      --line: #d7e0df;
+      --green: #0f766e;
+      --blue: #2563eb;
+      --amber: #a16207;
+      --purple: #6d28d9;
+      --chip: #eef7f5;
+      --soft-blue: #eaf1ff;
+      --soft-amber: #fff6db;
+      --shadow: 0 1px 2px rgba(23, 33, 31, 0.08), 0 12px 28px rgba(23, 33, 31, 0.08);
     }
 
     * {
@@ -999,18 +1003,28 @@ function renderIndexHtml(catalog) {
       color: inherit;
     }
 
+    button,
+    input,
+    select {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
     .shell {
-      width: min(1180px, calc(100% - 32px));
+      width: min(1340px, calc(100% - 32px));
       margin: 0 auto;
-      padding: 28px 0 48px;
+      padding: 24px 0 46px;
     }
 
     header {
       display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 18px;
-      align-items: end;
-      padding: 18px 0 22px;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 20px;
+      align-items: center;
+      padding: 12px 0 18px;
       border-bottom: 1px solid var(--line);
     }
 
@@ -1022,21 +1036,31 @@ function renderIndexHtml(catalog) {
     }
 
     .mark {
-      width: 42px;
-      height: 42px;
-      border: 1px solid #0f766e;
+      position: relative;
+      width: 48px;
+      height: 48px;
+      border: 1px solid var(--green);
       border-radius: 8px;
       background:
-        linear-gradient(90deg, transparent 47%, rgba(15, 118, 110, 0.22) 47% 53%, transparent 53%),
-        linear-gradient(0deg, transparent 47%, rgba(138, 90, 17, 0.24) 47% 53%, transparent 53%),
-        #ffffff;
+        linear-gradient(90deg, transparent 48%, rgba(15, 118, 110, 0.28) 48% 52%, transparent 52%),
+        linear-gradient(0deg, transparent 48%, rgba(37, 99, 235, 0.22) 48% 52%, transparent 52%),
+        var(--panel);
       flex: 0 0 auto;
       animation: mark-shift 8s ease-in-out infinite;
     }
 
+    .mark::after {
+      content: "";
+      position: absolute;
+      inset: 10px;
+      border: 1px solid rgba(109, 40, 217, 0.55);
+      border-radius: 4px;
+      animation: mark-scan 2.8s ease-in-out infinite;
+    }
+
     h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 31px;
       line-height: 1.08;
       letter-spacing: 0;
     }
@@ -1047,22 +1071,49 @@ function renderIndexHtml(catalog) {
       font-size: 15px;
     }
 
-    .install {
-      margin: 0;
-      padding: 10px 12px;
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+
+    .tool-link,
+    .copy-action,
+    .open-action {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 34px;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--panel);
       box-shadow: var(--shadow);
       font-size: 13px;
+      font-weight: 720;
+      text-decoration: none;
       white-space: nowrap;
+      padding: 0 11px;
+    }
+
+    .tool-link.primary,
+    .copy-action {
+      border-color: var(--green);
+      background: var(--green);
+      color: #fff;
+    }
+
+    .open-action {
+      border-color: rgba(37, 99, 235, 0.28);
+      background: var(--soft-blue);
+      color: #1e4eb3;
     }
 
     .toolbar {
       display: grid;
-      grid-template-columns: minmax(220px, 1fr) minmax(180px, 260px);
-      gap: 12px;
-      margin: 20px 0;
+      grid-template-columns: minmax(260px, 1.3fr) minmax(180px, 260px) minmax(150px, 210px);
+      gap: 10px;
+      margin: 18px 0;
     }
 
     input,
@@ -1077,28 +1128,138 @@ function renderIndexHtml(catalog) {
       padding: 0 12px;
     }
 
+    input:focus,
+    select:focus,
+    button:focus-visible,
+    a:focus-visible {
+      outline: 3px solid rgba(37, 99, 235, 0.24);
+      outline-offset: 1px;
+    }
+
     .stats {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 8px;
       margin: 0 0 18px;
     }
 
     .stat {
-      display: inline-flex;
-      align-items: center;
-      min-height: 30px;
-      padding: 0 10px;
+      min-height: 76px;
+      padding: 12px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: var(--chip);
-      color: #25423b;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+
+    .stat span {
+      display: block;
+      margin-top: 8px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.2;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 22px 0 10px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: 16px;
+      letter-spacing: 0;
+    }
+
+    .section-head span {
+      color: var(--muted);
       font-size: 13px;
+    }
+
+    .map {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .map-card {
+      display: grid;
+      gap: 10px;
+      width: 100%;
+      min-height: 104px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+      color: var(--ink);
+      text-align: left;
+      transition: border-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+    }
+
+    .map-card:hover,
+    .map-card[aria-pressed="true"] {
+      border-color: rgba(37, 99, 235, 0.48);
+      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.13), var(--shadow);
+      transform: translateY(-1px);
+    }
+
+    .map-top,
+    .meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .map-name {
+      font-size: 14px;
+      font-weight: 760;
+      overflow-wrap: anywhere;
+    }
+
+    .map-count {
+      color: var(--muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    .rail {
+      height: 8px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: #e2e8e8;
+    }
+
+    .rail span {
+      display: block;
+      height: 100%;
+      width: var(--rail);
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--green), var(--blue), var(--purple));
+      animation: rail-flow 3.2s linear infinite;
+      background-size: 180% 100%;
+    }
+
+    .map-desc {
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.3;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
       gap: 12px;
     }
 
@@ -1107,7 +1268,7 @@ function renderIndexHtml(catalog) {
       min-height: 188px;
       flex-direction: column;
       justify-content: space-between;
-      gap: 16px;
+      gap: 14px;
       padding: 16px;
       border: 1px solid var(--line);
       border-radius: 8px;
@@ -1119,7 +1280,7 @@ function renderIndexHtml(catalog) {
 
     .skill-card:hover {
       border-color: rgba(37, 99, 235, 0.38);
-      box-shadow: 0 10px 24px rgba(24, 32, 29, 0.11);
+      box-shadow: var(--shadow);
       transform: translateY(-2px);
     }
 
@@ -1135,41 +1296,40 @@ function renderIndexHtml(catalog) {
       margin: 8px 0 0;
       color: var(--muted);
       font-size: 14px;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      overflow: hidden;
     }
 
-    .meta {
+    .card-actions {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      gap: 10px;
+      flex-wrap: wrap;
+      gap: 8px;
     }
 
     .category {
-      color: var(--accent-2);
+      color: var(--amber);
       font-size: 12px;
       font-weight: 650;
       line-height: 1.2;
     }
 
-    .open {
+    .path {
       display: inline-flex;
       align-items: center;
-      justify-content: center;
-      min-height: 32px;
-      padding: 0 10px;
+      min-height: 24px;
+      max-width: 100%;
+      padding: 0 8px;
+      border: 1px solid var(--line);
       border-radius: 8px;
-      background: var(--accent);
-      color: #fff;
-      font-size: 13px;
-      font-weight: 650;
-      text-decoration: none;
+      background: var(--chip);
+      color: #25423f;
+      font-size: 12px;
       white-space: nowrap;
-      transition: background-color 160ms ease, transform 160ms ease;
-    }
-
-    .open:hover {
-      background: var(--spark);
-      transform: translateY(-1px);
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
     .empty {
@@ -1182,19 +1342,28 @@ function renderIndexHtml(catalog) {
       text-align: center;
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 1080px) {
+      .map,
+      .stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 760px) {
       .shell {
-        width: min(100% - 24px, 1180px);
+        width: min(100% - 22px, 1340px);
         padding-top: 18px;
       }
 
       header,
-      .toolbar {
+      .toolbar,
+      .map,
+      .stats {
         grid-template-columns: 1fr;
       }
 
-      .install {
-        white-space: normal;
+      .actions {
+        justify-content: flex-start;
       }
 
       h1 {
@@ -1216,7 +1385,7 @@ function renderIndexHtml(catalog) {
     @keyframes rise-in {
       from {
         opacity: 0;
-        transform: translateY(8px);
+        transform: translateY(10px);
       }
       to {
         opacity: 1;
@@ -1232,6 +1401,26 @@ function renderIndexHtml(catalog) {
         background-position: 8px 0, 0 8px, 0 0;
       }
     }
+
+    @keyframes mark-scan {
+      0%, 100% {
+        transform: scale(0.82);
+        opacity: 0.45;
+      }
+      50% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    @keyframes rail-flow {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 180% 50%;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1240,12 +1429,19 @@ function renderIndexHtml(catalog) {
       <div class="brand">
         <div class="mark" aria-hidden="true"></div>
         <div>
-          <h1>Skills Catalog</h1>
-          <p class="subhead">${catalog.length} repo-local skills, searchable by pack, trigger, and platform.</p>
+          <h1>Skill Hub</h1>
+          <p class="subhead">${catalog.length} repo-local skills mapped by zone, trigger text, install target, and verification surface.</p>
         </div>
       </div>
-      <pre class="install">npx github:Solizardking/skills install</pre>
+      <nav class="actions" aria-label="Hub links">
+        <a class="tool-link primary" href="/skills">Catalog</a>
+        <a class="tool-link" id="scannerLink" href="/scanner">Scanner</a>
+        <a class="tool-link" href="/api/skills.json">API</a>
+        <a class="tool-link" href="/.well-known/onchain-skill-registry.json">Registry</a>
+      </nav>
     </header>
+
+    <section class="stats" id="stats" aria-label="Hub metrics"></section>
 
     <section class="toolbar" aria-label="Catalog filters">
       <input id="search" type="search" autocomplete="off" placeholder="Search skills">
@@ -1253,9 +1449,27 @@ function renderIndexHtml(catalog) {
         <option value="">All categories</option>
         ${categoryOptions}
       </select>
+      <select id="sort" aria-label="Sort">
+        <option value="category">Sort by category</option>
+        <option value="name">Sort by name</option>
+        <option value="length">Sort by description length</option>
+      </select>
     </section>
 
-    <section class="stats" id="stats" aria-label="Category totals"></section>
+    <section aria-label="Skill map">
+      <div class="section-head">
+        <h2>Map</h2>
+        <span id="visibleCount">0 skills</span>
+      </div>
+      <div class="map" id="map"></div>
+    </section>
+
+    <section aria-label="Skill catalog">
+      <div class="section-head">
+        <h2>All Skills</h2>
+        <span>Install all: <code>npx github:Solizardking/skills install</code></span>
+      </div>
+    </section>
     <section class="grid" id="grid"></section>
     <p class="empty" id="empty">No skills match the current filters.</p>
   </main>
@@ -1263,11 +1477,31 @@ function renderIndexHtml(catalog) {
   <script id="skills-data" type="application/json">${data}</script>
   <script>
     const skills = JSON.parse(document.getElementById("skills-data").textContent);
+    const categoryOrder = ${categoryOrder};
+    const categoryDescriptions = {
+      "Dev Tools / Agents": "Agent frameworks, CLIs, MCP, GitHub, terminal control, and skill development.",
+      "Google / Ads": "Google Ads, mobile ads, and event or audience ingestion.",
+      "Google / Analytics": "GA4 admin and reporting workflows.",
+      "Google / Cloud": "GCP infrastructure, GKE, BigQuery, Vertex, and operations.",
+      "Local / Web Services": "Weather, places, food, and local service helpers.",
+      "Media / Devices": "Audio, video, images, TTS, cameras, and device control.",
+      "Productivity / Messaging": "Notes, tasks, chat, email, and workspace tools.",
+      "Solana / Blockchain": "Solana, wallets, trading, verification, ZK, and on-chain agents.",
+      "Utilities": "General local tools and everyday agent operations."
+    };
     const search = document.getElementById("search");
     const category = document.getElementById("category");
+    const sort = document.getElementById("sort");
     const grid = document.getElementById("grid");
+    const map = document.getElementById("map");
     const stats = document.getElementById("stats");
     const empty = document.getElementById("empty");
+    const visibleCount = document.getElementById("visibleCount");
+    const scannerLink = document.getElementById("scannerLink");
+
+    if (window.location.protocol === "file:") {
+      scannerLink.setAttribute("href", "scanner/index.html");
+    }
 
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, (char) => ({
@@ -1279,39 +1513,105 @@ function renderIndexHtml(catalog) {
       })[char]);
     }
 
-    function renderStats(items) {
-      const counts = items.reduce((acc, skill) => {
+    function escapeAttr(value) {
+      return escapeHtml(value).replace(/`/g, "&#96;");
+    }
+
+    function countsByCategory(items) {
+      return items.reduce((acc, skill) => {
         acc[skill.category] = (acc[skill.category] || 0) + 1;
         return acc;
       }, {});
-      stats.innerHTML = Object.entries(counts)
-        .sort(([a], [b]) => a.localeCompare(b))
-        .map(([label, count]) => \`<span class="stat">\${escapeHtml(label)}: \${count}</span>\`)
-        .join("");
     }
 
-    function render() {
+    function filteredSkills() {
       const q = search.value.trim().toLowerCase();
       const selectedCategory = category.value;
-      const filtered = skills.filter((skill) => {
+      let filtered = skills.filter((skill) => {
         const haystack = \`\${skill.slug} \${skill.name} \${skill.description} \${skill.category}\`.toLowerCase();
         return (!q || haystack.includes(q)) && (!selectedCategory || skill.category === selectedCategory);
       });
 
-      grid.innerHTML = filtered.map((skill, index) => \`
+      filtered = [...filtered].sort((a, b) => {
+        if (sort.value === "name") return a.slug.localeCompare(b.slug);
+        if (sort.value === "length") return b.description.length - a.description.length || a.slug.localeCompare(b.slug);
+        return categoryOrder.indexOf(a.category) - categoryOrder.indexOf(b.category) || a.slug.localeCompare(b.slug);
+      });
+
+      return filtered;
+    }
+
+    function renderStats(items) {
+      const allCounts = countsByCategory(skills);
+      const largest = Object.entries(allCounts).sort((a, b) => b[1] - a[1])[0];
+      stats.innerHTML = [
+        ["Skills", skills.length],
+        ["Visible", items.length],
+        ["Categories", categoryOrder.length],
+        ["Largest zone", largest ? \`\${largest[0]} · \${largest[1]}\` : "none"]
+      ].map(([label, value]) => \`
+        <div class="stat">
+          <strong>\${typeof value === "number" ? formatNumber(value) : escapeHtml(value)}</strong>
+          <span>\${escapeHtml(label)}</span>
+        </div>
+      \`).join("");
+    }
+
+    function renderMap(items) {
+      const allCounts = countsByCategory(skills);
+      const visibleCounts = countsByCategory(items);
+      const max = Math.max(...Object.values(allCounts), 1);
+      map.innerHTML = categoryOrder.map((label) => {
+        const total = allCounts[label] || 0;
+        const visible = visibleCounts[label] || 0;
+        const selected = category.value === label;
+        const rail = Math.max(6, Math.round((total / max) * 100));
+        return \`
+          <button class="map-card" type="button" data-category="\${escapeAttr(label)}" aria-pressed="\${selected ? "true" : "false"}">
+            <span class="map-top">
+              <span class="map-name">\${escapeHtml(label)}</span>
+              <span class="map-count">\${formatNumber(visible)} / \${formatNumber(total)}</span>
+            </span>
+            <span class="rail" aria-hidden="true" style="--rail: \${rail}%"><span></span></span>
+            <span class="map-desc">\${escapeHtml(categoryDescriptions[label] || "Repo-local skills.")}</span>
+          </button>
+        \`;
+      }).join("");
+
+      map.querySelectorAll(".map-card").forEach((card) => {
+        card.addEventListener("click", () => {
+          category.value = category.value === card.dataset.category ? "" : card.dataset.category;
+          render();
+        });
+      });
+    }
+
+    function renderGrid(items) {
+      grid.innerHTML = items.map((skill, index) => \`
         <article class="skill-card" style="animation-delay: \${Math.min(index, 24) * 18}ms">
           <div>
+            <span class="path">\${escapeHtml(skill.category)}</span>
             <h2>\${escapeHtml(skill.slug)}</h2>
             <p>\${escapeHtml(skill.description)}</p>
           </div>
           <div class="meta">
-            <span class="category">\${escapeHtml(skill.category)}</span>
-            <a class="open" href="/api/skills/\${encodeSkillPath(skill.slug)}/SKILL.md">Open</a>
+            <span class="category">\${escapeHtml(skill.name)}</span>
+            <span class="card-actions">
+              <button class="copy-action" type="button" data-install="\${escapeAttr(installCommand(skill.slug))}">Install</button>
+              <a class="open-action" href="/api/skills/\${encodeSkillPath(skill.slug)}/SKILL.md">Open</a>
+            </span>
           </div>
         </article>
       \`).join("");
+    }
+
+    function render() {
+      const filtered = filteredSkills();
+      visibleCount.textContent = \`\${formatNumber(filtered.length)} of \${formatNumber(skills.length)} skills\`;
 
       renderStats(filtered);
+      renderMap(filtered);
+      renderGrid(filtered);
       empty.style.display = filtered.length ? "none" : "block";
     }
 
@@ -1319,8 +1619,37 @@ function renderIndexHtml(catalog) {
       return slug.split("/").map(encodeURIComponent).join("/");
     }
 
+    function installCommand(slug) {
+      return \`npx github:Solizardking/skills install \${slug}\`;
+    }
+
+    async function copyText(value) {
+      if (!value) return;
+      try {
+        await navigator.clipboard.writeText(value);
+      } catch {
+        const textarea = document.createElement("textarea");
+        textarea.value = value;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand("copy");
+        textarea.remove();
+      }
+    }
+
+    function formatNumber(value) {
+      return new Intl.NumberFormat().format(Number(value || 0));
+    }
+
+    grid.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-install]");
+      if (!button) return;
+      copyText(button.dataset.install);
+    });
+
     search.addEventListener("input", render);
     category.addEventListener("change", render);
+    sort.addEventListener("change", render);
     render();
   </script>
 </body>

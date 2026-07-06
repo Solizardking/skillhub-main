@@ -15,6 +15,10 @@
     {
       "source": "/skills",
       "destination": "/index.html"
+    },
+    {
+      "source": "/scanner",
+      "destination": "/scanner/index.html"
     }
   ],
   "headers": [

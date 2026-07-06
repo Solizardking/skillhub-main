@@ -71,6 +71,17 @@ const CATEGORY_ORDER = [
   "Utilities",
 ];
 
+const CATEGORY_OVERRIDES = new Map([
+  ["ask-mcp", "Solana / Blockchain"],
+  ["compressed-pda", "Solana / Blockchain"],
+  ["compressed-token", "Solana / Blockchain"],
+  ["solana-redpill-verifier", "Solana / Blockchain"],
+  ["solana-rent-free-dev", "Solana / Blockchain"],
+  ["testing", "Solana / Blockchain"],
+  ["zk", "Solana / Blockchain"],
+  ["zkrouter", "Solana / Blockchain"],
+]);
+
 const SEVERITY_ORDER = ["INFO", "LOW", "MEDIUM", "HIGH", "CRITICAL"];
 const SEVERITY_WEIGHTS = {
   INFO: 0,
@@ -541,6 +552,29 @@ function checkFileHashes(bundleFiles, verificationDoc) {
 }
 
 function buildVerification({ verificationDoc, registryEntry, registryRootValid, localBundleHash, localMerkleLeaf, fileChecks, context }) {
+  if (verificationDoc?.error) {
+    return {
+      status: "error",
+      method: "sha256 bundle hash plus registry merkle leaf",
+      error: verificationDoc.error,
+      path: verificationDoc.path || null,
+      checks: {
+        verificationFile: false,
+        fileHashes: false,
+        bundleHash: false,
+        merkleLeaf: false,
+        registryMembership: Boolean(registryEntry),
+        registryRoot: registryRootValid,
+        onchainAnchor: anchorState(context),
+      },
+      localBundleHash,
+      localMerkleLeaf,
+      fileCount: fileChecks.length,
+      changedFiles: fileChecks.length,
+      changedFileSamples: fileChecks.slice(0, 8),
+    };
+  }
+
   if (!verificationDoc) {
     return {
       status: "missing",
@@ -561,7 +595,8 @@ function buildVerification({ verificationDoc, registryEntry, registryRootValid, 
     };
   }
 
-  const fileHashesOk = fileChecks.length === verificationDoc.files.length && fileChecks.every((check) => check.status === "verified");
+  const expectedFiles = Array.isArray(verificationDoc.files) ? verificationDoc.files : [];
+  const fileHashesOk = fileChecks.length === expectedFiles.length && fileChecks.every((check) => check.status === "verified");
   const bundleHashOk = localBundleHash === verificationDoc.bundleHash;
   const merkleLeafOk = localMerkleLeaf === verificationDoc.merkleLeaf;
   const registryMembershipOk = Boolean(registryEntry && registryEntry.merkleLeaf === verificationDoc.merkleLeaf);
@@ -584,7 +619,7 @@ function buildVerification({ verificationDoc, registryEntry, registryRootValid, 
     localBundleHash,
     merkleLeaf: verificationDoc.merkleLeaf,
     localMerkleLeaf,
-    fileCount: verificationDoc.files.length,
+    fileCount: expectedFiles.length,
     localFileCount: fileChecks.length,
     changedFiles: changedFiles.length,
     changedFileSamples: changedFiles.slice(0, 8),
@@ -825,7 +860,20 @@ function parseFrontmatter(content) {
       fields[key] = block.join(folded ? " " : "\n");
       continue;
     }
-    fields[key] = parseScalar(rawValue);
+
+    let scalar = parseScalar(rawValue);
+    if (rawValue.trim()) {
+      const continuation = [];
+      while (i + 1 < lines.length && /^(?:\s{2,}|\t)/.test(lines[i + 1])) {
+        i += 1;
+        continuation.push(lines[i].trim());
+      }
+      if (continuation.length > 0) {
+        scalar = [scalar, ...continuation].join(" ");
+      }
+    }
+
+    fields[key] = scalar;
   }
 
   return fields;
@@ -848,12 +896,16 @@ function fallbackDescription(content) {
 }
 
 function categorize(skill) {
+  if (CATEGORY_OVERRIDES.has(skill.slug)) {
+    return CATEGORY_OVERRIDES.get(skill.slug);
+  }
+
   if (skill.slug.startsWith("google/ads/")) return "Google / Ads";
   if (skill.slug.startsWith("google/analytics/")) return "Google / Analytics";
   if (skill.slug.startsWith("google/cloud/")) return "Google / Cloud";
 
   const text = `${skill.slug} ${skill.name} ${skill.description}`.toLowerCase();
-  if (/\b(solana|anchor|pinocchio|codama|litesvm|mollusk|surfpool|magicblock|wallet|token|crypto|blockchain|dflow|kalshi|phantom|dex|pump|clawd|vulcan|imperial|perp|tee|zk|gateway|swarm|light protocol|compressed)\b/.test(text)) {
+  if (/\b(solana|anchor|pinocchio|codama|litesvm|mollusk|surfpool|magicblock|wallet|token|crypto|blockchain|dflow|kalshi|phantom|dex|pump|clawd|vulcan|imperial|phoenix|perp|tee|zk|gateway|swarm|light protocol|zkcompression|compressed)\b/.test(text)) {
     return "Solana / Blockchain";
   }
   if (/\b(audio|image|images|pdf|video|camera|frames|gif|tts|speech|transcribe|whisper|hue|sonos|spotify|canvas)\b/.test(text)) {
