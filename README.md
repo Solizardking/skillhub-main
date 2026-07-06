@@ -3,9 +3,9 @@
 <img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />
 
 [![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)
-![Skills](https://img.shields.io/badge/skills-239-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-9-00C2FF?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-240-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-9-00C2FF?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
 
-**239 installable agent skills.** Every one is a `SKILL.md` playbook your agent can pull off the shelf —
+**240 installable agent skills.** Every one is a `SKILL.md` playbook your agent can pull off the shelf —
 hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
 
 *Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️
@@ -27,7 +27,7 @@ Nine zones. Every skill lives in exactly one. Click a zone to jump to its catalo
 | [📍 **Local / Web Services**](#-local--web-services) | 6 | `█░░░░░░░░░░░░░░░░░` | Weather, places, food, and everyday web services |
 | [🎬 **Media / Devices**](#-media--devices) | 22 | `████░░░░░░░░░░░░░░` | Audio, video, images, TTS, cameras, and gadgets |
 | [💬 **Productivity / Messaging**](#-productivity--messaging) | 15 | `███░░░░░░░░░░░░░░░` | Notes, tasks, chat, and mail on autopilot |
-| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 98 | `██████████████████` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
+| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 99 | `██████████████████` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
 | [🧰 **Utilities**](#-utilities) | 12 | `██░░░░░░░░░░░░░░░░` | Handy one-off power tools |
 
 ## 🚀 Install in 10 Seconds
@@ -328,7 +328,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🟣 Solana / Blockchain
 
-> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **98 skills**
+> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **99 skills**
 
 <details>
 <summary>Open the Solana / Blockchain cabinet</summary>
@@ -405,6 +405,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`pumpfun-trading`](./pumpfun-trading/SKILL.md) | pumpfun-trading | Quick Pump.fun trading shortcut for buy/sell flow selection, bonding curve versus AMM state checks, slippage handling, risk controls, and SDK trade instruction building. |
 | [`solana-clawd`](./solana-clawd/SKILL.md) | solana-clawd | One-shot setup and operation guide for the solana-clawd agentic engine. Use when: cloning the repo, setting up MCP tools, starting the Telegram bot, deploying to Fly.io/Netlify, hatching blockchain buddies, running OODA loops, configuring voice mode (ElevenLabs + Grok), minting Metaplex agents, managing the vault, running the worker swarm, or contributing to the project. Covers all 31 MCP tools, 18 buddy species, 9 spinners, 60+ Telegram commands, 95 skills, and the full repo structure. |
 | [`solana-clawd-agentic-commerce`](./solana-clawd-agentic-commerce/SKILL.md) | solana-clawd-agentic-commerce | Build and operate Solana CLAWD agents that spend through Pay CLI, expose paid stores, mint Metaplex-readable identities, and launch Genesis agent tokens. |
+| [`solana-clawd-agents`](./solana-clawd-agents/SKILL.md) | solana-clawd-agents | Use the imported Solana Clawd Agents hub catalog to browse, validate, build, deploy, mint, stake, and integrate production-ready Solana agent definitions, including x402 paid-agent APIs, MCP catalog endpoints, Cloudflare Worker API, Metaplex Core minting, and agent JSON schema workflows. |
 | [`solana-dev`](./solana-dev/SKILL.md) | solana-dev | Use when user asks to "build a Solana dapp", "write an Anchor program", "create a token", "debug Solana errors", "set up wallet connection", "test my Solana program", "deploy to devnet", or "explain Solana concepts" (rent, accounts, PDAs, CPIs, etc.). Also use for quick on-chain lookups via public RPC + curl — "what's the balance of <wallet>", "look up transaction <sig>", "token balance for <account>", "check this address on mainnet/devnet". End-to-end Solana development playbook covering wallet connection, Anchor/Pinocchio programs, Codama client generation, LiteSVM/Mollusk/Surfpool testing, security checklists, and JSON-RPC curl lookups against public clusters. Integrates with the Solana MCP server for live documentation search. Prefers framework-kit (@solana/client + @solana/react-hooks) for UI, wallet-standard-first connection (incl. ConnectorKit), @solana/kit for client/RPC code, and @solana/web3-compat for legacy boundaries. |
 | [`solana-formal-verification`](./solana-formal-verification/SKILL.md) | qedgen | Formally verify programs by writing Lean 4 proofs. Trigger this skill whenever the user wants to formally verify code, generate Lean 4 proofs, prove properties about algorithms or smart contracts, verify invariants, convert program logic into formal specifications, or anything involving Lean 4 and formal verification. Also trigger when the user mentions "qedgen", "lean proof", "formal proof", "verify my code", "prove correctness", "formal verification", or wants mathematical guarantees about their implementation. |
 | [`solana-ralphy-skill`](./solana-ralphy-skill/SKILL.md) | solana-ralphy-skill | Autonomous AI coding loop for Solana development that combines Ralphy-style task execution with Solana program, token launch, dApp, testing, and multi-engine coding workflows. Use when running PRD-driven or parallel Solana implementation tasks. |
