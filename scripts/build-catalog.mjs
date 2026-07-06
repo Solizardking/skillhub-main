@@ -2011,6 +2011,12 @@ function renderIndexHtml(catalog) {
     const empty = document.getElementById("empty");
     const visibleCount = document.getElementById("visibleCount");
     const scannerLink = document.getElementById("scannerLink");
+    const scannerOpsLink = document.getElementById("scannerOpsLink");
+    const creatorName = document.getElementById("creatorName");
+    const creatorResources = document.getElementById("creatorResources");
+    const creatorPurpose = document.getElementById("creatorPurpose");
+    const creatorOutput = document.getElementById("creatorOutput");
+    const copyCreator = document.getElementById("copyCreator");
     const merchantWallet = document.getElementById("merchantWallet");
     const paymentNetwork = document.getElementById("paymentNetwork");
     const offchainCheckout = document.getElementById("offchainCheckout");
@@ -2024,6 +2030,7 @@ function renderIndexHtml(catalog) {
 
     if (window.location.protocol === "file:") {
       scannerLink.setAttribute("href", "scanner/index.html");
+      scannerOpsLink.setAttribute("href", "scanner/index.html");
     }
 
     merchantWallet.value = paymentSettings.wallet;
@@ -2139,6 +2146,35 @@ function renderIndexHtml(catalog) {
 
     function escapeJs(value) {
       return String(value).replace(/\\\\/g, "\\\\\\\\").replace(/"/g, '\\"');
+    }
+
+    function slugifySkillName(value) {
+      return String(value || "new-skill")
+        .trim()
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-+|-+$/g, "")
+        .slice(0, 64) || "new-skill";
+    }
+
+    function renderCreatorPlan() {
+      const slug = slugifySkillName(creatorName.value);
+      const resources = creatorResources.value || "scripts,references";
+      const purpose = creatorPurpose.value.trim() || "Describe the trigger, workflow, and expected output.";
+      creatorOutput.value = [
+        "Skill: " + slug,
+        "Folder: " + slug,
+        "Resources: " + resources,
+        "",
+        "Creator prompt:",
+        "Use skill-creator to create or update " + slug + ". Purpose: " + purpose + " Include resources: " + resources + ".",
+        "",
+        "Install creator:",
+        "npx github:Solizardking/skills install skill-creator",
+        "",
+        "Validate after edits:",
+        "scripts/quick_validate.py <path-to-" + slug + ">"
+      ].join("\\n");
     }
 
     function countsByCategory(items) {
@@ -2343,9 +2379,14 @@ function renderIndexHtml(catalog) {
     merchantWallet.addEventListener("input", savePaymentSettings);
     paymentNetwork.addEventListener("change", savePaymentSettings);
     offchainCheckout.addEventListener("input", savePaymentSettings);
+    creatorName.addEventListener("input", renderCreatorPlan);
+    creatorResources.addEventListener("change", renderCreatorPlan);
+    creatorPurpose.addEventListener("input", renderCreatorPlan);
+    copyCreator.addEventListener("click", () => copyText(creatorOutput.value));
     search.addEventListener("input", render);
     category.addEventListener("change", render);
     sort.addEventListener("change", render);
+    renderCreatorPlan();
     render();
   </script>
 </body>
@@ -2355,9 +2396,9 @@ function renderIndexHtml(catalog) {
 
 function renderFavicon() {
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#ffffff"/>
-  <path d="M12 20h40M12 32h40M12 44h40" stroke="#0f766e" stroke-width="6" stroke-linecap="round"/>
-  <path d="M22 12v40M42 12v40" stroke="#8a5a11" stroke-width="6" stroke-linecap="round"/>
+  <rect width="64" height="64" rx="12" fill="#111715"/>
+  <path d="M12 20h40M12 32h40M12 44h40" stroke="#39d7a6" stroke-width="6" stroke-linecap="round"/>
+  <path d="M22 12v40M42 12v40" stroke="#e8b44e" stroke-width="6" stroke-linecap="round"/>
 </svg>
 `;
 }
