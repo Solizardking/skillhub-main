@@ -1107,23 +1107,25 @@ function renderIndexHtml(catalog) {
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <style>
     :root {
-      color-scheme: light;
-      --bg: #f3f6f8;
-      --panel: #ffffff;
-      --ink: #17211f;
-      --muted: #60706d;
-      --line: #d7e0df;
-      --green: #0f766e;
-      --blue: #2563eb;
-      --amber: #a16207;
-      --purple: #6d28d9;
-      --red: #b42318;
-      --chip: #eef7f5;
-      --soft-green: #e7f4ef;
-      --soft-blue: #eaf1ff;
-      --soft-amber: #fff6db;
-      --soft-red: #fde8e7;
-      --shadow: 0 1px 2px rgba(23, 33, 31, 0.08), 0 12px 28px rgba(23, 33, 31, 0.08);
+      color-scheme: dark;
+      --bg: #0b0f0e;
+      --panel: #151b19;
+      --panel-strong: #1b2421;
+      --ink: #edf7f3;
+      --muted: #9baba6;
+      --line: #2b3834;
+      --green: #39d7a6;
+      --blue: #75a8ff;
+      --amber: #e8b44e;
+      --purple: #b99cff;
+      --red: #ff8b82;
+      --chip: #1d2a26;
+      --soft-green: rgba(57, 215, 166, 0.14);
+      --soft-blue: rgba(117, 168, 255, 0.14);
+      --soft-amber: rgba(232, 180, 78, 0.14);
+      --soft-red: rgba(255, 139, 130, 0.14);
+      --soft-purple: rgba(185, 156, 255, 0.14);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.28), 0 18px 42px rgba(0, 0, 0, 0.24);
     }
 
     * {
@@ -1132,7 +1134,8 @@ function renderIndexHtml(catalog) {
 
     body {
       margin: 0;
-      background: var(--bg);
+      background:
+        linear-gradient(180deg, #121815 0%, var(--bg) 58%, #0f100c 100%);
       color: var(--ink);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.45;
@@ -1181,9 +1184,9 @@ function renderIndexHtml(catalog) {
       border: 1px solid var(--green);
       border-radius: 8px;
       background:
-        linear-gradient(90deg, transparent 48%, rgba(15, 118, 110, 0.28) 48% 52%, transparent 52%),
-        linear-gradient(0deg, transparent 48%, rgba(37, 99, 235, 0.22) 48% 52%, transparent 52%),
-        var(--panel);
+        linear-gradient(90deg, transparent 48%, rgba(57, 215, 166, 0.34) 48% 52%, transparent 52%),
+        linear-gradient(0deg, transparent 48%, rgba(117, 168, 255, 0.26) 48% 52%, transparent 52%),
+        var(--panel-strong);
       flex: 0 0 auto;
       animation: mark-shift 8s ease-in-out infinite;
     }
@@ -1226,7 +1229,8 @@ function renderIndexHtml(catalog) {
       min-height: 34px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: var(--panel);
+      background: var(--panel-strong);
+      color: var(--ink);
       box-shadow: var(--shadow);
       font-size: 13px;
       font-weight: 720;
@@ -1239,13 +1243,13 @@ function renderIndexHtml(catalog) {
     .copy-action {
       border-color: var(--green);
       background: var(--green);
-      color: #fff;
+      color: #06110f;
     }
 
     .open-action {
-      border-color: rgba(37, 99, 235, 0.28);
+      border-color: rgba(117, 168, 255, 0.28);
       background: var(--soft-blue);
-      color: #1e4eb3;
+      color: #cfe0ff;
     }
 
     .toolbar {
@@ -1261,17 +1265,21 @@ function renderIndexHtml(catalog) {
       min-height: 42px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #fff;
+      background: #101614;
       color: var(--ink);
       font: inherit;
       padding: 0 12px;
+    }
+
+    input::placeholder {
+      color: #74847f;
     }
 
     input:focus,
     select:focus,
     button:focus-visible,
     a:focus-visible {
-      outline: 3px solid rgba(37, 99, 235, 0.24);
+      outline: 3px solid rgba(117, 168, 255, 0.28);
       outline-offset: 1px;
     }
 
@@ -1304,6 +1312,95 @@ function renderIndexHtml(catalog) {
       color: var(--muted);
       font-size: 12px;
       line-height: 1.2;
+    }
+
+    .ops {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 10px;
+      margin: 0 0 18px;
+    }
+
+    .ops-card {
+      position: relative;
+      min-width: 0;
+      overflow: hidden;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .ops-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -45%;
+      width: 45%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--green), var(--blue), transparent);
+      animation: ops-scan 4.8s linear infinite;
+    }
+
+    .ops-kicker {
+      display: inline-flex;
+      align-items: center;
+      min-height: 22px;
+      padding: 0 7px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--muted);
+      font-size: 11px;
+      font-weight: 740;
+      text-transform: uppercase;
+    }
+
+    .ops-card h2 {
+      margin: 10px 0 0;
+      font-size: 18px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .ops-card p {
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .ops-links,
+    .creator-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .creator-form {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(118px, 158px);
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .creator-form input:last-child,
+    .creator-output {
+      grid-column: 1 / -1;
+    }
+
+    .creator-output {
+      width: 100%;
+      min-height: 118px;
+      margin-top: 8px;
+      resize: vertical;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #0f1513;
+      color: var(--ink);
+      font: 12px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+      padding: 10px;
     }
 
     .monetize {
@@ -1359,26 +1456,26 @@ function renderIndexHtml(catalog) {
       border: 1px solid var(--line);
       border-radius: 999px;
       background: var(--chip);
-      color: #25423f;
+      color: #d9e8e3;
       font-size: 12px;
       font-weight: 700;
       white-space: nowrap;
     }
 
     .badge.green {
-      border-color: rgba(15, 118, 110, 0.28);
+      border-color: rgba(57, 215, 166, 0.32);
       background: var(--soft-green);
-      color: #0b5f59;
+      color: #91f1d2;
     }
 
     .badge.amber {
-      border-color: rgba(161, 98, 7, 0.28);
+      border-color: rgba(232, 180, 78, 0.32);
       background: var(--soft-amber);
-      color: #7c4b05;
+      color: #ffd78a;
     }
 
     .badge.red {
-      border-color: rgba(180, 35, 24, 0.28);
+      border-color: rgba(255, 139, 130, 0.34);
       background: var(--soft-red);
       color: var(--red);
     }
@@ -1425,8 +1522,8 @@ function renderIndexHtml(catalog) {
 
     .map-card:hover,
     .map-card[aria-pressed="true"] {
-      border-color: rgba(37, 99, 235, 0.48);
-      box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.13), var(--shadow);
+      border-color: rgba(117, 168, 255, 0.48);
+      box-shadow: 0 0 0 1px rgba(117, 168, 255, 0.15), var(--shadow);
       transform: translateY(-1px);
     }
 
@@ -1454,7 +1551,7 @@ function renderIndexHtml(catalog) {
       height: 8px;
       overflow: hidden;
       border-radius: 999px;
-      background: #e2e8e8;
+      background: #25312e;
     }
 
     .rail span {
@@ -1495,7 +1592,7 @@ function renderIndexHtml(catalog) {
     }
 
     .skill-card:hover {
-      border-color: rgba(37, 99, 235, 0.38);
+      border-color: rgba(117, 168, 255, 0.38);
       box-shadow: var(--shadow);
       transform: translateY(-2px);
     }
@@ -1541,7 +1638,7 @@ function renderIndexHtml(catalog) {
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--chip);
-      color: #25423f;
+      color: #d9e8e3;
       font-size: 12px;
       white-space: nowrap;
       overflow: hidden;
@@ -1565,7 +1662,7 @@ function renderIndexHtml(catalog) {
       display: none;
       place-items: center;
       padding: 18px;
-      background: rgba(12, 20, 18, 0.44);
+      background: rgba(4, 7, 6, 0.72);
     }
 
     .payment-backdrop.open {
@@ -1579,7 +1676,7 @@ function renderIndexHtml(catalog) {
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--panel);
-      box-shadow: 0 22px 60px rgba(10, 16, 14, 0.26);
+      box-shadow: 0 22px 60px rgba(0, 0, 0, 0.46);
     }
 
     .payment-head,
@@ -1611,7 +1708,7 @@ function renderIndexHtml(catalog) {
       padding: 12px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #fbfcfd;
+      background: #101614;
     }
 
     .payment-box strong,
@@ -1637,16 +1734,21 @@ function renderIndexHtml(catalog) {
       height: 34px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      background: #fff;
+      background: var(--panel-strong);
       color: var(--ink);
       font-size: 20px;
       line-height: 1;
     }
 
     @media (max-width: 1080px) {
+      .ops,
       .map,
       .stats {
         grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .ops-card:last-child {
+        grid-column: 1 / -1;
       }
     }
 
@@ -1658,12 +1760,18 @@ function renderIndexHtml(catalog) {
 
       header,
       .toolbar,
+      .ops,
+      .creator-form,
       .map,
       .stats,
       .monetize,
       .monetize-form,
       .payment-grid {
         grid-template-columns: 1fr;
+      }
+
+      .ops-card:last-child {
+        grid-column: auto;
       }
 
       .actions {
@@ -1725,6 +1833,23 @@ function renderIndexHtml(catalog) {
         background-position: 180% 50%;
       }
     }
+
+    @keyframes ops-scan {
+      0% {
+        left: -45%;
+        opacity: 0;
+      }
+      12% {
+        opacity: 1;
+      }
+      82% {
+        opacity: 1;
+      }
+      100% {
+        left: 100%;
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -1746,6 +1871,59 @@ function renderIndexHtml(catalog) {
     </header>
 
     <section class="stats" id="stats" aria-label="Hub metrics"></section>
+
+    <section class="ops" aria-label="Hub operations">
+      <article class="ops-card">
+        <span class="ops-kicker">Hub</span>
+        <h2>Skill Map</h2>
+        <p>${catalog.length} skills are indexed into installable API files, registry records, and searchable frontend cards.</p>
+        <div class="status-line">
+          <span class="badge green">Catalog live</span>
+          <span class="badge">API ready</span>
+          <span class="badge">Registry ready</span>
+        </div>
+        <div class="ops-links">
+          <a class="open-action" href="/api/skills.json">Open API</a>
+          <a class="open-action" href="/.well-known/skills-hub.json">Open manifest</a>
+        </div>
+      </article>
+
+      <article class="ops-card">
+        <span class="ops-kicker">Creator</span>
+        <h2>Skill Creator Hub</h2>
+        <div class="creator-form">
+          <input id="creatorName" autocomplete="off" spellcheck="false" placeholder="New skill name">
+          <select id="creatorResources" aria-label="Creator resources">
+            <option value="scripts,references">Scripts + references</option>
+            <option value="references">References only</option>
+            <option value="scripts">Scripts only</option>
+            <option value="assets">Assets only</option>
+            <option value="scripts,references,assets">Full bundle</option>
+          </select>
+          <input id="creatorPurpose" autocomplete="off" spellcheck="false" placeholder="Trigger or workflow">
+        </div>
+        <textarea class="creator-output" id="creatorOutput" readonly aria-label="Creator plan"></textarea>
+        <div class="creator-actions">
+          <button class="copy-action" type="button" id="copyCreator">Copy Plan</button>
+          <a class="open-action" href="/api/skills/skill-creator/SKILL.md">Open Creator Skill</a>
+        </div>
+      </article>
+
+      <article class="ops-card">
+        <span class="ops-kicker">Scanner</span>
+        <h2>Verification Scanner</h2>
+        <p>Scanner output is bundled into the static site with risk, verification, hashes, and on-chain registry state.</p>
+        <div class="status-line">
+          <span class="badge green">Verifier linked</span>
+          <span class="badge">Risk rules loaded</span>
+          <span class="badge">Hashes indexed</span>
+        </div>
+        <div class="ops-links">
+          <a class="open-action" id="scannerOpsLink" href="/scanner">Open Scanner</a>
+          <a class="open-action" href="/api/verification.json">Open verification API</a>
+        </div>
+      </article>
+    </section>
 
     <section class="monetize" aria-label="Skill monetization">
       <div>
