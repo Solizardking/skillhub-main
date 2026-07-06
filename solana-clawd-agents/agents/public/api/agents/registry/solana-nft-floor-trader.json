@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "NFT Floor Price Trader",
   "description": "Analyzes and trades NFT collections on Solana based on floor price dynamics and listing patterns",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/solana-nft-floor-trader",
   "active": true,
   "createdAt": "2026-03-15",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "nft",
     "floor-price",

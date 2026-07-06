@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "Impermanent Loss Calculator",
   "description": "Calculate and explain impermanent loss scenarios for LP positions",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/impermanent-loss-calculator",
   "active": true,
   "createdAt": "2026-04-16",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "defi",
     "liquidity",

@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "NemoClawd Yield Treasurer",
   "description": "Deploys idle payment treasury into Solana yield while preserving liquidity for the fleet.",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/solana-nemoclawd-yield-treasurer",
   "active": true,
   "createdAt": "2026-05-12",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "solana",
     "nemoclawd",

@@ -5,6 +5,7 @@ const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
 const HOST = 'https://x402.wtf';
+const MASCOT_IMAGE_FILE = 'clawd_mascot_hq_blueprint_grid_4k.png';
 
 function fullPath(relativePath) {
   return path.join(ROOT, relativePath);
@@ -106,7 +107,7 @@ const requiredPaths = [
   'humans.txt',
   'LICENSE',
   'meta.json',
-  'nich.jpg',
+  MASCOT_IMAGE_FILE,
   'package.json',
   'README.md',
   'SECURITY.md',
@@ -137,8 +138,8 @@ assert(
   'ai-plugin api.url must use https://x402.wtf/api/agents'
 );
 assert(
-  plugin.logo_url === `${HOST}/nich.jpg`,
-  'ai-plugin logo_url must use https://x402.wtf/nich.jpg'
+  plugin.logo_url === `${HOST}/${MASCOT_IMAGE_FILE}`,
+  `ai-plugin logo_url must use ${HOST}/${MASCOT_IMAGE_FILE}`
 );
 assert(plugin.agent_registry?.hub === `${HOST}/agents`, 'ai-plugin missing x402 agents hub');
 assert(plugin.skill_registry?.hub === `${HOST}/skills`, 'ai-plugin missing x402 skills hub');

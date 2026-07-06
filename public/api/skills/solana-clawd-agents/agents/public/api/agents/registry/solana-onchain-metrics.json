@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "On-Chain Metrics Dashboard",
   "description": "Real-time on-chain analytics: TVL, volume, active addresses, velocity for Solana",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/solana-onchain-metrics",
   "active": true,
   "createdAt": "2026-03-15",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "on-chain",
     "metrics",

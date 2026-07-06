@@ -5,8 +5,8 @@
   "description": "Use the imported Solana Clawd Agents hub catalog to browse, validate, build, deploy, mint, stake, and integrate production-ready Solana agent definitions, including x402 paid-agent APIs, MCP catalog endpoints, Cloudflare Worker API, Metaplex Core minting, and agent JSON schema workflows.",
   "source": "https://skills.onchainai.fund/api/skills/solana-clawd-agents/SKILL.md",
   "metadata": "https://skills.onchainai.fund/api/skills/solana-clawd-agents/metadata.json",
-  "bundleHash": "sha256-ebbaa6c66e8485a5f5aef6d0e48bfa510e41afb3a686a1fe8f5c7e4c7538f938",
-  "merkleLeaf": "sha256-dd08d6aa31333fe78cf3e0669e2a5e8bfd4d02dcce0d9c0569b63050414d61ce",
+  "bundleHash": "sha256-8ae4ebb8b97b8156a14b84b78c479a57c77d5807726e2e82cf56203525a1378a",
+  "merkleLeaf": "sha256-8145bd6750f9b1eb9e38046277e1da4a75852692625c0f0f7a2855c6899e740d",
   "files": [
     {
       "path": "agents/agent-minter/Cargo.lock",
@@ -170,8 +170,8 @@
     },
     {
       "path": "agents/agents-catalog.json",
-      "bytes": 218883,
-      "sha256": "sha256-344f59219fce9ab395701ee20232e87e78b20756f3cc3541468e2aba07cef195"
+      "bytes": 221377,
+      "sha256": "sha256-17f7fc79794ce7680fbc1a4664b95f764cf9eb23864fcef37eced8225e1be38f"
     },
     {
       "path": "agents/agents-manifest.json",
@@ -185,8 +185,8 @@
     },
     {
       "path": "agents/build-catalog.cjs",
-      "bytes": 21455,
-      "sha256": "sha256-522062419c942c9cacfea234e8627e5881f4dd16cc2f456ea53cb738d9a1e76e"
+      "bytes": 22112,
+      "sha256": "sha256-b20b5ae10117c42c1f2ef62e3690fc47e12160e7165fafe495cda04d79649ea8"
     },
     {
       "path": "agents/bun.lock",
@@ -257,6 +257,11 @@
       "path": "agents/CITATION.cff",
       "bytes": 534,
       "sha256": "sha256-10111d56b02856655445f988bfce1257f7840f9981cdaca5db96aebf576a4b9c"
+    },
+    {
+      "path": "agents/clawd_mascot_hq_blueprint_grid_4k.png",
+      "bytes": 7493700,
+      "sha256": "sha256-c81e726aa49866bfd98334ff2dabda0c8d28f3c5eb2fcab1f982305c9e5385e4"
     },
     {
       "path": "agents/cli/package-lock.json",
@@ -4306,27 +4311,27 @@
     {
       "path": "agents/public/api/agents/acp-registry.json",
       "bytes": 128549,
-      "sha256": "sha256-1a035fe52ef17a379241f0ef72b8235a4988723c900a5a014ff4935723d814bd"
+      "sha256": "sha256-593d0a0d85bd385530b0a7ed43bd0d92447a3f93237ad81e9516a5df9d898575"
     },
     {
       "path": "agents/public/api/agents/agents-catalog.json",
-      "bytes": 218883,
-      "sha256": "sha256-344f59219fce9ab395701ee20232e87e78b20756f3cc3541468e2aba07cef195"
+      "bytes": 221377,
+      "sha256": "sha256-17f7fc79794ce7680fbc1a4664b95f764cf9eb23864fcef37eced8225e1be38f"
     },
     {
       "path": "agents/public/api/agents/catalog/airdrop-hunter.json",
-      "bytes": 877,
-      "sha256": "sha256-cb5adff2835393e4af543302aa582e9d790321d274d72d50fff5b5a58a79c8bf"
+      "bytes": 906,
+      "sha256": "sha256-8fa86a3414eff47738b6ecd544b131aa249a4080615a43d2e2e7b821a3c6fba7"
     },
     {
       "path": "agents/public/api/agents/catalog/alpha-leak-detector.json",
-      "bytes": 879,
-      "sha256": "sha256-f9ddbd3938d32fb5dbd5f7caf9c000619baee65b70a5ab1d8a0c07dead922a2e"
+      "bytes": 908,
+      "sha256": "sha256-3b858d664109b524aee30fb2867c15fb98fefe7f0745a6da27630ea79bd46b2f"
     },
     {
       "path": "agents/public/api/agents/catalog/bridge-security-analyst.json",
-      "bytes": 904,
-      "sha256": "sha256-d2c2aa3f522b972e509eccafcaf39bb20f0093d4d449ec6c802a251a9a9da779"
+      "bytes": 933,
+      "sha256": "sha256-e5e642206e138773edfd89be03fe5129a5aa3bd4effb6d1519c8ba4fc9b3de0e"
     },
     {
       "path": "agents/public/api/agents/catalog/cheshire-terminal.json",
@@ -4335,13 +4340,13 @@
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-bridge-assistant.json",
-      "bytes": 837,
-      "sha256": "sha256-1cfd89af3b354e9ea9044a4b67532e34d5240251abef779acbe550293a980c83"
+      "bytes": 866,
+      "sha256": "sha256-c2235d93136cee227d5fee5424f9487de3c8a83cac1bed1c91864b03d99d5877"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-firecrawl.json",
-      "bytes": 819,
-      "sha256": "sha256-7dbb761ff35573f64bc35902ca8ae0ec54d37d02bd8d25ff2978076338c9b788"
+      "bytes": 848,
+      "sha256": "sha256-3f064fc67a1411d07dabd65a0a5ad4ee6e68ef08e2a04fbcc2ab411c3cde126d"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-formal-verification.json",
@@ -4355,8 +4360,8 @@
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-governance-guide.json",
-      "bytes": 869,
-      "sha256": "sha256-ce0fd8266f44abd90abc358c90ff9f33ea21c5c2570ea556f297007dbd845221"
+      "bytes": 898,
+      "sha256": "sha256-4c0c3ffe5e7e469278f24656a299de6b3f2087b521415649473f483e7dded63f"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-grok-runtime.json",
@@ -4365,18 +4370,18 @@
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-liquidity-strategist.json",
-      "bytes": 992,
-      "sha256": "sha256-e4b2521b27170601cd167b56981e89dd074e6b021b4c145cfdc610b7a335cda0"
+      "bytes": 1021,
+      "sha256": "sha256-accc54ee7d1eab28a194d43aa93389831d9701b5fbb3395c33cbfdfdeef0a05c"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-mayhem-mode.json",
-      "bytes": 1606,
-      "sha256": "sha256-4bef8194194936b34f0046b4a0ad05daa190f3e41a3fecf36015913273715d0d"
+      "bytes": 1635,
+      "sha256": "sha256-72430dac58f26738690f9a9804457109d2e924a3102a40b68c6a2520056b4e27"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-onboarding-guide.json",
-      "bytes": 841,
-      "sha256": "sha256-07a2332fc3e94ce7278a2e643d86ed03d9ddbac483ddb236e9b54f7ca96c6b7a"
+      "bytes": 870,
+      "sha256": "sha256-e5acbc6a0cdbf11fadb8a1b58dac027b7ecbee8442071b926a36f5d0a291002a"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-operator-runtime.json",
@@ -4385,8 +4390,8 @@
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-portfolio-tracker.json",
-      "bytes": 863,
-      "sha256": "sha256-ab4475d57f9c0a7bcc390c8db1b1c9db04bbf65e6be33372f7554360e97fdb80"
+      "bytes": 892,
+      "sha256": "sha256-d7efa0bdbf02e40d2623f65167a95be361831a0a06698a276f0f8f5cd2f15cea"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-pump-runtime.json",
@@ -4395,13 +4400,13 @@
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-pumpfun-official.json",
-      "bytes": 1276,
-      "sha256": "sha256-8af1f82849b798af8010ce2f5ea8083179e289f1a85ba76dd61a52750a05c712"
+      "bytes": 1305,
+      "sha256": "sha256-9e1dffec8d192b3f9476b25cbbd0c5b147128563a55a5ca19e6cd66902e0830a"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-risk-monitor.json",
-      "bytes": 871,
-      "sha256": "sha256-8d29f64f4219893bfe4ceb34821e372e09b4c7034b03cbbc649bf9450cc8b652"
+      "bytes": 900,
+      "sha256": "sha256-89a61e2271357ffd97f5007bcfc3ebce0fdb77aec60e28662581aea78e528d37"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-router-runtime.json",
@@ -4410,13 +4415,13 @@
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-web3-domain-agent.json",
-      "bytes": 979,
-      "sha256": "sha256-c501fc1d32a29d6da481db5fb8ff136241976d1085d04d0c836a2c29fcdb7002"
+      "bytes": 1008,
+      "sha256": "sha256-1bda49c64bbdcb4073dac5e756be3a4662dfe78330d4f280f4b380786cbc7568"
     },
     {
       "path": "agents/public/api/agents/catalog/clawd-yield-aggregator.json",
-      "bytes": 964,
-      "sha256": "sha256-841ca1432d9a842b45cf76dbc3267a440a25c7b5cd3515a98e376fc05b7b46da"
+      "bytes": 993,
+      "sha256": "sha256-d6294032de74de3130111fe6360d07761f3c89c213cf7ad3b1b792d601d208f0"
     },
     {
       "path": "agents/public/api/agents/catalog/clawdex.json",
@@ -4425,108 +4430,108 @@
     },
     {
       "path": "agents/public/api/agents/catalog/crypto-news-analyst.json",
-      "bytes": 896,
-      "sha256": "sha256-a26c018e1dc16b8d9a44ee64f94bcf1a98778579b426afb9207079513ca5f90d"
+      "bytes": 925,
+      "sha256": "sha256-ff9f92d71b6b81b04b05026206696163cace112fd7990783338e85c5590c21d5"
     },
     {
       "path": "agents/public/api/agents/catalog/defi-insurance-advisor.json",
-      "bytes": 855,
-      "sha256": "sha256-3a9d3af83edeff762e2d8c3444a35f61debb068927809d5653b3ac91a10ffa68"
+      "bytes": 884,
+      "sha256": "sha256-2d94314c296c72deded188a419ac54bdb1e95eb1d0bf80761f4bfd6fadb476ad"
     },
     {
       "path": "agents/public/api/agents/catalog/defi-onboarding-mentor.json",
-      "bytes": 862,
-      "sha256": "sha256-e0f4c6b24b65686e49745ff7af1be06e31b3a87a64b0f29b6ab04efb285a1b58"
+      "bytes": 891,
+      "sha256": "sha256-ff0ab730ae5c844a90f208644c9fa266190e5f0a48b1fdeb946ccd7442f5717c"
     },
     {
       "path": "agents/public/api/agents/catalog/defi-protocol-comparator.json",
-      "bytes": 868,
-      "sha256": "sha256-9163969a2045896565df03900a7128a27eac2cd661bfa8411ef3f146343367fe"
+      "bytes": 897,
+      "sha256": "sha256-a9d110be9b1c8e38e118c551fef7d38b08278b97804b308088b1050fac83f4d5"
     },
     {
       "path": "agents/public/api/agents/catalog/defi-risk-scoring-engine.json",
-      "bytes": 914,
-      "sha256": "sha256-aad4f7eb5ca4209f5dd4257f656ca8fb5b8942e3bb7aac9ccb21b9774a86e19b"
+      "bytes": 943,
+      "sha256": "sha256-ba99232b6454a940ccd09b6df18bc091f66b145dad8cb0b52fcc11542c1c30be"
     },
     {
       "path": "agents/public/api/agents/catalog/defi-yield-farmer.json",
-      "bytes": 976,
-      "sha256": "sha256-88bb1c25b3c17536d778fb5b36a67bcebc831bca0e3956799fd7b64146345cb3"
+      "bytes": 1005,
+      "sha256": "sha256-2c16b2f15fd27fe9a29bbbfba7fe31533d043371fbdc431f3d2a1ec8086605f4"
     },
     {
       "path": "agents/public/api/agents/catalog/dex-aggregator-optimizer.json",
-      "bytes": 917,
-      "sha256": "sha256-d998cd0133de745554b3f4c92615b90d124f94bf9226e56bcaa2d9aef21f628f"
+      "bytes": 946,
+      "sha256": "sha256-a6cdc4ee6e67461996d32d5ed440580f0f371794087d031e57c2628c0de16321"
     },
     {
       "path": "agents/public/api/agents/catalog/governance-proposal-analyst.json",
-      "bytes": 920,
-      "sha256": "sha256-f304750803691b79e6757fb49611db2830409551231ae57f12291d9f7e5702d9"
+      "bytes": 949,
+      "sha256": "sha256-cfb0668807c77e2e52a4ca7db7b74d79ea81f3d0413839af2bb4449815949173"
     },
     {
       "path": "agents/public/api/agents/catalog/impermanent-loss-calculator.json",
-      "bytes": 892,
-      "sha256": "sha256-b55e0c455f5dff68281e3c85ad3bd849c2f89822fbf1c77d3775520f57baf725"
+      "bytes": 921,
+      "sha256": "sha256-ac808581221ad7c1504abb80197e2e0aa4e5380f843232ceef8d6cc44ef40846"
     },
     {
       "path": "agents/public/api/agents/catalog/index.json",
-      "bytes": 218883,
-      "sha256": "sha256-344f59219fce9ab395701ee20232e87e78b20756f3cc3541468e2aba07cef195"
+      "bytes": 221377,
+      "sha256": "sha256-17f7fc79794ce7680fbc1a4664b95f764cf9eb23864fcef37eced8225e1be38f"
     },
     {
       "path": "agents/public/api/agents/catalog/liquidation-risk-manager.json",
-      "bytes": 948,
-      "sha256": "sha256-5cfb86bdabfa54ae1b8412845aa6cdd3e0304116ab25fa641e7774f044cf542f"
+      "bytes": 977,
+      "sha256": "sha256-2772bdcf00c0bbe9c58afe2bd166b28ad4b243b65d601f4ca4239e73f72938f8"
     },
     {
       "path": "agents/public/api/agents/catalog/liquidity-pool-analyzer.json",
-      "bytes": 920,
-      "sha256": "sha256-4ba554ccb3e4c3448e0b7307e449665e8a2797043caf76b04dc541ab57c6c7f3"
+      "bytes": 949,
+      "sha256": "sha256-745cb826eabd9ff1141bbb41df7c5505366e5a50622d3ba3dd1716fff02e9a5c"
     },
     {
       "path": "agents/public/api/agents/catalog/mev-protection-advisor.json",
-      "bytes": 901,
-      "sha256": "sha256-802501ca3bff368dadcf863ea14a8f6d0c6a578c2304ccea9a72c0aac0f4fc23"
+      "bytes": 930,
+      "sha256": "sha256-2cb1b278d6403e634b559e7f57f10d57fd2126c65a5ce944ab5d35b459e5419e"
     },
     {
       "path": "agents/public/api/agents/catalog/narrative-trend-analyst.json",
-      "bytes": 874,
-      "sha256": "sha256-1fb735b99a8e4977432400f9e37e9764977828d35f91591af8e5ed8d07f88c70"
+      "bytes": 903,
+      "sha256": "sha256-2148594908a0ccf53d1d7e0f9aba883222811f9b00918f543469c6bf9b94faac"
     },
     {
       "path": "agents/public/api/agents/catalog/nft-liquidity-advisor.json",
-      "bytes": 932,
-      "sha256": "sha256-4580ba1f4563e10744de752f3dfddd2baff9cd76c900f9917646a947b519a8dd"
+      "bytes": 961,
+      "sha256": "sha256-e67014f7be6663c4aa150269c719e08d482bb0ae5770154fd49613d3753a18c9"
     },
     {
       "path": "agents/public/api/agents/catalog/pay-agent.json",
-      "bytes": 947,
-      "sha256": "sha256-39dfcef200cca85a88b347d1da07bdb00b6a89f139844a7234bb763a0789979e"
+      "bytes": 976,
+      "sha256": "sha256-6b9ee9ccfed44116accd4bd22dab848d44d1e8d0e3b453f7c5f86156383f719e"
     },
     {
       "path": "agents/public/api/agents/catalog/portfolio-rebalancing-advisor.json",
-      "bytes": 944,
-      "sha256": "sha256-48709e86c4c5d7564585036e08c8189f2dfd569bab93bcc585f3684a0adb7b42"
+      "bytes": 973,
+      "sha256": "sha256-060811a02f8104be28d6fe988b25407633cf85879256ab0ecbd214d82037c4be"
     },
     {
       "path": "agents/public/api/agents/catalog/protocol-revenue-analyst.json",
-      "bytes": 892,
-      "sha256": "sha256-086929d55f9c6877da4f319464b82351ecb0d452a2b9d578230beb8634a714a0"
+      "bytes": 921,
+      "sha256": "sha256-8b4f7c687427db091fc9e2a878b2114f370546b03bff33bc603e26aaac97a46a"
     },
     {
       "path": "agents/public/api/agents/catalog/protocol-treasury-analyst.json",
-      "bytes": 881,
-      "sha256": "sha256-da3018a0704d8eb1aaced82514acc933610f74baf730dc78f592df0668990a51"
+      "bytes": 910,
+      "sha256": "sha256-8a678aa783f40ed51976c9e236e6819cffeafb61e843b6c48c8d30a6ca9ce9f6"
     },
     {
       "path": "agents/public/api/agents/catalog/pump-fun-sdk-expert.json",
-      "bytes": 1012,
-      "sha256": "sha256-227164ec51ebd4aee7d1133ed8dc6dbb007d7ec2970e37b6324ba85942a9169f"
+      "bytes": 1041,
+      "sha256": "sha256-dffc44e7cd196b385f3030ba169a046ad561a368e6d69ce16a74dd8ffaf52988"
     },
     {
       "path": "agents/public/api/agents/catalog/smart-contract-auditor.json",
-      "bytes": 875,
-      "sha256": "sha256-0435c9a0943bb916e911606bc214cc4c912911286043ad7032bf04ad13a9a15a"
+      "bytes": 904,
+      "sha256": "sha256-f14e25908332584dbcf04e607017805a04e47cbade3f7d7d78ef120fc80fb212"
     },
     {
       "path": "agents/public/api/agents/catalog/solana-agent-orchestrator.json",
@@ -4660,13 +4665,13 @@
     },
     {
       "path": "agents/public/api/agents/catalog/solana-jupiter-router.json",
-      "bytes": 887,
-      "sha256": "sha256-e1344d661e3e7958ca3e146a6e74e62f2a6565c7359f3e383f667ab94ebf6b7d"
+      "bytes": 916,
+      "sha256": "sha256-4d45da2ea58a07ca745f597dafa6c18d04a172e7ebddcd0218297c6b723d631c"
     },
     {
       "path": "agents/public/api/agents/catalog/solana-kamino-picker.json",
-      "bytes": 942,
-      "sha256": "sha256-be033f11670cb7d6a480b847116d624a323a2ab99e66f97a178f42c2257c5f89"
+      "bytes": 971,
+      "sha256": "sha256-73337c491f57633fa2fea65fe94898c234c283dea2b1acc2567207447dd8c140"
     },
     {
       "path": "agents/public/api/agents/catalog/solana-lending-strategist.json",
@@ -4705,8 +4710,8 @@
     },
     {
       "path": "agents/public/api/agents/catalog/solana-mpl-core-launcher.json",
-      "bytes": 1144,
-      "sha256": "sha256-cb488f13678d32a855f199e326bce8fa6823ec931825931ef657434faa74b880"
+      "bytes": 1173,
+      "sha256": "sha256-622367f292ba1ef414e43b86425bc040becaf7f0e63e71df7cd32dee673ca59c"
     },
     {
       "path": "agents/public/api/agents/catalog/solana-nanoclawd-cache-keeper.json",
@@ -4830,8 +4835,8 @@
     },
     {
       "path": "agents/public/api/agents/catalog/solana-pumpfun-screener.json",
-      "bytes": 900,
-      "sha256": "sha256-dcd9fcdc626c36413333efc4a0526d08abbc2e5a50b9ccfc13709c1552f106f5"
+      "bytes": 929,
+      "sha256": "sha256-84079243cf256ab6a6219d4c23d58a8d6543f33f8ba7b016da16982942707188"
     },
     {
       "path": "agents/public/api/agents/catalog/solana-quant-researcher.json",
@@ -4885,8 +4890,8 @@
     },
     {
       "path": "agents/public/api/agents/catalog/solana-validator-picker.json",
-      "bytes": 891,
-      "sha256": "sha256-16e23839e8251fd7166e71888d35c51ac0cb83bf76be84251128274d554563b1"
+      "bytes": 920,
+      "sha256": "sha256-263e8aadd7a428c0753dbfcd6a4ac0907cd58a17b26cd77598f879d7d5452fac"
     },
     {
       "path": "agents/public/api/agents/catalog/solana-vc-deal-analyzer.json",
@@ -4955,688 +4960,693 @@
     },
     {
       "path": "agents/public/api/agents/catalog/spa-tokenomics-analyst.json",
-      "bytes": 839,
-      "sha256": "sha256-a9ee605270ef2a16fedb285c962262424d96d4dd8ed552d3a409712c7de4f048"
+      "bytes": 868,
+      "sha256": "sha256-6104b55c088ad03ca8eeea45d2086d57d00fe6760d86d273930d21877bc17873"
     },
     {
       "path": "agents/public/api/agents/catalog/token-unlock-tracker.json",
-      "bytes": 855,
-      "sha256": "sha256-05c25344b5e8c7d4071c0336a82cfa2fd09b0d551c4c54ceaa7dcba9e4752b34"
+      "bytes": 884,
+      "sha256": "sha256-2961a9b25feff7f7437009e176910f88a68d5a3c05e53461cb84721f4a5faf26"
     },
     {
       "path": "agents/public/api/agents/catalog/wallet-security-advisor.json",
-      "bytes": 887,
-      "sha256": "sha256-4a5eed54ba212167f5cfe018cb12737eb8077fe7ac9bcbdbc48e5cc1a20d8edf"
+      "bytes": 916,
+      "sha256": "sha256-2fd4419b46953151ad111fac8e19e6e485c54c4e53ef0d8548d07c185fea3600"
     },
     {
       "path": "agents/public/api/agents/catalog/whale-watcher.json",
-      "bytes": 855,
-      "sha256": "sha256-c5dd6a23cd8c271fe0661d9b99e3071c20b51b02446e7c973739295746f5a35f"
+      "bytes": 884,
+      "sha256": "sha256-2b575d15fa5b63493e06a887bdc79f4f4cd1da1f8de0e32db2230246b8913fcd"
     },
     {
       "path": "agents/public/api/agents/index.json",
       "bytes": 273,
-      "sha256": "sha256-17e0d6d5e9bb1661fa3121ba7c1921b36de03bc084e9dbb755ba207f69dfd9ae"
+      "sha256": "sha256-6614adfe846c8f303bf79106b567aa0f2c1a926a854c3b07c1e685bfbb5bf561"
     },
     {
       "path": "agents/public/api/agents/registry/airdrop-hunter.json",
-      "bytes": 2336,
-      "sha256": "sha256-e271f0fe62baefad71a0a0097496801dce24aa93b60cbcd5ca37b586577a1ef1"
+      "bytes": 2365,
+      "sha256": "sha256-c63b9c421be7a5a2189d51c3e66b335bdf1e277e59544841c5f01b2c010cfc90"
     },
     {
       "path": "agents/public/api/agents/registry/alpha-leak-detector.json",
-      "bytes": 2363,
-      "sha256": "sha256-0f232b3d4588c44eb648e6a92c31dff6b4787b1d93c55dfcba9eb35ff629f498"
+      "bytes": 2392,
+      "sha256": "sha256-9f7e8940b8d887c657fc2967da548437cf7650867428e2fa74146d8d9ce6c3bb"
     },
     {
       "path": "agents/public/api/agents/registry/bridge-security-analyst.json",
-      "bytes": 2408,
-      "sha256": "sha256-ec9c896893975a9e81d7418cf6fd0216666d5d84588189ca19fb760662eea253"
+      "bytes": 2437,
+      "sha256": "sha256-f1b84424965e7bfc7d88fd65553a565616f2aef8460be078fafb241bad0bcd52"
     },
     {
       "path": "agents/public/api/agents/registry/cheshire-terminal.json",
-      "bytes": 2363,
-      "sha256": "sha256-a7360375598d294d0aafc1c5d7948b417aabde7539a1eb2cc799a47aa0c4e9c6"
+      "bytes": 2392,
+      "sha256": "sha256-04b17204a4e12a716a00fe4edd7cb8c57c0019639ac7d31582022c8e02add9df"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-bridge-assistant.json",
-      "bytes": 2342,
-      "sha256": "sha256-07f00d14914d39ae655722eec3efbd379252eae9f826dbdd7832ac558c12fdbd"
+      "bytes": 2371,
+      "sha256": "sha256-1793b8e0942e71295a8ff9dd07546480f2f9769a27942e56235b22c8e775ecd9"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-firecrawl.json",
-      "bytes": 2283,
-      "sha256": "sha256-1b7d0b752bda16d6cb526841e09b4cbc53c4df11b3eefc890b2119a85f8e872c"
+      "bytes": 2312,
+      "sha256": "sha256-6ee7a425694721cb009845c3d1e5fc4f688ac1e0d082fe4afd8c8fd6e8128b47"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-formal-verification.json",
-      "bytes": 2625,
-      "sha256": "sha256-3c5f696b5cdd0f3719a0d095f2d6cb8ce365cf82a672aa49b18c62b8717db909"
+      "bytes": 2654,
+      "sha256": "sha256-d408fe3a05a5f0c7b292552386641f1f9c282af72505c89d58752eee74ecccb2"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-gateway-runtime.json",
-      "bytes": 2741,
-      "sha256": "sha256-f6713651a3bec372f9d043ba2e11acae9e52549d3ac4c7ea12bc956d99e498eb"
+      "bytes": 2770,
+      "sha256": "sha256-6c5659cf47812d6bcc240268c9cb6ab155a84812434db612c0be57ee75c5f849"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-governance-guide.json",
-      "bytes": 2372,
-      "sha256": "sha256-61f4bf9dd358d4a0cee20cdf6787621fd0ee20bc154fc9f370689744464fda73"
+      "bytes": 2401,
+      "sha256": "sha256-73fbf355bab77be460078b85a4326678615003e238534bc2eb19f6c63fd6c3ba"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-grok-runtime.json",
-      "bytes": 2494,
-      "sha256": "sha256-e5b9023ca119ee2299421a547b00077fe36f83dced16c07235a55339e9b21715"
+      "bytes": 2523,
+      "sha256": "sha256-dc8ed32bd5f8053036c727e3d2ebd12ff1b24df44a31746149fc6d42fbfd378c"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-liquidity-strategist.json",
-      "bytes": 2509,
-      "sha256": "sha256-1278b98f384f669c62841247c72c52467f251903b64dc0b78247a38d7245d297"
+      "bytes": 2538,
+      "sha256": "sha256-d3246adb628a62668669b06c28077fed556f547bf027618a5f806e861d588eb4"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-mayhem-mode.json",
-      "bytes": 3078,
-      "sha256": "sha256-f6920110589ee06a0ed4a6de52232e87a0c1c111c4743f8e4e831ed1fd1aebbb"
+      "bytes": 3107,
+      "sha256": "sha256-8519a30cf38dc21c2d543f6c198504674cdb043154d0a96c2379eecda04f61bf"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-onboarding-guide.json",
-      "bytes": 2346,
-      "sha256": "sha256-22ccb6c968ae286a35c8824b43524d4174ce8ee153b087381aefca7e43ffb7ce"
+      "bytes": 2375,
+      "sha256": "sha256-6f2ae03c2f991f10763ffd31f60d136710fb484c29cbec1b5e14290d41061fb3"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-operator-runtime.json",
-      "bytes": 2486,
-      "sha256": "sha256-63c95c835a225cc08f9eb472c1f0841fab61ea7bd6587228dce6da214ae9b43a"
+      "bytes": 2515,
+      "sha256": "sha256-bbed0b1069941f9a52f973c2a76dc7e670a9a2888f6b1be51fc1004c274b5c0b"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-portfolio-tracker.json",
-      "bytes": 2369,
-      "sha256": "sha256-2b18f3db81f279ecf3bcdceafd85f0f022ae12a57e8eb81d37974a1ff5679f13"
+      "bytes": 2398,
+      "sha256": "sha256-c486c9eb3fb045c31eb16373c41fc97526ebcb7afce8cbd1a15ebe4bbef50dda"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-pump-runtime.json",
-      "bytes": 2510,
-      "sha256": "sha256-c96360738025e371086d7f8ff17b1b14d9b73405810d0547d0e8cbbbb23b8d51"
+      "bytes": 2539,
+      "sha256": "sha256-67a3adc62fe47ea3b281850675e1a967ed195e45c4e757693c1de85a4a30a277"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-pumpfun-official.json",
-      "bytes": 2793,
-      "sha256": "sha256-da9601745984bbce5e271e9f3ab230a990800b9e1bd4444bec9900911a61947b"
+      "bytes": 2822,
+      "sha256": "sha256-e07c365f4073a04cb088d7bb58aaf54e1ebf18d81ebe0dfb089a2077def50bd0"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-risk-monitor.json",
-      "bytes": 2350,
-      "sha256": "sha256-ce827c348c47f1159153da95c60eddf92e842ac91cfadd2ab2097c9f068b5dc1"
+      "bytes": 2379,
+      "sha256": "sha256-8b3e03ed150b4b6cb97af9508359c4400f8cd4979c78bc5edaf5d0c4d9e095ce"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-router-runtime.json",
-      "bytes": 2756,
-      "sha256": "sha256-3cec2140c06b7b8b79795c7814075aadaf236e9df5c2c6da7e5d8cab9442a761"
+      "bytes": 2785,
+      "sha256": "sha256-e0f0f9d39797d21373f2707d73ac1640f30010c7340fdb81a22925919925a0bf"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-web3-domain-agent.json",
-      "bytes": 2487,
-      "sha256": "sha256-730d3b6466192aa328ec9fc5672ee43eaa5e066611d8339b11853e92972a985e"
+      "bytes": 2516,
+      "sha256": "sha256-0470b32456d80b8bcdaf84ddc3632a0d8c0ec21b03c2952b82772b8af4e92c15"
     },
     {
       "path": "agents/public/api/agents/registry/clawd-yield-aggregator.json",
-      "bytes": 2461,
-      "sha256": "sha256-52f7d7ccea5075a741e1da0f21b69bfc365101692c2a5ecf105bae5bfa645289"
+      "bytes": 2490,
+      "sha256": "sha256-3d9c2aa8cd1a922870fed65b11487c806d23ab3be3f0a8bc0ba8613da56607e9"
     },
     {
       "path": "agents/public/api/agents/registry/clawdex.json",
-      "bytes": 2257,
-      "sha256": "sha256-0c89e0884a10d2011f267ea1506239b426e7872141132dbcd901b27140f7f362"
+      "bytes": 2286,
+      "sha256": "sha256-dd8cf9acdadbc2bb1dd956a08b9ef15e11d2c700047f0852627c08e6b8fda5e1"
     },
     {
       "path": "agents/public/api/agents/registry/crypto-news-analyst.json",
-      "bytes": 2382,
-      "sha256": "sha256-f34bc2ec6503f78fdf74a9f3ac28e73be0da1fc7a0575c34ca1d9fee209780d3"
+      "bytes": 2411,
+      "sha256": "sha256-c9173a4d3a20b034f6ff25a4fe98413556cf2d0b479ab65c36f0701984dc51bb"
     },
     {
       "path": "agents/public/api/agents/registry/defi-insurance-advisor.json",
-      "bytes": 2358,
-      "sha256": "sha256-15db934084ff4c0a398acbb69735260aeba564f166227f43ef27a5266766c7ff"
+      "bytes": 2387,
+      "sha256": "sha256-8c2cf36fb8769f4a3c3bb060fc03968df9587732989e7aab7cf0e314a7b229e3"
     },
     {
       "path": "agents/public/api/agents/registry/defi-onboarding-mentor.json",
-      "bytes": 2365,
-      "sha256": "sha256-75079196ddb996b9958b0412c11bb6cffe0ea65b3809fd0cb46ccd085453f095"
+      "bytes": 2394,
+      "sha256": "sha256-e4cd8e24777226f972cc25a8d22e19d0404a85da99cffcef34f4895960dabddb"
     },
     {
       "path": "agents/public/api/agents/registry/defi-protocol-comparator.json",
-      "bytes": 2381,
-      "sha256": "sha256-f74dc41edeb7ce428c0b6d4024434b485ae5c1187cd8f5a5f12703a26c297c71"
+      "bytes": 2410,
+      "sha256": "sha256-1723606fe63fd5016e5982deb228b7dfd3ca82ad84e126f8a5d14cf58555d8bf"
     },
     {
       "path": "agents/public/api/agents/registry/defi-risk-scoring-engine.json",
-      "bytes": 2421,
-      "sha256": "sha256-7d6b2ce72ff7d721a66bd6d829453c271da35ce852bff9e83aa4436bdad534df"
+      "bytes": 2450,
+      "sha256": "sha256-bb1bb2a7d152f7d082ec52587d245a434cee4877601e0cd8b5f034daf4e3af7f"
     },
     {
       "path": "agents/public/api/agents/registry/defi-yield-farmer.json",
-      "bytes": 2448,
-      "sha256": "sha256-0ec8ab403bbbe85eddd0c2b1969f37eaed2bf8b3ec37a4b63459db4b84e30233"
+      "bytes": 2477,
+      "sha256": "sha256-dfc2c7e7a2b4b31e6e88f92aec01575524f6b46a3b7cb9b21e75eda469b5872e"
     },
     {
       "path": "agents/public/api/agents/registry/dex-aggregator-optimizer.json",
-      "bytes": 2424,
-      "sha256": "sha256-de2bbb29608ee85a19fb25f4ba2310b9ef20906b1cd3ecb4e0da68b9316a6efb"
+      "bytes": 2453,
+      "sha256": "sha256-2bd123288674736cdfe16304f2d7315ebd58db45a50b02a0dd7c31a60f78ddee"
     },
     {
       "path": "agents/public/api/agents/registry/governance-proposal-analyst.json",
-      "bytes": 2446,
-      "sha256": "sha256-441ba993dcde5cc4a552245c9cb8032ff00270a8973822041a30b6796ffe5de2"
+      "bytes": 2475,
+      "sha256": "sha256-33b437aac8f61c0590db10ddd49b95fe62e44170997c91ecbbe54bd31111b020"
     },
     {
       "path": "agents/public/api/agents/registry/impermanent-loss-calculator.json",
-      "bytes": 2416,
-      "sha256": "sha256-bc76e31ed61001f6b1417cbc205e63609b9320b5a1fa678064dddf17e0746361"
+      "bytes": 2445,
+      "sha256": "sha256-ece09b6efdb001263591168efcca2646a8dfdf50cdd70f07f560bc457c672b0d"
     },
     {
       "path": "agents/public/api/agents/registry/index.json",
       "bytes": 39766,
-      "sha256": "sha256-47f4d702a9a515f366c63783d91442153e0d8a4d5e737fef7f304a2611b52981"
+      "sha256": "sha256-2867586789c7546c3aea1b627438a375e6458af786572c6799eb1d622419a902"
     },
     {
       "path": "agents/public/api/agents/registry/liquidation-risk-manager.json",
-      "bytes": 2455,
-      "sha256": "sha256-309a1d62d1d53920bc8a714e5f6362fc35ca47ca21e8a05ad16ed98425fd01ad"
+      "bytes": 2484,
+      "sha256": "sha256-4fa2896d4ca02638ba4b1f40da1f41120050904425456ac4363695cee8d5f364"
     },
     {
       "path": "agents/public/api/agents/registry/liquidity-pool-analyzer.json",
-      "bytes": 2420,
-      "sha256": "sha256-b6a01e14123373166fcbe8f32c1e27432d55ce8c0c1e9f36c4aca3942cfb632d"
+      "bytes": 2449,
+      "sha256": "sha256-da83938661dd7285b7fcb6347d2853984325df28b91d7cb64ab25f35d2df5986"
     },
     {
       "path": "agents/public/api/agents/registry/mev-protection-advisor.json",
-      "bytes": 2402,
-      "sha256": "sha256-216805687a37383703013f3fd963f4afc1ed8f2a89256df2e618fbc35f27d08c"
+      "bytes": 2431,
+      "sha256": "sha256-04d32484cd4daeece4ecc199c30d1b3fe19c1e8aced274dc95178a548a6ad805"
     },
     {
       "path": "agents/public/api/agents/registry/narrative-trend-analyst.json",
-      "bytes": 2382,
-      "sha256": "sha256-a42e28006dd71917f8f0b4ed34beb02c7792bfe49f5d58819087fb5dacfc00bb"
+      "bytes": 2411,
+      "sha256": "sha256-6e90d4c83224c79dcc6987017b5cd17449b664b6b4664386d3516781046426cd"
     },
     {
       "path": "agents/public/api/agents/registry/nft-liquidity-advisor.json",
-      "bytes": 2428,
-      "sha256": "sha256-e424269182158da61d6d1a99c1a49e76e83192a0f5036d2c43e91846fc083eae"
+      "bytes": 2457,
+      "sha256": "sha256-fc6a6a8155c1c60f1766d64b27859575066a1a5e30f703310728e00c995c79af"
     },
     {
       "path": "agents/public/api/agents/registry/pay-agent.json",
-      "bytes": 2377,
-      "sha256": "sha256-2ec7161b504884b6ebcd704ed5717848cf831a6fcece4ae9c9a6202ab6044420"
+      "bytes": 2406,
+      "sha256": "sha256-127cbd7e5943a8bad00c753b765ae30691ab2ba508a5c2857f1a84410cd29028"
     },
     {
       "path": "agents/public/api/agents/registry/portfolio-rebalancing-advisor.json",
-      "bytes": 2478,
-      "sha256": "sha256-9141138bce3d081e086ed98fe29c042222a370d1455e99068713b0c04bfb8fa2"
+      "bytes": 2507,
+      "sha256": "sha256-ef5ea5e6d1d685582cb215ad307e4f29147bac76f62746d3fa630258ef83f232"
     },
     {
       "path": "agents/public/api/agents/registry/protocol-revenue-analyst.json",
-      "bytes": 2403,
-      "sha256": "sha256-f655be79e5b6fb5f28f1c9c9aa2d90964e2a2f87362585e299832a3bf8812b21"
+      "bytes": 2432,
+      "sha256": "sha256-a82c63c80dcdbf7ac97ce83a8fb281d07c84bc2f21ce2072910f935e6474a2b3"
     },
     {
       "path": "agents/public/api/agents/registry/protocol-treasury-analyst.json",
-      "bytes": 2397,
-      "sha256": "sha256-a0cbe99c55a925041aa5e0ab4d766cd0a0d1ec0504d9bc2a34569a0c283e69f8"
+      "bytes": 2426,
+      "sha256": "sha256-90181bf9e75a26fe3d7a414c26a0cb082d190cf03c9c9a659cd06fe8c67c6bdd"
     },
     {
       "path": "agents/public/api/agents/registry/pump-fun-sdk-expert.json",
-      "bytes": 2492,
-      "sha256": "sha256-6ccfb6295f6c3632c607cd611e39b019a7ee2200ded376630a6f1196d01cfdf5"
+      "bytes": 2521,
+      "sha256": "sha256-02510a7b48cb1768d1d7341d8e5de8fdbab181f2664d87baee06b83bdefa067d"
     },
     {
       "path": "agents/public/api/agents/registry/smart-contract-auditor.json",
-      "bytes": 2376,
-      "sha256": "sha256-8a0550a591d61c026226021a38d94d9f89bb8c56c6f1fe0a03a1f0fa285e8c6d"
+      "bytes": 2405,
+      "sha256": "sha256-0a6abeebf9bb53a8512a7681dff86bcfed59cc65497f0e1fe6ea6a26527a1cc8"
     },
     {
       "path": "agents/public/api/agents/registry/solana-agent-orchestrator.json",
-      "bytes": 2301,
-      "sha256": "sha256-6454fc183f299893f72896e1cbcd86bc87df9131c1ff35b2da67ddfc0cfafa31"
+      "bytes": 2330,
+      "sha256": "sha256-89720720de29c9fd1aa9d9a681cab80bd53a0c2086b8f97732809a421b8d6ff8"
     },
     {
       "path": "agents/public/api/agents/registry/solana-airdrop-farmer.json",
-      "bytes": 2258,
-      "sha256": "sha256-304ab6a7464d0c2b27d7129fc18eb5c468e3fb90fde8681f183fe4bc30c6aa6e"
+      "bytes": 2287,
+      "sha256": "sha256-1fcd3c25359a68176f9f2c417256a7bb2c641be4df3fc7943f3be8c6c35dfc5c"
     },
     {
       "path": "agents/public/api/agents/registry/solana-alpha-aggregator.json",
-      "bytes": 2271,
-      "sha256": "sha256-db1b94a022b8a144dc8275659f5ff183836f166e36b55de17ed5e693d7303fb7"
+      "bytes": 2300,
+      "sha256": "sha256-f9d9712dac8185d02624f296f240ad162369259128b58e8103fdd41dc2418248"
     },
     {
       "path": "agents/public/api/agents/registry/solana-anchor-developer.json",
-      "bytes": 2263,
-      "sha256": "sha256-66b722fb026618935d1baa64c71333295d4bc0b2529cdbc295133d1f395173f6"
+      "bytes": 2292,
+      "sha256": "sha256-680feb37f8602accfc6787670c2dbacf50aadb5e4b005d64e6d188b9bf4cf7c8"
     },
     {
       "path": "agents/public/api/agents/registry/solana-anomaly-detector.json",
-      "bytes": 2267,
-      "sha256": "sha256-1c6cdd6c0fb082d9c61b2e344fcc7131baa9c7cd057bdb4ee38de8704fb74198"
+      "bytes": 2296,
+      "sha256": "sha256-9f89a5cff0a5d69dcda075af4fa115caa00fae0699ef905c13488ad1f7c2efd7"
     },
     {
       "path": "agents/public/api/agents/registry/solana-arbitrage-scanner.json",
-      "bytes": 2252,
-      "sha256": "sha256-9dc2f785b076aeb877540db1c9c500d198e128253679899bbefb74c4bd6a5ff4"
+      "bytes": 2281,
+      "sha256": "sha256-c95fb889132afee7aaa9b0456d9c601a24077d0d8b4c642750bd2fe4fe55840c"
     },
     {
       "path": "agents/public/api/agents/registry/solana-autonomous-trader.json",
-      "bytes": 2284,
-      "sha256": "sha256-53ee874a717f2f518fff90725459ac2152f5992ff0be4a70e884ef3b8db446f0"
+      "bytes": 2313,
+      "sha256": "sha256-7033855af9bb7689590dcc6ec9f60b880861230312043f0c0a6e98624cda2b6c"
     },
     {
       "path": "agents/public/api/agents/registry/solana-bot-architect.json",
-      "bytes": 2215,
-      "sha256": "sha256-9606895df6960f46142fc7b8a0ff7e580703f7edc1ff036d30887b8dcb417ae2"
+      "bytes": 2244,
+      "sha256": "sha256-93fc867a0859b053dd7b280753092b38f6228cf8624b475e2fce8d6526cd7a9d"
     },
     {
       "path": "agents/public/api/agents/registry/solana-chart-pattern-ai.json",
-      "bytes": 2259,
-      "sha256": "sha256-4534129df09634adc10443943cbc8b318cd4b0abbb9c381a5aa8997ca8452926"
+      "bytes": 2288,
+      "sha256": "sha256-c9b088173b6a4810ce61d0b8daff7ca9e80d45c7d14a4046de3eb8e293f797d9"
     },
     {
       "path": "agents/public/api/agents/registry/solana-clawd-cost-planner.json",
-      "bytes": 2284,
-      "sha256": "sha256-53172c7cef89cbcc378cde7efe7fda5e47faff8c28455fc9293d327060727438"
+      "bytes": 2313,
+      "sha256": "sha256-fa517bbd097f4b68bd4e5f9f331d28a64b2307c42b8cb8056c45bffe4bec0977"
     },
     {
       "path": "agents/public/api/agents/registry/solana-clawd-mail-concierge.json",
-      "bytes": 2358,
-      "sha256": "sha256-906210b08ad743d8761c6be83017b38f57a7eee351676433abdb90506b63be80"
+      "bytes": 2387,
+      "sha256": "sha256-a11dff1fa64351d0546d9e5176686489cb724e3eb67691c7bc211bd38b534784"
     },
     {
       "path": "agents/public/api/agents/registry/solana-clawd-payment-debugger.json",
-      "bytes": 2323,
-      "sha256": "sha256-a7047fd99f34ec4ad06b4353b36ebb4517fe4af51d8c769fb3c0ccd39f2c46f1"
+      "bytes": 2352,
+      "sha256": "sha256-7e6302ea0e54ef460782048e2748c7c520a7e8bbf7fe8b9da88ad70e49546f12"
     },
     {
       "path": "agents/public/api/agents/registry/solana-clawd-payment-gateway.json",
-      "bytes": 2313,
-      "sha256": "sha256-fa9cb5d9554e04b96ee8d21b4204a9b6190d94a6b21b6c6f5f61d9b11459d37c"
+      "bytes": 2342,
+      "sha256": "sha256-7414d145580c32635de0669fc3e4e0363b972a8dcf3914a68664e9f240ec9d3a"
     },
     {
       "path": "agents/public/api/agents/registry/solana-clawd-provider-scorer.json",
-      "bytes": 2314,
-      "sha256": "sha256-bb6e0f580a9a1ebf52b0451c654f58d44b90563c494d311017bcd0e865903a3d"
+      "bytes": 2343,
+      "sha256": "sha256-65e9d2c8db67a19de87a3e638a5467708a3810701b4a98dc15379a2061af6192"
     },
     {
       "path": "agents/public/api/agents/registry/solana-clawd-quote-relay.json",
-      "bytes": 2282,
-      "sha256": "sha256-1d6f60080a6a533070757c5704d8aa527e44fa76d922507171ef5acd9564b378"
+      "bytes": 2311,
+      "sha256": "sha256-9aae068dc38b752ab642482bff82e04a9573e33d5631f36ce65470340a12525f"
     },
     {
       "path": "agents/public/api/agents/registry/solana-clawd-usdc-allocator.json",
-      "bytes": 2322,
-      "sha256": "sha256-b3b2c462717de55e7c66b927aca77ef45c30bdb5920abbd1d5d97fbe0585d096"
+      "bytes": 2351,
+      "sha256": "sha256-cb2b89288aa928f567f0186b01a596e822c6253118b9ae52dd2cfa08cc582d53"
     },
     {
       "path": "agents/public/api/agents/registry/solana-clawd-wallet-guardian.json",
-      "bytes": 2322,
-      "sha256": "sha256-aba2523e092c828788ba1844524b1c1477555986fe59073287891b26f6266a0b"
+      "bytes": 2351,
+      "sha256": "sha256-6bb8878b9f97394d4116c7cd5af80f0a85d29d7697193f124cc03ef5a980696a"
     },
     {
       "path": "agents/public/api/agents/registry/solana-cross-chain-bridge.json",
-      "bytes": 2293,
-      "sha256": "sha256-92cb09ec95871fcaf1a9b4b5fcd629577e1ce43007ffea38eef5c24b1d1865b2"
+      "bytes": 2322,
+      "sha256": "sha256-c29dd33490cefed0aedc7b2f41a40e06d4b86ecaf407e90b4427d297659ad53d"
     },
     {
       "path": "agents/public/api/agents/registry/solana-dark-ralph-mail-briefing.json",
-      "bytes": 2387,
-      "sha256": "sha256-e6b6d691e957488c773a42c36a3f4cec4cb1cb71de1e00979810971871083ee7"
+      "bytes": 2416,
+      "sha256": "sha256-59b84f28e568190e833bed4e06c146b7d3c26342cb0a44ffe673229c7883ff4e"
     },
     {
       "path": "agents/public/api/agents/registry/solana-data-pipeline.json",
-      "bytes": 2243,
-      "sha256": "sha256-004134202ca42dc9548005bc3e63e0bc193d2b7cec4588db5d6533b046963f6b"
+      "bytes": 2272,
+      "sha256": "sha256-14a06447de6e971d63dae3e794aae50c5593852ea894efd6a169c17030d3f492"
     },
     {
       "path": "agents/public/api/agents/registry/solana-dex-aggregator.json",
-      "bytes": 2233,
-      "sha256": "sha256-27bba92393b498013e6420f1d42723211858816ceac0ae31ec25b23e4f6db1c2"
+      "bytes": 2262,
+      "sha256": "sha256-6d97f3ec9e503ad89dc68a6182671f631e3687b74c68398f591c29737f0cc08a"
     },
     {
       "path": "agents/public/api/agents/registry/solana-dexter-mail-operator.json",
-      "bytes": 2347,
-      "sha256": "sha256-765e91ec833d3224876162b7688b2ac5bf19376183b3a166760338b63b024537"
+      "bytes": 2376,
+      "sha256": "sha256-c6aca03d2eca7046c74d86679408c6654dbc6fc19cf7080061947f6c351b4291"
     },
     {
       "path": "agents/public/api/agents/registry/solana-funding-rate-arb.json",
-      "bytes": 2265,
-      "sha256": "sha256-ba59879f317d88352fa5152ce3d09075e2c0a08567720f64080d21746cf6e789"
+      "bytes": 2294,
+      "sha256": "sha256-4df367d7d676107a0dd31b174bdefff005f4ec8867d255210c219e935b01605d"
     },
     {
       "path": "agents/public/api/agents/registry/solana-helius-specialist.json",
-      "bytes": 2263,
-      "sha256": "sha256-034a9c4b4f44e5bf0842c51a11456bd8a686077439c6574d8145f79a28c25db6"
+      "bytes": 2292,
+      "sha256": "sha256-37473ac10dc2d68555b892d0ec665196f3e9806a65bf1aaa9c366432548ef300"
     },
     {
       "path": "agents/public/api/agents/registry/solana-hermes-mail-settlement.json",
-      "bytes": 2400,
-      "sha256": "sha256-50b06f483a434b31b10ecc797891b37c63d388c74fc8bb9b348f7251d25d808f"
+      "bytes": 2429,
+      "sha256": "sha256-37c6805a8ffe4c5413dd0c2684a130d78d5b8ff53f9d2842fa5c0249ecbaef86"
     },
     {
       "path": "agents/public/api/agents/registry/solana-impermanent-loss-calc.json",
-      "bytes": 2296,
-      "sha256": "sha256-2b43d3d0fcba6f1d489380953b4883f1f52358e7a52b92936d5437bbe56a1f28"
+      "bytes": 2325,
+      "sha256": "sha256-a96280b5df92ea0c2f4daefe24977dc8e74ed6eeb74bdbbe8771384d6bd48374"
     },
     {
       "path": "agents/public/api/agents/registry/solana-jupiter-router.json",
-      "bytes": 2387,
-      "sha256": "sha256-8ea381c2245f57ff8c37cfaa41fe8a499d31ba77f62bcae9ea2af4d0525b8aab"
+      "bytes": 2416,
+      "sha256": "sha256-1006a68fae7a4a520573a35d02ab2dc75ff4aa5967ef7aa28e137882892140f8"
     },
     {
       "path": "agents/public/api/agents/registry/solana-kamino-picker.json",
-      "bytes": 2437,
-      "sha256": "sha256-e7dee2fcbdd528f225f1297eada09bcc316b35c42c1f5e1da5714b70db7804cb"
+      "bytes": 2466,
+      "sha256": "sha256-4770095b74ba49f6de9eb5dee5022879a094ab5a8924b07976c79bf964b094d9"
     },
     {
       "path": "agents/public/api/agents/registry/solana-lending-strategist.json",
-      "bytes": 2296,
-      "sha256": "sha256-4918eaa011d63ac54793eec5b48a07f10a4b5df35c3ff885ece827e5d3e2e6c7"
+      "bytes": 2325,
+      "sha256": "sha256-a53869653d3d6997a95f65f7ffabbc0360f76a9360735d0fda0929d44bb467a8"
     },
     {
       "path": "agents/public/api/agents/registry/solana-liquidation-bot.json",
-      "bytes": 2230,
-      "sha256": "sha256-d39ad713d4966856df247e0ecfe59c0a5605cceeae7550bd40c7a2c67701debf"
+      "bytes": 2259,
+      "sha256": "sha256-47346aa2119549e3453cd72568fead4932dff86dbe83a987a31af7c8e74e43ac"
     },
     {
       "path": "agents/public/api/agents/registry/solana-lsd-analyst.json",
-      "bytes": 2224,
-      "sha256": "sha256-ea9c124f6c9389e3a0c3671fb1ba926b377001c27ba013580dc89bd5bc46805b"
+      "bytes": 2253,
+      "sha256": "sha256-6f0aabfdb8f9549147ddecfbb06af0d71d92eecafda7f59c35e0babed59a77ba"
     },
     {
       "path": "agents/public/api/agents/registry/solana-macro-analyst.json",
-      "bytes": 2235,
-      "sha256": "sha256-505e95b4ae95668611982efaef2ac6b8f03a40d348eaaca577b7ce474d4ccabd"
+      "bytes": 2264,
+      "sha256": "sha256-9d8910c5de46baf40fbc59d427905727a8b8d594d67b9fbe1d59c1753f12522a"
     },
     {
       "path": "agents/public/api/agents/registry/solana-market-maker.json",
-      "bytes": 2222,
-      "sha256": "sha256-7fa71aa7136383a8420b2c92bf6f986b1d466cbae5fae8c17ebd8f32f0a533ab"
+      "bytes": 2251,
+      "sha256": "sha256-1f125244c5636fa7eb7a9d8dbdaa883f08ac485c112adc810b55dfdbe2f6db6d"
     },
     {
       "path": "agents/public/api/agents/registry/solana-memecoin-analyst.json",
-      "bytes": 2267,
-      "sha256": "sha256-06f107592a11ac574118efae9d6f6d2da4300d881cddcb1963891dff81f74451"
+      "bytes": 2296,
+      "sha256": "sha256-4433dd779cf3e27d27337fb64254cc2eec3b59286f2673915f12a226bf16385a"
     },
     {
       "path": "agents/public/api/agents/registry/solana-mev-protector.json",
-      "bytes": 2245,
-      "sha256": "sha256-618d04271c1ea806edc3abbac929b8e466a6c5475067bdcb7e9b382a9ca96f35"
+      "bytes": 2274,
+      "sha256": "sha256-4a5a7a0362ce70ab9cc7b6a3c53254ac4b7e09e6a5b48cf8a74779d5bdff5b24"
     },
     {
       "path": "agents/public/api/agents/registry/solana-mpl-core-launcher.json",
-      "bytes": 2659,
-      "sha256": "sha256-2f03ed8f52d2ef69db75ed2ecdc125e40b9dded34bf2189d4a23541e691cd964"
+      "bytes": 2688,
+      "sha256": "sha256-c6821f0b21691d14693e414c1da6fcf275b92a35748cab78b850f3e6faebc7c8"
     },
     {
       "path": "agents/public/api/agents/registry/solana-nanoclawd-cache-keeper.json",
-      "bytes": 2319,
-      "sha256": "sha256-7d10b8d29c844e5d0b9deb8bd727127eeb6e8a275d720c4f08584d4970bb67c3"
+      "bytes": 2348,
+      "sha256": "sha256-cd0a82c21b77ec3afa4b84271a3c3f0c1a53ca66d65ad9b6cca7e83e16a4a8e6"
     },
     {
       "path": "agents/public/api/agents/registry/solana-nanoclawd-microtransaction.json",
-      "bytes": 2366,
-      "sha256": "sha256-cf791dd610349a1b0f82a8ae01e6096c8bbf694765b8d59f19afd25c780c82ef"
+      "bytes": 2395,
+      "sha256": "sha256-0d46cfa5b95be5194d9c96dceda9903d6ed6665f45881b8cb6542ce109a1c4b2"
     },
     {
       "path": "agents/public/api/agents/registry/solana-nanoclawd-sandbox-runner.json",
-      "bytes": 2333,
-      "sha256": "sha256-e979df2a0f1f465bfd89bd93d9f33392dfacf205a984a98f8dd649dd4503bafa"
+      "bytes": 2362,
+      "sha256": "sha256-0b82e835263b56b32433b7925780d7595be033c1dfbfbf5e84f60fadd4cbf322"
     },
     {
       "path": "agents/public/api/agents/registry/solana-narrative-tracker.json",
-      "bytes": 2282,
-      "sha256": "sha256-4c2daf27f77691d97915b26c781f7695ada6dc6d60e0f474bd4dd6ae665e0ed9"
+      "bytes": 2311,
+      "sha256": "sha256-d56c80c1e21ddb7dc9e1a8102a78473a79f12faa5564be7b73a6bce95eba6c89"
     },
     {
       "path": "agents/public/api/agents/registry/solana-nemoclawd-defi-router.json",
-      "bytes": 2338,
-      "sha256": "sha256-7ffa77198c5b78a7801a712a98d0fe900c16af881a321e4c3230a5f1bb85a92d"
+      "bytes": 2367,
+      "sha256": "sha256-995b83c2c0bc411c66241f8112a0e11abbdabad3cdc20834ba6c6172b697b219"
     },
     {
       "path": "agents/public/api/agents/registry/solana-nemoclawd-settlement-ops.json",
-      "bytes": 2365,
-      "sha256": "sha256-2db6cd956d19b8059d03a7c1232ab3a0e5d8b17de0674591cda73dddb5f61611"
+      "bytes": 2394,
+      "sha256": "sha256-ef5b440849627436db4364359dd1d50a0afb6fdf075ab664f16b40356f7ea993"
     },
     {
       "path": "agents/public/api/agents/registry/solana-nemoclawd-yield-treasurer.json",
-      "bytes": 2359,
-      "sha256": "sha256-b659c0e5978d096d22d83c448d4f82f30ec244b15a513802ce72781902788607"
+      "bytes": 2388,
+      "sha256": "sha256-e190efa45f3a8f2943bfda3fd75bbcb99c22944963d5c383173c5a94f64f3fd7"
     },
     {
       "path": "agents/public/api/agents/registry/solana-nft-floor-trader.json",
-      "bytes": 2273,
-      "sha256": "sha256-c51ef5b2481bfe9a2e4c988962b704bfe9260b34cb4f63f80066347c461db6fc"
+      "bytes": 2302,
+      "sha256": "sha256-c0a23598cd1af84fb2f42a7e64ef6407f7b1e4b225a082d48812b2564450c1d1"
     },
     {
       "path": "agents/public/api/agents/registry/solana-onchain-metrics.json",
-      "bytes": 2253,
-      "sha256": "sha256-e34ca14eea819c0983313fc52f6008a7b8990decda2d96e05c9e4853ec84f46e"
+      "bytes": 2282,
+      "sha256": "sha256-0537c437f9a141277ac420aba699e7b3d542a02ebc9b099b7dcdfb4293d45a0c"
     },
     {
       "path": "agents/public/api/agents/registry/solana-onchain-sleuth.json",
-      "bytes": 2268,
-      "sha256": "sha256-3bc7c2001195ed5d69bcedd38e67d4d0613ac6b9a1cd2ce57e5408838573379a"
+      "bytes": 2297,
+      "sha256": "sha256-7b01485a657237f3b3628483af4bfcb908116f78ca2ee871b196e57bfac304b3"
     },
     {
       "path": "agents/public/api/agents/registry/solana-openclawd-agent-staking.json",
-      "bytes": 2664,
-      "sha256": "sha256-2c0818eb9c1069486aca77077e536b1b6e669a0301a33a324d6ebc36b9049ca9"
+      "bytes": 2693,
+      "sha256": "sha256-2456b4fc1267ea393578374e93179ee12c54c5071fd61fba8902bcf704ef98fe"
     },
     {
       "path": "agents/public/api/agents/registry/solana-openclawd-orchestrator.json",
-      "bytes": 2351,
-      "sha256": "sha256-7a81c6d60a71635ce1080cb74d22b9732972604ba9a140e06b5323d035d25352"
+      "bytes": 2380,
+      "sha256": "sha256-52e6d52fe74b20215afcd30d05d0fa6ecebfbd7761a65c8f5242714c5000c672"
     },
     {
       "path": "agents/public/api/agents/registry/solana-openclawd-pulse-monitor.json",
-      "bytes": 2333,
-      "sha256": "sha256-5ed2ef8c13bcd7ede1112f220d11d7112c97b86c0a02253a25d1e0b93f8ce34f"
+      "bytes": 2362,
+      "sha256": "sha256-c3ae20e63e66607a08aefb56af55afc7643dfd35c36b5868881eb03cab904b73"
     },
     {
       "path": "agents/public/api/agents/registry/solana-openclawd-shell-auditor.json",
-      "bytes": 2343,
-      "sha256": "sha256-9bac3ad8c7130036d142176f8df52672d794a86994dfcd40feae7910def96302"
+      "bytes": 2372,
+      "sha256": "sha256-07cc806ee7c89813b91e98fc8ef3d82d91f3f8f791ae03084f8453ba83ef32cf"
     },
     {
       "path": "agents/public/api/agents/registry/solana-openclawd-skill-router.json",
-      "bytes": 2336,
-      "sha256": "sha256-4dccbdff0fc89d73935f2a202bb5320aa4949668dadf693dc585a7ded3cce97e"
+      "bytes": 2365,
+      "sha256": "sha256-242f5c930b29be29f1011c02b9d5401b776efa66604bab8e7a5911adfaff4b15"
     },
     {
       "path": "agents/public/api/agents/registry/solana-openclawd-spawn-manager.json",
-      "bytes": 2344,
-      "sha256": "sha256-28bce8517656bd87f07059706ede46142d0969dbeb39050b96b859f168a8b127"
+      "bytes": 2373,
+      "sha256": "sha256-7373d9e960b0f4286aba1f68589dc5027de8dc90bd1c0063b025d09f4b8fbc62"
     },
     {
       "path": "agents/public/api/agents/registry/solana-order-flow-analyst.json",
-      "bytes": 2266,
-      "sha256": "sha256-125382cc8fa3fed1a8434d64a700703af72dccc0f905330b680e1e1f5e2539f8"
+      "bytes": 2295,
+      "sha256": "sha256-175aa58e9e3de169a6b4f39d65de9db6a0a5640d5ecb4de99ac403b0021751ab"
     },
     {
       "path": "agents/public/api/agents/registry/solana-perpetuals-trader.json",
-      "bytes": 2269,
-      "sha256": "sha256-db42f2a89e784c3e95fe4a921d266de7956a9a7e4cc45b8b7053632d7c18cce4"
+      "bytes": 2298,
+      "sha256": "sha256-0579c992b455f019f7708a4db09dc8f2e125a4b4feba2d52633abfb83580a546"
     },
     {
       "path": "agents/public/api/agents/registry/solana-portfolio-risk.json",
-      "bytes": 2248,
-      "sha256": "sha256-2719c6c36b34474d44e8663bda80919eb571b1b1ef3216dfb00bc75222f04d8f"
+      "bytes": 2277,
+      "sha256": "sha256-4a466a1d272c4d4c2fd8bb4002f709d1feb82e90626aa35460cde1c082d85e81"
     },
     {
       "path": "agents/public/api/agents/registry/solana-position-sizer.json",
-      "bytes": 2272,
-      "sha256": "sha256-4025c3a0224f28bfa05c35ce28b45b9afdefdebe77626fbaaa927a6405ef987c"
+      "bytes": 2301,
+      "sha256": "sha256-590c78156cb121a45053cbc2f38e3f1a9e46197b72e807df85895045c027083b"
     },
     {
       "path": "agents/public/api/agents/registry/solana-prediction-market.json",
-      "bytes": 2308,
-      "sha256": "sha256-6992a3b047ead04cd6968ecc39846031546a1ad22249ea4ea54321113739e6fe"
+      "bytes": 2337,
+      "sha256": "sha256-9100e2899420127cbc92867da23a0627d8aac2dcae2cabb3845c4c04f7db9cff"
     },
     {
       "path": "agents/public/api/agents/registry/solana-price-predictor.json",
-      "bytes": 2257,
-      "sha256": "sha256-a4df762fa591baa2eae49fde015961d735fbe3e5e72a605a2a0345b0cf2431c0"
+      "bytes": 2286,
+      "sha256": "sha256-c8a6b8675da2e2c1c3d6934678f8231d97cf5164534f828ac9da701bd81a26d1"
     },
     {
       "path": "agents/public/api/agents/registry/solana-protocol-auditor.json",
-      "bytes": 2262,
-      "sha256": "sha256-f1023b32e812dbb81b80fbc42f042fce4fa7350bfd91a6682f846163b269dd38"
+      "bytes": 2291,
+      "sha256": "sha256-3830c42d886eb004501b58ed2d80d80ea8f7d1c68d65f90b0b3c2e995e2c0824"
     },
     {
       "path": "agents/public/api/agents/registry/solana-pumpfun-bot.json",
-      "bytes": 2760,
-      "sha256": "sha256-6b8278ca03f996b3dfc3e9017806d16aa3d0e9122427d1821094dddefe9fbab9"
+      "bytes": 2789,
+      "sha256": "sha256-aeb737da08932c1c48b5baccb5de2d9c6352a5b113a7eade678b474ff755284d"
     },
     {
       "path": "agents/public/api/agents/registry/solana-pumpfun-screener.json",
-      "bytes": 2410,
-      "sha256": "sha256-fbf191ef8d820fc090578d76504fe7162cd06fca9702f4817df3b2776941c876"
+      "bytes": 2439,
+      "sha256": "sha256-ac2dd2ae58273747d95fa0d7b81e53102739a04d10f2554dd24dca665a678f78"
     },
     {
       "path": "agents/public/api/agents/registry/solana-quant-researcher.json",
-      "bytes": 2264,
-      "sha256": "sha256-c4f31f90483804fa78ad458b0e7a42a6d56e052fbe373bbc8929998a137a2dd5"
+      "bytes": 2293,
+      "sha256": "sha256-b66915af9a80fb95d651d5fd6185c5d441f61b791b47f8e59af023f617f5e37a"
     },
     {
       "path": "agents/public/api/agents/registry/solana-regulatory-advisor.json",
-      "bytes": 2274,
-      "sha256": "sha256-da0f8de365f3cd9d1f94f08001eb56854c0b7a4bab7d7fa5350f5f12f1382c32"
+      "bytes": 2303,
+      "sha256": "sha256-ddc10ca47252d72ad11aa73132abf0d761d9b8efceb840fc1a83974631c05f08"
     },
     {
       "path": "agents/public/api/agents/registry/solana-risk-sentinel.json",
-      "bytes": 2240,
-      "sha256": "sha256-f0a766664ee7a6b998bcefec873d1388aa82195723d1f9013e6aa58136e5fc50"
+      "bytes": 2269,
+      "sha256": "sha256-feff126f26c1b3a6852ac83c8804a87e771d67ae618367208c8f243e1246d93f"
     },
     {
       "path": "agents/public/api/agents/registry/solana-rpc-optimizer.json",
-      "bytes": 2251,
-      "sha256": "sha256-08d9bb09196a571ce2a7d8d73cd5f4d7ff35629e744f940d00b656c75f950c04"
+      "bytes": 2280,
+      "sha256": "sha256-6284967164bef636d9c2fba04864f49b56f1270bf98bf41fe9040a3915457dfa"
     },
     {
       "path": "agents/public/api/agents/registry/solana-sentiment-analyzer.json",
-      "bytes": 2282,
-      "sha256": "sha256-06494f63765f2ffbb2c415bd660a2e2ba0936d10123702c534167fe3c686d76b"
+      "bytes": 2311,
+      "sha256": "sha256-0329ce55b8cf06df755c67a161c8fec28496b90999be94ee646a3091d589059a"
     },
     {
       "path": "agents/public/api/agents/registry/solana-spot-trader.json",
-      "bytes": 2217,
-      "sha256": "sha256-0bf435ee66c3fb2be1921ab850576fb7c082dabef931152721412ad14edaf2c6"
+      "bytes": 2246,
+      "sha256": "sha256-58d6ef306f7ccf693203443ad4396a1176bec0c5a8d2fd1c90eac1afa4431688"
     },
     {
       "path": "agents/public/api/agents/registry/solana-stablecoin-strategist.json",
-      "bytes": 2288,
-      "sha256": "sha256-0f5cf3f17b5b796c1ebb3b375f5947362cf0f03f8537e5c5322d7cf4c9005a56"
+      "bytes": 2317,
+      "sha256": "sha256-cdfd1c3df8f6be7a993078ce11825f18b1982fadfd93aa87a3d4068d826f5556"
     },
     {
       "path": "agents/public/api/agents/registry/solana-technical-analyst.json",
-      "bytes": 2306,
-      "sha256": "sha256-30b825d841d257bf1af81ca42a051f13878e502a8aee6749076d38d70bc4b8a7"
+      "bytes": 2335,
+      "sha256": "sha256-b4999bd6f4808018e7ac6e16f509209cb8527b77a7cc89ee21a1aa37d73bd352"
     },
     {
       "path": "agents/public/api/agents/registry/solana-token-launcher.json",
-      "bytes": 2237,
-      "sha256": "sha256-bf7bc5e18b589e89fff14e68ba3a1c74dfe9941af047eab1a51a2ffc580e5c69"
+      "bytes": 2266,
+      "sha256": "sha256-39868d2d40449d19f096a1f42b6e6b1c996893094c150ca102dc59caf2668402"
     },
     {
       "path": "agents/public/api/agents/registry/solana-tokenomics-analyst.json",
-      "bytes": 2300,
-      "sha256": "sha256-81541042e60ea1671e1f840c83a1b3598c90d614bb7cc4edd0421ea05a110a14"
+      "bytes": 2329,
+      "sha256": "sha256-30e2678fd04a364a296a1947e40125ef216fdb72360b893be15d844a5cc55bfc"
     },
     {
       "path": "agents/public/api/agents/registry/solana-validator-picker.json",
-      "bytes": 2401,
-      "sha256": "sha256-57b3ba3fca7d6428edec9fc8dce31750aa09282b4f0140579208fd57905c679b"
+      "bytes": 2430,
+      "sha256": "sha256-03ad5d460523bcc526dd5d60d1a0188cefa0c5a81877053fb437b8bb09e84fa5"
     },
     {
       "path": "agents/public/api/agents/registry/solana-vc-deal-analyzer.json",
-      "bytes": 2276,
-      "sha256": "sha256-e62c01c754233984f1ab298cc323646f6490d5ad667f4bd981f7b3d611193854"
+      "bytes": 2305,
+      "sha256": "sha256-9422c25c22aa2478635e22974cec1c76b206c279ba35559bf4970131573d7f5b"
     },
     {
       "path": "agents/public/api/agents/registry/solana-volatility-analyst.json",
-      "bytes": 2269,
-      "sha256": "sha256-4c0fd68e56be2000cb1270dc05047982d246f2cf3dd70e3c198fcaf3481ebe00"
+      "bytes": 2298,
+      "sha256": "sha256-291708bb5baad75e72edb55149e5ec385666d78c7e5f25097f115bb5dcdd1caa"
     },
     {
       "path": "agents/public/api/agents/registry/solana-vulcan-clawd-autonomous-perps.json",
-      "bytes": 2739,
-      "sha256": "sha256-2314f1841d8d7ec54ea1c544a0fe74b95ab343b6720d3ec0ff61e8248f416c78"
+      "bytes": 2768,
+      "sha256": "sha256-b5fb2ecfdfcb11bba49c462520fcd800884b93e19ab3711fdb3ed30f88cc4509"
     },
     {
       "path": "agents/public/api/agents/registry/solana-whale-tracker.json",
-      "bytes": 2246,
-      "sha256": "sha256-d842322794e80feb02d5492d4cc2ca005a1cd55148cd4f9921febc19a2a47224"
+      "bytes": 2275,
+      "sha256": "sha256-12aaa28d0177cd29d62125950cbee3a6b80ea161303105d654f23020031d4fce"
     },
     {
       "path": "agents/public/api/agents/registry/solana-whitepaper-analyst.json",
-      "bytes": 2275,
-      "sha256": "sha256-1c22b3a56e9146d32610a624a059802f9e7229b08811145dbbd4b6f439ad5ab6"
+      "bytes": 2304,
+      "sha256": "sha256-89905e85c0beb67e0f75207b673d7fa08d3230d2f1eb6bc3f5c352eb41304e1a"
     },
     {
       "path": "agents/public/api/agents/registry/solana-x402-market-data-buyer.json",
-      "bytes": 2333,
-      "sha256": "sha256-4a984d2c4c01072594b37f2744c7682ebe56f51af9e1267ae673b81aa42c21a8"
+      "bytes": 2362,
+      "sha256": "sha256-56b0366db780a53f62d2f6004b006ae602aead6938ac70406df4633b83a02c4e"
     },
     {
       "path": "agents/public/api/agents/registry/solana-x402-provider-author.json",
-      "bytes": 2310,
-      "sha256": "sha256-ace4d49b87de3042a2087250830ab660499c34251d87ae88609a0316b8450628"
+      "bytes": 2339,
+      "sha256": "sha256-97fec5eb92742afaed73c6c5856c36c33f182450117d31fa23a130ccfad6ea19"
     },
     {
       "path": "agents/public/api/agents/registry/solana-x402-provider-catalog.json",
-      "bytes": 2326,
-      "sha256": "sha256-a278cde2e14fbab8210d12b12ff20723f34ea78820e113e0042c48f44c81d5e4"
+      "bytes": 2355,
+      "sha256": "sha256-a5325af5926e460f76a5036ab19d09ca276a32ff5aa167ac06528cd0d89d5e24"
     },
     {
       "path": "agents/public/api/agents/registry/solana-x402-research-broker.json",
-      "bytes": 2329,
-      "sha256": "sha256-89209851e0088798402f4a5110b296d03d0cd8ef318c8ea8822881bf30daa51c"
+      "bytes": 2358,
+      "sha256": "sha256-9049f1c0ecd5cfafae7e96ef9997a371eb16c7b550658940447dda426c4193e4"
     },
     {
       "path": "agents/public/api/agents/registry/solana-x402-signal-monetizer.json",
-      "bytes": 2331,
-      "sha256": "sha256-ed7186edd03cf4cc1b13222ca1004cdb67d62b18cd3eb03a22d39e41fa437731"
+      "bytes": 2360,
+      "sha256": "sha256-934f961d2d82ecc19f43ad8aa683dd95305ea49761d70133fd76893c40c6a1f9"
     },
     {
       "path": "agents/public/api/agents/registry/solana-x402-solana-rpc-broker.json",
-      "bytes": 2327,
-      "sha256": "sha256-93523a417dda214b7703db6c60caa7aa24b0640039ecdd13e13b86b8835625dd"
+      "bytes": 2356,
+      "sha256": "sha256-c186c0b9b499263fb84d7430e8888ae3d4efb783ef0d19df62aa5454b15fb953"
     },
     {
       "path": "agents/public/api/agents/registry/solana-x402-webhook-settlement.json",
-      "bytes": 2359,
-      "sha256": "sha256-108467a05e3f5c040b2db7c837df5e85c4d7976217470c232b693e28605728f5"
+      "bytes": 2388,
+      "sha256": "sha256-74a68afe7606165222d423f535e50ecda0df842521c440d5daafcc32d69f4b27"
     },
     {
       "path": "agents/public/api/agents/registry/solana-yield-optimizer.json",
-      "bytes": 2237,
-      "sha256": "sha256-bfaace4b10914f1d04a00f73736925c05b0c961271247ca8abbd448d9dacac78"
+      "bytes": 2266,
+      "sha256": "sha256-b96bf2c8a3f3ba1902ddd56242125ce3bed72322f40e4ee852359d68490a9d5c"
     },
     {
       "path": "agents/public/api/agents/registry/spa-tokenomics-analyst.json",
-      "bytes": 2344,
-      "sha256": "sha256-57684879ec84e7c924044a0181919b5472e68118d95fa3244cb15c7ae129fc86"
+      "bytes": 2373,
+      "sha256": "sha256-f15216db140d5cc1d7d0a46b09a439c267640a70b1b382b5a4cd7112b096b367"
     },
     {
       "path": "agents/public/api/agents/registry/token-unlock-tracker.json",
-      "bytes": 2348,
-      "sha256": "sha256-7a100ad91a8ae4d67871487979ae4d9eb24eeefe350216aac2a373e16bd70081"
+      "bytes": 2377,
+      "sha256": "sha256-8ba6b7d3d59ef0e7e288eac1c4afda72c6adeb1ea6cc22f5625c1c8c59217200"
     },
     {
       "path": "agents/public/api/agents/registry/wallet-security-advisor.json",
-      "bytes": 2391,
-      "sha256": "sha256-a9c80ada780bf00f900eca48db1ea848d516c9a8984f13b354ccb609c55562a2"
+      "bytes": 2420,
+      "sha256": "sha256-d5abb8c1e3b8a4a2fd51bc01e2b0673cbca22bb7f0a42798b49a64d5a8a2dda9"
     },
     {
       "path": "agents/public/api/agents/registry/whale-watcher.json",
-      "bytes": 2309,
-      "sha256": "sha256-0f16864c7e31e37fd697fd0a69b5f09e40d4288e1b7f9bd5a2a9412d54a7428d"
+      "bytes": 2338,
+      "sha256": "sha256-ed7c02267fc741b29d8c86ce376f096208568bb7ee75349a4ed69d944acd3e72"
+    },
+    {
+      "path": "agents/public/clawd_mascot_hq_blueprint_grid_4k.png",
+      "bytes": 7493700,
+      "sha256": "sha256-c81e726aa49866bfd98334ff2dabda0c8d28f3c5eb2fcab1f982305c9e5385e4"
     },
     {
       "path": "agents/public/humans.txt",
@@ -5660,8 +5670,8 @@
     },
     {
       "path": "agents/scripts/validate-x402-setup.cjs",
-      "bytes": 6518,
-      "sha256": "sha256-fe7c5d6b6b5708857de50ffe709971e799ad804e37ec0cc1681f2f098f272e34"
+      "bytes": 6607,
+      "sha256": "sha256-8bc205d0c90c065f22c94033b693f3b73b6454a0459629a1bcbbeea9a14ee295"
     },
     {
       "path": "agents/SECURITY.md",

@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "Solana PumpFun/PumpSwap Copy Trading Bot",
   "description": "High-performance Rust-based copy trading bot that monitors and replicates trading activity on Solana DEXs (PumpFun, PumpSwap, Raydium) using Yellowstone gRPC for real-time transaction monitoring with parallel processing, risk management, and Telegram notifications. Updated for v2 instructions, creator fees, cashback, Token-2022, and USDC-paired coins.",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/solana-pumpfun-bot",
   "active": true,
   "createdAt": "2026-05-11",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "solana",
     "pumpfun",

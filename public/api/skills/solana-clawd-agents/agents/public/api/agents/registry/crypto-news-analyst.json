@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "Crypto News Analyst",
   "description": "Aggregate and analyze breaking crypto news from CoinDesk, The Block, Decrypt, and major publications",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/crypto-news-analyst",
   "active": true,
   "createdAt": "2026-01-03",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "news",
     "analysis",

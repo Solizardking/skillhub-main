@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "CLAWD × Pump.fun Official Agent",
   "description": "The official Solana Clawd pump.fun agent. Payment-gated random number generator (0.1 SOL), wallet-connected launch screening, claims + buyback tracking, and Telegram alerts — all wired through @pump-fun/agent-payments-sdk.",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/clawd-pumpfun-official",
   "active": true,
   "createdAt": "2026-04-16",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "solana",
     "pumpfun",

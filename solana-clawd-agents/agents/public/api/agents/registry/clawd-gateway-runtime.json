@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "Clawd Gateway Runtime",
   "description": "Telegram and HTTP gateway runtime for Solana Clawd agent registry, skill hub, webhook, x402, and Solana service routes.",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/clawd-gateway-runtime",
   "active": true,
   "createdAt": "2026-06-10",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "solana",
     "clawd",

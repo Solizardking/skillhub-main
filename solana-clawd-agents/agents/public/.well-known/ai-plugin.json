@@ -11,7 +11,7 @@
     "type": "none",
     "url": "https://x402.wtf/api/agents"
   },
-  "logo_url": "https://x402.wtf/nich.jpg",
+  "logo_url": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "contact_email": "operators@x402.wtf",
   "legal_info_url": "https://github.com/openclawd/solana-clawd/blob/main/agents/LICENSE",
   "agent_registry": {

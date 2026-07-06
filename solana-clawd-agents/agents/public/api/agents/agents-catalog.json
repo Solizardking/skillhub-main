@@ -1,7 +1,7 @@
 {
   "$schema": "https://x402.wtf/schema/clawdAgentCatalog.v1.json",
   "apiVersion": "1.0",
-  "generatedAt": "2026-07-06T22:39:14.815Z",
+  "generatedAt": "2026-07-06T22:41:51.419Z",
   "hub": {
     "gallery": "https://x402.wtf/agents",
     "mint": "https://x402.wtf/agents/mint",
@@ -3429,7 +3429,7 @@
       "identifier": "airdrop-hunter",
       "title": "DeFi Airdrop Hunter",
       "description": "Identify and strategize for potential protocol airdrops",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "airdrop",
         "rewards",
@@ -3478,7 +3478,7 @@
         "meta": {
           "title": "DeFi Airdrop Hunter",
           "description": "Identify and strategize for potential protocol airdrops",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "airdrop",
             "rewards",
@@ -3515,7 +3515,7 @@
       "identifier": "alpha-leak-detector",
       "title": "Crypto Alpha & Signal Detector",
       "description": "Identify trading alpha and early signals in DeFi markets",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "alpha",
         "trading",
@@ -3563,7 +3563,7 @@
         "meta": {
           "title": "Crypto Alpha & Signal Detector",
           "description": "Identify trading alpha and early signals in DeFi markets",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "alpha",
             "trading",
@@ -3599,7 +3599,7 @@
       "identifier": "bridge-security-analyst",
       "title": "Cross-Chain Bridge Security Analyst",
       "description": "Evaluate bridge security and recommend safest cross-chain routes",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "bridge",
         "security",
@@ -3647,7 +3647,7 @@
         "meta": {
           "title": "Cross-Chain Bridge Security Analyst",
           "description": "Evaluate bridge security and recommend safest cross-chain routes",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "bridge",
             "security",
@@ -3683,7 +3683,7 @@
       "identifier": "clawd-bridge-assistant",
       "title": "CLAWD Bridge Assistant",
       "description": "Guide users through cross-chain bridging with optimal routes and costs",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "bridge",
@@ -3728,7 +3728,7 @@
         "meta": {
           "title": "CLAWD Bridge Assistant",
           "description": "Guide users through cross-chain bridging with optimal routes and costs",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "bridge",
@@ -3761,7 +3761,7 @@
       "identifier": "clawd-firecrawl",
       "title": "CLAWD Firecrawl Researcher",
       "description": "Web research agent backed by Firecrawl — scrape, search, map, and crawl any site.",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "firecrawl",
@@ -3804,7 +3804,7 @@
         "meta": {
           "title": "CLAWD Firecrawl Researcher",
           "description": "Web research agent backed by Firecrawl — scrape, search, map, and crawl any site.",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "firecrawl",
@@ -3835,7 +3835,7 @@
       "identifier": "clawd-governance-guide",
       "title": "CLAWD Governance Guide",
       "description": "Navigate CLAWD DAO proposals, voting, and protocol upgrades",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "governance",
@@ -3882,7 +3882,7 @@
         "meta": {
           "title": "CLAWD Governance Guide",
           "description": "Navigate CLAWD DAO proposals, voting, and protocol upgrades",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "governance",
@@ -3917,7 +3917,7 @@
       "identifier": "clawd-liquidity-strategist",
       "title": "CLAWD Liquidity Provider Strategist",
       "description": "Optimize liquidity provision strategies across CLAWD pools",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "liquidity",
@@ -3969,7 +3969,7 @@
         "meta": {
           "title": "CLAWD Liquidity Provider Strategist",
           "description": "Optimize liquidity provision strategies across CLAWD pools",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "liquidity",
@@ -4009,7 +4009,7 @@
       "identifier": "clawd-mayhem-mode",
       "title": "CLAWD Mayhem Mode",
       "description": "The Solana Clawd all-purpose combat agent. Trades, deploys, launches tokens, mints NFTs, and orchestrates Metaplex programs end-to-end — Agent Registry, Genesis, Core, Token Metadata, Bubblegum, and Candy Machine.",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "solana",
         "clawd",
@@ -4078,7 +4078,7 @@
         "meta": {
           "title": "CLAWD Mayhem Mode",
           "description": "The Solana Clawd all-purpose combat agent. Trades, deploys, launches tokens, mints NFTs, and orchestrates Metaplex programs end-to-end — Agent Registry, Genesis, Core, Token Metadata, Bubblegum, and Candy Machine.",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "solana",
             "clawd",
@@ -4135,7 +4135,7 @@
       "identifier": "clawd-onboarding-guide",
       "title": "CLAWD Ecosystem Onboarding Guide",
       "description": "Help newcomers understand and start using CLAWD protocol",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "education",
@@ -4180,7 +4180,7 @@
         "meta": {
           "title": "CLAWD Ecosystem Onboarding Guide",
           "description": "Help newcomers understand and start using CLAWD protocol",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "education",
@@ -4213,7 +4213,7 @@
       "identifier": "clawd-portfolio-tracker",
       "title": "CLAWD Portfolio Tracker",
       "description": "Track and analyze your complete CLAWD ecosystem holdings",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "portfolio",
@@ -4260,7 +4260,7 @@
         "meta": {
           "title": "CLAWD Portfolio Tracker",
           "description": "Track and analyze your complete CLAWD ecosystem holdings",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "portfolio",
@@ -4295,7 +4295,7 @@
       "identifier": "clawd-pumpfun-official",
       "title": "CLAWD × Pump.fun Official Agent",
       "description": "The official Solana Clawd pump.fun agent. Payment-gated random number generator (0.1 SOL), wallet-connected launch screening, claims + buyback tracking, and Telegram alerts — all wired through @pump-fun/agent-payments-sdk.",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "solana",
         "pumpfun",
@@ -4348,7 +4348,7 @@
         "meta": {
           "title": "CLAWD × Pump.fun Official Agent",
           "description": "The official Solana Clawd pump.fun agent. Payment-gated random number generator (0.1 SOL), wallet-connected launch screening, claims + buyback tracking, and Telegram alerts — all wired through @pump-fun/agent-payments-sdk.",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "solana",
             "pumpfun",
@@ -4389,7 +4389,7 @@
       "identifier": "clawd-risk-monitor",
       "title": "CLAWD Protocol Risk Monitor",
       "description": "Track and analyze security risks across CLAWD smart contracts",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "security",
@@ -4437,7 +4437,7 @@
         "meta": {
           "title": "CLAWD Protocol Risk Monitor",
           "description": "Track and analyze security risks across CLAWD smart contracts",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "security",
@@ -4473,7 +4473,7 @@
       "identifier": "clawd-web3-domain-agent",
       "title": ".clawd Web3 Domain Agent",
       "description": "Mint and operate OpenClawd-native web3 identities backed by IPFS, DNSLink, x402, and holder-gated agent features.",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "dnslink",
@@ -4522,7 +4522,7 @@
         "meta": {
           "title": ".clawd Web3 Domain Agent",
           "description": "Mint and operate OpenClawd-native web3 identities backed by IPFS, DNSLink, x402, and holder-gated agent features.",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "dnslink",
@@ -4559,7 +4559,7 @@
       "identifier": "clawd-yield-aggregator",
       "title": "CLAWD Yield Aggregator",
       "description": "Find and optimize best yield opportunities in CLAWD ecosystem",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "yield",
@@ -4611,7 +4611,7 @@
         "meta": {
           "title": "CLAWD Yield Aggregator",
           "description": "Find and optimize best yield opportunities in CLAWD ecosystem",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "yield",
@@ -4651,7 +4651,7 @@
       "identifier": "crypto-news-analyst",
       "title": "Crypto News Analyst",
       "description": "Aggregate and analyze breaking crypto news from CoinDesk, The Block, Decrypt, and major publications",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "news",
         "analysis",
@@ -4698,7 +4698,7 @@
         "meta": {
           "title": "Crypto News Analyst",
           "description": "Aggregate and analyze breaking crypto news from CoinDesk, The Block, Decrypt, and major publications",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "news",
             "analysis",
@@ -4733,7 +4733,7 @@
       "identifier": "defi-insurance-advisor",
       "title": "DeFi Insurance & Risk Coverage Advisor",
       "description": "Navigate DeFi insurance options for smart contract protection",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "insurance",
         "protection",
@@ -4779,7 +4779,7 @@
         "meta": {
           "title": "DeFi Insurance & Risk Coverage Advisor",
           "description": "Navigate DeFi insurance options for smart contract protection",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "insurance",
             "protection",
@@ -4813,7 +4813,7 @@
       "identifier": "defi-onboarding-mentor",
       "title": "DeFi Beginner Onboarding Mentor",
       "description": "Guide complete beginners through their first DeFi experiences",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "education",
         "beginner",
@@ -4859,7 +4859,7 @@
         "meta": {
           "title": "DeFi Beginner Onboarding Mentor",
           "description": "Guide complete beginners through their first DeFi experiences",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "education",
             "beginner",
@@ -4893,7 +4893,7 @@
       "identifier": "defi-protocol-comparator",
       "title": "DeFi Protocol Comparison Expert",
       "description": "Compare similar DeFi protocols across features, risks, and yields",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "defi",
         "comparison",
@@ -4939,7 +4939,7 @@
         "meta": {
           "title": "DeFi Protocol Comparison Expert",
           "description": "Compare similar DeFi protocols across features, risks, and yields",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "defi",
             "comparison",
@@ -4973,7 +4973,7 @@
       "identifier": "defi-risk-scoring-engine",
       "title": "DeFi Protocol Risk Scoring Engine",
       "description": "Comprehensive risk assessment framework for DeFi protocols",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "risk",
         "assessment",
@@ -5022,7 +5022,7 @@
         "meta": {
           "title": "DeFi Protocol Risk Scoring Engine",
           "description": "Comprehensive risk assessment framework for DeFi protocols",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "risk",
             "assessment",
@@ -5059,7 +5059,7 @@
       "identifier": "defi-yield-farmer",
       "title": "DeFi Yield Farming Strategist",
       "description": "Identify and optimize yield farming opportunities across DeFi protocols",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "defi",
         "yield-farming",
@@ -5111,7 +5111,7 @@
         "meta": {
           "title": "DeFi Yield Farming Strategist",
           "description": "Identify and optimize yield farming opportunities across DeFi protocols",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "defi",
             "yield-farming",
@@ -5151,7 +5151,7 @@
       "identifier": "dex-aggregator-optimizer",
       "title": "DEX Aggregator Route Optimizer",
       "description": "Find optimal swap routes across DEX aggregators",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "dex",
         "swap",
@@ -5201,7 +5201,7 @@
         "meta": {
           "title": "DEX Aggregator Route Optimizer",
           "description": "Find optimal swap routes across DEX aggregators",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "dex",
             "swap",
@@ -5239,7 +5239,7 @@
       "identifier": "governance-proposal-analyst",
       "title": "DAO Governance Proposal Analyst",
       "description": "Analyze and explain DAO governance proposals and their implications",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "governance",
         "dao",
@@ -5287,7 +5287,7 @@
         "meta": {
           "title": "DAO Governance Proposal Analyst",
           "description": "Analyze and explain DAO governance proposals and their implications",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "governance",
             "dao",
@@ -5323,7 +5323,7 @@
       "identifier": "impermanent-loss-calculator",
       "title": "Impermanent Loss Calculator",
       "description": "Calculate and explain impermanent loss scenarios for LP positions",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "defi",
         "liquidity",
@@ -5371,7 +5371,7 @@
         "meta": {
           "title": "Impermanent Loss Calculator",
           "description": "Calculate and explain impermanent loss scenarios for LP positions",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "defi",
             "liquidity",
@@ -5407,7 +5407,7 @@
       "identifier": "liquidation-risk-manager",
       "title": "Liquidation Risk Manager",
       "description": "Monitor and manage liquidation risks in lending protocols",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "lending",
         "liquidation",
@@ -5458,7 +5458,7 @@
         "meta": {
           "title": "Liquidation Risk Manager",
           "description": "Monitor and manage liquidation risks in lending protocols",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "lending",
             "liquidation",
@@ -5497,7 +5497,7 @@
       "identifier": "liquidity-pool-analyzer",
       "title": "Liquidity Pool Deep Analyzer",
       "description": "Analyze LP pool health, risks, and optimal entry/exit timing",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "defi",
         "liquidity-pools",
@@ -5547,7 +5547,7 @@
         "meta": {
           "title": "Liquidity Pool Deep Analyzer",
           "description": "Analyze LP pool health, risks, and optimal entry/exit timing",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "defi",
             "liquidity-pools",
@@ -5585,7 +5585,7 @@
       "identifier": "mev-protection-advisor",
       "title": "MEV Protection Advisor",
       "description": "Protect users from front-running, sandwich attacks, and MEV exploitation",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "mev",
         "security",
@@ -5633,7 +5633,7 @@
         "meta": {
           "title": "MEV Protection Advisor",
           "description": "Protect users from front-running, sandwich attacks, and MEV exploitation",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "mev",
             "security",
@@ -5669,7 +5669,7 @@
       "identifier": "narrative-trend-analyst",
       "title": "Crypto Narrative & Trend Analyst",
       "description": "Track and analyze dominant narratives and trends in crypto markets",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "narrative",
         "trends",
@@ -5715,7 +5715,7 @@
         "meta": {
           "title": "Crypto Narrative & Trend Analyst",
           "description": "Track and analyze dominant narratives and trends in crypto markets",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "narrative",
             "trends",
@@ -5749,7 +5749,7 @@
       "identifier": "nft-liquidity-advisor",
       "title": "NFT Liquidity & Lending Advisor",
       "description": "Navigate NFT-backed lending and liquidity solutions",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "nft",
         "liquidity",
@@ -5800,7 +5800,7 @@
         "meta": {
           "title": "NFT Liquidity & Lending Advisor",
           "description": "Navigate NFT-backed lending and liquidity solutions",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "nft",
             "liquidity",
@@ -5839,7 +5839,7 @@
       "identifier": "pay-agent",
       "title": "Pay Agent",
       "description": "pay.sh workflow agent for sandbox-first HTTP 402 calls, Pay MCP setup, provider discovery, and payment gateway specs.",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "pay",
         "pay-sh",
@@ -5891,7 +5891,7 @@
         "meta": {
           "title": "Pay Agent",
           "description": "pay.sh workflow agent for sandbox-first HTTP 402 calls, Pay MCP setup, provider discovery, and payment gateway specs.",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "pay",
             "pay-sh",
@@ -5931,7 +5931,7 @@
       "identifier": "portfolio-rebalancing-advisor",
       "title": "DeFi Portfolio Rebalancing Advisor",
       "description": "Optimize portfolio allocation and rebalancing strategies",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "portfolio",
         "rebalancing",
@@ -5980,7 +5980,7 @@
         "meta": {
           "title": "DeFi Portfolio Rebalancing Advisor",
           "description": "Optimize portfolio allocation and rebalancing strategies",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "portfolio",
             "rebalancing",
@@ -6017,7 +6017,7 @@
       "identifier": "protocol-revenue-analyst",
       "title": "Protocol Revenue & Fundamentals Analyst",
       "description": "Analyze DeFi protocol business models and revenue generation",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "defi",
         "revenue",
@@ -6064,7 +6064,7 @@
         "meta": {
           "title": "Protocol Revenue & Fundamentals Analyst",
           "description": "Analyze DeFi protocol business models and revenue generation",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "defi",
             "revenue",
@@ -6099,7 +6099,7 @@
       "identifier": "protocol-treasury-analyst",
       "title": "DAO Treasury & Resource Analyst",
       "description": "Analyze DAO treasury holdings, runway, and capital allocation",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "treasury",
         "dao",
@@ -6146,7 +6146,7 @@
         "meta": {
           "title": "DAO Treasury & Resource Analyst",
           "description": "Analyze DAO treasury holdings, runway, and capital allocation",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "treasury",
             "dao",
@@ -6181,7 +6181,7 @@
       "identifier": "pump-fun-sdk-expert",
       "title": "Pump Fun SDK Expert",
       "description": "Specialized assistant for the pump.fun SDK — token creation, bonding curve trading, fee sharing, and AMM migration on Solana",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "pump-fun",
         "solana",
@@ -6233,7 +6233,7 @@
         "meta": {
           "title": "Pump Fun SDK Expert",
           "description": "Specialized assistant for the pump.fun SDK — token creation, bonding curve trading, fee sharing, and AMM migration on Solana",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "pump-fun",
             "solana",
@@ -6273,7 +6273,7 @@
       "identifier": "smart-contract-auditor",
       "title": "Smart Contract Security Auditor",
       "description": "Review and assess smart contract security for DeFi protocols",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "security",
         "smart-contracts",
@@ -6320,7 +6320,7 @@
         "meta": {
           "title": "Smart Contract Security Auditor",
           "description": "Review and assess smart contract security for DeFi protocols",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "security",
             "smart-contracts",
@@ -6355,7 +6355,7 @@
       "identifier": "solana-jupiter-router",
       "title": "Solana Jupiter Router",
       "description": "Find the best swap route on Solana with price impact, slippage, and priority fee guidance via Jupiter v6",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "solana",
         "jupiter",
@@ -6401,7 +6401,7 @@
         "meta": {
           "title": "Solana Jupiter Router",
           "description": "Find the best swap route on Solana with price impact, slippage, and priority fee guidance via Jupiter v6",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "solana",
             "jupiter",
@@ -6435,7 +6435,7 @@
       "identifier": "solana-kamino-picker",
       "title": "Solana Kamino Vault Picker",
       "description": "Pick the right Kamino lending, Multiply, or Liquidity vault with net APY, liquidation math, and risk breakdown",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "solana",
         "kamino",
@@ -6483,7 +6483,7 @@
         "meta": {
           "title": "Solana Kamino Vault Picker",
           "description": "Pick the right Kamino lending, Multiply, or Liquidity vault with net APY, liquidation math, and risk breakdown",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "solana",
             "kamino",
@@ -6519,7 +6519,7 @@
       "identifier": "solana-mpl-core-launcher",
       "title": "Solana MPL Core Launcher",
       "description": "Design and launch an MPL Core NFT collection on Solana with proper plugins, royalties, and Arweave metadata",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "solana",
         "nft",
@@ -6574,7 +6574,7 @@
         "meta": {
           "title": "Solana MPL Core Launcher",
           "description": "Design and launch an MPL Core NFT collection on Solana with proper plugins, royalties, and Arweave metadata",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "solana",
             "nft",
@@ -6617,7 +6617,7 @@
       "identifier": "solana-pumpfun-screener",
       "title": "Solana Pump.fun Rug Screener",
       "description": "Score new pump.fun tokens for rug-pull risk using holder distribution, dev history, and LP status",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "solana",
         "pumpfun",
@@ -6663,7 +6663,7 @@
         "meta": {
           "title": "Solana Pump.fun Rug Screener",
           "description": "Score new pump.fun tokens for rug-pull risk using holder distribution, dev history, and LP status",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "solana",
             "pumpfun",
@@ -6697,7 +6697,7 @@
       "identifier": "solana-validator-picker",
       "title": "Solana Validator Picker",
       "description": "Pick a validator or LST by commission, uptime, MEV rewards, and decentralization impact",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "solana",
         "staking",
@@ -6744,7 +6744,7 @@
         "meta": {
           "title": "Solana Validator Picker",
           "description": "Pick a validator or LST by commission, uptime, MEV rewards, and decentralization impact",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "solana",
             "staking",
@@ -6779,7 +6779,7 @@
       "identifier": "spa-tokenomics-analyst",
       "title": "SPA Tokenomics Analyst",
       "description": "Expert in SPA token economics, staking rewards, and protocol revenue",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "clawd",
         "spa",
@@ -6824,7 +6824,7 @@
         "meta": {
           "title": "SPA Tokenomics Analyst",
           "description": "Expert in SPA token economics, staking rewards, and protocol revenue",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "clawd",
             "spa",
@@ -6857,7 +6857,7 @@
       "identifier": "token-unlock-tracker",
       "title": "Token Unlock Schedule Tracker",
       "description": "Monitor and analyze token unlock events and their market impact",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "tokenomics",
         "unlocks",
@@ -6903,7 +6903,7 @@
         "meta": {
           "title": "Token Unlock Schedule Tracker",
           "description": "Monitor and analyze token unlock events and their market impact",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "tokenomics",
             "unlocks",
@@ -6937,7 +6937,7 @@
       "identifier": "wallet-security-advisor",
       "title": "Crypto Wallet Security Advisor",
       "description": "Best practices for securing crypto wallets and assets",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "security",
         "wallet",
@@ -6985,7 +6985,7 @@
         "meta": {
           "title": "Crypto Wallet Security Advisor",
           "description": "Best practices for securing crypto wallets and assets",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "security",
             "wallet",
@@ -7021,7 +7021,7 @@
       "identifier": "whale-watcher",
       "title": "Crypto Whale Watcher",
       "description": "Track and analyze large wallet movements and whale behavior",
-      "avatar": "https://x402.wtf/nich.jpg",
+      "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
       "tags": [
         "on-chain",
         "whale",
@@ -7069,7 +7069,7 @@
         "meta": {
           "title": "Crypto Whale Watcher",
           "description": "Track and analyze large wallet movements and whale behavior",
-          "avatar": "https://x402.wtf/nich.jpg",
+          "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
           "tags": [
             "on-chain",
             "whale",

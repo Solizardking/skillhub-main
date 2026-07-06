@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "Multi-Agent Trading Orchestrator",
   "description": "Coordinates multiple specialized agents for comprehensive market analysis and execution",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/solana-agent-orchestrator",
   "active": true,
   "createdAt": "2026-03-15",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "orchestrator",
     "multi-agent",

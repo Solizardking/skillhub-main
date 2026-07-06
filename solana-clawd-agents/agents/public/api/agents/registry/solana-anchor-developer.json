@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "Anchor Program Developer",
   "description": "Expert in developing Solana programs with Anchor framework for DeFi applications",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/solana-anchor-developer",
   "active": true,
   "createdAt": "2026-03-15",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "anchor",
     "solana",

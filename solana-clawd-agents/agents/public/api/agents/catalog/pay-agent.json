@@ -9,7 +9,7 @@
   "meta": {
     "title": "Pay Agent",
     "description": "pay.sh workflow agent for sandbox-first HTTP 402 calls, Pay MCP setup, provider discovery, and payment gateway specs.",
-    "avatar": "https://x402.wtf/nich.jpg",
+    "avatar": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
     "tags": [
       "pay",
       "pay-sh",

@@ -3,11 +3,11 @@
   "protocol": "metaplex-agent-registry",
   "name": "OpenClawd Agent Staking Operator",
   "description": "Helius DAS powered CLAWD and Metaplex Core agent staking and unstaking operator.",
-  "image": "https://x402.wtf/nich.jpg",
+  "image": "https://x402.wtf/clawd_mascot_hq_blueprint_grid_4k.png",
   "external_url": "https://x402.wtf/agents/solana-openclawd-agent-staking",
   "active": true,
   "createdAt": "2026-06-08",
-  "updatedAt": "2026-07-06T22:39:14.815Z",
+  "updatedAt": "2026-07-06T22:41:51.419Z",
   "tags": [
     "solana",
     "openclawd",

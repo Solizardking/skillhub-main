@@ -9,7 +9,7 @@
   "hashAlgorithm": "sha256",
   "totalSkills": 240,
   "catalogHash": "sha256-9cd5990835ddfbe89bdb5d399f4c671311ac2339f99c9530286c1fef98c65eb7",
-  "merkleRoot": "sha256-d2b367fc09561e1b4f29d214813e7b021b02daf5f023500c2470c73bed01140f",
+  "merkleRoot": "sha256-61081e0ea6356662d76d99f7ffb940bca2ad740653ea3854357500a279039130",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -2220,9 +2220,9 @@
       "name": "solana-clawd-agents",
       "description": "Use the imported Solana Clawd Agents hub catalog to browse, validate, build, deploy, mint, stake, and integrate production-ready Solana agent definitions, including x402 paid-agent APIs, MCP catalog endpoints, Cloudflare Worker API, Metaplex Core minting, and agent JSON schema workflows.",
       "category": "Solana / Blockchain",
-      "bundleHash": "sha256-ebbaa6c66e8485a5f5aef6d0e48bfa510e41afb3a686a1fe8f5c7e4c7538f938",
-      "merkleLeaf": "sha256-dd08d6aa31333fe78cf3e0669e2a5e8bfd4d02dcce0d9c0569b63050414d61ce",
-      "fileCount": 1248,
+      "bundleHash": "sha256-8ae4ebb8b97b8156a14b84b78c479a57c77d5807726e2e82cf56203525a1378a",
+      "merkleLeaf": "sha256-8145bd6750f9b1eb9e38046277e1da4a75852692625c0f0f7a2855c6899e740d",
+      "fileCount": 1250,
       "metadata": "/api/skills/solana-clawd-agents/metadata.json",
       "verification": "/api/skills/solana-clawd-agents/verification.json"
     },

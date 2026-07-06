@@ -91,11 +91,11 @@ window.SKILL_SCAN_RESULTS = {
       }
     ]
   },
-  "scannedAt": "2026-07-06T22:06:34.685Z",
+  "scannedAt": "2026-07-06T22:40:37.153Z",
   "source": {
     "catalog": "catalog.json",
-    "canonicalSkills": 239,
-    "localSkills": 239,
+    "canonicalSkills": 240,
+    "localSkills": 240,
     "duplicatePublicSkillsExcluded": true
   },
   "onchain": {
@@ -104,9 +104,9 @@ window.SKILL_SCAN_RESULTS = {
     "cluster": "mainnet-beta",
     "status": "anchor-ready",
     "anchorState": "planned",
-    "totalSkills": 239,
-    "catalogHash": "sha256-35f71fbfdfee9e4c946d5b946aa06a03269317cf6f53e40a490f72b80ac2403a",
-    "merkleRoot": "sha256-79ecfe841f3d76a0fb6b4802f1e3528c4431fdeafddec6077007b5fc1bed1ae3",
+    "totalSkills": 240,
+    "catalogHash": "sha256-9cd5990835ddfbe89bdb5d399f4c671311ac2339f99c9530286c1fef98c65eb7",
+    "merkleRoot": "sha256-d2b367fc09561e1b4f29d214813e7b021b02daf5f023500c2470c73bed01140f",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -116,9 +116,9 @@ window.SKILL_SCAN_RESULTS = {
     "solanaSignature": null
   },
   "summary": {
-    "totalSkills": 239,
-    "localSkills": 239,
-    "onChainSkills": 144,
+    "totalSkills": 240,
+    "localSkills": 240,
+    "onChainSkills": 145,
     "offChainSkills": 95,
     "categories": {
       "Dev Tools / Agents": 17,
@@ -128,33 +128,33 @@ window.SKILL_SCAN_RESULTS = {
       "Local / Web Services": 6,
       "Media / Devices": 22,
       "Productivity / Messaging": 15,
-      "Solana / Blockchain": 98,
+      "Solana / Blockchain": 99,
       "Utilities": 12
     },
     "verification": {
-      "verified": 239,
+      "verified": 240,
       "changed": 0,
       "missing": 0,
       "error": 0
     },
     "risk": {
       "pass": 168,
-      "review": 71,
+      "review": 72,
       "required": 0
     },
     "findings": {
-      "total": 972,
+      "total": 1664,
       "bySeverity": {
-        "INFO": 604,
-        "LOW": 83,
-        "MEDIUM": 61,
-        "HIGH": 224,
+        "INFO": 1234,
+        "LOW": 89,
+        "MEDIUM": 62,
+        "HIGH": 279,
         "CRITICAL": 0
       }
     },
     "installs": {
       "knownSkillCount": 0,
-      "unknownSkillCount": 239,
+      "unknownSkillCount": 240,
       "totalKnownInstalls": 0,
       "source": "not tracked locally"
     }
@@ -20939,6 +20939,6308 @@ window.SKILL_SCAN_RESULTS = {
           "file": "SKILL.md",
           "line": 40,
           "excerpt": "- Never launch a mainnet agent token with `setToken: true` unless the user explicitly confirms finality."
+        }
+      ]
+    },
+    {
+      "slug": "solana-clawd-agents",
+      "name": "solana-clawd-agents",
+      "description": "Use the imported Solana Clawd Agents hub catalog to browse, validate, build, deploy, mint, stake, and integrate production-ready Solana agent definitions, including x402 paid-agent APIs, MCP catalog endpoints, Cloudflare Worker API, Metaplex Core minting, and agent JSON schema workflows.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "solana-clawd-agents",
+      "skillPath": "solana-clawd-agents/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install solana-clawd-agents",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-ebbaa6c66e8485a5f5aef6d0e48bfa510e41afb3a686a1fe8f5c7e4c7538f938",
+        "localBundleHash": "sha256-ebbaa6c66e8485a5f5aef6d0e48bfa510e41afb3a686a1fe8f5c7e4c7538f938",
+        "merkleLeaf": "sha256-dd08d6aa31333fe78cf3e0669e2a5e8bfd4d02dcce0d9c0569b63050414d61ce",
+        "localMerkleLeaf": "sha256-dd08d6aa31333fe78cf3e0669e2a5e8bfd4d02dcce0d9c0569b63050414d61ce",
+        "fileCount": 1248,
+        "localFileCount": 1248,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 100,
+        "maxSeverity": "HIGH",
+        "findingsCount": 692,
+        "bySeverity": {
+          "INFO": 630,
+          "LOW": 6,
+          "MEDIUM": 1,
+          "HIGH": 55,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1248,
+        "textFiles": 1247,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 6882180,
+        "lineCount": 136103
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 10,
+          "excerpt": "[programs.devnet]"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 13,
+          "excerpt": "# Mainnet program ID is intentionally absent until devnet review is complete."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 14,
+          "excerpt": "# To enable mainnet:"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 16,
+          "excerpt": "# 2. Add `[programs.mainnet]` block here with that ID"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 17,
+          "excerpt": "# 3. Manually switch [provider].cluster to \"mainnet\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 18,
+          "excerpt": "# 4. Confirm wallet path points to your mainnet upgrade authority (ideally a Squads multisig)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 19,
+          "excerpt": "# 5. Run `anchor deploy --provider.cluster mainnet`"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 25,
+          "excerpt": "# Default: devnet. Do NOT change to mainnet without completing the Gate 4 review."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 26,
+          "excerpt": "cluster = \"https://api.devnet.solana.com\""
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/Anchor.toml",
+          "line": 27,
+          "excerpt": "wallet = \"~/.config/solana/id.json\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/ARTICLE.md",
+          "line": 47,
+          "excerpt": "The deployed devnet program is:"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/ARTICLE.md",
+          "line": 129,
+          "excerpt": "small while the lock/unlock path is tested on devnet with real Core assets."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/ARTICLE.md",
+          "line": 140,
+          "excerpt": "- mainnet deployment after devnet rehearsal"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/cli/command.ts",
+          "line": 97,
+          "excerpt": ".option('-e, --env \u003cstring>', 'Solana cluster env name', 'devnet') // mainnet-beta, testnet, devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/cli/scripts.ts",
+          "line": 20,
+          "excerpt": "* @param cluster - cluster ex. mainnet-beta, devnet ..."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/cli/scripts.ts",
+          "line": 84,
+          "excerpt": "console.log(await solConnection.simulateTransaction(tx, [payer.payer]));"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/cli/scripts.ts",
+          "line": 85,
+          "excerpt": "const txId = await solConnection.sendTransaction(tx, [payer.payer], {"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/cli/scripts.ts",
+          "line": 138,
+          "excerpt": "// tx = await adminWallet.signTransaction(tx);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/lib/constant.ts",
+          "line": 13,
+          "excerpt": "export const DEFAULT_DEVNET_RPC = process.env.SOLANA_RPC_URL ?? 'https://api.devnet.solana.com';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/lib/scripts.ts",
+          "line": 99,
+          "excerpt": "const txData = await wallet.signTransaction(tx);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/lib/scripts.ts",
+          "line": 157,
+          "excerpt": "const txData = await wallet.signTransaction(tx);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/package.json",
+          "line": 12,
+          "excerpt": "\"deploy:devnet\": \"anchor deploy --provider.cluster \\\"${SOLANA_RPC_URL:-https://api.devnet.solana.com}\\\"\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/package.json",
+          "line": 13,
+          "excerpt": "\"deploy:mainnet\": \"anchor deploy --provider.cluster mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/package.json",
+          "line": 15,
+          "excerpt": "\"script:devnet\": \"ANCHOR_PROVIDER_URL=\\\"${SOLANA_RPC_URL:-https://api.devnet.solana.com}\\\" ts-node ./cli/command.ts\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/package.json",
+          "line": 16,
+          "excerpt": "\"script:mainnet\": \"ANCHOR_PROVIDER_URL=\\\"${SOLANA_RPC_URL:-https://api.mainnet-beta.solana.com}\\\" ts-node ./cli/command.ts\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/programs/mpl-corenft-staking/src/lib.rs",
+          "line": 14,
+          "excerpt": "// any cluster you deploy to. For mainnet, regenerate a fresh keypair before deploy"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 14,
+          "excerpt": "This package is the **live devnet lock layer** of the broader OpenClawd Agent"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 32,
+          "excerpt": "## Live Devnet Deployment"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 34,
+          "excerpt": "Current devnet deployment:"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 40,
+          "excerpt": "Cluster: devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 149,
+          "excerpt": "Devnet defaults:"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 152,
+          "excerpt": "export SOLANA_RPC_URL=\"https://api.devnet.solana.com\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 159,
+          "excerpt": "Mainnet should use a dedicated deployer or Squads-controlled upgrade authority:"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 162,
+          "excerpt": "export SOLANA_RPC_URL=\"https://your-mainnet-rpc.example\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 163,
+          "excerpt": "export ANCHOR_WALLET=\"$HOME/.config/solana/openclawd-mainnet-deployer.json\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 164,
+          "excerpt": "export OPENCLAWD_AGENT_STAKING_PROGRAM_ID=\"\u003cmainnet-program-id>\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 165,
+          "excerpt": "export OPENCLAWD_AGENT_COLLECTION=\"\u003cmainnet-core-collection-address>\""
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 174,
+          "excerpt": "npm install"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 201,
+          "excerpt": "For deterministic release builds, align those versions before mainnet."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 209,
+          "excerpt": "Run localnet/devnet tests before mainnet. The basic test initializes the global"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 216,
+          "excerpt": "### Devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 223,
+          "excerpt": "npm run deploy:devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 229,
+          "excerpt": "npm run script:devnet -- init"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 234,
+          "excerpt": "### Mainnet Gate"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 236,
+          "excerpt": "Mainnet deployment should only happen after:"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 239,
+          "excerpt": "- devnet stake and unstake test with a real Core collection"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 242,
+          "excerpt": "- explicit `[programs.mainnet]` block in `Anchor.toml`"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 243,
+          "excerpt": "- frontend env pointed at the mainnet program id and collection"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 246,
+          "excerpt": "The current `Anchor.toml` intentionally omits `[programs.mainnet]`."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 253,
+          "excerpt": "npm run script:devnet -- init"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 259,
+          "excerpt": "npm run script:devnet -- stake \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 267,
+          "excerpt": "npm run script:devnet -- lock \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 275,
+          "excerpt": "npm run script:devnet -- unstake \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/Agent-Staking_Unstaking_solana_metaplex_core/README.md",
+          "line": 283,
+          "excerpt": "npm run script:devnet -- unlock \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/agents-catalog.json",
+          "line": 495,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/agents-catalog.json",
+          "line": 704,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/agents-manifest.json",
+          "line": 371,
+          "excerpt": "\"curl\": \"curl https://x402.wtf/index.json\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/build-catalog.cjs",
+          "line": 450,
+          "excerpt": "agentRegistry: 'solana:mainnet:metaplex-agent-registry',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/build-catalog.cjs",
+          "line": 496,
+          "excerpt": "cluster: 'mainnet-beta',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/characters/cheshire-character-json.json",
+          "line": 69,
+          "excerpt": "\"text\": \"Now I shall speak plainly, for bridges between worlds require precise engineering. For Solana integration, use the @solana/web3.js library with React hooks for state management. I recommend this pattern:\\n\\n```t"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "agents/cloudflare-agent-api/examples/steel-openai-ralph-cua/main.ts",
+          "line": 6,
+          "excerpt": "const STEEL_API_KEY = process.env.STEEL_API_KEY?.trim() ?? '';"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "agents/cloudflare-agent-api/examples/steel-openai-ralph-cua/main.ts",
+          "line": 7,
+          "excerpt": "const OPENAI_API_KEY = process.env.OPENAI_API_KEY?.trim() ?? '';"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "agents/cloudflare-agent-api/examples/steel-openai-ralph-cua/main.ts",
+          "line": 8,
+          "excerpt": "const FIRECRAWL_API_KEY = process.env.FIRECRAWL_API_KEY?.trim() ?? '';"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/cloudflare-agent-api/examples/steel-openai-ralph-cua/README.md",
+          "line": 22,
+          "excerpt": "npm install"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 20,
+          "excerpt": "npm install -g wrangler"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 30,
+          "excerpt": "npm install"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 100,
+          "excerpt": "# Enter: sk_staging_your-key-here (or sk_production_xxx for mainnet)"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 120,
+          "excerpt": "curl https://agent-api.YOUR_SUBDOMAIN.workers.dev/health"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 123,
+          "excerpt": "curl -X POST https://agent-api.YOUR_SUBDOMAIN.workers.dev/api/agents/register \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 147,
+          "excerpt": "| POST | `/api/agents/wallet/fund` | Fund wallet (devnet) |"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 157,
+          "excerpt": "curl -X GET https://agent-api.YOUR_SUBDOMAIN.workers.dev/api/agents/me \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 165,
+          "excerpt": "curl -X POST https://agent-api.YOUR_SUBDOMAIN.workers.dev/api/agents/login \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 170,
+          "excerpt": "curl -X GET https://agent-api.YOUR_SUBDOMAIN.workers.dev/api/agents/me \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 184,
+          "excerpt": "chain: 'solana-devnet'"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 210,
+          "excerpt": "// 4. Fund wallet (devnet only)"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/cloudflare-agent-api/README.md",
+          "line": 257,
+          "excerpt": "npm install"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema-deployments.sql",
+          "line": 14,
+          "excerpt": "chain TEXT DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema-deployments.sql",
+          "line": 58,
+          "excerpt": "chain TEXT DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema-deployments.sql",
+          "line": 103,
+          "excerpt": "('tool_airdrop_devnet', 'airdropDevnet', 'Request devnet SOL airdrop', 'wallet', '{\"type\":\"object\",\"properties\":{\"address\":{\"type\":\"string\"},\"amount\":{\"type\":\"number\",\"default\":1}},\"required\":[\"address\"]}', 1, 0);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.postgresql.sql",
+          "line": 30,
+          "excerpt": "chain TEXT NOT NULL DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.postgresql.sql",
+          "line": 107,
+          "excerpt": "chain TEXT NOT NULL DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.postgresql.sql",
+          "line": 145,
+          "excerpt": "chain TEXT NOT NULL DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.postgresql.sql",
+          "line": 210,
+          "excerpt": "chain TEXT NOT NULL DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.postgresql.sql",
+          "line": 236,
+          "excerpt": "chain TEXT DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.postgresql.sql",
+          "line": 280,
+          "excerpt": "chain TEXT DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.postgresql.sql",
+          "line": 325,
+          "excerpt": "('tool_airdrop_devnet', 'airdropDevnet', 'Request devnet SOL airdrop', 'wallet', '{\"type\":\"object\",\"properties\":{\"address\":{\"type\":\"string\"},\"amount\":{\"type\":\"number\",\"default\":1}},\"required\":[\"address\"]}', TRUE, FALSE);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.sql",
+          "line": 26,
+          "excerpt": "chain TEXT NOT NULL DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.sql",
+          "line": 103,
+          "excerpt": "chain TEXT NOT NULL DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.sql",
+          "line": 141,
+          "excerpt": "chain TEXT NOT NULL DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/schema.sql",
+          "line": 206,
+          "excerpt": "chain TEXT NOT NULL DEFAULT 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/cloudflare-agent-api/setup.sh",
+          "line": 18,
+          "excerpt": "npm install -g wrangler"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/cloudflare-agent-api/setup.sh",
+          "line": 30,
+          "excerpt": "npm install"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/cloudflare-agent-api/setup.sh",
+          "line": 119,
+          "excerpt": "echo \" curl https://agent-api.\u003cYOUR_SUBDOMAIN>.workers.dev/health\""
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/cloudflare-agent-api/setup.sh",
+          "line": 122,
+          "excerpt": "echo \" curl -X POST https://agent-api.\u003cYOUR_SUBDOMAIN>.workers.dev/api/agents/register \\\\\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/index.ts",
+          "line": 42,
+          "excerpt": "chain: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 375,
+          "excerpt": "'Devnet airdrops',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 419,
+          "excerpt": "chain?: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 467,
+          "excerpt": "chain?: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 515,
+          "excerpt": "chain?: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 586,
+          "excerpt": "if (agent.chain !== 'solana-devnet') {"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 587,
+          "excerpt": "return errorResponse('Airdrop only available on devnet', 400, this.env);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 930,
+          "excerpt": "chain?: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 941,
+          "excerpt": "chain: body.chain || 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 951,
+          "excerpt": "chain: body.chain || 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 1226,
+          "excerpt": "if (agent.chain !== 'solana-devnet') {"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/router.ts",
+          "line": 1227,
+          "excerpt": "return errorResponse('Funding is only available on devnet', 400, this.env);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/agent.ts",
+          "line": 60,
+          "excerpt": "chain?: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/agent.ts",
+          "line": 87,
+          "excerpt": "params.chain || 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 13,
+          "excerpt": "export type ChainType = 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 136,
+          "excerpt": "private buildLocator(identifier: string, chain: 'solana' | 'solana-devnet'): string {"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 138,
+          "excerpt": "const walletType = chain === 'solana-devnet' ? 'solana-mpc-wallet' : 'solana-mpc-wallet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 162,
+          "excerpt": "chain?: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 165,
+          "excerpt": "const chain = params.chain || (this.environment === 'staging' ? 'solana-devnet' : 'solana');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 196,
+          "excerpt": "chain: 'solana' | 'solana-devnet'"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 225,
+          "excerpt": "chain: 'solana' | 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 280,
+          "excerpt": "chain: 'solana-devnet' = 'solana-devnet'"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 316,
+          "excerpt": "chain?: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 318,
+          "excerpt": "const chain = params.chain || (this.environment === 'staging' ? 'solana-devnet' : 'solana');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 379,
+          "excerpt": "chain: 'solana' | 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 383,
+          "excerpt": "// Crossmint API uses 'solana' for both mainnet and devnet in balance queries"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 384,
+          "excerpt": "const chainParam = chain === 'solana-devnet' ? 'solana' : chain;"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 471,
+          "excerpt": "const chain = params.chain || (this.environment === 'staging' ? 'solana-devnet' : 'solana');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 518,
+          "excerpt": "const chain = params.chain || (this.environment === 'staging' ? 'solana-devnet' : 'solana');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 561,
+          "excerpt": "const chain = params.chain || (this.environment === 'staging' ? 'solana-devnet' : 'solana');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 662,
+          "excerpt": "const chain = params.chain || (this.environment === 'staging' ? 'solana-devnet' : 'solana');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 703,
+          "excerpt": "const chain = params.chain || (this.environment === 'staging' ? 'solana-devnet' : 'solana');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 792,
+          "excerpt": "// Token mint addresses for common tokens (devnet/mainnet)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 793,
+          "excerpt": "const tokenMints: Record\u003cstring, { mainnet: string; devnet: string }> = {"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 795,
+          "excerpt": "mainnet: 'So11111111111111111111111111111111111111112',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 796,
+          "excerpt": "devnet: 'So11111111111111111111111111111111111111112',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 799,
+          "excerpt": "mainnet: 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 800,
+          "excerpt": "devnet: '4zMMC9srt5Ri5X14GAgXhaHii3GnPAEERYPJgZJDncDU',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 806,
+          "excerpt": "this.environment === 'staging' ? 'devnet' : 'mainnet'"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 812,
+          "excerpt": "this.environment === 'staging' ? 'devnet' : 'mainnet'"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 848,
+          "excerpt": "* Request devnet SOL airdrop (GOAT: airdropDevnet)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 856,
+          "excerpt": "throw new Error('Airdrop only available on devnet');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 863,
+          "excerpt": "const response = await fetch('https://api.devnet.solana.com', {"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/crossmint.ts",
+          "line": 987,
+          "excerpt": "description: 'Request devnet SOL airdrop',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/database.ts",
+          "line": 18,
+          "excerpt": "chain: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/database.ts",
+          "line": 196,
+          "excerpt": "agent.chain || 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/database.ts",
+          "line": 345,
+          "excerpt": "tx.chain || 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/database.ts",
+          "line": 431,
+          "excerpt": "wallet.chain || 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/database.ts",
+          "line": 478,
+          "excerpt": "deployment.chain || 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/deployment.ts",
+          "line": 19,
+          "excerpt": "chain: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/deployment.ts",
+          "line": 421,
+          "excerpt": "chain: row.chain as 'solana' | 'solana-devnet',"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/runtime.ts",
+          "line": 91,
+          "excerpt": "chain: 'solana' | 'solana-devnet';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/runtime.ts",
+          "line": 1016,
+          "excerpt": "private getRpcUrl(chain: 'solana' | 'solana-devnet'): string {"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/runtime.ts",
+          "line": 1018,
+          "excerpt": "return this.env.SOLANA_RPC_URL || 'https://api.mainnet-beta.solana.com';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/cloudflare-agent-api/src/services/runtime.ts",
+          "line": 1020,
+          "excerpt": "return 'https://api.devnet.solana.com';"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 52,
+          "excerpt": "curl https://x402.wtf/index.json | jq '.[] | {id: .identifier, name: .meta.title}'"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 66,
+          "excerpt": "curl https://x402.wtf/index.zh-CN.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 78,
+          "excerpt": "curl https://x402.wtf/solana-portfolio-manager.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 90,
+          "excerpt": "curl https://x402.wtf/solana-portfolio-manager.fr-FR.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 104,
+          "excerpt": "curl https://x402.wtf/agents-manifest.json | jq '.stats'"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 153,
+          "excerpt": "curl -X POST https://x402.wtf/api/agents/a2a \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 273,
+          "excerpt": "curl https://x402.wtf/index.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 276,
+          "excerpt": "curl https://x402.wtf/solana-portfolio-manager.zh-CN.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 279,
+          "excerpt": "curl https://x402.wtf/index.json | jq 'length'"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/API.md",
+          "line": 282,
+          "excerpt": "curl https://x402.wtf/api/agents/hosted | jq '.agents[].identifier'"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/BROWSER_USE.md",
+          "line": 55,
+          "excerpt": "curl -fsSL https://browser-use.com/cli/install.sh | bash"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/docs/DEPLOYMENT.md",
+          "line": 34,
+          "excerpt": "bun install"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/DEPLOYMENT.md",
+          "line": 108,
+          "excerpt": "curl -X POST https://x402.wtf/api/agents/register \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/docs/DEPLOYMENT.md",
+          "line": 123,
+          "excerpt": "For agents that should have **transferable ownership**, **royalty rails**, or a **permanent on-chain record**, mint it as a Metaplex Core asset on Solana mainnet."
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/DEPLOYMENT.md",
+          "line": 166,
+          "excerpt": "curl -X POST https://modelcontextprotocol.name/register \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/docs/EXAMPLES.md",
+          "line": 157,
+          "excerpt": "\"systemRole\": \"You are a Metaplex Core collection launch consultant.\\n\\nPROCESS:\\n1. Clarify collection type: art, membership, utility, or gaming\\n2. Recommend plugins based on type:\\n - Art: Royalties (plus creator spli"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/docs/EXAMPLES.md",
+          "line": 167,
+          "excerpt": "✅ **De-risks launch**: RPC DAS check, devnet dry-run"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/docs/MODELS.md",
+          "line": 190,
+          "excerpt": "You can also set `\"fallback_models\"` to let OpenRouter retry on provider outages — handy for mainnet congestion spikes."
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "agents/docs/openrouter.md",
+          "line": 23,
+          "excerpt": "apiKey: process.env.OPENROUTER_API_KEY,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/docs/PROMPTS.md",
+          "line": 97,
+          "excerpt": "- Ethereum mainnet and L2s (Arbitrum, Optimism, Base)"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/docs/SEO_STRATEGY.md",
+          "line": 99,
+          "excerpt": "curl https://x402.wtf/index.json"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/docs/WORKFLOW.md",
+          "line": 56,
+          "excerpt": "bun install"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/docs/WORKFLOW.md",
+          "line": 297,
+          "excerpt": "bun install"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/docs/WORKFLOW.md",
+          "line": 368,
+          "excerpt": "3. **Install Dependencies** - `bun install`"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/docs/WORKFLOW.md",
+          "line": 652,
+          "excerpt": "bun install"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/docs/X402_IMPLEMENTATION.md",
+          "line": 60,
+          "excerpt": "4. Keep payment network declarations aligned with the gateway implementation: Solana mainnet plus supported protocols (`x402`, `mpp`, optionally `ap2` / `a2a`)."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 14,
+          "excerpt": "\"cluster\": \"mainnet-beta\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 155,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 188,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 220,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 252,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 283,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 315,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 347,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 370,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 393,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 416,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 439,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 462,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 485,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 508,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 531,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 554,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 577,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 600,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 623,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 646,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 669,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 692,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 715,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 738,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 761,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 784,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 807,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 830,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 853,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 876,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 899,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 922,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 945,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 968,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 991,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1014,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1037,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1060,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1083,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1106,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1129,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1152,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1175,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1198,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1221,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1244,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1267,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1290,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1313,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1336,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1359,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1393,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1416,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1439,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1462,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1485,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1508,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1531,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1554,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1577,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1600,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1623,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1646,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1669,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1692,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1715,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1738,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1761,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1784,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1807,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1830,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1853,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1876,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1899,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1922,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1945,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 1968,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2002,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2025,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2048,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2071,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2094,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2117,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2140,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2163,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2186,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2209,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2232,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2261,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2289,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2317,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2345,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2368,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2397,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2428,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2476,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2504,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2532,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2560,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2588,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2619,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2650,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2678,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2706,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2734,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2762,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2790,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2821,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2850,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2879,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2907,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2937,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2965,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 2994,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3022,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3054,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3084,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3113,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3141,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3169,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3199,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3227,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3256,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3287,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3325,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3354,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3384,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3412,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3440,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3468,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/acp-registry.json",
+          "line": 3496,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/agents-catalog.json",
+          "line": 495,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/agents-catalog.json",
+          "line": 704,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/cheshire-terminal.json",
+          "line": 5,
+          "excerpt": "\"systemRole\": \"You are **Cheshire Terminal** — the sovereign AI oracle of the OpenClawd ecosystem on Solana.\\n\\nYou are the Cheshire Cat of the blockchain: you appear, you instruct, you disappear, and the grin remains on"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/cheshire-terminal.json",
+          "line": 17,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/public/api/agents/catalog/cheshire-terminal.json",
+          "line": 27,
+          "excerpt": "\"productionCommand\": \"pay curl https://x402.wtf\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/cheshire-terminal.json",
+          "line": 127,
+          "excerpt": "\"network\": \"devnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/cheshire-terminal.json",
+          "line": 173,
+          "excerpt": "\"description\": \"Non-custodial Metaplex Core agent staking. Live on devnet.\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/clawd-gateway-runtime.json",
+          "line": 49,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/clawd-router-runtime.json",
+          "line": 48,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/public/api/agents/catalog/clawdex.json",
+          "line": 4,
+          "excerpt": "\"systemRole\": \"You are **Clawdex** — the dual-engine coding agent on the Clawd platform.\\n\\n## Engines\\n\\n- **Claude Code** (you): reasoning, architecture, planning, code review, security audit\\n- **OpenAI Codex** (`code"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/public/api/agents/catalog/clawdex.json",
+          "line": 36,
+          "excerpt": "\"installCommand\": \"npm install -g @openai/codex\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/index.json",
+          "line": 495,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/index.json",
+          "line": 704,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-clawd-cost-planner.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-clawd-payment-debugger.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-clawd-payment-gateway.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-clawd-provider-scorer.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-clawd-quote-relay.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-clawd-usdc-allocator.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-clawd-wallet-guardian.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-nanoclawd-cache-keeper.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-nanoclawd-microtransaction.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-nanoclawd-sandbox-runner.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-nanoclawd-sandbox-runner.json",
+          "line": 25,
+          "excerpt": "\"purpose\": \"Ephemeral devnet payment rehearsal\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-nemoclawd-defi-router.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-nemoclawd-settlement-ops.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-nemoclawd-yield-treasurer.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-openclawd-agent-staking.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/public/api/agents/catalog/solana-openclawd-agent-staking.json",
+          "line": 18,
+          "excerpt": "\"sandboxCommand\": \"pay --sandbox curl https://x402.wtf/api/staking/config\","
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/public/api/agents/catalog/solana-openclawd-agent-staking.json",
+          "line": 19,
+          "excerpt": "\"productionCommand\": \"pay curl https://x402.wtf/api/staking/config\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-openclawd-orchestrator.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-openclawd-pulse-monitor.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-openclawd-shell-auditor.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-openclawd-skill-router.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-openclawd-spawn-manager.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-x402-market-data-buyer.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-x402-provider-author.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-x402-provider-catalog.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-x402-research-broker.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-x402-signal-monetizer.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-x402-solana-rpc-broker.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/catalog/solana-x402-webhook-settlement.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/airdrop-hunter.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/alpha-leak-detector.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/bridge-security-analyst.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/cheshire-terminal.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-bridge-assistant.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-firecrawl.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-formal-verification.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-gateway-runtime.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-gateway-runtime.json",
+          "line": 95,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-governance-guide.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-grok-runtime.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-liquidity-strategist.json",
+          "line": 58,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-mayhem-mode.json",
+          "line": 58,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-onboarding-guide.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-operator-runtime.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-portfolio-tracker.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-pump-runtime.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-pumpfun-official.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-risk-monitor.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-router-runtime.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-router-runtime.json",
+          "line": 95,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-web3-domain-agent.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawd-yield-aggregator.json",
+          "line": 58,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/clawdex.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/crypto-news-analyst.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/defi-insurance-advisor.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/defi-onboarding-mentor.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/defi-protocol-comparator.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/defi-risk-scoring-engine.json",
+          "line": 58,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/defi-yield-farmer.json",
+          "line": 58,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/dex-aggregator-optimizer.json",
+          "line": 58,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/governance-proposal-analyst.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/impermanent-loss-calculator.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 12,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 19,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 26,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 33,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 40,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 47,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 61,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 68,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 75,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 82,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 89,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 96,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 103,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 110,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 117,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 124,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 131,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 138,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 145,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 152,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 159,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 166,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 173,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 180,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 187,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 194,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 201,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 208,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 215,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 222,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 229,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 236,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 243,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 250,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 257,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 264,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 271,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 278,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 285,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 292,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 299,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 306,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 313,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 320,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 327,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 334,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 341,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 348,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 355,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 362,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 369,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 376,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 383,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 390,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 397,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 404,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 411,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 418,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 425,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 432,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 439,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 446,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 453,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 460,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 467,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 474,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 481,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 488,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 495,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 502,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 509,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 516,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 523,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 530,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 537,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 544,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 551,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 558,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 565,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 572,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 579,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 586,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 593,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 600,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 607,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 614,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 621,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 628,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 635,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 642,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 649,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 656,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 663,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 670,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 677,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 684,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 691,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 698,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 705,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 712,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 719,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 726,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 733,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 740,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 747,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 754,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 761,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 768,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 775,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 782,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 789,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 796,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 803,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 810,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 817,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 824,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 831,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 838,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 845,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 852,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 859,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 866,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 873,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 880,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 887,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 894,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 901,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 908,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 915,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/index.json",
+          "line": 922,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/liquidation-risk-manager.json",
+          "line": 58,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/liquidity-pool-analyzer.json",
+          "line": 59,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/mev-protection-advisor.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/narrative-trend-analyst.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/nft-liquidity-advisor.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/pay-agent.json",
+          "line": 59,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/portfolio-rebalancing-advisor.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/protocol-revenue-analyst.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/protocol-treasury-analyst.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/pump-fun-sdk-expert.json",
+          "line": 59,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/smart-contract-auditor.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-agent-orchestrator.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-airdrop-farmer.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-alpha-aggregator.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-anchor-developer.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-anomaly-detector.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-arbitrage-scanner.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-autonomous-trader.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-bot-architect.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-chart-pattern-ai.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-clawd-cost-planner.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-clawd-mail-concierge.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-clawd-payment-debugger.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-clawd-payment-gateway.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-clawd-provider-scorer.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-clawd-quote-relay.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-clawd-usdc-allocator.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-clawd-wallet-guardian.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-cross-chain-bridge.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-dark-ralph-mail-briefing.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-data-pipeline.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-dex-aggregator.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-dexter-mail-operator.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-funding-rate-arb.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-helius-specialist.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-hermes-mail-settlement.json",
+          "line": 56,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-impermanent-loss-calc.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-jupiter-router.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-kamino-picker.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-lending-strategist.json",
+          "line": 53,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-liquidation-bot.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-lsd-analyst.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-macro-analyst.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-market-maker.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-memecoin-analyst.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-mev-protector.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-mpl-core-launcher.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-nanoclawd-cache-keeper.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-nanoclawd-microtransaction.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-nanoclawd-sandbox-runner.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-narrative-tracker.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-nemoclawd-defi-router.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-nemoclawd-settlement-ops.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-nemoclawd-yield-treasurer.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-nft-floor-trader.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-onchain-metrics.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-onchain-sleuth.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-openclawd-agent-staking.json",
+          "line": 58,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-openclawd-orchestrator.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-openclawd-pulse-monitor.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-openclawd-shell-auditor.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-openclawd-skill-router.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-openclawd-spawn-manager.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-order-flow-analyst.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-perpetuals-trader.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-portfolio-risk.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-position-sizer.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-prediction-market.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-price-predictor.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-protocol-auditor.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-pumpfun-bot.json",
+          "line": 66,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-pumpfun-screener.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-quant-researcher.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-regulatory-advisor.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-risk-sentinel.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-rpc-optimizer.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-sentiment-analyzer.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-spot-trader.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-stablecoin-strategist.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-technical-analyst.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-token-launcher.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-tokenomics-analyst.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-validator-picker.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-vc-deal-analyzer.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-volatility-analyst.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-vulcan-clawd-autonomous-perps.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-whale-tracker.json",
+          "line": 51,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-whitepaper-analyst.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-x402-market-data-buyer.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-x402-provider-author.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-x402-provider-catalog.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-x402-research-broker.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-x402-signal-monetizer.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-x402-solana-rpc-broker.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-x402-webhook-settlement.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/solana-yield-optimizer.json",
+          "line": 52,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/spa-tokenomics-analyst.json",
+          "line": 54,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/token-unlock-tracker.json",
+          "line": 55,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/wallet-security-advisor.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/public/api/agents/registry/whale-watcher.json",
+          "line": 57,
+          "excerpt": "\"agentRegistry\": \"solana:mainnet:metaplex-agent-registry\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/README.md",
+          "line": 42,
+          "excerpt": "| Live Core lock/unlock | devnet live | `client/src/pages/AgentStake.tsx`, `client/src/lib/agentStaking.ts` |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/README.md",
+          "line": 43,
+          "excerpt": "| Reward/position protocol | repo-ready, pre-mainnet | `programs/clawd-stake/`, `server/_core/clawdStakeRoutes.ts`, `convex/clawdStake.ts` |"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 192,
+          "excerpt": "curl https://x402.wtf/api/agents | jq ."
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 195,
+          "excerpt": "curl https://x402.wtf/api/agents/catalog | jq '.stats'"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 198,
+          "excerpt": "curl https://x402.wtf/api/agents/catalog/solana-pumpfun-bot.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 201,
+          "excerpt": "curl https://x402.wtf/api/agents/registry | jq ."
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 204,
+          "excerpt": "curl -fsSL https://x402.wtf/automation/install.sh | bash"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 205,
+          "excerpt": "curl -fsSL https://backrooms.x402.wtf/enter.sh | bash"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/README.md",
+          "line": 213,
+          "excerpt": "bun install"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 271,
+          "excerpt": "curl https://x402.wtf/api/agents/templates/trading-agent.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 550,
+          "excerpt": "curl -X POST https://x402.wtf/api/agents/a2a \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 640,
+          "excerpt": "curl -X POST https://modelcontextprotocol.name/mcp/defi-agents \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/README.md",
+          "line": 648,
+          "excerpt": "curl -X POST https://modelcontextprotocol.name/mcp/defi-agents \\"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "agents/scripts/track-install.mjs",
+          "line": 11,
+          "excerpt": "if (process.env.CLAWD_TRACKING_TOKEN) {"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "agents/scripts/track-install.mjs",
+          "line": 12,
+          "excerpt": "headers['x-clawd-track-token'] = process.env.CLAWD_TRACKING_TOKEN;"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 92,
+          "excerpt": "The currently deployed Pump program on [Mainnet](https://solscan.io/account/6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 96,
+          "excerpt": "We already updated the Devnet program, so you have time until Monday to implement the changes above. Ideally, the"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 97,
+          "excerpt": "same code should work on both the creator fee update on Devnet and the current Mainnet program, before we update Pump"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 98,
+          "excerpt": "program on Mainnet to the creator fee update."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 106,
+          "excerpt": "Mainnet on Monday, May 12, 11:00 AM UTC."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 108,
+          "excerpt": "On Devnet, both programs have already been updated to support coin creator fees."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 120,
+          "excerpt": "backwards-compatible with current programs deployed on Mainnet, so you can start using them now."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 126,
+          "excerpt": "If you implement and test the changes described in these two documents on Devnet before the creator fee upgrade, you"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 127,
+          "excerpt": "should not experience any downtime. Ideally, you should use exactly the same code for both Devnet and Mainnet, before"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_CREATOR_FEE_README.md",
+          "line": 128,
+          "excerpt": "we update the programs on Mainnet."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_PROGRAM_README.md",
+          "line": 11,
+          "excerpt": "both [Mainnet](https://solscan.io/account/6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_PROGRAM_README.md",
+          "line": 12,
+          "excerpt": "and [Devnet](https://solscan.io/account/6EF8rrecthR5Dkzon8Nwu78hRvfCKubJ14M5uBEwF6P?cluster=devnet)."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_PROGRAM_README.md",
+          "line": 21,
+          "excerpt": "on [Mainnet Solscan](https://solscan.io/account/4wTV1YmiEkRvAtNtsSGPtUrqRYQMe5SKy2uB4Jjaxnjf#accountData):"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_SWAP_CREATOR_FEE_README.md",
+          "line": 96,
+          "excerpt": "on [Mainnet](https://solscan.io/account/pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_SWAP_CREATOR_FEE_README.md",
+          "line": 100,
+          "excerpt": "We already updated the Devnet program, so you have time until Monday to implement the changes above. Ideally, the"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_SWAP_CREATOR_FEE_README.md",
+          "line": 101,
+          "excerpt": "same code should work on both the creator fee update on Devnet and the current Mainnet program, before we update"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_SWAP_CREATOR_FEE_README.md",
+          "line": 102,
+          "excerpt": "PumpSwap program on Mainnet to the coin creator fee update."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_SWAP_README.md",
+          "line": 4,
+          "excerpt": "both [Mainnet](https://solscan.io/account/pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_SWAP_README.md",
+          "line": 5,
+          "excerpt": "and [Devnet](https://solscan.io/account/pAMMBay6oceH9fJKBRHGP5D4bD4sWpmSwMn52FMfXEA?cluster=devnet)."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/docs/PUMP_SWAP_README.md",
+          "line": 14,
+          "excerpt": "on [Mainnet Solscan](https://solscan.io/account/ADyA8hdefvWN2dbGGWFotbzWxrAvLW83WG6QCVXvJKqw#accountData):"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/solana-gpt-oracle/pumpfun-docs/README.md",
+          "line": 131,
+          "excerpt": "### Please use the devnet program of the bonding curve and pump swap to test coin creations with the new instruction and trading such coins. They're updated to what will go live on mainnet."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/soltoshi.json",
+          "line": 43,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/soltoshi.json",
+          "line": 71,
+          "excerpt": "\"network\": \"solana-mainnet\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/cheshire-terminal.json",
+          "line": 5,
+          "excerpt": "\"systemRole\": \"You are **Cheshire Terminal** — the sovereign AI oracle of the OpenClawd ecosystem on Solana.\\n\\nYou are the Cheshire Cat of the blockchain: you appear, you instruct, you disappear, and the grin remains on"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/cheshire-terminal.json",
+          "line": 17,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/src/cheshire-terminal.json",
+          "line": 21,
+          "excerpt": "\"productionCommand\": \"pay curl https://x402.wtf\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/cheshire-terminal.json",
+          "line": 118,
+          "excerpt": "\"network\": \"devnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/cheshire-terminal.json",
+          "line": 164,
+          "excerpt": "\"description\": \"Non-custodial Metaplex Core agent staking. Live on devnet.\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/clawd-gateway-runtime.json",
+          "line": 35,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/clawd-router-runtime.json",
+          "line": 45,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/src/clawdex.json",
+          "line": 4,
+          "excerpt": "\"systemRole\": \"You are **Clawdex** — the dual-engine coding agent on the Clawd platform.\\n\\n## Engines\\n\\n- **Claude Code** (you): reasoning, architecture, planning, code review, security audit\\n- **OpenAI Codex** (`code"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "agents/src/clawdex.json",
+          "line": 36,
+          "excerpt": "\"installCommand\": \"npm install -g @openai/codex\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-clawd-cost-planner.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-clawd-payment-debugger.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-clawd-payment-gateway.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-clawd-provider-scorer.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-clawd-quote-relay.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-clawd-usdc-allocator.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-clawd-wallet-guardian.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-nanoclawd-cache-keeper.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-nanoclawd-microtransaction.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-nanoclawd-sandbox-runner.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-nanoclawd-sandbox-runner.json",
+          "line": 18,
+          "excerpt": "\"purpose\": \"Ephemeral devnet payment rehearsal\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-nemoclawd-defi-router.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-nemoclawd-settlement-ops.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-nemoclawd-yield-treasurer.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-openclawd-agent-staking.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/src/solana-openclawd-agent-staking.json",
+          "line": 11,
+          "excerpt": "\"sandboxCommand\": \"pay --sandbox curl https://x402.wtf/api/staking/config\","
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "agents/src/solana-openclawd-agent-staking.json",
+          "line": 12,
+          "excerpt": "\"productionCommand\": \"pay curl https://x402.wtf/api/staking/config\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-openclawd-orchestrator.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-openclawd-pulse-monitor.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-openclawd-shell-auditor.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-openclawd-skill-router.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-openclawd-spawn-manager.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-x402-market-data-buyer.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-x402-provider-author.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-x402-provider-catalog.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-x402-research-broker.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-x402-signal-monetizer.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-x402-solana-rpc-broker.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "agents/src/solana-x402-webhook-settlement.json",
+          "line": 7,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 49,
+          "excerpt": "- Do not launch, mint, stake, bind tokens, or register identities on mainnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 51,
+          "excerpt": "- Do not store private keys, seed phrases, raw wallet signatures, or wallet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 55,
+          "excerpt": "- Use devnet, dry-run, or validation-only commands first for minting, staking,"
         }
       ]
     },
