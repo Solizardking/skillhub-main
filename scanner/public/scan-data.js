@@ -91,7 +91,7 @@ window.SKILL_SCAN_RESULTS = {
       }
     ]
   },
-  "scannedAt": "2026-07-06T21:26:31.692Z",
+  "scannedAt": "2026-07-06T22:01:01.906Z",
   "source": {
     "catalog": "catalog.json",
     "canonicalSkills": 239,

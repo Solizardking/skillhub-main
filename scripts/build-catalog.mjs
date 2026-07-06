@@ -11,6 +11,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const CHECK = process.argv.includes("--check");
 const SITE_URL = "https://skills.onchainai.fund";
+const DEFAULT_PAYMENT_NETWORK = process.env.SKILLHUB_PAYMENT_NETWORK || "mainnet";
+const DEFAULT_MERCHANT_NAME = process.env.SKILLHUB_MERCHANT_NAME || "Skill Hub";
+const DEFAULT_MERCHANT_WALLET = process.env.SKILLHUB_MERCHANT_WALLET || "";
+const DEFAULT_OFFCHAIN_CHECKOUT_URL = process.env.SKILLHUB_OFFCHAIN_CHECKOUT_URL || "";
 
 const CATEGORY_ORDER = [
   "Dev Tools / Agents",
@@ -270,10 +274,13 @@ async function renderPublic(skills) {
   const files = new Map();
   const catalog = skills.map(({ slug, name, description, category }) => ({ slug, name, description, category }));
   const catalogJson = `${JSON.stringify(catalog, null, 2)}\n`;
+  const monetization = renderMonetizationConfig(catalog);
 
   files.set("catalog.json", catalogJson);
   files.set("api/skills.json", catalogJson);
   files.set("api/skills/index.json", catalogJson);
+  files.set("api/monetization.json", `${JSON.stringify(monetization, null, 2)}\n`);
+  files.set("integrations/commerce-kit-payment-button.tsx", renderCommerceKitPaymentButton());
   files.set("CNAME", `${new URL(SITE_URL).hostname}\n`);
   files.set("robots.txt", "User-agent: *\nAllow: /\n");
   files.set("sitemap.xml", renderSitemap(catalog));
@@ -636,6 +643,23 @@ function renderHub(catalog) {
     `| On-chain registry | [\`.well-known/onchain-skill-registry.json\`](./public/.well-known/onchain-skill-registry.json) |`,
     "| Scanner results | [`scanner/results/scan-results.json`](./scanner/results/scan-results.json) |",
     "| Scanner dashboard | [`scanner/public/index.html`](./scanner/public/index.html) |",
+    "| Monetization registry | [`public/api/monetization.json`](./public/api/monetization.json) |",
+    "| Commerce Kit integration | [`public/integrations/commerce-kit-payment-button.tsx`](./public/integrations/commerce-kit-payment-button.tsx) |",
+    "",
+    "## Monetization",
+    "",
+    "The generated frontend includes a publisher monetization panel. Set a Solana merchant wallet to enable Solana Pay tip links on every skill, and set an off-chain checkout URL for invoices, cards, subscriptions, or account provisioning.",
+    "",
+    "Render build-time environment variables:",
+    "",
+    "| Variable | Purpose |",
+    "|---|---|",
+    "| `SKILLHUB_MERCHANT_WALLET` | Default Solana payment recipient wallet |",
+    "| `SKILLHUB_MERCHANT_NAME` | Merchant label shown in payment config |",
+    "| `SKILLHUB_PAYMENT_NETWORK` | `mainnet` or `devnet` |",
+    "| `SKILLHUB_OFFCHAIN_CHECKOUT_URL` | Optional checkout URL used for off-chain payment flows |",
+    "| `SKILLHUB_PAYMENT_RPC_URL` | Optional custom Solana RPC URL for Commerce Kit |",
+    "| `SKILLHUB_ALLOWED_MINTS` | Optional comma-separated accepted token mint addresses |",
     "",
     "## Category Map",
     "",
@@ -903,6 +927,8 @@ function renderSiteManifest(catalog, registry) {
       ui: `${SITE_URL}/skills`,
       catalog: `${SITE_URL}/api/skills.json`,
       catalogIndex: `${SITE_URL}/api/skills`,
+      monetization: `${SITE_URL}/api/monetization.json`,
+      commerceKitIntegration: `${SITE_URL}/integrations/commerce-kit-payment-button.tsx`,
       skillMetadata: `${SITE_URL}/api/skills/{skill}/metadata.json`,
       skillSource: `${SITE_URL}/api/skills/{skill}/SKILL.md`,
       skillVerification: `${SITE_URL}/api/skills/{skill}/verification.json`,
@@ -918,6 +944,11 @@ function renderSiteManifest(catalog, registry) {
       merkleRoot: registry.merkleRoot,
       catalogHash: registry.catalogHash,
     },
+    monetization: {
+      onchain: "Solana Pay tip URI per skill card",
+      offchain: "Optional checkout URL carried in api/monetization.json",
+      commerceKit: "@solana-commerce/kit PaymentButton integration",
+    },
   };
 }
 
@@ -926,6 +957,8 @@ function renderSitemap(catalog) {
     SITE_URL,
     `${SITE_URL}/skills`,
     `${SITE_URL}/api/skills.json`,
+    `${SITE_URL}/api/monetization.json`,
+    `${SITE_URL}/integrations/commerce-kit-payment-button.tsx`,
     `${SITE_URL}/.well-known/skills-hub.json`,
     `${SITE_URL}/.well-known/onchain-skill-registry.json`,
     ...catalog.flatMap((skill) => [
@@ -946,6 +979,107 @@ function encodeSkillPath(slug) {
   return slug.split("/").map(encodeURIComponent).join("/");
 }
 
+function renderMonetizationConfig(catalog) {
+  const network = DEFAULT_PAYMENT_NETWORK === "devnet" ? "devnet" : "mainnet";
+  const merchant = {
+    name: DEFAULT_MERCHANT_NAME,
+    wallet: DEFAULT_MERCHANT_WALLET,
+  };
+
+  return {
+    schemaVersion: "skillhub-monetization/v1",
+    generatedAt: "1970-01-01T00:00:00.000Z",
+    commerceKit: {
+      package: "@solana-commerce/kit",
+      component: "PaymentButton",
+      mode: "tip",
+      integration: "/integrations/commerce-kit-payment-button.tsx",
+      docs: "https://launch.solana.com/products/commercekit/playground",
+    },
+    defaults: {
+      merchant,
+      network,
+      rpcUrl: process.env.SKILLHUB_PAYMENT_RPC_URL || "",
+      allowedMints: (process.env.SKILLHUB_ALLOWED_MINTS || "").split(",").map((mint) => mint.trim()).filter(Boolean),
+      showQR: true,
+      offchainCheckoutUrl: DEFAULT_OFFCHAIN_CHECKOUT_URL,
+    },
+    skills: catalog.map((skill) => ({
+      slug: skill.slug,
+      name: skill.name,
+      category: skill.category,
+      mode: "tip",
+      merchant,
+      network,
+      onchainEnabled: isLikelySolanaAddress(merchant.wallet),
+      offchainEnabled: Boolean(DEFAULT_OFFCHAIN_CHECKOUT_URL),
+    })),
+  };
+}
+
+function isLikelySolanaAddress(value) {
+  return /^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(String(value || ""));
+}
+
+function renderCommerceKitPaymentButton() {
+  return `import { PaymentButton } from "@solana-commerce/kit";
+
+export type SkillPaymentButtonProps = {
+  skillSlug: string;
+  merchantName?: string;
+  merchantWallet: string;
+  network?: "mainnet" | "devnet";
+  rpcUrl?: string;
+  allowedMints?: string[];
+  onPaymentSuccess?: (signature: string) => void;
+  onPaymentError?: (error: Error) => void;
+};
+
+export function SkillPaymentButton({
+  skillSlug,
+  merchantName = "Skill Hub",
+  merchantWallet,
+  network = "mainnet",
+  rpcUrl,
+  allowedMints,
+  onPaymentSuccess,
+  onPaymentError,
+}: SkillPaymentButtonProps) {
+  return (
+    <PaymentButton
+      config={{
+        merchant: { name: merchantName, wallet: merchantWallet },
+        mode: "tip",
+        network,
+        rpcUrl,
+        allowedMints,
+        showQR: true,
+        theme: {
+          borderRadius: 8,
+        },
+      }}
+      onPaymentStart={() => {
+        console.info("Skill payment started:", skillSlug);
+      }}
+      onPaymentSuccess={(signature) => {
+        console.info("Skill payment confirmed:", skillSlug, signature);
+        onPaymentSuccess?.(signature);
+      }}
+      onPaymentError={(error) => {
+        console.error("Skill payment failed:", skillSlug, error);
+        onPaymentError?.(error);
+      }}
+      onCancel={() => {
+        console.info("Skill payment cancelled:", skillSlug);
+      }}
+    >
+      <button type="button">Tip this skill</button>
+    </PaymentButton>
+  );
+}
+`;
+}
+
 function escapeXml(value) {
   return String(value).replace(/[<>&'"]/g, (char) => ({
     "<": "&lt;",
@@ -959,6 +1093,7 @@ function escapeXml(value) {
 function renderIndexHtml(catalog) {
   const grouped = Object.fromEntries(groupByCategory(catalog));
   const data = JSON.stringify(catalog).replace(/</g, "\\u003c");
+  const paymentData = JSON.stringify(renderMonetizationConfig(catalog)).replace(/</g, "\\u003c");
   const categoryOptions = CATEGORY_ORDER.filter((category) => grouped[category]).map((category) => `<option value="${escapeHtml(category)}">${escapeHtml(category)}</option>`).join("");
   const categoryOrder = JSON.stringify(CATEGORY_ORDER.filter((category) => grouped[category]));
 
@@ -982,9 +1117,12 @@ function renderIndexHtml(catalog) {
       --blue: #2563eb;
       --amber: #a16207;
       --purple: #6d28d9;
+      --red: #b42318;
       --chip: #eef7f5;
+      --soft-green: #e7f4ef;
       --soft-blue: #eaf1ff;
       --soft-amber: #fff6db;
+      --soft-red: #fde8e7;
       --shadow: 0 1px 2px rgba(23, 33, 31, 0.08), 0 12px 28px rgba(23, 33, 31, 0.08);
     }
 
@@ -1168,6 +1306,83 @@ function renderIndexHtml(catalog) {
       line-height: 1.2;
     }
 
+    .monetize {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(320px, 0.75fr);
+      gap: 12px;
+      margin: 18px 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .monetize h2,
+    .payment-modal h2 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.18;
+      letter-spacing: 0;
+    }
+
+    .monetize p,
+    .payment-modal p {
+      margin: 7px 0 0;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .monetize-form {
+      display: grid;
+      grid-template-columns: minmax(180px, 1fr) minmax(110px, 150px);
+      gap: 8px;
+      align-content: start;
+    }
+
+    .monetize-form input:last-child {
+      grid-column: 1 / -1;
+    }
+
+    .status-line {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      padding: 0 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--chip);
+      color: #25423f;
+      font-size: 12px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .badge.green {
+      border-color: rgba(15, 118, 110, 0.28);
+      background: var(--soft-green);
+      color: #0b5f59;
+    }
+
+    .badge.amber {
+      border-color: rgba(161, 98, 7, 0.28);
+      background: var(--soft-amber);
+      color: #7c4b05;
+    }
+
+    .badge.red {
+      border-color: rgba(180, 35, 24, 0.28);
+      background: var(--soft-red);
+      color: var(--red);
+    }
+
     .section-head {
       display: flex;
       align-items: center;
@@ -1343,6 +1558,91 @@ function renderIndexHtml(catalog) {
       text-align: center;
     }
 
+    .payment-backdrop {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: none;
+      place-items: center;
+      padding: 18px;
+      background: rgba(12, 20, 18, 0.44);
+    }
+
+    .payment-backdrop.open {
+      display: grid;
+    }
+
+    .payment-modal {
+      width: min(760px, 100%);
+      max-height: min(760px, calc(100vh - 36px));
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: 0 22px 60px rgba(10, 16, 14, 0.26);
+    }
+
+    .payment-head,
+    .payment-body {
+      padding: 16px;
+    }
+
+    .payment-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 14px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .payment-body {
+      display: grid;
+      gap: 14px;
+    }
+
+    .payment-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .payment-box {
+      min-width: 0;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfd;
+    }
+
+    .payment-box strong,
+    .payment-box code,
+    .payment-code code {
+      overflow-wrap: anywhere;
+    }
+
+    .payment-code {
+      max-height: 220px;
+      overflow: auto;
+      margin: 0;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #111c1a;
+      color: #eaf7f1;
+      font-size: 12px;
+    }
+
+    .icon-button {
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      font-size: 20px;
+      line-height: 1;
+    }
+
     @media (max-width: 1080px) {
       .map,
       .stats {
@@ -1359,7 +1659,10 @@ function renderIndexHtml(catalog) {
       header,
       .toolbar,
       .map,
-      .stats {
+      .stats,
+      .monetize,
+      .monetize-form,
+      .payment-grid {
         grid-template-columns: 1fr;
       }
 
@@ -1444,6 +1747,22 @@ function renderIndexHtml(catalog) {
 
     <section class="stats" id="stats" aria-label="Hub metrics"></section>
 
+    <section class="monetize" aria-label="Skill monetization">
+      <div>
+        <h2>Monetize Skills</h2>
+        <p>Set a merchant wallet to enable on-chain Solana tips for every skill card. Add an off-chain checkout URL when you want invoices, cards, subscriptions, or account-based access outside the chain.</p>
+        <div class="status-line" id="paymentStatus"></div>
+      </div>
+      <div class="monetize-form">
+        <input id="merchantWallet" autocomplete="off" spellcheck="false" placeholder="Solana merchant wallet">
+        <select id="paymentNetwork" aria-label="Payment network">
+          <option value="mainnet">Mainnet</option>
+          <option value="devnet">Devnet</option>
+        </select>
+        <input id="offchainCheckout" autocomplete="off" spellcheck="false" placeholder="Off-chain checkout URL (optional)">
+      </div>
+    </section>
+
     <section class="toolbar" aria-label="Catalog filters">
       <input id="search" type="search" autocomplete="off" placeholder="Search skills">
       <select id="category" aria-label="Category">
@@ -1475,9 +1794,24 @@ function renderIndexHtml(catalog) {
     <p class="empty" id="empty">No skills match the current filters.</p>
   </main>
 
+  <div class="payment-backdrop" id="paymentBackdrop" aria-hidden="true">
+    <section class="payment-modal" role="dialog" aria-modal="true" aria-labelledby="paymentTitle">
+      <div class="payment-head">
+        <div>
+          <h2 id="paymentTitle">Skill Payment</h2>
+          <p id="paymentSubtitle"></p>
+        </div>
+        <button class="icon-button" type="button" id="closePayment" aria-label="Close payment dialog">&times;</button>
+      </div>
+      <div class="payment-body" id="paymentBody"></div>
+    </section>
+  </div>
+
   <script id="skills-data" type="application/json">${data}</script>
+  <script id="payment-data" type="application/json">${paymentData}</script>
   <script>
     const skills = JSON.parse(document.getElementById("skills-data").textContent);
+    const paymentDefaults = JSON.parse(document.getElementById("payment-data").textContent);
     const categoryOrder = ${categoryOrder};
     const categoryDescriptions = {
       "Dev Tools / Agents": "Agent frameworks, CLIs, MCP, GitHub, terminal control, and skill development.",
@@ -1499,10 +1833,24 @@ function renderIndexHtml(catalog) {
     const empty = document.getElementById("empty");
     const visibleCount = document.getElementById("visibleCount");
     const scannerLink = document.getElementById("scannerLink");
+    const merchantWallet = document.getElementById("merchantWallet");
+    const paymentNetwork = document.getElementById("paymentNetwork");
+    const offchainCheckout = document.getElementById("offchainCheckout");
+    const paymentStatus = document.getElementById("paymentStatus");
+    const paymentBackdrop = document.getElementById("paymentBackdrop");
+    const closePayment = document.getElementById("closePayment");
+    const paymentTitle = document.getElementById("paymentTitle");
+    const paymentSubtitle = document.getElementById("paymentSubtitle");
+    const paymentBody = document.getElementById("paymentBody");
+    const paymentSettings = loadPaymentSettings();
 
     if (window.location.protocol === "file:") {
       scannerLink.setAttribute("href", "scanner/index.html");
     }
+
+    merchantWallet.value = paymentSettings.wallet;
+    paymentNetwork.value = paymentSettings.network;
+    offchainCheckout.value = paymentSettings.offchainCheckoutUrl;
 
     function escapeHtml(value) {
       return String(value).replace(/[&<>"']/g, (char) => ({
@@ -1516,6 +1864,103 @@ function renderIndexHtml(catalog) {
 
     function escapeAttr(value) {
       return escapeHtml(value).replace(/\x60/g, "&#96;");
+    }
+
+    function loadPaymentSettings() {
+      const defaults = paymentDefaults.defaults || {};
+      const saved = safeJsonParse(localStorage.getItem("skillhub-payment-settings")) || {};
+      return {
+        merchantName: saved.merchantName || defaults.merchant?.name || "Skill Hub",
+        wallet: saved.wallet || defaults.merchant?.wallet || "",
+        network: saved.network || defaults.network || "mainnet",
+        rpcUrl: saved.rpcUrl || defaults.rpcUrl || "",
+        allowedMints: Array.isArray(saved.allowedMints) ? saved.allowedMints : (defaults.allowedMints || []),
+        offchainCheckoutUrl: saved.offchainCheckoutUrl || defaults.offchainCheckoutUrl || "",
+      };
+    }
+
+    function safeJsonParse(value) {
+      try {
+        return value ? JSON.parse(value) : null;
+      } catch {
+        return null;
+      }
+    }
+
+    function savePaymentSettings() {
+      paymentSettings.wallet = merchantWallet.value.trim();
+      paymentSettings.network = paymentNetwork.value;
+      paymentSettings.offchainCheckoutUrl = offchainCheckout.value.trim();
+      localStorage.setItem("skillhub-payment-settings", JSON.stringify(paymentSettings));
+      renderPaymentStatus();
+    }
+
+    function renderPaymentStatus() {
+      const walletOk = isLikelySolanaAddress(paymentSettings.wallet);
+      const offchainOk = Boolean(paymentSettings.offchainCheckoutUrl);
+      paymentStatus.innerHTML = [
+        badge(walletOk ? "Solana payments active" : "Set wallet to activate Solana Pay", walletOk ? "green" : "amber"),
+        badge(offchainOk ? "Off-chain checkout active" : "Off-chain optional", offchainOk ? "green" : ""),
+        badge(\`Commerce Kit: \${paymentDefaults.commerceKit?.component || "PaymentButton"}\`, "green"),
+      ].join("");
+    }
+
+    function badge(label, color = "") {
+      return \`<span class="badge \${escapeAttr(color)}">\${escapeHtml(label)}</span>\`;
+    }
+
+    function isLikelySolanaAddress(value) {
+      return /^[1-9A-HJ-NP-Za-km-z]{32,44}$/.test(String(value || ""));
+    }
+
+    function buildSolanaPayUri(skill, amount) {
+      const params = new URLSearchParams();
+      const cleanAmount = Number(amount);
+      if (Number.isFinite(cleanAmount) && cleanAmount > 0) params.set("amount", String(cleanAmount));
+      params.set("label", paymentSettings.merchantName);
+      params.set("message", \`Tip for \${skill.slug}\`);
+      params.set("memo", \`skillhub:\${skill.slug}\`);
+      return \`solana:\${paymentSettings.wallet}?\${params.toString()}\`;
+    }
+
+    function buildOffchainCheckoutUrl(skill) {
+      if (!paymentSettings.offchainCheckoutUrl) return "";
+      try {
+        const url = new URL(paymentSettings.offchainCheckoutUrl, window.location.href);
+        url.searchParams.set("skill", skill.slug);
+        url.searchParams.set("source", "skillhub");
+        return url.toString();
+      } catch {
+        return paymentSettings.offchainCheckoutUrl;
+      }
+    }
+
+    function commerceKitSnippet(skill) {
+      const wallet = paymentSettings.wallet || "your-wallet-address";
+      const network = paymentSettings.network || "mainnet";
+      return [
+        'import { PaymentButton } from "@solana-commerce/kit";',
+        "",
+        "export function SkillCheckout() {",
+        "  return (",
+        "    <PaymentButton",
+        "      config={{",
+        \`        merchant: { name: "\${escapeJs(paymentSettings.merchantName)}", wallet: "\${escapeJs(wallet)}" },\`,
+        '        mode: "tip",',
+        \`        network: "\${escapeJs(network)}",\`,
+        "        showQR: true",
+        "      }}",
+        "      onPaymentSuccess={(signature) => {",
+        \`        console.log("Payment confirmed for \${escapeJs(skill.slug)}:", signature);\`,
+        "      }}",
+        "    />",
+        "  );",
+        "}",
+      ].join("\\n");
+    }
+
+    function escapeJs(value) {
+      return String(value).replace(/\\\\/g, "\\\\\\\\").replace(/"/g, '\\"');
     }
 
     function countsByCategory(items) {
@@ -1599,11 +2044,60 @@ function renderIndexHtml(catalog) {
             <span class="category">\${escapeHtml(skill.name)}</span>
             <span class="card-actions">
               <button class="copy-action" type="button" data-install="\${escapeAttr(installCommand(skill.slug))}">Install</button>
+              <button class="open-action" type="button" data-tip="\${escapeAttr(skill.slug)}">Tip</button>
               <a class="open-action" href="/api/skills/\${encodeSkillPath(skill.slug)}/SKILL.md">Open</a>
             </span>
           </div>
         </article>
       \`).join("");
+    }
+
+    function openPaymentModal(skill) {
+      const walletOk = isLikelySolanaAddress(paymentSettings.wallet);
+      const defaultAmount = paymentSettings.network === "devnet" ? "0.01" : "0.05";
+      const payUri = walletOk ? buildSolanaPayUri(skill, defaultAmount) : "";
+      const offchainUrl = buildOffchainCheckoutUrl(skill);
+      const snippet = commerceKitSnippet(skill);
+
+      paymentTitle.textContent = \`Monetize \${skill.slug}\`;
+      paymentSubtitle.textContent = "Use Solana Pay now, route off-chain checkout, or copy the Commerce Kit React button.";
+      paymentBody.innerHTML = \`
+        <div class="payment-grid">
+          <div class="payment-box">
+            <strong>On-chain Solana</strong>
+            <p>\${walletOk ? "Wallet-ready Solana Pay URI for tips and donations." : "Set a valid Solana merchant wallet in the monetization panel first."}</p>
+            <p><code>\${escapeHtml(paymentSettings.wallet || "no wallet configured")}</code></p>
+            <div class="card-actions">
+              \${walletOk ? \`<a class="copy-action" href="\${escapeAttr(payUri)}">Open wallet</a><button class="open-action" type="button" data-copy="\${escapeAttr(payUri)}">Copy URI</button>\` : ""}
+            </div>
+          </div>
+          <div class="payment-box">
+            <strong>Off-chain checkout</strong>
+            <p>\${offchainUrl ? "Use this for invoices, subscriptions, cards, or account provisioning." : "Add an off-chain checkout URL in the monetization panel to enable this path."}</p>
+            <p><code>\${escapeHtml(offchainUrl || "not configured")}</code></p>
+            <div class="card-actions">
+              \${offchainUrl ? \`<a class="open-action" href="\${escapeAttr(offchainUrl)}" target="_blank" rel="noreferrer">Open checkout</a><button class="open-action" type="button" data-copy="\${escapeAttr(offchainUrl)}">Copy URL</button>\` : ""}
+            </div>
+          </div>
+        </div>
+        <div class="payment-box">
+          <strong>Commerce Kit PaymentButton</strong>
+          <p>React apps can install <code>@solana-commerce/kit</code> and use this drop-in button for wallet connection, token selection, QR flow, and confirmed transaction callbacks.</p>
+          <pre class="payment-code"><code>\${escapeHtml(snippet)}</code></pre>
+          <div class="card-actions">
+            <button class="copy-action" type="button" data-copy="\${escapeAttr(snippet)}">Copy React snippet</button>
+            <a class="open-action" href="/integrations/commerce-kit-payment-button.tsx">Open integration file</a>
+            <a class="open-action" href="/api/monetization.json">Open payment registry</a>
+          </div>
+        </div>
+      \`;
+      paymentBackdrop.classList.add("open");
+      paymentBackdrop.setAttribute("aria-hidden", "false");
+    }
+
+    function closePaymentModal() {
+      paymentBackdrop.classList.remove("open");
+      paymentBackdrop.setAttribute("aria-hidden", "true");
     }
 
     function render() {
@@ -1613,6 +2107,7 @@ function renderIndexHtml(catalog) {
       renderStats(filtered);
       renderMap(filtered);
       renderGrid(filtered);
+      renderPaymentStatus();
       empty.style.display = filtered.length ? "none" : "block";
     }
 
@@ -1643,11 +2138,33 @@ function renderIndexHtml(catalog) {
     }
 
     grid.addEventListener("click", (event) => {
-      const button = event.target.closest("[data-install]");
-      if (!button) return;
-      copyText(button.dataset.install);
+      const installButton = event.target.closest("[data-install]");
+      if (installButton) {
+        copyText(installButton.dataset.install);
+        return;
+      }
+      const tipButton = event.target.closest("[data-tip]");
+      if (tipButton) {
+        const skill = skills.find((item) => item.slug === tipButton.dataset.tip);
+        if (skill) openPaymentModal(skill);
+      }
     });
 
+    paymentBody.addEventListener("click", (event) => {
+      const copyButton = event.target.closest("[data-copy]");
+      if (copyButton) copyText(copyButton.dataset.copy);
+    });
+
+    closePayment.addEventListener("click", closePaymentModal);
+    paymentBackdrop.addEventListener("click", (event) => {
+      if (event.target === paymentBackdrop) closePaymentModal();
+    });
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") closePaymentModal();
+    });
+    merchantWallet.addEventListener("input", savePaymentSettings);
+    paymentNetwork.addEventListener("change", savePaymentSettings);
+    offchainCheckout.addEventListener("input", savePaymentSettings);
     search.addEventListener("input", render);
     category.addEventListener("change", render);
     sort.addEventListener("change", render);

@@ -57,6 +57,23 @@ Generated verification artifacts:
 | On-chain registry | [`.well-known/onchain-skill-registry.json`](./public/.well-known/onchain-skill-registry.json) |
 | Scanner results | [`scanner/results/scan-results.json`](./scanner/results/scan-results.json) |
 | Scanner dashboard | [`scanner/public/index.html`](./scanner/public/index.html) |
+| Monetization registry | [`public/api/monetization.json`](./public/api/monetization.json) |
+| Commerce Kit integration | [`public/integrations/commerce-kit-payment-button.tsx`](./public/integrations/commerce-kit-payment-button.tsx) |
+
+## Monetization
+
+The generated frontend includes a publisher monetization panel. Set a Solana merchant wallet to enable Solana Pay tip links on every skill, and set an off-chain checkout URL for invoices, cards, subscriptions, or account provisioning.
+
+Render build-time environment variables:
+
+| Variable | Purpose |
+|---|---|
+| `SKILLHUB_MERCHANT_WALLET` | Default Solana payment recipient wallet |
+| `SKILLHUB_MERCHANT_NAME` | Merchant label shown in payment config |
+| `SKILLHUB_PAYMENT_NETWORK` | `mainnet` or `devnet` |
+| `SKILLHUB_OFFCHAIN_CHECKOUT_URL` | Optional checkout URL used for off-chain payment flows |
+| `SKILLHUB_PAYMENT_RPC_URL` | Optional custom Solana RPC URL for Commerce Kit |
+| `SKILLHUB_ALLOWED_MINTS` | Optional comma-separated accepted token mint addresses |
 
 ## Category Map
 

@@ -18,6 +18,8 @@
     "ui": "https://skills.onchainai.fund/skills",
     "catalog": "https://skills.onchainai.fund/api/skills.json",
     "catalogIndex": "https://skills.onchainai.fund/api/skills",
+    "monetization": "https://skills.onchainai.fund/api/monetization.json",
+    "commerceKitIntegration": "https://skills.onchainai.fund/integrations/commerce-kit-payment-button.tsx",
     "skillMetadata": "https://skills.onchainai.fund/api/skills/{skill}/metadata.json",
     "skillSource": "https://skills.onchainai.fund/api/skills/{skill}/SKILL.md",
     "skillVerification": "https://skills.onchainai.fund/api/skills/{skill}/verification.json",
@@ -32,5 +34,10 @@
     "status": "anchor-ready",
     "merkleRoot": "sha256-79ecfe841f3d76a0fb6b4802f1e3528c4431fdeafddec6077007b5fc1bed1ae3",
     "catalogHash": "sha256-35f71fbfdfee9e4c946d5b946aa06a03269317cf6f53e40a490f72b80ac2403a"
+  },
+  "monetization": {
+    "onchain": "Solana Pay tip URI per skill card",
+    "offchain": "Optional checkout URL carried in api/monetization.json",
+    "commerceKit": "@solana-commerce/kit PaymentButton integration"
   }
 }

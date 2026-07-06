@@ -3,6 +3,8 @@
   <url><loc>https://skills.onchainai.fund</loc></url>
   <url><loc>https://skills.onchainai.fund/skills</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/monetization.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/integrations/commerce-kit-payment-button.tsx</loc></url>
   <url><loc>https://skills.onchainai.fund/.well-known/skills-hub.json</loc></url>
   <url><loc>https://skills.onchainai.fund/.well-known/onchain-skill-registry.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/anthropic-skills/algorithmic-art/metadata.json</loc></url>
