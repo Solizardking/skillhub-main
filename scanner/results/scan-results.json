@@ -91,7 +91,7 @@
       }
     ]
   },
-  "scannedAt": "2026-07-06T21:19:59.539Z",
+  "scannedAt": "2026-07-06T21:26:31.692Z",
   "source": {
     "catalog": "catalog.json",
     "canonicalSkills": 239,
@@ -106,7 +106,7 @@
     "anchorState": "planned",
     "totalSkills": 239,
     "catalogHash": "sha256-35f71fbfdfee9e4c946d5b946aa06a03269317cf6f53e40a490f72b80ac2403a",
-    "merkleRoot": "sha256-ffaddd505dd657c1aa4c62a26b553bf669efcc8124b4e4d89e50cb4509edfa3b",
+    "merkleRoot": "sha256-79ecfe841f3d76a0fb6b4802f1e3528c4431fdeafddec6077007b5fc1bed1ae3",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -1608,10 +1608,10 @@
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-de49ed6cd4acc4a1f3ebdce49a63f7815e353cd55afbe7caf79e1b4515d701bf",
-        "localBundleHash": "sha256-de49ed6cd4acc4a1f3ebdce49a63f7815e353cd55afbe7caf79e1b4515d701bf",
-        "merkleLeaf": "sha256-5db2218d10f17b2a76f2a36e80e42d26596094895fa146295cb1fb1ca0b6d22d",
-        "localMerkleLeaf": "sha256-5db2218d10f17b2a76f2a36e80e42d26596094895fa146295cb1fb1ca0b6d22d",
+        "bundleHash": "sha256-ef071700eb3df32fbb59dab4666f6c377178af1af07d09e9be53004484507f49",
+        "localBundleHash": "sha256-ef071700eb3df32fbb59dab4666f6c377178af1af07d09e9be53004484507f49",
+        "merkleLeaf": "sha256-31d74e242266d2ced656fe11840715e9e9982f8fa063e9fad5eb4eb945677b3d",
+        "localMerkleLeaf": "sha256-31d74e242266d2ced656fe11840715e9e9982f8fa063e9fad5eb4eb945677b3d",
         "fileCount": 4,
         "localFileCount": 4,
         "changedFiles": 0,
@@ -1644,8 +1644,8 @@
         "scriptFiles": 3,
         "referenceFiles": 0,
         "assetFiles": 0,
-        "bytesScanned": 38682,
-        "lineCount": 965
+        "bytesScanned": 41626,
+        "lineCount": 1053
       },
       "findings": []
     },

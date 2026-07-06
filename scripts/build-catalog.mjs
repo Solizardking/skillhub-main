@@ -45,7 +45,8 @@ const IGNORED_NESTED_DIRS = new Set([
 
 const PUBLIC_RESOURCE_DIRS = ["references", "scripts", "assets", "agents"];
 const PUBLIC_ROOT_RESOURCE_EXTENSIONS = new Set([".md", ".json", ".yaml", ".yml"]);
-const PUBLIC_COPY_EXCLUDES = new Set([".DS_Store", ".git", "node_modules"]);
+const PUBLIC_COPY_EXCLUDES = new Set([".DS_Store", ".git", "__pycache__", "node_modules"]);
+const PUBLIC_COPY_EXCLUDED_EXTENSIONS = new Set([".pyc", ".pyo"]);
 const CATEGORY_OVERRIDES = new Map([
   ["ask-mcp", "Solana / Blockchain"],
   ["compressed-pda", "Solana / Blockchain"],
@@ -369,7 +370,7 @@ async function addPublicResourceDir(files, absoluteDir, publicDir) {
 
     if (entry.isDirectory()) {
       await addPublicResourceDir(files, absolutePath, publicPath);
-    } else if (entry.isFile()) {
+    } else if (entry.isFile() && !PUBLIC_COPY_EXCLUDED_EXTENSIONS.has(path.extname(entry.name).toLowerCase())) {
       files.set(publicPath, await readFile(absolutePath));
     }
   }
@@ -1514,7 +1515,7 @@ function renderIndexHtml(catalog) {
     }
 
     function escapeAttr(value) {
-      return escapeHtml(value).replace(/`/g, "&#96;");
+      return escapeHtml(value).replace(/\x60/g, "&#96;");
     }
 
     function countsByCategory(items) {

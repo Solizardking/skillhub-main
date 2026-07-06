@@ -3,11 +3,11 @@
 Skill Packager - Creates a distributable .skill file of a skill folder
 
 Usage:
-    python utils/package_skill.py <path/to/skill-folder> [output-directory]
+    python skill-creator/scripts/package_skill.py <path/to/skill-folder> [output-directory]
 
 Example:
-    python utils/package_skill.py skills/public/my-skill
-    python utils/package_skill.py skills/public/my-skill ./dist
+    python skill-creator/scripts/package_skill.py skill-creator
+    python skill-creator/scripts/package_skill.py skill-creator ./dist
 """
 
 import sys
@@ -15,6 +15,10 @@ import zipfile
 from pathlib import Path
 
 from quick_validate import validate_skill
+
+EXCLUDED_DIRS = {".git", "__pycache__", "node_modules"}
+EXCLUDED_FILES = {".DS_Store"}
+EXCLUDED_SUFFIXES = {".pyc", ".pyo", ".skill"}
 
 
 def package_skill(skill_path, output_dir=None):
@@ -70,6 +74,8 @@ def package_skill(skill_path, output_dir=None):
             # Walk through the skill directory
             for file_path in skill_path.rglob("*"):
                 if file_path.is_file():
+                    if should_exclude(file_path, skill_path):
+                        continue
                     # Calculate the relative path within the zip
                     arcname = file_path.relative_to(skill_path.parent)
                     zipf.write(file_path, arcname)
@@ -80,15 +86,24 @@ def package_skill(skill_path, output_dir=None):
 
     except Exception as e:
         print(f"[ERROR] Error creating .skill file: {e}")
-        return None
+    return None
+
+
+def should_exclude(file_path, skill_path):
+    relative_parts = file_path.relative_to(skill_path).parts
+    if any(part in EXCLUDED_DIRS for part in relative_parts):
+        return True
+    if file_path.name in EXCLUDED_FILES:
+        return True
+    return file_path.suffix in EXCLUDED_SUFFIXES
 
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python utils/package_skill.py <path/to/skill-folder> [output-directory]")
+        print("Usage: python skill-creator/scripts/package_skill.py <path/to/skill-folder> [output-directory]")
         print("\nExample:")
-        print("  python utils/package_skill.py skills/public/my-skill")
-        print("  python utils/package_skill.py skills/public/my-skill ./dist")
+        print("  python skill-creator/scripts/package_skill.py skill-creator")
+        print("  python skill-creator/scripts/package_skill.py skill-creator ./dist")
         sys.exit(1)
 
     skill_path = sys.argv[1]

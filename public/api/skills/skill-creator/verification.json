@@ -5,23 +5,23 @@
   "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
   "source": "https://skills.onchainai.fund/api/skills/skill-creator/SKILL.md",
   "metadata": "https://skills.onchainai.fund/api/skills/skill-creator/metadata.json",
-  "bundleHash": "sha256-de49ed6cd4acc4a1f3ebdce49a63f7815e353cd55afbe7caf79e1b4515d701bf",
-  "merkleLeaf": "sha256-5db2218d10f17b2a76f2a36e80e42d26596094895fa146295cb1fb1ca0b6d22d",
+  "bundleHash": "sha256-ef071700eb3df32fbb59dab4666f6c377178af1af07d09e9be53004484507f49",
+  "merkleLeaf": "sha256-31d74e242266d2ced656fe11840715e9e9982f8fa063e9fad5eb4eb945677b3d",
   "files": [
     {
       "path": "scripts/init_skill.py",
-      "bytes": 13753,
-      "sha256": "sha256-bcd6b802c400a9e89319844c6c3d965855c8b0555e982eb72cd4accb7ee67e3e"
+      "bytes": 13803,
+      "sha256": "sha256-418456e26d4b9fbf8d3985fb13c27679ae6f8e5daed604e36d75fbd44ccdec52"
     },
     {
       "path": "scripts/package_skill.py",
-      "bytes": 3280,
-      "sha256": "sha256-b4dbaba3700848f149419e500dd2ccecf7d98b75c84d648f1a699fe4fb2f4628"
+      "bytes": 3864,
+      "sha256": "sha256-0d8e893d7c3fca6697f436c8a264e84a74f35813968e02521050d752ad476fbf"
     },
     {
       "path": "scripts/quick_validate.py",
-      "bytes": 3293,
-      "sha256": "sha256-6cc9dc3199c935916cf6f73fcbbbb0e3bb1b58c8f5109fefa499978908164f51"
+      "bytes": 5603,
+      "sha256": "sha256-30d376ddce361a196e75fc128e832e08b6a27d9236c24f7e273752f8d1b67488"
     },
     {
       "path": "SKILL.md",

@@ -13,6 +13,8 @@ const DEFAULT_ROOT = path.resolve(SCANNER_ROOT, "..");
 
 const PUBLIC_RESOURCE_DIRS = ["references", "scripts", "assets", "agents"];
 const PUBLIC_ROOT_RESOURCE_EXTENSIONS = new Set([".md", ".json", ".yaml", ".yml"]);
+const PUBLIC_COPY_EXCLUDES = new Set([".DS_Store", ".git", "__pycache__", "node_modules"]);
+const PUBLIC_COPY_EXCLUDED_EXTENSIONS = new Set([".pyc", ".pyo"]);
 const TEXT_EXTENSIONS = new Set([
   ".bash",
   ".css",
@@ -495,12 +497,12 @@ async function addResourceFiles(files, absoluteDir, prefix) {
   const entries = await readdir(absoluteDir, { withFileTypes: true });
   entries.sort((a, b) => a.name.localeCompare(b.name));
   for (const entry of entries) {
-    if (entry.name.startsWith(".") || entry.name === "node_modules" || entry.name === ".git") continue;
+    if (entry.name.startsWith(".") || PUBLIC_COPY_EXCLUDES.has(entry.name)) continue;
     const absolutePath = path.join(absoluteDir, entry.name);
     const publicPath = `${prefix}/${entry.name}`;
     if (entry.isDirectory()) {
       await addResourceFiles(files, absolutePath, publicPath);
-    } else if (entry.isFile()) {
+    } else if (entry.isFile() && !PUBLIC_COPY_EXCLUDED_EXTENSIONS.has(path.extname(entry.name).toLowerCase())) {
       const content = await readFile(absolutePath);
       files.push({ path: publicPath, content, missing: false });
     }
