@@ -407,6 +407,7 @@ function meterBar(count, max, width = 18) {
 function renderReadme(catalog) {
   const byCategory = groupByCategory(catalog);
   const maxCount = Math.max(...byCategory.map(([, skills]) => skills.length));
+  const bySourceFamily = groupBySourceFamily(catalog);
   const featuredRuns = [
     ["🌞 Helius mode", "Helius infra: Sender, DAS, LaserStream + Jupiter, DFlow, OKX, Phantom, SVM internals", catalog.filter((skill) => skill.slug.startsWith("helius-skills/"))],
     ["🎰 Pump.fun mode", "launch → curve → fees → security, the whole token lifecycle", catalog.filter((skill) => skill.slug === "pumpfun" || skill.slug.startsWith("pump-") || skill.slug.startsWith("pumpfun-"))],
@@ -444,6 +445,34 @@ function renderReadme(catalog) {
   for (const [category, skills] of byCategory) {
     const meta = categoryMeta(category);
     lines.push(`| [${meta.emoji} **${category}**](#${meta.anchor}) | ${skills.length} | \`${meterBar(skills.length, maxCount)}\` | ${meta.tagline} |`);
+  }
+
+  lines.push(
+    "",
+    "## 🧭 Codebase Map",
+    "",
+    "The hub is a source catalog plus generated distribution surfaces. Canonical skills are discovered from repo-local `SKILL.md` files; generated mirrors live under `public/` and rebuild from source.",
+    "",
+    "| Layer | What it contains | Main paths |",
+    "|---|---|---|",
+    `| Skill sources | ${catalog.length} canonical skills. Each slug is the directory path that owns a \`SKILL.md\`. | \`*/SKILL.md\`, \`google/**/SKILL.md\`, \`anthropic-skills/*/SKILL.md\`, plus optional \`references/\`, \`scripts/\`, \`assets/\`, and \`agents/\` folders |`,
+    "| Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |",
+    "| Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |",
+    "| Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |",
+    "| Verification and on-chain flow | Per-skill bundle hashes, Merkle leaves, registry manifests, Arweave upload planning, and Solana memo anchoring. | [`public/.well-known/onchain-skill-registry.json`](./public/.well-known/onchain-skill-registry.json), [`ONCHAIN.md`](./ONCHAIN.md), [`scripts/publish-onchain.mjs`](./scripts/publish-onchain.mjs), [`onchain/`](./onchain/) |",
+    "| Scanner | Local integrity/risk scanner plus a static dashboard built from generated verification artifacts. | [`scanner/bin/scan-skills.mjs`](./scanner/bin/scan-skills.mjs), [`scanner/results/`](./scanner/results/), [`scanner/public/`](./scanner/public/) |",
+    "| Deployment | Static-hosting configs that run the catalog build and publish `public/`. | [`vercel.json`](./vercel.json), [`render.yaml`](./render.yaml) |",
+    "",
+    "### Source Families",
+    "",
+    "This is the same 240-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.",
+    "",
+    "| Source family | Skills | What it covers |",
+    "|---|---:|---|",
+  );
+
+  for (const [family, skills] of bySourceFamily) {
+    lines.push(`| \`${family}\` | ${skills.length} | ${sourceFamilyDescription(family)} |`);
   }
 
   lines.push(
@@ -764,6 +793,47 @@ function renderChainDivider() {
   ${links}
 </svg>
 `;
+}
+
+function groupBySourceFamily(catalog) {
+  const groups = new Map();
+
+  for (const skill of catalog) {
+    const family = sourceFamily(skill.slug);
+    if (!groups.has(family)) groups.set(family, []);
+    groups.get(family).push(skill);
+  }
+
+  return [...groups.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+}
+
+function sourceFamily(slug) {
+  if (slug.startsWith("google/")) return "google/*";
+  if (slug.startsWith("anthropic-skills/")) return "anthropic-skills/*";
+  if (slug === "pumpfun" || slug.startsWith("pump-") || slug.startsWith("pumpfun-")) return "pump/pumpfun/*";
+  if (slug === "vulcan" || slug.startsWith("vulcan-")) return "vulcan/*";
+  if (slug === "imperial" || slug.startsWith("imperial-")) return "imperial/*";
+  if (slug.startsWith("dflow-")) return "dflow/*";
+  if (slug.startsWith("solana")) return "solana/*";
+  if (slug.startsWith("helius-skills/")) return "helius-skills/*";
+  if (slug.startsWith("openrouter")) return "openrouter/*";
+  return "single/root skills";
+}
+
+function sourceFamilyDescription(family) {
+  const descriptions = {
+    "single/root skills": "One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows.",
+    "google/*": "Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills.",
+    "pump/pumpfun/*": "Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows.",
+    "vulcan/*": "Vulcan/Phoenix perps trading skills for onboarding, market intel, execution, grids, TWAP, TP/SL, margin, and risk.",
+    "anthropic-skills/*": "Imported Anthropic-format skills for documents, spreadsheets, design, web apps, MCP, artifacts, and skill creation.",
+    "imperial/*": "Imperial trading deck skills for execution modes, margin, portfolio intelligence, position management, and risk.",
+    "dflow/*": "DFlow, Kalshi, Phantom Connect, spot trading, portfolio, market data, fees, and KYC workflows.",
+    "solana/*": "Solana development, formal verification, Clawd, Redpill verifier, rent-free, and agentic-commerce skills.",
+    "helius-skills/*": "Helius infrastructure skills for Sender, DAS, LaserStream, Jupiter, OKX, Phantom, and SVM internals.",
+    "openrouter/*": "OpenRouter model, image, OAuth, TypeScript SDK, and agent migration references.",
+  };
+  return descriptions[family] || "Repo-local skill sources.";
 }
 
 function groupByCategory(catalog) {

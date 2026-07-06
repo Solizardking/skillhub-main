@@ -30,6 +30,37 @@ Nine zones. Every skill lives in exactly one. Click a zone to jump to its catalo
 | [🟣 **Solana / Blockchain**](#-solana--blockchain) | 99 | `██████████████████` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
 | [🧰 **Utilities**](#-utilities) | 12 | `██░░░░░░░░░░░░░░░░` | Handy one-off power tools |
 
+## 🧭 Codebase Map
+
+The hub is a source catalog plus generated distribution surfaces. Canonical skills are discovered from repo-local `SKILL.md` files; generated mirrors live under `public/` and rebuild from source.
+
+| Layer | What it contains | Main paths |
+|---|---|---|
+| Skill sources | 240 canonical skills. Each slug is the directory path that owns a `SKILL.md`. | `*/SKILL.md`, `google/**/SKILL.md`, `anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
+| Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |
+| Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |
+| Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |
+| Verification and on-chain flow | Per-skill bundle hashes, Merkle leaves, registry manifests, Arweave upload planning, and Solana memo anchoring. | [`public/.well-known/onchain-skill-registry.json`](./public/.well-known/onchain-skill-registry.json), [`ONCHAIN.md`](./ONCHAIN.md), [`scripts/publish-onchain.mjs`](./scripts/publish-onchain.mjs), [`onchain/`](./onchain/) |
+| Scanner | Local integrity/risk scanner plus a static dashboard built from generated verification artifacts. | [`scanner/bin/scan-skills.mjs`](./scanner/bin/scan-skills.mjs), [`scanner/results/`](./scanner/results/), [`scanner/public/`](./scanner/public/) |
+| Deployment | Static-hosting configs that run the catalog build and publish `public/`. | [`vercel.json`](./vercel.json), [`render.yaml`](./render.yaml) |
+
+### Source Families
+
+This is the same 240-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
+
+| Source family | Skills | What it covers |
+|---|---:|---|
+| `single/root skills` | 72 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
+| `google/*` | 69 | Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills. |
+| `pump/pumpfun/*` | 24 | Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows. |
+| `vulcan/*` | 18 | Vulcan/Phoenix perps trading skills for onboarding, market intel, execution, grids, TWAP, TP/SL, margin, and risk. |
+| `anthropic-skills/*` | 17 | Imported Anthropic-format skills for documents, spreadsheets, design, web apps, MCP, artifacts, and skill creation. |
+| `imperial/*` | 12 | Imperial trading deck skills for execution modes, margin, portfolio intelligence, position management, and risk. |
+| `dflow/*` | 9 | DFlow, Kalshi, Phantom Connect, spot trading, portfolio, market data, fees, and KYC workflows. |
+| `solana/*` | 8 | Solana development, formal verification, Clawd, Redpill verifier, rent-free, and agentic-commerce skills. |
+| `helius-skills/*` | 6 | Helius infrastructure skills for Sender, DAS, LaserStream, Jupiter, OKX, Phantom, and SVM internals. |
+| `openrouter/*` | 5 | OpenRouter model, image, OAuth, TypeScript SDK, and agent migration references. |
+
 ## 🚀 Install in 10 Seconds
 
 The whole hub:
