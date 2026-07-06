@@ -22,13 +22,6 @@ const HOST = process.env.OPENCLAWD_BASE_URL || 'https://x402.wtf';
 const LEGACY_WWW_HOSTS = [`https://www.${'x402.wtf'}`, `http://www.${'x402.wtf'}`];
 const MASCOT_IMAGE_FILE = 'clawd_mascot_hq_blueprint_grid_4k.png';
 const MASCOT_IMAGE_URL = `${HOST}/${MASCOT_IMAGE_FILE}`;
-const LEGACY_MASCOT_URLS = [
-  'https://x402.wtf/nich.jpg',
-  'http://x402.wtf/nich.jpg',
-  `https://www.${'x402.wtf'}/nich.jpg`,
-  `http://www.${'x402.wtf'}/nich.jpg`,
-  `${HOST}/nich.jpg`,
-];
 const CLAWD_MINT = '8cHzQHUS2s2h8TzCmfqPKYiM4dSt4roa3n7MyRLApump';
 const SUPPLEMENTAL_REGISTRY_TARGET = 44;
 const SUPPLEMENTAL_REGISTRY_EXCLUDE = new Set([
@@ -44,20 +37,12 @@ const SUPPLEMENTAL_REGISTRY_EXCLUDE = new Set([
 ]);
 
 const readJson = (p) => JSON.parse(fs.readFileSync(p, 'utf8'));
-const normalizeMascotImage = (value) => {
-  if (typeof value !== 'string') return value;
-  return LEGACY_MASCOT_URLS.reduce(
-    (current, legacyUrl) => current.replaceAll(legacyUrl, MASCOT_IMAGE_URL),
-    value
-  );
-};
 const normalizeCanonicalUrls = (value) => {
   if (typeof value === 'string') {
-    const canonical = LEGACY_WWW_HOSTS.reduce(
+    return LEGACY_WWW_HOSTS.reduce(
       (current, legacyHost) => current.replaceAll(legacyHost, HOST),
       value
     );
-    return normalizeMascotImage(canonical);
   }
   if (Array.isArray(value)) return value.map(normalizeCanonicalUrls);
   if (value && typeof value === 'object') {
@@ -88,7 +73,7 @@ function loadAgents() {
       identifier: id,
       title: raw.meta?.title || id,
       description: raw.meta?.description || '',
-      avatar: normalizeMascotImage(raw.meta?.avatar) || '🤖',
+      avatar: raw.meta?.avatar || '🤖',
       tags: raw.meta?.tags || [],
       category: raw.meta?.category || 'defi',
       author: raw.author || 'solana-clawd',
@@ -146,7 +131,7 @@ function registryDocToAgent(doc) {
     identifier,
     title: doc.name || identifier,
     description: doc.description || '',
-    avatar: normalizeMascotImage(doc.image) || '🤖',
+    avatar: doc.image || '🤖',
     tags: doc.tags || [],
     category,
     author: 'openclawd',
@@ -178,7 +163,7 @@ function registryDocToAgent(doc) {
       meta: {
         title: doc.name || identifier,
         description: doc.description || '',
-        avatar: normalizeMascotImage(doc.image) || '🤖',
+        avatar: doc.image || '🤖',
         tags: doc.tags || [],
         category,
       },

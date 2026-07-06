@@ -32,7 +32,7 @@
   "verification": {
     "chain": "solana",
     "status": "anchor-ready",
-    "merkleRoot": "sha256-61081e0ea6356662d76d99f7ffb940bca2ad740653ea3854357500a279039130",
+    "merkleRoot": "sha256-0ebc6c73b0bc0b9dcddbb97259a62a3e90a80e4097ffb4ea517d72a3928f9d22",
     "catalogHash": "sha256-9cd5990835ddfbe89bdb5d399f4c671311ac2339f99c9530286c1fef98c65eb7"
   },
   "monetization": {
