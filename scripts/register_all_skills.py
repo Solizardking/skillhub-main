@@ -38,6 +38,9 @@ EXCLUDED_DIRS = {
     ".pytest_cache",
     "venv",
     ".venv",
+    # solana-clawd-agents over 10MB limit
+    "public",
+    "locales",
 }
 
 EXCLUDED_FILES = {
