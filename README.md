@@ -522,12 +522,54 @@ Verify any skill later: fetch its `verification.json`, re-hash the bundle, check
 | Live catalog UI | https://skills.onchainai.fund/skills |
 | Publish receipts | `onchain/publish-receipt.json` (created by `publish:onchain`) |
 
+## ⛅ Google Cloud Skill Registry
+
+All 240 skills are also registered in the **Gemini Enterprise Agent Platform Skill
+Registry** (`us-central1`, project `x402-477302`), making them discoverable and
+attachable to managed agents directly through the Agent Platform console and APIs.
+
+### Batch registration
+
+```bash
+python3 scripts/register_all_skills.py --project x402-477302 --location us-central1
+```
+
+The script reads every entry in [`catalog.json`](./catalog.json), zips each skill
+directory (skipping build artifacts like `target/`, `node_modules/`, `public/`,
+and `locales/` to stay under the 10 MB payload limit), derives a valid
+`skill_id` from the catalog slug, and calls the Skill Registry REST API to
+create or update each skill.
+
+Edge cases handled automatically:
+- **Skill IDs > 63 characters** — truncated with an MD5 hash suffix to preserve
+  uniqueness (e.g.,
+  `google-ads-google-mobile-ads-...-android-migrate-to-next-gen` → `...619b1b5a`)
+- **Payloads over 10 MB** — `solana-formal-verification` (271 MB → 2.9 MB) and
+  `solana-clawd-agents` (17 MB → 8.3 MB) trimmed by excluding Rust `target/`
+  and `public`/`locales` assets
+- **Slugs starting with a digit** — prefixed with `s-` (e.g., `1password` →
+  `s-1password`)
+- **Already exists** — automatically falls back to PATCH update
+
+```text
+Total:    240
+Success:  240
+Skipped:  0
+Failed:   0
+```
+
+All registered skills are `ACTIVE` and can be attached to Gemini Enterprise
+agents. See the Skill Registry skill itself at
+[`google/cloud/agent-platform-skill-registry/SKILL.md`](./google/cloud/agent-platform-skill-registry/SKILL.md)
+for the full API reference.
+
 ## 🔄 How It Stays Fresh
 
 - Everything you just read is **generated** by `npm run build:catalog` — README, banner SVGs, catalog JSON, the public site, and the Merkle registry all rebuild from the skills on disk.
 - Nested skills are discovered recursively (`google/ads`, `google/analytics`, `google/cloud` publish through the same pipeline).
 - The production mirror is https://skills.onchainai.fund — same build output, served statically.
 - Add a skill folder with a `SKILL.md`, rebuild, and it appears everywhere: README, JSON API, site, and the next on-chain anchor.
+- The Skill Registry can be re-synced at any time with `python3 scripts/register_all_skills.py`.
 
 <div align="center">
 
