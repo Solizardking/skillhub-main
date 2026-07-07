@@ -27,15 +27,36 @@ def get_access_token():
     return credentials.token
 
 
+EXCLUDED_DIRS = {
+    ".git",
+    "node_modules",
+    "target",     # Rust build artifacts
+    ".surfpool",
+    ".vercel",
+    "__pycache__",
+    ".mypy_cache",
+    ".pytest_cache",
+    "venv",
+    ".venv",
+}
+
+EXCLUDED_FILES = {
+    ".DS_Store",
+    "package-lock.json",
+}
+
 def zip_directory(directory_path):
-    """Zip a directory into memory and return the bytes."""
+    """Zip a directory into memory and return the bytes.
+
+    Skips large build artifacts and hidden files to stay under the 10MB limit.
+    """
     zip_buffer = io.BytesIO()
     with zipfile.ZipFile(zip_buffer, "w", zipfile.ZIP_DEFLATED) as zf:
         for root, dirs, files in os.walk(directory_path):
-            # Skip hidden directories and node_modules
-            dirs[:] = [d for d in dirs if not d.startswith(".") and d != "node_modules"]
+            # Skip excluded and hidden directories
+            dirs[:] = [d for d in dirs if d not in EXCLUDED_DIRS and not d.startswith(".")]
             for file in files:
-                if file.startswith("."):
+                if file in EXCLUDED_FILES or file.startswith("."):
                     continue
                 file_path = os.path.join(root, file)
                 arcname = os.path.relpath(file_path, directory_path)
@@ -44,12 +65,31 @@ def zip_directory(directory_path):
 
 
 def derive_skill_id(slug):
-    """Derive a valid Skill Registry skill_id from a catalog slug."""
+    """Derive a valid Skill Registry skill_id from a catalog slug.
+
+    Constraints:
+    - 1-63 characters
+    - Start with a letter, end with a letter or number
+    - Only lowercase letters, numbers, and hyphens
+    """
     skill_id = slug.replace("/", "-").replace("_", "-").lower()
     if skill_id.startswith("gcp-"):
         skill_id = "x-" + skill_id
     if not skill_id[0].isalpha():
         skill_id = "s-" + skill_id
+    # Truncate to 63 chars, ensuring it still ends with letter or number
+    if len(skill_id) > 63:
+        # Keep last 4 chars to preserve some identity, truncate middle
+        max_len = 60 if not skill_id[-1].isalnum() else 63
+        if len(skill_id) > max_len:
+            # Take first part + hash suffix to keep unique
+            import hashlib
+            suffix = hashlib.md5(skill_id.encode()).hexdigest()[:8]
+            truncated = skill_id[:max_len - len(suffix) - 1] + "-" + suffix
+            skill_id = truncated
+        # Ensure ends with letter or number
+        if not skill_id[-1].isalnum():
+            skill_id = skill_id[:-1] + "0"
     return skill_id
 
 
