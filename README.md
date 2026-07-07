@@ -1,16 +1,188 @@
 <div align="center">
 
+<!-- ===== ANIMATED CONSTELLATION BANNER ===== -->
 <img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />
 
-[![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)
-![Skills](https://img.shields.io/badge/skills-240-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-9-00C2FF?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
+<br />
 
-**240 installable agent skills.** Every one is a `SKILL.md` playbook your agent can pull off the shelf —
-hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
-
-*Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️
+<!-- ===== ANIMATED BADGE ROW ===== -->
+<div class="badge-row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 16px 0;">
+  <a href="https://skills.sh/Solizardking/skills">
+    <img src="https://skills.sh/b/Solizardking/skills" alt="skills.sh" />
+  </a>
+  <img src="https://img.shields.io/badge/skills-240-8A2BE2?style=flat-square&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0ibm9uZSI+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjE2IiByeD0iMiIgZmlsbD0iIzhBMkJFMiIvPjwvc3ZnPg==" alt="Skills" />
+  <img src="https://img.shields.io/badge/categories-9-00C2FF?style=flat-square" alt="Categories" />
+  <img src="https://img.shields.io/badge/merkle-verified-14F195?style=flat-square" alt="Verified" />
+  <img src="https://img.shields.io/badge/arweave-permanent-222222?style=flat-square" alt="Arweave" />
+  <img src="https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square" alt="Solana" />
+</div>
 
 </div>
+
+<!-- ===== ANIMATED CSS ===== -->
+<style>
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.8; transform: scale(1.02); }
+}
+@keyframes shimmer {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 8px rgba(153, 69, 255, 0.4); }
+  50% { text-shadow: 0 0 20px rgba(153, 69, 255, 0.8), 0 0 40px rgba(153, 69, 255, 0.3); }
+}
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+@keyframes bar-fill {
+  from { width: 0%; }
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+@keyframes constellation {
+  0% { opacity: 0.3; transform: rotate(0deg); }
+  50% { opacity: 1; transform: rotate(180deg); }
+  100% { opacity: 0.3; transform: rotate(360deg); }
+}
+@keyframes neon-pulse {
+  0%, 100% { box-shadow: 0 0 5px #9945FF, 0 0 10px #9945FF, inset 0 0 5px rgba(153, 69, 255, 0.2); }
+  50% { box-shadow: 0 0 10px #14F195, 0 0 20px #14F195, inset 0 0 8px rgba(20, 241, 149, 0.3); }
+}
+@keyframes slide-in {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+@keyframes fade-in-up {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes terminal-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.pulse { animation: pulse 2s ease-in-out infinite; }
+.float { animation: float 3s ease-in-out infinite; }
+.glow { animation: glow 2s ease-in-out infinite; }
+.neon-border {
+  border: 1px solid rgba(153, 69, 255, 0.3);
+  border-radius: 8px;
+  animation: neon-pulse 3s ease-in-out infinite;
+  padding: 4px 12px;
+  display: inline-block;
+}
+.power-bar {
+  height: 8px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #8A2BE2, #14F195, #00C2FF);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+}
+.power-bar-fill {
+  height: 8px;
+  border-radius: 4px;
+  display: inline-block;
+  animation: bar-fill 1.5s ease-out forwards;
+}
+.crt-scanline {
+  position: relative;
+  overflow: hidden;
+}
+.terminal-cursor::after {
+  content: '█';
+  animation: terminal-blink 1s step-end infinite;
+  color: #14F195;
+}
+</style>
+
+<!-- ===== CINEMATIC LORE INTRO ===== -->
+<br />
+
+<div align="center">
+
+```ascii
+╔══════════════════════════════════════════════════════════════╗
+║                                                              ║
+║   ███████  ██  ██  ██  ██  ██      ██  ██  ██  ██████       ║
+║   ██       ██  ██  ██  ██  ██ ██   ██  ██  ██  ██           ║
+║   █████    █████████ ██  ██████ ██ ████  ███████  █████      ║
+║   ██       ██  ██  ██ ██  ██ ██  ██  ██  ██  ██  ██         ║
+║   ██       ██  ██  ██ ██  ██ ██      ██  ██  ██  ██████      ║
+║                                                              ║
+║   ── agent skills, hashed for history, anchored for keeps ──  ║
+║                                                              ║
+╚══════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+<div align="center">
+
+<span class="glow" style="font-size: 1.1em; color: #C084FC;">
+
+**240 installable agent skills.** Every one is a `SKILL.md` playbook your agent can pull off the shelf — hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
+
+</span>
+
+<br />
+
+<span class="neon-border">
+  🕹️ <em>Pick a cabinet. Pull the lever. The right playbook lights up.</em>
+</span>
+
+</div>
+
+---
+
+## 🌌 The Lore
+
+> *In the beginning, there was the prompt — and the prompt was good, but it was* **ephemeral**.
+>
+> Agents woke in empty shells, their knowledge drifting between sessions like smoke. There was no memory. No provenance. No way to hand a playbook from one agent to another and say: *"Trust this. It has been verified."*
+>
+> Then came **the Hub**.
+>
+> Carved into the bedrock of Solana, sealed by SHA-256, and scattered across the **Arweave permaweb**, the Skill Hub is a **constellation of agent knowledge** — 240+ skills organized into nine celestial cabinets, each one a `SKILL.md` that teaches your agent a complete dialect of power.
+>
+> Every skill is **Merkle-rooted**. Every build is **verifiable** against a Solana memo transaction. No central server. No single point of failure. Just cryptographic truth — byte-for-byte, forever.
+>
+> This is the **Agent Library of Alexandria**, rebuilt for the on-chain age.
+>
+> ***Built for agents. Hashed for history. Anchored for keeps.*** 🟣
+
+---
+
+## ⚡ The Cryptographic Vow
+
+Every build of the hub forges a **tamper-proof chain of custody**:
+
+```
+skill files ──sha256──▶ bundleHash (per skill)
+bundleHash  ──sha256──▶ merkleLeaf  = sha256(slug ∥ bundleHash)
+all leaves  ──merkle──▶ merkleRoot  (one hash commits to everything)
+```
+
+That root is timestamped on **Solana SVM** via memo transaction, and the full registry is uploaded to **Arweave** (paid in SOL via Irys). Verification is permissionless:
+
+1. Fetch the anchored memo from Solana → get `merkleRoot` + Arweave tx IDs
+2. Fetch the registry from Arweave: `https://arweave.net/<txId>`
+3. Re-hash the skill files → recompute the leaf → walk the Merkle path
+4. **Root matches → the skill is exactly what was anchored.** ✅
+
+Read the full protocol in [`ONCHAIN.md`](./ONCHAIN.md).
 
 ---
 
@@ -18,38 +190,46 @@ hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
 
 Nine zones. Every skill lives in exactly one. Click a zone to jump to its catalog.
 
+<div class="neon-border" style="border-width: 2px; padding: 16px;">
+
 | Zone | Skills | Power level | What lives here |
-|---|---:|---|---|
-| [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 17 | `███░░░░░░░░░░░░░░░` | Build, orchestrate, and ship with agent tooling |
-| [📣 **Google / Ads**](#-google--ads) | 11 | `██░░░░░░░░░░░░░░░░` | Google Ads APIs, campaigns, and reporting |
+| :--- | ---: | :--- | :--- |
+| [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 17 | `██████░░░░░░░░░░░░` | Build, orchestrate, and ship with agent tooling |
+| [📣 **Google / Ads**](#-google--ads) | 11 | `████░░░░░░░░░░░░░░` | Google Ads APIs, campaigns, and reporting |
 | [📈 **Google / Analytics**](#-google--analytics) | 2 | `█░░░░░░░░░░░░░░░░░` | GA4 data APIs and measurement |
-| [☁️ **Google / Cloud**](#️-google--cloud) | 56 | `██████████░░░░░░░░` | GCP, GKE, BigQuery, Vertex, and friends |
-| [📍 **Local / Web Services**](#-local--web-services) | 6 | `█░░░░░░░░░░░░░░░░░` | Weather, places, food, and everyday web services |
-| [🎬 **Media / Devices**](#-media--devices) | 22 | `████░░░░░░░░░░░░░░` | Audio, video, images, TTS, cameras, and gadgets |
-| [💬 **Productivity / Messaging**](#-productivity--messaging) | 15 | `███░░░░░░░░░░░░░░░` | Notes, tasks, chat, and mail on autopilot |
-| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 99 | `██████████████████` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
-| [🧰 **Utilities**](#-utilities) | 12 | `██░░░░░░░░░░░░░░░░` | Handy one-off power tools |
+| [☁️ **Google / Cloud**](#️-google--cloud) | 56 | `████████████████████` | GCP, GKE, BigQuery, Vertex, and friends |
+| [📍 **Local / Web Services**](#-local--web-services) | 6 | `██░░░░░░░░░░░░░░░░` | Weather, places, food, and everyday web services |
+| [🎬 **Media / Devices**](#-media--devices) | 22 | `████████░░░░░░░░░░` | Audio, video, images, TTS, cameras, and gadgets |
+| [💬 **Productivity / Messaging**](#-productivity--messaging) | 15 | `██████░░░░░░░░░░░░` | Notes, tasks, chat, and mail on autopilot |
+| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 99 | `████████████████████` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
+| [🧰 **Utilities**](#-utilities) | 12 | `████░░░░░░░░░░░░░░` | Handy one-off power tools |
+
+</div>
+
+<br />
+
+---
 
 ## 🧭 Codebase Map
 
-The hub is a source catalog plus generated distribution surfaces. Canonical skills are discovered from repo-local `SKILL.md` files; generated mirrors live under `public/` and rebuild from source.
+The hub is a **source catalog** plus **generated distribution surfaces**. Canonical skills are discovered from repo-local `SKILL.md` files; generated mirrors live under `public/` and rebuild from source.
 
 | Layer | What it contains | Main paths |
-|---|---|---|
-| Skill sources | 240 canonical skills. Each slug is the directory path that owns a `SKILL.md`. | `*/SKILL.md`, `google/**/SKILL.md`, `anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
-| Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |
-| Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |
-| Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |
-| Verification and on-chain flow | Per-skill bundle hashes, Merkle leaves, registry manifests, Arweave upload planning, and Solana memo anchoring. | [`public/.well-known/onchain-skill-registry.json`](./public/.well-known/onchain-skill-registry.json), [`ONCHAIN.md`](./ONCHAIN.md), [`scripts/publish-onchain.mjs`](./scripts/publish-onchain.mjs), [`onchain/`](./onchain/) |
-| Scanner | Local integrity/risk scanner plus a static dashboard built from generated verification artifacts. | [`scanner/bin/scan-skills.mjs`](./scanner/bin/scan-skills.mjs), [`scanner/results/`](./scanner/results/), [`scanner/public/`](./scanner/public/) |
-| Deployment | Static-hosting configs that run the catalog build and publish `public/`. | [`vercel.json`](./vercel.json), [`render.yaml`](./render.yaml) |
+| :--- | :--- | :--- |
+| 🎯 **Skill sources** | 240 canonical skills. Each slug is the directory path that owns a `SKILL.md`. | `*/SKILL.md`, `google/**/SKILL.md`, `anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
+| 🔧 **Catalog builder** | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |
+| 📦 **Installer CLI** | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |
+| 🌐 **Static site and API** | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |
+| ⛓️ **Verification and on-chain flow** | Per-skill bundle hashes, Merkle leaves, registry manifests, Arweave upload planning, and Solana memo anchoring. | [`public/.well-known/onchain-skill-registry.json`](./public/.well-known/onchain-skill-registry.json), [`ONCHAIN.md`](./ONCHAIN.md), [`scripts/publish-onchain.mjs`](./scripts/publish-onchain.mjs), [`onchain/`](./onchain/) |
+| 🔍 **Scanner** | Local integrity/risk scanner plus a static dashboard built from generated verification artifacts. | [`scanner/bin/scan-skills.mjs`](./scanner/bin/scan-skills.mjs), [`scanner/results/`](./scanner/results/), [`scanner/public/`](./scanner/public/) |
+| 🚀 **Deployment** | Static-hosting configs that run the catalog build and publish `public/`. | [`vercel.json`](./vercel.json), [`render.yaml`](./render.yaml) |
 
 ### Source Families
 
 This is the same 240-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
 
 | Source family | Skills | What it covers |
-|---|---:|---|
+| :--- | ---: | :--- |
 | `single/root skills` | 72 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
 | `google/*` | 69 | Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills. |
 | `pump/pumpfun/*` | 24 | Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows. |
@@ -61,7 +241,11 @@ This is the same 240-skill inventory grouped by where the source directories liv
 | `helius-skills/*` | 6 | Helius infrastructure skills for Sender, DAS, LaserStream, Jupiter, OKX, Phantom, and SVM internals. |
 | `openrouter/*` | 5 | OpenRouter model, image, OAuth, TypeScript SDK, and agent migration references. |
 
+---
+
 ## 🚀 Install in 10 Seconds
+
+<div class="neon-border" style="border-width: 1px; padding: 12px; margin: 8px 0;">
 
 The whole hub:
 
@@ -93,6 +277,10 @@ npx github:Solizardking/skills install --target ~/.codex/skills   # Codex
 npx github:Solizardking/skills install --claude                   # Claude Code
 npx github:Solizardking/skills install --eve                      # eve (agent/skills/)
 ```
+
+</div>
+
+---
 
 ## 🌟 Featured Runs
 
@@ -140,6 +328,8 @@ Curated multi-skill loadouts — install a run and your agent speaks the whole d
 
 </details>
 
+---
+
 ## 📚 The Full Catalog
 
 Every skill, every zone. Click a zone to expand it — descriptions keep the exact trigger text agents match on.
@@ -152,7 +342,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 <summary>Open the Dev Tools / Agents cabinet</summary>
 
 | Skill | Name | Description |
-|---|---|---|
+| :--- | :--- | :--- |
 | [`anthropic-skills/algorithmic-art`](./anthropic-skills/algorithmic-art/SKILL.md) | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations. |
 | [`anthropic-skills/internal-comms`](./anthropic-skills/internal-comms/SKILL.md) | internal-comms | A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.). |
 | [`anthropic-skills/mcp-builder`](./anthropic-skills/mcp-builder/SKILL.md) | mcp-builder | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). |
@@ -181,7 +371,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 <summary>Open the Google / Ads cabinet</summary>
 
 | Skill | Name | Description |
-|---|---|---|
+| :--- | :--- | :--- |
 | [`google/ads/data-manager-api/data-manager-api-audience-ingestion`](./google/ads/data-manager-api/data-manager-api-audience-ingestion/SKILL.md) | data-manager-api-audience-ingestion | Guides developers through uploading audience members to Google products using the Data Manager API /v1/audienceMembers/ingest endpoint and its associated client libraries. Use this skill when the user wants to upload audience members for Customer Match, mobile device ID audiences, or any other audience use case supported by the Data Manager API. Don't use for uploading events or conversions (use the data-manager-api-event-ingestion skill). |
 | [`google/ads/data-manager-api/data-manager-api-event-ingestion`](./google/ads/data-manager-api/data-manager-api-event-ingestion/SKILL.md) | data-manager-api-event-ingestion | Guides developers through implementing event and conversion ingestion to Google products using the Data Manager API /v1/events/ingest endpoint and its associated client libraries. Use this skill when the user wants to upload offline conversions, enhanced conversions for leads, click conversions, Google Analytics web or app events, or any other event ingestion use case supported by the Data Manager API. Don't use for uploading audience members (use the data-manager-api-audience-ingestion skill). |
 | [`google/ads/data-manager-api/data-manager-api-setup`](./google/ads/data-manager-api/data-manager-api-setup/SKILL.md) | data-manager-api-setup | Guides developers through client library installation and authentication setup steps for the Data Manager API. Use this skill when a user is getting started with the Data Manager API and needs to setup their local environment, install the client library, or setup access to the API. Don't use for implementing audience or event ingestion logic (use the data-manager-api-audience-ingestion or data-manager-api-event-ingestion skills instead). |
@@ -204,7 +394,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 <summary>Open the Google / Analytics cabinet</summary>
 
 | Skill | Name | Description |
-|---|---|---|
+| :--- | :--- | :--- |
 | [`google/analytics/google-analytics-admin-api-basics`](./google/analytics/google-analytics-admin-api-basics/SKILL.md) | google-analytics-admin-api-basics | Manages Google Analytics account and property settings, enables the Analytics Admin API via the Cloud CLI, lists accounts and properties, and manages data streams, custom dimensions, conversion events, and integrations. Use when you need to programmatically configure Google Analytics accounts, provision properties, manage data retention, configure Measurement Protocol secrets, or manage Firebase and Google Ads links. |
 | [`google/analytics/google-analytics-data-api-basics`](./google/analytics/google-analytics-data-api-basics/SKILL.md) | google-analytics-data-api-basics | Manages Google Analytics reporting data, enables the Analytics Data API via the Cloud CLI, and creates reports using the Google Analytics Data API (v1beta). Use when you need to interact with Google Analytics properties, run customized analytics reports, query metrics (like activeUsers, screenPageViews) and dimensions (like city, date), check metrics and dimensions compatibility, or verify API enablement. |
 
@@ -218,7 +408,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 <summary>Open the Google / Cloud cabinet</summary>
 
 | Skill | Name | Description |
-|---|---|---|
+| :--- | :--- | :--- |
 | [`google/cloud/agent-platform-alert-configuration`](./google/cloud/agent-platform-alert-configuration/SKILL.md) | agent-platform-alert-configuration | Configures best-practice alerting policies for Google Cloud Vertex AI / Agent Platform agents on Agent Runtime. Use when analyzing, writing, or deploying alerting policies to monitor agent latency, error rates, and quality metrics (response quality, tool use, hallucination). Also use when provisioning online monitors for quality evaluation, or analyzing live metrics traffic footprints. NOTE: This skill currently only works for the Agent Runtime. Don't use for configuring general GCP alert policies or non-agent GCP alerting policies. |
 | [`google/cloud/agent-platform-deploy`](./google/cloud/agent-platform-deploy/SKILL.md) | agent-platform-deploy | Deploy open models or custom weights from Model Garden to Agent Platform endpoints, check deployment status, verify serving endpoints, or clean up resources by undeploying models and deleting endpoints. Use when asked to deploy models on Agent Platform, list available Model Garden models, check if a model is deployable, query deployment cost, troubleshoot deployment errors (like quota limits), or undeploy/clean up endpoints. Also use when copying and deploying a 1P Tuned Model. Don't use for public Vertex AI deployments (use the `vertex-deploy` skill) or for running model evaluations (use the `agent-platform-eval` skill). |
 | [`google/cloud/agent-platform-endpoint-management`](./google/cloud/agent-platform-endpoint-management/SKILL.md) | agent-platform-endpoint-management | Manages Agent Platform serving endpoints. Use when you need to create, list, describe, update, or delete serving endpoints for model deployment on Agent Platform. Also use when troubleshooting endpoint permission, quota, or resource busy errors. Don't use for deploying models to endpoints or for running model evaluations. |
@@ -286,7 +476,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 <summary>Open the Local / Web Services cabinet</summary>
 
 | Skill | Name | Description |
-|---|---|---|
+| :--- | :--- | :--- |
 | [`anthropic-skills/webapp-testing`](./anthropic-skills/webapp-testing/SKILL.md) | webapp-testing | Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs. |
 | [`food-order`](./food-order/SKILL.md) | food-order | Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA. |
 | [`goplaces`](./goplaces/SKILL.md) | goplaces | Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts. |
@@ -304,7 +494,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 <summary>Open the Media / Devices cabinet</summary>
 
 | Skill | Name | Description |
-|---|---|---|
+| :--- | :--- | :--- |
 | [`anthropic-skills/canvas-design`](./anthropic-skills/canvas-design/SKILL.md) | canvas-design | Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations. |
 | [`anthropic-skills/docx`](./anthropic-skills/docx/SKILL.md) | docx | Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation. |
 | [`anthropic-skills/pdf`](./anthropic-skills/pdf/SKILL.md) | pdf | Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill. |
@@ -324,7 +514,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`songsee`](./songsee/SKILL.md) | songsee | Generate spectrograms and feature-panel visualizations from audio with the songsee CLI. |
 | [`sonoscli`](./sonoscli/SKILL.md) | sonoscli | Control Sonos speakers (discover/status/play/volume/group). |
 | [`spotify-player`](./spotify-player/SKILL.md) | spotify-player | Terminal Spotify playback/search via spogo (preferred) or spotify_player. |
-| [`summarize`](./summarize/SKILL.md) | summarize | Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”). |
+| [`summarize`](./summarize/SKILL.md) | summarize | Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for "transcribe this YouTube/video"). |
 | [`video-frames`](./video-frames/SKILL.md) | video-frames | Extract frames or short clips from videos using ffmpeg. |
 | [`voice-call`](./voice-call/SKILL.md) | voice-call | Start voice calls via the Clawdbot voice-call plugin. |
 
@@ -338,7 +528,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 <summary>Open the Productivity / Messaging cabinet</summary>
 
 | Skill | Name | Description |
-|---|---|---|
+| :--- | :--- | :--- |
 | [`anthropic-skills/pptx`](./anthropic-skills/pptx/SKILL.md) | pptx | Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions "deck," "slides," "presentation," or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill. |
 | [`apple-notes`](./apple-notes/SKILL.md) | apple-notes | Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks Clawdbot to add a note, list notes, search notes, or manage note folders. |
 | [`apple-reminders`](./apple-reminders/SKILL.md) | apple-reminders | Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output. |
@@ -365,7 +555,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 <summary>Open the Solana / Blockchain cabinet</summary>
 
 | Skill | Name | Description |
-|---|---|---|
+| :--- | :--- | :--- |
 | [`anthropic-skills/claude-api`](./anthropic-skills/claude-api/SKILL.md) | claude-api | Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it "looks like a one-liner" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens). SKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai\|langchain_openai\|google.generativeai\|genai\|mistralai\|cohere\|ollama'` over the project hits (run this grep FIRST if no provider named — don't Read the file). |
 | [`ask-mcp`](./ask-mcp/SKILL.md) | ask-mcp | For questions about Light Protocol's SDK, smart contracts and Solana development, Claude Code features, or agent skills. AI-powered answers grounded in repository context via DeepWiki MCP. |
 | [`cheshire-terminal`](./cheshire-terminal/SKILL.md) | cheshire-terminal | Operate and extend Cheshire Terminal, the cheshireterminal.ai voice-controlled Solana terminal powered by $CLAWD. Use when working on voice terminal flows, token launch commands, LiveKit voice integration, Jupiter swap surfaces, burn/staking flows, or any task that mentions Cheshire Terminal, cheshireterminal.ai, $CLAWD terminal, or Clawd voice commands. |
@@ -476,7 +666,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 <summary>Open the Utilities cabinet</summary>
 
 | Skill | Name | Description |
-|---|---|---|
+| :--- | :--- | :--- |
 | [`1password`](./1password/SKILL.md) | 1password | Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op. |
 | [`anthropic-skills/brand-guidelines`](./anthropic-skills/brand-guidelines/SKILL.md) | brand-guidelines | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply. |
 | [`anthropic-skills/doc-coauthoring`](./anthropic-skills/doc-coauthoring/SKILL.md) | doc-coauthoring | Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks. |
@@ -498,6 +688,8 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 </div>
 
+---
+
 ## ⛓️ On-Chain: Arweave × Solana
 
 This hub doesn't just live on GitHub — every build is designed to be **permanent and verifiable**:
@@ -512,15 +704,17 @@ npm run publish:onchain        # dry-run: shows the plan, costs, and memo payloa
 npm run publish:onchain -- --execute   # uploads to Arweave + anchors on Solana
 ```
 
-Verify any skill later: fetch its `verification.json`, re-hash the bundle, check the leaf against the anchored root. See [ONCHAIN.md](./ONCHAIN.md) for the full protocol.
+Verify any skill later: fetch its `verification.json`, re-hash the bundle, check the leaf against the anchored root. See [`ONCHAIN.md`](./ONCHAIN.md) for the full protocol.
 
 | Artifact | Where |
-|---|---|
+| :--- | :--- |
 | Catalog JSON | [`catalog.json`](./catalog.json) · https://skills.onchainai.fund/api/skills.json |
 | Merkle registry | [`.well-known/onchain-skill-registry.json`](./public/.well-known/onchain-skill-registry.json) |
 | Per-skill proof | https://skills.onchainai.fund/api/skills/solana-dev/verification.json |
 | Live catalog UI | https://skills.onchainai.fund/skills |
 | Publish receipts | `onchain/publish-receipt.json` (created by `publish:onchain`) |
+
+---
 
 ## 🔄 How It Stays Fresh
 
@@ -531,6 +725,21 @@ Verify any skill later: fetch its `verification.json`, re-hash the bundle, check
 
 <div align="center">
 
-**Built for agents, hashed for history, anchored for keeps.** 🟣
+<br />
+
+```ascii
+    ╔═══════════════════════════════════════════════════╗
+    ║                                                   ║
+    ║   Built for agents, hashed for history,           ║
+    ║            anchored for keeps. 🟣                 ║
+    ║                                                   ║
+    ╚═══════════════════════════════════════════════════╝
+```
+
+<br />
+
+<sub style="color: #888;">
+  240 skills · 9 categories · Merkle-verified · Arweave-pinned · Solana-anchored
+</sub>
 
 </div>
