@@ -4,7 +4,7 @@ How the Skill Hub catalog becomes permanent (Arweave) and verifiable (Solana SVM
 
 ## The Idea
 
-Every build of the hub produces a cryptographic commitment to all 216+ skills:
+Every build of the hub produces a cryptographic commitment to all 240 skills:
 
 ```
 skill files ──sha256──▶ bundleHash (per skill)
@@ -36,7 +36,7 @@ npm run publish:onchain -- --execute --devnet # …or rehearse on devnet (free I
 2. **Solana anchor** — a memo transaction (program `MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr`) records:
 
    ```
-   skillhub:v1|skills:216|merkle:sha256-…|catalog:sha256-…|ar:<registryTx>,<catalogTx>
+   skillhub:v1|skills:240|merkle:sha256-…|catalog:sha256-…|ar:<registryTx>,<catalogTx>
    ```
 
    One transaction, a few thousand lamports, permanently timestamped by the cluster.
@@ -51,7 +51,7 @@ npm install @irys/upload @irys/upload-solana @solana/web3.js
 
 - A funded Solana keypair: `--keypair <path>`, `SOLANA_KEYPAIR`, or `~/.config/solana/id.json`.
 - Optional custom RPC: `--rpc <url>` or `SOLANA_RPC_URL`.
-- Costs: Arweave storage for ~250 KiB of JSON (fractions of a cent, paid in SOL) + one Solana tx fee.
+- Costs: Arweave storage for ~300 KiB of JSON (fractions of a cent, paid in SOL) + one Solana tx fee.
 
 ## Verifying a Skill Later
 
