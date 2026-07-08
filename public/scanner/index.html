@@ -18,6 +18,7 @@
       --blue: #75a8ff;
       --amber: #e8b44e;
       --red: #ff8b82;
+      --red-deep: #c2564f;
       --purple: #b99cff;
       --soft-green: rgba(57, 215, 166, 0.14);
       --soft-blue: rgba(117, 168, 255, 0.14);
@@ -57,12 +58,26 @@
     }
 
     .topbar {
+      position: relative;
       display: grid;
       grid-template-columns: minmax(0, 1fr) minmax(260px, 420px);
       gap: 18px;
       align-items: stretch;
       padding-bottom: 18px;
       border-bottom: 1px solid var(--line);
+    }
+
+    .topbar::before {
+      content: "";
+      position: absolute;
+      inset: -30px -10px auto -10px;
+      height: 200px;
+      background:
+        radial-gradient(55% 100% at 15% 0%, rgba(57, 215, 166, 0.12), transparent 70%),
+        radial-gradient(45% 100% at 92% 25%, rgba(117, 168, 255, 0.10), transparent 70%);
+      pointer-events: none;
+      z-index: -1;
+      animation: ambient-drift 12s ease-in-out infinite;
     }
 
     .brand {
@@ -103,9 +118,30 @@
     }
 
     .subhead {
+      display: flex;
+      align-items: center;
+      gap: 8px;
       margin: 6px 0 0;
       color: var(--muted);
       font-size: 14px;
+    }
+
+    .pulse-dot {
+      position: relative;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green);
+      flex: 0 0 auto;
+    }
+
+    .pulse-dot::after {
+      content: "";
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      border: 1px solid var(--green);
+      animation: pulse-ring 2.4s ease-out infinite;
     }
 
     .hero-asset {
@@ -146,6 +182,7 @@
       font-size: 23px;
       line-height: 1;
       letter-spacing: 0;
+      font-variant-numeric: normal;
     }
 
     .metric span {
@@ -154,6 +191,125 @@
       color: var(--muted);
       font-size: 12px;
       line-height: 1.2;
+    }
+
+    .analytics {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.4fr);
+      gap: 8px;
+      margin: 0 0 18px;
+    }
+
+    .viz-card {
+      min-width: 0;
+      padding: 14px 16px 16px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      box-shadow: var(--shadow);
+    }
+
+    .viz-card h3 {
+      margin: 0 0 12px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #cbd9d3;
+      font-weight: 750;
+    }
+
+    .stackbar {
+      display: flex;
+      height: 20px;
+      gap: 2px;
+      border-radius: 4px;
+      overflow: hidden;
+      background: #101614;
+    }
+
+    .stackbar .seg {
+      height: 100%;
+      min-width: 4px;
+    }
+
+    .stackbar .seg:first-child {
+      border-radius: 4px 0 0 4px;
+    }
+
+    .stackbar .seg:last-child {
+      border-radius: 0 4px 4px 0;
+    }
+
+    .viz-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 16px;
+      list-style: none;
+      margin: 12px 0 0;
+      padding: 0;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .viz-legend li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .viz-legend i {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      flex: 0 0 auto;
+    }
+
+    .viz-legend strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .barlist {
+      display: grid;
+      gap: 7px;
+    }
+
+    .barrow {
+      display: grid;
+      grid-template-columns: minmax(80px, 168px) minmax(0, 1fr) 34px;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .barrow .barlabel {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .barrow .bartrack {
+      height: 10px;
+      border-radius: 4px;
+      background: #101614;
+      overflow: hidden;
+    }
+
+    .barrow .barfill {
+      display: block;
+      height: 100%;
+      border-radius: 4px;
+      background: var(--blue);
+    }
+
+    .barrow .barvalue {
+      text-align: right;
+      font-size: 12px;
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+      color: var(--ink);
     }
 
     .controls {
@@ -206,6 +362,27 @@
       font-size: 13px;
     }
 
+    .kbd-hint {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      color: #74847f;
+      font-size: 11px;
+    }
+
+    .kbd-hint kbd {
+      display: inline-block;
+      min-width: 16px;
+      padding: 1px 5px;
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      background: var(--panel-strong);
+      color: var(--muted);
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 10px;
+      text-align: center;
+    }
+
     .list {
       display: grid;
       gap: 8px;
@@ -221,13 +398,17 @@
       gap: 12px;
       width: 100%;
       min-height: 112px;
-      padding: 13px;
+      padding: 13px 13px 13px 12px;
       border: 1px solid var(--line);
+      border-left: 3px solid var(--card-accent, var(--line));
       border-radius: 8px;
       background: var(--panel);
       color: var(--ink);
       text-align: left;
       box-shadow: var(--shadow);
+      opacity: 0;
+      animation: card-in 260ms ease both;
+      animation-delay: calc(var(--i, 0) * 16ms);
       transition: border-color 140ms ease, box-shadow 140ms ease, transform 140ms ease;
     }
 
@@ -239,7 +420,7 @@
 
     .skill-card[aria-current="true"] {
       border-color: var(--blue);
-      box-shadow: 0 0 0 1px rgba(117, 168, 255, 0.22), var(--shadow);
+      box-shadow: 0 0 0 1px rgba(117, 168, 255, 0.28), 0 0 18px rgba(117, 168, 255, 0.16), var(--shadow);
     }
 
     .skill-title {
@@ -257,6 +438,7 @@
       font-size: 12px;
       line-height: 1.35;
       overflow: hidden;
+      text-overflow: ellipsis;
       -webkit-box-orient: vertical;
       -webkit-line-clamp: 2;
     }
@@ -362,6 +544,11 @@
       padding: 0 12px;
       font-size: 13px;
       font-weight: 750;
+      transition: transform 120ms ease, filter 120ms ease;
+    }
+
+    .copy:active {
+      transform: translateY(1px);
     }
 
     .copy.secondary {
@@ -454,6 +641,12 @@
       overflow-wrap: anywhere;
     }
 
+    .sev-summary {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
     .findings {
       display: grid;
       gap: 8px;
@@ -480,6 +673,9 @@
     }
 
     .empty {
+      display: grid;
+      gap: 12px;
+      justify-items: center;
       border: 1px solid var(--line);
       border-radius: 8px;
       background: var(--panel);
@@ -488,9 +684,58 @@
       text-align: center;
     }
 
+    .empty .copy {
+      justify-self: center;
+    }
+
+    .toast {
+      position: fixed;
+      left: 50%;
+      bottom: 22px;
+      transform: translate(-50%, 12px);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border: 1px solid rgba(57, 215, 166, 0.4);
+      border-radius: 999px;
+      background: var(--panel-strong);
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 700;
+      box-shadow: var(--shadow);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 180ms ease, transform 180ms ease;
+      z-index: 20;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+
+    .toast::before {
+      content: "\2713";
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--green);
+      color: #06110f;
+      font-size: 10px;
+      font-weight: 900;
+    }
+
     @media (max-width: 1180px) {
       .metrics {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .analytics {
+        grid-template-columns: 1fr;
       }
 
       .controls {
@@ -541,6 +786,14 @@
         justify-content: flex-start;
         max-width: none;
       }
+
+      .barrow {
+        grid-template-columns: 84px minmax(0, 1fr) 34px;
+      }
+
+      .kbd-hint {
+        display: none;
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
@@ -551,6 +804,10 @@
         animation-iteration-count: 1 !important;
         scroll-behavior: auto !important;
         transition-duration: 1ms !important;
+      }
+
+      .skill-card {
+        opacity: 1;
       }
     }
 
@@ -573,6 +830,37 @@
         opacity: 1;
       }
     }
+
+    @keyframes ambient-drift {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(6px);
+      }
+    }
+
+    @keyframes pulse-ring {
+      0% {
+        opacity: 0.9;
+        transform: scale(0.7);
+      }
+      100% {
+        opacity: 0;
+        transform: scale(1.9);
+      }
+    }
+
+    @keyframes card-in {
+      from {
+        opacity: 0;
+        transform: translateY(5px);
+      }
+      to {
+        opacity: 1;
+        transform: none;
+      }
+    }
   </style>
 </head>
 <body>
@@ -582,7 +870,7 @@
         <div class="mark" aria-hidden="true"></div>
         <div>
           <h1>Skill Verification Hub</h1>
-          <p class="subhead" id="scanMeta">Loading scanner results</p>
+          <p class="subhead"><span class="pulse-dot" aria-hidden="true"></span><span id="scanMeta">Loading scanner results</span></p>
         </div>
       </div>
       <div class="hero-asset">
@@ -592,8 +880,25 @@
 
     <section class="metrics" id="metrics" aria-label="Scan metrics"></section>
 
+    <section class="analytics" aria-label="Distribution insights">
+      <div class="viz-card">
+        <h3>Verification</h3>
+        <div class="stackbar" id="verificationBar" role="img"></div>
+        <ul class="viz-legend" id="verificationLegend"></ul>
+      </div>
+      <div class="viz-card">
+        <h3>Risk posture</h3>
+        <div class="stackbar" id="riskBar" role="img"></div>
+        <ul class="viz-legend" id="riskLegend"></ul>
+      </div>
+      <div class="viz-card">
+        <h3>Skills by category</h3>
+        <div class="barlist" id="categoryBars"></div>
+      </div>
+    </section>
+
     <section class="controls" aria-label="Filters">
-      <input id="search" type="search" autocomplete="off" placeholder="Search skills">
+      <input id="search" type="search" autocomplete="off" placeholder="Search skills  (press /)">
       <select id="category" aria-label="Category"></select>
       <select id="surface" aria-label="Surface">
         <option value="">All surfaces</option>
@@ -625,6 +930,7 @@
       <div>
         <div class="list-head">
           <span id="resultCount">0 skills</span>
+          <span class="kbd-hint"><kbd>&uarr;</kbd><kbd>&darr;</kbd> navigate &middot; <kbd>/</kbd> search</span>
           <span id="anchorState">Registry pending</span>
         </div>
         <div class="list" id="skillList"></div>
@@ -632,6 +938,8 @@
       <aside class="detail" id="detail"></aside>
     </section>
   </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
   <script src="./scan-data.js"></script>
   <script>
@@ -659,19 +967,36 @@
       anchorState: document.getElementById("anchorState"),
       skillList: document.getElementById("skillList"),
       detail: document.getElementById("detail"),
+      toast: document.getElementById("toast"),
+      verificationBar: document.getElementById("verificationBar"),
+      verificationLegend: document.getElementById("verificationLegend"),
+      riskBar: document.getElementById("riskBar"),
+      riskLegend: document.getElementById("riskLegend"),
+      categoryBars: document.getElementById("categoryBars"),
     };
 
     const riskRank = { required: 3, review: 2, pass: 1 };
     const severityRank = { CRITICAL: 5, HIGH: 4, MEDIUM: 3, LOW: 2, INFO: 1 };
+    const severityOrder = ["CRITICAL", "HIGH", "MEDIUM", "LOW", "INFO"];
 
     init();
 
     function init() {
+      restoreFromHash();
       renderMeta();
       renderMetrics();
+      renderAnalytics();
       renderCategoryOptions();
       bindControls();
+      bindKeyboardShortcuts();
       render();
+    }
+
+    function restoreFromHash() {
+      const slug = decodeURIComponent((location.hash || "").replace(/^#/, ""));
+      if (slug && data.skills.some((skill) => skill.slug === slug)) {
+        state.selected = slug;
+      }
     }
 
     function renderMeta() {
@@ -700,6 +1025,58 @@
       `).join("");
     }
 
+    function renderAnalytics() {
+      const summary = data.summary || {};
+      const total = summary.totalSkills || 0;
+
+      renderStackBar(
+        els.verificationBar,
+        els.verificationLegend,
+        [
+          { label: "Verified", value: summary.verification?.verified || 0, color: "var(--green)" },
+          { label: "Changed", value: summary.verification?.changed || 0, color: "var(--amber)" },
+          { label: "Missing", value: summary.verification?.missing || 0, color: "var(--red)" },
+          { label: "Error", value: summary.verification?.error || 0, color: "var(--red-deep)" },
+        ],
+        total,
+      );
+
+      renderStackBar(
+        els.riskBar,
+        els.riskLegend,
+        [
+          { label: "Pass", value: summary.risk?.pass || 0, color: "var(--green)" },
+          { label: "Review", value: summary.risk?.review || 0, color: "var(--amber)" },
+          { label: "Required", value: summary.risk?.required || 0, color: "var(--red)" },
+        ],
+        total,
+      );
+
+      const categories = Object.entries(summary.categories || {}).sort((a, b) => b[1] - a[1]);
+      const maxCategory = Math.max(1, ...categories.map(([, count]) => count));
+      els.categoryBars.innerHTML = categories.map(([category, count]) => `
+        <div class="barrow">
+          <span class="barlabel" title="${escapeAttr(category)}">${escapeHtml(category)}</span>
+          <span class="bartrack"><span class="barfill" style="width:${(count / maxCategory * 100).toFixed(1)}%"></span></span>
+          <span class="barvalue">${formatNumber(count)}</span>
+        </div>
+      `).join("");
+    }
+
+    function renderStackBar(barEl, legendEl, segments, total) {
+      const safeTotal = total || segments.reduce((sum, seg) => sum + seg.value, 0) || 1;
+      const visible = segments.filter((seg) => seg.value > 0);
+
+      barEl.innerHTML = visible.map((seg) => {
+        const pct = (seg.value / safeTotal * 100);
+        return `<span class="seg" style="flex-basis:${pct.toFixed(2)}%; background:${seg.color}" title="${escapeAttr(seg.label)}: ${formatNumber(seg.value)} (${pct.toFixed(1)}%)"></span>`;
+      }).join("");
+
+      legendEl.innerHTML = segments.map((seg) => `
+        <li><i style="background:${seg.color}"></i>${escapeHtml(seg.label)} &middot; <strong>${formatNumber(seg.value)}</strong></li>
+      `).join("");
+    }
+
     function renderCategoryOptions() {
       const categories = [...new Set(data.skills.map((skill) => skill.category))].sort((a, b) => a.localeCompare(b));
       els.category.innerHTML = `<option value="">All categories</option>` + categories
@@ -718,6 +1095,52 @@
         state.search = els.search.value.trim().toLowerCase();
         render();
       });
+    }
+
+    function bindKeyboardShortcuts() {
+      document.addEventListener("keydown", (event) => {
+        const active = document.activeElement;
+        const tag = active?.tagName;
+        const typing = tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA";
+
+        if (event.key === "/" && !typing && !event.metaKey && !event.ctrlKey && !event.altKey) {
+          event.preventDefault();
+          els.search.focus();
+          els.search.select();
+          return;
+        }
+
+        if (event.key === "Escape" && active === els.search) {
+          if (els.search.value) {
+            els.search.value = "";
+            state.search = "";
+            render();
+          } else {
+            els.search.blur();
+          }
+          return;
+        }
+
+        if ((event.key === "ArrowDown" || event.key === "ArrowUp") && !typing) {
+          event.preventDefault();
+          moveSelection(event.key === "ArrowDown" ? 1 : -1);
+        }
+      });
+    }
+
+    function moveSelection(delta) {
+      const skills = filteredSkills();
+      if (!skills.length) return;
+      const currentIndex = skills.findIndex((skill) => skill.slug === state.selected);
+      const nextIndex = Math.min(skills.length - 1, Math.max(0, (currentIndex === -1 ? 0 : currentIndex) + delta));
+      selectSkill(skills[nextIndex].slug);
+      document.querySelector('.skill-card[aria-current="true"]')?.scrollIntoView({ block: "nearest" });
+    }
+
+    function selectSkill(slug) {
+      state.selected = slug;
+      history.replaceState(null, "", `#${encodeURIComponent(slug)}`);
+      render();
     }
 
     function render() {
@@ -757,14 +1180,24 @@
 
     function renderList(skills) {
       if (!skills.length) {
-        els.skillList.innerHTML = `<div class="empty">No skills match the current filters.</div>`;
+        els.skillList.innerHTML = `
+          <div class="empty">
+            <span>No skills match the current filters.</span>
+            <button class="copy secondary" type="button" id="resetFilters">Reset filters</button>
+          </div>
+        `;
+        document.getElementById("resetFilters").addEventListener("click", resetFilters);
         return;
       }
 
-      els.skillList.innerHTML = skills.map((skill) => {
+      els.skillList.innerHTML = skills.map((skill, index) => {
         const current = skill.slug === state.selected ? "true" : "false";
+        const accent = riskColor(skill.risk?.status) === "red" ? "var(--red)"
+          : riskColor(skill.risk?.status) === "amber" ? "var(--amber)"
+          : riskColor(skill.risk?.status) === "green" ? "var(--green)"
+          : "var(--line)";
         return `
-          <button class="skill-card" type="button" data-slug="${escapeAttr(skill.slug)}" aria-current="${current}">
+          <button class="skill-card" type="button" data-slug="${escapeAttr(skill.slug)}" aria-current="${current}" style="--i:${Math.min(index, 14)}; --card-accent:${accent}">
             <span>
               <span class="skill-title">${escapeHtml(skill.slug)}</span>
               <span class="skill-desc">${escapeHtml(skill.description)}</span>
@@ -780,11 +1213,22 @@
       }).join("");
 
       els.skillList.querySelectorAll(".skill-card").forEach((card) => {
-        card.addEventListener("click", () => {
-          state.selected = card.dataset.slug;
-          render();
-        });
+        card.addEventListener("click", () => selectSkill(card.dataset.slug));
       });
+    }
+
+    function resetFilters() {
+      state.search = "";
+      state.category = "";
+      state.surface = "";
+      state.verification = "";
+      state.risk = "";
+      els.search.value = "";
+      els.category.value = "";
+      els.surface.value = "";
+      els.verification.value = "";
+      els.risk.value = "";
+      render();
     }
 
     function renderDetail(skill) {
@@ -813,6 +1257,7 @@
           <div class="detail-actions">
             <button class="copy" type="button" id="copyInstall">Copy install</button>
             <button class="copy secondary" type="button" id="copyHash">Copy bundle hash</button>
+            <button class="copy secondary" type="button" id="copyLink">Copy link</button>
           </div>
         </div>
         <div class="detail-body">
@@ -861,6 +1306,7 @@
 
           <section class="section">
             <h3>Findings</h3>
+            ${renderSeveritySummary(skill.risk?.bySeverity)}
             <div class="findings">
               ${renderFindings(findings)}
             </div>
@@ -868,8 +1314,21 @@
         </div>
       `;
 
-      document.getElementById("copyInstall").addEventListener("click", () => copyText(skill.install?.command || ""));
-      document.getElementById("copyHash").addEventListener("click", () => copyText(skill.verification?.bundleHash || ""));
+      document.getElementById("copyInstall").addEventListener("click", () => copyText(skill.install?.command || "", "Install command copied"));
+      document.getElementById("copyHash").addEventListener("click", () => copyText(skill.verification?.bundleHash || "", "Bundle hash copied"));
+      document.getElementById("copyLink").addEventListener("click", () => {
+        history.replaceState(null, "", `#${encodeURIComponent(skill.slug)}`);
+        copyText(location.href, "Link copied");
+      });
+    }
+
+    function renderSeveritySummary(bySeverity) {
+      if (!bySeverity) return "";
+      const chips = severityOrder
+        .filter((severity) => bySeverity[severity] > 0)
+        .map((severity) => pill(`${bySeverity[severity]} ${severity}`, severityColor(severity)));
+      if (!chips.length) return "";
+      return `<div class="sev-summary">${chips.join("")}</div>`;
     }
 
     function renderFindings(findings) {
@@ -925,7 +1384,8 @@
       return "";
     }
 
-    async function copyText(value) {
+    let toastTimer = null;
+    async function copyText(value, message) {
       if (!value) return;
       try {
         await navigator.clipboard.writeText(value);
@@ -937,6 +1397,14 @@
         document.execCommand("copy");
         textarea.remove();
       }
+      showToast(message || "Copied");
+    }
+
+    function showToast(message) {
+      els.toast.textContent = message;
+      els.toast.classList.add("show");
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => els.toast.classList.remove("show"), 1800);
     }
 
     function formatMetric(value, label) {

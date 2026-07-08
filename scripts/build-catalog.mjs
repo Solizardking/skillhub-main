@@ -409,6 +409,7 @@ function renderReadme(catalog) {
   const byCategory = groupByCategory(catalog);
   const maxCount = Math.max(...byCategory.map(([, skills]) => skills.length));
   const bySourceFamily = groupBySourceFamily(catalog);
+  const googleCount = catalog.filter((skill) => skill.slug.startsWith("google/")).length;
   const featuredRuns = [
     ["🌞 Helius mode", "Helius infra: Sender, DAS, LaserStream + Jupiter, DFlow, OKX, Phantom, SVM internals", catalog.filter((skill) => skill.slug.startsWith("helius-skills/"))],
     ["🎰 Pump.fun mode", "launch → curve → fees → security, the whole token lifecycle", catalog.filter((skill) => skill.slug === "pumpfun" || skill.slug.startsWith("pump-") || skill.slug.startsWith("pumpfun-"))],
@@ -424,9 +425,9 @@ function renderReadme(catalog) {
     '<img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />',
     "",
     `[![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)`,
-    `![Skills](https://img.shields.io/badge/skills-${catalog.length}-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-${byCategory.length}-00C2FF?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)`,
+    `![Skills](https://img.shields.io/badge/skills-${catalog.length}-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-${byCategory.length}-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-${googleCount}_skills-4285F4?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)`,
     "",
-    `**${catalog.length} installable agent skills.** Every one is a \`SKILL.md\` playbook your agent can pull off the shelf —`,
+    `**${catalog.length} installable agent skills** — including a **${googleCount}-skill Google integration** (Ads, Analytics, Cloud, GKE, BigQuery, Vertex, Gemini, and the Well-Architected Framework). Every one is a \`SKILL.md\` playbook your agent can pull off the shelf —`,
     "hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.",
     "",
     "*Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️",
@@ -461,7 +462,7 @@ function renderReadme(catalog) {
     "| Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |",
     "| Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |",
     "| Verification and on-chain flow | Per-skill bundle hashes, Merkle leaves, registry manifests, Arweave upload planning, and Solana memo anchoring. | [`public/.well-known/onchain-skill-registry.json`](./public/.well-known/onchain-skill-registry.json), [`ONCHAIN.md`](./ONCHAIN.md), [`scripts/publish-onchain.mjs`](./scripts/publish-onchain.mjs), [`onchain/`](./onchain/) |",
-    "| Scanner | Local integrity/risk scanner plus a static dashboard built from generated verification artifacts. | [`scanner/bin/scan-skills.mjs`](./scanner/bin/scan-skills.mjs), [`scanner/results/`](./scanner/results/), [`scanner/public/`](./scanner/public/) |",
+    "| Scanner | Local integrity/risk scanner plus a live, interactive verification dashboard: real-time verification/risk/category charts, keyboard-navigable skill list (`/` search, arrow keys), shareable deep links, and one-click install/hash/link copy. Rebuilds from `scanner/results/scan-results.json` on every `npm run scanner:scan`. | [`scanner/bin/scan-skills.mjs`](./scanner/bin/scan-skills.mjs), [`scanner/results/`](./scanner/results/), [`scanner/public/index.html`](./scanner/public/index.html) |",
     "| Deployment | Static-hosting configs that run the catalog build and publish `public/`. | [`vercel.json`](./vercel.json), [`render.yaml`](./render.yaml) |",
     "",
     "### Source Families",
@@ -627,7 +628,7 @@ function renderHub(catalog) {
     `| Google skills | ${googleCount} |`,
     `| Solana / blockchain skills | ${solanaCount} |`,
     "| Public catalog | `/skills` or `public/index.html` |",
-    "| Scanner dashboard | `/scanner` or `npm run scanner:serve` |",
+    "| Scanner dashboard | Live, interactive verification/risk/category charts at `/scanner` or `npm run scanner:serve` |",
     `| Production site | ${SITE_URL} |`,
     "",
     "## Launch Sequences",
