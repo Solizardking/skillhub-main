@@ -1,6 +1,6 @@
 # Skill Scanner Results
 
-Scanned at: 2026-07-06T22:40:37.153Z
+Scanned at: 2026-07-08T11:48:30.842Z
 
 - Skills scanned: 240
 - Local skills available: 240
@@ -18,8 +18,8 @@ Scanned at: 2026-07-06T22:40:37.153Z
 - Status: anchor-ready
 - Anchor state: planned
 - Registry root valid: yes
-- Merkle root: sha256-d2b367fc09561e1b4f29d214813e7b021b02daf5f023500c2470c73bed01140f
-- Catalog hash: sha256-9cd5990835ddfbe89bdb5d399f4c671311ac2339f99c9530286c1fef98c65eb7
+- Merkle root: sha256-13a394a2b13ed65db9d9169071e796fc3f263ab36c404f41a7a84703148626dd
+- Catalog hash: sha256-776b7b79e72e03120435c0821f888d08f9c5cf0c2fa407a8f3f0524e63999286
 
 ## Skills Requiring Review
 

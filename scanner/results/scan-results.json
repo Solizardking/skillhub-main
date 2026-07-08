@@ -91,7 +91,7 @@
       }
     ]
   },
-  "scannedAt": "2026-07-06T22:40:37.153Z",
+  "scannedAt": "2026-07-08T11:48:30.842Z",
   "source": {
     "catalog": "catalog.json",
     "canonicalSkills": 240,
@@ -105,8 +105,8 @@
     "status": "anchor-ready",
     "anchorState": "planned",
     "totalSkills": 240,
-    "catalogHash": "sha256-9cd5990835ddfbe89bdb5d399f4c671311ac2339f99c9530286c1fef98c65eb7",
-    "merkleRoot": "sha256-d2b367fc09561e1b4f29d214813e7b021b02daf5f023500c2470c73bed01140f",
+    "catalogHash": "sha256-776b7b79e72e03120435c0821f888d08f9c5cf0c2fa407a8f3f0524e63999286",
+    "merkleRoot": "sha256-13a394a2b13ed65db9d9169071e796fc3f263ab36c404f41a7a84703148626dd",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -170,8 +170,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/algorithmic-art",
-      "skillPath": "anthropic-skills/algorithmic-art/SKILL.md",
+      "path": "skills/anthropic-skills/algorithmic-art",
+      "skillPath": "skills/anthropic-skills/algorithmic-art/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/algorithmic-art",
         "installs": null,
@@ -243,8 +243,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/internal-comms",
-      "skillPath": "anthropic-skills/internal-comms/SKILL.md",
+      "path": "skills/anthropic-skills/internal-comms",
+      "skillPath": "skills/anthropic-skills/internal-comms/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/internal-comms",
         "installs": null,
@@ -316,8 +316,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "anthropic-skills/mcp-builder",
-      "skillPath": "anthropic-skills/mcp-builder/SKILL.md",
+      "path": "skills/anthropic-skills/mcp-builder",
+      "skillPath": "skills/anthropic-skills/mcp-builder/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/mcp-builder",
         "installs": null,
@@ -389,8 +389,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "anthropic-skills/skill-creator",
-      "skillPath": "anthropic-skills/skill-creator/SKILL.md",
+      "path": "skills/anthropic-skills/skill-creator",
+      "skillPath": "skills/anthropic-skills/skill-creator/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/skill-creator",
         "installs": null,
@@ -462,8 +462,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/web-artifacts-builder",
-      "skillPath": "anthropic-skills/web-artifacts-builder/SKILL.md",
+      "path": "skills/anthropic-skills/web-artifacts-builder",
+      "skillPath": "skills/anthropic-skills/web-artifacts-builder/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/web-artifacts-builder",
         "installs": null,
@@ -608,8 +608,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "anthropic-skills/xlsx",
-      "skillPath": "anthropic-skills/xlsx/SKILL.md",
+      "path": "skills/anthropic-skills/xlsx",
+      "skillPath": "skills/anthropic-skills/xlsx/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/xlsx",
         "installs": null,
@@ -691,8 +691,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "clawdhub",
-      "skillPath": "clawdhub/SKILL.md",
+      "path": "skills/clawdhub",
+      "skillPath": "skills/clawdhub/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install clawdhub",
         "installs": null,
@@ -764,8 +764,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "create-agent-tui",
-      "skillPath": "create-agent-tui/SKILL.md",
+      "path": "skills/create-agent-tui",
+      "skillPath": "skills/create-agent-tui/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install create-agent-tui",
         "installs": null,
@@ -910,8 +910,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "github",
-      "skillPath": "github/SKILL.md",
+      "path": "skills/github",
+      "skillPath": "skills/github/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install github",
         "installs": null,
@@ -983,8 +983,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "mcporter",
-      "skillPath": "mcporter/SKILL.md",
+      "path": "skills/mcporter",
+      "skillPath": "skills/mcporter/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install mcporter",
         "installs": null,
@@ -1056,8 +1056,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "openclawd-clawd-code-skill-main",
-      "skillPath": "openclawd-clawd-code-skill-main/SKILL.md",
+      "path": "skills/openclawd-clawd-code-skill-main",
+      "skillPath": "skills/openclawd-clawd-code-skill-main/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openclawd-clawd-code-skill-main",
         "installs": null,
@@ -1148,8 +1148,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "openrouter-agent-migration",
-      "skillPath": "openrouter-agent-migration/SKILL.md",
+      "path": "skills/openrouter-agent-migration",
+      "skillPath": "skills/openrouter-agent-migration/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openrouter-agent-migration",
         "installs": null,
@@ -1285,8 +1285,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "openrouter-typescript-sdk",
-      "skillPath": "openrouter-typescript-sdk/SKILL.md",
+      "path": "skills/openrouter-typescript-sdk",
+      "skillPath": "skills/openrouter-typescript-sdk/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openrouter-typescript-sdk",
         "installs": null,
@@ -1440,8 +1440,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "oracle",
-      "skillPath": "oracle/SKILL.md",
+      "path": "skills/oracle",
+      "skillPath": "skills/oracle/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install oracle",
         "installs": null,
@@ -1513,8 +1513,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "session-logs",
-      "skillPath": "session-logs/SKILL.md",
+      "path": "skills/session-logs",
+      "skillPath": "skills/session-logs/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install session-logs",
         "installs": null,
@@ -1586,8 +1586,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "skill-creator",
-      "skillPath": "skill-creator/SKILL.md",
+      "path": "skills/skill-creator",
+      "skillPath": "skills/skill-creator/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install skill-creator",
         "installs": null,
@@ -1659,8 +1659,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "tmux",
-      "skillPath": "tmux/SKILL.md",
+      "path": "skills/tmux",
+      "skillPath": "skills/tmux/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install tmux",
         "installs": null,
@@ -1742,8 +1742,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/ads/data-manager-api/data-manager-api-audience-ingestion",
-      "skillPath": "google/ads/data-manager-api/data-manager-api-audience-ingestion/SKILL.md",
+      "path": "skills/google/ads/data-manager-api/data-manager-api-audience-ingestion",
+      "skillPath": "skills/google/ads/data-manager-api/data-manager-api-audience-ingestion/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/data-manager-api/data-manager-api-audience-ingestion",
         "installs": null,
@@ -1815,8 +1815,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/ads/data-manager-api/data-manager-api-event-ingestion",
-      "skillPath": "google/ads/data-manager-api/data-manager-api-event-ingestion/SKILL.md",
+      "path": "skills/google/ads/data-manager-api/data-manager-api-event-ingestion",
+      "skillPath": "skills/google/ads/data-manager-api/data-manager-api-event-ingestion/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/data-manager-api/data-manager-api-event-ingestion",
         "installs": null,
@@ -1888,8 +1888,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/ads/data-manager-api/data-manager-api-setup",
-      "skillPath": "google/ads/data-manager-api/data-manager-api-setup/SKILL.md",
+      "path": "skills/google/ads/data-manager-api/data-manager-api-setup",
+      "skillPath": "skills/google/ads/data-manager-api/data-manager-api-setup/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/data-manager-api/data-manager-api-setup",
         "installs": null,
@@ -2007,8 +2007,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/ads/google-ads-api/google-ads-api-mcp-setup",
-      "skillPath": "google/ads/google-ads-api/google-ads-api-mcp-setup/SKILL.md",
+      "path": "skills/google/ads/google-ads-api/google-ads-api-mcp-setup",
+      "skillPath": "skills/google/ads/google-ads-api/google-ads-api-mcp-setup/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/google-ads-api/google-ads-api-mcp-setup",
         "installs": null,
@@ -2117,8 +2117,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/ads/google-ads-api/google-ads-api-quickstart",
-      "skillPath": "google/ads/google-ads-api/google-ads-api-quickstart/SKILL.md",
+      "path": "skills/google/ads/google-ads-api/google-ads-api-quickstart",
+      "skillPath": "skills/google/ads/google-ads-api/google-ads-api-quickstart/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/google-ads-api/google-ads-api-quickstart",
         "installs": null,
@@ -2236,8 +2236,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/ads/google-mobile-ads/google-mobile-ads-android-migrate-to-next-gen",
-      "skillPath": "google/ads/google-mobile-ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md",
+      "path": "skills/google/ads/google-mobile-ads/google-mobile-ads-android-migrate-to-next-gen",
+      "skillPath": "skills/google/ads/google-mobile-ads/google-mobile-ads-android-migrate-to-next-gen/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/google-mobile-ads/google-mobile-ads-android-migrate-to-next-gen",
         "installs": null,
@@ -2319,8 +2319,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/ads/google-mobile-ads/google-mobile-ads-banner",
-      "skillPath": "google/ads/google-mobile-ads/google-mobile-ads-banner/SKILL.md",
+      "path": "skills/google/ads/google-mobile-ads/google-mobile-ads-banner",
+      "skillPath": "skills/google/ads/google-mobile-ads/google-mobile-ads-banner/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/google-mobile-ads/google-mobile-ads-banner",
         "installs": null,
@@ -2392,8 +2392,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/ads/google-mobile-ads/google-mobile-ads-get-started",
-      "skillPath": "google/ads/google-mobile-ads/google-mobile-ads-get-started/SKILL.md",
+      "path": "skills/google/ads/google-mobile-ads/google-mobile-ads-get-started",
+      "skillPath": "skills/google/ads/google-mobile-ads/google-mobile-ads-get-started/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/google-mobile-ads/google-mobile-ads-get-started",
         "installs": null,
@@ -2475,8 +2475,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/ads/google-mobile-ads/google-mobile-ads-interstitial",
-      "skillPath": "google/ads/google-mobile-ads/google-mobile-ads-interstitial/SKILL.md",
+      "path": "skills/google/ads/google-mobile-ads/google-mobile-ads-interstitial",
+      "skillPath": "skills/google/ads/google-mobile-ads/google-mobile-ads-interstitial/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/google-mobile-ads/google-mobile-ads-interstitial",
         "installs": null,
@@ -2548,8 +2548,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/ads/google-mobile-ads/google-mobile-ads-rewarded",
-      "skillPath": "google/ads/google-mobile-ads/google-mobile-ads-rewarded/SKILL.md",
+      "path": "skills/google/ads/google-mobile-ads/google-mobile-ads-rewarded",
+      "skillPath": "skills/google/ads/google-mobile-ads/google-mobile-ads-rewarded/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/google-mobile-ads/google-mobile-ads-rewarded",
         "installs": null,
@@ -2621,8 +2621,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/ads/interactive-media-ads/ima-sdk-basics",
-      "skillPath": "google/ads/interactive-media-ads/ima-sdk-basics/SKILL.md",
+      "path": "skills/google/ads/interactive-media-ads/ima-sdk-basics",
+      "skillPath": "skills/google/ads/interactive-media-ads/ima-sdk-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/ads/interactive-media-ads/ima-sdk-basics",
         "installs": null,
@@ -2704,8 +2704,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/analytics/google-analytics-admin-api-basics",
-      "skillPath": "google/analytics/google-analytics-admin-api-basics/SKILL.md",
+      "path": "skills/google/analytics/google-analytics-admin-api-basics",
+      "skillPath": "skills/google/analytics/google-analytics-admin-api-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/analytics/google-analytics-admin-api-basics",
         "installs": null,
@@ -2814,8 +2814,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/analytics/google-analytics-data-api-basics",
-      "skillPath": "google/analytics/google-analytics-data-api-basics/SKILL.md",
+      "path": "skills/google/analytics/google-analytics-data-api-basics",
+      "skillPath": "skills/google/analytics/google-analytics-data-api-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/analytics/google-analytics-data-api-basics",
         "installs": null,
@@ -2924,8 +2924,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/agent-platform-alert-configuration",
-      "skillPath": "google/cloud/agent-platform-alert-configuration/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-alert-configuration",
+      "skillPath": "skills/google/cloud/agent-platform-alert-configuration/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-alert-configuration",
         "installs": null,
@@ -3016,8 +3016,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/agent-platform-deploy",
-      "skillPath": "google/cloud/agent-platform-deploy/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-deploy",
+      "skillPath": "skills/google/cloud/agent-platform-deploy/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-deploy",
         "installs": null,
@@ -3089,8 +3089,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/agent-platform-endpoint-management",
-      "skillPath": "google/cloud/agent-platform-endpoint-management/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-endpoint-management",
+      "skillPath": "skills/google/cloud/agent-platform-endpoint-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-endpoint-management",
         "installs": null,
@@ -3162,8 +3162,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/agent-platform-eval-flywheel",
-      "skillPath": "google/cloud/agent-platform-eval-flywheel/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-eval-flywheel",
+      "skillPath": "skills/google/cloud/agent-platform-eval-flywheel/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-eval-flywheel",
         "installs": null,
@@ -3299,8 +3299,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/agent-platform-inference",
-      "skillPath": "google/cloud/agent-platform-inference/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-inference",
+      "skillPath": "skills/google/cloud/agent-platform-inference/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-inference",
         "installs": null,
@@ -3391,8 +3391,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/agent-platform-migrate-from-ai-studio",
-      "skillPath": "google/cloud/agent-platform-migrate-from-ai-studio/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-migrate-from-ai-studio",
+      "skillPath": "skills/google/cloud/agent-platform-migrate-from-ai-studio/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-migrate-from-ai-studio",
         "installs": null,
@@ -3510,8 +3510,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/agent-platform-model-registry",
-      "skillPath": "google/cloud/agent-platform-model-registry/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-model-registry",
+      "skillPath": "skills/google/cloud/agent-platform-model-registry/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-model-registry",
         "installs": null,
@@ -3583,8 +3583,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/agent-platform-prompt-management",
-      "skillPath": "google/cloud/agent-platform-prompt-management/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-prompt-management",
+      "skillPath": "skills/google/cloud/agent-platform-prompt-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-prompt-management",
         "installs": null,
@@ -3666,8 +3666,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/agent-platform-rag-engine-management",
-      "skillPath": "google/cloud/agent-platform-rag-engine-management/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-rag-engine-management",
+      "skillPath": "skills/google/cloud/agent-platform-rag-engine-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-rag-engine-management",
         "installs": null,
@@ -3742,15 +3742,15 @@
     {
       "slug": "google/cloud/agent-platform-skill-registry",
       "name": "agent-platform-skill-registry",
-      "description": "Interact with the Gemini Enterprise Agent Platform Skill Registry to create and search for available skills. Use this skill to enable agents to register functionality or discover new capabilities.",
+      "description": "Interact with the Gemini Enterprise Agent Platform Skill Registry to create, update, manage, and search for skills. Use this skill to enable agents to register new functionality, discover existing capabilities, manage skill revisions, and monitor long-running operations.",
       "category": "Google / Cloud",
       "surface": {
         "type": "on-chain",
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/agent-platform-skill-registry",
-      "skillPath": "google/cloud/agent-platform-skill-registry/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-skill-registry",
+      "skillPath": "skills/google/cloud/agent-platform-skill-registry/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-skill-registry",
         "installs": null,
@@ -3771,10 +3771,10 @@
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-cd1f2b9ed4c3dad2a89e472a9bd17329959f54eef53eeadae0693473abf6f4da",
-        "localBundleHash": "sha256-cd1f2b9ed4c3dad2a89e472a9bd17329959f54eef53eeadae0693473abf6f4da",
-        "merkleLeaf": "sha256-5cd7571c2a65347ab5372e28c67a02155712fb235d5d702ae574f34a3bbf6d38",
-        "localMerkleLeaf": "sha256-5cd7571c2a65347ab5372e28c67a02155712fb235d5d702ae574f34a3bbf6d38",
+        "bundleHash": "sha256-8a97d2eafaa9805e69ec99efdae6b48295f53380dc823d5e69afa5525717afb9",
+        "localBundleHash": "sha256-8a97d2eafaa9805e69ec99efdae6b48295f53380dc823d5e69afa5525717afb9",
+        "merkleLeaf": "sha256-bcd553069d5510b8d9180fdaa2957aefbe7f6bc300d3bfb2d84f8bd7423e2a59",
+        "localMerkleLeaf": "sha256-bcd553069d5510b8d9180fdaa2957aefbe7f6bc300d3bfb2d84f8bd7423e2a59",
         "fileCount": 8,
         "localFileCount": 8,
         "changedFiles": 0,
@@ -3807,8 +3807,8 @@
         "scriptFiles": 3,
         "referenceFiles": 4,
         "assetFiles": 0,
-        "bytesScanned": 21219,
-        "lineCount": 677
+        "bytesScanned": 42339,
+        "lineCount": 1409
       },
       "findings": [
         {
@@ -3817,7 +3817,7 @@
           "category": "unauthorized_tool_use",
           "message": "Installs packages at runtime rather than relying on declared dependencies.",
           "file": "SKILL.md",
-          "line": 47,
+          "line": 78,
           "excerpt": "pip install google-auth requests"
         }
       ]
@@ -3832,8 +3832,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/agent-platform-tuning",
-      "skillPath": "google/cloud/agent-platform-tuning/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-tuning",
+      "skillPath": "skills/google/cloud/agent-platform-tuning/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-tuning",
         "installs": null,
@@ -3915,8 +3915,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/agent-platform-tuning-management",
-      "skillPath": "google/cloud/agent-platform-tuning-management/SKILL.md",
+      "path": "skills/google/cloud/agent-platform-tuning-management",
+      "skillPath": "skills/google/cloud/agent-platform-tuning-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/agent-platform-tuning-management",
         "installs": null,
@@ -3998,8 +3998,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/alloydb-basics",
-      "skillPath": "google/cloud/alloydb-basics/SKILL.md",
+      "path": "skills/google/cloud/alloydb-basics",
+      "skillPath": "skills/google/cloud/alloydb-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/alloydb-basics",
         "installs": null,
@@ -4081,8 +4081,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/bigquery-ai-ml",
-      "skillPath": "google/cloud/bigquery-ai-ml/SKILL.md",
+      "path": "skills/google/cloud/bigquery-ai-ml",
+      "skillPath": "skills/google/cloud/bigquery-ai-ml/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/bigquery-ai-ml",
         "installs": null,
@@ -4154,8 +4154,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/bigquery-basics",
-      "skillPath": "google/cloud/bigquery-basics/SKILL.md",
+      "path": "skills/google/cloud/bigquery-basics",
+      "skillPath": "skills/google/cloud/bigquery-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/bigquery-basics",
         "installs": null,
@@ -4255,8 +4255,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/bigquery-bigframes",
-      "skillPath": "google/cloud/bigquery-bigframes/SKILL.md",
+      "path": "skills/google/cloud/bigquery-bigframes",
+      "skillPath": "skills/google/cloud/bigquery-bigframes/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/bigquery-bigframes",
         "installs": null,
@@ -4328,8 +4328,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/bigtable-basics",
-      "skillPath": "google/cloud/bigtable-basics/SKILL.md",
+      "path": "skills/google/cloud/bigtable-basics",
+      "skillPath": "skills/google/cloud/bigtable-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/bigtable-basics",
         "installs": null,
@@ -4401,8 +4401,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/cloud-run-basics",
-      "skillPath": "google/cloud/cloud-run-basics/SKILL.md",
+      "path": "skills/google/cloud/cloud-run-basics",
+      "skillPath": "skills/google/cloud/cloud-run-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/cloud-run-basics",
         "installs": null,
@@ -4493,8 +4493,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/cloud-sql-basics",
-      "skillPath": "google/cloud/cloud-sql-basics/SKILL.md",
+      "path": "skills/google/cloud/cloud-sql-basics",
+      "skillPath": "skills/google/cloud/cloud-sql-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/cloud-sql-basics",
         "installs": null,
@@ -4585,8 +4585,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/datalineage-bigquery-asset-impact-analysis",
-      "skillPath": "google/cloud/datalineage-bigquery-asset-impact-analysis/SKILL.md",
+      "path": "skills/google/cloud/datalineage-bigquery-asset-impact-analysis",
+      "skillPath": "skills/google/cloud/datalineage-bigquery-asset-impact-analysis/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/datalineage-bigquery-asset-impact-analysis",
         "installs": null,
@@ -4658,8 +4658,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/detection-engineering-coverage-evaluation",
-      "skillPath": "google/cloud/detection-engineering-coverage-evaluation/SKILL.md",
+      "path": "skills/google/cloud/detection-engineering-coverage-evaluation",
+      "skillPath": "skills/google/cloud/detection-engineering-coverage-evaluation/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/detection-engineering-coverage-evaluation",
         "installs": null,
@@ -4731,8 +4731,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/firebase-basics",
-      "skillPath": "google/cloud/firebase-basics/SKILL.md",
+      "path": "skills/google/cloud/firebase-basics",
+      "skillPath": "skills/google/cloud/firebase-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/firebase-basics",
         "installs": null,
@@ -4804,8 +4804,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gcloud",
-      "skillPath": "google/cloud/gcloud/SKILL.md",
+      "path": "skills/google/cloud/gcloud",
+      "skillPath": "skills/google/cloud/gcloud/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gcloud",
         "installs": null,
@@ -4877,8 +4877,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/gemini-agents-api",
-      "skillPath": "google/cloud/gemini-agents-api/SKILL.md",
+      "path": "skills/google/cloud/gemini-agents-api",
+      "skillPath": "skills/google/cloud/gemini-agents-api/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gemini-agents-api",
         "installs": null,
@@ -5005,8 +5005,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/gemini-api",
-      "skillPath": "google/cloud/gemini-api/SKILL.md",
+      "path": "skills/google/cloud/gemini-api",
+      "skillPath": "skills/google/cloud/gemini-api/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gemini-api",
         "installs": null,
@@ -5097,8 +5097,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/gemini-interactions-api",
-      "skillPath": "google/cloud/gemini-interactions-api/SKILL.md",
+      "path": "skills/google/cloud/gemini-interactions-api",
+      "skillPath": "skills/google/cloud/gemini-interactions-api/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gemini-interactions-api",
         "installs": null,
@@ -5198,8 +5198,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-app-onboarding",
-      "skillPath": "google/cloud/gke-app-onboarding/SKILL.md",
+      "path": "skills/google/cloud/gke-app-onboarding",
+      "skillPath": "skills/google/cloud/gke-app-onboarding/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-app-onboarding",
         "installs": null,
@@ -5281,8 +5281,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-backup-dr",
-      "skillPath": "google/cloud/gke-backup-dr/SKILL.md",
+      "path": "skills/google/cloud/gke-backup-dr",
+      "skillPath": "skills/google/cloud/gke-backup-dr/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-backup-dr",
         "installs": null,
@@ -5354,8 +5354,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-basics",
-      "skillPath": "google/cloud/gke-basics/SKILL.md",
+      "path": "skills/google/cloud/gke-basics",
+      "skillPath": "skills/google/cloud/gke-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-basics",
         "installs": null,
@@ -5446,8 +5446,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-batch-hpc",
-      "skillPath": "google/cloud/gke-batch-hpc/SKILL.md",
+      "path": "skills/google/cloud/gke-batch-hpc",
+      "skillPath": "skills/google/cloud/gke-batch-hpc/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-batch-hpc",
         "installs": null,
@@ -5519,8 +5519,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-cluster-creation",
-      "skillPath": "google/cloud/gke-cluster-creation/SKILL.md",
+      "path": "skills/google/cloud/gke-cluster-creation",
+      "skillPath": "skills/google/cloud/gke-cluster-creation/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-cluster-creation",
         "installs": null,
@@ -5592,8 +5592,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-compute-classes",
-      "skillPath": "google/cloud/gke-compute-classes/SKILL.md",
+      "path": "skills/google/cloud/gke-compute-classes",
+      "skillPath": "skills/google/cloud/gke-compute-classes/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-compute-classes",
         "installs": null,
@@ -5665,8 +5665,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-cost",
-      "skillPath": "google/cloud/gke-cost/SKILL.md",
+      "path": "skills/google/cloud/gke-cost",
+      "skillPath": "skills/google/cloud/gke-cost/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-cost",
         "installs": null,
@@ -5738,8 +5738,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-golden-path",
-      "skillPath": "google/cloud/gke-golden-path/SKILL.md",
+      "path": "skills/google/cloud/gke-golden-path",
+      "skillPath": "skills/google/cloud/gke-golden-path/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-golden-path",
         "installs": null,
@@ -5811,8 +5811,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/gke-inference",
-      "skillPath": "google/cloud/gke-inference/SKILL.md",
+      "path": "skills/google/cloud/gke-inference",
+      "skillPath": "skills/google/cloud/gke-inference/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-inference",
         "installs": null,
@@ -5884,8 +5884,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-multitenancy",
-      "skillPath": "google/cloud/gke-multitenancy/SKILL.md",
+      "path": "skills/google/cloud/gke-multitenancy",
+      "skillPath": "skills/google/cloud/gke-multitenancy/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-multitenancy",
         "installs": null,
@@ -5957,8 +5957,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-networking",
-      "skillPath": "google/cloud/gke-networking/SKILL.md",
+      "path": "skills/google/cloud/gke-networking",
+      "skillPath": "skills/google/cloud/gke-networking/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-networking",
         "installs": null,
@@ -6030,8 +6030,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-observability",
-      "skillPath": "google/cloud/gke-observability/SKILL.md",
+      "path": "skills/google/cloud/gke-observability",
+      "skillPath": "skills/google/cloud/gke-observability/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-observability",
         "installs": null,
@@ -6103,8 +6103,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-reliability",
-      "skillPath": "google/cloud/gke-reliability/SKILL.md",
+      "path": "skills/google/cloud/gke-reliability",
+      "skillPath": "skills/google/cloud/gke-reliability/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-reliability",
         "installs": null,
@@ -6176,8 +6176,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-scaling",
-      "skillPath": "google/cloud/gke-scaling/SKILL.md",
+      "path": "skills/google/cloud/gke-scaling",
+      "skillPath": "skills/google/cloud/gke-scaling/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-scaling",
         "installs": null,
@@ -6249,8 +6249,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-security",
-      "skillPath": "google/cloud/gke-security/SKILL.md",
+      "path": "skills/google/cloud/gke-security",
+      "skillPath": "skills/google/cloud/gke-security/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-security",
         "installs": null,
@@ -6322,8 +6322,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-storage",
-      "skillPath": "google/cloud/gke-storage/SKILL.md",
+      "path": "skills/google/cloud/gke-storage",
+      "skillPath": "skills/google/cloud/gke-storage/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-storage",
         "installs": null,
@@ -6395,8 +6395,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/gke-upgrades",
-      "skillPath": "google/cloud/gke-upgrades/SKILL.md",
+      "path": "skills/google/cloud/gke-upgrades",
+      "skillPath": "skills/google/cloud/gke-upgrades/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/gke-upgrades",
         "installs": null,
@@ -6468,8 +6468,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/google-agents-cli-onboarding",
-      "skillPath": "google/cloud/google-agents-cli-onboarding/SKILL.md",
+      "path": "skills/google/cloud/google-agents-cli-onboarding",
+      "skillPath": "skills/google/cloud/google-agents-cli-onboarding/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-agents-cli-onboarding",
         "installs": null,
@@ -6541,8 +6541,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/google-cloud-networking-observability",
-      "skillPath": "google/cloud/google-cloud-networking-observability/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-networking-observability",
+      "skillPath": "skills/google/cloud/google-cloud-networking-observability/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-networking-observability",
         "installs": null,
@@ -6614,8 +6614,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/google-cloud-recipe-auth",
-      "skillPath": "google/cloud/google-cloud-recipe-auth/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-recipe-auth",
+      "skillPath": "skills/google/cloud/google-cloud-recipe-auth/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-recipe-auth",
         "installs": null,
@@ -6687,8 +6687,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/google-cloud-recipe-foundation-builder",
-      "skillPath": "google/cloud/google-cloud-recipe-foundation-builder/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-recipe-foundation-builder",
+      "skillPath": "skills/google/cloud/google-cloud-recipe-foundation-builder/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-recipe-foundation-builder",
         "installs": null,
@@ -6760,8 +6760,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/google-cloud-recipe-onboarding",
-      "skillPath": "google/cloud/google-cloud-recipe-onboarding/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-recipe-onboarding",
+      "skillPath": "skills/google/cloud/google-cloud-recipe-onboarding/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-recipe-onboarding",
         "installs": null,
@@ -6833,8 +6833,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/google-cloud-waf-cost-optimization",
-      "skillPath": "google/cloud/google-cloud-waf-cost-optimization/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-waf-cost-optimization",
+      "skillPath": "skills/google/cloud/google-cloud-waf-cost-optimization/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-waf-cost-optimization",
         "installs": null,
@@ -6906,8 +6906,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/google-cloud-waf-operational-excellence",
-      "skillPath": "google/cloud/google-cloud-waf-operational-excellence/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-waf-operational-excellence",
+      "skillPath": "skills/google/cloud/google-cloud-waf-operational-excellence/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-waf-operational-excellence",
         "installs": null,
@@ -6979,8 +6979,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/google-cloud-waf-performance-optimization",
-      "skillPath": "google/cloud/google-cloud-waf-performance-optimization/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-waf-performance-optimization",
+      "skillPath": "skills/google/cloud/google-cloud-waf-performance-optimization/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-waf-performance-optimization",
         "installs": null,
@@ -7052,8 +7052,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/google-cloud-waf-reliability",
-      "skillPath": "google/cloud/google-cloud-waf-reliability/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-waf-reliability",
+      "skillPath": "skills/google/cloud/google-cloud-waf-reliability/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-waf-reliability",
         "installs": null,
@@ -7125,8 +7125,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/google-cloud-waf-security",
-      "skillPath": "google/cloud/google-cloud-waf-security/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-waf-security",
+      "skillPath": "skills/google/cloud/google-cloud-waf-security/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-waf-security",
         "installs": null,
@@ -7198,8 +7198,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/google-cloud-waf-sustainability",
-      "skillPath": "google/cloud/google-cloud-waf-sustainability/SKILL.md",
+      "path": "skills/google/cloud/google-cloud-waf-sustainability",
+      "skillPath": "skills/google/cloud/google-cloud-waf-sustainability/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/google-cloud-waf-sustainability",
         "installs": null,
@@ -7271,8 +7271,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "google/cloud/iam-recommendations-fetcher",
-      "skillPath": "google/cloud/iam-recommendations-fetcher/SKILL.md",
+      "path": "skills/google/cloud/iam-recommendations-fetcher",
+      "skillPath": "skills/google/cloud/iam-recommendations-fetcher/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/iam-recommendations-fetcher",
         "installs": null,
@@ -7344,8 +7344,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "google/cloud/workload-manager-basics",
-      "skillPath": "google/cloud/workload-manager-basics/SKILL.md",
+      "path": "skills/google/cloud/workload-manager-basics",
+      "skillPath": "skills/google/cloud/workload-manager-basics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install google/cloud/workload-manager-basics",
         "installs": null,
@@ -7436,8 +7436,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/webapp-testing",
-      "skillPath": "anthropic-skills/webapp-testing/SKILL.md",
+      "path": "skills/anthropic-skills/webapp-testing",
+      "skillPath": "skills/anthropic-skills/webapp-testing/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/webapp-testing",
         "installs": null,
@@ -7509,8 +7509,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "food-order",
-      "skillPath": "food-order/SKILL.md",
+      "path": "skills/food-order",
+      "skillPath": "skills/food-order/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install food-order",
         "installs": null,
@@ -7582,8 +7582,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "goplaces",
-      "skillPath": "goplaces/SKILL.md",
+      "path": "skills/goplaces",
+      "skillPath": "skills/goplaces/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install goplaces",
         "installs": null,
@@ -7655,8 +7655,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "local-places",
-      "skillPath": "local-places/SKILL.md",
+      "path": "skills/local-places",
+      "skillPath": "skills/local-places/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install local-places",
         "installs": null,
@@ -7747,8 +7747,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "ordercli",
-      "skillPath": "ordercli/SKILL.md",
+      "path": "skills/ordercli",
+      "skillPath": "skills/ordercli/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install ordercli",
         "installs": null,
@@ -7820,8 +7820,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "weather",
-      "skillPath": "weather/SKILL.md",
+      "path": "skills/weather",
+      "skillPath": "skills/weather/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install weather",
         "installs": null,
@@ -7903,8 +7903,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "anthropic-skills/canvas-design",
-      "skillPath": "anthropic-skills/canvas-design/SKILL.md",
+      "path": "skills/anthropic-skills/canvas-design",
+      "skillPath": "skills/anthropic-skills/canvas-design/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/canvas-design",
         "installs": null,
@@ -7976,8 +7976,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/docx",
-      "skillPath": "anthropic-skills/docx/SKILL.md",
+      "path": "skills/anthropic-skills/docx",
+      "skillPath": "skills/anthropic-skills/docx/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/docx",
         "installs": null,
@@ -8068,8 +8068,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/pdf",
-      "skillPath": "anthropic-skills/pdf/SKILL.md",
+      "path": "skills/anthropic-skills/pdf",
+      "skillPath": "skills/anthropic-skills/pdf/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/pdf",
         "installs": null,
@@ -8151,8 +8151,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/slack-gif-creator",
-      "skillPath": "anthropic-skills/slack-gif-creator/SKILL.md",
+      "path": "skills/anthropic-skills/slack-gif-creator",
+      "skillPath": "skills/anthropic-skills/slack-gif-creator/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/slack-gif-creator",
         "installs": null,
@@ -8234,8 +8234,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "blucli",
-      "skillPath": "blucli/SKILL.md",
+      "path": "skills/blucli",
+      "skillPath": "skills/blucli/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install blucli",
         "installs": null,
@@ -8307,8 +8307,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "camsnap",
-      "skillPath": "camsnap/SKILL.md",
+      "path": "skills/camsnap",
+      "skillPath": "skills/camsnap/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install camsnap",
         "installs": null,
@@ -8390,8 +8390,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "canvas",
-      "skillPath": "canvas/SKILL.md",
+      "path": "skills/canvas",
+      "skillPath": "skills/canvas/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install canvas",
         "installs": null,
@@ -8473,8 +8473,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "gifgrep",
-      "skillPath": "gifgrep/SKILL.md",
+      "path": "skills/gifgrep",
+      "skillPath": "skills/gifgrep/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install gifgrep",
         "installs": null,
@@ -8546,8 +8546,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "nano-banana-pro",
-      "skillPath": "nano-banana-pro/SKILL.md",
+      "path": "skills/nano-banana-pro",
+      "skillPath": "skills/nano-banana-pro/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install nano-banana-pro",
         "installs": null,
@@ -8629,8 +8629,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "nano-pdf",
-      "skillPath": "nano-pdf/SKILL.md",
+      "path": "skills/nano-pdf",
+      "skillPath": "skills/nano-pdf/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install nano-pdf",
         "installs": null,
@@ -8702,8 +8702,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "openai-whisper",
-      "skillPath": "openai-whisper/SKILL.md",
+      "path": "skills/openai-whisper",
+      "skillPath": "skills/openai-whisper/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openai-whisper",
         "installs": null,
@@ -8775,8 +8775,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "openai-whisper-api",
-      "skillPath": "openai-whisper-api/SKILL.md",
+      "path": "skills/openai-whisper-api",
+      "skillPath": "skills/openai-whisper-api/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openai-whisper-api",
         "installs": null,
@@ -8858,8 +8858,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "openhue",
-      "skillPath": "openhue/SKILL.md",
+      "path": "skills/openhue",
+      "skillPath": "skills/openhue/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openhue",
         "installs": null,
@@ -8931,8 +8931,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "openrouter-images",
-      "skillPath": "openrouter-images/SKILL.md",
+      "path": "skills/openrouter-images",
+      "skillPath": "skills/openrouter-images/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openrouter-images",
         "installs": null,
@@ -9032,8 +9032,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "sag",
-      "skillPath": "sag/SKILL.md",
+      "path": "skills/sag",
+      "skillPath": "skills/sag/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install sag",
         "installs": null,
@@ -9105,8 +9105,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "sherpa-onnx-tts",
-      "skillPath": "sherpa-onnx-tts/SKILL.md",
+      "path": "skills/sherpa-onnx-tts",
+      "skillPath": "skills/sherpa-onnx-tts/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install sherpa-onnx-tts",
         "installs": null,
@@ -9178,8 +9178,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "songsee",
-      "skillPath": "songsee/SKILL.md",
+      "path": "skills/songsee",
+      "skillPath": "skills/songsee/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install songsee",
         "installs": null,
@@ -9251,8 +9251,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "sonoscli",
-      "skillPath": "sonoscli/SKILL.md",
+      "path": "skills/sonoscli",
+      "skillPath": "skills/sonoscli/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install sonoscli",
         "installs": null,
@@ -9324,8 +9324,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "spotify-player",
-      "skillPath": "spotify-player/SKILL.md",
+      "path": "skills/spotify-player",
+      "skillPath": "skills/spotify-player/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install spotify-player",
         "installs": null,
@@ -9407,8 +9407,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "summarize",
-      "skillPath": "summarize/SKILL.md",
+      "path": "skills/summarize",
+      "skillPath": "skills/summarize/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install summarize",
         "installs": null,
@@ -9480,8 +9480,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "video-frames",
-      "skillPath": "video-frames/SKILL.md",
+      "path": "skills/video-frames",
+      "skillPath": "skills/video-frames/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install video-frames",
         "installs": null,
@@ -9553,8 +9553,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "voice-call",
-      "skillPath": "voice-call/SKILL.md",
+      "path": "skills/voice-call",
+      "skillPath": "skills/voice-call/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install voice-call",
         "installs": null,
@@ -9626,8 +9626,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/pptx",
-      "skillPath": "anthropic-skills/pptx/SKILL.md",
+      "path": "skills/anthropic-skills/pptx",
+      "skillPath": "skills/anthropic-skills/pptx/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/pptx",
         "installs": null,
@@ -9736,8 +9736,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "apple-notes",
-      "skillPath": "apple-notes/SKILL.md",
+      "path": "skills/apple-notes",
+      "skillPath": "skills/apple-notes/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install apple-notes",
         "installs": null,
@@ -9819,8 +9819,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "apple-reminders",
-      "skillPath": "apple-reminders/SKILL.md",
+      "path": "skills/apple-reminders",
+      "skillPath": "skills/apple-reminders/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install apple-reminders",
         "installs": null,
@@ -9902,8 +9902,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "bear-notes",
-      "skillPath": "bear-notes/SKILL.md",
+      "path": "skills/bear-notes",
+      "skillPath": "skills/bear-notes/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install bear-notes",
         "installs": null,
@@ -10039,8 +10039,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "bluebubbles",
-      "skillPath": "bluebubbles/SKILL.md",
+      "path": "skills/bluebubbles",
+      "skillPath": "skills/bluebubbles/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install bluebubbles",
         "installs": null,
@@ -10112,8 +10112,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "discord",
-      "skillPath": "discord/SKILL.md",
+      "path": "skills/discord",
+      "skillPath": "skills/discord/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install discord",
         "installs": null,
@@ -10185,8 +10185,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "gog",
-      "skillPath": "gog/SKILL.md",
+      "path": "skills/gog",
+      "skillPath": "skills/gog/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install gog",
         "installs": null,
@@ -10258,8 +10258,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "himalaya",
-      "skillPath": "himalaya/SKILL.md",
+      "path": "skills/himalaya",
+      "skillPath": "skills/himalaya/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install himalaya",
         "installs": null,
@@ -10359,8 +10359,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "imsg",
-      "skillPath": "imsg/SKILL.md",
+      "path": "skills/imsg",
+      "skillPath": "skills/imsg/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imsg",
         "installs": null,
@@ -10432,8 +10432,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "notion",
-      "skillPath": "notion/SKILL.md",
+      "path": "skills/notion",
+      "skillPath": "skills/notion/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install notion",
         "installs": null,
@@ -10614,8 +10614,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "obsidian",
-      "skillPath": "obsidian/SKILL.md",
+      "path": "skills/obsidian",
+      "skillPath": "skills/obsidian/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install obsidian",
         "installs": null,
@@ -10687,8 +10687,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "slack",
-      "skillPath": "slack/SKILL.md",
+      "path": "skills/slack",
+      "skillPath": "skills/slack/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install slack",
         "installs": null,
@@ -10760,8 +10760,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "things-mac",
-      "skillPath": "things-mac/SKILL.md",
+      "path": "skills/things-mac",
+      "skillPath": "skills/things-mac/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install things-mac",
         "installs": null,
@@ -10833,8 +10833,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "trello",
-      "skillPath": "trello/SKILL.md",
+      "path": "skills/trello",
+      "skillPath": "skills/trello/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install trello",
         "installs": null,
@@ -10997,8 +10997,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "wacli",
-      "skillPath": "wacli/SKILL.md",
+      "path": "skills/wacli",
+      "skillPath": "skills/wacli/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install wacli",
         "installs": null,
@@ -11070,8 +11070,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "anthropic-skills/claude-api",
-      "skillPath": "anthropic-skills/claude-api/SKILL.md",
+      "path": "skills/anthropic-skills/claude-api",
+      "skillPath": "skills/anthropic-skills/claude-api/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/claude-api",
         "installs": null,
@@ -11162,8 +11162,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "ask-mcp",
-      "skillPath": "ask-mcp/SKILL.md",
+      "path": "skills/ask-mcp",
+      "skillPath": "skills/ask-mcp/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install ask-mcp",
         "installs": null,
@@ -11235,8 +11235,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "cheshire-terminal",
-      "skillPath": "cheshire-terminal/SKILL.md",
+      "path": "skills/cheshire-terminal",
+      "skillPath": "skills/cheshire-terminal/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install cheshire-terminal",
         "installs": null,
@@ -11345,8 +11345,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "clawd-agent-launchpad",
-      "skillPath": "clawd-agent-launchpad/SKILL.md",
+      "path": "skills/clawd-agent-launchpad",
+      "skillPath": "skills/clawd-agent-launchpad/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install clawd-agent-launchpad",
         "installs": null,
@@ -11455,8 +11455,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "clawd-skills-installer",
-      "skillPath": "clawd-skills-installer/SKILL.md",
+      "path": "skills/clawd-skills-installer",
+      "skillPath": "skills/clawd-skills-installer/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install clawd-skills-installer",
         "installs": null,
@@ -11528,8 +11528,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "clawd-token-ops",
-      "skillPath": "clawd-token-ops/SKILL.md",
+      "path": "skills/clawd-token-ops",
+      "skillPath": "skills/clawd-token-ops/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install clawd-token-ops",
         "installs": null,
@@ -11611,8 +11611,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "clawd-trading-terminal",
-      "skillPath": "clawd-trading-terminal/SKILL.md",
+      "path": "skills/clawd-trading-terminal",
+      "skillPath": "skills/clawd-trading-terminal/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install clawd-trading-terminal",
         "installs": null,
@@ -11684,8 +11684,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "clawdex",
-      "skillPath": "clawdex/SKILL.md",
+      "path": "skills/clawdex",
+      "skillPath": "skills/clawdex/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install clawdex",
         "installs": null,
@@ -11776,8 +11776,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "coding-agent",
-      "skillPath": "coding-agent/SKILL.md",
+      "path": "skills/coding-agent",
+      "skillPath": "skills/coding-agent/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install coding-agent",
         "installs": null,
@@ -11877,8 +11877,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "compressed-pda",
-      "skillPath": "compressed-pda/SKILL.md",
+      "path": "skills/compressed-pda",
+      "skillPath": "skills/compressed-pda/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install compressed-pda",
         "installs": null,
@@ -12203,8 +12203,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "compressed-token",
-      "skillPath": "compressed-token/SKILL.md",
+      "path": "skills/compressed-token",
+      "skillPath": "skills/compressed-token/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install compressed-token",
         "installs": null,
@@ -12376,8 +12376,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dex-screener-scanner",
-      "skillPath": "dex-screener-scanner/SKILL.md",
+      "path": "skills/dex-screener-scanner",
+      "skillPath": "skills/dex-screener-scanner/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dex-screener-scanner",
         "installs": null,
@@ -12449,8 +12449,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dflow-docs",
-      "skillPath": "dflow-docs/SKILL.md",
+      "path": "skills/dflow-docs",
+      "skillPath": "skills/dflow-docs/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dflow-docs",
         "installs": null,
@@ -12541,8 +12541,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dflow-kalshi-market-data",
-      "skillPath": "dflow-kalshi-market-data/SKILL.md",
+      "path": "skills/dflow-kalshi-market-data",
+      "skillPath": "skills/dflow-kalshi-market-data/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dflow-kalshi-market-data",
         "installs": null,
@@ -12614,8 +12614,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dflow-kalshi-market-scanner",
-      "skillPath": "dflow-kalshi-market-scanner/SKILL.md",
+      "path": "skills/dflow-kalshi-market-scanner",
+      "skillPath": "skills/dflow-kalshi-market-scanner/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dflow-kalshi-market-scanner",
         "installs": null,
@@ -12687,8 +12687,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dflow-kalshi-portfolio",
-      "skillPath": "dflow-kalshi-portfolio/SKILL.md",
+      "path": "skills/dflow-kalshi-portfolio",
+      "skillPath": "skills/dflow-kalshi-portfolio/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dflow-kalshi-portfolio",
         "installs": null,
@@ -12760,8 +12760,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dflow-kalshi-trading",
-      "skillPath": "dflow-kalshi-trading/SKILL.md",
+      "path": "skills/dflow-kalshi-trading",
+      "skillPath": "skills/dflow-kalshi-trading/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dflow-kalshi-trading",
         "installs": null,
@@ -12833,8 +12833,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dflow-phantom-connect",
-      "skillPath": "dflow-phantom-connect/SKILL.md",
+      "path": "skills/dflow-phantom-connect",
+      "skillPath": "skills/dflow-phantom-connect/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dflow-phantom-connect",
         "installs": null,
@@ -13402,8 +13402,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dflow-platform-fees",
-      "skillPath": "dflow-platform-fees/SKILL.md",
+      "path": "skills/dflow-platform-fees",
+      "skillPath": "skills/dflow-platform-fees/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dflow-platform-fees",
         "installs": null,
@@ -13475,8 +13475,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dflow-proof-kyc",
-      "skillPath": "dflow-proof-kyc/SKILL.md",
+      "path": "skills/dflow-proof-kyc",
+      "skillPath": "skills/dflow-proof-kyc/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dflow-proof-kyc",
         "installs": null,
@@ -13548,8 +13548,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "dflow-spot-trading",
-      "skillPath": "dflow-spot-trading/SKILL.md",
+      "path": "skills/dflow-spot-trading",
+      "skillPath": "skills/dflow-spot-trading/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install dflow-spot-trading",
         "installs": null,
@@ -13694,8 +13694,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "gateway-node-ops",
-      "skillPath": "gateway-node-ops/SKILL.md",
+      "path": "skills/gateway-node-ops",
+      "skillPath": "skills/gateway-node-ops/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install gateway-node-ops",
         "installs": null,
@@ -13777,8 +13777,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "helius-skills/helius",
-      "skillPath": "helius-skills/helius/SKILL.md",
+      "path": "skills/helius-skills/helius",
+      "skillPath": "skills/helius-skills/helius/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install helius-skills/helius",
         "installs": null,
@@ -14292,8 +14292,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "helius-skills/helius-dflow",
-      "skillPath": "helius-skills/helius-dflow/SKILL.md",
+      "path": "skills/helius-skills/helius-dflow",
+      "skillPath": "skills/helius-skills/helius-dflow/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install helius-skills/helius-dflow",
         "installs": null,
@@ -14951,8 +14951,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "helius-skills/helius-jupiter",
-      "skillPath": "helius-skills/helius-jupiter/SKILL.md",
+      "path": "skills/helius-skills/helius-jupiter",
+      "skillPath": "skills/helius-skills/helius-jupiter/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install helius-skills/helius-jupiter",
         "installs": null,
@@ -16033,8 +16033,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "helius-skills/helius-okx",
-      "skillPath": "helius-skills/helius-okx/SKILL.md",
+      "path": "skills/helius-skills/helius-okx",
+      "skillPath": "skills/helius-skills/helius-okx/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install helius-skills/helius-okx",
         "installs": null,
@@ -16197,8 +16197,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "helius-skills/helius-phantom",
-      "skillPath": "helius-skills/helius-phantom/SKILL.md",
+      "path": "skills/helius-skills/helius-phantom",
+      "skillPath": "skills/helius-skills/helius-phantom/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install helius-skills/helius-phantom",
         "installs": null,
@@ -17306,8 +17306,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "helius-skills/svm",
-      "skillPath": "helius-skills/svm/SKILL.md",
+      "path": "skills/helius-skills/svm",
+      "skillPath": "skills/helius-skills/svm/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install helius-skills/svm",
         "installs": null,
@@ -17407,8 +17407,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial",
-      "skillPath": "imperial/SKILL.md",
+      "path": "skills/imperial",
+      "skillPath": "skills/imperial/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial",
         "installs": null,
@@ -17480,8 +17480,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-execution-modes",
-      "skillPath": "imperial-execution-modes/SKILL.md",
+      "path": "skills/imperial-execution-modes",
+      "skillPath": "skills/imperial-execution-modes/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-execution-modes",
         "installs": null,
@@ -17553,8 +17553,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-grid-trading",
-      "skillPath": "imperial-grid-trading/SKILL.md",
+      "path": "skills/imperial-grid-trading",
+      "skillPath": "skills/imperial-grid-trading/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-grid-trading",
         "installs": null,
@@ -17626,8 +17626,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-margin-operations",
-      "skillPath": "imperial-margin-operations/SKILL.md",
+      "path": "skills/imperial-margin-operations",
+      "skillPath": "skills/imperial-margin-operations/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-margin-operations",
         "installs": null,
@@ -17699,8 +17699,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-market-intel",
-      "skillPath": "imperial-market-intel/SKILL.md",
+      "path": "skills/imperial-market-intel",
+      "skillPath": "skills/imperial-market-intel/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-market-intel",
         "installs": null,
@@ -17772,8 +17772,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-portfolio-intel",
-      "skillPath": "imperial-portfolio-intel/SKILL.md",
+      "path": "skills/imperial-portfolio-intel",
+      "skillPath": "skills/imperial-portfolio-intel/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-portfolio-intel",
         "installs": null,
@@ -17845,8 +17845,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-position-management",
-      "skillPath": "imperial-position-management/SKILL.md",
+      "path": "skills/imperial-position-management",
+      "skillPath": "skills/imperial-position-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-position-management",
         "installs": null,
@@ -17918,8 +17918,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-risk-management",
-      "skillPath": "imperial-risk-management/SKILL.md",
+      "path": "skills/imperial-risk-management",
+      "skillPath": "skills/imperial-risk-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-risk-management",
         "installs": null,
@@ -17991,8 +17991,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-skills-index",
-      "skillPath": "imperial-skills-index/SKILL.md",
+      "path": "skills/imperial-skills-index",
+      "skillPath": "skills/imperial-skills-index/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-skills-index",
         "installs": null,
@@ -18064,8 +18064,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-tpsl-management",
-      "skillPath": "imperial-tpsl-management/SKILL.md",
+      "path": "skills/imperial-tpsl-management",
+      "skillPath": "skills/imperial-tpsl-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-tpsl-management",
         "installs": null,
@@ -18137,8 +18137,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-trade-execution",
-      "skillPath": "imperial-trade-execution/SKILL.md",
+      "path": "skills/imperial-trade-execution",
+      "skillPath": "skills/imperial-trade-execution/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-trade-execution",
         "installs": null,
@@ -18210,8 +18210,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "imperial-twap-execution",
-      "skillPath": "imperial-twap-execution/SKILL.md",
+      "path": "skills/imperial-twap-execution",
+      "skillPath": "skills/imperial-twap-execution/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install imperial-twap-execution",
         "installs": null,
@@ -18283,8 +18283,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "magicblock",
-      "skillPath": "magicblock/SKILL.md",
+      "path": "skills/magicblock",
+      "skillPath": "skills/magicblock/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install magicblock",
         "installs": null,
@@ -18627,8 +18627,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "model-usage",
-      "skillPath": "model-usage/SKILL.md",
+      "path": "skills/model-usage",
+      "skillPath": "skills/model-usage/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install model-usage",
         "installs": null,
@@ -18710,8 +18710,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "openai-image-gen",
-      "skillPath": "openai-image-gen/SKILL.md",
+      "path": "skills/openai-image-gen",
+      "skillPath": "skills/openai-image-gen/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openai-image-gen",
         "installs": null,
@@ -18793,8 +18793,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "phantom-wallet-mcp",
-      "skillPath": "phantom-wallet-mcp/SKILL.md",
+      "path": "skills/phantom-wallet-mcp",
+      "skillPath": "skills/phantom-wallet-mcp/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install phantom-wallet-mcp",
         "installs": null,
@@ -18939,8 +18939,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-admin-ops",
-      "skillPath": "pump-admin-ops/SKILL.md",
+      "path": "skills/pump-admin-ops",
+      "skillPath": "skills/pump-admin-ops/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-admin-ops",
         "installs": null,
@@ -19012,8 +19012,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-ai-agents",
-      "skillPath": "pump-ai-agents/SKILL.md",
+      "path": "skills/pump-ai-agents",
+      "skillPath": "skills/pump-ai-agents/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-ai-agents",
         "installs": null,
@@ -19085,8 +19085,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-bonding-curve",
-      "skillPath": "pump-bonding-curve/SKILL.md",
+      "path": "skills/pump-bonding-curve",
+      "skillPath": "skills/pump-bonding-curve/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-bonding-curve",
         "installs": null,
@@ -19168,8 +19168,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-build-release",
-      "skillPath": "pump-build-release/SKILL.md",
+      "path": "skills/pump-build-release",
+      "skillPath": "skills/pump-build-release/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-build-release",
         "installs": null,
@@ -19241,8 +19241,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-claims-readonly",
-      "skillPath": "pump-claims-readonly/SKILL.md",
+      "path": "skills/pump-claims-readonly",
+      "skillPath": "skills/pump-claims-readonly/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-claims-readonly",
         "installs": null,
@@ -19314,8 +19314,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-fee-sharing",
-      "skillPath": "pump-fee-sharing/SKILL.md",
+      "path": "skills/pump-fee-sharing",
+      "skillPath": "skills/pump-fee-sharing/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-fee-sharing",
         "installs": null,
@@ -19387,8 +19387,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-fee-system",
-      "skillPath": "pump-fee-system/SKILL.md",
+      "path": "skills/pump-fee-system",
+      "skillPath": "skills/pump-fee-system/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-fee-system",
         "installs": null,
@@ -19470,8 +19470,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-mcp-server",
-      "skillPath": "pump-mcp-server/SKILL.md",
+      "path": "skills/pump-mcp-server",
+      "skillPath": "skills/pump-mcp-server/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-mcp-server",
         "installs": null,
@@ -19543,8 +19543,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-rust-vanity",
-      "skillPath": "pump-rust-vanity/SKILL.md",
+      "path": "skills/pump-rust-vanity",
+      "skillPath": "skills/pump-rust-vanity/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-rust-vanity",
         "installs": null,
@@ -19616,8 +19616,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-sdk-core",
-      "skillPath": "pump-sdk-core/SKILL.md",
+      "path": "skills/pump-sdk-core",
+      "skillPath": "skills/pump-sdk-core/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-sdk-core",
         "installs": null,
@@ -19689,8 +19689,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-security",
-      "skillPath": "pump-security/SKILL.md",
+      "path": "skills/pump-security",
+      "skillPath": "skills/pump-security/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-security",
         "installs": null,
@@ -19762,8 +19762,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-shell-scripts",
-      "skillPath": "pump-shell-scripts/SKILL.md",
+      "path": "skills/pump-shell-scripts",
+      "skillPath": "skills/pump-shell-scripts/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-shell-scripts",
         "installs": null,
@@ -19835,8 +19835,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-solana-architecture",
-      "skillPath": "pump-solana-architecture/SKILL.md",
+      "path": "skills/pump-solana-architecture",
+      "skillPath": "skills/pump-solana-architecture/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-solana-architecture",
         "installs": null,
@@ -19908,8 +19908,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-solana-dev",
-      "skillPath": "pump-solana-dev/SKILL.md",
+      "path": "skills/pump-solana-dev",
+      "skillPath": "skills/pump-solana-dev/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-solana-dev",
         "installs": null,
@@ -20000,8 +20000,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-solana-wallet",
-      "skillPath": "pump-solana-wallet/SKILL.md",
+      "path": "skills/pump-solana-wallet",
+      "skillPath": "skills/pump-solana-wallet/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-solana-wallet",
         "installs": null,
@@ -20073,8 +20073,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-testing",
-      "skillPath": "pump-testing/SKILL.md",
+      "path": "skills/pump-testing",
+      "skillPath": "skills/pump-testing/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-testing",
         "installs": null,
@@ -20156,8 +20156,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-token-incentives",
-      "skillPath": "pump-token-incentives/SKILL.md",
+      "path": "skills/pump-token-incentives",
+      "skillPath": "skills/pump-token-incentives/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-token-incentives",
         "installs": null,
@@ -20229,8 +20229,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-token-lifecycle",
-      "skillPath": "pump-token-lifecycle/SKILL.md",
+      "path": "skills/pump-token-lifecycle",
+      "skillPath": "skills/pump-token-lifecycle/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-token-lifecycle",
         "installs": null,
@@ -20302,8 +20302,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pump-ts-vanity",
-      "skillPath": "pump-ts-vanity/SKILL.md",
+      "path": "skills/pump-ts-vanity",
+      "skillPath": "skills/pump-ts-vanity/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pump-ts-vanity",
         "installs": null,
@@ -20375,8 +20375,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pumpfun",
-      "skillPath": "pumpfun/SKILL.md",
+      "path": "skills/pumpfun",
+      "skillPath": "skills/pumpfun/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pumpfun",
         "installs": null,
@@ -20448,8 +20448,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pumpfun-analytics",
-      "skillPath": "pumpfun-analytics/SKILL.md",
+      "path": "skills/pumpfun-analytics",
+      "skillPath": "skills/pumpfun-analytics/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pumpfun-analytics",
         "installs": null,
@@ -20521,8 +20521,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pumpfun-fees",
-      "skillPath": "pumpfun-fees/SKILL.md",
+      "path": "skills/pumpfun-fees",
+      "skillPath": "skills/pumpfun-fees/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pumpfun-fees",
         "installs": null,
@@ -20594,8 +20594,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pumpfun-launcher",
-      "skillPath": "pumpfun-launcher/SKILL.md",
+      "path": "skills/pumpfun-launcher",
+      "skillPath": "skills/pumpfun-launcher/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pumpfun-launcher",
         "installs": null,
@@ -20677,8 +20677,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "pumpfun-trading",
-      "skillPath": "pumpfun-trading/SKILL.md",
+      "path": "skills/pumpfun-trading",
+      "skillPath": "skills/pumpfun-trading/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install pumpfun-trading",
         "installs": null,
@@ -20750,8 +20750,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "solana-clawd",
-      "skillPath": "solana-clawd/SKILL.md",
+      "path": "skills/solana-clawd",
+      "skillPath": "skills/solana-clawd/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install solana-clawd",
         "installs": null,
@@ -20851,8 +20851,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "solana-clawd-agentic-commerce",
-      "skillPath": "solana-clawd-agentic-commerce/SKILL.md",
+      "path": "skills/solana-clawd-agentic-commerce",
+      "skillPath": "skills/solana-clawd-agentic-commerce/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install solana-clawd-agentic-commerce",
         "installs": null,
@@ -20952,8 +20952,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "solana-clawd-agents",
-      "skillPath": "solana-clawd-agents/SKILL.md",
+      "path": "skills/solana-clawd-agents",
+      "skillPath": "skills/solana-clawd-agents/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install solana-clawd-agents",
         "installs": null,
@@ -20974,12 +20974,12 @@
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-ebbaa6c66e8485a5f5aef6d0e48bfa510e41afb3a686a1fe8f5c7e4c7538f938",
-        "localBundleHash": "sha256-ebbaa6c66e8485a5f5aef6d0e48bfa510e41afb3a686a1fe8f5c7e4c7538f938",
-        "merkleLeaf": "sha256-dd08d6aa31333fe78cf3e0669e2a5e8bfd4d02dcce0d9c0569b63050414d61ce",
-        "localMerkleLeaf": "sha256-dd08d6aa31333fe78cf3e0669e2a5e8bfd4d02dcce0d9c0569b63050414d61ce",
-        "fileCount": 1248,
-        "localFileCount": 1248,
+        "bundleHash": "sha256-b6dec8b225e1963fcc1fe14e7b6f40a7304ecbba0d46295471d6d29ad2ffc436",
+        "localBundleHash": "sha256-b6dec8b225e1963fcc1fe14e7b6f40a7304ecbba0d46295471d6d29ad2ffc436",
+        "merkleLeaf": "sha256-a923b27512d9353209bf042e985c8276cdb39d20b6ab917c9dc0b0ea4321b27e",
+        "localMerkleLeaf": "sha256-a923b27512d9353209bf042e985c8276cdb39d20b6ab917c9dc0b0ea4321b27e",
+        "fileCount": 1250,
+        "localFileCount": 1250,
         "changedFiles": 0,
         "changedFileSamples": [],
         "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
@@ -21005,13 +21005,13 @@
         }
       },
       "stats": {
-        "filesScanned": 1248,
+        "filesScanned": 1250,
         "textFiles": 1247,
         "scriptFiles": 0,
         "referenceFiles": 0,
         "assetFiles": 0,
-        "bytesScanned": 6882180,
-        "lineCount": 136103
+        "bytesScanned": 21882319,
+        "lineCount": 136106
       },
       "findings": [
         {
@@ -21533,7 +21533,7 @@
           "category": "onchain_surface",
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "agents/build-catalog.cjs",
-          "line": 450,
+          "line": 452,
           "excerpt": "agentRegistry: 'solana:mainnet:metaplex-agent-registry',"
         },
         {
@@ -21542,7 +21542,7 @@
           "category": "onchain_surface",
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "agents/build-catalog.cjs",
-          "line": 496,
+          "line": 498,
           "excerpt": "cluster: 'mainnet-beta',"
         },
         {
@@ -27254,8 +27254,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "solana-dev",
-      "skillPath": "solana-dev/SKILL.md",
+      "path": "skills/solana-dev",
+      "skillPath": "skills/solana-dev/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install solana-dev",
         "installs": null,
@@ -28948,8 +28948,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "solana-formal-verification",
-      "skillPath": "solana-formal-verification/SKILL.md",
+      "path": "skills/solana-formal-verification",
+      "skillPath": "skills/solana-formal-verification/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install solana-formal-verification",
         "installs": null,
@@ -29021,8 +29021,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "solana-ralphy-skill",
-      "skillPath": "solana-ralphy-skill/SKILL.md",
+      "path": "skills/solana-ralphy-skill",
+      "skillPath": "skills/solana-ralphy-skill/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install solana-ralphy-skill",
         "installs": null,
@@ -29482,8 +29482,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "solana-redpill-verifier",
-      "skillPath": "solana-redpill-verifier/SKILL.md",
+      "path": "skills/solana-redpill-verifier",
+      "skillPath": "skills/solana-redpill-verifier/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install solana-redpill-verifier",
         "installs": null,
@@ -29700,8 +29700,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "solana-rent-free-dev",
-      "skillPath": "solana-rent-free-dev/SKILL.md",
+      "path": "skills/solana-rent-free-dev",
+      "skillPath": "skills/solana-rent-free-dev/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install solana-rent-free-dev",
         "installs": null,
@@ -29783,8 +29783,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "sponge-wallet",
-      "skillPath": "sponge-wallet/SKILL.md",
+      "path": "skills/sponge-wallet",
+      "skillPath": "skills/sponge-wallet/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install sponge-wallet",
         "installs": null,
@@ -29965,8 +29965,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "swarm-orchestrator",
-      "skillPath": "swarm-orchestrator/SKILL.md",
+      "path": "skills/swarm-orchestrator",
+      "skillPath": "skills/swarm-orchestrator/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install swarm-orchestrator",
         "installs": null,
@@ -30038,8 +30038,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "testing",
-      "skillPath": "testing/SKILL.md",
+      "path": "skills/testing",
+      "skillPath": "skills/testing/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install testing",
         "installs": null,
@@ -30346,8 +30346,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan",
-      "skillPath": "vulcan/SKILL.md",
+      "path": "skills/vulcan",
+      "skillPath": "skills/vulcan/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan",
         "installs": null,
@@ -30419,8 +30419,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-error-recovery",
-      "skillPath": "vulcan-error-recovery/SKILL.md",
+      "path": "skills/vulcan-error-recovery",
+      "skillPath": "skills/vulcan-error-recovery/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-error-recovery",
         "installs": null,
@@ -30492,8 +30492,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-execution-modes",
-      "skillPath": "vulcan-execution-modes/SKILL.md",
+      "path": "skills/vulcan-execution-modes",
+      "skillPath": "skills/vulcan-execution-modes/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-execution-modes",
         "installs": null,
@@ -30565,8 +30565,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-grid-trading",
-      "skillPath": "vulcan-grid-trading/SKILL.md",
+      "path": "skills/vulcan-grid-trading",
+      "skillPath": "skills/vulcan-grid-trading/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-grid-trading",
         "installs": null,
@@ -30638,8 +30638,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-lot-size-calculator",
-      "skillPath": "vulcan-lot-size-calculator/SKILL.md",
+      "path": "skills/vulcan-lot-size-calculator",
+      "skillPath": "skills/vulcan-lot-size-calculator/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-lot-size-calculator",
         "installs": null,
@@ -30711,8 +30711,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-margin-operations",
-      "skillPath": "vulcan-margin-operations/SKILL.md",
+      "path": "skills/vulcan-margin-operations",
+      "skillPath": "skills/vulcan-margin-operations/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-margin-operations",
         "installs": null,
@@ -30784,8 +30784,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-market-intel",
-      "skillPath": "vulcan-market-intel/SKILL.md",
+      "path": "skills/vulcan-market-intel",
+      "skillPath": "skills/vulcan-market-intel/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-market-intel",
         "installs": null,
@@ -30857,8 +30857,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-onboarding",
-      "skillPath": "vulcan-onboarding/SKILL.md",
+      "path": "skills/vulcan-onboarding",
+      "skillPath": "skills/vulcan-onboarding/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-onboarding",
         "installs": null,
@@ -30930,8 +30930,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-portfolio-intel",
-      "skillPath": "vulcan-portfolio-intel/SKILL.md",
+      "path": "skills/vulcan-portfolio-intel",
+      "skillPath": "skills/vulcan-portfolio-intel/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-portfolio-intel",
         "installs": null,
@@ -31003,8 +31003,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-position-management",
-      "skillPath": "vulcan-position-management/SKILL.md",
+      "path": "skills/vulcan-position-management",
+      "skillPath": "skills/vulcan-position-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-position-management",
         "installs": null,
@@ -31076,8 +31076,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-quickstart",
-      "skillPath": "vulcan-quickstart/SKILL.md",
+      "path": "skills/vulcan-quickstart",
+      "skillPath": "skills/vulcan-quickstart/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-quickstart",
         "installs": null,
@@ -31149,8 +31149,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-risk-management",
-      "skillPath": "vulcan-risk-management/SKILL.md",
+      "path": "skills/vulcan-risk-management",
+      "skillPath": "skills/vulcan-risk-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-risk-management",
         "installs": null,
@@ -31222,8 +31222,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-skills-index",
-      "skillPath": "vulcan-skills-index/SKILL.md",
+      "path": "skills/vulcan-skills-index",
+      "skillPath": "skills/vulcan-skills-index/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-skills-index",
         "installs": null,
@@ -31295,8 +31295,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-ta-strategy",
-      "skillPath": "vulcan-ta-strategy/SKILL.md",
+      "path": "skills/vulcan-ta-strategy",
+      "skillPath": "skills/vulcan-ta-strategy/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-ta-strategy",
         "installs": null,
@@ -31368,8 +31368,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-technical-analysis",
-      "skillPath": "vulcan-technical-analysis/SKILL.md",
+      "path": "skills/vulcan-technical-analysis",
+      "skillPath": "skills/vulcan-technical-analysis/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-technical-analysis",
         "installs": null,
@@ -31441,8 +31441,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-tpsl-management",
-      "skillPath": "vulcan-tpsl-management/SKILL.md",
+      "path": "skills/vulcan-tpsl-management",
+      "skillPath": "skills/vulcan-tpsl-management/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-tpsl-management",
         "installs": null,
@@ -31514,8 +31514,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-trade-execution",
-      "skillPath": "vulcan-trade-execution/SKILL.md",
+      "path": "skills/vulcan-trade-execution",
+      "skillPath": "skills/vulcan-trade-execution/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-trade-execution",
         "installs": null,
@@ -31587,8 +31587,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "vulcan-twap-execution",
-      "skillPath": "vulcan-twap-execution/SKILL.md",
+      "path": "skills/vulcan-twap-execution",
+      "skillPath": "skills/vulcan-twap-execution/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install vulcan-twap-execution",
         "installs": null,
@@ -31660,8 +31660,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "zk",
-      "skillPath": "zk/SKILL.md",
+      "path": "skills/zk",
+      "skillPath": "skills/zk/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install zk",
         "installs": null,
@@ -31733,8 +31733,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "zkrouter",
-      "skillPath": "zkrouter/SKILL.md",
+      "path": "skills/zkrouter",
+      "skillPath": "skills/zkrouter/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install zkrouter",
         "installs": null,
@@ -31825,8 +31825,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "1password",
-      "skillPath": "1password/SKILL.md",
+      "path": "skills/1password",
+      "skillPath": "skills/1password/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install 1password",
         "installs": null,
@@ -31898,8 +31898,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/brand-guidelines",
-      "skillPath": "anthropic-skills/brand-guidelines/SKILL.md",
+      "path": "skills/anthropic-skills/brand-guidelines",
+      "skillPath": "skills/anthropic-skills/brand-guidelines/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/brand-guidelines",
         "installs": null,
@@ -31971,8 +31971,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/doc-coauthoring",
-      "skillPath": "anthropic-skills/doc-coauthoring/SKILL.md",
+      "path": "skills/anthropic-skills/doc-coauthoring",
+      "skillPath": "skills/anthropic-skills/doc-coauthoring/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/doc-coauthoring",
         "installs": null,
@@ -32044,8 +32044,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "anthropic-skills/frontend-design",
-      "skillPath": "anthropic-skills/frontend-design/SKILL.md",
+      "path": "skills/anthropic-skills/frontend-design",
+      "skillPath": "skills/anthropic-skills/frontend-design/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/frontend-design",
         "installs": null,
@@ -32117,8 +32117,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "anthropic-skills/theme-factory",
-      "skillPath": "anthropic-skills/theme-factory/SKILL.md",
+      "path": "skills/anthropic-skills/theme-factory",
+      "skillPath": "skills/anthropic-skills/theme-factory/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install anthropic-skills/theme-factory",
         "installs": null,
@@ -32190,8 +32190,8 @@
         "chain": "mixed",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "bird",
-      "skillPath": "bird/SKILL.md",
+      "path": "skills/bird",
+      "skillPath": "skills/bird/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install bird",
         "installs": null,
@@ -32282,8 +32282,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "blogwatcher",
-      "skillPath": "blogwatcher/SKILL.md",
+      "path": "skills/blogwatcher",
+      "skillPath": "skills/blogwatcher/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install blogwatcher",
         "installs": null,
@@ -32355,8 +32355,8 @@
         "chain": "solana",
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "eightctl",
-      "skillPath": "eightctl/SKILL.md",
+      "path": "skills/eightctl",
+      "skillPath": "skills/eightctl/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install eightctl",
         "installs": null,
@@ -32438,8 +32438,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "gemini",
-      "skillPath": "gemini/SKILL.md",
+      "path": "skills/gemini",
+      "skillPath": "skills/gemini/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install gemini",
         "installs": null,
@@ -32511,8 +32511,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "openrouter-models",
-      "skillPath": "openrouter-models/SKILL.md",
+      "path": "skills/openrouter-models",
+      "skillPath": "skills/openrouter-models/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openrouter-models",
         "installs": null,
@@ -32612,8 +32612,8 @@
         "chain": "solana",
         "reason": "Matched blockchain, wallet, transaction, or registry language."
       },
-      "path": "openrouter-oauth",
-      "skillPath": "openrouter-oauth/SKILL.md",
+      "path": "skills/openrouter-oauth",
+      "skillPath": "skills/openrouter-oauth/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install openrouter-oauth",
         "installs": null,
@@ -32685,8 +32685,8 @@
         "chain": null,
         "reason": "No blockchain execution or registry surface detected."
       },
-      "path": "peekaboo",
-      "skillPath": "peekaboo/SKILL.md",
+      "path": "skills/peekaboo",
+      "skillPath": "skills/peekaboo/SKILL.md",
       "install": {
         "command": "npx github:Solizardking/skills install peekaboo",
         "installs": null,

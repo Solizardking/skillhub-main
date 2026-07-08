@@ -178,7 +178,7 @@ def main():
         name = entry["name"]
         desc = entry["description"]
         skill_id = derive_skill_id(slug)
-        src_dir = os.path.join(repo_root, slug)
+        src_dir = os.path.join(repo_root, "skills", slug)
 
         print(f"[{idx}/{total}] {slug}")
 

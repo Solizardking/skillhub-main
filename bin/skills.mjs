@@ -89,7 +89,7 @@ async function install(args, defaults = {}) {
   let skipped = 0;
 
   for (const slug of requested) {
-    const source = path.join(ROOT, slug);
+    const source = path.join(ROOT, "skills", slug);
     const destination = path.join(target, slug);
 
     if (!existsSync(source)) {

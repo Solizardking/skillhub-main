@@ -9,6 +9,7 @@ import { fileURLToPath } from "node:url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
+const SKILLS_ROOT = path.join(ROOT, "skills");
 const CHECK = process.argv.includes("--check");
 const SITE_URL = "https://skills.onchainai.fund";
 const DEFAULT_PAYMENT_NETWORK = process.env.SKILLHUB_PAYMENT_NETWORK || "mainnet";
@@ -91,7 +92,7 @@ async function readExistingCategories() {
 async function readSkills(existingCategories) {
   const skills = [];
 
-  await collectSkills(ROOT, [], existingCategories, skills);
+  await collectSkills(SKILLS_ROOT, [], existingCategories, skills);
 
   skills.sort((a, b) => {
     const categoryDiff = CATEGORY_ORDER.indexOf(a.category) - CATEGORY_ORDER.indexOf(b.category);
@@ -343,14 +344,14 @@ async function addPublicResources(files, skill) {
   await addPublicRootResources(files, skill);
 
   for (const resourceDir of PUBLIC_RESOURCE_DIRS) {
-    const absoluteDir = path.join(ROOT, skill.slug, resourceDir);
+    const absoluteDir = path.join(SKILLS_ROOT, skill.slug, resourceDir);
     if (!existsSync(absoluteDir)) continue;
     await addPublicResourceDir(files, absoluteDir, `api/skills/${skill.slug}/${resourceDir}`);
   }
 }
 
 async function addPublicRootResources(files, skill) {
-  const skillDir = path.join(ROOT, skill.slug);
+  const skillDir = path.join(SKILLS_ROOT, skill.slug);
   const entries = await readdir(skillDir, { withFileTypes: true });
   entries.sort((a, b) => a.name.localeCompare(b.name));
 
@@ -451,11 +452,11 @@ function renderReadme(catalog) {
     "",
     "## 🧭 Codebase Map",
     "",
-    "The hub is a source catalog plus generated distribution surfaces. Canonical skills are discovered from repo-local `SKILL.md` files; generated mirrors live under `public/` and rebuild from source.",
+    "The hub is a source catalog plus generated distribution surfaces. Canonical skills are discovered from repo-local `SKILL.md` files under `skills/`; generated mirrors live under `public/` and rebuild from source.",
     "",
     "| Layer | What it contains | Main paths |",
     "|---|---|---|",
-    `| Skill sources | ${catalog.length} canonical skills. Each slug is the directory path that owns a \`SKILL.md\`. | \`*/SKILL.md\`, \`google/**/SKILL.md\`, \`anthropic-skills/*/SKILL.md\`, plus optional \`references/\`, \`scripts/\`, \`assets/\`, and \`agents/\` folders |`,
+    `| Skill sources | ${catalog.length} canonical skills. Each slug is the directory path (relative to \`skills/\`) that owns a \`SKILL.md\`. | \`skills/*/SKILL.md\`, \`skills/google/**/SKILL.md\`, \`skills/anthropic-skills/*/SKILL.md\`, plus optional \`references/\`, \`scripts/\`, \`assets/\`, and \`agents/\` folders |`,
     "| Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |",
     "| Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |",
     "| Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |",
@@ -592,7 +593,7 @@ function renderReadme(catalog) {
     "- Everything you just read is **generated** by `npm run build:catalog` — README, banner SVGs, catalog JSON, the public site, and the Merkle registry all rebuild from the skills on disk.",
     "- Nested skills are discovered recursively (`google/ads`, `google/analytics`, `google/cloud` publish through the same pipeline).",
     `- The production mirror is ${SITE_URL} — same build output, served statically.`,
-    "- Add a skill folder with a `SKILL.md`, rebuild, and it appears everywhere: README, JSON API, site, and the next on-chain anchor.",
+    "- Add a skill folder with a `SKILL.md` under `skills/`, rebuild, and it appears everywhere: README, JSON API, site, and the next on-chain anchor.",
     "",
     '<div align="center">',
     "",
@@ -843,7 +844,7 @@ function groupByCategory(catalog) {
 }
 
 function markdownSkillLink(skill) {
-  return `[\`${skill.slug}\`](./${skill.slug}/SKILL.md)`;
+  return `[\`${skill.slug}\`](./skills/${skill.slug}/SKILL.md)`;
 }
 
 function escapeTable(value) {

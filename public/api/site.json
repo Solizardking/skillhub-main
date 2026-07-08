@@ -32,8 +32,8 @@
   "verification": {
     "chain": "solana",
     "status": "anchor-ready",
-    "merkleRoot": "sha256-0ebc6c73b0bc0b9dcddbb97259a62a3e90a80e4097ffb4ea517d72a3928f9d22",
-    "catalogHash": "sha256-9cd5990835ddfbe89bdb5d399f4c671311ac2339f99c9530286c1fef98c65eb7"
+    "merkleRoot": "sha256-13a394a2b13ed65db9d9169071e796fc3f263ab36c404f41a7a84703148626dd",
+    "catalogHash": "sha256-776b7b79e72e03120435c0821f888d08f9c5cf0c2fa407a8f3f0524e63999286"
   },
   "monetization": {
     "onchain": "Solana Pay tip URI per skill card",

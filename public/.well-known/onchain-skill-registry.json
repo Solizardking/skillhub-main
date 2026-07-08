@@ -8,8 +8,8 @@
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
   "totalSkills": 240,
-  "catalogHash": "sha256-9cd5990835ddfbe89bdb5d399f4c671311ac2339f99c9530286c1fef98c65eb7",
-  "merkleRoot": "sha256-0ebc6c73b0bc0b9dcddbb97259a62a3e90a80e4097ffb4ea517d72a3928f9d22",
+  "catalogHash": "sha256-776b7b79e72e03120435c0821f888d08f9c5cf0c2fa407a8f3f0524e63999286",
+  "merkleRoot": "sha256-13a394a2b13ed65db9d9169071e796fc3f263ab36c404f41a7a84703148626dd",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -458,10 +458,10 @@
     {
       "slug": "google/cloud/agent-platform-skill-registry",
       "name": "agent-platform-skill-registry",
-      "description": "Interact with the Gemini Enterprise Agent Platform Skill Registry to create and search for available skills. Use this skill to enable agents to register functionality or discover new capabilities.",
+      "description": "Interact with the Gemini Enterprise Agent Platform Skill Registry to create, update, manage, and search for skills. Use this skill to enable agents to register new functionality, discover existing capabilities, manage skill revisions, and monitor long-running operations.",
       "category": "Google / Cloud",
-      "bundleHash": "sha256-cd1f2b9ed4c3dad2a89e472a9bd17329959f54eef53eeadae0693473abf6f4da",
-      "merkleLeaf": "sha256-5cd7571c2a65347ab5372e28c67a02155712fb235d5d702ae574f34a3bbf6d38",
+      "bundleHash": "sha256-8a97d2eafaa9805e69ec99efdae6b48295f53380dc823d5e69afa5525717afb9",
+      "merkleLeaf": "sha256-bcd553069d5510b8d9180fdaa2957aefbe7f6bc300d3bfb2d84f8bd7423e2a59",
       "fileCount": 8,
       "metadata": "/api/skills/google/cloud/agent-platform-skill-registry/metadata.json",
       "verification": "/api/skills/google/cloud/agent-platform-skill-registry/verification.json"

@@ -328,7 +328,7 @@ async function collectLocalCatalog(root) {
     ? new Map((await loadCanonicalCatalog(root)).map((skill) => [skill.slug, skill]))
     : new Map();
   const skills = [];
-  await collectSkills(root, [], existing, skills);
+  await collectSkills(path.join(root, "skills"), [], existing, skills);
   skills.sort((a, b) => {
     const categoryDiff = categoryIndex(a.category) - categoryIndex(b.category);
     if (categoryDiff !== 0) return categoryDiff;
@@ -364,7 +364,7 @@ async function collectSkills(directory, segments, existing, skills) {
 
 async function countLocalSkills(root) {
   let count = 0;
-  await countSkills(root, []);
+  await countSkills(path.join(root, "skills"), []);
   return count;
 
   async function countSkills(directory, segments) {
@@ -393,7 +393,7 @@ function normalizeCatalogEntry(entry) {
 
 async function scanSkill(context) {
   const { root, skill, registryBySlug, registryRootValid } = context;
-  const skillDir = path.join(root, skill.slug);
+  const skillDir = path.join(root, "skills", skill.slug);
   const skillPath = path.join(skillDir, "SKILL.md");
   const verificationPath = path.join(root, "public", "api", "skills", ...skill.slug.split("/"), "verification.json");
   const verificationDoc = await readJsonIfExists(verificationPath);

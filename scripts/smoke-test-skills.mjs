@@ -31,7 +31,7 @@ const NAME_PATTERN = /^[a-z0-9][a-z0-9-]*$/;
 
 async function main() {
   const errors = [];
-  const skills = await collectSkills(ROOT, [], errors);
+  const skills = await collectSkills(path.join(ROOT, "skills"), [], errors);
   const catalog = await readJson(path.join(ROOT, "catalog.json"), errors, "catalog.json");
   const skillsSh = await readJson(path.join(ROOT, "skills.sh.json"), errors, "skills.sh.json");
   const publicCatalog = await readJson(path.join(ROOT, "public", "api", "skills.json"), errors, "public/api/skills.json");
