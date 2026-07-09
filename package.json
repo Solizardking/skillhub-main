@@ -25,5 +25,10 @@
   },
   "engines": {
     "node": ">=18"
+  },
+  "dependencies": {
+    "@irys/upload": "^0.0.15",
+    "@irys/upload-solana": "^0.1.8",
+    "@solana/web3.js": "^1.98.4"
   }
 }
