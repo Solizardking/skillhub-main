@@ -7,6 +7,9 @@
   <url><loc>https://skills.onchainai.fund/integrations/commerce-kit-payment-button.tsx</loc></url>
   <url><loc>https://skills.onchainai.fund/.well-known/skills-hub.json</loc></url>
   <url><loc>https://skills.onchainai.fund/.well-known/onchain-skill-registry.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/agent-desktop/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/agent-desktop/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/agent-desktop/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/agents-sdk/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/agents-sdk/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/agents-sdk/SKILL.md</loc></url>
@@ -40,6 +43,9 @@
   <url><loc>https://skills.onchainai.fund/api/skills/durable-objects/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/durable-objects/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/durable-objects/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/find-skills/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/find-skills/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/find-skills/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/forge/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/forge/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/forge/SKILL.md</loc></url>
@@ -289,6 +295,9 @@
   <url><loc>https://skills.onchainai.fund/api/skills/google/cloud/workload-manager-basics/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/google/cloud/workload-manager-basics/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/google/cloud/workload-manager-basics/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/agent-browser/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/agent-browser/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/agent-browser/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/anthropic-skills/webapp-testing/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/anthropic-skills/webapp-testing/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/anthropic-skills/webapp-testing/SKILL.md</loc></url>

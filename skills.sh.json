@@ -6,6 +6,7 @@
       "title": "Dev Tools / Agents",
       "description": "Coding-agent, MCP, GitHub, terminal, and skill-development workflows.",
       "skills": [
+        "agent-desktop",
         "agents-sdk",
         "anthropic-skills/algorithmic-art",
         "anthropic-skills/internal-comms",
@@ -17,6 +18,7 @@
         "cloudflare",
         "create-agent-tui",
         "durable-objects",
+        "find-skills",
         "forge",
         "github",
         "mcporter",
@@ -124,6 +126,7 @@
       "title": "Local / Web Services",
       "description": "Local services, places, orders, and weather workflows.",
       "skills": [
+        "agent-browser",
         "anthropic-skills/webapp-testing",
         "food-order",
         "goplaces",

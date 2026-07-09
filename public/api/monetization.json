@@ -21,6 +21,19 @@
   },
   "skills": [
     {
+      "slug": "agent-desktop",
+      "name": "agent-desktop",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "agents-sdk",
       "name": "agents-sdk",
       "category": "Dev Tools / Agents",
@@ -153,6 +166,19 @@
     {
       "slug": "durable-objects",
       "name": "durable-objects",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "find-skills",
+      "name": "find-skills",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -1233,6 +1259,19 @@
       "slug": "google/cloud/workload-manager-basics",
       "name": "workload-manager-basics",
       "category": "Google / Cloud",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "agent-browser",
+      "name": "agent-browser",
+      "category": "Local / Web Services",
       "mode": "tip",
       "merchant": {
         "name": "Skill Hub",
