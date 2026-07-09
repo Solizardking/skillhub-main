@@ -1,7 +1,0 @@
-{
-  "slug": "gemini",
-  "name": "gemini",
-  "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
-  "category": "Utilities",
-  "skill": "/api/skills/gemini/SKILL.md"
-}

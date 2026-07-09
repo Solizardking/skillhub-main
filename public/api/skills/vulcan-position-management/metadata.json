@@ -1,7 +1,0 @@
-{
-  "slug": "vulcan-position-management",
-  "name": "vulcan-position-management",
-  "description": "List, show, close, reduce Phoenix positions and attach/cancel TP/SL.",
-  "category": "Solana / Blockchain",
-  "skill": "/api/skills/vulcan-position-management/SKILL.md"
-}
