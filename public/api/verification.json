@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 240,
-  "catalogHash": "sha256-776b7b79e72e03120435c0821f888d08f9c5cf0c2fa407a8f3f0524e63999286",
-  "merkleRoot": "sha256-13a394a2b13ed65db9d9169071e796fc3f263ab36c404f41a7a84703148626dd",
+  "totalSkills": 241,
+  "catalogHash": "sha256-e5fc4bb4a853f6f53b06ede988f7db8d4c1af56ad15502fc2641aef9dbb5161b",
+  "merkleRoot": "sha256-1671b3f0f21ee4726dff9c31dbc7a17192062120665dda145799778dba08dcc4",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -113,6 +113,17 @@
       "fileCount": 11,
       "metadata": "/api/skills/create-agent-tui/metadata.json",
       "verification": "/api/skills/create-agent-tui/verification.json"
+    },
+    {
+      "slug": "forge",
+      "name": "agent-skill-creator",
+      "description": "Create cross-platform agent skills from workflow descriptions. Activates when users ask to create an agent, automate a repetitive workflow, create a custom skill, or need advanced agent creation. Triggers on phrases like create agent for, automate workflow, create skill for, every day I have to, daily I need to, turn process into agent, need to automate, create a cross-platform skill, validate this skill, export this skill, migrate this skill. Supports single skills, multi-agent suites, transcript processing, template-based creation, interactive configuration, cross-platform export, and spec validation.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-de56c1616c4fc57815f964879d9633fc3d3688be21e86aa9f448e6bb4864bdeb",
+      "merkleLeaf": "sha256-57ad0306389441840888365944ba02a6b401865a4076d94e70eb67c6ead518b0",
+      "fileCount": 95,
+      "metadata": "/api/skills/forge/metadata.json",
+      "verification": "/api/skills/forge/verification.json"
     },
     {
       "slug": "github",

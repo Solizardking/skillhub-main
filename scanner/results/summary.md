@@ -1,16 +1,16 @@
 # Skill Scanner Results
 
-Scanned at: 2026-07-08T11:48:30.842Z
+Scanned at: 2026-07-09T17:54:40.957Z
 
-- Skills scanned: 240
-- Local skills available: 240
-- On-chain skills: 145
+- Skills scanned: 241
+- Local skills available: 241
+- On-chain skills: 146
 - Off-chain skills: 95
-- Verified skills: 240
+- Verified skills: 241
 - Changed skills: 0
 - Missing verification: 0
 - Critical findings: 0
-- High findings: 279
+- High findings: 288
 - Install telemetry source: not tracked locally
 
 ## On-Chain Registry
@@ -18,12 +18,13 @@ Scanned at: 2026-07-08T11:48:30.842Z
 - Status: anchor-ready
 - Anchor state: planned
 - Registry root valid: yes
-- Merkle root: sha256-13a394a2b13ed65db9d9169071e796fc3f263ab36c404f41a7a84703148626dd
-- Catalog hash: sha256-776b7b79e72e03120435c0821f888d08f9c5cf0c2fa407a8f3f0524e63999286
+- Merkle root: sha256-1671b3f0f21ee4726dff9c31dbc7a17192062120665dda145799778dba08dcc4
+- Catalog hash: sha256-e5fc4bb4a853f6f53b06ede988f7db8d4c1af56ad15502fc2641aef9dbb5161b
 
 ## Skills Requiring Review
 
 - anthropic-skills/web-artifacts-builder: high risk, 8 findings, verification verified
+- forge: high risk, 33 findings, verification verified
 - notion: high risk, 12 findings, verification verified
 - trello: high risk, 10 findings, verification verified
 - dflow-phantom-connect: high risk, 55 findings, verification verified
@@ -62,4 +63,3 @@ Scanned at: 2026-07-08T11:48:30.842Z
 - google/cloud/cloud-sql-basics: high risk, 2 findings, verification verified
 - google/cloud/gemini-api: high risk, 2 findings, verification verified
 - google/cloud/gke-basics: high risk, 2 findings, verification verified
-- google/cloud/workload-manager-basics: high risk, 2 findings, verification verified

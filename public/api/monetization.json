@@ -125,6 +125,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "forge",
+      "name": "agent-skill-creator",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "github",
       "name": "github",
       "category": "Dev Tools / Agents",

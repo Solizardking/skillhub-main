@@ -63,8 +63,9 @@ async function main() {
 async function collectSkills(directory, segments, errors) {
   const skills = [];
   const skillPath = path.join(directory, "SKILL.md");
+  const ownsSkill = segments.length > 0 && existsSync(skillPath);
 
-  if (segments.length > 0 && existsSync(skillPath)) {
+  if (ownsSkill) {
     const content = await readFile(skillPath, "utf8");
     const frontmatter = parseFrontmatter(content);
     const slug = segments.join("/");
@@ -75,6 +76,10 @@ async function collectSkills(directory, segments, errors) {
       skillPath,
       content,
     });
+
+    // A skill directory is a leaf: don't descend into its own bundled
+    // references/scripts/examples looking for further catalog entries.
+    return skills;
   }
 
   let entries;

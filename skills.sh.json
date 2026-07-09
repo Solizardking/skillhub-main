@@ -14,6 +14,7 @@
         "anthropic-skills/xlsx",
         "clawdhub",
         "create-agent-tui",
+        "forge",
         "github",
         "mcporter",
         "openclawd-clawd-code-skill-main",

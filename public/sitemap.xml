@@ -31,6 +31,9 @@
   <url><loc>https://skills.onchainai.fund/api/skills/create-agent-tui/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/create-agent-tui/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/create-agent-tui/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/forge/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/forge/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/forge/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/github/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/github/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/github/SKILL.md</loc></url>

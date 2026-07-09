@@ -105,7 +105,9 @@ async function readSkills(existingCategories) {
 
 async function collectSkills(directory, segments, existingCategories, skills) {
   const skillPath = path.join(directory, "SKILL.md");
-  if (segments.length > 0 && existsSync(skillPath)) {
+  const ownsSkill = segments.length > 0 && existsSync(skillPath);
+
+  if (ownsSkill) {
     const content = await readFile(skillPath, "utf8");
     const frontmatter = parseFrontmatter(content);
     const slug = segments.join("/");
@@ -121,6 +123,11 @@ async function collectSkills(directory, segments, existingCategories, skills) {
       skillPath,
       content,
     });
+
+    // A skill directory is a leaf for catalog purposes: anything nested beneath it
+    // (references/, scripts/, assets/, bundled examples, etc.) belongs to this skill's
+    // own bundle, not to further independent catalog entries.
+    return;
   }
 
   const entries = await readdir(directory, { withFileTypes: true });

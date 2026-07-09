@@ -91,11 +91,11 @@
       }
     ]
   },
-  "scannedAt": "2026-07-08T11:48:30.842Z",
+  "scannedAt": "2026-07-09T17:54:40.957Z",
   "source": {
     "catalog": "catalog.json",
-    "canonicalSkills": 240,
-    "localSkills": 240,
+    "canonicalSkills": 241,
+    "localSkills": 241,
     "duplicatePublicSkillsExcluded": true
   },
   "onchain": {
@@ -104,9 +104,9 @@
     "cluster": "mainnet-beta",
     "status": "anchor-ready",
     "anchorState": "planned",
-    "totalSkills": 240,
-    "catalogHash": "sha256-776b7b79e72e03120435c0821f888d08f9c5cf0c2fa407a8f3f0524e63999286",
-    "merkleRoot": "sha256-13a394a2b13ed65db9d9169071e796fc3f263ab36c404f41a7a84703148626dd",
+    "totalSkills": 241,
+    "catalogHash": "sha256-e5fc4bb4a853f6f53b06ede988f7db8d4c1af56ad15502fc2641aef9dbb5161b",
+    "merkleRoot": "sha256-1671b3f0f21ee4726dff9c31dbc7a17192062120665dda145799778dba08dcc4",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -116,12 +116,12 @@
     "solanaSignature": null
   },
   "summary": {
-    "totalSkills": 240,
-    "localSkills": 240,
-    "onChainSkills": 145,
+    "totalSkills": 241,
+    "localSkills": 241,
+    "onChainSkills": 146,
     "offChainSkills": 95,
     "categories": {
-      "Dev Tools / Agents": 17,
+      "Dev Tools / Agents": 18,
       "Google / Ads": 11,
       "Google / Analytics": 2,
       "Google / Cloud": 56,
@@ -132,29 +132,29 @@
       "Utilities": 12
     },
     "verification": {
-      "verified": 240,
+      "verified": 241,
       "changed": 0,
       "missing": 0,
       "error": 0
     },
     "risk": {
       "pass": 168,
-      "review": 72,
+      "review": 73,
       "required": 0
     },
     "findings": {
-      "total": 1664,
+      "total": 1697,
       "bySeverity": {
         "INFO": 1234,
-        "LOW": 89,
-        "MEDIUM": 62,
-        "HIGH": 279,
+        "LOW": 92,
+        "MEDIUM": 83,
+        "HIGH": 288,
         "CRITICAL": 0
       }
     },
     "installs": {
       "knownSkillCount": 0,
-      "unknownSkillCount": 240,
+      "unknownSkillCount": 241,
       "totalKnownInstalls": 0,
       "source": "not tracked locally"
     }
@@ -897,6 +897,377 @@
           "file": "SKILL.md",
           "line": 291,
           "excerpt": "if (process.env.OPENROUTER_API_KEY) config.apiKey = process.env.OPENROUTER_API_KEY;"
+        }
+      ]
+    },
+    {
+      "slug": "forge",
+      "name": "agent-skill-creator",
+      "description": "Create cross-platform agent skills from workflow descriptions. Activates when users ask to create an agent, automate a repetitive workflow, create a custom skill, or need advanced agent creation. Triggers on phrases like create agent for, automate workflow, create skill for, every day I have to, daily I need to, turn process into agent, need to automate, create a cross-platform skill, validate this skill, export this skill, migrate this skill. Supports single skills, multi-agent suites, transcript processing, template-based creation, interactive configuration, cross-platform export, and spec validation.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/forge",
+      "skillPath": "skills/forge/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install forge",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-de56c1616c4fc57815f964879d9633fc3d3688be21e86aa9f448e6bb4864bdeb",
+        "localBundleHash": "sha256-de56c1616c4fc57815f964879d9633fc3d3688be21e86aa9f448e6bb4864bdeb",
+        "merkleLeaf": "sha256-57ad0306389441840888365944ba02a6b401865a4076d94e70eb67c6ead518b0",
+        "localMerkleLeaf": "sha256-57ad0306389441840888365944ba02a6b401865a4076d94e70eb67c6ead518b0",
+        "fileCount": 95,
+        "localFileCount": 95,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 100,
+        "maxSeverity": "HIGH",
+        "findingsCount": 33,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 3,
+          "MEDIUM": 21,
+          "HIGH": 9,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 95,
+        "textFiles": 94,
+        "scriptFiles": 38,
+        "referenceFiles": 45,
+        "assetFiles": 5,
+        "bytesScanned": 917426,
+        "lineCount": 22736
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "assets/DEMO.md",
+          "line": 28,
+          "excerpt": "cargo install --git https://github.com/asciinema/agg"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "README.md",
+          "line": 354,
+          "excerpt": "git clone https://github.com/FrancyJGLisboa/agent-skill-creator.git ~/.config/goose/skills/agent-skill-creator"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "README.md",
+          "line": 357,
+          "excerpt": "git clone https://github.com/FrancyJGLisboa/agent-skill-creator.git ~/.config/opencode/skills/agent-skill-creator"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "references/cross-platform-guide.md",
+          "line": 30,
+          "excerpt": "| **Goose** | CLI | `~/.config/goose/skills/` | `.goose/skills/`, `.agents/skills/`, `.claude/skills/` | Multiple tiers |"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "references/cross-platform-guide.md",
+          "line": 31,
+          "excerpt": "| **OpenCode** | CLI | `~/.config/opencode/skills/` | `.opencode/skills/`, `.claude/skills/`, `.agents/skills/` | Walks git root |"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "references/cross-platform-guide.md",
+          "line": 266,
+          "excerpt": "cp -r skill-name/ ~/.config/goose/skills/skill-name/"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "references/cross-platform-guide.md",
+          "line": 272,
+          "excerpt": "cp -r skill-name/ ~/.config/opencode/skills/skill-name/"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "references/cross-platform-guide.md",
+          "line": 344,
+          "excerpt": "\\* API: No network access, no pip install at runtime"
+        },
+        {
+          "ruleId": "VETTER_SUBPROCESS_SHELL",
+          "severity": "MEDIUM",
+          "category": "command_injection",
+          "message": "Runs subprocess commands through a shell.",
+          "file": "references/examples/pr-blocker-summarizer/scripts/run_evals.py",
+          "line": 157,
+          "excerpt": "proc = subprocess.run(bound, shell=True, capture_output=True) # noqa: S602"
+        },
+        {
+          "ruleId": "VETTER_SUBPROCESS_SHELL",
+          "severity": "MEDIUM",
+          "category": "command_injection",
+          "message": "Runs subprocess commands through a shell.",
+          "file": "references/examples/stock-analyzer/scripts/run_evals.py",
+          "line": 157,
+          "excerpt": "proc = subprocess.run(bound, shell=True, capture_output=True) # noqa: S602"
+        },
+        {
+          "ruleId": "VETTER_SUBPROCESS_SHELL",
+          "severity": "MEDIUM",
+          "category": "command_injection",
+          "message": "Runs subprocess commands through a shell.",
+          "file": "references/examples/weekly-crm-report/scripts/run_evals.py",
+          "line": 157,
+          "excerpt": "proc = subprocess.run(bound, shell=True, capture_output=True) # noqa: S602"
+        },
+        {
+          "ruleId": "VETTER_EVAL_EXEC",
+          "severity": "HIGH",
+          "category": "command_injection",
+          "message": "Uses eval or exec style code execution.",
+          "file": "references/interactive-mode.md",
+          "line": 217,
+          "excerpt": "[PASS] No eval() or exec() calls"
+        },
+        {
+          "ruleId": "VETTER_EVAL_EXEC",
+          "severity": "HIGH",
+          "category": "command_injection",
+          "message": "Uses eval or exec style code execution.",
+          "file": "references/phase5-orchestration.md",
+          "line": 99,
+          "excerpt": "wires every step — the eval (check 5) is the wiring proof. A skeleton orchestrator"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "references/pipeline-phases.md",
+          "line": 1379,
+          "excerpt": "| Goose | `~/.config/goose/skills/skill-name/` |"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "references/pipeline-phases.md",
+          "line": 1380,
+          "excerpt": "| OpenCode | `~/.config/opencode/skills/skill-name/` |"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "scripts/export_utils.py",
+          "line": 380,
+          "excerpt": "cp -r {skill_name}/ ~/.config/goose/skills/{skill_name}/"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "scripts/export_utils.py",
+          "line": 385,
+          "excerpt": "cp -r {skill_name}/ ~/.config/opencode/skills/{skill_name}/"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "scripts/export_utils.py",
+          "line": 508,
+          "excerpt": "- Network/pip install attempted (not allowed in API environment)"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "scripts/install-template.sh",
+          "line": 788,
+          "excerpt": "printf \" 3. OpenCode reads from ~/.config/opencode/skills/ automatically.\\n\""
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "scripts/platforms.py",
+          "line": 50,
+          "excerpt": "Platform(\"goose\", \"~/.config/goose/skills\", \".goose/skills\", \"~/.config/goose\"),"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "scripts/platforms.py",
+          "line": 51,
+          "excerpt": "Platform(\"opencode\", \"~/.config/opencode/skills\", \".opencode/skills\", \"~/.config/opencode\"),"
+        },
+        {
+          "ruleId": "VETTER_SUBPROCESS_SHELL",
+          "severity": "MEDIUM",
+          "category": "command_injection",
+          "message": "Runs subprocess commands through a shell.",
+          "file": "scripts/run_evals_template.py",
+          "line": 166,
+          "excerpt": "proc = subprocess.run(bound, shell=True, capture_output=True) # noqa: S602"
+        },
+        {
+          "ruleId": "VETTER_EVAL_EXEC",
+          "severity": "HIGH",
+          "category": "command_injection",
+          "message": "Uses eval or exec style code execution.",
+          "file": "scripts/security_scan.py",
+          "line": 138,
+          "excerpt": "\"eval() usage\","
+        },
+        {
+          "ruleId": "VETTER_EVAL_EXEC",
+          "severity": "HIGH",
+          "category": "command_injection",
+          "message": "Uses eval or exec style code execution.",
+          "file": "scripts/security_scan.py",
+          "line": 140,
+          "excerpt": "\"Use of eval() can execute arbitrary code; avoid unless strictly necessary\","
+        },
+        {
+          "ruleId": "VETTER_EVAL_EXEC",
+          "severity": "HIGH",
+          "category": "command_injection",
+          "message": "Uses eval or exec style code execution.",
+          "file": "scripts/security_scan.py",
+          "line": 144,
+          "excerpt": "\"exec() usage\","
+        },
+        {
+          "ruleId": "VETTER_EVAL_EXEC",
+          "severity": "HIGH",
+          "category": "command_injection",
+          "message": "Uses eval or exec style code execution.",
+          "file": "scripts/security_scan.py",
+          "line": 146,
+          "excerpt": "\"Use of exec() can execute arbitrary code; avoid unless strictly necessary\","
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "scripts/tests/test_security_scan.py",
+          "line": 54,
+          "excerpt": "Path(tmp), 'import os\\nTOKEN = os.environ[\"GITHUB_TOKEN\"]\\n'"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "scripts/tests/test_security_scan.py",
+          "line": 112,
+          "excerpt": "'STRIPE = os.environ[\"STRIPE_SECRET_KEY\"]\\n'"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "scripts/tests/test_security_scan.py",
+          "line": 113,
+          "excerpt": "'ANTHROPIC = os.environ[\"ANTHROPIC_API_KEY\"]\\n'"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "SKILL.md",
+          "line": 258,
+          "excerpt": "~/.config/goose/ exists → Goose → ~/.config/goose/skills/"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "SKILL.md",
+          "line": 259,
+          "excerpt": "~/.config/opencode/ exists → OpenCode → ~/.config/opencode/skills/"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "SKILL.md",
+          "line": 599,
+          "excerpt": "| Goose | `~/.config/goose/skills/` | — | `./install.sh --platform goose` |"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "SKILL.md",
+          "line": 600,
+          "excerpt": "| OpenCode | `~/.config/opencode/skills/` | `.opencode/skills/` | `./install.sh --platform opencode` |"
         }
       ]
     },

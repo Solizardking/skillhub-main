@@ -339,7 +339,9 @@ async function collectLocalCatalog(root) {
 
 async function collectSkills(directory, segments, existing, skills) {
   const skillPath = path.join(directory, "SKILL.md");
-  if (segments.length > 0 && existsSync(skillPath)) {
+  const ownsSkill = segments.length > 0 && existsSync(skillPath);
+
+  if (ownsSkill) {
     const content = await readFile(skillPath, "utf8");
     const frontmatter = parseFrontmatter(content);
     const slug = segments.join("/");
@@ -348,6 +350,10 @@ async function collectSkills(directory, segments, existing, skills) {
     const description = normalizeText(frontmatter.description) || existingEntry?.description || fallbackDescription(content);
     const category = existingEntry?.category || categorize({ slug, name, description });
     skills.push({ slug, name, description, category });
+
+    // A skill directory is a leaf: don't descend into its own bundled
+    // references/scripts/examples looking for further catalog entries.
+    return;
   }
 
   const entries = await readdir(directory, { withFileTypes: true });
@@ -370,6 +376,7 @@ async function countLocalSkills(root) {
   async function countSkills(directory, segments) {
     if (segments.length > 0 && existsSync(path.join(directory, "SKILL.md"))) {
       count += 1;
+      return;
     }
     const entries = await readdir(directory, { withFileTypes: true });
     for (const entry of entries) {
