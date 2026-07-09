@@ -3,9 +3,9 @@
 <img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />
 
 [![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)
-![Skills](https://img.shields.io/badge/skills-242-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-9-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-252-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-9-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
 
-**242 installable agent skills** — including a **69-skill Google integration** (Ads, Analytics, Cloud, GKE, BigQuery, Vertex, Gemini, and the Well-Architected Framework). Every one is a `SKILL.md` playbook your agent can pull off the shelf —
+**252 installable agent skills** — including a **69-skill Google integration** (Ads, Analytics, Cloud, GKE, BigQuery, Vertex, Gemini, and the Well-Architected Framework). Every one is a `SKILL.md` playbook your agent can pull off the shelf —
 hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
 
 *Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️
@@ -20,15 +20,15 @@ Nine zones. Every skill lives in exactly one. Click a zone to jump to its catalo
 
 | Zone | Skills | Power level | What lives here |
 |---|---:|---|---|
-| [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 18 | `███░░░░░░░░░░░░░░░` | Build, orchestrate, and ship with agent tooling |
+| [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 25 | `████░░░░░░░░░░░░░░` | Build, orchestrate, and ship with agent tooling |
 | [📣 **Google / Ads**](#-google--ads) | 11 | `██░░░░░░░░░░░░░░░░` | Google Ads APIs, campaigns, and reporting |
 | [📈 **Google / Analytics**](#-google--analytics) | 2 | `█░░░░░░░░░░░░░░░░░` | GA4 data APIs and measurement |
 | [☁️ **Google / Cloud**](#️-google--cloud) | 56 | `██████████░░░░░░░░` | GCP, GKE, BigQuery, Vertex, and friends |
 | [📍 **Local / Web Services**](#-local--web-services) | 6 | `█░░░░░░░░░░░░░░░░░` | Weather, places, food, and everyday web services |
 | [🎬 **Media / Devices**](#-media--devices) | 22 | `████░░░░░░░░░░░░░░` | Audio, video, images, TTS, cameras, and gadgets |
-| [💬 **Productivity / Messaging**](#-productivity--messaging) | 15 | `███░░░░░░░░░░░░░░░` | Notes, tasks, chat, and mail on autopilot |
-| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 100 | `██████████████████` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
-| [🧰 **Utilities**](#-utilities) | 12 | `██░░░░░░░░░░░░░░░░` | Handy one-off power tools |
+| [💬 **Productivity / Messaging**](#-productivity--messaging) | 16 | `███░░░░░░░░░░░░░░░` | Notes, tasks, chat, and mail on autopilot |
+| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 101 | `██████████████████` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
+| [🧰 **Utilities**](#-utilities) | 13 | `██░░░░░░░░░░░░░░░░` | Handy one-off power tools |
 
 ## 🧭 Codebase Map
 
@@ -36,7 +36,7 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 | Layer | What it contains | Main paths |
 |---|---|---|
-| Skill sources | 242 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
+| Skill sources | 252 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
 | Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |
 | Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |
 | Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |
@@ -50,7 +50,7 @@ This is the same 240-skill inventory grouped by where the source directories liv
 
 | Source family | Skills | What it covers |
 |---|---:|---|
-| `single/root skills` | 74 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
+| `single/root skills` | 84 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
 | `google/*` | 69 | Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills. |
 | `pump/pumpfun/*` | 24 | Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows. |
 | `vulcan/*` | 18 | Vulcan/Phoenix perps trading skills for onboarding, market intel, execution, grids, TWAP, TP/SL, margin, and risk. |
@@ -146,13 +146,14 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🛠️ Dev Tools / Agents
 
-> Build, orchestrate, and ship with agent tooling — **18 skills**
+> Build, orchestrate, and ship with agent tooling — **25 skills**
 
 <details>
 <summary>Open the Dev Tools / Agents cabinet</summary>
 
 | Skill | Name | Description |
 |---|---|---|
+| [`agents-sdk`](./skills/agents-sdk/SKILL.md) | agents-sdk | Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, chat applications, voice agents, or browser automation. Covers Agent class, state management, callable RPC, Workflows, durable execution, queues, retries, observability, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
 | [`anthropic-skills/algorithmic-art`](./skills/anthropic-skills/algorithmic-art/SKILL.md) | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations. |
 | [`anthropic-skills/internal-comms`](./skills/anthropic-skills/internal-comms/SKILL.md) | internal-comms | A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.). |
 | [`anthropic-skills/mcp-builder`](./skills/anthropic-skills/mcp-builder/SKILL.md) | mcp-builder | Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK). |
@@ -160,7 +161,9 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`anthropic-skills/web-artifacts-builder`](./skills/anthropic-skills/web-artifacts-builder/SKILL.md) | web-artifacts-builder | Suite of tools for creating elaborate, multi-component claude.ai HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components - not for simple single-file HTML/JSX artifacts. |
 | [`anthropic-skills/xlsx`](./skills/anthropic-skills/xlsx/SKILL.md) | xlsx | Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like "the xlsx in my downloads") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved. |
 | [`clawdhub`](./skills/clawdhub/SKILL.md) | clawdhub | Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawdhub CLI. |
+| [`cloudflare`](./skills/cloudflare/SKILL.md) | cloudflare | Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), feature flags (Flagship), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task. Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
 | [`create-agent-tui`](./skills/create-agent-tui/SKILL.md) | create-agent-tui | Scaffolds a complete agent TUI in TypeScript using @openrouter/agent — like create-react-app for terminal agents. Generates a customizable terminal interface with three input styles, four tool display modes, ASCII banners, streaming output, session persistence, and configurable tools. Use when building an agent, creating a TUI, scaffolding an agent project, or building a coding assistant. |
+| [`durable-objects`](./skills/durable-objects/SKILL.md) | durable-objects | Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
 | [`forge`](./skills/forge/SKILL.md) | agent-skill-creator | Create cross-platform agent skills from workflow descriptions. Activates when users ask to create an agent, automate a repetitive workflow, create a custom skill, or need advanced agent creation. Triggers on phrases like create agent for, automate workflow, create skill for, every day I have to, daily I need to, turn process into agent, need to automate, create a cross-platform skill, validate this skill, export this skill, migrate this skill. Supports single skills, multi-agent suites, transcript processing, template-based creation, interactive configuration, cross-platform export, and spec validation. |
 | [`github`](./skills/github/SKILL.md) | github | Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries. |
 | [`mcporter`](./skills/mcporter/SKILL.md) | mcporter | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation. |
@@ -168,9 +171,13 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`openrouter-agent-migration`](./skills/openrouter-agent-migration/SKILL.md) | openrouter-agent-migration | Migration guide from @openrouter/sdk to @openrouter/agent for callModel, tool(), stop conditions, and agent features. This skill should be used when code imports callModel, tool(), or stop conditions from @openrouter/sdk and needs to migrate to @openrouter/agent. |
 | [`openrouter-typescript-sdk`](./skills/openrouter-typescript-sdk/SKILL.md) | openrouter-typescript-sdk | Complete reference for integrating with 300+ AI models through the OpenRouter TypeScript SDK and Agent packages using the callModel pattern |
 | [`oracle`](./skills/oracle/SKILL.md) | oracle | Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns). |
+| [`sandbox-sdk`](./skills/sandbox-sdk/SKILL.md) | sandbox-sdk | Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs. Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
 | [`session-logs`](./skills/session-logs/SKILL.md) | session-logs | Search and analyze your own session logs (older/parent conversations) using jq. |
 | [`skill-creator`](./skills/skill-creator/SKILL.md) | skill-creator | Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets. |
 | [`tmux`](./skills/tmux/SKILL.md) | tmux | Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output. |
+| [`web-perf`](./skills/web-perf/SKILL.md) | web-perf | Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (LCP, INP, CLS) and supplementary metrics (FCP, TBT, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed. Biases towards retrieval from current documentation over pre-trained knowledge. |
+| [`workers-best-practices`](./skills/workers-best-practices/SKILL.md) | workers-best-practices | Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
+| [`wrangler`](./skills/wrangler/SKILL.md) | wrangler | Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices. Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
 
 </details>
 
@@ -333,7 +340,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 💬 Productivity / Messaging
 
-> Notes, tasks, chat, and mail on autopilot — **15 skills**
+> Notes, tasks, chat, and mail on autopilot — **16 skills**
 
 <details>
 <summary>Open the Productivity / Messaging cabinet</summary>
@@ -345,6 +352,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`apple-reminders`](./skills/apple-reminders/SKILL.md) | apple-reminders | Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output. |
 | [`bear-notes`](./skills/bear-notes/SKILL.md) | bear-notes | Create, search, and manage Bear notes via grizzly CLI. |
 | [`bluebubbles`](./skills/bluebubbles/SKILL.md) | bluebubbles | Build or update the BlueBubbles external channel plugin for Clawdbot (extension package, REST send/probe, webhook inbound). |
+| [`cloudflare-email-service`](./skills/cloudflare-email-service/SKILL.md) | cloudflare-email-service | Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing). Use when building email sending (Workers binding or REST API), email routing, Agents SDK email handling, or integrating email into any app — Workers, Node.js, Python, Go, etc. Also use for email deliverability, SPF/DKIM/DMARC, wrangler email setup, MCP email tools, or when a coding agent needs to send emails. Even for simple requests like "add email to my Worker" — this skill has critical config details. |
 | [`discord`](./skills/discord/SKILL.md) | discord | Use when you need to control Discord from Clawdbot via the discord tool: send messages, react, post or upload stickers, upload emojis, run polls, manage threads/pins/search, create/edit/delete channels and categories, fetch permissions or member/role/channel info, or handle moderation actions in Discord DMs or channels. |
 | [`gog`](./skills/gog/SKILL.md) | gog | Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. |
 | [`himalaya`](./skills/himalaya/SKILL.md) | himalaya | CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language). |
@@ -360,7 +368,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🟣 Solana / Blockchain
 
-> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **100 skills**
+> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **101 skills**
 
 <details>
 <summary>Open the Solana / Blockchain cabinet</summary>
@@ -375,6 +383,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`clawd-token-ops`](./skills/clawd-token-ops/SKILL.md) | clawd-token-ops | Work with $CLAWD token operations for Solana CLAWD and Cheshire Terminal. Use when checking or documenting the $CLAWD mint, token-gated balances, Jupiter buy/swap flows, burn tracking, holders, staking, treasury payments, or any task that asks to include the Clawd token address. |
 | [`clawd-trading-terminal`](./skills/clawd-trading-terminal/SKILL.md) | clawd-trading-terminal | Use or implement Cheshire Terminal trading surfaces for $CLAWD and Solana markets. Use when working on live spot trading, Jupiter swaps, DFlow markets, OODA trading flows, Phoenix perps, DEX/contract explorer, wallet scanner, Pump page, token tickers, or Clawd trading terminal workflows. |
 | [`clawdex`](./skills/clawdex/SKILL.md) | clawdex | Clawdex — dual-engine coding agent. Claude Code (reasoning + planning) + OpenAI Codex (fast execution) + Browser Use boxes (web research) + Upstash compute boxes (isolated sandboxes). |
+| [`cloudflare-one`](./skills/cloudflare-one/SKILL.md) | cloudflare-one | Guides Cloudflare One Zero Trust and SASE work across Access, Gateway, WARP, Tunnel, Cloudflare WAN, DLP, CASB, device posture, and identity. Use when designing, configuring, troubleshooting, or reviewing Cloudflare One deployments. Retrieval-first: use current Cloudflare docs/API schemas instead of embedded product docs. |
 | [`coding-agent`](./skills/coding-agent/SKILL.md) | coding-agent | Run Codex CLI, Claude Code, OpenCode, or Pi Coding Agent via background process for programmatic control. |
 | [`compressed-pda`](./skills/compressed-pda/SKILL.md) | compressed-pda | For client and program development on Solana ~160x cheaper and without rent-exemption for per-user state, DePIN registrations, or custom compressed accounts. Create, update, close, burn, and reinitialize compressed accounts. |
 | [`compressed-token`](./skills/compressed-token/SKILL.md) | compressed-token | For compressed token operations on Solana ~400x cheaper than SPL: create mints with interface PDAs, mint, transfer, approve, revoke, compress, decompress, merge, and Token-2022 with compression. Compressed token accounts are always rent-free. @lightprotocol/compressed-token (TypeScript) with createRpc() from @lightprotocol/stateless.js. |
@@ -472,7 +481,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🧰 Utilities
 
-> Handy one-off power tools — **12 skills**
+> Handy one-off power tools — **13 skills**
 
 <details>
 <summary>Open the Utilities cabinet</summary>
@@ -486,6 +495,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`anthropic-skills/theme-factory`](./skills/anthropic-skills/theme-factory/SKILL.md) | theme-factory | Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly. |
 | [`bird`](./skills/bird/SKILL.md) | bird | X/Twitter CLI for reading, searching, posting, and engagement via cookies. |
 | [`blogwatcher`](./skills/blogwatcher/SKILL.md) | blogwatcher | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI. |
+| [`cloudflare-one-migrations`](./skills/cloudflare-one-migrations/SKILL.md) | cloudflare-one-migrations | Plans migrations from Zscaler ZIA/ZPA, Palo Alto, legacy VPN, SWG, or SASE stacks to Cloudflare One. Use for migration assessments, policy mapping, rollout plans, and parity/gap analysis. |
 | [`eightctl`](./skills/eightctl/SKILL.md) | eightctl | Control Eight Sleep pods (status, temperature, alarms, schedules). |
 | [`gemini`](./skills/gemini/SKILL.md) | gemini | Gemini CLI for one-shot Q&A, summaries, and generation. |
 | [`openrouter-models`](./skills/openrouter-models/SKILL.md) | openrouter-models | Query OpenRouter for available AI models, pricing, capabilities, throughput, and provider performance. Use when the user asks about available OpenRouter models, model pricing, model context lengths, model capabilities, provider latency or uptime, throughput limits, supported parameters, wants to search/filter/compare models, or find the fastest provider for a model. |

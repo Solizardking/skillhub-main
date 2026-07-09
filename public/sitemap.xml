@@ -7,6 +7,9 @@
   <url><loc>https://skills.onchainai.fund/integrations/commerce-kit-payment-button.tsx</loc></url>
   <url><loc>https://skills.onchainai.fund/.well-known/skills-hub.json</loc></url>
   <url><loc>https://skills.onchainai.fund/.well-known/onchain-skill-registry.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/agents-sdk/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/agents-sdk/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/agents-sdk/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/anthropic-skills/algorithmic-art/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/anthropic-skills/algorithmic-art/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/anthropic-skills/algorithmic-art/SKILL.md</loc></url>
@@ -28,9 +31,15 @@
   <url><loc>https://skills.onchainai.fund/api/skills/clawdhub/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/clawdhub/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/clawdhub/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/create-agent-tui/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/create-agent-tui/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/create-agent-tui/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/durable-objects/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/durable-objects/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/durable-objects/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/forge/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/forge/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/forge/SKILL.md</loc></url>
@@ -52,6 +61,9 @@
   <url><loc>https://skills.onchainai.fund/api/skills/oracle/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/oracle/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/oracle/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/sandbox-sdk/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/sandbox-sdk/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/sandbox-sdk/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/session-logs/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/session-logs/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/session-logs/SKILL.md</loc></url>
@@ -61,6 +73,15 @@
   <url><loc>https://skills.onchainai.fund/api/skills/tmux/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/tmux/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/tmux/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/web-perf/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/web-perf/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/web-perf/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/workers-best-practices/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/workers-best-practices/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/workers-best-practices/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/wrangler/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/wrangler/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/wrangler/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/google/ads/data-manager-api/data-manager-api-audience-ingestion/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/google/ads/data-manager-api/data-manager-api-audience-ingestion/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/google/ads/data-manager-api/data-manager-api-audience-ingestion/SKILL.md</loc></url>
@@ -367,6 +388,9 @@
   <url><loc>https://skills.onchainai.fund/api/skills/bluebubbles/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/bluebubbles/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/bluebubbles/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare-email-service/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare-email-service/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare-email-service/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/discord/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/discord/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/discord/SKILL.md</loc></url>
@@ -421,6 +445,9 @@
   <url><loc>https://skills.onchainai.fund/api/skills/clawdex/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/clawdex/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/clawdex/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare-one/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare-one/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare-one/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/coding-agent/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/coding-agent/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/coding-agent/SKILL.md</loc></url>
@@ -718,6 +745,9 @@
   <url><loc>https://skills.onchainai.fund/api/skills/blogwatcher/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/blogwatcher/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/blogwatcher/SKILL.md</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare-one-migrations/metadata.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare-one-migrations/verification.json</loc></url>
+  <url><loc>https://skills.onchainai.fund/api/skills/cloudflare-one-migrations/SKILL.md</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/eightctl/metadata.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/eightctl/verification.json</loc></url>
   <url><loc>https://skills.onchainai.fund/api/skills/eightctl/SKILL.md</loc></url>

@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 242,
-  "catalogHash": "sha256-2f34b3f67678aed135561fef7df062125b65e69eea01fe1a41e23a8b10711ab5",
-  "merkleRoot": "sha256-97e13c7f938c7ffc2451afb7cb83133289202bc09fe3c7148f5fb87b4707bbee",
+  "totalSkills": 252,
+  "catalogHash": "sha256-2a7ef9a4724f01fcd3310c5a8d637f6ef3efff081fd34cbf05ae56713cb52899",
+  "merkleRoot": "sha256-ad239d17fb1d90233b1b4ae210cd4d8617cf9205e23ea2d8121bad2652da4f96",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -26,6 +26,17 @@
     "skillSource": "https://skills.onchainai.fund/api/skills/{skill}/SKILL.md"
   },
   "skills": [
+    {
+      "slug": "agents-sdk",
+      "name": "agents-sdk",
+      "description": "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, chat applications, voice agents, or browser automation. Covers Agent class, state management, callable RPC, Workflows, durable execution, queues, retries, observability, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-8794d303778a741e86284728d6467b4bbc78d27c3cf30c78f66986dde9dac29d",
+      "merkleLeaf": "sha256-295c0bb767ee004f98067f03fffe8adff8c83133467518530c78a7839cf86a90",
+      "fileCount": 20,
+      "metadata": "/api/skills/agents-sdk/metadata.json",
+      "verification": "/api/skills/agents-sdk/verification.json"
+    },
     {
       "slug": "anthropic-skills/algorithmic-art",
       "name": "algorithmic-art",
@@ -104,6 +115,17 @@
       "verification": "/api/skills/clawdhub/verification.json"
     },
     {
+      "slug": "cloudflare",
+      "name": "cloudflare",
+      "description": "Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), feature flags (Flagship), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-504eaae5f316bf238f6c1cef5f166c8f0573a0f79e3b28ae787bef14fda614f0",
+      "merkleLeaf": "sha256-d26354a4cafdc93bafb931f2622c639b7a9998702a0927154965edc5f441c139",
+      "fileCount": 320,
+      "metadata": "/api/skills/cloudflare/metadata.json",
+      "verification": "/api/skills/cloudflare/verification.json"
+    },
+    {
       "slug": "create-agent-tui",
       "name": "create-agent-tui",
       "description": "Scaffolds a complete agent TUI in TypeScript using @openrouter/agent — like create-react-app for terminal agents. Generates a customizable terminal interface with three input styles, four tool display modes, ASCII banners, streaming output, session persistence, and configurable tools. Use when building an agent, creating a TUI, scaffolding an agent project, or building a coding assistant.",
@@ -113,6 +135,17 @@
       "fileCount": 11,
       "metadata": "/api/skills/create-agent-tui/metadata.json",
       "verification": "/api/skills/create-agent-tui/verification.json"
+    },
+    {
+      "slug": "durable-objects",
+      "name": "durable-objects",
+      "description": "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-39f754f7e0c22adf5a40f143d0b75ea51aec40a0eb731709cac47f1b2ac878e1",
+      "merkleLeaf": "sha256-4ec8ba6525e08f459c883fe3ebd77c0eb2987b548dee41f449de3a977f3a3b3f",
+      "fileCount": 4,
+      "metadata": "/api/skills/durable-objects/metadata.json",
+      "verification": "/api/skills/durable-objects/verification.json"
     },
     {
       "slug": "forge",
@@ -192,6 +225,17 @@
       "verification": "/api/skills/oracle/verification.json"
     },
     {
+      "slug": "sandbox-sdk",
+      "name": "sandbox-sdk",
+      "description": "Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-0eca858e73242c537467be963da56a9d474a923f44fd7e02f6c7a4901d5370cc",
+      "merkleLeaf": "sha256-497f0229863694d80aac9bc56ac2bc8eae322c5e0e85ef283de78c68a3c37f4a",
+      "fileCount": 3,
+      "metadata": "/api/skills/sandbox-sdk/metadata.json",
+      "verification": "/api/skills/sandbox-sdk/verification.json"
+    },
+    {
       "slug": "session-logs",
       "name": "session-logs",
       "description": "Search and analyze your own session logs (older/parent conversations) using jq.",
@@ -223,6 +267,39 @@
       "fileCount": 3,
       "metadata": "/api/skills/tmux/metadata.json",
       "verification": "/api/skills/tmux/verification.json"
+    },
+    {
+      "slug": "web-perf",
+      "name": "web-perf",
+      "description": "Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (LCP, INP, CLS) and supplementary metrics (FCP, TBT, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed. Biases towards retrieval from current documentation over pre-trained knowledge.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-bf86ab07b64dfd491759a49a012a14ad8723cd33d6a820b09fd44daf28f8c0a6",
+      "merkleLeaf": "sha256-ba18456c175fc2132e0d5b6cd8990803463d537e13e918d1a9f7053fb1666ca7",
+      "fileCount": 1,
+      "metadata": "/api/skills/web-perf/metadata.json",
+      "verification": "/api/skills/web-perf/verification.json"
+    },
+    {
+      "slug": "workers-best-practices",
+      "name": "workers-best-practices",
+      "description": "Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-affe500721d3c8c1cfeeb82e4ec93f45703f6e801e1836f413f3066759e55b56",
+      "merkleLeaf": "sha256-cef461120fa26c23033332f2f8d667693d2e25f4f6523c1712f3330a49caa91a",
+      "fileCount": 3,
+      "metadata": "/api/skills/workers-best-practices/metadata.json",
+      "verification": "/api/skills/workers-best-practices/verification.json"
+    },
+    {
+      "slug": "wrangler",
+      "name": "wrangler",
+      "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-7900e02e7e8f2c271a081639117807721efdcb1f7b3b04eb2a788a0af3118586",
+      "merkleLeaf": "sha256-4bf17a4c9f3b780a7ccf57a52ed4875c81d5b0dc48fc1737819fa861c49bf280",
+      "fileCount": 1,
+      "metadata": "/api/skills/wrangler/metadata.json",
+      "verification": "/api/skills/wrangler/verification.json"
     },
     {
       "slug": "google/ads/data-manager-api/data-manager-api-audience-ingestion",
@@ -1347,6 +1424,17 @@
       "verification": "/api/skills/bluebubbles/verification.json"
     },
     {
+      "slug": "cloudflare-email-service",
+      "name": "cloudflare-email-service",
+      "description": "Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing). Use when building email sending (Workers binding or REST API), email routing, Agents SDK email handling, or integrating email into any app — Workers, Node.js, Python, Go, etc. Also use for email deliverability, SPF/DKIM/DMARC, wrangler email setup, MCP email tools, or when a coding agent needs to send emails. Even for simple requests like \"add email to my Worker\" — this skill has critical config details.",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-7b9779c95e273a6cb279decf9e10ea7ff6591c8928b9d8c753554fc1e2101bd4",
+      "merkleLeaf": "sha256-f015617cea72581d58a5c9094934d3f8406f8b20b42c70dc52b6c77b8922125c",
+      "fileCount": 6,
+      "metadata": "/api/skills/cloudflare-email-service/metadata.json",
+      "verification": "/api/skills/cloudflare-email-service/verification.json"
+    },
+    {
       "slug": "discord",
       "name": "discord",
       "description": "Use when you need to control Discord from Clawdbot via the discord tool: send messages, react, post or upload stickers, upload emojis, run polls, manage threads/pins/search, create/edit/delete channels and categories, fetch permissions or member/role/channel info, or handle moderation actions in Discord DMs or channels.",
@@ -1543,6 +1631,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/clawdex/metadata.json",
       "verification": "/api/skills/clawdex/verification.json"
+    },
+    {
+      "slug": "cloudflare-one",
+      "name": "cloudflare-one",
+      "description": "Guides Cloudflare One Zero Trust and SASE work across Access, Gateway, WARP, Tunnel, Cloudflare WAN, DLP, CASB, device posture, and identity. Use when designing, configuring, troubleshooting, or reviewing Cloudflare One deployments. Retrieval-first: use current Cloudflare docs/API schemas instead of embedded product docs.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-240ad2da3e6998811879ff4c09ed17612594d13b32b07eedf5899f1d5c301cff",
+      "merkleLeaf": "sha256-bf745584f66bfdf6dd09f2b8ba5e0bbd7f371df84dfa836d9ffd880aba66272a",
+      "fileCount": 1,
+      "metadata": "/api/skills/cloudflare-one/metadata.json",
+      "verification": "/api/skills/cloudflare-one/verification.json"
     },
     {
       "slug": "coding-agent",
@@ -2632,6 +2731,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/blogwatcher/metadata.json",
       "verification": "/api/skills/blogwatcher/verification.json"
+    },
+    {
+      "slug": "cloudflare-one-migrations",
+      "name": "cloudflare-one-migrations",
+      "description": "Plans migrations from Zscaler ZIA/ZPA, Palo Alto, legacy VPN, SWG, or SASE stacks to Cloudflare One. Use for migration assessments, policy mapping, rollout plans, and parity/gap analysis.",
+      "category": "Utilities",
+      "bundleHash": "sha256-4f937b54e4415bd7c9b2cf9806e0c66303a7d0ab7110faaa062e023b41c431c0",
+      "merkleLeaf": "sha256-741f7c6be43ca28595b4d4b06a731618de8e8b23bc290847d6c6ec39212d6105",
+      "fileCount": 1,
+      "metadata": "/api/skills/cloudflare-one-migrations/metadata.json",
+      "verification": "/api/skills/cloudflare-one-migrations/verification.json"
     },
     {
       "slug": "eightctl",

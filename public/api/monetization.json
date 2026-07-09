@@ -21,6 +21,19 @@
   },
   "skills": [
     {
+      "slug": "agents-sdk",
+      "name": "agents-sdk",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "anthropic-skills/algorithmic-art",
       "name": "algorithmic-art",
       "category": "Dev Tools / Agents",
@@ -112,8 +125,34 @@
       "offchainEnabled": false
     },
     {
+      "slug": "cloudflare",
+      "name": "cloudflare",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "create-agent-tui",
       "name": "create-agent-tui",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "durable-objects",
+      "name": "durable-objects",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -216,6 +255,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "sandbox-sdk",
+      "name": "sandbox-sdk",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "session-logs",
       "name": "session-logs",
       "category": "Dev Tools / Agents",
@@ -244,6 +296,45 @@
     {
       "slug": "tmux",
       "name": "tmux",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "web-perf",
+      "name": "web-perf",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "workers-best-practices",
+      "name": "workers-best-practices",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "wrangler",
+      "name": "wrangler",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -1581,6 +1672,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "cloudflare-email-service",
+      "name": "cloudflare-email-service",
+      "category": "Productivity / Messaging",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "discord",
       "name": "discord",
       "category": "Productivity / Messaging",
@@ -1804,6 +1908,19 @@
     {
       "slug": "clawdex",
       "name": "clawdex",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "cloudflare-one",
+      "name": "cloudflare-one",
       "category": "Solana / Blockchain",
       "mode": "tip",
       "merchant": {
@@ -3091,6 +3208,19 @@
     {
       "slug": "blogwatcher",
       "name": "blogwatcher",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "cloudflare-one-migrations",
+      "name": "cloudflare-one-migrations",
       "category": "Utilities",
       "mode": "tip",
       "merchant": {

@@ -6,6 +6,7 @@
       "title": "Dev Tools / Agents",
       "description": "Coding-agent, MCP, GitHub, terminal, and skill-development workflows.",
       "skills": [
+        "agents-sdk",
         "anthropic-skills/algorithmic-art",
         "anthropic-skills/internal-comms",
         "anthropic-skills/mcp-builder",
@@ -13,7 +14,9 @@
         "anthropic-skills/web-artifacts-builder",
         "anthropic-skills/xlsx",
         "clawdhub",
+        "cloudflare",
         "create-agent-tui",
+        "durable-objects",
         "forge",
         "github",
         "mcporter",
@@ -21,9 +24,13 @@
         "openrouter-agent-migration",
         "openrouter-typescript-sdk",
         "oracle",
+        "sandbox-sdk",
         "session-logs",
         "skill-creator",
-        "tmux"
+        "tmux",
+        "web-perf",
+        "workers-best-practices",
+        "wrangler"
       ]
     },
     {
@@ -162,6 +169,7 @@
         "apple-reminders",
         "bear-notes",
         "bluebubbles",
+        "cloudflare-email-service",
         "discord",
         "gog",
         "himalaya",
@@ -186,6 +194,7 @@
         "clawd-token-ops",
         "clawd-trading-terminal",
         "clawdex",
+        "cloudflare-one",
         "coding-agent",
         "compressed-pda",
         "compressed-token",
@@ -291,6 +300,7 @@
         "anthropic-skills/theme-factory",
         "bird",
         "blogwatcher",
+        "cloudflare-one-migrations",
         "eightctl",
         "gemini",
         "openrouter-models",
