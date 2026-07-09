@@ -1,0 +1,43 @@
+{
+  "name": "Onchain AI Skill Hub",
+  "url": "https://skills.onchainai.fund",
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "totalSkills": 242,
+  "categories": {
+    "Dev Tools / Agents": 18,
+    "Google / Ads": 11,
+    "Google / Analytics": 2,
+    "Google / Cloud": 56,
+    "Local / Web Services": 6,
+    "Media / Devices": 22,
+    "Productivity / Messaging": 15,
+    "Solana / Blockchain": 100,
+    "Utilities": 12
+  },
+  "endpoints": {
+    "ui": "https://skills.onchainai.fund/skills",
+    "catalog": "https://skills.onchainai.fund/api/skills.json",
+    "catalogIndex": "https://skills.onchainai.fund/api/skills",
+    "monetization": "https://skills.onchainai.fund/api/monetization.json",
+    "commerceKitIntegration": "https://skills.onchainai.fund/integrations/commerce-kit-payment-button.tsx",
+    "skillMetadata": "https://skills.onchainai.fund/api/skills/{skill}/metadata.json",
+    "skillSource": "https://skills.onchainai.fund/api/skills/{skill}/SKILL.md",
+    "skillVerification": "https://skills.onchainai.fund/api/skills/{skill}/verification.json",
+    "onchainRegistry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json"
+  },
+  "skillsSh": {
+    "install": "npx skills add Solizardking/skills",
+    "repoConfig": "skills.sh.json"
+  },
+  "verification": {
+    "chain": "solana",
+    "status": "anchor-ready",
+    "merkleRoot": "sha256-97e13c7f938c7ffc2451afb7cb83133289202bc09fe3c7148f5fb87b4707bbee",
+    "catalogHash": "sha256-2f34b3f67678aed135561fef7df062125b65e69eea01fe1a41e23a8b10711ab5"
+  },
+  "monetization": {
+    "onchain": "Solana Pay tip URI per skill card",
+    "offchain": "Optional checkout URL carried in api/monetization.json",
+    "commerceKit": "@solana-commerce/kit PaymentButton integration"
+  }
+}

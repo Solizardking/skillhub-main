@@ -355,6 +355,17 @@ async function addPublicResources(files, skill) {
     if (!existsSync(absoluteDir)) continue;
     await addPublicResourceDir(files, absoluteDir, `api/skills/${skill.slug}/${resourceDir}`);
   }
+
+  await addSkillFrontend(files, skill);
+}
+
+// Skills may ship a hand-authored landing page at skills/<slug>/frontend/index.html.
+// It is copied verbatim to public/skills/<slug>/index.html so it survives the
+// full public/ rebuild in writeOutputs() instead of only living in the working tree.
+async function addSkillFrontend(files, skill) {
+  const frontendEntry = path.join(SKILLS_ROOT, skill.slug, "frontend", "index.html");
+  if (!existsSync(frontendEntry)) return;
+  files.set(`skills/${skill.slug}/index.html`, await readFile(frontendEntry));
 }
 
 async function addPublicRootResources(files, skill) {
