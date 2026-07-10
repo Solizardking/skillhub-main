@@ -1698,6 +1698,2983 @@
       "offchainEnabled": false
     },
     {
+      "slug": "nvidia/accelerated-computing-cudf",
+      "name": "accelerated-computing-cudf",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/aiq-deploy",
+      "name": "aiq-deploy",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/aiq-research",
+      "name": "aiq-research",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/amc-run-sample-calibration",
+      "name": "amc-run-sample-calibration",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/amc-run-video-calibration",
+      "name": "amc-run-video-calibration",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/amc-setup-calibration-stack",
+      "name": "amc-setup-calibration-stack",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cudaq-guide",
+      "name": "cudaq-guide",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cufolio",
+      "name": "cufolio",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cuopt-developer",
+      "name": "cuopt-developer",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cuopt-install",
+      "name": "cuopt-install",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cuopt-multi-objective-exploration",
+      "name": "cuopt-multi-objective-exploration",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cuopt-numerical-optimization-api",
+      "name": "cuopt-numerical-optimization-api",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cuopt-numerical-optimization-formulation",
+      "name": "cuopt-numerical-optimization-formulation",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cuopt-routing-api-python",
+      "name": "cuopt-routing-api-python",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cuopt-server-api-python",
+      "name": "cuopt-server-api-python",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cupynumeric-hdf5",
+      "name": "cupynumeric-hdf5",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cupynumeric-install",
+      "name": "cupynumeric-install",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cupynumeric-migration-readiness",
+      "name": "cupynumeric-migration-readiness",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/cupynumeric-parallel-data-load",
+      "name": "cupynumeric-parallel-data-load",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/dali-dynamic-mode",
+      "name": "dali-dynamic-mode",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/data-designer",
+      "name": "data-designer",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/deepstream-dev",
+      "name": "deepstream-dev",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/deepstream-generate-pipeline",
+      "name": "deepstream-generate-pipeline",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/deepstream-import-vision-model",
+      "name": "deepstream-import-vision-model",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/deepstream-profile-pipeline",
+      "name": "deepstream-profile-pipeline",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/deepstream-sop",
+      "name": "deepstream-sop",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/dicom-metadata-extract",
+      "name": "dicom-metadata-extract",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/dicom-series-preflight",
+      "name": "dicom-series-preflight",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/dicom-series-to-volume",
+      "name": "dicom-series-to-volume",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/digital-health-clinical-asr-build",
+      "name": "digital-health-clinical-asr-build",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/digital-health-clinical-asr-eval",
+      "name": "digital-health-clinical-asr-eval",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/digital-health-clinical-asr-finetune",
+      "name": "digital-health-clinical-asr-finetune",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/digital-health-clinical-asr-setup",
+      "name": "digital-health-clinical-asr-setup",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/dynamo-interconnect-check",
+      "name": "dynamo-interconnect-check",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/dynamo-recipe-runner",
+      "name": "dynamo-recipe-runner",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/dynamo-router-starter",
+      "name": "dynamo-router-starter",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/dynamo-troubleshoot",
+      "name": "dynamo-troubleshoot",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/earth2studio-create-datasource",
+      "name": "earth2studio-create-datasource",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/earth2studio-create-diagnostic",
+      "name": "earth2studio-create-diagnostic",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/earth2studio-create-prognostic",
+      "name": "earth2studio-create-prognostic",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/earth2studio-data-fetch",
+      "name": "earth2studio-data-fetch",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/earth2studio-deterministic-forecast",
+      "name": "earth2studio-deterministic-forecast",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/earth2studio-discover",
+      "name": "earth2studio-discover",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/earth2studio-install",
+      "name": "earth2studio-install",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/holoscan-install-conda",
+      "name": "holoscan-install-conda",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/holoscan-install-container",
+      "name": "holoscan-install-container",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/holoscan-install-debian",
+      "name": "holoscan-install-debian",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/holoscan-install-source",
+      "name": "holoscan-install-source",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/holoscan-install-wheel",
+      "name": "holoscan-install-wheel",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/holoscan-setup",
+      "name": "holoscan-setup",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/hsb-app",
+      "name": "hsb-app",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/hsb-flash",
+      "name": "hsb-flash",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/hsb-setup",
+      "name": "hsb-setup",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/hsb-test",
+      "name": "hsb-test",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-build-source",
+      "name": "jetson-build-source",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-customize-camera",
+      "name": "jetson-customize-camera",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-customize-clocks",
+      "name": "jetson-customize-clocks",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-customize-fan",
+      "name": "jetson-customize-fan",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-customize-mgbe",
+      "name": "jetson-customize-mgbe",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-customize-nvpmodel",
+      "name": "jetson-customize-nvpmodel",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-customize-pcie",
+      "name": "jetson-customize-pcie",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-customize-pinmux",
+      "name": "jetson-customize-pinmux",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-customize-uphy",
+      "name": "jetson-customize-uphy",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-customize-usb",
+      "name": "jetson-customize-usb",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-derive-carrier",
+      "name": "jetson-derive-carrier",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-diagnostic",
+      "name": "jetson-diagnostic",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-download-bsp",
+      "name": "jetson-download-bsp",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-flash-image",
+      "name": "jetson-flash-image",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-generate-kb",
+      "name": "jetson-generate-kb",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-headless-mode",
+      "name": "jetson-headless-mode",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-inference-mem-tune",
+      "name": "jetson-inference-mem-tune",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-init-image",
+      "name": "jetson-init-image",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-init-source",
+      "name": "jetson-init-source",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-init-target",
+      "name": "jetson-init-target",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-link-docs",
+      "name": "jetson-link-docs",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-llm-benchmark",
+      "name": "jetson-llm-benchmark",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-llm-serve",
+      "name": "jetson-llm-serve",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-memory-audit",
+      "name": "jetson-memory-audit",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-optimize-memory",
+      "name": "jetson-optimize-memory",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-package",
+      "name": "jetson-package",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-print-bsp-info",
+      "name": "jetson-print-bsp-info",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-print-device-info",
+      "name": "jetson-print-device-info",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-promote-image",
+      "name": "jetson-promote-image",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-quick-start",
+      "name": "jetson-quick-start",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-set-target",
+      "name": "jetson-set-target",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-speculative-decoding",
+      "name": "jetson-speculative-decoding",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/jetson-validate-image",
+      "name": "jetson-validate-image",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/launch-nemo-rl",
+      "name": "launch-nemo-rl",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/mcore-create-issue",
+      "name": "mcore-create-issue",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/mcore-linting-and-formatting",
+      "name": "mcore-linting-and-formatting",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/mcore-run-on-slurm",
+      "name": "mcore-run-on-slurm",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/mcore-split-pr",
+      "name": "mcore-split-pr",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/mcore-testing",
+      "name": "mcore-testing",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-automodel-distributed-training",
+      "name": "nemo-automodel-distributed-training",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-automodel-launcher-config",
+      "name": "nemo-automodel-launcher-config",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-automodel-model-onboarding",
+      "name": "nemo-automodel-model-onboarding",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-automodel-recipe-development",
+      "name": "nemo-automodel-recipe-development",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-data-designer-plugin",
+      "name": "nemo-data-designer-plugin",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-evaluator-plugin",
+      "name": "nemo-evaluator-plugin",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-mlm-bridge-training",
+      "name": "nemo-mbridge-mlm-bridge-training",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-multi-node-slurm",
+      "name": "nemo-mbridge-multi-node-slurm",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-activation-recompute",
+      "name": "nemo-mbridge-perf-activation-recompute",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-cpu-offloading",
+      "name": "nemo-mbridge-perf-cpu-offloading",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-cuda-graphs",
+      "name": "nemo-mbridge-perf-cuda-graphs",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-expert-parallel-overlap",
+      "name": "nemo-mbridge-perf-expert-parallel-overlap",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-hierarchical-context-parallel",
+      "name": "nemo-mbridge-perf-hierarchical-context-parallel",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-megatron-fsdp",
+      "name": "nemo-mbridge-perf-megatron-fsdp",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-memory-tuning",
+      "name": "nemo-mbridge-perf-memory-tuning",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-moe-comm-overlap",
+      "name": "nemo-mbridge-perf-moe-comm-overlap",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-moe-dispatcher-selection",
+      "name": "nemo-mbridge-perf-moe-dispatcher-selection",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-moe-hardware-configs",
+      "name": "nemo-mbridge-perf-moe-hardware-configs",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-moe-long-context",
+      "name": "nemo-mbridge-perf-moe-long-context",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-moe-optimization-workflow",
+      "name": "nemo-mbridge-perf-moe-optimization-workflow",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-moe-vlm-training",
+      "name": "nemo-mbridge-perf-moe-vlm-training",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-parallelism-strategies",
+      "name": "nemo-mbridge-perf-parallelism-strategies",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-sequence-packing",
+      "name": "nemo-mbridge-perf-sequence-packing",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-perf-tp-dp-comm-overlap",
+      "name": "nemo-mbridge-perf-tp-dp-comm-overlap",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-recipe-recommender",
+      "name": "nemo-mbridge-recipe-recommender",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-mbridge-resiliency",
+      "name": "nemo-mbridge-resiliency",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-retriever",
+      "name": "nemo-retriever",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-rl-auto-research",
+      "name": "nemo-rl-auto-research",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-rl-brev-etiquette",
+      "name": "nemo-rl-brev-etiquette",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-rl-docs",
+      "name": "nemo-rl-docs",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemo-rl-session-memory",
+      "name": "nemo-rl-session-memory",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemoclaw-user-guide",
+      "name": "nemoclaw-user-guide",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemotron-customize",
+      "name": "nemotron-customize",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemotron-policy-generator",
+      "name": "nemotron-policy-generator",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemotron-retrieval-recipes",
+      "name": "nemotron-retrieval-recipes",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nemotron-speech",
+      "name": "nemotron-speech",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nv-generate-ct-rflow",
+      "name": "nv-generate-ct-rflow",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nv-generate-mr",
+      "name": "nv-generate-mr",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nv-generate-mr-brain",
+      "name": "nv-generate-mr-brain",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nv-generate-mr-brain-finetune",
+      "name": "nv-generate-mr-brain-finetune",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nv-generate-vae-finetune",
+      "name": "nv-generate-vae-finetune",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nv-reason-cxr",
+      "name": "nv-reason-cxr",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nv-segment-ct",
+      "name": "nv-segment-ct",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nv-segment-ct-finetune",
+      "name": "nv-segment-ct-finetune",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/nv-segment-ctmr",
+      "name": "nv-segment-ctmr",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/omniverse-cad-to-simready",
+      "name": "omniverse-cad-to-simready",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/omniverse-realtime-viewer",
+      "name": "omniverse-realtime-viewer",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/omniverse-usd-performance-tuning",
+      "name": "omniverse-usd-performance-tuning",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/physical-ai-defect-image-generation",
+      "name": "physical-ai-defect-image-generation",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/physical-ai-infrastructure-setup-and-resilient-scaling",
+      "name": "physical-ai-infrastructure-setup-and-resilient-scaling",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/physical-ai-neural-reconstruction",
+      "name": "physical-ai-neural-reconstruction",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/physical-ai-people-attribute-search",
+      "name": "physical-ai-people-attribute-search",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/physical-ai-video-data-augmentation",
+      "name": "physical-ai-video-data-augmentation",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/physicsnemo-discover",
+      "name": "physicsnemo-discover",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/rag-blueprint",
+      "name": "rag-blueprint",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/rag-eval",
+      "name": "rag-eval",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/rag-perf",
+      "name": "rag-perf",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/skill-card-generator",
+      "name": "skill-card-generator",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-analyze-changenet-rca",
+      "name": "tao-analyze-changenet-rca",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-analyze-gaps-visual-changenet",
+      "name": "tao-analyze-gaps-visual-changenet",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-analyze-gaps-vlm-bcq",
+      "name": "tao-analyze-gaps-vlm-bcq",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-convert-dataset-format",
+      "name": "tao-convert-dataset-format",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-finetune-clip",
+      "name": "tao-finetune-clip",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-finetune-cosmos-embed",
+      "name": "tao-finetune-cosmos-embed",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-finetune-cosmos-reason",
+      "name": "tao-finetune-cosmos-reason",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-finetune-huggingface-model",
+      "name": "tao-finetune-huggingface-model",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-generate-image-grounding",
+      "name": "tao-generate-image-grounding",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-generate-referring-expressions",
+      "name": "tao-generate-referring-expressions",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-generate-video-reasoning-annotations",
+      "name": "tao-generate-video-reasoning-annotations",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-launch-workflow",
+      "name": "tao-launch-workflow",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-list-capabilities",
+      "name": "tao-list-capabilities",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-mine-aoi-images",
+      "name": "tao-mine-aoi-images",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-port-huggingface-model",
+      "name": "tao-port-huggingface-model",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-route-visual-changenet-samples",
+      "name": "tao-route-visual-changenet-samples",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-run-automl",
+      "name": "tao-run-automl",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-run-automl-deft-pipeline",
+      "name": "tao-run-automl-deft-pipeline",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-run-deft-aoi",
+      "name": "tao-run-deft-aoi",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-run-inference-service",
+      "name": "tao-run-inference-service",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-run-on-brev",
+      "name": "tao-run-on-brev",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-run-on-kubernetes",
+      "name": "tao-run-on-kubernetes",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-run-on-local-docker",
+      "name": "tao-run-on-local-docker",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-run-on-slurm",
+      "name": "tao-run-on-slurm",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-run-platform",
+      "name": "tao-run-platform",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-setup-nvidia-gpu-host",
+      "name": "tao-setup-nvidia-gpu-host",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-action-recognition",
+      "name": "tao-train-action-recognition",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-bevfusion",
+      "name": "tao-train-bevfusion",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-centerpose",
+      "name": "tao-train-centerpose",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-deformable-detr",
+      "name": "tao-train-deformable-detr",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-depth-anything-v2",
+      "name": "tao-train-depth-anything-v2",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-dino",
+      "name": "tao-train-dino",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-fast-foundation-stereo",
+      "name": "tao-train-fast-foundation-stereo",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-foundation-stereo",
+      "name": "tao-train-foundation-stereo",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-grounding-dino",
+      "name": "tao-train-grounding-dino",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-image-classification",
+      "name": "tao-train-image-classification",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-mask-auto-encoder",
+      "name": "tao-train-mask-auto-encoder",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-mask-auto-label",
+      "name": "tao-train-mask-auto-label",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-mask-grounding-dino",
+      "name": "tao-train-mask-grounding-dino",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-mask2former",
+      "name": "tao-train-mask2former",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-metric-learning-recognition",
+      "name": "tao-train-metric-learning-recognition",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-nvdinov2",
+      "name": "tao-train-nvdinov2",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-nvpanoptix3d",
+      "name": "tao-train-nvpanoptix3d",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-ocdnet",
+      "name": "tao-train-ocdnet",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-ocrnet",
+      "name": "tao-train-ocrnet",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-oneformer",
+      "name": "tao-train-oneformer",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-optical-inspection",
+      "name": "tao-train-optical-inspection",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-pointpillars",
+      "name": "tao-train-pointpillars",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-pose-classification",
+      "name": "tao-train-pose-classification",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-reid",
+      "name": "tao-train-reid",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-rtdetr",
+      "name": "tao-train-rtdetr",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-segformer",
+      "name": "tao-train-segformer",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-single-step",
+      "name": "tao-train-single-step",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-sparse4d",
+      "name": "tao-train-sparse4d",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-train-visual-changenet",
+      "name": "tao-train-visual-changenet",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tao-validate-dataset-format",
+      "name": "tao-validate-dataset-format",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tilegym-adding-cutile-kernel",
+      "name": "tilegym-adding-cutile-kernel",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tilegym-converting-cutile-to-julia",
+      "name": "tilegym-converting-cutile-to-julia",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tilegym-converting-cutile-to-triton",
+      "name": "tilegym-converting-cutile-to-triton",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tilegym-cutile-autotuning",
+      "name": "tilegym-cutile-autotuning",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tilegym-cutile-python",
+      "name": "tilegym-cutile-python",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tilegym-improve-cutile-kernel-perf",
+      "name": "tilegym-improve-cutile-kernel-perf",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/tilegym-monkey-patch-kernels-to-transformers",
+      "name": "tilegym-monkey-patch-kernels-to-transformers",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-ask-video",
+      "name": "vss-ask-video",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-deploy-dense-captioning",
+      "name": "vss-deploy-dense-captioning",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-deploy-detection-tracking-2d",
+      "name": "vss-deploy-detection-tracking-2d",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-deploy-detection-tracking-3d",
+      "name": "vss-deploy-detection-tracking-3d",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-deploy-profile",
+      "name": "vss-deploy-profile",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-deploy-video-embedding",
+      "name": "vss-deploy-video-embedding",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-generate-video-calibration",
+      "name": "vss-generate-video-calibration",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-generate-video-report",
+      "name": "vss-generate-video-report",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-manage-alerts",
+      "name": "vss-manage-alerts",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-manage-video-io-storage",
+      "name": "vss-manage-video-io-storage",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-query-analytics",
+      "name": "vss-query-analytics",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-search-archive",
+      "name": "vss-search-archive",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-setup-behavior-analytics",
+      "name": "vss-setup-behavior-analytics",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-setup-video-analytics-api",
+      "name": "vss-setup-video-analytics-api",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "nvidia/vss-summarize-video",
+      "name": "vss-summarize-video",
+      "category": "NVIDIA / Accelerated Computing",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "agent-browser",
       "name": "agent-browser",
       "category": "Local / Web Services",

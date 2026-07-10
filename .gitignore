@@ -47,6 +47,7 @@ bun.lockb
 # Temporary files
 tmp/
 temp/
+.relay-install-check/
 
 
 

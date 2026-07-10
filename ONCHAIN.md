@@ -4,7 +4,7 @@ How the Skill Hub catalog becomes permanent (Arweave) and verifiable (Solana SVM
 
 ## The Idea
 
-Every build of the hub produces a cryptographic commitment to all 240 skills:
+Every build of the hub produces a cryptographic commitment to all catalog skills:
 
 ```
 skill files ──sha256──▶ bundleHash (per skill)
@@ -36,7 +36,7 @@ npm run publish:onchain -- --execute --devnet # …or rehearse on devnet (free I
 2. **Solana anchor** — a memo transaction (program `MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr`) records:
 
    ```
-   skillhub:v1|skills:240|merkle:sha256-…|catalog:sha256-…|ar:<registryTx>,<catalogTx>
+   skillhub:v1|skills:<N>|merkle:sha256-…|catalog:sha256-…|ar:<registryTx>,<catalogTx>
    ```
 
    One transaction, a few thousand lamports, permanently timestamped by the cluster.

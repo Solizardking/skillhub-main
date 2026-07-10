@@ -22,6 +22,9 @@
     "smoke": "node scripts/smoke-test-skills.mjs",
     "test:premiere": "node scripts/test-premiere-skills.mjs",
     "publish:onchain": "node scripts/publish-onchain.mjs",
+    "relay": "node scripts/skill-relay.mjs",
+    "relay:watch": "node scripts/skill-relay.mjs --watch",
+    "relay:push": "node scripts/skill-relay.mjs --commit --push",
     "test": "node scripts/build-catalog.mjs --check && node scripts/smoke-test-skills.mjs && node bin/skills.mjs list --json >/dev/null && node scripts/test-premiere-skills.mjs"
   },
   "engines": {

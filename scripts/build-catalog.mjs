@@ -22,6 +22,7 @@ const CATEGORY_ORDER = [
   "Google / Ads",
   "Google / Analytics",
   "Google / Cloud",
+  "NVIDIA / Accelerated Computing",
   "Local / Web Services",
   "Media / Devices",
   "Productivity / Messaging",
@@ -232,6 +233,10 @@ function categorize(skill, existingCategories) {
     return "Google / Cloud";
   }
 
+  if (skill.slug.startsWith("nvidia/")) {
+    return "NVIDIA / Accelerated Computing";
+  }
+
   const text = `${skill.slug} ${skill.name} ${skill.description}`.toLowerCase();
 
   if (/\b(solana|anchor|pinocchio|codama|litesvm|mollusk|surfpool|magicblock|wallet|token|crypto|blockchain|dflow|kalshi|phantom|dex|pump|clawd|vulcan|imperial|phoenix|perp|tee|zk|gateway|swarm|light protocol|zkcompression|compressed)\b/.test(text)) {
@@ -407,6 +412,7 @@ const CATEGORY_META = {
   "Google / Ads": { emoji: "📣", tagline: "Google Ads APIs, campaigns, and reporting", anchor: "-google--ads" },
   "Google / Analytics": { emoji: "📈", tagline: "GA4 data APIs and measurement", anchor: "-google--analytics" },
   "Google / Cloud": { emoji: "☁️", tagline: "GCP, GKE, BigQuery, Vertex, and friends", anchor: "️-google--cloud" },
+  "NVIDIA / Accelerated Computing": { emoji: "🟩", tagline: "CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, and GPU stacks", anchor: "-nvidia--accelerated-computing" },
   "Local / Web Services": { emoji: "📍", tagline: "Weather, places, food, and everyday web services", anchor: "-local--web-services" },
   "Media / Devices": { emoji: "🎬", tagline: "Audio, video, images, TTS, cameras, and gadgets", anchor: "-media--devices" },
   "Productivity / Messaging": { emoji: "💬", tagline: "Notes, tasks, chat, and mail on autopilot", anchor: "-productivity--messaging" },
@@ -428,6 +434,7 @@ function renderReadme(catalog) {
   const maxCount = Math.max(...byCategory.map(([, skills]) => skills.length));
   const bySourceFamily = groupBySourceFamily(catalog);
   const googleCount = catalog.filter((skill) => skill.slug.startsWith("google/")).length;
+  const nvidiaCount = catalog.filter((skill) => skill.slug.startsWith("nvidia/")).length;
   const featuredRuns = [
     // Premiere offerings — lead the hub with these families.
     ["🎯 Engineering mode", "ship software the Matt Pocock way: TDD, triage, implement, architecture, specs, tickets", catalog.filter((skill) => skill.slug.startsWith("engineering/"))],
@@ -439,7 +446,8 @@ function renderReadme(catalog) {
     ["📦 Skill authoring mode", "write, distribute, and push agent skills across every client", catalog.filter((skill) => skill.slug.startsWith("skill-authoring/"))],
     ["⚙️ Ops & setup mode", "readonly DB roles, cyber audit, Safe Browsing, custom models, setup help", catalog.filter((skill) => skill.slug.startsWith("ops-and-setup/"))],
     ["🧪 Misc / in-progress / personal", "guardrails, shoehorn, pre-commit, deep modules, vault, article edit, drafts", catalog.filter((skill) => skill.slug.startsWith("misc/") || skill.slug.startsWith("in-progress/") || skill.slug.startsWith("personal/") || skill.slug.startsWith("deprecated/"))],
-    // Legacy Solana trading loadouts remain available after premiere families.
+    // Vendor + trading loadouts.
+    ["🟩 NVIDIA mode", "CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2, Dynamo", catalog.filter((skill) => skill.slug.startsWith("nvidia/"))],
     ["🌞 Helius mode", "Helius infra: Sender, DAS, LaserStream + Jupiter, DFlow, OKX, Phantom, SVM internals", catalog.filter((skill) => skill.slug.startsWith("helius-skills/"))],
     ["🎰 Pump.fun mode", "launch → curve → fees → security, the whole token lifecycle", catalog.filter((skill) => skill.slug === "pumpfun" || skill.slug.startsWith("pump-") || skill.slug.startsWith("pumpfun-"))],
     ["🌋 Vulcan / Phoenix mode", "perps trading: TA, grids, TWAP, TP/SL, risk", catalog.filter((skill) => skill.slug === "vulcan" || skill.slug.startsWith("vulcan-"))],
@@ -454,9 +462,9 @@ function renderReadme(catalog) {
     '<img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />',
     "",
     `[![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)`,
-    `![Skills](https://img.shields.io/badge/skills-${catalog.length}-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-${byCategory.length}-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-${googleCount}_skills-4285F4?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)`,
+    `![Skills](https://img.shields.io/badge/skills-${catalog.length}-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-${byCategory.length}-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-${googleCount}_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-${nvidiaCount}_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)`,
     "",
-    `**${catalog.length} installable agent skills** — including a **${googleCount}-skill Google integration** (Ads, Analytics, Cloud, GKE, BigQuery, Vertex, Gemini, and the Well-Architected Framework). Every one is a \`SKILL.md\` playbook your agent can pull off the shelf —`,
+    `**${catalog.length} installable agent skills** — including a **${googleCount}-skill Google integration** and a **${nvidiaCount}-skill NVIDIA stack** (CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2). Every one is a \`SKILL.md\` playbook your agent can pull off the shelf —`,
     "hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.",
     "",
     "*Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️",
@@ -467,7 +475,7 @@ function renderReadme(catalog) {
     "",
     "## 🗺️ Choose Your Quest",
     "",
-    "Nine zones. Every skill lives in exactly one. Click a zone to jump to its catalog.",
+    `${numberWord(byCategory.length)} zones. Every skill lives in exactly one. Click a zone to jump to its catalog.`,
     "",
     "| Zone | Skills | Power level | What lives here |",
     "|---|---:|---|---|",
@@ -486,17 +494,18 @@ function renderReadme(catalog) {
     "",
     "| Layer | What it contains | Main paths |",
     "|---|---|---|",
-    `| Skill sources | ${catalog.length} canonical skills. Each slug is the directory path (relative to \`skills/\`) that owns a \`SKILL.md\`. | \`skills/*/SKILL.md\`, \`skills/google/**/SKILL.md\`, \`skills/anthropic-skills/*/SKILL.md\`, plus optional \`references/\`, \`scripts/\`, \`assets/\`, and \`agents/\` folders |`,
+    `| Skill sources | ${catalog.length} canonical skills. Each slug is the directory path (relative to \`skills/\`) that owns a \`SKILL.md\`. | \`skills/*/SKILL.md\`, \`skills/google/**/SKILL.md\`, \`skills/nvidia/*/SKILL.md\`, \`skills/anthropic-skills/*/SKILL.md\`, plus optional \`references/\`, \`scripts/\`, \`assets/\`, and \`agents/\` folders |`,
     "| Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |",
     "| Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |",
     "| Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |",
     "| Verification and on-chain flow | Per-skill bundle hashes, Merkle leaves, registry manifests, Arweave upload planning, and Solana memo anchoring. | [`public/.well-known/onchain-skill-registry.json`](./public/.well-known/onchain-skill-registry.json), [`ONCHAIN.md`](./ONCHAIN.md), [`scripts/publish-onchain.mjs`](./scripts/publish-onchain.mjs), [`onchain/`](./onchain/) |",
+    "| Skill relay | Watches new/changed skills, rebuilds the catalog, commits to GitHub, deploys the hub site, and optionally re-anchors on-chain. | [`scripts/skill-relay.mjs`](./scripts/skill-relay.mjs), [`.github/workflows/skill-relay.yml`](./.github/workflows/skill-relay.yml) |",
     "| Scanner | Local integrity/risk scanner plus a live, interactive verification dashboard: real-time verification/risk/category charts, keyboard-navigable skill list (`/` search, arrow keys), shareable deep links, and one-click install/hash/link copy. Rebuilds from `scanner/results/scan-results.json` on every `npm run scanner:scan`. | [`scanner/bin/scan-skills.mjs`](./scanner/bin/scan-skills.mjs), [`scanner/results/`](./scanner/results/), [`scanner/public/index.html`](./scanner/public/index.html) |",
     "| Deployment | Static-hosting configs that run the catalog build and publish `public/`. | [`vercel.json`](./vercel.json), [`render.yaml`](./render.yaml) |",
     "",
     "### Source Families",
     "",
-    "This is the same 240-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.",
+    `This is the same ${catalog.length}-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.`,
     "",
     "| Source family | Skills | What it covers |",
     "|---|---:|---|",
@@ -536,9 +545,12 @@ function renderReadme(catalog) {
     "npx github:Solizardking/skills install research-and-web/deep-research research-and-web/browser-harness skill-authoring/effective-agent-skills ops-and-setup/setup-help",
     "```",
     "",
-    "Also available — Solana trading and infra stacks:",
+    "Also available — NVIDIA, Google, and Solana stacks:",
     "",
     "```bash",
+    "# NVIDIA accelerated computing (Jetson, DeepStream, NeMo, cuOpt, CUDA-Q)",
+    "npx github:Solizardking/skills install nvidia/jetson-quick-start nvidia/deepstream-dev nvidia/cudaq-guide nvidia/aiq-deploy nvidia/cuopt-developer",
+    "",
     "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock",
     "npx github:Solizardking/skills install pumpfun pump-token-lifecycle pump-bonding-curve pump-security",
     "npx github:Solizardking/skills install compressed-pda compressed-token zk zkrouter",
@@ -555,7 +567,7 @@ function renderReadme(catalog) {
     "",
     "## 🌟 Featured Runs",
     "",
-    "**Premiere loadouts first** — engineering, orchestration, productivity, design, research, authoring, and ops. Solana trading runs follow:",
+    "**Premiere loadouts first** — engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:",
     "",
   );
 
@@ -633,9 +645,31 @@ function renderReadme(catalog) {
     "## 🔄 How It Stays Fresh",
     "",
     "- Everything you just read is **generated** by `npm run build:catalog` — README, banner SVGs, catalog JSON, the public site, and the Merkle registry all rebuild from the skills on disk.",
-    "- Nested skills are discovered recursively (`google/ads`, `google/analytics`, `google/cloud` publish through the same pipeline).",
+    "- Nested skills are discovered recursively (`google/*`, `nvidia/*`, and friends publish through the same pipeline).",
     `- The production mirror is ${SITE_URL} — same build output, served statically.`,
     "- Add a skill folder with a `SKILL.md` under `skills/`, rebuild, and it appears everywhere: README, JSON API, site, and the next on-chain anchor.",
+    "",
+    "### Realtime skill relay",
+    "",
+    "Drop a new skill under `skills/` (or update an existing one) and the relay keeps GitHub + the site in sync:",
+    "",
+    "```bash",
+    "npm run relay              # one-shot: build + smoke + sample install check",
+    "npm run relay:watch        # poll skills/ and rebuild whenever something changes",
+    "npm run relay:push         # rebuild, commit generated artifacts, git push",
+    "npm run relay -- --onchain --execute --devnet   # also re-anchor Arweave × Solana",
+    "```",
+    "",
+    "CI path: [`.github/workflows/skill-relay.yml`](./.github/workflows/skill-relay.yml) runs on every push to `skills/**`, on `workflow_dispatch`, and on `repository_dispatch` type `skill-ingest` (for bot/webhook ingest). Vercel rebuilds `public/` from the same catalog build on deploy.",
+    "",
+    "External ingest webhook shape:",
+    "",
+    "```bash",
+    "curl -X POST -H \"Accept: application/vnd.github+json\" \\",
+    "  -H \"Authorization: Bearer $GH_TOKEN\" \\",
+    "  https://api.github.com/repos/Solizardking/skills/dispatches \\",
+    "  -d '{\"event_type\":\"skill-ingest\",\"client_payload\":{\"publish_onchain\":false}}'",
+    "```",
     "",
     '<div align="center">',
     "",
@@ -653,6 +687,7 @@ function renderHub(catalog) {
   const maxCount = Math.max(...byCategory.map(([, skills]) => skills.length));
   const categoryCounts = Object.fromEntries(byCategory.map(([category, skills]) => [category, skills.length]));
   const googleCount = (categoryCounts["Google / Ads"] || 0) + (categoryCounts["Google / Analytics"] || 0) + (categoryCounts["Google / Cloud"] || 0);
+  const nvidiaCount = categoryCounts["NVIDIA / Accelerated Computing"] || 0;
   const solanaCount = categoryCounts["Solana / Blockchain"] || 0;
 
   const lines = [
@@ -667,6 +702,7 @@ function renderHub(catalog) {
     `| Total skills | ${catalog.length} |`,
     `| Categories | ${byCategory.length} |`,
     `| Google skills | ${googleCount} |`,
+    `| NVIDIA skills | ${nvidiaCount} |`,
     `| Solana / blockchain skills | ${solanaCount} |`,
     "| Public catalog | `/skills` or `public/index.html` |",
     "| Scanner dashboard | Live, interactive verification/risk/category charts at `/scanner` or `npm run scanner:serve` |",
@@ -692,9 +728,10 @@ function renderHub(catalog) {
     "npx github:Solizardking/skills install misc/setup-pre-commit in-progress/wizard personal/obsidian-vault deprecated/qa",
     "```",
     "",
-    "Also available — Solana / Google stacks:",
+    "Also available — NVIDIA / Solana / Google stacks:",
     "",
     "```bash",
+    "npx github:Solizardking/skills install nvidia/jetson-quick-start nvidia/deepstream-dev nvidia/cudaq-guide nvidia/aiq-deploy nvidia/cuopt-developer --force",
     "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock --force",
     "npx github:Solizardking/skills install pumpfun pump-token-lifecycle pump-bonding-curve pump-fee-sharing pump-claims-readonly pump-security",
     "npx github:Solizardking/skills install ask-mcp compressed-pda compressed-token solana-redpill-verifier solana-rent-free-dev testing zk zkrouter",
@@ -876,6 +913,7 @@ function sourceFamily(slug) {
   if (slug.startsWith("personal/")) return "personal/*";
   if (slug.startsWith("deprecated/")) return "deprecated/*";
   if (slug.startsWith("google/")) return "google/*";
+  if (slug.startsWith("nvidia/")) return "nvidia/*";
   if (slug.startsWith("anthropic-skills/")) return "anthropic-skills/*";
   if (slug === "pumpfun" || slug.startsWith("pump-") || slug.startsWith("pumpfun-")) return "pump/pumpfun/*";
   if (slug === "vulcan" || slug.startsWith("vulcan-")) return "vulcan/*";
@@ -903,6 +941,7 @@ function sourceFamilyDescription(family) {
     "deprecated/*": "Premiere-listed deprecated skills kept installable for continuity (QA, design-an-interface, refactor plans).",
     "single/root skills": "One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows.",
     "google/*": "Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills.",
+    "nvidia/*": "NVIDIA accelerated computing: CUDA/cuDF, Jetson BSP, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2, Dynamo, and digital health.",
     "pump/pumpfun/*": "Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows.",
     "vulcan/*": "Vulcan/Phoenix perps trading skills for onboarding, market intel, execution, grids, TWAP, TP/SL, margin, and risk.",
     "anthropic-skills/*": "Imported Anthropic-format skills for documents, spreadsheets, design, web apps, MCP, artifacts, and skill creation.",
@@ -949,6 +988,7 @@ function categoryDescription(category) {
     "Google / Ads": "Google Ads and mobile ads workflows for agent-assisted implementation.",
     "Google / Analytics": "Google Analytics account, property, and reporting workflows.",
     "Google / Cloud": "Google Cloud deployment, operations, infrastructure, and AI platform skills.",
+    "NVIDIA / Accelerated Computing": "NVIDIA GPU stacks: CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2, and Dynamo.",
     "Local / Web Services": "Local services, places, orders, and weather workflows.",
     "Media / Devices": "Media generation, device control, transcription, and visual processing skills.",
     "Productivity / Messaging": "Notes, messaging, workspace, and personal productivity integrations.",
@@ -956,6 +996,15 @@ function categoryDescription(category) {
     "Utilities": "General utility skills for local tools and everyday agent operations.",
   };
   return descriptions[category] || "Repo-local agent skills.";
+}
+
+function numberWord(n) {
+  const words = {
+    1: "One", 2: "Two", 3: "Three", 4: "Four", 5: "Five",
+    6: "Six", 7: "Seven", 8: "Eight", 9: "Nine", 10: "Ten",
+    11: "Eleven", 12: "Twelve",
+  };
+  return words[n] || String(n);
 }
 
 function getSkillBundleFiles(files, slug) {

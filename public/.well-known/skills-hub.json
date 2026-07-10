@@ -2,12 +2,13 @@
   "name": "Onchain AI Skill Hub",
   "url": "https://skills.onchainai.fund",
   "generatedAt": "1970-01-01T00:00:00.000Z",
-  "totalSkills": 328,
+  "totalSkills": 557,
   "categories": {
     "Dev Tools / Agents": 60,
     "Google / Ads": 11,
     "Google / Analytics": 2,
     "Google / Cloud": 56,
+    "NVIDIA / Accelerated Computing": 229,
     "Local / Web Services": 9,
     "Media / Devices": 23,
     "Productivity / Messaging": 23,
@@ -32,8 +33,8 @@
   "verification": {
     "chain": "solana",
     "status": "anchor-ready",
-    "merkleRoot": "sha256-f28a5c874212378a7304d73873a5080589266f713c5347c6d05f513566456974",
-    "catalogHash": "sha256-7d702c514042da14ac8323fcd47331590d14eb029ed8b87d621cf12a545b1e5d"
+    "merkleRoot": "sha256-95a3f2f228015c5af2c20e69b4b59cf2747b18a837f4c9424caaea296081aa34",
+    "catalogHash": "sha256-4b29ca40c6918a8ad174091f166f97d62229793bb2161b17294e26a0e1f47f5c"
   },
   "monetization": {
     "onchain": "Solana Pay tip URI per skill card",
