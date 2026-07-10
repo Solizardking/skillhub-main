@@ -41,7 +41,7 @@ export SKILLHUB_PUBLISH_FEE_LAMPORTS=10000000   # 0.01 SOL
 npm run relay:upload
 ```
 
-Open **http://127.0.0.1:8787/** (or `/publish`).
+Open **http://127.0.0.1:8787/** (or production **https://skills.x402.wtf/publish**).
 
 1. Paste or drop a skill (`SKILL.md` required).
 2. Click **Scan skill**.
@@ -117,8 +117,20 @@ Without `SOLANA_KEYPAIR`, payment still verifies and the package is stored as
 - **API**: run `scripts/upload-relay-server.mjs` as a long-lived service (Render web service, Fly, Railway, etc.). Point the UI at it with `?api=https://your-relay.example` if the static site and API are on different hosts.
 - Catalog-wide re-anchor remains `npm run publish:onchain` / `npm run relay -- --onchain` (see [ONCHAIN.md](./ONCHAIN.md), [RELAY.md](./RELAY.md)).
 
+## Public ledger (GitHub-safe)
+
+```bash
+npm run ledger:export
+```
+
+Writes redacted `onchain/public-ledger.json` and `public/api/submissions.json`.
+Never includes private keys. See [onchain/README.md](./onchain/README.md).
+
 ## Related
 
 - Scanner hub: `/scanner`
-- Catalog: `/`
+- Catalog: https://skills.x402.wtf
+- Submissions UI: https://skills.x402.wtf/submissions
+- Cheshire: https://cheshireterminal.ai/skills
 - Protocol: [ONCHAIN.md](./ONCHAIN.md)
+- Domains: [DOMAINS.md](./DOMAINS.md)

@@ -35,8 +35,11 @@ npm run publish:onchain -- --execute --devnet # …or rehearse on devnet (free I
 npm run relay:upload           # browser UI + API: upload → scanner → wallet fee → package/anchor
 ```
 
-User-submitted skills land in `onchain/submissions/<jobId>/` with optional Irys package and
-`skillhub:skill:v1|…` memo. Full docs: [UPLOAD.md](./UPLOAD.md).
+User-submitted skills land in `onchain/submissions/<jobId>/` (private, gitignored) with optional
+Irys package and `skillhub:skill:v1|…` memo. A **redacted** ledger is exported to
+`onchain/public-ledger.json` and `public/api/submissions.json` for GitHub + https://skills.x402.wtf/submissions.
+
+Full docs: [UPLOAD.md](./UPLOAD.md) · [onchain/README.md](./onchain/README.md) · [DOMAINS.md](./DOMAINS.md).
 
 ### Step 2/3 in detail
 

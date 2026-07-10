@@ -11,13 +11,19 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const SKILLS_ROOT = path.join(ROOT, "skills");
 const CHECK = process.argv.includes("--check");
-const SITE_URL = "https://skills.onchainai.fund";
+const SITE_URL = process.env.SKILLHUB_SITE_URL || "https://skills.x402.wtf";
+const SITE_ALIASES = [
+  "https://skills.x402.wtf",
+  "https://skills.onchainai.fund",
+  "https://cheshireterminal.ai/skills",
+];
 const DEFAULT_PAYMENT_NETWORK = process.env.SKILLHUB_PAYMENT_NETWORK || "mainnet";
 const DEFAULT_MERCHANT_NAME = process.env.SKILLHUB_MERCHANT_NAME || "Skill Hub";
 const DEFAULT_MERCHANT_WALLET = process.env.SKILLHUB_MERCHANT_WALLET || "";
 const DEFAULT_OFFCHAIN_CHECKOUT_URL = process.env.SKILLHUB_OFFCHAIN_CHECKOUT_URL || "";
 
 const CATEGORY_ORDER = [
+  "Solana / Blockchain", // featured first — primary Skill Hub surface
   "Dev Tools / Agents",
   "Google / Ads",
   "Google / Analytics",
@@ -26,7 +32,6 @@ const CATEGORY_ORDER = [
   "Local / Web Services",
   "Media / Devices",
   "Productivity / Messaging",
-  "Solana / Blockchain",
   "Utilities",
 ];
 
@@ -62,6 +67,8 @@ const CATEGORY_OVERRIDES = new Map([
   ["testing", "Solana / Blockchain"],
   ["zk", "Solana / Blockchain"],
   ["zkrouter", "Solana / Blockchain"],
+  ["solana-common-errors", "Solana / Blockchain"],
+  ["solana-dev", "Solana / Blockchain"],
 ]);
 
 async function main() {
@@ -295,13 +302,15 @@ async function renderPublic(skills) {
   files.set("api/monetization.json", `${JSON.stringify(monetization, null, 2)}\n`);
   files.set("integrations/commerce-kit-payment-button.tsx", renderCommerceKitPaymentButton());
   files.set("CNAME", `${new URL(SITE_URL).hostname}\n`);
-  files.set("robots.txt", "User-agent: *\nAllow: /\n");
+  files.set("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);
   files.set("sitemap.xml", renderSitemap(catalog));
   files.set(".nojekyll", "");
   files.set("favicon.svg", renderFavicon());
   files.set("index.html", renderIndexHtml(catalog));
   files.set("skills/index.html", renderIndexHtml(catalog));
   await addScannerDashboard(files);
+  await addHubSurfacePages(files);
+  await addPublicLedgerArtifacts(files);
 
   const verifications = [];
 
@@ -349,6 +358,63 @@ async function addScannerDashboard(files) {
     const absolutePath = path.join(scannerPublicDir, file);
     if (!existsSync(absolutePath)) continue;
     files.set(`scanner/${file}`, await readFile(absolutePath));
+  }
+}
+
+/** Durable hub pages (survive full public/ wipe). Prefer site/ then existing public/. */
+async function addHubSurfacePages(files) {
+  const pages = [
+    ["publish/index.html", ["site/publish/index.html", "public/publish/index.html"]],
+    ["submissions/index.html", ["site/submissions/index.html", "public/submissions/index.html"]],
+  ];
+  for (const [outPath, candidates] of pages) {
+    for (const rel of candidates) {
+      const absolutePath = path.join(ROOT, rel);
+      if (!existsSync(absolutePath)) continue;
+      let html = await readFile(absolutePath, "utf8");
+      html = html
+        .replaceAll("https://skills.onchainai.fund", SITE_URL)
+        .replaceAll("skills.onchainai.fund", new URL(SITE_URL).hostname);
+      files.set(outPath, html);
+      break;
+    }
+  }
+}
+
+async function addPublicLedgerArtifacts(files) {
+  const ledgerPath = path.join(ROOT, "onchain", "public-ledger.json");
+  if (existsSync(ledgerPath)) {
+    const raw = await readFile(ledgerPath, "utf8");
+    files.set("api/submissions.json", raw);
+    try {
+      const ledger = JSON.parse(raw);
+      files.set(
+        "api/onchain.json",
+        `${JSON.stringify({
+          schemaVersion: "skillhub-onchain-summary/v1",
+          generatedAt: new Date().toISOString(),
+          hubs: ledger.hubs || { primary: SITE_URL, aliases: SITE_ALIASES },
+          catalogAnchor: ledger.catalogAnchor || null,
+          submissionCount: ledger.count || 0,
+          submissionsUrl: "/api/submissions.json",
+          registryUrl: "/.well-known/onchain-skill-registry.json",
+        }, null, 2)}\n`,
+      );
+    } catch {
+      // ignore malformed ledger
+    }
+  } else {
+    files.set(
+      "api/submissions.json",
+      `${JSON.stringify({
+        schemaVersion: "skillhub-public-ledger/v1",
+        generatedAt: new Date().toISOString(),
+        security: { redacted: true, policy: ["No private keys or secrets"] },
+        hubs: { primary: SITE_URL, aliases: SITE_ALIASES },
+        count: 0,
+        submissions: [],
+      }, null, 2)}\n`,
+    );
   }
 }
 
@@ -1116,11 +1182,22 @@ function toBuffer(value) {
 
 function renderSiteManifest(catalog, registry) {
   return {
-    name: "Onchain AI Skill Hub",
+    name: "Skill Hub — skills.x402.wtf",
     url: SITE_URL,
+    aliases: SITE_ALIASES,
+    cheshire: {
+      skills: "https://cheshireterminal.ai/skills",
+      skillsStore: "https://cheshireterminal.ai/skills-store",
+    },
     generatedAt: "1970-01-01T00:00:00.000Z",
     totalSkills: catalog.length,
     categories: Object.fromEntries(groupByCategory(catalog).map(([category, skills]) => [category, skills.length])),
+    featured: {
+      solana: catalog.filter((s) => s.category === "Solana / Blockchain").map((s) => s.slug).slice(0, 24),
+      prioritySkills: ["solana-common-errors", "solana-dev", "solana-clawd"].filter((slug) =>
+        catalog.some((s) => s.slug === slug || s.slug.endsWith(`/${slug}`)),
+      ),
+    },
     endpoints: {
       ui: `${SITE_URL}/skills`,
       catalog: `${SITE_URL}/api/skills.json`,
@@ -1131,6 +1208,10 @@ function renderSiteManifest(catalog, registry) {
       skillSource: `${SITE_URL}/api/skills/{skill}/SKILL.md`,
       skillVerification: `${SITE_URL}/api/skills/{skill}/verification.json`,
       onchainRegistry: `${SITE_URL}/.well-known/onchain-skill-registry.json`,
+      submissions: `${SITE_URL}/api/submissions.json`,
+      onchainSummary: `${SITE_URL}/api/onchain.json`,
+      publish: `${SITE_URL}/publish`,
+      submissionsUi: `${SITE_URL}/submissions`,
     },
     skillsSh: {
       install: "npx skills add Solizardking/skills",
@@ -2062,9 +2143,12 @@ function renderIndexHtml(catalog) {
       </div>
       <nav class="actions" aria-label="Hub links">
         <a class="tool-link primary" href="/skills">Catalog</a>
+        <a class="tool-link" href="/publish">Publish</a>
+        <a class="tool-link" href="/submissions">Submissions</a>
         <a class="tool-link" id="scannerLink" href="/scanner">Scanner</a>
         <a class="tool-link" href="/api/skills.json">API</a>
         <a class="tool-link" href="/.well-known/onchain-skill-registry.json">Registry</a>
+        <a class="tool-link" href="https://cheshireterminal.ai/skills" target="_blank" rel="noopener">Cheshire</a>
       </nav>
     </header>
 

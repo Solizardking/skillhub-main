@@ -25,6 +25,7 @@
 
 import { createServer } from "node:http";
 import { randomUUID, createHash } from "node:crypto";
+import { spawn } from "node:child_process";
 import { mkdir, readFile, writeFile, readdir, stat } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
@@ -231,6 +232,7 @@ async function handleUpload(res, body) {
 
   await saveJob(job);
   jobs.set(jobId, job);
+  await exportPublicLedgerSafe();
 
   console.log(`[upload] ${jobId} slug=${scan.slug} status=${job.status} risk=${scan.risk.level}`);
 
@@ -305,6 +307,7 @@ async function handleConfirm(res, jobId, body) {
     }
 
     await saveJob(job);
+    await exportPublicLedgerSafe();
     console.log(`[publish] ${jobId} status=${job.status}`);
     return sendJson(res, 200, { job: publicJob(job) });
   } catch (error) {
@@ -314,11 +317,31 @@ async function handleConfirm(res, jobId, body) {
     };
     job.updatedAt = new Date().toISOString();
     await saveJob(job);
+    await exportPublicLedgerSafe();
     return sendJson(res, 500, {
       error: `Payment verified but publish failed: ${error.message}`,
       job: publicJob(job),
     });
   }
+}
+
+function exportPublicLedgerSafe() {
+  return new Promise((resolve) => {
+    const child = spawn(process.execPath, [path.join(ROOT, "scripts", "export-public-ledger.mjs")], {
+      cwd: ROOT,
+      stdio: ["ignore", "pipe", "pipe"],
+    });
+    let err = "";
+    child.stderr.on("data", (d) => { err += d; });
+    child.on("close", (code) => {
+      if (code !== 0) console.warn(`[ledger] export exit ${code}: ${err.slice(0, 300)}`);
+      resolve();
+    });
+    child.on("error", (error) => {
+      console.warn(`[ledger] export failed: ${error.message}`);
+      resolve();
+    });
+  });
 }
 
 function materializeFiles(files) {

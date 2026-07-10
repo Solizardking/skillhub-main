@@ -23,6 +23,18 @@
     {
       "source": "/publish",
       "destination": "/publish/index.html"
+    },
+    {
+      "source": "/submissions",
+      "destination": "/submissions/index.html"
+    },
+    {
+      "source": "/api/submissions",
+      "destination": "/api/submissions.json"
+    },
+    {
+      "source": "/api/onchain",
+      "destination": "/api/onchain.json"
     }
   ],
   "headers": [

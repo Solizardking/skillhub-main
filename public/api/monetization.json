@@ -21,6 +21,1332 @@
   },
   "skills": [
     {
+      "slug": "anthropic-skills/claude-api",
+      "name": "claude-api",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "ask-mcp",
+      "name": "ask-mcp",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "cheshire-terminal",
+      "name": "cheshire-terminal",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "clawd-agent-launchpad",
+      "name": "clawd-agent-launchpad",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "clawd-skills-installer",
+      "name": "clawd-skills-installer",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "clawd-token-ops",
+      "name": "clawd-token-ops",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "clawd-trading-terminal",
+      "name": "clawd-trading-terminal",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "clawdex",
+      "name": "clawdex",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "cloudflare-one",
+      "name": "cloudflare-one",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "coding-agent",
+      "name": "coding-agent",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "compressed-pda",
+      "name": "compressed-pda",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "compressed-token",
+      "name": "compressed-token",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dex-screener-scanner",
+      "name": "dex-screener-scanner",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dflow-docs",
+      "name": "dflow-docs",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dflow-kalshi-market-data",
+      "name": "dflow-kalshi-market-data",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dflow-kalshi-market-scanner",
+      "name": "dflow-kalshi-market-scanner",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dflow-kalshi-portfolio",
+      "name": "dflow-kalshi-portfolio",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dflow-kalshi-trading",
+      "name": "dflow-kalshi-trading",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dflow-phantom-connect",
+      "name": "dflow-phantom-connect",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dflow-platform-fees",
+      "name": "dflow-platform-fees",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dflow-proof-kyc",
+      "name": "dflow-proof-kyc",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dflow-spot-trading",
+      "name": "dflow-spot-trading",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "gateway-node-ops",
+      "name": "gateway-node-ops",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "helius-skills/helius",
+      "name": "helius",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "helius-skills/helius-dflow",
+      "name": "helius-dflow",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "helius-skills/helius-jupiter",
+      "name": "helius-jupiter",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "helius-skills/helius-okx",
+      "name": "helius-okx",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "helius-skills/helius-phantom",
+      "name": "helius-phantom",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "helius-skills/svm",
+      "name": "svm",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial",
+      "name": "imperial",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-execution-modes",
+      "name": "imperial-execution-modes",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-grid-trading",
+      "name": "imperial-grid-trading",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-margin-operations",
+      "name": "imperial-margin-operations",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-market-intel",
+      "name": "imperial-market-intel",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-portfolio-intel",
+      "name": "imperial-portfolio-intel",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-position-management",
+      "name": "imperial-position-management",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-risk-management",
+      "name": "imperial-risk-management",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-skills-index",
+      "name": "imperial-skills-index",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-tpsl-management",
+      "name": "imperial-tpsl-management",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-trade-execution",
+      "name": "imperial-trade-execution",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "imperial-twap-execution",
+      "name": "imperial-twap-execution",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "magicblock",
+      "name": "magicblock",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "model-usage",
+      "name": "model-usage",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "openai-image-gen",
+      "name": "openai-image-gen",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pay",
+      "name": "pay",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "phantom-wallet-mcp",
+      "name": "phantom-wallet-mcp",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-admin-ops",
+      "name": "pump-admin-ops",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-ai-agents",
+      "name": "pump-ai-agents",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-bonding-curve",
+      "name": "pump-bonding-curve",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-build-release",
+      "name": "pump-build-release",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-claims-readonly",
+      "name": "pump-claims-readonly",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-fee-sharing",
+      "name": "pump-fee-sharing",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-fee-system",
+      "name": "pump-fee-system",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-mcp-server",
+      "name": "pump-mcp-server",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-rust-vanity",
+      "name": "pump-rust-vanity",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-sdk-core",
+      "name": "pump-sdk-core",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-security",
+      "name": "pump-security",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-shell-scripts",
+      "name": "pump-shell-scripts",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-solana-architecture",
+      "name": "pump-solana-architecture",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-solana-dev",
+      "name": "pump-solana-dev",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-solana-wallet",
+      "name": "pump-solana-wallet",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-testing",
+      "name": "pump-testing",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-token-incentives",
+      "name": "pump-token-incentives",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-token-lifecycle",
+      "name": "pump-token-lifecycle",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pump-ts-vanity",
+      "name": "pump-ts-vanity",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pumpfun",
+      "name": "pumpfun",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pumpfun-analytics",
+      "name": "pumpfun-analytics",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pumpfun-fees",
+      "name": "pumpfun-fees",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pumpfun-launcher",
+      "name": "pumpfun-launcher",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pumpfun-trading",
+      "name": "pumpfun-trading",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "solana-clawd",
+      "name": "solana-clawd",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "solana-clawd-agentic-commerce",
+      "name": "solana-clawd-agentic-commerce",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "solana-clawd-agents",
+      "name": "solana-clawd-agents",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "solana-common-errors",
+      "name": "solana-common-errors",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "solana-dev",
+      "name": "solana-dev",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "solana-formal-verification",
+      "name": "qedgen",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "solana-ralphy-skill",
+      "name": "solana-ralphy-skill",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "solana-redpill-verifier",
+      "name": "solana-redpill-verifier",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "solana-rent-free-dev",
+      "name": "solana-rent-free-dev",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "sponge-wallet",
+      "name": "sponge-wallet",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "swarm-orchestrator",
+      "name": "swarm-orchestrator",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "testing",
+      "name": "testing",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan",
+      "name": "vulcan",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-error-recovery",
+      "name": "vulcan-error-recovery",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-execution-modes",
+      "name": "vulcan-execution-modes",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-grid-trading",
+      "name": "vulcan-grid-trading",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-lot-size-calculator",
+      "name": "vulcan-lot-size-calculator",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-margin-operations",
+      "name": "vulcan-margin-operations",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-market-intel",
+      "name": "vulcan-market-intel",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-onboarding",
+      "name": "vulcan-onboarding",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-portfolio-intel",
+      "name": "vulcan-portfolio-intel",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-position-management",
+      "name": "vulcan-position-management",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-quickstart",
+      "name": "vulcan-quickstart",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-risk-management",
+      "name": "vulcan-risk-management",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-skills-index",
+      "name": "vulcan-skills-index",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-ta-strategy",
+      "name": "vulcan-ta-strategy",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-technical-analysis",
+      "name": "vulcan-technical-analysis",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-tpsl-management",
+      "name": "vulcan-tpsl-management",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-trade-execution",
+      "name": "vulcan-trade-execution",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "vulcan-twap-execution",
+      "name": "vulcan-twap-execution",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "zk",
+      "name": "zk",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "zkrouter",
+      "name": "zkrouter",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "agent-desktop",
       "name": "agent-desktop",
       "category": "Dev Tools / Agents",
@@ -5380,1319 +6706,6 @@
       "slug": "wacli",
       "name": "wacli",
       "category": "Productivity / Messaging",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "anthropic-skills/claude-api",
-      "name": "claude-api",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "ask-mcp",
-      "name": "ask-mcp",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "cheshire-terminal",
-      "name": "cheshire-terminal",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "clawd-agent-launchpad",
-      "name": "clawd-agent-launchpad",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "clawd-skills-installer",
-      "name": "clawd-skills-installer",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "clawd-token-ops",
-      "name": "clawd-token-ops",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "clawd-trading-terminal",
-      "name": "clawd-trading-terminal",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "clawdex",
-      "name": "clawdex",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "cloudflare-one",
-      "name": "cloudflare-one",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "coding-agent",
-      "name": "coding-agent",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "compressed-pda",
-      "name": "compressed-pda",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "compressed-token",
-      "name": "compressed-token",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dex-screener-scanner",
-      "name": "dex-screener-scanner",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dflow-docs",
-      "name": "dflow-docs",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dflow-kalshi-market-data",
-      "name": "dflow-kalshi-market-data",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dflow-kalshi-market-scanner",
-      "name": "dflow-kalshi-market-scanner",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dflow-kalshi-portfolio",
-      "name": "dflow-kalshi-portfolio",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dflow-kalshi-trading",
-      "name": "dflow-kalshi-trading",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dflow-phantom-connect",
-      "name": "dflow-phantom-connect",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dflow-platform-fees",
-      "name": "dflow-platform-fees",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dflow-proof-kyc",
-      "name": "dflow-proof-kyc",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "dflow-spot-trading",
-      "name": "dflow-spot-trading",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "gateway-node-ops",
-      "name": "gateway-node-ops",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "helius-skills/helius",
-      "name": "helius",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "helius-skills/helius-dflow",
-      "name": "helius-dflow",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "helius-skills/helius-jupiter",
-      "name": "helius-jupiter",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "helius-skills/helius-okx",
-      "name": "helius-okx",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "helius-skills/helius-phantom",
-      "name": "helius-phantom",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "helius-skills/svm",
-      "name": "svm",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial",
-      "name": "imperial",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-execution-modes",
-      "name": "imperial-execution-modes",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-grid-trading",
-      "name": "imperial-grid-trading",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-margin-operations",
-      "name": "imperial-margin-operations",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-market-intel",
-      "name": "imperial-market-intel",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-portfolio-intel",
-      "name": "imperial-portfolio-intel",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-position-management",
-      "name": "imperial-position-management",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-risk-management",
-      "name": "imperial-risk-management",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-skills-index",
-      "name": "imperial-skills-index",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-tpsl-management",
-      "name": "imperial-tpsl-management",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-trade-execution",
-      "name": "imperial-trade-execution",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "imperial-twap-execution",
-      "name": "imperial-twap-execution",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "magicblock",
-      "name": "magicblock",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "model-usage",
-      "name": "model-usage",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "openai-image-gen",
-      "name": "openai-image-gen",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pay",
-      "name": "pay",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "phantom-wallet-mcp",
-      "name": "phantom-wallet-mcp",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-admin-ops",
-      "name": "pump-admin-ops",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-ai-agents",
-      "name": "pump-ai-agents",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-bonding-curve",
-      "name": "pump-bonding-curve",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-build-release",
-      "name": "pump-build-release",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-claims-readonly",
-      "name": "pump-claims-readonly",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-fee-sharing",
-      "name": "pump-fee-sharing",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-fee-system",
-      "name": "pump-fee-system",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-mcp-server",
-      "name": "pump-mcp-server",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-rust-vanity",
-      "name": "pump-rust-vanity",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-sdk-core",
-      "name": "pump-sdk-core",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-security",
-      "name": "pump-security",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-shell-scripts",
-      "name": "pump-shell-scripts",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-solana-architecture",
-      "name": "pump-solana-architecture",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-solana-dev",
-      "name": "pump-solana-dev",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-solana-wallet",
-      "name": "pump-solana-wallet",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-testing",
-      "name": "pump-testing",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-token-incentives",
-      "name": "pump-token-incentives",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-token-lifecycle",
-      "name": "pump-token-lifecycle",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pump-ts-vanity",
-      "name": "pump-ts-vanity",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pumpfun",
-      "name": "pumpfun",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pumpfun-analytics",
-      "name": "pumpfun-analytics",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pumpfun-fees",
-      "name": "pumpfun-fees",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pumpfun-launcher",
-      "name": "pumpfun-launcher",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "pumpfun-trading",
-      "name": "pumpfun-trading",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "solana-clawd",
-      "name": "solana-clawd",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "solana-clawd-agentic-commerce",
-      "name": "solana-clawd-agentic-commerce",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "solana-clawd-agents",
-      "name": "solana-clawd-agents",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "solana-dev",
-      "name": "solana-dev",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "solana-formal-verification",
-      "name": "qedgen",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "solana-ralphy-skill",
-      "name": "solana-ralphy-skill",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "solana-redpill-verifier",
-      "name": "solana-redpill-verifier",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "solana-rent-free-dev",
-      "name": "solana-rent-free-dev",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "sponge-wallet",
-      "name": "sponge-wallet",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "swarm-orchestrator",
-      "name": "swarm-orchestrator",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "testing",
-      "name": "testing",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan",
-      "name": "vulcan",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-error-recovery",
-      "name": "vulcan-error-recovery",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-execution-modes",
-      "name": "vulcan-execution-modes",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-grid-trading",
-      "name": "vulcan-grid-trading",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-lot-size-calculator",
-      "name": "vulcan-lot-size-calculator",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-margin-operations",
-      "name": "vulcan-margin-operations",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-market-intel",
-      "name": "vulcan-market-intel",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-onboarding",
-      "name": "vulcan-onboarding",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-portfolio-intel",
-      "name": "vulcan-portfolio-intel",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-position-management",
-      "name": "vulcan-position-management",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-quickstart",
-      "name": "vulcan-quickstart",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-risk-management",
-      "name": "vulcan-risk-management",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-skills-index",
-      "name": "vulcan-skills-index",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-ta-strategy",
-      "name": "vulcan-ta-strategy",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-technical-analysis",
-      "name": "vulcan-technical-analysis",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-tpsl-management",
-      "name": "vulcan-tpsl-management",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-trade-execution",
-      "name": "vulcan-trade-execution",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "vulcan-twap-execution",
-      "name": "vulcan-twap-execution",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "zk",
-      "name": "zk",
-      "category": "Solana / Blockchain",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "zkrouter",
-      "name": "zkrouter",
-      "category": "Solana / Blockchain",
       "mode": "tip",
       "merchant": {
         "name": "Skill Hub",

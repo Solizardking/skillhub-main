@@ -3,8 +3,8 @@
   "slug": "nvidia/earth2studio-create-diagnostic",
   "name": "earth2studio-create-diagnostic",
   "description": "Create Earth2Studio diagnostic model wrappers for single-step data transformations, including simple derived diagnostics, packaged AutoModel diagnostics, and generative or diffusion diagnostics. Do NOT use for prognostic time-stepping models, data sources, or installation.",
-  "source": "https://skills.onchainai.fund/api/skills/nvidia/earth2studio-create-diagnostic/SKILL.md",
-  "metadata": "https://skills.onchainai.fund/api/skills/nvidia/earth2studio-create-diagnostic/metadata.json",
+  "source": "https://skills.x402.wtf/api/skills/nvidia/earth2studio-create-diagnostic/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/nvidia/earth2studio-create-diagnostic/metadata.json",
   "bundleHash": "sha256-ae77de7d7866dcbf93b753b39b08e57d84f3f18993eb4b1769eb1eff21700e13",
   "merkleLeaf": "sha256-c1603d27f75b880b2227eb85b022c50dd77ae402d6921b1c3e4a6e99e8ab711f",
   "files": [
@@ -54,7 +54,7 @@
       "sha256": "sha256-b0f40d4eba51ff492da4d515f67abacf5422572f36425121c3813fe37994a6f2"
     }
   ],
-  "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
   "solana": {
     "cluster": "mainnet-beta",
     "status": "anchor-ready",

@@ -3,8 +3,8 @@
   "slug": "nvidia/physical-ai-video-data-augmentation",
   "name": "physical-ai-video-data-augmentation",
   "description": "Use when running video data augmentation and auto-labeling workflows on OSMO: flow selection, preflight, submit-time interpolation, monitoring, and output retrieval. Trigger keywords: video data augmentation, data enrichment, auto labeling, VDA demo, OSMO workflow, pseudo labeling.",
-  "source": "https://skills.onchainai.fund/api/skills/nvidia/physical-ai-video-data-augmentation/SKILL.md",
-  "metadata": "https://skills.onchainai.fund/api/skills/nvidia/physical-ai-video-data-augmentation/metadata.json",
+  "source": "https://skills.x402.wtf/api/skills/nvidia/physical-ai-video-data-augmentation/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/nvidia/physical-ai-video-data-augmentation/metadata.json",
   "bundleHash": "sha256-04cfe8af953223f749e7bd10408614c2fb42298f7e381700454369e2e1b0b3d1",
   "merkleLeaf": "sha256-4a6ff570398e4c484b43eb024311d15b29dc3b4203ba3788f8e1a2e2ed36fd3b",
   "files": [
@@ -374,7 +374,7 @@
       "sha256": "sha256-78f6b652e0eba4ea0a141c57f7a1b322bcf01871bc4abdb4be71b7fbc3f48f47"
     }
   ],
-  "registry": "https://skills.onchainai.fund/.well-known/onchain-skill-registry.json",
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
   "solana": {
     "cluster": "mainnet-beta",
     "status": "anchor-ready",
