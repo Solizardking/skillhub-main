@@ -47,11 +47,11 @@ async function main() {
     "published CLI must not require @irys/upload as a runtime dependency",
   );
 
-  // Pack from repo root
+  // Pack from repo root (do not use --json: prepack lifecycle logs pollute stdout)
   const packLog = path.join(work, "npm-pack.log");
   let packOut;
   try {
-    packOut = execFileSync("npm", ["pack", "--json", "--pack-destination", work], {
+    packOut = execFileSync("npm", ["pack", "--pack-destination", work], {
       cwd: ROOT,
       encoding: "utf8",
       maxBuffer: 50 * 1024 * 1024,
@@ -62,10 +62,14 @@ async function main() {
     fail(`npm pack failed: ${err.message}`);
   }
   writeFileSync(packLog, packOut);
-  const packMeta = JSON.parse(packOut);
-  const tarballName = packMeta[0]?.filename || packMeta.filename;
-  assert(tarballName, "npm pack --json must return filename");
-  const tarballPath = path.join(work, tarballName);
+  // npm pack prints the tarball filename as the last non-empty line
+  const packLines = packOut
+    .split("\n")
+    .map((l) => l.trim())
+    .filter(Boolean);
+  const tarballName = packLines.reverse().find((l) => l.endsWith(".tgz"));
+  assert(tarballName, `npm pack must print .tgz filename; got:\n${packOut.slice(-500)}`);
+  const tarballPath = path.isAbsolute(tarballName) ? tarballName : path.join(work, path.basename(tarballName));
   assert(existsSync(tarballPath), `tarball missing: ${tarballPath}`);
   const tarballSize = statSync(tarballPath).size;
   log(`tarball: ${tarballName} (${(tarballSize / 1024 / 1024).toFixed(2)} MB)`);
