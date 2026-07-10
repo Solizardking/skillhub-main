@@ -1,9 +1,9 @@
 {
   "schemaVersion": "skillhub-publish-plan/v1",
-  "createdAt": "2026-07-10T21:36:42.720Z",
+  "createdAt": "2026-07-10T21:51:39.930Z",
   "cluster": "devnet",
   "rpc": "https://api.devnet.solana.com",
-  "merkleRoot": "sha256-3232172cd852237bc775ead1e6b7083109d8e8a621f05415cae05b8213d7a9f4",
+  "merkleRoot": "sha256-756d590156eb3a22f17dabe8d99cc21cd8b9d40ba5c9965996c66b477b3ff3f6",
   "catalogHash": "sha256-e9a98c6339fd6390b00a46063220a64c44d68cc5b495cb7b7704c6dad4b29103",
   "totalSkills": 558,
   "uploads": [
@@ -29,7 +29,7 @@
         },
         {
           "name": "Merkle-Root",
-          "value": "sha256-3232172cd852237bc775ead1e6b7083109d8e8a621f05415cae05b8213d7a9f4"
+          "value": "sha256-756d590156eb3a22f17dabe8d99cc21cd8b9d40ba5c9965996c66b477b3ff3f6"
         },
         {
           "name": "Catalog-Hash",
@@ -63,7 +63,7 @@
         },
         {
           "name": "Merkle-Root",
-          "value": "sha256-3232172cd852237bc775ead1e6b7083109d8e8a621f05415cae05b8213d7a9f4"
+          "value": "sha256-756d590156eb3a22f17dabe8d99cc21cd8b9d40ba5c9965996c66b477b3ff3f6"
         },
         {
           "name": "Catalog-Hash",
@@ -76,5 +76,5 @@
       ]
     }
   ],
-  "memoPreview": "skillhub:v1|skills:558|merkle:sha256-3232172cd852237bc775ead1e6b7083109d8e8a621f05415cae05b8213d7a9f4|catalog:sha256-e9a98c6339fd6390b00a46063220a64c44d68cc5b495cb7b7704c6dad4b29103|ar:<registry-ar-tx>,<catalog-ar-tx>"
+  "memoPreview": "skillhub:v1|skills:558|merkle:sha256-756d590156eb3a22f17dabe8d99cc21cd8b9d40ba5c9965996c66b477b3ff3f6|catalog:sha256-e9a98c6339fd6390b00a46063220a64c44d68cc5b495cb7b7704c6dad4b29103|ar:<registry-ar-tx>,<catalog-ar-tx>"
 }
