@@ -8,10 +8,37 @@
     "type": "git",
     "url": "git+https://github.com/Solizardking/skills.git"
   },
+  "homepage": "https://github.com/Solizardking/skills#readme",
+  "bugs": {
+    "url": "https://github.com/Solizardking/skills/issues"
+  },
+  "keywords": [
+    "skills",
+    "agent-skills",
+    "installer",
+    "solizardking",
+    "clawd",
+    "agents"
+  ],
   "bin": {
     "skills": "./bin/skills.mjs"
   },
+  "files": [
+    "bin",
+    "catalog.json",
+    "skills",
+    "README.md",
+    "HUB.md",
+    "DOMAINS.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
   "scripts": {
+    "prepack": "node scripts/npm-pack-exclude.mjs hide",
+    "postpack": "node scripts/npm-pack-exclude.mjs restore",
     "build": "node scripts/build-catalog.mjs",
     "build:catalog": "node scripts/build-catalog.mjs",
     "skills:docs": "node scripts/build-catalog.mjs",
@@ -21,6 +48,7 @@
     "scanner:serve": "python3 -m http.server 8877 --bind 127.0.0.1 --directory scanner/public",
     "smoke": "node scripts/smoke-test-skills.mjs",
     "test:premiere": "node scripts/test-premiere-skills.mjs",
+    "test:pack": "node scripts/test-npm-pack.mjs",
     "publish:onchain": "node scripts/publish-onchain.mjs",
     "publish:agentregistry": "bash scripts/publish-to-agentregistry.sh",
     "publish:agentregistry:dry": "bash scripts/publish-to-agentregistry.sh --dry-run",
@@ -33,12 +61,13 @@
     "relay:upload": "node scripts/upload-relay-server.mjs",
     "relay:upload:dev": "SKILLHUB_PAYMENT_NETWORK=devnet node scripts/upload-relay-server.mjs",
     "ledger:export": "node scripts/export-public-ledger.mjs",
-    "test": "node scripts/build-catalog.mjs --check && node scripts/smoke-test-skills.mjs && node bin/skills.mjs list --json >/dev/null && node scripts/test-premiere-skills.mjs"
+    "test": "node scripts/build-catalog.mjs --check && node scripts/smoke-test-skills.mjs && node bin/skills.mjs list --json >/dev/null && node scripts/test-premiere-skills.mjs && node scripts/test-npm-pack.mjs"
   },
   "engines": {
     "node": ">=18"
   },
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "@irys/upload": "^0.0.15",
     "@irys/upload-solana": "^0.1.8",
     "@solana/web3.js": "^1.98.4"

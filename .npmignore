@@ -1,0 +1,62 @@
+# Build / package manager bulk (never ship)
+node_modules
+**/node_modules
+**/node_modules/**
+target
+**/target
+**/target/**
+**/.git
+**/.git/**
+**/__pycache__
+**/__pycache__/**
+**/.venv
+**/.venv/**
+**/.cache
+**/coverage
+**/.nyc_output
+
+# Parked build trees / local pack state
+.npm-pack-exclude-state.json
+
+# Compiled / intermediate artifacts under skills
+**/*.o
+**/*.a
+**/*.rlib
+**/*.rmeta
+**/*.d
+**/*.tsbuildinfo
+**/*.pyc
+
+# OS / editor
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local / monorepo tooling (also excluded via package.json "files")
+public/
+scanner/
+onchain/
+site/
+scripts/
+engineering/
+productivity/
+.github/
+.agents/
+.claude/
+.vercel/
+.surfpool/
+.clawd/
+tmp/
+temp/
+*.tgz
+*.log
+package-lock.json
+skills-lock.json
+skills.sh.json
+render.yaml
+vercel.json
+UPLOAD.md
+ONCHAIN.md
+RELAY.md

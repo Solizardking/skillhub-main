@@ -99,3 +99,7 @@ coverage/
 # Upload relay job store
 onchain/submissions/
 .relay-install-check/
+
+# npm pack staging (prepack parks Cargo target/ etc.)
+.npm-pack-exclude-state.json
+*.tgz
