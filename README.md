@@ -124,29 +124,6 @@ npx github:Solizardking/skills install --claude                   # Claude Code
 npx github:Solizardking/skills install --eve                      # eve (agent/skills/)
 ```
 
-### Publish into agentregistry (on-chain)
-
-Register the whole catalog into a local [agentregistry](https://github.com/agentregistry-dev/agentregistry) daemon so skills show up at http://localhost:12121 — with **Merkle / Arweave / Solana** proofs attached:
-
-```bash
-# requires: arctl daemon start  (registry on :12121)
-npm run publish:agentregistry:onchain
-
-# plain catalog (no proof packages)
-npm run publish:agentregistry
-
-# dry-run / filters
-npm run publish:agentregistry:onchain:dry
-node scripts/sync-onchain-agentregistry.mjs --prefix solana --limit 10
-
-# re-pin catalog on Arweave + re-anchor Merkle root on Solana, then re-sync
-npm run build:catalog
-npm run publish:onchain -- --execute --devnet
-npm run publish:agentregistry:onchain
-```
-
-Artifacts: `onchain/publish-receipt.json`, `onchain/agentregistry-mirror.json`, `public/api/agentregistry.json`.
-
 ## 🌟 Featured Runs
 
 **Premiere loadouts first** — engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:
