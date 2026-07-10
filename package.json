@@ -1,7 +1,7 @@
 {
-  "name": "@solizardking/skills",
-  "version": "0.1.0",
-  "description": "Catalog and one-shot installer for Solizardking agent skills.",
+  "name": "@x402solana/skills",
+  "version": "0.1.1",
+  "description": "Catalog and one-shot installer for Solizardking agent skills (hub + one-shot CLI).",
   "type": "module",
   "license": "MIT",
   "repository": {
@@ -17,11 +17,13 @@
     "agent-skills",
     "installer",
     "solizardking",
+    "skillhub",
     "clawd",
-    "agents"
+    "agents",
+    "x402solana"
   ],
   "bin": {
-    "skills": "./bin/skills.mjs"
+    "skills": "bin/skills.mjs"
   },
   "files": [
     "bin",

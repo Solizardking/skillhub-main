@@ -78,9 +78,11 @@ This is the same 558-skill inventory grouped by where the source directories liv
 
 ## 🚀 Install in 10 Seconds
 
-The whole hub:
+The whole hub (npm package + one-shot CLI):
 
 ```bash
+npx @x402solana/skills install            # published npm package (catalog + installer)
+npm install -g @x402solana/skills         # global `skills` CLI
 npx skills add Solizardking/skills        # via skills.sh
 npx github:Solizardking/skills install    # straight from GitHub
 ```
