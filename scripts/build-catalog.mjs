@@ -429,6 +429,17 @@ function renderReadme(catalog) {
   const bySourceFamily = groupBySourceFamily(catalog);
   const googleCount = catalog.filter((skill) => skill.slug.startsWith("google/")).length;
   const featuredRuns = [
+    // Premiere offerings — lead the hub with these families.
+    ["🎯 Engineering mode", "ship software the Matt Pocock way: TDD, triage, implement, architecture, specs, tickets", catalog.filter((skill) => skill.slug.startsWith("engineering/"))],
+    ["🧭 Agent orchestration mode", "goal loops, handoffs, subagents, deep SWE runs, self-scheduling", catalog.filter((skill) => skill.slug.startsWith("agent-orchestration/"))],
+    ["✍️ Productivity mode", "grill, teach, handoff, and write great skills", catalog.filter((skill) => skill.slug.startsWith("productivity/"))],
+    ["🧠 Thinking & docs mode", "brain-to-docs, ADRs, prompts, level-up, concise teaching", catalog.filter((skill) => skill.slug.startsWith("thinking-and-docs/"))],
+    ["🎨 Design & motion mode", "Apple HIG, Emil design-eng, animation vocabulary, review animations", catalog.filter((skill) => ["animation-vocabulary", "apple-design", "emil-design-eng", "review-animations"].includes(skill.slug))],
+    ["🔬 Research & web mode", "deep research, browser harness, transcripts, shopping, web search", catalog.filter((skill) => skill.slug.startsWith("research-and-web/"))],
+    ["📦 Skill authoring mode", "write, distribute, and push agent skills across every client", catalog.filter((skill) => skill.slug.startsWith("skill-authoring/"))],
+    ["⚙️ Ops & setup mode", "readonly DB roles, cyber audit, Safe Browsing, custom models, setup help", catalog.filter((skill) => skill.slug.startsWith("ops-and-setup/"))],
+    ["🧪 Misc / in-progress / personal", "guardrails, shoehorn, pre-commit, deep modules, vault, article edit, drafts", catalog.filter((skill) => skill.slug.startsWith("misc/") || skill.slug.startsWith("in-progress/") || skill.slug.startsWith("personal/") || skill.slug.startsWith("deprecated/"))],
+    // Legacy Solana trading loadouts remain available after premiere families.
     ["🌞 Helius mode", "Helius infra: Sender, DAS, LaserStream + Jupiter, DFlow, OKX, Phantom, SVM internals", catalog.filter((skill) => skill.slug.startsWith("helius-skills/"))],
     ["🎰 Pump.fun mode", "launch → curve → fees → security, the whole token lifecycle", catalog.filter((skill) => skill.slug === "pumpfun" || skill.slug.startsWith("pump-") || skill.slug.startsWith("pumpfun-"))],
     ["🌋 Vulcan / Phoenix mode", "perps trading: TA, grids, TWAP, TP/SL, risk", catalog.filter((skill) => skill.slug === "vulcan" || skill.slug.startsWith("vulcan-"))],
@@ -506,19 +517,31 @@ function renderReadme(catalog) {
     "npx github:Solizardking/skills install    # straight from GitHub",
     "```",
     "",
-    "Or grab a focused stack:",
+    "Or grab a **premiere** focused stack (the hub's lead offerings):",
     "",
     "```bash",
-    "# Solana dev core",
+    "# Premiere: engineering (TDD, implement, triage, architecture)",
+    "npx github:Solizardking/skills install engineering/tdd engineering/implement engineering/triage engineering/codebase-design engineering/to-spec",
+    "",
+    "# Premiere: agent orchestration (goal loops, handoffs, subagents)",
+    "npx github:Solizardking/skills install agent-orchestration/goal-loop agent-orchestration/handoff agent-orchestration/codex-subagent agent-orchestration/run-deep-swe",
+    "",
+    "# Premiere: productivity + thinking & docs",
+    "npx github:Solizardking/skills install productivity/grill-me productivity/teach productivity/writing-great-skills thinking-and-docs/brain-to-docs thinking-and-docs/prompt-me",
+    "",
+    "# Premiere: design & motion",
+    "npx github:Solizardking/skills install apple-design emil-design-eng animation-vocabulary review-animations",
+    "",
+    "# Premiere: research, skill authoring, ops",
+    "npx github:Solizardking/skills install research-and-web/deep-research research-and-web/browser-harness skill-authoring/effective-agent-skills ops-and-setup/setup-help",
+    "```",
+    "",
+    "Also available — Solana trading and infra stacks:",
+    "",
+    "```bash",
     "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock",
-    "",
-    "# Pump.fun token lifecycle",
     "npx github:Solizardking/skills install pumpfun pump-token-lifecycle pump-bonding-curve pump-security",
-    "",
-    "# ZK compression lane",
     "npx github:Solizardking/skills install compressed-pda compressed-token zk zkrouter",
-    "",
-    "# Google Cloud starter",
     "npx github:Solizardking/skills install google/cloud/gcloud google/cloud/gke-basics google/cloud/bigquery-basics",
     "```",
     "",
@@ -532,7 +555,7 @@ function renderReadme(catalog) {
     "",
     "## 🌟 Featured Runs",
     "",
-    "Curated multi-skill loadouts — install a run and your agent speaks the whole dialect:",
+    "**Premiere loadouts first** — engineering, orchestration, productivity, design, research, authoring, and ops. Solana trading runs follow:",
     "",
   );
 
@@ -658,7 +681,18 @@ function renderHub(catalog) {
     "npx github:Solizardking/skills install",
     "```",
     "",
-    "Install focused stacks:",
+    "Install **premiere** focused stacks (lead offerings):",
+    "",
+    "```bash",
+    "npx github:Solizardking/skills install engineering/tdd engineering/implement engineering/triage engineering/codebase-design engineering/to-spec --force",
+    "npx github:Solizardking/skills install agent-orchestration/goal-loop agent-orchestration/handoff agent-orchestration/codex-subagent agent-orchestration/run-deep-swe",
+    "npx github:Solizardking/skills install productivity/grill-me productivity/teach productivity/writing-great-skills thinking-and-docs/brain-to-docs thinking-and-docs/prompt-me",
+    "npx github:Solizardking/skills install apple-design emil-design-eng animation-vocabulary review-animations",
+    "npx github:Solizardking/skills install research-and-web/deep-research research-and-web/browser-harness skill-authoring/effective-agent-skills ops-and-setup/setup-help",
+    "npx github:Solizardking/skills install misc/setup-pre-commit in-progress/wizard personal/obsidian-vault deprecated/qa",
+    "```",
+    "",
+    "Also available — Solana / Google stacks:",
     "",
     "```bash",
     "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock --force",
@@ -828,6 +862,19 @@ function groupBySourceFamily(catalog) {
 }
 
 function sourceFamily(slug) {
+  // Premiere families first — these are the hub's lead offerings.
+  if (slug.startsWith("engineering/")) return "engineering/*";
+  if (slug.startsWith("agent-orchestration/")) return "agent-orchestration/*";
+  if (slug.startsWith("productivity/")) return "productivity/*";
+  if (slug.startsWith("thinking-and-docs/")) return "thinking-and-docs/*";
+  if (["animation-vocabulary", "apple-design", "emil-design-eng", "review-animations"].includes(slug)) return "design-motion/*";
+  if (slug.startsWith("research-and-web/")) return "research-and-web/*";
+  if (slug.startsWith("skill-authoring/")) return "skill-authoring/*";
+  if (slug.startsWith("ops-and-setup/")) return "ops-and-setup/*";
+  if (slug.startsWith("misc/")) return "misc/*";
+  if (slug.startsWith("in-progress/")) return "in-progress/*";
+  if (slug.startsWith("personal/")) return "personal/*";
+  if (slug.startsWith("deprecated/")) return "deprecated/*";
   if (slug.startsWith("google/")) return "google/*";
   if (slug.startsWith("anthropic-skills/")) return "anthropic-skills/*";
   if (slug === "pumpfun" || slug.startsWith("pump-") || slug.startsWith("pumpfun-")) return "pump/pumpfun/*";
@@ -842,6 +889,18 @@ function sourceFamily(slug) {
 
 function sourceFamilyDescription(family) {
   const descriptions = {
+    "engineering/*": "Premiere engineering playbooks: TDD, implement, triage, architecture, domain modeling, specs, and tickets.",
+    "agent-orchestration/*": "Premiere agent orchestration: goal loops, handoffs, subagents, deep SWE, and self-scheduling.",
+    "productivity/*": "Premiere productivity: grilling, teaching, handoffs, and writing great skills.",
+    "thinking-and-docs/*": "Premiere thinking and docs: brain-to-docs, ADRs, prompts, level-up, and concise teaching.",
+    "design-motion/*": "Premiere design and motion: Apple HIG, Emil design-eng, animation vocabulary, and review animations.",
+    "research-and-web/*": "Premiere research and web: deep research, browser harness, transcripts, shopping, and web search.",
+    "skill-authoring/*": "Premiere skill authoring: effective skills, distribution, folder-specific agents, and GitHub push.",
+    "ops-and-setup/*": "Premiere ops and setup: readonly DB roles, cyber audit, Safe Browsing, custom models, and setup help.",
+    "misc/*": "Premiere misc utilities: git guardrails, shoehorn migration, exercise scaffolds, and pre-commit setup.",
+    "in-progress/*": "Premiere in-progress drafts: wizards, deep modules, writing craft, and experimental loops.",
+    "personal/*": "Premiere personal workflows: Obsidian vault and article editing.",
+    "deprecated/*": "Premiere-listed deprecated skills kept installable for continuity (QA, design-an-interface, refactor plans).",
     "single/root skills": "One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows.",
     "google/*": "Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills.",
     "pump/pumpfun/*": "Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows.",

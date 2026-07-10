@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 255,
-  "catalogHash": "sha256-116353e1dc736ef5e1cb3895df2cadf0577403777a8427bf463545e997b34704",
-  "merkleRoot": "sha256-cb42593db58fd05cf733aa6174444a8b23f95f1abc192346f0b3b9550311e0fa",
+  "totalSkills": 328,
+  "catalogHash": "sha256-7d702c514042da14ac8323fcd47331590d14eb029ed8b87d621cf12a545b1e5d",
+  "merkleRoot": "sha256-f28a5c874212378a7304d73873a5080589266f713c5347c6d05f513566456974",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -36,6 +36,61 @@
       "fileCount": 1,
       "metadata": "/api/skills/agent-desktop/metadata.json",
       "verification": "/api/skills/agent-desktop/verification.json"
+    },
+    {
+      "slug": "agent-orchestration/agent-self-scheduling",
+      "name": "agent-self-scheduling",
+      "description": "Make an AI agent run on a schedule, loop, or interval — cron, heartbeats, recurring autonomous checks. Use for \"run every N minutes\", \"schedule a task\", \"run on a loop\", \"heartbeat\". Covers external clocks (Claude Code, Codex, Pi) vs Hermes' built-in scheduler.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-1e64e5216714786bbd904c1dc862d7b871266cfdf94fda7611e25e10608f730a",
+      "merkleLeaf": "sha256-7a3a6bc797d445b3114faed8742a31ca1ad82529a2a8365ab473bc0e99f08e21",
+      "fileCount": 1,
+      "metadata": "/api/skills/agent-orchestration/agent-self-scheduling/metadata.json",
+      "verification": "/api/skills/agent-orchestration/agent-self-scheduling/verification.json"
+    },
+    {
+      "slug": "agent-orchestration/codex-subagent",
+      "name": "codex-subagent",
+      "description": "Launch OpenAI Codex CLI as a subagent (ChatGPT subscription auth, no API key). Use when delegating a self-contained coding task to Codex from another agent — parallel implementation work, a second opinion, or an independent verification pass.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-e99a5a9bbeb30b20d725d892c238d36a1008affd5b274b7f1a7cc7f588cd3e9f",
+      "merkleLeaf": "sha256-09cedc00d53f74cd23f562d5d584d607b8e22626ac53b0b7fdd273ac22f2b55a",
+      "fileCount": 1,
+      "metadata": "/api/skills/agent-orchestration/codex-subagent/metadata.json",
+      "verification": "/api/skills/agent-orchestration/codex-subagent/verification.json"
+    },
+    {
+      "slug": "agent-orchestration/fable-safe-prompt",
+      "name": "fable-safe-prompt",
+      "description": "Rewrite a user's prompt to reduce the chance it trips Claude Fable 5's server-side safety classifiers (cyber/bio guardrails that force-route to Opus 4.8 or return stop_reason \"refusal\"). Use when the user hands you a prompt that touches cybersecurity, auth, exploits, malware, pentesting, or other dual-use topics and asks to make it \"Fable-safe\", \"guardrail-safe\", \"won't get flagged/refused/downgraded\", or to rewrite it so Fable 5 won't block it.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-b7cf85b4ffc255de03bc3004587500044342fb04e139300e41b247f06e945c61",
+      "merkleLeaf": "sha256-acf1ed7314209ba36262c64a10aca81f1f8eb925fed5edea78718edbc5c7f8e2",
+      "fileCount": 1,
+      "metadata": "/api/skills/agent-orchestration/fable-safe-prompt/metadata.json",
+      "verification": "/api/skills/agent-orchestration/fable-safe-prompt/verification.json"
+    },
+    {
+      "slug": "agent-orchestration/goal-loop",
+      "name": "goal-loop",
+      "description": "Explain and write effective instructions for the `/goal` feature — the persistent self-checking agent loop (plan → act → test → review → iterate), available in agents like Codex, Claude Code, and Hermes Agent. Use when the user mentions `/goal`, \"goal loop\", \"Ralph loop\", wants to kick off a long-running autonomous agent run, asks how to write a goal prompt, or wants a one-paragraph goal instruction drafted.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-ad8510eb43bd37555bd9a093c70eaa8a967f9acf19c97f74171de54d8db4a32d",
+      "merkleLeaf": "sha256-65f0a8fb011f382245bcac31d589d64ffef63784582bada0033c82415555918a",
+      "fileCount": 1,
+      "metadata": "/api/skills/agent-orchestration/goal-loop/metadata.json",
+      "verification": "/api/skills/agent-orchestration/goal-loop/verification.json"
+    },
+    {
+      "slug": "agent-orchestration/run-deep-swe",
+      "name": "run-deep-swe",
+      "description": "Score any AI model on the DeepSWE coding-agent benchmark via the OpenRouter API. Use when the user wants an independent, reproducible coding-agent eval — \"run DeepSWE\", \"benchmark this model on DeepSWE\", \"score model X on the coding benchmark\", \"test a model via OpenRouter on DeepSWE\", or to verify vendor-reported coding scores. Covers setup, the OpenRouter wiring for mini-swe-agent, single-task / subset / full 113-task runs, and leaderboard submission.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-dbd366f546a8a6aae1a7e0f70001ddcb78d49b0de02ccc69f59b31e56203c757",
+      "merkleLeaf": "sha256-b8a5cce058b9ff0e604365cf03085b9eaa10a2ea612fc13b78e71ab2e354c307",
+      "fileCount": 1,
+      "metadata": "/api/skills/agent-orchestration/run-deep-swe/metadata.json",
+      "verification": "/api/skills/agent-orchestration/run-deep-swe/verification.json"
     },
     {
       "slug": "agents-sdk",
@@ -148,6 +203,39 @@
       "verification": "/api/skills/create-agent-tui/verification.json"
     },
     {
+      "slug": "deprecated/design-an-interface",
+      "name": "design-an-interface",
+      "description": "Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions \"design it twice\".",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-33b8b048b0f8f52f90328d55101d1112ace3593e7933319f8b245369b1252be2",
+      "merkleLeaf": "sha256-1cee6d4d5892a776fa1ae1eab25f09c5dfb73d0ada4385be5e6932cb04a03fba",
+      "fileCount": 1,
+      "metadata": "/api/skills/deprecated/design-an-interface/metadata.json",
+      "verification": "/api/skills/deprecated/design-an-interface/verification.json"
+    },
+    {
+      "slug": "deprecated/qa",
+      "name": "qa",
+      "description": "Interactive QA session where user reports bugs or issues conversationally, and the agent files GitHub issues. Explores the codebase in the background for context and domain language. Use when user wants to report bugs, do QA, file issues conversationally, or mentions \"QA session\".",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-9b474cb6ea5caccb8a4eecbb4043565df046a6c68da3faac4d30aad5e7784454",
+      "merkleLeaf": "sha256-eda5c36f2c03b6202a88d8a9daf794a7d934972639e60b5cb7732a8727c37cf3",
+      "fileCount": 1,
+      "metadata": "/api/skills/deprecated/qa/metadata.json",
+      "verification": "/api/skills/deprecated/qa/verification.json"
+    },
+    {
+      "slug": "deprecated/request-refactor-plan",
+      "name": "request-refactor-plan",
+      "description": "Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. Use when user wants to plan a refactor, create a refactoring RFC, or break a refactor into safe incremental steps.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-083c8733269e8c578bb31facd57eff0e46c290fcafd62609a0c53c15e81e4ceb",
+      "merkleLeaf": "sha256-ce6604bae6140d38727ff704ccc7bdac9cd670a722c1d8a10889acd78ab1501f",
+      "fileCount": 1,
+      "metadata": "/api/skills/deprecated/request-refactor-plan/metadata.json",
+      "verification": "/api/skills/deprecated/request-refactor-plan/verification.json"
+    },
+    {
       "slug": "durable-objects",
       "name": "durable-objects",
       "description": "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
@@ -157,6 +245,94 @@
       "fileCount": 4,
       "metadata": "/api/skills/durable-objects/metadata.json",
       "verification": "/api/skills/durable-objects/verification.json"
+    },
+    {
+      "slug": "emil-design-eng",
+      "name": "emil-design-eng",
+      "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-0bc9ec9a0502dc5ef8e43849f962747ba37f1e8e085722a768a9119aebe9d299",
+      "merkleLeaf": "sha256-1e5c8c62b5f500578034b9e8003a20cad322de72c09e9cf6034fbf00416c2979",
+      "fileCount": 1,
+      "metadata": "/api/skills/emil-design-eng/metadata.json",
+      "verification": "/api/skills/emil-design-eng/verification.json"
+    },
+    {
+      "slug": "engineering/ask-matt",
+      "name": "ask-matt",
+      "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-91e26eaf1a40f32057749c111a0afa4c7f558cd766986ac44390dc042c3f1b7b",
+      "merkleLeaf": "sha256-f5cd9010b7dd1f5a976449c3e6dbea1312f5b8ff4ea928a2f1ed0002d8b4ae9e",
+      "fileCount": 1,
+      "metadata": "/api/skills/engineering/ask-matt/metadata.json",
+      "verification": "/api/skills/engineering/ask-matt/verification.json"
+    },
+    {
+      "slug": "engineering/code-review",
+      "name": "code-review",
+      "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-fd0d3cf9d42e188b86f9cea0b471d11fb6e8ae37aa1115df4bb68db5a4ca6915",
+      "merkleLeaf": "sha256-27bea749f702366e2708777574efa58f37646f1375b371d84cce7ca1723fbeca",
+      "fileCount": 1,
+      "metadata": "/api/skills/engineering/code-review/metadata.json",
+      "verification": "/api/skills/engineering/code-review/verification.json"
+    },
+    {
+      "slug": "engineering/codebase-design",
+      "name": "codebase-design",
+      "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-17de51b517418add0e0c2139daa3453105ba8045e4940791d7051f6bc898b042",
+      "merkleLeaf": "sha256-f71704aaddcc5edd9334a0e7ce325f2ae4f969993817a5ef9d125e4265c6cdc0",
+      "fileCount": 3,
+      "metadata": "/api/skills/engineering/codebase-design/metadata.json",
+      "verification": "/api/skills/engineering/codebase-design/verification.json"
+    },
+    {
+      "slug": "engineering/domain-modeling",
+      "name": "domain-modeling",
+      "description": "Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-0e95e035a55077cb40ff3ddeb972f0a649c3ec6394630b4c9d486235ff6f9fa8",
+      "merkleLeaf": "sha256-b8e1c6f2595635dbfd0e240e1cc62dbd1d9d6e482aac8748b7d57f24793a1d7c",
+      "fileCount": 3,
+      "metadata": "/api/skills/engineering/domain-modeling/metadata.json",
+      "verification": "/api/skills/engineering/domain-modeling/verification.json"
+    },
+    {
+      "slug": "engineering/research",
+      "name": "research",
+      "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-a52544f9ec2b5bd1368c8d3a71752851bcbf433771c53491d8e1bd86fe058ec3",
+      "merkleLeaf": "sha256-e92f1f17bf0a2b813ea2bf50bc58a20efcab1cbb5c11a5b8442d9940f6b2efd1",
+      "fileCount": 1,
+      "metadata": "/api/skills/engineering/research/metadata.json",
+      "verification": "/api/skills/engineering/research/verification.json"
+    },
+    {
+      "slug": "engineering/triage",
+      "name": "triage",
+      "description": "Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-ae5f04b80eec7d20ab4152d0ffe702e12cc7bf63270253fe20780b044dc14a96",
+      "merkleLeaf": "sha256-60dcf9b2a278c025f7ca2cc1c0447fedcbd65387462935a8c2e83a8bebad93fe",
+      "fileCount": 3,
+      "metadata": "/api/skills/engineering/triage/metadata.json",
+      "verification": "/api/skills/engineering/triage/verification.json"
+    },
+    {
+      "slug": "engineering/wayfinder",
+      "name": "wayfinder",
+      "description": "Plan a huge chunk of work — more than one agent session can hold — as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-ca4643a6a1c6f23ae3d4b139ff5ce7ef3908e31034575133cbba798746059e23",
+      "merkleLeaf": "sha256-cd8ee581face7e8459c62a5597344ef1e9113b04ef9f16d6653f5646637786dd",
+      "fileCount": 1,
+      "metadata": "/api/skills/engineering/wayfinder/metadata.json",
+      "verification": "/api/skills/engineering/wayfinder/verification.json"
     },
     {
       "slug": "find-skills",
@@ -192,6 +368,28 @@
       "verification": "/api/skills/github/verification.json"
     },
     {
+      "slug": "in-progress/claude-handoff",
+      "name": "claude-handoff",
+      "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-b72d19f4e1cc6ad5dc6d20841b39a99f047545c7b5b4c2cc29d6cd0c3eb89558",
+      "merkleLeaf": "sha256-a9f571cb9edb1f1bc7dcf8ea59645276784ee33027a08b839db6fdbb7263daaf",
+      "fileCount": 1,
+      "metadata": "/api/skills/in-progress/claude-handoff/metadata.json",
+      "verification": "/api/skills/in-progress/claude-handoff/verification.json"
+    },
+    {
+      "slug": "in-progress/wizard",
+      "name": "wizard",
+      "description": "Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-a6bb9d29edf10a81f58fccc52b23a6d3466ec9e09efe3a5de1fd634f03f54b9e",
+      "merkleLeaf": "sha256-5f0341dbfd59d6face418cfdc1d340bcbf80403ec50a687fe218e6c28d9a71a1",
+      "fileCount": 1,
+      "metadata": "/api/skills/in-progress/wizard/metadata.json",
+      "verification": "/api/skills/in-progress/wizard/verification.json"
+    },
+    {
       "slug": "mcporter",
       "name": "mcporter",
       "description": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
@@ -201,6 +399,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/mcporter/metadata.json",
       "verification": "/api/skills/mcporter/verification.json"
+    },
+    {
+      "slug": "misc/git-guardrails-claude-code",
+      "name": "git-guardrails-claude-code",
+      "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-e6d0b5d4fe6173c0dc7651f3b33357b7d3d44860cc63ffc6b2400243a726547d",
+      "merkleLeaf": "sha256-b014f69299755e0f87f16c1606f7d450f4e8833d10981b1d3ecb5c476856487d",
+      "fileCount": 2,
+      "metadata": "/api/skills/misc/git-guardrails-claude-code/metadata.json",
+      "verification": "/api/skills/misc/git-guardrails-claude-code/verification.json"
     },
     {
       "slug": "openclawd-clawd-code-skill-main",
@@ -236,6 +445,28 @@
       "verification": "/api/skills/openrouter-typescript-sdk/verification.json"
     },
     {
+      "slug": "ops-and-setup/cyber-audit",
+      "name": "cyber-audit",
+      "description": "Read-only exposure audit of the user's Mac (and ~/Documents/code projects) for a CVE, breach, malicious package, or other security advisory, then write a structured report to ~/Documents/security-audits/. Use when the user shares a breach/CVE/malware/supply-chain advisory and asks if they're affected, says \"scan my system for X\", \"are we affected by Y\", \"check if I'm vulnerable to Z\", or requests any hack/breach/cyber/vulnerability audit on this Mac. Output matches the existing audit format in ~/Documents/security-audits/.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-c84f9c42862568cd234519b43424ccca97ddfec4d6f445404f2078e52e285ce3",
+      "merkleLeaf": "sha256-f3eb8a1dd092f6b51a75626a2a7bd34a75f3a8143b0efa92bd95bd189f836ae2",
+      "fileCount": 1,
+      "metadata": "/api/skills/ops-and-setup/cyber-audit/metadata.json",
+      "verification": "/api/skills/ops-and-setup/cyber-audit/verification.json"
+    },
+    {
+      "slug": "ops-and-setup/pi-custom-model",
+      "name": "pi-custom-model",
+      "description": "Register a custom or variant model (e.g. an OpenRouter \":nitro\" / \":floor\" / \":exacto\" slug) in the Pi Agent so it can be set as the global default. Use when Pi silently falls back to a different model (e.g. moonshotai/kimi-k2.6) after setting defaultModel, or when a model slug isn't in Pi's bundled list. Triggers on \"Pi reset my model\", \"Pi won't use this model\", \"add a model to Pi\", \"Pi default keeps reverting\".",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-417b59bea3e89fbe9ac3af6b0cee69b8c8f429c5e760aa383049432ef747400e",
+      "merkleLeaf": "sha256-657bff4bee037b8bb4d02c1e992a0c4c665bda55ff0339f176149b5154f5f146",
+      "fileCount": 1,
+      "metadata": "/api/skills/ops-and-setup/pi-custom-model/metadata.json",
+      "verification": "/api/skills/ops-and-setup/pi-custom-model/verification.json"
+    },
+    {
       "slug": "oracle",
       "name": "oracle",
       "description": "Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).",
@@ -245,6 +476,61 @@
       "fileCount": 1,
       "metadata": "/api/skills/oracle/metadata.json",
       "verification": "/api/skills/oracle/verification.json"
+    },
+    {
+      "slug": "productivity/handoff",
+      "name": "productivity-handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-84f93f08eb1a4de3ff66ec40ae019afe3bde38a3a3ea3e5fb11b57b7cff28041",
+      "merkleLeaf": "sha256-27f9327842133bb28ef154531f3ce363dcd7e299b1f5bbde3b5a7fa80bc24a67",
+      "fileCount": 1,
+      "metadata": "/api/skills/productivity/handoff/metadata.json",
+      "verification": "/api/skills/productivity/handoff/verification.json"
+    },
+    {
+      "slug": "productivity/writing-great-skills",
+      "name": "writing-great-skills",
+      "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-f8bd4506da080baca865d092457c8bff4ff6ffc6ea935c7e062fff694b2085cf",
+      "merkleLeaf": "sha256-cc9417e23afbe540727561a1b8efaf228d00b86ab525e7ee015ffe0ed9504020",
+      "fileCount": 2,
+      "metadata": "/api/skills/productivity/writing-great-skills/metadata.json",
+      "verification": "/api/skills/productivity/writing-great-skills/verification.json"
+    },
+    {
+      "slug": "research-and-web/deep-research",
+      "name": "deep-research",
+      "description": "Run a deep, source-backed research query via DeepAPI (go to deepapi.co to get an API key) POST /v1/research/deep. Builds a rigorous one-paragraph research prompt (per research-prompt rules), fires it, and saves a cited markdown report. Use when the user asks for \"deep research\", \"deepapi research\", \"perplexity deep research\" (legacy trigger), or any deep source-backed research run. Differentiator vs the deepapi skill: this is the full research workflow (prompt + run + report file), not raw endpoint access.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-81153dcab7d89876d7408c4c277464fe551a0812f6c0dc266fa3e689c3a1a4dc",
+      "merkleLeaf": "sha256-9ef3d04d7e55e99c458bdb7e2b7d6626927bc0ac483cbc71dcc3459e7476f3ef",
+      "fileCount": 1,
+      "metadata": "/api/skills/research-and-web/deep-research/metadata.json",
+      "verification": "/api/skills/research-and-web/deep-research/verification.json"
+    },
+    {
+      "slug": "research-and-web/pi-web-search",
+      "name": "pi-web-search",
+      "description": "ONLY for Pi Agents — all other agents have their own web tools. How Pi accesses the web via the pi-web-access package — search, fetch URLs/PDFs/YouTube/GitHub. Use whenever a Pi task needs current info, docs, news, prices, or content from a specific URL.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-950c1466473d04ec174897e832cd8be803a5842383dc89f236a22bb0f9c9d8d6",
+      "merkleLeaf": "sha256-9fa24badcfc47ce3bda58d7acc9deb7130455e6bc14480163ea76b9f7c53eaf2",
+      "fileCount": 1,
+      "metadata": "/api/skills/research-and-web/pi-web-search/metadata.json",
+      "verification": "/api/skills/research-and-web/pi-web-search/verification.json"
+    },
+    {
+      "slug": "review-animations",
+      "name": "review-animations",
+      "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-7a5754e3a2dd5e6cd78d3a7933ec056fdff2941ca6fc470a5e06ef436a5c0c17",
+      "merkleLeaf": "sha256-a216e6ac78638a7ecceda7c6aa34763e65a4008038db62889cca490d7d3bc03a",
+      "fileCount": 2,
+      "metadata": "/api/skills/review-animations/metadata.json",
+      "verification": "/api/skills/review-animations/verification.json"
     },
     {
       "slug": "sandbox-sdk",
@@ -269,6 +555,50 @@
       "verification": "/api/skills/session-logs/verification.json"
     },
     {
+      "slug": "skill-authoring/distribute-skill-to-all-agents",
+      "name": "distribute-skill-to-all-agents",
+      "description": "Distribute a skill across the 4 agent skill folders (Codex, Claude Code, Pi, Hermes) so all agents see it. Use when the user says \"distribute this skill\", \"sync skills across agents\", or after creating/updating a skill that should be global. Covers the symlink layout and the ~/.pi/agent/skills trap.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-922541224dc8e89c5d588a6777c12d1f85014a69e01673afe092eeae1c81e035",
+      "merkleLeaf": "sha256-eae989c0877f38b04c0394941c0ffc4efa686f53b2a0fc8db98ed085c9c55ec1",
+      "fileCount": 1,
+      "metadata": "/api/skills/skill-authoring/distribute-skill-to-all-agents/metadata.json",
+      "verification": "/api/skills/skill-authoring/distribute-skill-to-all-agents/verification.json"
+    },
+    {
+      "slug": "skill-authoring/effective-agent-skills",
+      "name": "effective-agent-skills",
+      "description": "How to write effective agent skills — what to do, what not to do, anatomy, progressive disclosure, design patterns, anti-patterns, testing, security. Read this whenever a skill (Claude Skill, Agent Skill, SKILL.md) is being created, edited, reviewed, or debugged. Use when the user says \"create a skill\", \"new skill\", \"update this skill\", \"improve a skill\", \"why isn't my skill triggering\", or anything else involving authoring or editing SKILL.md files.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-fa4ca03b6ed168f0a2e5894f883427d8dd434c5907e47d9c896c962f63b19dda",
+      "merkleLeaf": "sha256-cd788874e93c6deee964934c0c8325c3616e9e8614cbe35cdbbafb182c152dd4",
+      "fileCount": 1,
+      "metadata": "/api/skills/skill-authoring/effective-agent-skills/metadata.json",
+      "verification": "/api/skills/skill-authoring/effective-agent-skills/verification.json"
+    },
+    {
+      "slug": "skill-authoring/folder-specific-claude-and-agents-md",
+      "name": "folder-specific-claude-and-agents-md",
+      "description": "Create a specialized CLAUDE.md (+ AGENTS.md symlink) inside a specific folder to give future agents folder-scoped context. Use when the user asks to create a CLAUDE.md for a folder, write folder instructions, or add agent context to a directory.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-892bfd412c436c51d5a06c26ea3735936b6e767f3a1e5a47854ed1c4f90f31d2",
+      "merkleLeaf": "sha256-7071170bb02f4b6e41fc93419443689625f603349eb21ebb1c5963dac1ed600e",
+      "fileCount": 1,
+      "metadata": "/api/skills/skill-authoring/folder-specific-claude-and-agents-md/metadata.json",
+      "verification": "/api/skills/skill-authoring/folder-specific-claude-and-agents-md/verification.json"
+    },
+    {
+      "slug": "skill-authoring/push-skill-to-github",
+      "name": "push-skill-to-github",
+      "description": "Commit and push agent-skill changes to the user's private skills GitHub repo (rooted at ~/.agents). Use after creating or updating any skill, when the user says \"push the skill\", \"push skills to github\", \"save the skill to my repo\", or \"update the skills repo\". Handles staging, committing, pushing, and cleaning up the cmux pane used to do it.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-761c1ffc2c8d3a94689ffcbaac99d066d27c1ac838e0e7ea17434af20d7c85d5",
+      "merkleLeaf": "sha256-2ba6680ba7825c7efca78c980c045c6c3eea14ca077467b1dff86db83caf8012",
+      "fileCount": 1,
+      "metadata": "/api/skills/skill-authoring/push-skill-to-github/metadata.json",
+      "verification": "/api/skills/skill-authoring/push-skill-to-github/verification.json"
+    },
+    {
       "slug": "skill-creator",
       "name": "skill-creator",
       "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
@@ -278,6 +608,39 @@
       "fileCount": 4,
       "metadata": "/api/skills/skill-creator/metadata.json",
       "verification": "/api/skills/skill-creator/verification.json"
+    },
+    {
+      "slug": "thinking-and-docs/level-up",
+      "name": "level-up",
+      "description": "Gauge the user's technical + product knowledge through 7 adaptive questions, log verbatim answers with honest ratings, and grow a learning plan from the gaps found. Use when the user says \"level up\", \"level-up session\", \"quiz me\", \"gauge my knowledge\", or wants a new assessment round. Differentiator: this finds and maps gaps; the `teach` skill delivers lessons on them.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-530b4ddcb22b40f6d88eee26184c19cfa21dc421154e6062f4c6a2c953d9780b",
+      "merkleLeaf": "sha256-e556320f61d87aad2a2bc27d2d3849c08b3ef6c17645f85c873ebf1cc7e8c588",
+      "fileCount": 1,
+      "metadata": "/api/skills/thinking-and-docs/level-up/metadata.json",
+      "verification": "/api/skills/thinking-and-docs/level-up/verification.json"
+    },
+    {
+      "slug": "thinking-and-docs/prompt-me",
+      "name": "prompt-me",
+      "description": "Prompt the user with pointed questions to extract what is in his head about a project — remaining work, what is being avoided, what really matters, what does not. Use when the user says \"prompt me\", \"ask me questions\", or wants the agent to figure out priorities by questioning him.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-9048d014f82bf782e08067b9ddfb523b4656174123bfd76fdd96c3b0817ba58b",
+      "merkleLeaf": "sha256-b514a982b7be21f76fd32a7a0fe9d195c32b08d0cf47bdfc6d8f05f9b30ac3c6",
+      "fileCount": 1,
+      "metadata": "/api/skills/thinking-and-docs/prompt-me/metadata.json",
+      "verification": "/api/skills/thinking-and-docs/prompt-me/verification.json"
+    },
+    {
+      "slug": "thinking-and-docs/short",
+      "name": "short",
+      "description": "Manually-invoked skill that forces the agent to compress its current answer — strip filler, simplify wording, and cut length while keeping the substance. Use when the user says \"short\", \"shorter\", \"simpler\", \"too long\", \"tl;dr\", or wants a more concise version of the previous response.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-dbec673cb164cb1847a099126caca887a87df1fbd98aa37d8753de84f23546fa",
+      "merkleLeaf": "sha256-28cd9627acd45e379201ef00d8cc3a9b296eac3c210dc93a59ce99bcdff1ae9d",
+      "fileCount": 1,
+      "metadata": "/api/skills/thinking-and-docs/short/metadata.json",
+      "verification": "/api/skills/thinking-and-docs/short/verification.json"
     },
     {
       "slug": "tmux",
@@ -1138,6 +1501,17 @@
       "verification": "/api/skills/local-places/verification.json"
     },
     {
+      "slug": "ops-and-setup/create-readonly-db-role",
+      "name": "create-readonly-db-role",
+      "description": "Provision a hardened SELECT-only Postgres role so AI agents can safely read a production database. Works on Supabase and any Postgres. Use when the user wants agents to query prod data, says \"read-only role\", \"safe prod DB access for agents\", or is tired of running SQL by hand for agents. Differentiator: this skill CREATES the role and wiring; day-to-day querying belongs in a project-local skill.",
+      "category": "Local / Web Services",
+      "bundleHash": "sha256-c862b6b33fc091b06b6e3d56d5c6c04b3717610458ac75037fd5e40fe11a83d9",
+      "merkleLeaf": "sha256-d0e406a44929406a1980b2f624fa7ece82c500dc73b9ceb81df81813d1d81b81",
+      "fileCount": 1,
+      "metadata": "/api/skills/ops-and-setup/create-readonly-db-role/metadata.json",
+      "verification": "/api/skills/ops-and-setup/create-readonly-db-role/verification.json"
+    },
+    {
       "slug": "ordercli",
       "name": "ordercli",
       "description": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
@@ -1147,6 +1521,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/ordercli/metadata.json",
       "verification": "/api/skills/ordercli/verification.json"
+    },
+    {
+      "slug": "research-and-web/online-shopping",
+      "name": "online-shopping",
+      "description": "Research any online purchase with DeepAPI — fair-price checks, best deals, where to buy, shop trust. Load whenever the user is shopping or buying anything online: mentions buying a product, comparing prices, \"is this a good price\", \"where can I get X\", or attaches a product photo or listing screenshot. Research only — never places orders.",
+      "category": "Local / Web Services",
+      "bundleHash": "sha256-d25efae4f7e375320a122dcd68aa3ba685c81eaef61efd2950af29f37e58caf9",
+      "merkleLeaf": "sha256-e3d81bce4bba8065edeaec0b5c3b884e89f5a08cee01c32540936f9ff6c74178",
+      "fileCount": 1,
+      "metadata": "/api/skills/research-and-web/online-shopping/metadata.json",
+      "verification": "/api/skills/research-and-web/online-shopping/verification.json"
     },
     {
       "slug": "weather",
@@ -1314,6 +1699,17 @@
       "verification": "/api/skills/openrouter-images/verification.json"
     },
     {
+      "slug": "research-and-web/youtube-transcript",
+      "name": "youtube-transcript",
+      "description": "Use whenever the user needs the transcript of a YouTube video — fetching, extracting, downloading, or pulling captions/subtitles/transcript text from a YouTube URL. Triggers on \"get the transcript\", \"transcript of this video\", \"pull the captions\", \"download subtitles\", \"what does this YouTube video say\". Primary path is DeepAPI (go to deepapi.co to get an API key); yt-dlp is the local fallback.",
+      "category": "Media / Devices",
+      "bundleHash": "sha256-77b9706b77874fb737d2aaa2a81a7358afc2f9a667137d2354e1a3e4c10a24d2",
+      "merkleLeaf": "sha256-384624514e11017b7e304009c976a2a25584b0b1f258ed60cd50651e2ea32e7c",
+      "fileCount": 1,
+      "metadata": "/api/skills/research-and-web/youtube-transcript/metadata.json",
+      "verification": "/api/skills/research-and-web/youtube-transcript/verification.json"
+    },
+    {
       "slug": "sag",
       "name": "sag",
       "description": "ElevenLabs text-to-speech with mac-style say UX.",
@@ -1400,6 +1796,28 @@
       "fileCount": 1,
       "metadata": "/api/skills/voice-call/metadata.json",
       "verification": "/api/skills/voice-call/verification.json"
+    },
+    {
+      "slug": "agent-orchestration/cmux",
+      "name": "cmux",
+      "description": "MUST be read ANY time you interact with cmux in ANY way — listing/inspecting/creating/closing cmux workspaces, panes, or surfaces; reading or capturing pane/screen output; sending input or keys to a pane/surface; delegating to, polling, or checking on other agents running in cmux panes/surfaces; building or rearranging terminal layout; cmux browser automation; sending notifications/flashes/status/progress to the sidebar; editing cmux settings; or integrating an agent with cmux hooks. If your command starts with `cmux ` or touches a cmux workspace/pane/surface/agent, read this FIRST. Triggers on \"cmux\", \"in this workspace\", \"this pane\", \"the other agent\", \"delegate to\", \"check on the agent\", \"send to the pane\". macOS only (14.0+).",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-81d77610e9be172baaa8406a2105a256e440df64c879b1111b3eff9dae0863eb",
+      "merkleLeaf": "sha256-46f1b10cc11e8b41ef03abd144dc9cda7f46582f62fe0c6efd12d23102433a2d",
+      "fileCount": 1,
+      "metadata": "/api/skills/agent-orchestration/cmux/metadata.json",
+      "verification": "/api/skills/agent-orchestration/cmux/verification.json"
+    },
+    {
+      "slug": "agent-orchestration/handoff",
+      "name": "agent-orchestration-handoff",
+      "description": "Compact the current conversation into a single, detailed handoff message — everything that happened, why it happened, and what's left — output in a code block so it can be copy-pasted into a fresh agent session. Use when hitting context limits, switching focus, ending a work session, or partitioning a task across fresh contexts.",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-fb8c7c282f4e5b5bf323c6ba66f2b407a3e502a088c04f5dff23fad2052ee6b1",
+      "merkleLeaf": "sha256-4502904b559caf9bdc03bac9de057d8199e62894b873953088bae40f5498787e",
+      "fileCount": 1,
+      "metadata": "/api/skills/agent-orchestration/handoff/metadata.json",
+      "verification": "/api/skills/agent-orchestration/handoff/verification.json"
     },
     {
       "slug": "anthropic-skills/pptx",
@@ -1512,6 +1930,17 @@
       "verification": "/api/skills/imsg/verification.json"
     },
     {
+      "slug": "in-progress/loop-me",
+      "name": "loop-me",
+      "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-f69d079e975aa7f1836f4a42d525caba0dd56c8660405c99024c0672b55faec1",
+      "merkleLeaf": "sha256-1ddec4235e8b9347a14acdccc61c1cb3e6cc882e6483ac528a84cea734086bdb",
+      "fileCount": 1,
+      "metadata": "/api/skills/in-progress/loop-me/metadata.json",
+      "verification": "/api/skills/in-progress/loop-me/verification.json"
+    },
+    {
       "slug": "notion",
       "name": "notion",
       "description": "Notion API for creating and managing pages, databases, and blocks.",
@@ -1534,6 +1963,39 @@
       "verification": "/api/skills/obsidian/verification.json"
     },
     {
+      "slug": "personal/obsidian-vault",
+      "name": "obsidian-vault",
+      "description": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-7e1619b7a3e755aa5bb5b270c74a31818b01125a51cd64104b220f6f502e7197",
+      "merkleLeaf": "sha256-9b8de4dc7cd8700fbc2193bb7fd7263a494760b0012ad97f256ff74a98a4dade",
+      "fileCount": 1,
+      "metadata": "/api/skills/personal/obsidian-vault/metadata.json",
+      "verification": "/api/skills/personal/obsidian-vault/verification.json"
+    },
+    {
+      "slug": "productivity/teach",
+      "name": "productivity-teach",
+      "description": "Teach the user a new skill or concept in a multi-session teaching workspace with missions, lessons, and learning records.",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-761d7d1cbf99875731fa240785fbf12b595c30609c32ee9f2b208c0ad502ce35",
+      "merkleLeaf": "sha256-58f4e45368f38aeacde4d6cb55432c8e42be4a98982c251e088b95cc816046bc",
+      "fileCount": 5,
+      "metadata": "/api/skills/productivity/teach/metadata.json",
+      "verification": "/api/skills/productivity/teach/verification.json"
+    },
+    {
+      "slug": "research-and-web/deepapi",
+      "name": "deepapi",
+      "description": "Use DeepAPI for scraping and safe email with DEEPAPI_API_BASE_URL and DEEPAPI_API_KEY.",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-b791e403ead001cb1f369e1d0ac6715323bfcf1fb9ddc0c0c0a365dcca3942e3",
+      "merkleLeaf": "sha256-1ff50aa66935423e55b9f03b81c43a45ca2f0f62bcec4fc1a65c5e361cc21343",
+      "fileCount": 1,
+      "metadata": "/api/skills/research-and-web/deepapi/metadata.json",
+      "verification": "/api/skills/research-and-web/deepapi/verification.json"
+    },
+    {
       "slug": "slack",
       "name": "slack",
       "description": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
@@ -1554,6 +2016,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/things-mac/metadata.json",
       "verification": "/api/skills/things-mac/verification.json"
+    },
+    {
+      "slug": "thinking-and-docs/teach",
+      "name": "thinking-and-docs-teach",
+      "description": "Teach with concise chat replies and rich lesson docs — multi-session teaching workspace optimized for thinking and documentation.",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-34e0339bf7a17fdc2935d4d44e8ec28a35715c8461075a316c1c3ec2ca55969d",
+      "merkleLeaf": "sha256-746e456b03cfc85006dfe3dfe794d0c0589272ac49427784be7f961f12478b8a",
+      "fileCount": 5,
+      "metadata": "/api/skills/thinking-and-docs/teach/metadata.json",
+      "verification": "/api/skills/thinking-and-docs/teach/verification.json"
     },
     {
       "slug": "trello",
@@ -2700,6 +3173,17 @@
       "verification": "/api/skills/1password/verification.json"
     },
     {
+      "slug": "animation-vocabulary",
+      "name": "animation-vocabulary",
+      "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+      "category": "Utilities",
+      "bundleHash": "sha256-2d151183dde7968537c97c9aeb573f3168b7d5ae77f31a978c96e0cc7e3c8b83",
+      "merkleLeaf": "sha256-a309640cd59891cd6f70796c89d464763210f93c16c729c533b4b715cef30341",
+      "fileCount": 1,
+      "metadata": "/api/skills/animation-vocabulary/metadata.json",
+      "verification": "/api/skills/animation-vocabulary/verification.json"
+    },
+    {
       "slug": "anthropic-skills/brand-guidelines",
       "name": "brand-guidelines",
       "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
@@ -2744,6 +3228,17 @@
       "verification": "/api/skills/anthropic-skills/theme-factory/verification.json"
     },
     {
+      "slug": "apple-design",
+      "name": "apple-design",
+      "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+      "category": "Utilities",
+      "bundleHash": "sha256-c795bfec6c2f501b42c3329ec5d53813528fc739d342aca4a428b4771710a6c2",
+      "merkleLeaf": "sha256-49606c4a6f1a35da03c1cfc9aeb882f081a788557130aab6ce1b1084f5c9c786",
+      "fileCount": 1,
+      "metadata": "/api/skills/apple-design/metadata.json",
+      "verification": "/api/skills/apple-design/verification.json"
+    },
+    {
       "slug": "bird",
       "name": "bird",
       "description": "X/Twitter CLI for reading, searching, posting, and engagement via cookies.",
@@ -2777,6 +3272,17 @@
       "verification": "/api/skills/cloudflare-one-migrations/verification.json"
     },
     {
+      "slug": "deprecated/ubiquitous-language",
+      "name": "ubiquitous-language",
+      "description": "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions \"domain model\" or \"DDD\".",
+      "category": "Utilities",
+      "bundleHash": "sha256-c0ed039555aee7e007c5104cbcf8d81456932908c9b44b0f80fd62435d8707f6",
+      "merkleLeaf": "sha256-6790bc0d485bd39beb96bdae803000040142f0120b093978464badcc0e23463e",
+      "fileCount": 1,
+      "metadata": "/api/skills/deprecated/ubiquitous-language/metadata.json",
+      "verification": "/api/skills/deprecated/ubiquitous-language/verification.json"
+    },
+    {
       "slug": "eightctl",
       "name": "eightctl",
       "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
@@ -2788,6 +3294,116 @@
       "verification": "/api/skills/eightctl/verification.json"
     },
     {
+      "slug": "engineering/diagnosing-bugs",
+      "name": "diagnosing-bugs",
+      "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+      "category": "Utilities",
+      "bundleHash": "sha256-ad47efb93554d53be889645a198e004803b2473ae91b3d9366df29b3a6b67b3d",
+      "merkleLeaf": "sha256-e27ebbad9c571b124e088d0d3cc6777dcb3cace0a38f737096a11a462100ef56",
+      "fileCount": 2,
+      "metadata": "/api/skills/engineering/diagnosing-bugs/metadata.json",
+      "verification": "/api/skills/engineering/diagnosing-bugs/verification.json"
+    },
+    {
+      "slug": "engineering/grill-with-docs",
+      "name": "grill-with-docs",
+      "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+      "category": "Utilities",
+      "bundleHash": "sha256-f8061bc96e57d210c19ec11a2349803c08a15eec8d85687c40c719a4257c1cfb",
+      "merkleLeaf": "sha256-3faf0afb9443fab04b3485c028ea0048771a26874ab26dc2a82b526234de007d",
+      "fileCount": 1,
+      "metadata": "/api/skills/engineering/grill-with-docs/metadata.json",
+      "verification": "/api/skills/engineering/grill-with-docs/verification.json"
+    },
+    {
+      "slug": "engineering/implement",
+      "name": "implement",
+      "description": "Implement a piece of work based on a spec or set of tickets.",
+      "category": "Utilities",
+      "bundleHash": "sha256-eafda65422cd536bf4c5b0a9ec3d17b6bcbcb381ac2919050f02bba7cdef6460",
+      "merkleLeaf": "sha256-26187120b57371424579f8c281964d76acbd4383ca0ecfe1b5fcc157b3516e45",
+      "fileCount": 1,
+      "metadata": "/api/skills/engineering/implement/metadata.json",
+      "verification": "/api/skills/engineering/implement/verification.json"
+    },
+    {
+      "slug": "engineering/improve-codebase-architecture",
+      "name": "improve-codebase-architecture",
+      "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+      "category": "Utilities",
+      "bundleHash": "sha256-8503648748fa18bd535322e9a4a4f8dd3616e3610b34d697c1654ebb7853aaaa",
+      "merkleLeaf": "sha256-82b900f5dbbae0820ab2376087f7e457a93b738bc747877fa9b507f981e90d14",
+      "fileCount": 2,
+      "metadata": "/api/skills/engineering/improve-codebase-architecture/metadata.json",
+      "verification": "/api/skills/engineering/improve-codebase-architecture/verification.json"
+    },
+    {
+      "slug": "engineering/prototype",
+      "name": "prototype",
+      "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+      "category": "Utilities",
+      "bundleHash": "sha256-92cbd6135305580e87b499db615570efbccb3f931a8319853e80453a423d621a",
+      "merkleLeaf": "sha256-021a096fa7bb664f4b90882a9ef31c0779cb0cb01321645ed764e1ce5b39488e",
+      "fileCount": 3,
+      "metadata": "/api/skills/engineering/prototype/metadata.json",
+      "verification": "/api/skills/engineering/prototype/verification.json"
+    },
+    {
+      "slug": "engineering/resolving-merge-conflicts",
+      "name": "resolving-merge-conflicts",
+      "description": "Use when you need to resolve an in-progress git merge/rebase conflict.",
+      "category": "Utilities",
+      "bundleHash": "sha256-a5e69f060956d83b029276b452e84e3c0795bdfc017edc02289542b512caaf84",
+      "merkleLeaf": "sha256-89c403bb754b80d5dff89f146ad9133bc3c2930c51c2f420a9724dc1aa0cf0ef",
+      "fileCount": 1,
+      "metadata": "/api/skills/engineering/resolving-merge-conflicts/metadata.json",
+      "verification": "/api/skills/engineering/resolving-merge-conflicts/verification.json"
+    },
+    {
+      "slug": "engineering/setup-matt-pocock-skills",
+      "name": "setup-matt-pocock-skills",
+      "description": "Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+      "category": "Utilities",
+      "bundleHash": "sha256-01316c227ff66f4434ce65bf9465dc33b48f018a8284127a816ce6f464d3ef12",
+      "merkleLeaf": "sha256-9615f05ff53b479f54d9f512ea8f730b0b14a11e0793b340dc1a45bb1b918e1d",
+      "fileCount": 6,
+      "metadata": "/api/skills/engineering/setup-matt-pocock-skills/metadata.json",
+      "verification": "/api/skills/engineering/setup-matt-pocock-skills/verification.json"
+    },
+    {
+      "slug": "engineering/tdd",
+      "name": "tdd",
+      "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+      "category": "Utilities",
+      "bundleHash": "sha256-44d06f3607aed4f070d6da89dd53f0f3ba1f6540679646ad67440c19e849a4c3",
+      "merkleLeaf": "sha256-027b05860a3070574f5d34d1550c81a1ec12204d3dd90d316f169f391ba1d873",
+      "fileCount": 3,
+      "metadata": "/api/skills/engineering/tdd/metadata.json",
+      "verification": "/api/skills/engineering/tdd/verification.json"
+    },
+    {
+      "slug": "engineering/to-spec",
+      "name": "to-spec",
+      "description": "Turn the current conversation into a spec and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.",
+      "category": "Utilities",
+      "bundleHash": "sha256-d4c8101742327539eb9944a3d5e0c5144c9ce1e663ae1c7e35c3f75487a46a93",
+      "merkleLeaf": "sha256-14e82c394987b5e047ba449135c0845f5bda109306470a599b17001fa2277b61",
+      "fileCount": 1,
+      "metadata": "/api/skills/engineering/to-spec/metadata.json",
+      "verification": "/api/skills/engineering/to-spec/verification.json"
+    },
+    {
+      "slug": "engineering/to-tickets",
+      "name": "to-tickets",
+      "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker.",
+      "category": "Utilities",
+      "bundleHash": "sha256-91c49f8a38ce3bf97b5f15ad072b829987aee2c360ff2faef2e73dab3b3fce9b",
+      "merkleLeaf": "sha256-794d08541737105046284178575bfcb2f62ee6a3b878fe5b73d20bdb33ff8b8b",
+      "fileCount": 1,
+      "metadata": "/api/skills/engineering/to-tickets/metadata.json",
+      "verification": "/api/skills/engineering/to-tickets/verification.json"
+    },
+    {
       "slug": "gemini",
       "name": "gemini",
       "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
@@ -2797,6 +3413,83 @@
       "fileCount": 1,
       "metadata": "/api/skills/gemini/metadata.json",
       "verification": "/api/skills/gemini/verification.json"
+    },
+    {
+      "slug": "in-progress/setup-ts-deep-modules",
+      "name": "setup-ts-deep-modules",
+      "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module — implementation hidden in subfolders, reachable only through its entry-point files. User-invoked.",
+      "category": "Utilities",
+      "bundleHash": "sha256-5aa8d168651450351ad9caa280ec3f6bfa9cfffd9dbc5677a379d99e15a74de5",
+      "merkleLeaf": "sha256-4c32e4a029d17f07290b0839b8bd9e446464fc220873b96360ae466920ce474c",
+      "fileCount": 1,
+      "metadata": "/api/skills/in-progress/setup-ts-deep-modules/metadata.json",
+      "verification": "/api/skills/in-progress/setup-ts-deep-modules/verification.json"
+    },
+    {
+      "slug": "in-progress/writing-beats",
+      "name": "writing-beats",
+      "description": "Writing, exploit — assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+      "category": "Utilities",
+      "bundleHash": "sha256-596129c604f3b901af0ae310cc80e92d408b8b45e5be2561e3712bfe100c9aad",
+      "merkleLeaf": "sha256-d9b8682f3d17ba6b378bc49aac9187f50e2cbb3a2089ca81e0e1e6c65c76dbee",
+      "fileCount": 1,
+      "metadata": "/api/skills/in-progress/writing-beats/metadata.json",
+      "verification": "/api/skills/in-progress/writing-beats/verification.json"
+    },
+    {
+      "slug": "in-progress/writing-fragments",
+      "name": "writing-fragments",
+      "description": "Writing, explore — mine raw fragments, no structure yet.",
+      "category": "Utilities",
+      "bundleHash": "sha256-2a9832b67f9c80ff82eb9b7f8fb75876a212af6860c8cc08c1b7059709bf1f49",
+      "merkleLeaf": "sha256-ee430ed1da1cee92dbcdc266f94adb6540a8ca964d2c41c8322f9c0e867cb05e",
+      "fileCount": 1,
+      "metadata": "/api/skills/in-progress/writing-fragments/metadata.json",
+      "verification": "/api/skills/in-progress/writing-fragments/verification.json"
+    },
+    {
+      "slug": "in-progress/writing-shape",
+      "name": "writing-shape",
+      "description": "Writing, exploit — shape raw material into an article, paragraph by paragraph.",
+      "category": "Utilities",
+      "bundleHash": "sha256-c19862874d9c507744bb2c97502fc2e7acf56779e7611ea6f1f6829a5005f21c",
+      "merkleLeaf": "sha256-1ceeb616fddae05a06e6aeafde482dcc3c9ac476c2b30c9e327985fbc4c45645",
+      "fileCount": 1,
+      "metadata": "/api/skills/in-progress/writing-shape/metadata.json",
+      "verification": "/api/skills/in-progress/writing-shape/verification.json"
+    },
+    {
+      "slug": "misc/migrate-to-shoehorn",
+      "name": "migrate-to-shoehorn",
+      "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+      "category": "Utilities",
+      "bundleHash": "sha256-460777ad98975671ddcf68632e642c5d895cdc385d2cb39f13ff34c1f8b77ecc",
+      "merkleLeaf": "sha256-9de65941067dafb2a12b40c4078ebfa4faf034853fd037a8e1d1490e855243fc",
+      "fileCount": 1,
+      "metadata": "/api/skills/misc/migrate-to-shoehorn/metadata.json",
+      "verification": "/api/skills/misc/migrate-to-shoehorn/verification.json"
+    },
+    {
+      "slug": "misc/scaffold-exercises",
+      "name": "scaffold-exercises",
+      "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+      "category": "Utilities",
+      "bundleHash": "sha256-c407dbef914a6c8e20f6f65681e9959c9be4cb89850a3315cbc7e1ac9c18f45b",
+      "merkleLeaf": "sha256-1b6cc4fec6413f5e88539bd3ff13819334020c86f4ce1fd09e66df023aadb241",
+      "fileCount": 1,
+      "metadata": "/api/skills/misc/scaffold-exercises/metadata.json",
+      "verification": "/api/skills/misc/scaffold-exercises/verification.json"
+    },
+    {
+      "slug": "misc/setup-pre-commit",
+      "name": "setup-pre-commit",
+      "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
+      "category": "Utilities",
+      "bundleHash": "sha256-558bd1842110877611e4dce29ad9853c7aa716cd000f099deea0ed22a2c86c9b",
+      "merkleLeaf": "sha256-d980617ef4bb94a769262e7b544b2a0d47cdd6b258caa28196c3611a7a0de77f",
+      "fileCount": 1,
+      "metadata": "/api/skills/misc/setup-pre-commit/metadata.json",
+      "verification": "/api/skills/misc/setup-pre-commit/verification.json"
     },
     {
       "slug": "openrouter-models",
@@ -2821,6 +3514,39 @@
       "verification": "/api/skills/openrouter-oauth/verification.json"
     },
     {
+      "slug": "ops-and-setup/anti-sleep",
+      "name": "anti-sleep",
+      "description": "Keep the user's MacBook awake with macOS caffeinate — prevent sleep, screen dimming, or both, for a set duration or while a process runs. Use when the user says \"don't let my mac sleep\", \"keep the screen on\", \"anti-sleep\", \"caffeinate\", or wants the machine awake overnight / during a long build.",
+      "category": "Utilities",
+      "bundleHash": "sha256-84835a151d2082093126673ff36e859c39b548b84241e420c57274be3eba1f41",
+      "merkleLeaf": "sha256-8631854ba0eeded766a22735f826283f65dee1ac8e0e1ac6b007f2f52e14fb15",
+      "fileCount": 1,
+      "metadata": "/api/skills/ops-and-setup/anti-sleep/metadata.json",
+      "verification": "/api/skills/ops-and-setup/anti-sleep/verification.json"
+    },
+    {
+      "slug": "ops-and-setup/google-safe-browsing",
+      "name": "google-safe-browsing",
+      "description": "Prevent and fix Google Safe Browsing \"Dangerous site\" flags. Use when launching a public web app, buying/picking a domain, building a login or signup page, or when any site shows a red \"Dangerous site\" / \"Deceptive site\" warning in Chrome, Brave, Safari, Firefox, or Edge. Triggers on \"dangerous site\", \"deceptive site\", \"site blocked\", \"safe browsing\", \"phishing flag\", \"red warning screen\".",
+      "category": "Utilities",
+      "bundleHash": "sha256-a8bb5eb863fd34d2c9d9dbd709710ed5606835e08102903a39ff6cf5e1a555ff",
+      "merkleLeaf": "sha256-895e4191c5bf0e3bf18d685c3c0c221b6377c6b7035cd61456abe037b95c811d",
+      "fileCount": 1,
+      "metadata": "/api/skills/ops-and-setup/google-safe-browsing/metadata.json",
+      "verification": "/api/skills/ops-and-setup/google-safe-browsing/verification.json"
+    },
+    {
+      "slug": "ops-and-setup/setup-help",
+      "name": "setup-help",
+      "description": "Walk the user through setting up anything step by step. Use when the user asks for help setting up, configuring, installing, or getting something working — \"help me set up X\", \"walk me through this\", \"setup-help\". Differentiator: gives one current step at a time, then always lists every remaining setup step after each response.",
+      "category": "Utilities",
+      "bundleHash": "sha256-f0c1e8fb24d0f6db59c9c99f285f10ae877842801a6e36afdc38700475bbb084",
+      "merkleLeaf": "sha256-137dfbb8d107adeba15c2bf2e8970182fecfacbb431e99910cc46164f1c17d51",
+      "fileCount": 1,
+      "metadata": "/api/skills/ops-and-setup/setup-help/metadata.json",
+      "verification": "/api/skills/ops-and-setup/setup-help/verification.json"
+    },
+    {
       "slug": "peekaboo",
       "name": "peekaboo",
       "description": "Capture and automate macOS UI with the Peekaboo CLI.",
@@ -2830,6 +3556,83 @@
       "fileCount": 1,
       "metadata": "/api/skills/peekaboo/metadata.json",
       "verification": "/api/skills/peekaboo/verification.json"
+    },
+    {
+      "slug": "personal/edit-article",
+      "name": "edit-article",
+      "description": "Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft.",
+      "category": "Utilities",
+      "bundleHash": "sha256-3d1df50a645d24df0eb3354b97c78d7b329505449449ef8897bab00e742946d5",
+      "merkleLeaf": "sha256-e9972b5967234b53f6b673539e55d8b673422a8c462967db9889339c28001506",
+      "fileCount": 1,
+      "metadata": "/api/skills/personal/edit-article/metadata.json",
+      "verification": "/api/skills/personal/edit-article/verification.json"
+    },
+    {
+      "slug": "productivity/grill-me",
+      "name": "grill-me",
+      "description": "A relentless interview to sharpen a plan or design.",
+      "category": "Utilities",
+      "bundleHash": "sha256-d35cd841fb63edab3559ce43b8c35be6129d1ff5c0ca07373c391d797419497e",
+      "merkleLeaf": "sha256-e5cad631db27a0cf6915f354b600ad8d99511e55656fe5de342c980971553d7b",
+      "fileCount": 1,
+      "metadata": "/api/skills/productivity/grill-me/metadata.json",
+      "verification": "/api/skills/productivity/grill-me/verification.json"
+    },
+    {
+      "slug": "productivity/grilling",
+      "name": "grilling",
+      "description": "Grill the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
+      "category": "Utilities",
+      "bundleHash": "sha256-b354f730432cb7ab24ec6b663e5dc0a2ce5d2c7c5bd2d97c2cd1ec1ada852e3b",
+      "merkleLeaf": "sha256-1a7b615f0ceeeeb802291a752671862ddcd58528ef8c63ee1436353ab30944d4",
+      "fileCount": 1,
+      "metadata": "/api/skills/productivity/grilling/metadata.json",
+      "verification": "/api/skills/productivity/grilling/verification.json"
+    },
+    {
+      "slug": "research-and-web/browser-harness",
+      "name": "browser-harness",
+      "description": "Direct browser control via CDP. Use when the user wants to automate, scrape, test, or interact with web pages. Connects to the user's already-running Chrome.",
+      "category": "Utilities",
+      "bundleHash": "sha256-34cdad0e137284affd5e917e03f613f7c00ca5edace7ab86fbe679ec20c8bf78",
+      "merkleLeaf": "sha256-8599211aa9b82893b9c21d04dac38b71d971a79de534fbc958de3a445a49bc49",
+      "fileCount": 2,
+      "metadata": "/api/skills/research-and-web/browser-harness/metadata.json",
+      "verification": "/api/skills/research-and-web/browser-harness/verification.json"
+    },
+    {
+      "slug": "research-and-web/research-prompt",
+      "name": "research-prompt",
+      "description": "Write a single-paragraph Deep Research prompt to hand to a human researcher (or a deep-research AI). Use when the user wants a research brief, a \"deep research prompt\", a one-paragraph task for a researcher, or asks \"what should our researcher look for\". Produces ONE tight paragraph with full context, numbered sub-questions, and per-finding output format.",
+      "category": "Utilities",
+      "bundleHash": "sha256-e3539edba49219b1349571ae2a05b85d8367039bf656fa1eb5f7b52c59b1c3f9",
+      "merkleLeaf": "sha256-f30f390d71a5c5325733388902fde25efeaebee670608454b5485499d900ca8e",
+      "fileCount": 1,
+      "metadata": "/api/skills/research-and-web/research-prompt/metadata.json",
+      "verification": "/api/skills/research-and-web/research-prompt/verification.json"
+    },
+    {
+      "slug": "thinking-and-docs/brain-to-docs",
+      "name": "brain-to-docs",
+      "description": "Use when the user wants to extract project vision, decisions, and preferences from his head into clear documentation (README + ADRs) through a back-and-forth Q&A loop. Triggers on \"brain-to-docs\", \"build out the docs\", \"extract the vision\", \"let's document this project\".",
+      "category": "Utilities",
+      "bundleHash": "sha256-dba558dd0304039e617631179bddf9c6ab45594049f707fe8977c9052824d06b",
+      "merkleLeaf": "sha256-e51cb1ab1d29bbb7cb431e13e19f60f491aa3d063d979ccf3e89cadd4a629dca",
+      "fileCount": 1,
+      "metadata": "/api/skills/thinking-and-docs/brain-to-docs/metadata.json",
+      "verification": "/api/skills/thinking-and-docs/brain-to-docs/verification.json"
+    },
+    {
+      "slug": "thinking-and-docs/read-all-adrs",
+      "name": "read-all-adrs",
+      "description": "Read every ADR markdown file in the project's docs/adr/ folder so you have full context on past decisions. Use only when the user explicitly calls it.",
+      "category": "Utilities",
+      "bundleHash": "sha256-b3780da11cfd261b5881ddf717a68de3b9b3d0ae7c4b20de2e0ec834dd044f5f",
+      "merkleLeaf": "sha256-fed149f83fdbc309f9b3e2e3c1249cf5aa2b9b7f80f288acca9662f632a421cb",
+      "fileCount": 1,
+      "metadata": "/api/skills/thinking-and-docs/read-all-adrs/metadata.json",
+      "verification": "/api/skills/thinking-and-docs/read-all-adrs/verification.json"
     }
   ]
 }

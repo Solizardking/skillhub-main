@@ -3,9 +3,9 @@
 <img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />
 
 [![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)
-![Skills](https://img.shields.io/badge/skills-255-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-9-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-328-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-9-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
 
-**255 installable agent skills** — including a **69-skill Google integration** (Ads, Analytics, Cloud, GKE, BigQuery, Vertex, Gemini, and the Well-Architected Framework). Every one is a `SKILL.md` playbook your agent can pull off the shelf —
+**328 installable agent skills** — including a **69-skill Google integration** (Ads, Analytics, Cloud, GKE, BigQuery, Vertex, Gemini, and the Well-Architected Framework). Every one is a `SKILL.md` playbook your agent can pull off the shelf —
 hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
 
 *Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️
@@ -20,15 +20,15 @@ Nine zones. Every skill lives in exactly one. Click a zone to jump to its catalo
 
 | Zone | Skills | Power level | What lives here |
 |---|---:|---|---|
-| [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 27 | `█████░░░░░░░░░░░░░` | Build, orchestrate, and ship with agent tooling |
+| [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 60 | `███████████░░░░░░░` | Build, orchestrate, and ship with agent tooling |
 | [📣 **Google / Ads**](#-google--ads) | 11 | `██░░░░░░░░░░░░░░░░` | Google Ads APIs, campaigns, and reporting |
 | [📈 **Google / Analytics**](#-google--analytics) | 2 | `█░░░░░░░░░░░░░░░░░` | GA4 data APIs and measurement |
 | [☁️ **Google / Cloud**](#️-google--cloud) | 56 | `██████████░░░░░░░░` | GCP, GKE, BigQuery, Vertex, and friends |
-| [📍 **Local / Web Services**](#-local--web-services) | 7 | `█░░░░░░░░░░░░░░░░░` | Weather, places, food, and everyday web services |
-| [🎬 **Media / Devices**](#-media--devices) | 22 | `████░░░░░░░░░░░░░░` | Audio, video, images, TTS, cameras, and gadgets |
-| [💬 **Productivity / Messaging**](#-productivity--messaging) | 16 | `███░░░░░░░░░░░░░░░` | Notes, tasks, chat, and mail on autopilot |
+| [📍 **Local / Web Services**](#-local--web-services) | 9 | `██░░░░░░░░░░░░░░░░` | Weather, places, food, and everyday web services |
+| [🎬 **Media / Devices**](#-media--devices) | 23 | `████░░░░░░░░░░░░░░` | Audio, video, images, TTS, cameras, and gadgets |
+| [💬 **Productivity / Messaging**](#-productivity--messaging) | 23 | `████░░░░░░░░░░░░░░` | Notes, tasks, chat, and mail on autopilot |
 | [🟣 **Solana / Blockchain**](#-solana--blockchain) | 101 | `██████████████████` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
-| [🧰 **Utilities**](#-utilities) | 13 | `██░░░░░░░░░░░░░░░░` | Handy one-off power tools |
+| [🧰 **Utilities**](#-utilities) | 43 | `████████░░░░░░░░░░` | Handy one-off power tools |
 
 ## 🧭 Codebase Map
 
@@ -36,7 +36,7 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 | Layer | What it contains | Main paths |
 |---|---|---|
-| Skill sources | 255 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
+| Skill sources | 328 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
 | Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |
 | Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |
 | Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |
@@ -55,11 +55,23 @@ This is the same 240-skill inventory grouped by where the source directories liv
 | `pump/pumpfun/*` | 24 | Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows. |
 | `vulcan/*` | 18 | Vulcan/Phoenix perps trading skills for onboarding, market intel, execution, grids, TWAP, TP/SL, margin, and risk. |
 | `anthropic-skills/*` | 17 | Imported Anthropic-format skills for documents, spreadsheets, design, web apps, MCP, artifacts, and skill creation. |
+| `engineering/*` | 17 | Premiere engineering playbooks: TDD, implement, triage, architecture, domain modeling, specs, and tickets. |
 | `imperial/*` | 12 | Imperial trading deck skills for execution modes, margin, portfolio intelligence, position management, and risk. |
 | `dflow/*` | 9 | DFlow, Kalshi, Phantom Connect, spot trading, portfolio, market data, fees, and KYC workflows. |
 | `solana/*` | 8 | Solana development, formal verification, Clawd, Redpill verifier, rent-free, and agentic-commerce skills. |
+| `agent-orchestration/*` | 7 | Premiere agent orchestration: goal loops, handoffs, subagents, deep SWE, and self-scheduling. |
+| `in-progress/*` | 7 | Premiere in-progress drafts: wizards, deep modules, writing craft, and experimental loops. |
+| `research-and-web/*` | 7 | Premiere research and web: deep research, browser harness, transcripts, shopping, and web search. |
 | `helius-skills/*` | 6 | Helius infrastructure skills for Sender, DAS, LaserStream, Jupiter, OKX, Phantom, and SVM internals. |
+| `ops-and-setup/*` | 6 | Premiere ops and setup: readonly DB roles, cyber audit, Safe Browsing, custom models, and setup help. |
+| `thinking-and-docs/*` | 6 | Premiere thinking and docs: brain-to-docs, ADRs, prompts, level-up, and concise teaching. |
 | `openrouter/*` | 5 | OpenRouter model, image, OAuth, TypeScript SDK, and agent migration references. |
+| `productivity/*` | 5 | Premiere productivity: grilling, teaching, handoffs, and writing great skills. |
+| `deprecated/*` | 4 | Premiere-listed deprecated skills kept installable for continuity (QA, design-an-interface, refactor plans). |
+| `design-motion/*` | 4 | Premiere design and motion: Apple HIG, Emil design-eng, animation vocabulary, and review animations. |
+| `misc/*` | 4 | Premiere misc utilities: git guardrails, shoehorn migration, exercise scaffolds, and pre-commit setup. |
+| `skill-authoring/*` | 4 | Premiere skill authoring: effective skills, distribution, folder-specific agents, and GitHub push. |
+| `personal/*` | 2 | Premiere personal workflows: Obsidian vault and article editing. |
 
 ## 🚀 Install in 10 Seconds
 
@@ -70,19 +82,31 @@ npx skills add Solizardking/skills        # via skills.sh
 npx github:Solizardking/skills install    # straight from GitHub
 ```
 
-Or grab a focused stack:
+Or grab a **premiere** focused stack (the hub's lead offerings):
 
 ```bash
-# Solana dev core
+# Premiere: engineering (TDD, implement, triage, architecture)
+npx github:Solizardking/skills install engineering/tdd engineering/implement engineering/triage engineering/codebase-design engineering/to-spec
+
+# Premiere: agent orchestration (goal loops, handoffs, subagents)
+npx github:Solizardking/skills install agent-orchestration/goal-loop agent-orchestration/handoff agent-orchestration/codex-subagent agent-orchestration/run-deep-swe
+
+# Premiere: productivity + thinking & docs
+npx github:Solizardking/skills install productivity/grill-me productivity/teach productivity/writing-great-skills thinking-and-docs/brain-to-docs thinking-and-docs/prompt-me
+
+# Premiere: design & motion
+npx github:Solizardking/skills install apple-design emil-design-eng animation-vocabulary review-animations
+
+# Premiere: research, skill authoring, ops
+npx github:Solizardking/skills install research-and-web/deep-research research-and-web/browser-harness skill-authoring/effective-agent-skills ops-and-setup/setup-help
+```
+
+Also available — Solana trading and infra stacks:
+
+```bash
 npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock
-
-# Pump.fun token lifecycle
 npx github:Solizardking/skills install pumpfun pump-token-lifecycle pump-bonding-curve pump-security
-
-# ZK compression lane
 npx github:Solizardking/skills install compressed-pda compressed-token zk zkrouter
-
-# Google Cloud starter
 npx github:Solizardking/skills install google/cloud/gcloud google/cloud/gke-basics google/cloud/bigquery-basics
 ```
 
@@ -96,7 +120,70 @@ npx github:Solizardking/skills install --eve                      # eve (agent/s
 
 ## 🌟 Featured Runs
 
-Curated multi-skill loadouts — install a run and your agent speaks the whole dialect:
+**Premiere loadouts first** — engineering, orchestration, productivity, design, research, authoring, and ops. Solana trading runs follow:
+
+<details>
+<summary><strong>🎯 Engineering mode</strong> — ship software the Matt Pocock way: TDD, triage, implement, architecture, specs, tickets <em>(17 skills)</em></summary>
+
+[`engineering/ask-matt`](./skills/engineering/ask-matt/SKILL.md) · [`engineering/code-review`](./skills/engineering/code-review/SKILL.md) · [`engineering/codebase-design`](./skills/engineering/codebase-design/SKILL.md) · [`engineering/domain-modeling`](./skills/engineering/domain-modeling/SKILL.md) · [`engineering/research`](./skills/engineering/research/SKILL.md) · [`engineering/triage`](./skills/engineering/triage/SKILL.md) · [`engineering/wayfinder`](./skills/engineering/wayfinder/SKILL.md) · [`engineering/diagnosing-bugs`](./skills/engineering/diagnosing-bugs/SKILL.md) · [`engineering/grill-with-docs`](./skills/engineering/grill-with-docs/SKILL.md) · [`engineering/implement`](./skills/engineering/implement/SKILL.md) · [`engineering/improve-codebase-architecture`](./skills/engineering/improve-codebase-architecture/SKILL.md) · [`engineering/prototype`](./skills/engineering/prototype/SKILL.md) · [`engineering/resolving-merge-conflicts`](./skills/engineering/resolving-merge-conflicts/SKILL.md) · [`engineering/setup-matt-pocock-skills`](./skills/engineering/setup-matt-pocock-skills/SKILL.md) · [`engineering/tdd`](./skills/engineering/tdd/SKILL.md) · [`engineering/to-spec`](./skills/engineering/to-spec/SKILL.md) · [`engineering/to-tickets`](./skills/engineering/to-tickets/SKILL.md)
+
+</details>
+
+<details>
+<summary><strong>🧭 Agent orchestration mode</strong> — goal loops, handoffs, subagents, deep SWE runs, self-scheduling <em>(7 skills)</em></summary>
+
+[`agent-orchestration/agent-self-scheduling`](./skills/agent-orchestration/agent-self-scheduling/SKILL.md) · [`agent-orchestration/codex-subagent`](./skills/agent-orchestration/codex-subagent/SKILL.md) · [`agent-orchestration/fable-safe-prompt`](./skills/agent-orchestration/fable-safe-prompt/SKILL.md) · [`agent-orchestration/goal-loop`](./skills/agent-orchestration/goal-loop/SKILL.md) · [`agent-orchestration/run-deep-swe`](./skills/agent-orchestration/run-deep-swe/SKILL.md) · [`agent-orchestration/cmux`](./skills/agent-orchestration/cmux/SKILL.md) · [`agent-orchestration/handoff`](./skills/agent-orchestration/handoff/SKILL.md)
+
+</details>
+
+<details>
+<summary><strong>✍️ Productivity mode</strong> — grill, teach, handoff, and write great skills <em>(5 skills)</em></summary>
+
+[`productivity/handoff`](./skills/productivity/handoff/SKILL.md) · [`productivity/writing-great-skills`](./skills/productivity/writing-great-skills/SKILL.md) · [`productivity/teach`](./skills/productivity/teach/SKILL.md) · [`productivity/grill-me`](./skills/productivity/grill-me/SKILL.md) · [`productivity/grilling`](./skills/productivity/grilling/SKILL.md)
+
+</details>
+
+<details>
+<summary><strong>🧠 Thinking & docs mode</strong> — brain-to-docs, ADRs, prompts, level-up, concise teaching <em>(6 skills)</em></summary>
+
+[`thinking-and-docs/level-up`](./skills/thinking-and-docs/level-up/SKILL.md) · [`thinking-and-docs/prompt-me`](./skills/thinking-and-docs/prompt-me/SKILL.md) · [`thinking-and-docs/short`](./skills/thinking-and-docs/short/SKILL.md) · [`thinking-and-docs/teach`](./skills/thinking-and-docs/teach/SKILL.md) · [`thinking-and-docs/brain-to-docs`](./skills/thinking-and-docs/brain-to-docs/SKILL.md) · [`thinking-and-docs/read-all-adrs`](./skills/thinking-and-docs/read-all-adrs/SKILL.md)
+
+</details>
+
+<details>
+<summary><strong>🎨 Design & motion mode</strong> — Apple HIG, Emil design-eng, animation vocabulary, review animations <em>(4 skills)</em></summary>
+
+[`emil-design-eng`](./skills/emil-design-eng/SKILL.md) · [`review-animations`](./skills/review-animations/SKILL.md) · [`animation-vocabulary`](./skills/animation-vocabulary/SKILL.md) · [`apple-design`](./skills/apple-design/SKILL.md)
+
+</details>
+
+<details>
+<summary><strong>🔬 Research & web mode</strong> — deep research, browser harness, transcripts, shopping, web search <em>(7 skills)</em></summary>
+
+[`research-and-web/deep-research`](./skills/research-and-web/deep-research/SKILL.md) · [`research-and-web/pi-web-search`](./skills/research-and-web/pi-web-search/SKILL.md) · [`research-and-web/online-shopping`](./skills/research-and-web/online-shopping/SKILL.md) · [`research-and-web/youtube-transcript`](./skills/research-and-web/youtube-transcript/SKILL.md) · [`research-and-web/deepapi`](./skills/research-and-web/deepapi/SKILL.md) · [`research-and-web/browser-harness`](./skills/research-and-web/browser-harness/SKILL.md) · [`research-and-web/research-prompt`](./skills/research-and-web/research-prompt/SKILL.md)
+
+</details>
+
+<details>
+<summary><strong>📦 Skill authoring mode</strong> — write, distribute, and push agent skills across every client <em>(4 skills)</em></summary>
+
+[`skill-authoring/distribute-skill-to-all-agents`](./skills/skill-authoring/distribute-skill-to-all-agents/SKILL.md) · [`skill-authoring/effective-agent-skills`](./skills/skill-authoring/effective-agent-skills/SKILL.md) · [`skill-authoring/folder-specific-claude-and-agents-md`](./skills/skill-authoring/folder-specific-claude-and-agents-md/SKILL.md) · [`skill-authoring/push-skill-to-github`](./skills/skill-authoring/push-skill-to-github/SKILL.md)
+
+</details>
+
+<details>
+<summary><strong>⚙️ Ops & setup mode</strong> — readonly DB roles, cyber audit, Safe Browsing, custom models, setup help <em>(6 skills)</em></summary>
+
+[`ops-and-setup/cyber-audit`](./skills/ops-and-setup/cyber-audit/SKILL.md) · [`ops-and-setup/pi-custom-model`](./skills/ops-and-setup/pi-custom-model/SKILL.md) · [`ops-and-setup/create-readonly-db-role`](./skills/ops-and-setup/create-readonly-db-role/SKILL.md) · [`ops-and-setup/anti-sleep`](./skills/ops-and-setup/anti-sleep/SKILL.md) · [`ops-and-setup/google-safe-browsing`](./skills/ops-and-setup/google-safe-browsing/SKILL.md) · [`ops-and-setup/setup-help`](./skills/ops-and-setup/setup-help/SKILL.md)
+
+</details>
+
+<details>
+<summary><strong>🧪 Misc / in-progress / personal</strong> — guardrails, shoehorn, pre-commit, deep modules, vault, article edit, drafts <em>(17 skills)</em></summary>
+
+[`deprecated/design-an-interface`](./skills/deprecated/design-an-interface/SKILL.md) · [`deprecated/qa`](./skills/deprecated/qa/SKILL.md) · [`deprecated/request-refactor-plan`](./skills/deprecated/request-refactor-plan/SKILL.md) · [`in-progress/claude-handoff`](./skills/in-progress/claude-handoff/SKILL.md) · [`in-progress/wizard`](./skills/in-progress/wizard/SKILL.md) · [`misc/git-guardrails-claude-code`](./skills/misc/git-guardrails-claude-code/SKILL.md) · [`in-progress/loop-me`](./skills/in-progress/loop-me/SKILL.md) · [`personal/obsidian-vault`](./skills/personal/obsidian-vault/SKILL.md) · [`deprecated/ubiquitous-language`](./skills/deprecated/ubiquitous-language/SKILL.md) · [`in-progress/setup-ts-deep-modules`](./skills/in-progress/setup-ts-deep-modules/SKILL.md) · [`in-progress/writing-beats`](./skills/in-progress/writing-beats/SKILL.md) · [`in-progress/writing-fragments`](./skills/in-progress/writing-fragments/SKILL.md) · [`in-progress/writing-shape`](./skills/in-progress/writing-shape/SKILL.md) · [`misc/migrate-to-shoehorn`](./skills/misc/migrate-to-shoehorn/SKILL.md) · [`misc/scaffold-exercises`](./skills/misc/scaffold-exercises/SKILL.md) · [`misc/setup-pre-commit`](./skills/misc/setup-pre-commit/SKILL.md) · [`personal/edit-article`](./skills/personal/edit-article/SKILL.md)
+
+</details>
 
 <details>
 <summary><strong>🌞 Helius mode</strong> — Helius infra: Sender, DAS, LaserStream + Jupiter, DFlow, OKX, Phantom, SVM internals <em>(6 skills)</em></summary>
@@ -146,7 +233,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🛠️ Dev Tools / Agents
 
-> Build, orchestrate, and ship with agent tooling — **27 skills**
+> Build, orchestrate, and ship with agent tooling — **60 skills**
 
 <details>
 <summary>Open the Dev Tools / Agents cabinet</summary>
@@ -154,6 +241,11 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | Skill | Name | Description |
 |---|---|---|
 | [`agent-desktop`](./skills/agent-desktop/SKILL.md) | agent-desktop | Use the built-in `Computer` sub-agent with `agent-desktop` for macOS desktop automation. Apply when a task needs application launching, accessibility snapshots, stable element refs, window focusing, semantic clicks/typing, or visual confirmation outside the browser sandbox. |
+| [`agent-orchestration/agent-self-scheduling`](./skills/agent-orchestration/agent-self-scheduling/SKILL.md) | agent-self-scheduling | Make an AI agent run on a schedule, loop, or interval — cron, heartbeats, recurring autonomous checks. Use for "run every N minutes", "schedule a task", "run on a loop", "heartbeat". Covers external clocks (Claude Code, Codex, Pi) vs Hermes' built-in scheduler. |
+| [`agent-orchestration/codex-subagent`](./skills/agent-orchestration/codex-subagent/SKILL.md) | codex-subagent | Launch OpenAI Codex CLI as a subagent (ChatGPT subscription auth, no API key). Use when delegating a self-contained coding task to Codex from another agent — parallel implementation work, a second opinion, or an independent verification pass. |
+| [`agent-orchestration/fable-safe-prompt`](./skills/agent-orchestration/fable-safe-prompt/SKILL.md) | fable-safe-prompt | Rewrite a user's prompt to reduce the chance it trips Claude Fable 5's server-side safety classifiers (cyber/bio guardrails that force-route to Opus 4.8 or return stop_reason "refusal"). Use when the user hands you a prompt that touches cybersecurity, auth, exploits, malware, pentesting, or other dual-use topics and asks to make it "Fable-safe", "guardrail-safe", "won't get flagged/refused/downgraded", or to rewrite it so Fable 5 won't block it. |
+| [`agent-orchestration/goal-loop`](./skills/agent-orchestration/goal-loop/SKILL.md) | goal-loop | Explain and write effective instructions for the `/goal` feature — the persistent self-checking agent loop (plan → act → test → review → iterate), available in agents like Codex, Claude Code, and Hermes Agent. Use when the user mentions `/goal`, "goal loop", "Ralph loop", wants to kick off a long-running autonomous agent run, asks how to write a goal prompt, or wants a one-paragraph goal instruction drafted. |
+| [`agent-orchestration/run-deep-swe`](./skills/agent-orchestration/run-deep-swe/SKILL.md) | run-deep-swe | Score any AI model on the DeepSWE coding-agent benchmark via the OpenRouter API. Use when the user wants an independent, reproducible coding-agent eval — "run DeepSWE", "benchmark this model on DeepSWE", "score model X on the coding benchmark", "test a model via OpenRouter on DeepSWE", or to verify vendor-reported coding scores. Covers setup, the OpenRouter wiring for mini-swe-agent, single-task / subset / full 113-task runs, and leaderboard submission. |
 | [`agents-sdk`](./skills/agents-sdk/SKILL.md) | agents-sdk | Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, chat applications, voice agents, or browser automation. Covers Agent class, state management, callable RPC, Workflows, durable execution, queues, retries, observability, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
 | [`anthropic-skills/algorithmic-art`](./skills/anthropic-skills/algorithmic-art/SKILL.md) | algorithmic-art | Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations. |
 | [`anthropic-skills/internal-comms`](./skills/anthropic-skills/internal-comms/SKILL.md) | internal-comms | A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.). |
@@ -164,18 +256,46 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`clawdhub`](./skills/clawdhub/SKILL.md) | clawdhub | Use the ClawdHub CLI to search, install, update, and publish agent skills from clawdhub.com. Use when you need to fetch new skills on the fly, sync installed skills to latest or a specific version, or publish new/updated skill folders with the npm-installed clawdhub CLI. |
 | [`cloudflare`](./skills/cloudflare/SKILL.md) | cloudflare | Comprehensive Cloudflare platform skill covering Workers, Pages, storage (KV, D1, R2), AI (Workers AI, Vectorize, Agents SDK), feature flags (Flagship), networking (Tunnel, Spectrum), security (WAF, DDoS), and infrastructure-as-code (Terraform, Pulumi). Use for any Cloudflare development task. Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
 | [`create-agent-tui`](./skills/create-agent-tui/SKILL.md) | create-agent-tui | Scaffolds a complete agent TUI in TypeScript using @openrouter/agent — like create-react-app for terminal agents. Generates a customizable terminal interface with three input styles, four tool display modes, ASCII banners, streaming output, session persistence, and configurable tools. Use when building an agent, creating a TUI, scaffolding an agent project, or building a coding assistant. |
+| [`deprecated/design-an-interface`](./skills/deprecated/design-an-interface/SKILL.md) | design-an-interface | Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions "design it twice". |
+| [`deprecated/qa`](./skills/deprecated/qa/SKILL.md) | qa | Interactive QA session where user reports bugs or issues conversationally, and the agent files GitHub issues. Explores the codebase in the background for context and domain language. Use when user wants to report bugs, do QA, file issues conversationally, or mentions "QA session". |
+| [`deprecated/request-refactor-plan`](./skills/deprecated/request-refactor-plan/SKILL.md) | request-refactor-plan | Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. Use when user wants to plan a refactor, create a refactoring RFC, or break a refactor into safe incremental steps. |
 | [`durable-objects`](./skills/durable-objects/SKILL.md) | durable-objects | Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
+| [`emil-design-eng`](./skills/emil-design-eng/SKILL.md) | emil-design-eng | This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great. |
+| [`engineering/ask-matt`](./skills/engineering/ask-matt/SKILL.md) | ask-matt | Ask which skill or flow fits your situation. A router over the skills in this repo. |
+| [`engineering/code-review`](./skills/engineering/code-review/SKILL.md) | code-review | Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to "review since X". |
+| [`engineering/codebase-design`](./skills/engineering/codebase-design/SKILL.md) | codebase-design | Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary. |
+| [`engineering/domain-modeling`](./skills/engineering/domain-modeling/SKILL.md) | domain-modeling | Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model. |
+| [`engineering/research`](./skills/engineering/research/SKILL.md) | research | Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent. |
+| [`engineering/triage`](./skills/engineering/triage/SKILL.md) | triage | Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs. |
+| [`engineering/wayfinder`](./skills/engineering/wayfinder/SKILL.md) | wayfinder | Plan a huge chunk of work — more than one agent session can hold — as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear. |
 | [`find-skills`](./skills/find-skills/SKILL.md) | find-skills | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill. |
 | [`forge`](./skills/forge/SKILL.md) | agent-skill-creator | Create cross-platform agent skills from workflow descriptions. Activates when users ask to create an agent, automate a repetitive workflow, create a custom skill, or need advanced agent creation. Triggers on phrases like create agent for, automate workflow, create skill for, every day I have to, daily I need to, turn process into agent, need to automate, create a cross-platform skill, validate this skill, export this skill, migrate this skill. Supports single skills, multi-agent suites, transcript processing, template-based creation, interactive configuration, cross-platform export, and spec validation. |
 | [`github`](./skills/github/SKILL.md) | github | Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries. |
+| [`in-progress/claude-handoff`](./skills/in-progress/claude-handoff/SKILL.md) | claude-handoff | Hand the current conversation off to a fresh background agent that picks up the work immediately. |
+| [`in-progress/wizard`](./skills/in-progress/wizard/SKILL.md) | wizard | Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets. |
 | [`mcporter`](./skills/mcporter/SKILL.md) | mcporter | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation. |
+| [`misc/git-guardrails-claude-code`](./skills/misc/git-guardrails-claude-code/SKILL.md) | git-guardrails-claude-code | Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code. |
 | [`openclawd-clawd-code-skill-main`](./skills/openclawd-clawd-code-skill-main/SKILL.md) | clawd-code-skill | Control Clawd Code via MCP protocol. Trigger with "plan" to write a precise execution plan then feed it to Clawd Code. Also supports direct commands, persistent sessions, agent teams, and advanced tool control. |
 | [`openrouter-agent-migration`](./skills/openrouter-agent-migration/SKILL.md) | openrouter-agent-migration | Migration guide from @openrouter/sdk to @openrouter/agent for callModel, tool(), stop conditions, and agent features. This skill should be used when code imports callModel, tool(), or stop conditions from @openrouter/sdk and needs to migrate to @openrouter/agent. |
 | [`openrouter-typescript-sdk`](./skills/openrouter-typescript-sdk/SKILL.md) | openrouter-typescript-sdk | Complete reference for integrating with 300+ AI models through the OpenRouter TypeScript SDK and Agent packages using the callModel pattern |
+| [`ops-and-setup/cyber-audit`](./skills/ops-and-setup/cyber-audit/SKILL.md) | cyber-audit | Read-only exposure audit of the user's Mac (and ~/Documents/code projects) for a CVE, breach, malicious package, or other security advisory, then write a structured report to ~/Documents/security-audits/. Use when the user shares a breach/CVE/malware/supply-chain advisory and asks if they're affected, says "scan my system for X", "are we affected by Y", "check if I'm vulnerable to Z", or requests any hack/breach/cyber/vulnerability audit on this Mac. Output matches the existing audit format in ~/Documents/security-audits/. |
+| [`ops-and-setup/pi-custom-model`](./skills/ops-and-setup/pi-custom-model/SKILL.md) | pi-custom-model | Register a custom or variant model (e.g. an OpenRouter ":nitro" / ":floor" / ":exacto" slug) in the Pi Agent so it can be set as the global default. Use when Pi silently falls back to a different model (e.g. moonshotai/kimi-k2.6) after setting defaultModel, or when a model slug isn't in Pi's bundled list. Triggers on "Pi reset my model", "Pi won't use this model", "add a model to Pi", "Pi default keeps reverting". |
 | [`oracle`](./skills/oracle/SKILL.md) | oracle | Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns). |
+| [`productivity/handoff`](./skills/productivity/handoff/SKILL.md) | productivity-handoff | Compact the current conversation into a handoff document for another agent to pick up. |
+| [`productivity/writing-great-skills`](./skills/productivity/writing-great-skills/SKILL.md) | writing-great-skills | Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable. |
+| [`research-and-web/deep-research`](./skills/research-and-web/deep-research/SKILL.md) | deep-research | Run a deep, source-backed research query via DeepAPI (go to deepapi.co to get an API key) POST /v1/research/deep. Builds a rigorous one-paragraph research prompt (per research-prompt rules), fires it, and saves a cited markdown report. Use when the user asks for "deep research", "deepapi research", "perplexity deep research" (legacy trigger), or any deep source-backed research run. Differentiator vs the deepapi skill: this is the full research workflow (prompt + run + report file), not raw endpoint access. |
+| [`research-and-web/pi-web-search`](./skills/research-and-web/pi-web-search/SKILL.md) | pi-web-search | ONLY for Pi Agents — all other agents have their own web tools. How Pi accesses the web via the pi-web-access package — search, fetch URLs/PDFs/YouTube/GitHub. Use whenever a Pi task needs current info, docs, news, prices, or content from a specific URL. |
+| [`review-animations`](./skills/review-animations/SKILL.md) | review-animations | Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned. |
 | [`sandbox-sdk`](./skills/sandbox-sdk/SKILL.md) | sandbox-sdk | Build sandboxed applications for secure code execution. Load when building AI code execution, code interpreters, CI/CD systems, interactive dev environments, or executing untrusted code. Covers Sandbox SDK lifecycle, commands, files, code interpreter, and preview URLs. Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
 | [`session-logs`](./skills/session-logs/SKILL.md) | session-logs | Search and analyze your own session logs (older/parent conversations) using jq. |
+| [`skill-authoring/distribute-skill-to-all-agents`](./skills/skill-authoring/distribute-skill-to-all-agents/SKILL.md) | distribute-skill-to-all-agents | Distribute a skill across the 4 agent skill folders (Codex, Claude Code, Pi, Hermes) so all agents see it. Use when the user says "distribute this skill", "sync skills across agents", or after creating/updating a skill that should be global. Covers the symlink layout and the ~/.pi/agent/skills trap. |
+| [`skill-authoring/effective-agent-skills`](./skills/skill-authoring/effective-agent-skills/SKILL.md) | effective-agent-skills | How to write effective agent skills — what to do, what not to do, anatomy, progressive disclosure, design patterns, anti-patterns, testing, security. Read this whenever a skill (Claude Skill, Agent Skill, SKILL.md) is being created, edited, reviewed, or debugged. Use when the user says "create a skill", "new skill", "update this skill", "improve a skill", "why isn't my skill triggering", or anything else involving authoring or editing SKILL.md files. |
+| [`skill-authoring/folder-specific-claude-and-agents-md`](./skills/skill-authoring/folder-specific-claude-and-agents-md/SKILL.md) | folder-specific-claude-and-agents-md | Create a specialized CLAUDE.md (+ AGENTS.md symlink) inside a specific folder to give future agents folder-scoped context. Use when the user asks to create a CLAUDE.md for a folder, write folder instructions, or add agent context to a directory. |
+| [`skill-authoring/push-skill-to-github`](./skills/skill-authoring/push-skill-to-github/SKILL.md) | push-skill-to-github | Commit and push agent-skill changes to the user's private skills GitHub repo (rooted at ~/.agents). Use after creating or updating any skill, when the user says "push the skill", "push skills to github", "save the skill to my repo", or "update the skills repo". Handles staging, committing, pushing, and cleaning up the cmux pane used to do it. |
 | [`skill-creator`](./skills/skill-creator/SKILL.md) | skill-creator | Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets. |
+| [`thinking-and-docs/level-up`](./skills/thinking-and-docs/level-up/SKILL.md) | level-up | Gauge the user's technical + product knowledge through 7 adaptive questions, log verbatim answers with honest ratings, and grow a learning plan from the gaps found. Use when the user says "level up", "level-up session", "quiz me", "gauge my knowledge", or wants a new assessment round. Differentiator: this finds and maps gaps; the `teach` skill delivers lessons on them. |
+| [`thinking-and-docs/prompt-me`](./skills/thinking-and-docs/prompt-me/SKILL.md) | prompt-me | Prompt the user with pointed questions to extract what is in his head about a project — remaining work, what is being avoided, what really matters, what does not. Use when the user says "prompt me", "ask me questions", or wants the agent to figure out priorities by questioning him. |
+| [`thinking-and-docs/short`](./skills/thinking-and-docs/short/SKILL.md) | short | Manually-invoked skill that forces the agent to compress its current answer — strip filler, simplify wording, and cut length while keeping the substance. Use when the user says "short", "shorter", "simpler", "too long", "tl;dr", or wants a more concise version of the previous response. |
 | [`tmux`](./skills/tmux/SKILL.md) | tmux | Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output. |
 | [`web-perf`](./skills/web-perf/SKILL.md) | web-perf | Analyzes web performance using Chrome DevTools MCP. Measures Core Web Vitals (LCP, INP, CLS) and supplementary metrics (FCP, TBT, Speed Index), identifies render-blocking resources, network dependency chains, layout shifts, caching issues, and accessibility gaps. Use when asked to audit, profile, debug, or optimize page load performance, Lighthouse scores, or site speed. Biases towards retrieval from current documentation over pre-trained knowledge. |
 | [`workers-best-practices`](./skills/workers-best-practices/SKILL.md) | workers-best-practices | Reviews and authors Cloudflare Workers code against production best practices. Load when writing new Workers, reviewing Worker code, configuring wrangler.jsonc, or checking for common Workers anti-patterns (streaming, floating promises, global state, secrets, bindings, observability). Biases towards retrieval from Cloudflare docs over pre-trained knowledge. |
@@ -290,7 +410,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 📍 Local / Web Services
 
-> Weather, places, food, and everyday web services — **7 skills**
+> Weather, places, food, and everyday web services — **9 skills**
 
 <details>
 <summary>Open the Local / Web Services cabinet</summary>
@@ -302,14 +422,16 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`food-order`](./skills/food-order/SKILL.md) | food-order | Reorder Foodora orders + track ETA/status with ordercli. Never confirm without explicit user approval. Triggers: order food, reorder, track ETA. |
 | [`goplaces`](./skills/goplaces/SKILL.md) | goplaces | Query Google Places API (New) via the goplaces CLI for text search, place details, resolve, and reviews. Use for human-friendly place lookup or JSON output for scripts. |
 | [`local-places`](./skills/local-places/SKILL.md) | local-places | Search for places (restaurants, cafes, etc.) via Google Places API proxy on localhost. |
+| [`ops-and-setup/create-readonly-db-role`](./skills/ops-and-setup/create-readonly-db-role/SKILL.md) | create-readonly-db-role | Provision a hardened SELECT-only Postgres role so AI agents can safely read a production database. Works on Supabase and any Postgres. Use when the user wants agents to query prod data, says "read-only role", "safe prod DB access for agents", or is tired of running SQL by hand for agents. Differentiator: this skill CREATES the role and wiring; day-to-day querying belongs in a project-local skill. |
 | [`ordercli`](./skills/ordercli/SKILL.md) | ordercli | Foodora-only CLI for checking past orders and active order status (Deliveroo WIP). |
+| [`research-and-web/online-shopping`](./skills/research-and-web/online-shopping/SKILL.md) | online-shopping | Research any online purchase with DeepAPI — fair-price checks, best deals, where to buy, shop trust. Load whenever the user is shopping or buying anything online: mentions buying a product, comparing prices, "is this a good price", "where can I get X", or attaches a product photo or listing screenshot. Research only — never places orders. |
 | [`weather`](./skills/weather/SKILL.md) | weather | Get current weather and forecasts (no API key required). |
 
 </details>
 
 ### 🎬 Media / Devices
 
-> Audio, video, images, TTS, cameras, and gadgets — **22 skills**
+> Audio, video, images, TTS, cameras, and gadgets — **23 skills**
 
 <details>
 <summary>Open the Media / Devices cabinet</summary>
@@ -330,6 +452,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`openai-whisper-api`](./skills/openai-whisper-api/SKILL.md) | openai-whisper-api | Transcribe audio via OpenAI Audio Transcriptions API (Whisper). |
 | [`openhue`](./skills/openhue/SKILL.md) | openhue | Control Philips Hue lights/scenes via the OpenHue CLI. |
 | [`openrouter-images`](./skills/openrouter-images/SKILL.md) | openrouter-images | Generate images from text prompts and edit existing images using OpenRouter's image generation models. Use when the user asks to create, generate, or make an image, picture, or illustration from a description, or wants to edit, modify, transform, or alter an existing image with a text prompt. |
+| [`research-and-web/youtube-transcript`](./skills/research-and-web/youtube-transcript/SKILL.md) | youtube-transcript | Use whenever the user needs the transcript of a YouTube video — fetching, extracting, downloading, or pulling captions/subtitles/transcript text from a YouTube URL. Triggers on "get the transcript", "transcript of this video", "pull the captions", "download subtitles", "what does this YouTube video say". Primary path is DeepAPI (go to deepapi.co to get an API key); yt-dlp is the local fallback. |
 | [`sag`](./skills/sag/SKILL.md) | sag | ElevenLabs text-to-speech with mac-style say UX. |
 | [`sherpa-onnx-tts`](./skills/sherpa-onnx-tts/SKILL.md) | sherpa-onnx-tts | Local text-to-speech via sherpa-onnx (offline, no cloud) |
 | [`songsee`](./skills/songsee/SKILL.md) | songsee | Generate spectrograms and feature-panel visualizations from audio with the songsee CLI. |
@@ -343,13 +466,15 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 💬 Productivity / Messaging
 
-> Notes, tasks, chat, and mail on autopilot — **16 skills**
+> Notes, tasks, chat, and mail on autopilot — **23 skills**
 
 <details>
 <summary>Open the Productivity / Messaging cabinet</summary>
 
 | Skill | Name | Description |
 |---|---|---|
+| [`agent-orchestration/cmux`](./skills/agent-orchestration/cmux/SKILL.md) | cmux | MUST be read ANY time you interact with cmux in ANY way — listing/inspecting/creating/closing cmux workspaces, panes, or surfaces; reading or capturing pane/screen output; sending input or keys to a pane/surface; delegating to, polling, or checking on other agents running in cmux panes/surfaces; building or rearranging terminal layout; cmux browser automation; sending notifications/flashes/status/progress to the sidebar; editing cmux settings; or integrating an agent with cmux hooks. If your command starts with `cmux ` or touches a cmux workspace/pane/surface/agent, read this FIRST. Triggers on "cmux", "in this workspace", "this pane", "the other agent", "delegate to", "check on the agent", "send to the pane". macOS only (14.0+). |
+| [`agent-orchestration/handoff`](./skills/agent-orchestration/handoff/SKILL.md) | agent-orchestration-handoff | Compact the current conversation into a single, detailed handoff message — everything that happened, why it happened, and what's left — output in a code block so it can be copy-pasted into a fresh agent session. Use when hitting context limits, switching focus, ending a work session, or partitioning a task across fresh contexts. |
 | [`anthropic-skills/pptx`](./skills/anthropic-skills/pptx/SKILL.md) | pptx | Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions "deck," "slides," "presentation," or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill. |
 | [`apple-notes`](./skills/apple-notes/SKILL.md) | apple-notes | Manage Apple Notes via the `memo` CLI on macOS (create, view, edit, delete, search, move, and export notes). Use when a user asks Clawdbot to add a note, list notes, search notes, or manage note folders. |
 | [`apple-reminders`](./skills/apple-reminders/SKILL.md) | apple-reminders | Manage Apple Reminders via the `remindctl` CLI on macOS (list, add, edit, complete, delete). Supports lists, date filters, and JSON/plain output. |
@@ -360,10 +485,15 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`gog`](./skills/gog/SKILL.md) | gog | Google Workspace CLI for Gmail, Calendar, Drive, Contacts, Sheets, and Docs. |
 | [`himalaya`](./skills/himalaya/SKILL.md) | himalaya | CLI to manage emails via IMAP/SMTP. Use `himalaya` to list, read, write, reply, forward, search, and organize emails from the terminal. Supports multiple accounts and message composition with MML (MIME Meta Language). |
 | [`imsg`](./skills/imsg/SKILL.md) | imsg | iMessage/SMS CLI for listing chats, history, watch, and sending. |
+| [`in-progress/loop-me`](./skills/in-progress/loop-me/SKILL.md) | loop-me | Grill me about specs for the workflows I want to build, within this workspace. |
 | [`notion`](./skills/notion/SKILL.md) | notion | Notion API for creating and managing pages, databases, and blocks. |
 | [`obsidian`](./skills/obsidian/SKILL.md) | obsidian | Work with Obsidian vaults (plain Markdown notes) and automate via obsidian-cli. |
+| [`personal/obsidian-vault`](./skills/personal/obsidian-vault/SKILL.md) | obsidian-vault | Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian. |
+| [`productivity/teach`](./skills/productivity/teach/SKILL.md) | productivity-teach | Teach the user a new skill or concept in a multi-session teaching workspace with missions, lessons, and learning records. |
+| [`research-and-web/deepapi`](./skills/research-and-web/deepapi/SKILL.md) | deepapi | Use DeepAPI for scraping and safe email with DEEPAPI_API_BASE_URL and DEEPAPI_API_KEY. |
 | [`slack`](./skills/slack/SKILL.md) | slack | Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs. |
 | [`things-mac`](./skills/things-mac/SKILL.md) | things-mac | Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks Clawdbot to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags. |
+| [`thinking-and-docs/teach`](./skills/thinking-and-docs/teach/SKILL.md) | thinking-and-docs-teach | Teach with concise chat replies and rich lesson docs — multi-session teaching workspace optimized for thinking and documentation. |
 | [`trello`](./skills/trello/SKILL.md) | trello | Manage Trello boards, lists, and cards via the Trello REST API. |
 | [`wacli`](./skills/wacli/SKILL.md) | wacli | Send WhatsApp messages to other people or search/sync WhatsApp history via the wacli CLI (not for normal user chats). |
 
@@ -484,7 +614,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🧰 Utilities
 
-> Handy one-off power tools — **13 skills**
+> Handy one-off power tools — **43 skills**
 
 <details>
 <summary>Open the Utilities cabinet</summary>
@@ -492,18 +622,48 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | Skill | Name | Description |
 |---|---|---|
 | [`1password`](./skills/1password/SKILL.md) | 1password | Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op. |
+| [`animation-vocabulary`](./skills/animation-vocabulary/SKILL.md) | animation-vocabulary | Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term ("the bouncy thing when a popover opens" → Pop in; "the iOS rubber-band scroll" → Rubber-banding). Use when the user asks "what's it called when…", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one. |
 | [`anthropic-skills/brand-guidelines`](./skills/anthropic-skills/brand-guidelines/SKILL.md) | brand-guidelines | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply. |
 | [`anthropic-skills/doc-coauthoring`](./skills/anthropic-skills/doc-coauthoring/SKILL.md) | doc-coauthoring | Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks. |
 | [`anthropic-skills/frontend-design`](./skills/anthropic-skills/frontend-design/SKILL.md) | frontend-design | Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults. |
 | [`anthropic-skills/theme-factory`](./skills/anthropic-skills/theme-factory/SKILL.md) | theme-factory | Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly. |
+| [`apple-design`](./skills/apple-design/SKILL.md) | apple-design | Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces. |
 | [`bird`](./skills/bird/SKILL.md) | bird | X/Twitter CLI for reading, searching, posting, and engagement via cookies. |
 | [`blogwatcher`](./skills/blogwatcher/SKILL.md) | blogwatcher | Monitor blogs and RSS/Atom feeds for updates using the blogwatcher CLI. |
 | [`cloudflare-one-migrations`](./skills/cloudflare-one-migrations/SKILL.md) | cloudflare-one-migrations | Plans migrations from Zscaler ZIA/ZPA, Palo Alto, legacy VPN, SWG, or SASE stacks to Cloudflare One. Use for migration assessments, policy mapping, rollout plans, and parity/gap analysis. |
+| [`deprecated/ubiquitous-language`](./skills/deprecated/ubiquitous-language/SKILL.md) | ubiquitous-language | Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions "domain model" or "DDD". |
 | [`eightctl`](./skills/eightctl/SKILL.md) | eightctl | Control Eight Sleep pods (status, temperature, alarms, schedules). |
+| [`engineering/diagnosing-bugs`](./skills/engineering/diagnosing-bugs/SKILL.md) | diagnosing-bugs | Diagnosis loop for hard bugs and performance regressions. Use when the user says "diagnose"/"debug this", or reports something broken/throwing/failing/slow. |
+| [`engineering/grill-with-docs`](./skills/engineering/grill-with-docs/SKILL.md) | grill-with-docs | A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go. |
+| [`engineering/implement`](./skills/engineering/implement/SKILL.md) | implement | Implement a piece of work based on a spec or set of tickets. |
+| [`engineering/improve-codebase-architecture`](./skills/engineering/improve-codebase-architecture/SKILL.md) | improve-codebase-architecture | Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick. |
+| [`engineering/prototype`](./skills/engineering/prototype/SKILL.md) | prototype | Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like. |
+| [`engineering/resolving-merge-conflicts`](./skills/engineering/resolving-merge-conflicts/SKILL.md) | resolving-merge-conflicts | Use when you need to resolve an in-progress git merge/rebase conflict. |
+| [`engineering/setup-matt-pocock-skills`](./skills/engineering/setup-matt-pocock-skills/SKILL.md) | setup-matt-pocock-skills | Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills. |
+| [`engineering/tdd`](./skills/engineering/tdd/SKILL.md) | tdd | Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions "red-green-refactor", or wants integration tests. |
+| [`engineering/to-spec`](./skills/engineering/to-spec/SKILL.md) | to-spec | Turn the current conversation into a spec and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed. |
+| [`engineering/to-tickets`](./skills/engineering/to-tickets/SKILL.md) | to-tickets | Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker. |
 | [`gemini`](./skills/gemini/SKILL.md) | gemini | Gemini CLI for one-shot Q&A, summaries, and generation. |
+| [`in-progress/setup-ts-deep-modules`](./skills/in-progress/setup-ts-deep-modules/SKILL.md) | setup-ts-deep-modules | Wire dependency-cruiser into a TypeScript repo so each package is a deep module — implementation hidden in subfolders, reachable only through its entry-point files. User-invoked. |
+| [`in-progress/writing-beats`](./skills/in-progress/writing-beats/SKILL.md) | writing-beats | Writing, exploit — assemble raw material into a journey of beats, grounding each term before a beat leans on it. |
+| [`in-progress/writing-fragments`](./skills/in-progress/writing-fragments/SKILL.md) | writing-fragments | Writing, explore — mine raw fragments, no structure yet. |
+| [`in-progress/writing-shape`](./skills/in-progress/writing-shape/SKILL.md) | writing-shape | Writing, exploit — shape raw material into an article, paragraph by paragraph. |
+| [`misc/migrate-to-shoehorn`](./skills/misc/migrate-to-shoehorn/SKILL.md) | migrate-to-shoehorn | Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data. |
+| [`misc/scaffold-exercises`](./skills/misc/scaffold-exercises/SKILL.md) | scaffold-exercises | Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section. |
+| [`misc/setup-pre-commit`](./skills/misc/setup-pre-commit/SKILL.md) | setup-pre-commit | Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing. |
 | [`openrouter-models`](./skills/openrouter-models/SKILL.md) | openrouter-models | Query OpenRouter for available AI models, pricing, capabilities, throughput, and provider performance. Use when the user asks about available OpenRouter models, model pricing, model context lengths, model capabilities, provider latency or uptime, throughput limits, supported parameters, wants to search/filter/compare models, or find the fastest provider for a model. |
 | [`openrouter-oauth`](./skills/openrouter-oauth/SKILL.md) | openrouter-oauth | Implement "Sign In with OpenRouter" using OAuth PKCE — framework-agnostic, no SDK or client registration required. Use when the user wants to add OpenRouter login, authentication, sign-in buttons, OAuth, or AI model inference API keys for browser-based apps. No client registration, no backend, no secrets required. |
+| [`ops-and-setup/anti-sleep`](./skills/ops-and-setup/anti-sleep/SKILL.md) | anti-sleep | Keep the user's MacBook awake with macOS caffeinate — prevent sleep, screen dimming, or both, for a set duration or while a process runs. Use when the user says "don't let my mac sleep", "keep the screen on", "anti-sleep", "caffeinate", or wants the machine awake overnight / during a long build. |
+| [`ops-and-setup/google-safe-browsing`](./skills/ops-and-setup/google-safe-browsing/SKILL.md) | google-safe-browsing | Prevent and fix Google Safe Browsing "Dangerous site" flags. Use when launching a public web app, buying/picking a domain, building a login or signup page, or when any site shows a red "Dangerous site" / "Deceptive site" warning in Chrome, Brave, Safari, Firefox, or Edge. Triggers on "dangerous site", "deceptive site", "site blocked", "safe browsing", "phishing flag", "red warning screen". |
+| [`ops-and-setup/setup-help`](./skills/ops-and-setup/setup-help/SKILL.md) | setup-help | Walk the user through setting up anything step by step. Use when the user asks for help setting up, configuring, installing, or getting something working — "help me set up X", "walk me through this", "setup-help". Differentiator: gives one current step at a time, then always lists every remaining setup step after each response. |
 | [`peekaboo`](./skills/peekaboo/SKILL.md) | peekaboo | Capture and automate macOS UI with the Peekaboo CLI. |
+| [`personal/edit-article`](./skills/personal/edit-article/SKILL.md) | edit-article | Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft. |
+| [`productivity/grill-me`](./skills/productivity/grill-me/SKILL.md) | grill-me | A relentless interview to sharpen a plan or design. |
+| [`productivity/grilling`](./skills/productivity/grilling/SKILL.md) | grilling | Grill the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases. |
+| [`research-and-web/browser-harness`](./skills/research-and-web/browser-harness/SKILL.md) | browser-harness | Direct browser control via CDP. Use when the user wants to automate, scrape, test, or interact with web pages. Connects to the user's already-running Chrome. |
+| [`research-and-web/research-prompt`](./skills/research-and-web/research-prompt/SKILL.md) | research-prompt | Write a single-paragraph Deep Research prompt to hand to a human researcher (or a deep-research AI). Use when the user wants a research brief, a "deep research prompt", a one-paragraph task for a researcher, or asks "what should our researcher look for". Produces ONE tight paragraph with full context, numbered sub-questions, and per-finding output format. |
+| [`thinking-and-docs/brain-to-docs`](./skills/thinking-and-docs/brain-to-docs/SKILL.md) | brain-to-docs | Use when the user wants to extract project vision, decisions, and preferences from his head into clear documentation (README + ADRs) through a back-and-forth Q&A loop. Triggers on "brain-to-docs", "build out the docs", "extract the vision", "let's document this project". |
+| [`thinking-and-docs/read-all-adrs`](./skills/thinking-and-docs/read-all-adrs/SKILL.md) | read-all-adrs | Read every ADR markdown file in the project's docs/adr/ folder so you have full context on past decisions. Use only when the user explicitly calls it. |
 
 </details>
 

@@ -34,6 +34,71 @@
       "offchainEnabled": false
     },
     {
+      "slug": "agent-orchestration/agent-self-scheduling",
+      "name": "agent-self-scheduling",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "agent-orchestration/codex-subagent",
+      "name": "codex-subagent",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "agent-orchestration/fable-safe-prompt",
+      "name": "fable-safe-prompt",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "agent-orchestration/goal-loop",
+      "name": "goal-loop",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "agent-orchestration/run-deep-swe",
+      "name": "run-deep-swe",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "agents-sdk",
       "name": "agents-sdk",
       "category": "Dev Tools / Agents",
@@ -164,8 +229,151 @@
       "offchainEnabled": false
     },
     {
+      "slug": "deprecated/design-an-interface",
+      "name": "design-an-interface",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "deprecated/qa",
+      "name": "qa",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "deprecated/request-refactor-plan",
+      "name": "request-refactor-plan",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "durable-objects",
       "name": "durable-objects",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "emil-design-eng",
+      "name": "emil-design-eng",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/ask-matt",
+      "name": "ask-matt",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/code-review",
+      "name": "code-review",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/codebase-design",
+      "name": "codebase-design",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/domain-modeling",
+      "name": "domain-modeling",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/research",
+      "name": "research",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/triage",
+      "name": "triage",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/wayfinder",
+      "name": "wayfinder",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -216,8 +424,47 @@
       "offchainEnabled": false
     },
     {
+      "slug": "in-progress/claude-handoff",
+      "name": "claude-handoff",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "in-progress/wizard",
+      "name": "wizard",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "mcporter",
       "name": "mcporter",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "misc/git-guardrails-claude-code",
+      "name": "git-guardrails-claude-code",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -268,8 +515,99 @@
       "offchainEnabled": false
     },
     {
+      "slug": "ops-and-setup/cyber-audit",
+      "name": "cyber-audit",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "ops-and-setup/pi-custom-model",
+      "name": "pi-custom-model",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "oracle",
       "name": "oracle",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "productivity/handoff",
+      "name": "productivity-handoff",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "productivity/writing-great-skills",
+      "name": "writing-great-skills",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "research-and-web/deep-research",
+      "name": "deep-research",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "research-and-web/pi-web-search",
+      "name": "pi-web-search",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "review-animations",
+      "name": "review-animations",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -307,8 +645,99 @@
       "offchainEnabled": false
     },
     {
+      "slug": "skill-authoring/distribute-skill-to-all-agents",
+      "name": "distribute-skill-to-all-agents",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "skill-authoring/effective-agent-skills",
+      "name": "effective-agent-skills",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "skill-authoring/folder-specific-claude-and-agents-md",
+      "name": "folder-specific-claude-and-agents-md",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "skill-authoring/push-skill-to-github",
+      "name": "push-skill-to-github",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "skill-creator",
       "name": "skill-creator",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "thinking-and-docs/level-up",
+      "name": "level-up",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "thinking-and-docs/prompt-me",
+      "name": "prompt-me",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "thinking-and-docs/short",
+      "name": "short",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -1334,8 +1763,34 @@
       "offchainEnabled": false
     },
     {
+      "slug": "ops-and-setup/create-readonly-db-role",
+      "name": "create-readonly-db-role",
+      "category": "Local / Web Services",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "ordercli",
       "name": "ordercli",
+      "category": "Local / Web Services",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "research-and-web/online-shopping",
+      "name": "online-shopping",
       "category": "Local / Web Services",
       "mode": "tip",
       "merchant": {
@@ -1542,6 +1997,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "research-and-web/youtube-transcript",
+      "name": "youtube-transcript",
+      "category": "Media / Devices",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "sag",
       "name": "sag",
       "category": "Media / Devices",
@@ -1636,6 +2104,32 @@
       "slug": "voice-call",
       "name": "voice-call",
       "category": "Media / Devices",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "agent-orchestration/cmux",
+      "name": "cmux",
+      "category": "Productivity / Messaging",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "agent-orchestration/handoff",
+      "name": "agent-orchestration-handoff",
+      "category": "Productivity / Messaging",
       "mode": "tip",
       "merchant": {
         "name": "Skill Hub",
@@ -1776,6 +2270,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "in-progress/loop-me",
+      "name": "loop-me",
+      "category": "Productivity / Messaging",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "notion",
       "name": "notion",
       "category": "Productivity / Messaging",
@@ -1802,6 +2309,45 @@
       "offchainEnabled": false
     },
     {
+      "slug": "personal/obsidian-vault",
+      "name": "obsidian-vault",
+      "category": "Productivity / Messaging",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "productivity/teach",
+      "name": "productivity-teach",
+      "category": "Productivity / Messaging",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "research-and-web/deepapi",
+      "name": "deepapi",
+      "category": "Productivity / Messaging",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "slack",
       "name": "slack",
       "category": "Productivity / Messaging",
@@ -1817,6 +2363,19 @@
     {
       "slug": "things-mac",
       "name": "things-mac",
+      "category": "Productivity / Messaging",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "thinking-and-docs/teach",
+      "name": "thinking-and-docs-teach",
       "category": "Productivity / Messaging",
       "mode": "tip",
       "merchant": {
@@ -3180,6 +3739,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "animation-vocabulary",
+      "name": "animation-vocabulary",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "anthropic-skills/brand-guidelines",
       "name": "brand-guidelines",
       "category": "Utilities",
@@ -3232,6 +3804,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "apple-design",
+      "name": "apple-design",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "bird",
       "name": "bird",
       "category": "Utilities",
@@ -3271,6 +3856,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "deprecated/ubiquitous-language",
+      "name": "ubiquitous-language",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "eightctl",
       "name": "eightctl",
       "category": "Utilities",
@@ -3284,8 +3882,229 @@
       "offchainEnabled": false
     },
     {
+      "slug": "engineering/diagnosing-bugs",
+      "name": "diagnosing-bugs",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/grill-with-docs",
+      "name": "grill-with-docs",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/implement",
+      "name": "implement",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/improve-codebase-architecture",
+      "name": "improve-codebase-architecture",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/prototype",
+      "name": "prototype",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/resolving-merge-conflicts",
+      "name": "resolving-merge-conflicts",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/setup-matt-pocock-skills",
+      "name": "setup-matt-pocock-skills",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/tdd",
+      "name": "tdd",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/to-spec",
+      "name": "to-spec",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "engineering/to-tickets",
+      "name": "to-tickets",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "gemini",
       "name": "gemini",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "in-progress/setup-ts-deep-modules",
+      "name": "setup-ts-deep-modules",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "in-progress/writing-beats",
+      "name": "writing-beats",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "in-progress/writing-fragments",
+      "name": "writing-fragments",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "in-progress/writing-shape",
+      "name": "writing-shape",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "misc/migrate-to-shoehorn",
+      "name": "migrate-to-shoehorn",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "misc/scaffold-exercises",
+      "name": "scaffold-exercises",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "misc/setup-pre-commit",
+      "name": "setup-pre-commit",
       "category": "Utilities",
       "mode": "tip",
       "merchant": {
@@ -3323,8 +4142,138 @@
       "offchainEnabled": false
     },
     {
+      "slug": "ops-and-setup/anti-sleep",
+      "name": "anti-sleep",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "ops-and-setup/google-safe-browsing",
+      "name": "google-safe-browsing",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "ops-and-setup/setup-help",
+      "name": "setup-help",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "peekaboo",
       "name": "peekaboo",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "personal/edit-article",
+      "name": "edit-article",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "productivity/grill-me",
+      "name": "grill-me",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "productivity/grilling",
+      "name": "grilling",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "research-and-web/browser-harness",
+      "name": "browser-harness",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "research-and-web/research-prompt",
+      "name": "research-prompt",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "thinking-and-docs/brain-to-docs",
+      "name": "brain-to-docs",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "thinking-and-docs/read-all-adrs",
+      "name": "read-all-adrs",
       "category": "Utilities",
       "mode": "tip",
       "merchant": {

@@ -6,6 +6,36 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "agent-orchestration/agent-self-scheduling",
+    "name": "agent-self-scheduling",
+    "description": "Make an AI agent run on a schedule, loop, or interval — cron, heartbeats, recurring autonomous checks. Use for \"run every N minutes\", \"schedule a task\", \"run on a loop\", \"heartbeat\". Covers external clocks (Claude Code, Codex, Pi) vs Hermes' built-in scheduler.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "agent-orchestration/codex-subagent",
+    "name": "codex-subagent",
+    "description": "Launch OpenAI Codex CLI as a subagent (ChatGPT subscription auth, no API key). Use when delegating a self-contained coding task to Codex from another agent — parallel implementation work, a second opinion, or an independent verification pass.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "agent-orchestration/fable-safe-prompt",
+    "name": "fable-safe-prompt",
+    "description": "Rewrite a user's prompt to reduce the chance it trips Claude Fable 5's server-side safety classifiers (cyber/bio guardrails that force-route to Opus 4.8 or return stop_reason \"refusal\"). Use when the user hands you a prompt that touches cybersecurity, auth, exploits, malware, pentesting, or other dual-use topics and asks to make it \"Fable-safe\", \"guardrail-safe\", \"won't get flagged/refused/downgraded\", or to rewrite it so Fable 5 won't block it.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "agent-orchestration/goal-loop",
+    "name": "goal-loop",
+    "description": "Explain and write effective instructions for the `/goal` feature — the persistent self-checking agent loop (plan → act → test → review → iterate), available in agents like Codex, Claude Code, and Hermes Agent. Use when the user mentions `/goal`, \"goal loop\", \"Ralph loop\", wants to kick off a long-running autonomous agent run, asks how to write a goal prompt, or wants a one-paragraph goal instruction drafted.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "agent-orchestration/run-deep-swe",
+    "name": "run-deep-swe",
+    "description": "Score any AI model on the DeepSWE coding-agent benchmark via the OpenRouter API. Use when the user wants an independent, reproducible coding-agent eval — \"run DeepSWE\", \"benchmark this model on DeepSWE\", \"score model X on the coding benchmark\", \"test a model via OpenRouter on DeepSWE\", or to verify vendor-reported coding scores. Covers setup, the OpenRouter wiring for mini-swe-agent, single-task / subset / full 113-task runs, and leaderboard submission.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "agents-sdk",
     "name": "agents-sdk",
     "description": "Build AI agents on Cloudflare Workers using the Agents SDK. Load when creating stateful agents, durable workflows, real-time WebSocket apps, scheduled tasks, MCP servers, chat applications, voice agents, or browser automation. Covers Agent class, state management, callable RPC, Workflows, durable execution, queues, retries, observability, and React hooks. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
@@ -66,9 +96,75 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "deprecated/design-an-interface",
+    "name": "design-an-interface",
+    "description": "Generate multiple radically different interface designs for a module using parallel sub-agents. Use when user wants to design an API, explore interface options, compare module shapes, or mentions \"design it twice\".",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "deprecated/qa",
+    "name": "qa",
+    "description": "Interactive QA session where user reports bugs or issues conversationally, and the agent files GitHub issues. Explores the codebase in the background for context and domain language. Use when user wants to report bugs, do QA, file issues conversationally, or mentions \"QA session\".",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "deprecated/request-refactor-plan",
+    "name": "request-refactor-plan",
+    "description": "Create a detailed refactor plan with tiny commits via user interview, then file it as a GitHub issue. Use when user wants to plan a refactor, create a refactoring RFC, or break a refactor into safe incremental steps.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "durable-objects",
     "name": "durable-objects",
     "description": "Create and review Cloudflare Durable Objects. Use when building stateful coordination (chat rooms, multiplayer games, booking systems), implementing RPC methods, SQLite storage, alarms, WebSockets, or reviewing DO code for best practices. Covers Workers integration, wrangler config, and testing with Vitest. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "emil-design-eng",
+    "name": "emil-design-eng",
+    "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "engineering/ask-matt",
+    "name": "ask-matt",
+    "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "engineering/code-review",
+    "name": "code-review",
+    "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "engineering/codebase-design",
+    "name": "codebase-design",
+    "description": "Shared vocabulary for designing deep modules. Use when the user wants to design or improve a module's interface, find deepening opportunities, decide where a seam goes, make code more testable or AI-navigable, or when another skill needs the deep-module vocabulary.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "engineering/domain-modeling",
+    "name": "domain-modeling",
+    "description": "Build and sharpen a project's domain model. Use when the user wants to pin down domain terminology or a ubiquitous language, record an architectural decision, or when another skill needs to maintain the domain model.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "engineering/research",
+    "name": "research",
+    "description": "Investigate a question against high-trust primary sources and capture the findings as a Markdown file in the repo. Use when the user wants a topic researched, docs or API facts gathered, or reading legwork delegated to a background agent.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "engineering/triage",
+    "name": "triage",
+    "description": "Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "engineering/wayfinder",
+    "name": "wayfinder",
+    "description": "Plan a huge chunk of work — more than one agent session can hold — as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -90,9 +186,27 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "in-progress/claude-handoff",
+    "name": "claude-handoff",
+    "description": "Hand the current conversation off to a fresh background agent that picks up the work immediately.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "in-progress/wizard",
+    "name": "wizard",
+    "description": "Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "mcporter",
     "name": "mcporter",
     "description": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "misc/git-guardrails-claude-code",
+    "name": "git-guardrails-claude-code",
+    "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -114,9 +228,51 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "ops-and-setup/cyber-audit",
+    "name": "cyber-audit",
+    "description": "Read-only exposure audit of the user's Mac (and ~/Documents/code projects) for a CVE, breach, malicious package, or other security advisory, then write a structured report to ~/Documents/security-audits/. Use when the user shares a breach/CVE/malware/supply-chain advisory and asks if they're affected, says \"scan my system for X\", \"are we affected by Y\", \"check if I'm vulnerable to Z\", or requests any hack/breach/cyber/vulnerability audit on this Mac. Output matches the existing audit format in ~/Documents/security-audits/.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "ops-and-setup/pi-custom-model",
+    "name": "pi-custom-model",
+    "description": "Register a custom or variant model (e.g. an OpenRouter \":nitro\" / \":floor\" / \":exacto\" slug) in the Pi Agent so it can be set as the global default. Use when Pi silently falls back to a different model (e.g. moonshotai/kimi-k2.6) after setting defaultModel, or when a model slug isn't in Pi's bundled list. Triggers on \"Pi reset my model\", \"Pi won't use this model\", \"add a model to Pi\", \"Pi default keeps reverting\".",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "oracle",
     "name": "oracle",
     "description": "Best practices for using the oracle CLI (prompt + file bundling, engines, sessions, and file attachment patterns).",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "productivity/handoff",
+    "name": "productivity-handoff",
+    "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "productivity/writing-great-skills",
+    "name": "writing-great-skills",
+    "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "research-and-web/deep-research",
+    "name": "deep-research",
+    "description": "Run a deep, source-backed research query via DeepAPI (go to deepapi.co to get an API key) POST /v1/research/deep. Builds a rigorous one-paragraph research prompt (per research-prompt rules), fires it, and saves a cited markdown report. Use when the user asks for \"deep research\", \"deepapi research\", \"perplexity deep research\" (legacy trigger), or any deep source-backed research run. Differentiator vs the deepapi skill: this is the full research workflow (prompt + run + report file), not raw endpoint access.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "research-and-web/pi-web-search",
+    "name": "pi-web-search",
+    "description": "ONLY for Pi Agents — all other agents have their own web tools. How Pi accesses the web via the pi-web-access package — search, fetch URLs/PDFs/YouTube/GitHub. Use whenever a Pi task needs current info, docs, news, prices, or content from a specific URL.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "review-animations",
+    "name": "review-animations",
+    "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -132,9 +288,51 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "skill-authoring/distribute-skill-to-all-agents",
+    "name": "distribute-skill-to-all-agents",
+    "description": "Distribute a skill across the 4 agent skill folders (Codex, Claude Code, Pi, Hermes) so all agents see it. Use when the user says \"distribute this skill\", \"sync skills across agents\", or after creating/updating a skill that should be global. Covers the symlink layout and the ~/.pi/agent/skills trap.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "skill-authoring/effective-agent-skills",
+    "name": "effective-agent-skills",
+    "description": "How to write effective agent skills — what to do, what not to do, anatomy, progressive disclosure, design patterns, anti-patterns, testing, security. Read this whenever a skill (Claude Skill, Agent Skill, SKILL.md) is being created, edited, reviewed, or debugged. Use when the user says \"create a skill\", \"new skill\", \"update this skill\", \"improve a skill\", \"why isn't my skill triggering\", or anything else involving authoring or editing SKILL.md files.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "skill-authoring/folder-specific-claude-and-agents-md",
+    "name": "folder-specific-claude-and-agents-md",
+    "description": "Create a specialized CLAUDE.md (+ AGENTS.md symlink) inside a specific folder to give future agents folder-scoped context. Use when the user asks to create a CLAUDE.md for a folder, write folder instructions, or add agent context to a directory.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "skill-authoring/push-skill-to-github",
+    "name": "push-skill-to-github",
+    "description": "Commit and push agent-skill changes to the user's private skills GitHub repo (rooted at ~/.agents). Use after creating or updating any skill, when the user says \"push the skill\", \"push skills to github\", \"save the skill to my repo\", or \"update the skills repo\". Handles staging, committing, pushing, and cleaning up the cmux pane used to do it.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "skill-creator",
     "name": "skill-creator",
     "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "thinking-and-docs/level-up",
+    "name": "level-up",
+    "description": "Gauge the user's technical + product knowledge through 7 adaptive questions, log verbatim answers with honest ratings, and grow a learning plan from the gaps found. Use when the user says \"level up\", \"level-up session\", \"quiz me\", \"gauge my knowledge\", or wants a new assessment round. Differentiator: this finds and maps gaps; the `teach` skill delivers lessons on them.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "thinking-and-docs/prompt-me",
+    "name": "prompt-me",
+    "description": "Prompt the user with pointed questions to extract what is in his head about a project — remaining work, what is being avoided, what really matters, what does not. Use when the user says \"prompt me\", \"ask me questions\", or wants the agent to figure out priorities by questioning him.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "thinking-and-docs/short",
+    "name": "short",
+    "description": "Manually-invoked skill that forces the agent to compress its current answer — strip filler, simplify wording, and cut length while keeping the substance. Use when the user says \"short\", \"shorter\", \"simpler\", \"too long\", \"tl;dr\", or wants a more concise version of the previous response.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -606,9 +804,21 @@
     "category": "Local / Web Services"
   },
   {
+    "slug": "ops-and-setup/create-readonly-db-role",
+    "name": "create-readonly-db-role",
+    "description": "Provision a hardened SELECT-only Postgres role so AI agents can safely read a production database. Works on Supabase and any Postgres. Use when the user wants agents to query prod data, says \"read-only role\", \"safe prod DB access for agents\", or is tired of running SQL by hand for agents. Differentiator: this skill CREATES the role and wiring; day-to-day querying belongs in a project-local skill.",
+    "category": "Local / Web Services"
+  },
+  {
     "slug": "ordercli",
     "name": "ordercli",
     "description": "Foodora-only CLI for checking past orders and active order status (Deliveroo WIP).",
+    "category": "Local / Web Services"
+  },
+  {
+    "slug": "research-and-web/online-shopping",
+    "name": "online-shopping",
+    "description": "Research any online purchase with DeepAPI — fair-price checks, best deals, where to buy, shop trust. Load whenever the user is shopping or buying anything online: mentions buying a product, comparing prices, \"is this a good price\", \"where can I get X\", or attaches a product photo or listing screenshot. Research only — never places orders.",
     "category": "Local / Web Services"
   },
   {
@@ -702,6 +912,12 @@
     "category": "Media / Devices"
   },
   {
+    "slug": "research-and-web/youtube-transcript",
+    "name": "youtube-transcript",
+    "description": "Use whenever the user needs the transcript of a YouTube video — fetching, extracting, downloading, or pulling captions/subtitles/transcript text from a YouTube URL. Triggers on \"get the transcript\", \"transcript of this video\", \"pull the captions\", \"download subtitles\", \"what does this YouTube video say\". Primary path is DeepAPI (go to deepapi.co to get an API key); yt-dlp is the local fallback.",
+    "category": "Media / Devices"
+  },
+  {
     "slug": "sag",
     "name": "sag",
     "description": "ElevenLabs text-to-speech with mac-style say UX.",
@@ -748,6 +964,18 @@
     "name": "voice-call",
     "description": "Start voice calls via the Clawdbot voice-call plugin.",
     "category": "Media / Devices"
+  },
+  {
+    "slug": "agent-orchestration/cmux",
+    "name": "cmux",
+    "description": "MUST be read ANY time you interact with cmux in ANY way — listing/inspecting/creating/closing cmux workspaces, panes, or surfaces; reading or capturing pane/screen output; sending input or keys to a pane/surface; delegating to, polling, or checking on other agents running in cmux panes/surfaces; building or rearranging terminal layout; cmux browser automation; sending notifications/flashes/status/progress to the sidebar; editing cmux settings; or integrating an agent with cmux hooks. If your command starts with `cmux ` or touches a cmux workspace/pane/surface/agent, read this FIRST. Triggers on \"cmux\", \"in this workspace\", \"this pane\", \"the other agent\", \"delegate to\", \"check on the agent\", \"send to the pane\". macOS only (14.0+).",
+    "category": "Productivity / Messaging"
+  },
+  {
+    "slug": "agent-orchestration/handoff",
+    "name": "agent-orchestration-handoff",
+    "description": "Compact the current conversation into a single, detailed handoff message — everything that happened, why it happened, and what's left — output in a code block so it can be copy-pasted into a fresh agent session. Use when hitting context limits, switching focus, ending a work session, or partitioning a task across fresh contexts.",
+    "category": "Productivity / Messaging"
   },
   {
     "slug": "anthropic-skills/pptx",
@@ -810,6 +1038,12 @@
     "category": "Productivity / Messaging"
   },
   {
+    "slug": "in-progress/loop-me",
+    "name": "loop-me",
+    "description": "Grill me about specs for the workflows I want to build, within this workspace.",
+    "category": "Productivity / Messaging"
+  },
+  {
     "slug": "notion",
     "name": "notion",
     "description": "Notion API for creating and managing pages, databases, and blocks.",
@@ -822,6 +1056,24 @@
     "category": "Productivity / Messaging"
   },
   {
+    "slug": "personal/obsidian-vault",
+    "name": "obsidian-vault",
+    "description": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
+    "category": "Productivity / Messaging"
+  },
+  {
+    "slug": "productivity/teach",
+    "name": "productivity-teach",
+    "description": "Teach the user a new skill or concept in a multi-session teaching workspace with missions, lessons, and learning records.",
+    "category": "Productivity / Messaging"
+  },
+  {
+    "slug": "research-and-web/deepapi",
+    "name": "deepapi",
+    "description": "Use DeepAPI for scraping and safe email with DEEPAPI_API_BASE_URL and DEEPAPI_API_KEY.",
+    "category": "Productivity / Messaging"
+  },
+  {
     "slug": "slack",
     "name": "slack",
     "description": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
@@ -831,6 +1083,12 @@
     "slug": "things-mac",
     "name": "things-mac",
     "description": "Manage Things 3 via the `things` CLI on macOS (add/update projects+todos via URL scheme; read/search/list from the local Things database). Use when a user asks Clawdbot to add a task to Things, list inbox/today/upcoming, search tasks, or inspect projects/areas/tags.",
+    "category": "Productivity / Messaging"
+  },
+  {
+    "slug": "thinking-and-docs/teach",
+    "name": "thinking-and-docs-teach",
+    "description": "Teach with concise chat replies and rich lesson docs — multi-session teaching workspace optimized for thinking and documentation.",
     "category": "Productivity / Messaging"
   },
   {
@@ -1458,6 +1716,12 @@
     "category": "Utilities"
   },
   {
+    "slug": "animation-vocabulary",
+    "name": "animation-vocabulary",
+    "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+    "category": "Utilities"
+  },
+  {
     "slug": "anthropic-skills/brand-guidelines",
     "name": "brand-guidelines",
     "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
@@ -1482,6 +1746,12 @@
     "category": "Utilities"
   },
   {
+    "slug": "apple-design",
+    "name": "apple-design",
+    "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+    "category": "Utilities"
+  },
+  {
     "slug": "bird",
     "name": "bird",
     "description": "X/Twitter CLI for reading, searching, posting, and engagement via cookies.",
@@ -1500,15 +1770,123 @@
     "category": "Utilities"
   },
   {
+    "slug": "deprecated/ubiquitous-language",
+    "name": "ubiquitous-language",
+    "description": "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions \"domain model\" or \"DDD\".",
+    "category": "Utilities"
+  },
+  {
     "slug": "eightctl",
     "name": "eightctl",
     "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
     "category": "Utilities"
   },
   {
+    "slug": "engineering/diagnosing-bugs",
+    "name": "diagnosing-bugs",
+    "description": "Diagnosis loop for hard bugs and performance regressions. Use when the user says \"diagnose\"/\"debug this\", or reports something broken/throwing/failing/slow.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "engineering/grill-with-docs",
+    "name": "grill-with-docs",
+    "description": "A relentless interview to sharpen a plan or design, which also creates docs (ADR's and glossary) as we go.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "engineering/implement",
+    "name": "implement",
+    "description": "Implement a piece of work based on a spec or set of tickets.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "engineering/improve-codebase-architecture",
+    "name": "improve-codebase-architecture",
+    "description": "Scan a codebase for deepening opportunities, present them as a visual HTML report, then grill through whichever one you pick.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "engineering/prototype",
+    "name": "prototype",
+    "description": "Build a throwaway prototype to answer a design question. Use when the user wants to sanity-check whether a state model or logic feels right, or explore what a UI should look like.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "engineering/resolving-merge-conflicts",
+    "name": "resolving-merge-conflicts",
+    "description": "Use when you need to resolve an in-progress git merge/rebase conflict.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "engineering/setup-matt-pocock-skills",
+    "name": "setup-matt-pocock-skills",
+    "description": "Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "engineering/tdd",
+    "name": "tdd",
+    "description": "Test-driven development. Use when the user wants to build features or fix bugs test-first, mentions \"red-green-refactor\", or wants integration tests.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "engineering/to-spec",
+    "name": "to-spec",
+    "description": "Turn the current conversation into a spec and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "engineering/to-tickets",
+    "name": "to-tickets",
+    "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker.",
+    "category": "Utilities"
+  },
+  {
     "slug": "gemini",
     "name": "gemini",
     "description": "Gemini CLI for one-shot Q&A, summaries, and generation.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "in-progress/setup-ts-deep-modules",
+    "name": "setup-ts-deep-modules",
+    "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module — implementation hidden in subfolders, reachable only through its entry-point files. User-invoked.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "in-progress/writing-beats",
+    "name": "writing-beats",
+    "description": "Writing, exploit — assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "in-progress/writing-fragments",
+    "name": "writing-fragments",
+    "description": "Writing, explore — mine raw fragments, no structure yet.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "in-progress/writing-shape",
+    "name": "writing-shape",
+    "description": "Writing, exploit — shape raw material into an article, paragraph by paragraph.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "misc/migrate-to-shoehorn",
+    "name": "migrate-to-shoehorn",
+    "description": "Migrate test files from `as` type assertions to @total-typescript/shoehorn. Use when user mentions shoehorn, wants to replace `as` in tests, or needs partial test data.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "misc/scaffold-exercises",
+    "name": "scaffold-exercises",
+    "description": "Create exercise directory structures with sections, problems, solutions, and explainers that pass linting. Use when user wants to scaffold exercises, create exercise stubs, or set up a new course section.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "misc/setup-pre-commit",
+    "name": "setup-pre-commit",
+    "description": "Set up Husky pre-commit hooks with lint-staged (Prettier), type checking, and tests in the current repo. Use when user wants to add pre-commit hooks, set up Husky, configure lint-staged, or add commit-time formatting/typechecking/testing.",
     "category": "Utilities"
   },
   {
@@ -1524,9 +1902,69 @@
     "category": "Utilities"
   },
   {
+    "slug": "ops-and-setup/anti-sleep",
+    "name": "anti-sleep",
+    "description": "Keep the user's MacBook awake with macOS caffeinate — prevent sleep, screen dimming, or both, for a set duration or while a process runs. Use when the user says \"don't let my mac sleep\", \"keep the screen on\", \"anti-sleep\", \"caffeinate\", or wants the machine awake overnight / during a long build.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "ops-and-setup/google-safe-browsing",
+    "name": "google-safe-browsing",
+    "description": "Prevent and fix Google Safe Browsing \"Dangerous site\" flags. Use when launching a public web app, buying/picking a domain, building a login or signup page, or when any site shows a red \"Dangerous site\" / \"Deceptive site\" warning in Chrome, Brave, Safari, Firefox, or Edge. Triggers on \"dangerous site\", \"deceptive site\", \"site blocked\", \"safe browsing\", \"phishing flag\", \"red warning screen\".",
+    "category": "Utilities"
+  },
+  {
+    "slug": "ops-and-setup/setup-help",
+    "name": "setup-help",
+    "description": "Walk the user through setting up anything step by step. Use when the user asks for help setting up, configuring, installing, or getting something working — \"help me set up X\", \"walk me through this\", \"setup-help\". Differentiator: gives one current step at a time, then always lists every remaining setup step after each response.",
+    "category": "Utilities"
+  },
+  {
     "slug": "peekaboo",
     "name": "peekaboo",
     "description": "Capture and automate macOS UI with the Peekaboo CLI.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "personal/edit-article",
+    "name": "edit-article",
+    "description": "Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "productivity/grill-me",
+    "name": "grill-me",
+    "description": "A relentless interview to sharpen a plan or design.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "productivity/grilling",
+    "name": "grilling",
+    "description": "Grill the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "research-and-web/browser-harness",
+    "name": "browser-harness",
+    "description": "Direct browser control via CDP. Use when the user wants to automate, scrape, test, or interact with web pages. Connects to the user's already-running Chrome.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "research-and-web/research-prompt",
+    "name": "research-prompt",
+    "description": "Write a single-paragraph Deep Research prompt to hand to a human researcher (or a deep-research AI). Use when the user wants a research brief, a \"deep research prompt\", a one-paragraph task for a researcher, or asks \"what should our researcher look for\". Produces ONE tight paragraph with full context, numbered sub-questions, and per-finding output format.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "thinking-and-docs/brain-to-docs",
+    "name": "brain-to-docs",
+    "description": "Use when the user wants to extract project vision, decisions, and preferences from his head into clear documentation (README + ADRs) through a back-and-forth Q&A loop. Triggers on \"brain-to-docs\", \"build out the docs\", \"extract the vision\", \"let's document this project\".",
+    "category": "Utilities"
+  },
+  {
+    "slug": "thinking-and-docs/read-all-adrs",
+    "name": "read-all-adrs",
+    "description": "Read every ADR markdown file in the project's docs/adr/ folder so you have full context on past decisions. Use only when the user explicitly calls it.",
     "category": "Utilities"
   }
 ]
