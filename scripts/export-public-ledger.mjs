@@ -77,6 +77,7 @@ async function main() {
       repository: "https://github.com/Solizardking/skills",
     },
     catalogAnchor: summarizeCatalogAnchor(plan, receipt),
+    agentregistry: await summarizeAgentregistryMirror(),
     count: entries.length,
     submissions: entries,
   };
@@ -93,8 +94,10 @@ async function main() {
       generatedAt: ledger.generatedAt,
       hubs: ledger.hubs,
       catalogAnchor: ledger.catalogAnchor,
+      agentregistry: ledger.agentregistry,
       submissionCount: ledger.count,
       submissionsUrl: "/api/submissions.json",
+      agentregistryUrl: "/api/agentregistry.json",
       registryUrl: "/.well-known/onchain-skill-registry.json",
       publishPlan: plan ? "onchain/publish-plan.json" : null,
       publishReceipt: receipt ? "onchain/publish-receipt.json" : null,
@@ -252,6 +255,28 @@ function summarizeCatalogAnchor(plan, receipt) {
             : null,
         }
       : null,
+  };
+}
+
+async function summarizeAgentregistryMirror() {
+  const mirror = await readJsonIfExists(path.join(ROOT, "onchain", "agentregistry-mirror.json"));
+  if (!mirror) {
+    return {
+      mirrorUrl: "/api/agentregistry.json",
+      status: "missing",
+      note: "Run: npm run publish:agentregistry:onchain:plan",
+    };
+  }
+  return {
+    mirrorUrl: "/api/agentregistry.json",
+    generatedAt: mirror.generatedAt || null,
+    selected: mirror.catalog?.selected ?? (mirror.skills || []).length,
+    totalSkills: mirror.catalog?.totalSkills ?? null,
+    merkleRoot: mirror.catalog?.merkleRoot ?? null,
+    catalogHash: mirror.catalog?.catalogHash ?? null,
+    anchorStatus: mirror.catalog?.anchorStatus ?? null,
+    versionField: mirror.agentregistry?.versionField ?? null,
+    importCommand: mirror.agentregistry?.importCommand ?? "npm run publish:agentregistry:onchain",
   };
 }
 

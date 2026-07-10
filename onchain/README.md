@@ -7,6 +7,7 @@
 | `publish-plan.json` | yes | Dry-run / last plan for **catalog** Arweave + Solana memo |
 | `publish-receipt.json` | yes | Last successful **catalog** anchor (public explorer links only) |
 | `public-ledger.json` | yes | **Redacted** community submissions (safe for GitHub) |
+| `agentregistry-mirror.json` | yes | Proof map for importing skills into local agentregistry |
 | `submissions/` | **no** (gitignored) | Private job store: full files, scan detail, payment memos |
 
 ## Security
@@ -30,10 +31,39 @@ Public fields kept: slug, hashes, risk level, payment signature, explorer URLs, 
 
 ```bash
 npm run ledger:export          # rebuild public-ledger.json + public/api/submissions.json
-npm run publish:onchain        # catalog plan
-npm run publish:onchain -- --execute --devnet
+npm run publish:onchain        # catalog plan (writes publish-plan.json)
+npm run publish:onchain -- --execute --devnet   # Arweave pin + Solana memo
+npm run publish:agentregistry:onchain           # push proofs into local agentregistry
+npm run publish:agentregistry:onchain:dry       # preview payloads / mirror only
 npm run relay:upload           # community upload API + UI
 ```
+
+## agentregistry bridge
+
+Every skill in the on-chain registry has a `bundleHash` + `merkleLeaf`. The catalog
+anchor (`publish-receipt.json`) pins the Merkle root on Solana and the full registry
+on Arweave.
+
+```bash
+# 1) Ensure local registry is up
+arctl daemon start
+
+# 2) (optional) re-anchor if catalog changed
+npm run build:catalog
+npm run publish:onchain -- --execute --devnet
+
+# 3) Mirror proofs into agentregistry (websiteUrl + ar:// packages)
+npm run publish:agentregistry:onchain
+```
+
+This writes:
+
+- `onchain/agentregistry-mirror.json` — git-safe full proof map
+- `public/api/agentregistry.json` — same file for the static site
+- One agentregistry skill per catalog slug, versioned `1.0.0-onchain.<catalogHash8>`
+- A special skill `skillhub-catalog-anchor` holding the root + explorer links
+
+Open http://localhost:12121 and look for skills with Arweave packages and verification URLs.
 
 ## Hubs
 
@@ -42,3 +72,4 @@ npm run relay:upload           # community upload API + UI
 - Cheshire: https://cheshireterminal.ai/skills
 - Ledger UI: https://skills.x402.wtf/submissions
 - API: https://skills.x402.wtf/api/submissions.json
+- agentregistry mirror: https://skills.x402.wtf/api/agentregistry.json
