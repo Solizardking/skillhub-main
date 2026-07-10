@@ -19,6 +19,10 @@
     {
       "source": "/scanner",
       "destination": "/scanner/index.html"
+    },
+    {
+      "source": "/publish",
+      "destination": "/publish/index.html"
     }
   ],
   "headers": [

@@ -25,6 +25,8 @@
     "relay": "node scripts/skill-relay.mjs",
     "relay:watch": "node scripts/skill-relay.mjs --watch",
     "relay:push": "node scripts/skill-relay.mjs --commit --push",
+    "relay:upload": "node scripts/upload-relay-server.mjs",
+    "relay:upload:dev": "SKILLHUB_PAYMENT_NETWORK=devnet node scripts/upload-relay-server.mjs",
     "test": "node scripts/build-catalog.mjs --check && node scripts/smoke-test-skills.mjs && node bin/skills.mjs list --json >/dev/null && node scripts/test-premiere-skills.mjs"
   },
   "engines": {

@@ -95,3 +95,7 @@ __pycache__/
 # Test
 coverage/
 .nyc_output/
+
+# Upload relay job store
+onchain/submissions/
+.relay-install-check/

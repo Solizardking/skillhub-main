@@ -11,6 +11,17 @@ npm run scanner:scan
 npm run scanner:serve
 ```
 
+## Upload pipeline integration
+
+Community publishes use the same vetter rules via `scanner/lib/scan-upload.mjs`,
+driven by the upload relay:
+
+```bash
+npm run relay:upload   # UI + API at http://127.0.0.1:8787
+```
+
+Flow: **upload skill → scan → Solana fee → Arweave/memo**. See [UPLOAD.md](../UPLOAD.md).
+
 Open `http://localhost:8877` after the server starts.
 
 Useful direct commands:

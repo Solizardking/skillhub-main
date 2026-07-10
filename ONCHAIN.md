@@ -20,12 +20,23 @@ Pinning the registry to Arweave means the data behind the proof can never disapp
 
 ## The Pipeline
 
+### Catalog (operator)
+
 ```
 npm run build:catalog          # 1. hash every skill bundle, emit merkle root + registry
 npm run publish:onchain        # 2. dry run — writes onchain/publish-plan.json, prints memo preview
 npm run publish:onchain -- --execute          # 3. upload + anchor on mainnet
 npm run publish:onchain -- --execute --devnet # …or rehearse on devnet (free Irys uploads)
 ```
+
+### Single skill (community upload)
+
+```
+npm run relay:upload           # browser UI + API: upload → scanner → wallet fee → package/anchor
+```
+
+User-submitted skills land in `onchain/submissions/<jobId>/` with optional Irys package and
+`skillhub:skill:v1|…` memo. Full docs: [UPLOAD.md](./UPLOAD.md).
 
 ### Step 2/3 in detail
 

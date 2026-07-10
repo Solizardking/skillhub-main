@@ -11,7 +11,10 @@ npm run relay              # one-shot: build + smoke + sample install check
 npm run relay:watch        # poll skills/ and rebuild on change
 npm run relay:push         # rebuild, commit generated files, git push
 npm run relay -- --onchain --execute --devnet   # also publish on-chain
+npm run relay:upload       # HTTP upload → scan → Solana fee → on-chain pipeline
 ```
+
+Community uploads (browser + wallet) use the upload relay — see [UPLOAD.md](./UPLOAD.md).
 
 What a relay run does:
 
