@@ -1,16 +1,16 @@
 # Skill Scanner Results
 
-Scanned at: 2026-07-11T23:15:42.013Z
+Scanned at: 2026-07-11T23:17:49.683Z
 
-- Skills scanned: 562
-- Local skills available: 562
-- On-chain skills: 391
-- Off-chain skills: 171
-- Verified skills: 562
+- Skills scanned: 567
+- Local skills available: 567
+- On-chain skills: 395
+- Off-chain skills: 172
+- Verified skills: 567
 - Changed skills: 0
 - Missing verification: 0
 - Critical findings: 18
-- High findings: 1773
+- High findings: 1801
 - Install telemetry source: not tracked locally
 
 ## On-Chain Registry
@@ -18,11 +18,12 @@ Scanned at: 2026-07-11T23:15:42.013Z
 - Status: anchor-ready
 - Anchor state: planned
 - Registry root valid: yes
-- Merkle root: sha256-c33ccb2863eefc6f5999c7c6e9ee2bd079947077d72b38526464d2cd08ea1f03
-- Catalog hash: sha256-e2689d683a914b17df4ea0dc39b1e8a0fee5aba1d8ca554f52ce9d45381586b7
+- Merkle root: sha256-9c603f19f87ee4ed6d60878dff7546ef146c0d8ab1cdb8fcfa59b1c6d8b69125
+- Catalog hash: sha256-b908b148effdb0077a7f4605004dacdd88c36823089713bb222aa4c316c516fc
 
 ## Skills Requiring Review
 
+- cheshire-api: high risk, 14 findings, verification verified
 - dflow-phantom-connect: high risk, 55 findings, verification verified
 - helius-skills/helius-jupiter: high risk, 112 findings, verification verified
 - helius-skills/helius-phantom: high risk, 115 findings, verification verified
@@ -34,6 +35,7 @@ Scanned at: 2026-07-11T23:15:42.013Z
 - cloudflare: high risk, 237 findings, verification verified
 - durable-objects: high risk, 11 findings, verification verified
 - forge: high risk, 33 findings, verification verified
+- google-agent-registry: high risk, 9 findings, verification verified
 - sandbox-sdk: high risk, 9 findings, verification verified
 - nvidia/amc-setup-calibration-stack: high risk, 14 findings, verification verified
 - nvidia/deepstream-dev: critical risk, 85 findings, verification verified
@@ -61,5 +63,3 @@ Scanned at: 2026-07-11T23:15:42.013Z
 - nvidia/tao-setup-nvidia-gpu-host: high risk, 51 findings, verification verified
 - nvidia/vss-deploy-dense-captioning: high risk, 25 findings, verification verified
 - nvidia/vss-deploy-detection-tracking-2d: critical risk, 36 findings, verification verified
-- nvidia/vss-deploy-detection-tracking-3d: high risk, 35 findings, verification verified
-- nvidia/vss-deploy-profile: critical risk, 146 findings, verification verified

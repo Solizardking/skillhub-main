@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 562,
-  "catalogHash": "sha256-e2689d683a914b17df4ea0dc39b1e8a0fee5aba1d8ca554f52ce9d45381586b7",
-  "merkleRoot": "sha256-c33ccb2863eefc6f5999c7c6e9ee2bd079947077d72b38526464d2cd08ea1f03",
+  "totalSkills": 567,
+  "catalogHash": "sha256-b908b148effdb0077a7f4605004dacdd88c36823089713bb222aa4c316c516fc",
+  "merkleRoot": "sha256-9c603f19f87ee4ed6d60878dff7546ef146c0d8ab1cdb8fcfa59b1c6d8b69125",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -47,6 +47,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/ask-mcp/metadata.json",
       "verification": "/api/skills/ask-mcp/verification.json"
+    },
+    {
+      "slug": "cheshire-api",
+      "name": "cheshire-api",
+      "description": "Call Cheshire Terminal REST, MCP, discovery, and developer API surfaces for Solana agents, arena rooms, Upstash boxes, trading health, and OpenAPI. Use when integrating cheshireterminal.ai, /mcp, /.well-known/agent-card.json, ct_sk_ API keys, arena coordination, box handoff, or Apigee/zero-service health probes.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-4d04283b35eee220a891140742f015315d631a0b451faf2e2330dbea5032905e",
+      "merkleLeaf": "sha256-944407f680e52f6b9f9685d67a7567907bd367805e1129ad1beb11c24f6f9d39",
+      "fileCount": 4,
+      "metadata": "/api/skills/cheshire-api/metadata.json",
+      "verification": "/api/skills/cheshire-api/verification.json"
     },
     {
       "slug": "cheshire-terminal",
@@ -533,6 +544,17 @@
       "verification": "/api/skills/phantom-wallet-mcp/verification.json"
     },
     {
+      "slug": "posthog-cheshire",
+      "name": "posthog-cheshire",
+      "description": "Instrument and operate PostHog analytics for Cheshire Terminal (US cloud project 473072). Use when wiring posthog-js / posthog-node, cookieless privacy opt-in, wallet identify on SIWS, session replay, product events (wallet_connected, pump/dbc launches, agents, staking), or verifying capture to us.i.posthog.com.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-dcd0890d8ea683c1af92b90022c9e23ef09a9e89c0033b6be11c063d6b3b5722",
+      "merkleLeaf": "sha256-5af1349378b4359189b7229bf63b4dc45c978f1f4d3eaaad64cc5c0c4958fa4f",
+      "fileCount": 4,
+      "metadata": "/api/skills/posthog-cheshire/metadata.json",
+      "verification": "/api/skills/posthog-cheshire/verification.json"
+    },
+    {
       "slug": "pump-admin-ops",
       "name": "pump-admin-ops",
       "description": "Build and execute Pump.fun admin workflows for authority management, creator reassignment, IDL authority changes, cashback claims, Mayhem mode, and cross-program Pump/PumpAMM admin instructions. Use when operating Pump protocol authority or administrative tasks.",
@@ -795,6 +817,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/pumpfun-trading/metadata.json",
       "verification": "/api/skills/pumpfun-trading/verification.json"
+    },
+    {
+      "slug": "skillhub-onchain",
+      "name": "skillhub-onchain",
+      "description": "Publish agent skills on-chain via Skill Hub (skills.x402.wtf): upload SKILL.md, run the security scanner, pay a Solana fee, and anchor package hashes on Arweave and Solana. Use when shipping skills to the public catalog, reading the public submission ledger, or connecting Cheshire Terminal to the Skill Hub API.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-f393b771a8b5fdfb2665f9eaa1a1205dc9fdf6ed1b118819527152a4d1493c46",
+      "merkleLeaf": "sha256-24484a5bb5712efe6da4539a414f93def47042022774308603421bde3b1ae442",
+      "fileCount": 1,
+      "metadata": "/api/skills/skillhub-onchain/metadata.json",
+      "verification": "/api/skills/skillhub-onchain/verification.json"
     },
     {
       "slug": "solana-clawd",
@@ -1501,6 +1534,17 @@
       "verification": "/api/skills/github/verification.json"
     },
     {
+      "slug": "google-agent-registry",
+      "name": "google-agent-registry",
+      "description": "Maintain and register Cheshire Google Agent Registry artifacts under registry/google (A2A agent card, MCP tools list, MCP interface, server card, zero-service OpenAPI) and deploy Apigee reverse proxies on project x402-477302. Use for gcloud agent-registry, 10 KB size limits, tool-name parity with server/mcp/tools.ts, Apigee test-env, or validate:google-registry / register:google-agent.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-d3f43f3c4d0e4fae277ca4dfec404d10769264d73a27d9b92d40b2f2f694ec8c",
+      "merkleLeaf": "sha256-edc18b5551fadbf4b5bbc1e021f0bcea85a90d238a205e0c77e6a6f5591b0804",
+      "fileCount": 4,
+      "metadata": "/api/skills/google-agent-registry/metadata.json",
+      "verification": "/api/skills/google-agent-registry/verification.json"
+    },
+    {
       "slug": "improve-animations",
       "name": "improve-animations",
       "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
@@ -1752,6 +1796,17 @@
       "fileCount": 4,
       "metadata": "/api/skills/skill-creator/metadata.json",
       "verification": "/api/skills/skill-creator/verification.json"
+    },
+    {
+      "slug": "stripe",
+      "name": "stripe",
+      "description": "Install and use the official Stripe Claude Code plugin (stripe@claude-plugins-official), connect Stripe MCP (mcp.stripe.com), and implement modern Stripe payments with Checkout Sessions, PaymentIntents, SetupIntents, and Billing — never legacy Charges. Use when building Stripe checkout, subscriptions, webhooks, Connect, restricted keys, test cards, or running /plugin install stripe@claude-plugins-official / /explain-error / /test-cards.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-8a84a924bc20644d09710aa4c9ab695bc39ea7bd4888ce786ea8d0c739b44ab5",
+      "merkleLeaf": "sha256-1be28ca6de92f74620260b1f21d93d3823001104eeaeddc4107aec042cc91092",
+      "fileCount": 4,
+      "metadata": "/api/skills/stripe/metadata.json",
+      "verification": "/api/skills/stripe/verification.json"
     },
     {
       "slug": "thinking-and-docs/level-up",

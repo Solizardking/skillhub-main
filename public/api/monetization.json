@@ -47,6 +47,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "cheshire-api",
+      "name": "cheshire-api",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "cheshire-terminal",
       "name": "cheshire-terminal",
       "category": "Solana / Blockchain",
@@ -619,6 +632,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "posthog-cheshire",
+      "name": "posthog-cheshire",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "pump-admin-ops",
       "name": "pump-admin-ops",
       "category": "Solana / Blockchain",
@@ -920,6 +946,19 @@
     {
       "slug": "pumpfun-trading",
       "name": "pumpfun-trading",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "skillhub-onchain",
+      "name": "skillhub-onchain",
       "category": "Solana / Blockchain",
       "mode": "tip",
       "merchant": {
@@ -1763,6 +1802,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "google-agent-registry",
+      "name": "google-agent-registry",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "improve-animations",
       "name": "improve-animations",
       "category": "Dev Tools / Agents",
@@ -2051,6 +2103,19 @@
     {
       "slug": "skill-creator",
       "name": "skill-creator",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "stripe",
+      "name": "stripe",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {

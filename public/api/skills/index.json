@@ -12,6 +12,12 @@
     "category": "Solana / Blockchain"
   },
   {
+    "slug": "cheshire-api",
+    "name": "cheshire-api",
+    "description": "Call Cheshire Terminal REST, MCP, discovery, and developer API surfaces for Solana agents, arena rooms, Upstash boxes, trading health, and OpenAPI. Use when integrating cheshireterminal.ai, /mcp, /.well-known/agent-card.json, ct_sk_ API keys, arena coordination, box handoff, or Apigee/zero-service health probes.",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "cheshire-terminal",
     "name": "cheshire-terminal",
     "description": "Operate and extend Cheshire Terminal, the cheshireterminal.ai voice-controlled Solana terminal powered by $CLAWD. Use when working on voice terminal flows, token launch commands, LiveKit voice integration, Jupiter swap surfaces, burn/staking flows, or any task that mentions Cheshire Terminal, cheshireterminal.ai, $CLAWD terminal, or Clawd voice commands.",
@@ -276,6 +282,12 @@
     "category": "Solana / Blockchain"
   },
   {
+    "slug": "posthog-cheshire",
+    "name": "posthog-cheshire",
+    "description": "Instrument and operate PostHog analytics for Cheshire Terminal (US cloud project 473072). Use when wiring posthog-js / posthog-node, cookieless privacy opt-in, wallet identify on SIWS, session replay, product events (wallet_connected, pump/dbc launches, agents, staking), or verifying capture to us.i.posthog.com.",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "pump-admin-ops",
     "name": "pump-admin-ops",
     "description": "Build and execute Pump.fun admin workflows for authority management, creator reassignment, IDL authority changes, cashback claims, Mayhem mode, and cross-program Pump/PumpAMM admin instructions. Use when operating Pump protocol authority or administrative tasks.",
@@ -417,6 +429,12 @@
     "slug": "pumpfun-trading",
     "name": "pumpfun-trading",
     "description": "Quick Pump.fun trading shortcut for buy/sell flow selection, bonding curve versus AMM state checks, slippage handling, risk controls, and SDK trade instruction building.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "skillhub-onchain",
+    "name": "skillhub-onchain",
+    "description": "Publish agent skills on-chain via Skill Hub (skills.x402.wtf): upload SKILL.md, run the security scanner, pay a Solana fee, and anchor package hashes on Arweave and Solana. Use when shipping skills to the public catalog, reading the public submission ledger, or connecting Cheshire Terminal to the Skill Hub API.",
     "category": "Solana / Blockchain"
   },
   {
@@ -804,6 +822,12 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "google-agent-registry",
+    "name": "google-agent-registry",
+    "description": "Maintain and register Cheshire Google Agent Registry artifacts under registry/google (A2A agent card, MCP tools list, MCP interface, server card, zero-service OpenAPI) and deploy Apigee reverse proxies on project x402-477302. Use for gcloud agent-registry, 10 KB size limits, tool-name parity with server/mcp/tools.ts, Apigee test-env, or validate:google-registry / register:google-agent.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "improve-animations",
     "name": "improve-animations",
     "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
@@ -939,6 +963,12 @@
     "slug": "skill-creator",
     "name": "skill-creator",
     "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "stripe",
+    "name": "stripe",
+    "description": "Install and use the official Stripe Claude Code plugin (stripe@claude-plugins-official), connect Stripe MCP (mcp.stripe.com), and implement modern Stripe payments with Checkout Sessions, PaymentIntents, SetupIntents, and Billing — never legacy Charges. Use when building Stripe checkout, subscriptions, webhooks, Connect, restricted keys, test cards, or running /plugin install stripe@claude-plugins-official / /explain-error / /test-cards.",
     "category": "Dev Tools / Agents"
   },
   {

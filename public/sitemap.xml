@@ -13,6 +13,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/ask-mcp/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/ask-mcp/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/ask-mcp/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-api/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-api/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-api/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-terminal/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-terminal/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-terminal/SKILL.md</loc></url>
@@ -145,6 +148,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/phantom-wallet-mcp/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/phantom-wallet-mcp/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/phantom-wallet-mcp/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/posthog-cheshire/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/posthog-cheshire/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/posthog-cheshire/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/pump-admin-ops/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/pump-admin-ops/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/pump-admin-ops/SKILL.md</loc></url>
@@ -217,6 +223,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/pumpfun-trading/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/pumpfun-trading/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/pumpfun-trading/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/skillhub-onchain/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/skillhub-onchain/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/skillhub-onchain/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/solana-clawd/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/solana-clawd/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/solana-clawd/SKILL.md</loc></url>
@@ -409,6 +418,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/github/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/github/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/github/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/google-agent-registry/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/google-agent-registry/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/google-agent-registry/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/improve-animations/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/improve-animations/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/improve-animations/SKILL.md</loc></url>
@@ -478,6 +490,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/skill-creator/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/skill-creator/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/skill-creator/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/stripe/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/stripe/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/stripe/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/thinking-and-docs/level-up/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/thinking-and-docs/level-up/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/thinking-and-docs/level-up/SKILL.md</loc></url>

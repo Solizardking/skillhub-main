@@ -91,11 +91,11 @@
       }
     ]
   },
-  "scannedAt": "2026-07-11T23:15:42.013Z",
+  "scannedAt": "2026-07-11T23:17:49.683Z",
   "source": {
     "catalog": "catalog.json",
-    "canonicalSkills": 562,
-    "localSkills": 562,
+    "canonicalSkills": 567,
+    "localSkills": 567,
     "duplicatePublicSkillsExcluded": true
   },
   "onchain": {
@@ -104,9 +104,9 @@
     "cluster": "mainnet-beta",
     "status": "anchor-ready",
     "anchorState": "planned",
-    "totalSkills": 562,
-    "catalogHash": "sha256-e2689d683a914b17df4ea0dc39b1e8a0fee5aba1d8ca554f52ce9d45381586b7",
-    "merkleRoot": "sha256-c33ccb2863eefc6f5999c7c6e9ee2bd079947077d72b38526464d2cd08ea1f03",
+    "totalSkills": 567,
+    "catalogHash": "sha256-b908b148effdb0077a7f4605004dacdd88c36823089713bb222aa4c316c516fc",
+    "merkleRoot": "sha256-9c603f19f87ee4ed6d60878dff7546ef146c0d8ab1cdb8fcfa59b1c6d8b69125",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -116,13 +116,13 @@
     "solanaSignature": null
   },
   "summary": {
-    "totalSkills": 562,
-    "localSkills": 562,
-    "onChainSkills": 391,
-    "offChainSkills": 171,
+    "totalSkills": 567,
+    "localSkills": 567,
+    "onChainSkills": 395,
+    "offChainSkills": 172,
     "categories": {
-      "Solana / Blockchain": 103,
-      "Dev Tools / Agents": 61,
+      "Solana / Blockchain": 106,
+      "Dev Tools / Agents": 63,
       "Google / Ads": 11,
       "Google / Analytics": 2,
       "Google / Cloud": 56,
@@ -133,29 +133,29 @@
       "Utilities": 44
     },
     "verification": {
-      "verified": 562,
+      "verified": 567,
       "changed": 0,
       "missing": 0,
       "error": 0
     },
     "risk": {
-      "pass": 373,
-      "review": 183,
+      "pass": 375,
+      "review": 186,
       "required": 6
     },
     "findings": {
-      "total": 3380,
+      "total": 3408,
       "bySeverity": {
         "INFO": 1262,
         "LOW": 149,
         "MEDIUM": 178,
-        "HIGH": 1773,
+        "HIGH": 1801,
         "CRITICAL": 18
       }
     },
     "installs": {
       "knownSkillCount": 0,
-      "unknownSkillCount": 562,
+      "unknownSkillCount": 567,
       "totalKnownInstalls": 0,
       "source": "not tracked locally"
     }
@@ -325,6 +325,206 @@
         "lineCount": 172
       },
       "findings": []
+    },
+    {
+      "slug": "cheshire-api",
+      "name": "cheshire-api",
+      "description": "Call Cheshire Terminal REST, MCP, discovery, and developer API surfaces for Solana agents, arena rooms, Upstash boxes, trading health, and OpenAPI. Use when integrating cheshireterminal.ai, /mcp, /.well-known/agent-card.json, ct_sk_ API keys, arena coordination, box handoff, or Apigee/zero-service health probes.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/cheshire-api",
+      "skillPath": "skills/cheshire-api/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install cheshire-api",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-4d04283b35eee220a891140742f015315d631a0b451faf2e2330dbea5032905e",
+        "localBundleHash": "sha256-4d04283b35eee220a891140742f015315d631a0b451faf2e2330dbea5032905e",
+        "merkleLeaf": "sha256-944407f680e52f6b9f9685d67a7567907bd367805e1129ad1beb11c24f6f9d39",
+        "localMerkleLeaf": "sha256-944407f680e52f6b9f9685d67a7567907bd367805e1129ad1beb11c24f6f9d39",
+        "fileCount": 4,
+        "localFileCount": 4,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 100,
+        "maxSeverity": "HIGH",
+        "findingsCount": 14,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 14,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 4,
+        "textFiles": 4,
+        "scriptFiles": 1,
+        "referenceFiles": 2,
+        "assetFiles": 0,
+        "bytesScanned": 14655,
+        "lineCount": 403
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_IP_ADDRESS_CALL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses a public IP address in a network URL.",
+          "file": "references/endpoints.md",
+          "line": 10,
+          "excerpt": "| `https://34.54.168.40.nip.io` | Apigee env-group (`test-env`) |"
+        },
+        {
+          "ruleId": "VETTER_IP_ADDRESS_CALL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses a public IP address in a network URL.",
+          "file": "SKILL.md",
+          "line": 40,
+          "excerpt": "| `https://34.54.168.40.nip.io` | Apigee `test-env` |"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 47,
+          "excerpt": "curl -sS https://cheshireterminal.ai/api/health \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 51,
+          "excerpt": "curl -sS https://cheshireterminal.ai/api/health \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 58,
+          "excerpt": "curl -sS -X POST https://cheshireterminal.ai/api/developer/keys \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 67,
+          "excerpt": "curl -sS https://cheshireterminal.ai/api/health"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 68,
+          "excerpt": "curl -sS https://cheshireterminal.ai/api/developer/status"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 69,
+          "excerpt": "curl -sS https://cheshireterminal.ai/api/developer/openapi.json | head -c 200"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 70,
+          "excerpt": "curl -sS https://cheshireterminal.ai/api/developer/llms.txt"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 71,
+          "excerpt": "curl -sS https://cheshireterminal.ai/.well-known/agent-card.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 72,
+          "excerpt": "curl -sS https://cheshireterminal.ai/.well-known/agent-configuration"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 73,
+          "excerpt": "curl -sS https://cheshireterminal.ai/.well-known/mcp"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 95,
+          "excerpt": "curl -sS https://cheshireterminal.ai/api/skills-store"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 96,
+          "excerpt": "curl -sS https://cheshireterminal.ai/api/skills-store/cheshire-api"
+        }
+      ]
     },
     {
       "slug": "cheshire-terminal",
@@ -8232,6 +8432,79 @@
       ]
     },
     {
+      "slug": "posthog-cheshire",
+      "name": "posthog-cheshire",
+      "description": "Instrument and operate PostHog analytics for Cheshire Terminal (US cloud project 473072). Use when wiring posthog-js / posthog-node, cookieless privacy opt-in, wallet identify on SIWS, session replay, product events (wallet_connected, pump/dbc launches, agents, staking), or verifying capture to us.i.posthog.com.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/posthog-cheshire",
+      "skillPath": "skills/posthog-cheshire/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install posthog-cheshire",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-dcd0890d8ea683c1af92b90022c9e23ef09a9e89c0033b6be11c063d6b3b5722",
+        "localBundleHash": "sha256-dcd0890d8ea683c1af92b90022c9e23ef09a9e89c0033b6be11c063d6b3b5722",
+        "merkleLeaf": "sha256-5af1349378b4359189b7229bf63b4dc45c978f1f4d3eaaad64cc5c0c4958fa4f",
+        "localMerkleLeaf": "sha256-5af1349378b4359189b7229bf63b4dc45c978f1f4d3eaaad64cc5c0c4958fa4f",
+        "fileCount": 4,
+        "localFileCount": 4,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 4,
+        "textFiles": 4,
+        "scriptFiles": 1,
+        "referenceFiles": 2,
+        "assetFiles": 0,
+        "bytesScanned": 10293,
+        "lineCount": 327
+      },
+      "findings": []
+    },
+    {
       "slug": "pump-admin-ops",
       "name": "pump-admin-ops",
       "description": "Build and execute Pump.fun admin workflows for authority management, creator reassignment, IDL authority changes, cashback claims, Mayhem mode, and cross-program Pump/PumpAMM admin instructions. Use when operating Pump protocol authority or administrative tasks.",
@@ -10041,6 +10314,125 @@
         "lineCount": 106
       },
       "findings": []
+    },
+    {
+      "slug": "skillhub-onchain",
+      "name": "skillhub-onchain",
+      "description": "Publish agent skills on-chain via Skill Hub (skills.x402.wtf): upload SKILL.md, run the security scanner, pay a Solana fee, and anchor package hashes on Arweave and Solana. Use when shipping skills to the public catalog, reading the public submission ledger, or connecting Cheshire Terminal to the Skill Hub API.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/skillhub-onchain",
+      "skillPath": "skills/skillhub-onchain/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install skillhub-onchain",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-f393b771a8b5fdfb2665f9eaa1a1205dc9fdf6ed1b118819527152a4d1493c46",
+        "localBundleHash": "sha256-f393b771a8b5fdfb2665f9eaa1a1205dc9fdf6ed1b118819527152a4d1493c46",
+        "merkleLeaf": "sha256-24484a5bb5712efe6da4539a414f93def47042022774308603421bde3b1ae442",
+        "localMerkleLeaf": "sha256-24484a5bb5712efe6da4539a414f93def47042022774308603421bde3b1ae442",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 70,
+        "maxSeverity": "HIGH",
+        "findingsCount": 5,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 5,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 3058,
+        "lineCount": 97
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 51,
+          "excerpt": "curl -sS https://skills.x402.wtf/api/skills.json | head"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 54,
+          "excerpt": "curl -sS https://skills.x402.wtf/api/submissions.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 57,
+          "excerpt": "curl -sS https://skills.x402.wtf/api/onchain.json"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 60,
+          "excerpt": "curl -sS https://skills.x402.wtf/api/skills/solana-common-errors/SKILL.md | head"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 68,
+          "excerpt": "curl -sS https://cheshireterminal.ai/api/skills | jq '.sources, .count'"
+        }
+      ]
     },
     {
       "slug": "solana-clawd",
@@ -26551,6 +26943,161 @@
       "findings": []
     },
     {
+      "slug": "google-agent-registry",
+      "name": "google-agent-registry",
+      "description": "Maintain and register Cheshire Google Agent Registry artifacts under registry/google (A2A agent card, MCP tools list, MCP interface, server card, zero-service OpenAPI) and deploy Apigee reverse proxies on project x402-477302. Use for gcloud agent-registry, 10 KB size limits, tool-name parity with server/mcp/tools.ts, Apigee test-env, or validate:google-registry / register:google-agent.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "off-chain",
+        "chain": "solana",
+        "reason": "No blockchain execution or registry surface detected."
+      },
+      "path": "skills/google-agent-registry",
+      "skillPath": "skills/google-agent-registry/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install google-agent-registry",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-d3f43f3c4d0e4fae277ca4dfec404d10769264d73a27d9b92d40b2f2f694ec8c",
+        "localBundleHash": "sha256-d3f43f3c4d0e4fae277ca4dfec404d10769264d73a27d9b92d40b2f2f694ec8c",
+        "merkleLeaf": "sha256-edc18b5551fadbf4b5bbc1e021f0bcea85a90d238a205e0c77e6a6f5591b0804",
+        "localMerkleLeaf": "sha256-edc18b5551fadbf4b5bbc1e021f0bcea85a90d238a205e0c77e6a6f5591b0804",
+        "fileCount": 4,
+        "localFileCount": 4,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 100,
+        "maxSeverity": "HIGH",
+        "findingsCount": 9,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 9,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 4,
+        "textFiles": 4,
+        "scriptFiles": 1,
+        "referenceFiles": 2,
+        "assetFiles": 0,
+        "bytesScanned": 10011,
+        "lineCount": 352
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/apigee.md",
+          "line": 37,
+          "excerpt": "curl -sS https://34.54.168.40.nip.io/myproxy"
+        },
+        {
+          "ruleId": "VETTER_IP_ADDRESS_CALL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses a public IP address in a network URL.",
+          "file": "references/apigee.md",
+          "line": 37,
+          "excerpt": "curl -sS https://34.54.168.40.nip.io/myproxy"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/apigee.md",
+          "line": 41,
+          "excerpt": "curl -sS https://34.54.168.40.nip.io/zero/health"
+        },
+        {
+          "ruleId": "VETTER_IP_ADDRESS_CALL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses a public IP address in a network URL.",
+          "file": "references/apigee.md",
+          "line": 41,
+          "excerpt": "curl -sS https://34.54.168.40.nip.io/zero/health"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 60,
+          "excerpt": "curl -sS https://cheshireterminal.ai/.well-known/agent-card.json | head -c 200"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 61,
+          "excerpt": "curl -sS https://34.54.168.40.nip.io/myproxy"
+        },
+        {
+          "ruleId": "VETTER_IP_ADDRESS_CALL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses a public IP address in a network URL.",
+          "file": "SKILL.md",
+          "line": 61,
+          "excerpt": "curl -sS https://34.54.168.40.nip.io/myproxy"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 62,
+          "excerpt": "curl -sS https://34.54.168.40.nip.io/zero/health"
+        },
+        {
+          "ruleId": "VETTER_IP_ADDRESS_CALL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses a public IP address in a network URL.",
+          "file": "SKILL.md",
+          "line": 62,
+          "excerpt": "curl -sS https://34.54.168.40.nip.io/zero/health"
+        }
+      ]
+    },
+    {
       "slug": "improve-animations",
       "name": "improve-animations",
       "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
@@ -28502,6 +29049,79 @@
         "assetFiles": 0,
         "bytesScanned": 41626,
         "lineCount": 1053
+      },
+      "findings": []
+    },
+    {
+      "slug": "stripe",
+      "name": "stripe",
+      "description": "Install and use the official Stripe Claude Code plugin (stripe@claude-plugins-official), connect Stripe MCP (mcp.stripe.com), and implement modern Stripe payments with Checkout Sessions, PaymentIntents, SetupIntents, and Billing — never legacy Charges. Use when building Stripe checkout, subscriptions, webhooks, Connect, restricted keys, test cards, or running /plugin install stripe@claude-plugins-official / /explain-error / /test-cards.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/stripe",
+      "skillPath": "skills/stripe/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install stripe",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-8a84a924bc20644d09710aa4c9ab695bc39ea7bd4888ce786ea8d0c739b44ab5",
+        "localBundleHash": "sha256-8a84a924bc20644d09710aa4c9ab695bc39ea7bd4888ce786ea8d0c739b44ab5",
+        "merkleLeaf": "sha256-1be28ca6de92f74620260b1f21d93d3823001104eeaeddc4107aec042cc91092",
+        "localMerkleLeaf": "sha256-1be28ca6de92f74620260b1f21d93d3823001104eeaeddc4107aec042cc91092",
+        "fileCount": 4,
+        "localFileCount": 4,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 4,
+        "textFiles": 4,
+        "scriptFiles": 1,
+        "referenceFiles": 2,
+        "assetFiles": 0,
+        "bytesScanned": 9576,
+        "lineCount": 296
       },
       "findings": []
     },
