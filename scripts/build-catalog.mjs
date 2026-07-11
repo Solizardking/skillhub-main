@@ -392,7 +392,7 @@ async function addPublicLedgerArtifacts(files) {
         "api/onchain.json",
         `${JSON.stringify({
           schemaVersion: "skillhub-onchain-summary/v1",
-          generatedAt: new Date().toISOString(),
+          generatedAt: ledger.generatedAt || "1970-01-01T00:00:00.000Z",
           hubs: ledger.hubs || { primary: SITE_URL, aliases: SITE_ALIASES },
           catalogAnchor: ledger.catalogAnchor || null,
           submissionCount: ledger.count || 0,
@@ -408,7 +408,7 @@ async function addPublicLedgerArtifacts(files) {
       "api/submissions.json",
       `${JSON.stringify({
         schemaVersion: "skillhub-public-ledger/v1",
-        generatedAt: new Date().toISOString(),
+        generatedAt: "1970-01-01T00:00:00.000Z",
         security: { redacted: true, policy: ["No private keys or secrets"] },
         hubs: { primary: SITE_URL, aliases: SITE_ALIASES },
         count: 0,

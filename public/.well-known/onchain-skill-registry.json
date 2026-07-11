@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 558,
-  "catalogHash": "sha256-e9a98c6339fd6390b00a46063220a64c44d68cc5b495cb7b7704c6dad4b29103",
-  "merkleRoot": "sha256-756d590156eb3a22f17dabe8d99cc21cd8b9d40ba5c9965996c66b477b3ff3f6",
+  "totalSkills": 562,
+  "catalogHash": "sha256-e2689d683a914b17df4ea0dc39b1e8a0fee5aba1d8ca554f52ce9d45381586b7",
+  "merkleRoot": "sha256-c33ccb2863eefc6f5999c7c6e9ee2bd079947077d72b38526464d2cd08ea1f03",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -852,6 +852,17 @@
       "verification": "/api/skills/solana-dev/verification.json"
     },
     {
+      "slug": "solana-dev-skill-main/skill",
+      "name": "solana-dev-framework-kit",
+      "description": "End-to-end Solana development playbook (Jan 2026). Prefer Solana Foundation framework-kit (@solana/client + @solana/react-hooks) for React/Next.js UI. Prefer @solana/kit for all new client/RPC/transaction code. When legacy dependencies require web3.js, isolate it behind @solana/web3-compat (or @solana/web3.js as a true legacy fallback). Covers wallet-standard-first connection (incl. ConnectorKit), Anchor/Pinocchio programs, Codama-based client generation, LiteSVM/Mollusk/Surfpool testing, and security checklists.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-fa319c038d6e5539a92b640e06a1bd53d8665630ae2f6884a9ed4a73d55cd3d9",
+      "merkleLeaf": "sha256-c29ba3d3f929e1213da8c6f376c5b53eadae04ea97978ddf04272424af1fc1cc",
+      "fileCount": 10,
+      "metadata": "/api/skills/solana-dev-skill-main/skill/metadata.json",
+      "verification": "/api/skills/solana-dev-skill-main/skill/verification.json"
+    },
+    {
       "slug": "solana-formal-verification",
       "name": "qedgen",
       "description": "Formally verify programs by writing Lean 4 proofs. Trigger this skill whenever the user wants to formally verify code, generate Lean 4 proofs, prove properties about algorithms or smart contracts, verify invariants, convert program logic into formal specifications, or anything involving Lean 4 and formal verification. Also trigger when the user mentions \"qedgen\", \"lean proof\", \"formal proof\", \"verify my code\", \"prove correctness\", \"formal verification\", or wants mathematical guarantees about their implementation.",
@@ -1488,6 +1499,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/github/metadata.json",
       "verification": "/api/skills/github/verification.json"
+    },
+    {
+      "slug": "improve-animations",
+      "name": "improve-animations",
+      "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-85d2690bee28b0a55d223348a7979bad273bdb41147f7436f7cb8380b8b4a2fc",
+      "merkleLeaf": "sha256-0ac9e4b59a3148a6c2989752e74d4f0cdadef8a8fd2d6e4e592ab25dd52187ce",
+      "fileCount": 3,
+      "metadata": "/api/skills/improve-animations/metadata.json",
+      "verification": "/api/skills/improve-animations/verification.json"
     },
     {
       "slug": "in-progress/claude-handoff",
@@ -2418,8 +2440,8 @@
       "name": "gke-upgrades",
       "description": "Plans, executes, and validates Google Kubernetes Engine (GKE) cluster upgrades and maintenance operations for both Standard and Autopilot clusters. Produces upgrade plans, pre/post-upgrade checklists, maintenance runbooks with gcloud commands, release channel strategy, and troubleshooting guides. Handles node pool upgrade strategies (surge, blue-green), version compatibility, PDB management, and workload-specific concerns (stateful, GPU, operators). Use this skill whenever the user mentions GKE upgrades, Kubernetes version bumps, node pool maintenance, GKE patching, cluster version management, release channel selection, maintenance windows, surge upgrades, stuck upgrades, or any GKE lifecycle management task — even casual mentions like \"we need to upgrade our clusters\" or \"plan our next GKE maintenance\" or \"our upgrade is stuck.\" Don't use for GKE cluster creation, application onboarding, general networking/routing setup, or security policy configurations (use gke-basics or relevant GKE skills instead).",
       "category": "Google / Cloud",
-      "bundleHash": "sha256-03b2d1c5bda28281a4d46a2e8ea616c8c897c641125a73df91235efa47be3efa",
-      "merkleLeaf": "sha256-eef16108fe6f0bb3ea10e6e45ccabcbfb0738114ed2c7d25e702a62b7a75b4c4",
+      "bundleHash": "sha256-50944d037655c33267ead2666317d521f4ed21d8471710f974ca30c82cdc82e0",
+      "merkleLeaf": "sha256-f4e75d629c31fb14ca4223991cd91d9959c67c2c2611b4d0d453d6fba3ed0c74",
       "fileCount": 4,
       "metadata": "/api/skills/google/cloud/gke-upgrades/metadata.json",
       "verification": "/api/skills/google/cloud/gke-upgrades/verification.json"
@@ -2990,8 +3012,8 @@
       "name": "earth2studio-create-diagnostic",
       "description": "Create Earth2Studio diagnostic model wrappers for single-step data transformations, including simple derived diagnostics, packaged AutoModel diagnostics, and generative or diffusion diagnostics. Do NOT use for prognostic time-stepping models, data sources, or installation.",
       "category": "NVIDIA / Accelerated Computing",
-      "bundleHash": "sha256-17af10352a1859fd5e2bfabb8c0ab46e0b20cfb4cc42531b36fa0f618c556028",
-      "merkleLeaf": "sha256-d6a2f3caa09fb58d6145c0c3aa0f00f05dc6ae0914c7d73a85ba974e5791c938",
+      "bundleHash": "sha256-ae77de7d7866dcbf93b753b39b08e57d84f3f18993eb4b1769eb1eff21700e13",
+      "merkleLeaf": "sha256-c1603d27f75b880b2227eb85b022c50dd77ae402d6921b1c3e4a6e99e8ab711f",
       "fileCount": 9,
       "metadata": "/api/skills/nvidia/earth2studio-create-diagnostic/metadata.json",
       "verification": "/api/skills/nvidia/earth2studio-create-diagnostic/verification.json"
@@ -4167,9 +4189,9 @@
       "name": "physical-ai-video-data-augmentation",
       "description": "Use when running video data augmentation and auto-labeling workflows on OSMO: flow selection, preflight, submit-time interpolation, monitoring, and output retrieval. Trigger keywords: video data augmentation, data enrichment, auto labeling, VDA demo, OSMO workflow, pseudo labeling.",
       "category": "NVIDIA / Accelerated Computing",
-      "bundleHash": "sha256-f5c7f7fb5cd078f6bf9cb19591f897a689adf96bd74d22342fc19f3726e9bd14",
-      "merkleLeaf": "sha256-d6ab90894614c9d13a9de1e683b2344f6a6a465fa30c2d796c7336d7d0e89061",
-      "fileCount": 58,
+      "bundleHash": "sha256-04cfe8af953223f749e7bd10408614c2fb42298f7e381700454369e2e1b0b3d1",
+      "merkleLeaf": "sha256-4a6ff570398e4c484b43eb024311d15b29dc3b4203ba3788f8e1a2e2ed36fd3b",
+      "fileCount": 73,
       "metadata": "/api/skills/nvidia/physical-ai-video-data-augmentation/metadata.json",
       "verification": "/api/skills/nvidia/physical-ai-video-data-augmentation/verification.json"
     },
@@ -5439,6 +5461,17 @@
       "verification": "/api/skills/voice-call/verification.json"
     },
     {
+      "slug": "youtube-clipper",
+      "name": "youtube-clipper",
+      "description": "YouTube 视频智能剪辑工具。下载视频和字幕，AI 分析生成精细章节（几分钟级别）， 用户选择片段后自动剪辑、翻译字幕为中英双语、烧录字幕到视频，并生成总结文案。 使用场景：当用户需要剪辑 YouTube 视频、生成短视频片段、制作双语字幕版本时。 关键词：视频剪辑、YouTube、字幕翻译、双语字幕、视频下载、clip video",
+      "category": "Media / Devices",
+      "bundleHash": "sha256-600087e9cf788d56b9cf15b33ab02cf3e85a744bee83b846d45d31d3e41d0bed",
+      "merkleLeaf": "sha256-ed3ec28629e14ec65c296dc5e8f4d766ec28546993d6461938d291d031421981",
+      "fileCount": 18,
+      "metadata": "/api/skills/youtube-clipper/metadata.json",
+      "verification": "/api/skills/youtube-clipper/verification.json"
+    },
+    {
       "slug": "agent-orchestration/cmux",
       "name": "cmux",
       "description": "MUST be read ANY time you interact with cmux in ANY way — listing/inspecting/creating/closing cmux workspaces, panes, or surfaces; reading or capturing pane/screen output; sending input or keys to a pane/surface; delegating to, polling, or checking on other agents running in cmux panes/surfaces; building or rearranging terminal layout; cmux browser automation; sending notifications/flashes/status/progress to the sidebar; editing cmux settings; or integrating an agent with cmux hooks. If your command starts with `cmux ` or touches a cmux workspace/pane/surface/agent, read this FIRST. Triggers on \"cmux\", \"in this workspace\", \"this pane\", \"the other agent\", \"delegate to\", \"check on the agent\", \"send to the pane\". macOS only (14.0+).",
@@ -6141,6 +6174,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/research-and-web/research-prompt/metadata.json",
       "verification": "/api/skills/research-and-web/research-prompt/verification.json"
+    },
+    {
+      "slug": "swap-integration",
+      "name": "swap-integration",
+      "description": "Integrate Uniswap swaps into applications. Use when user says \"integrate swaps\", \"uniswap\", \"trading api\", \"add swap functionality\", \"build a swap frontend\", \"create a swap script\", \"smart contract swap integration\", \"use Universal Router\", \"Trading API\", or mentions swapping tokens via Uniswap.",
+      "category": "Utilities",
+      "bundleHash": "sha256-69e96d9bfdabcfad5183367cad9e02d486939302862b50c7e2f02caf4a752805",
+      "merkleLeaf": "sha256-9d857a86d1ecee54188eb6f21cd4ba3025d88e8019635975b42eb6a909b09d97",
+      "fileCount": 2,
+      "metadata": "/api/skills/swap-integration/metadata.json",
+      "verification": "/api/skills/swap-integration/verification.json"
     },
     {
       "slug": "thinking-and-docs/brain-to-docs",

@@ -996,6 +996,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "solana-dev-skill-main/skill",
+      "name": "solana-dev-framework-kit",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "solana-formal-verification",
       "name": "qedgen",
       "category": "Solana / Blockchain",
@@ -1739,6 +1752,19 @@
     {
       "slug": "github",
       "name": "github",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "improve-animations",
+      "name": "improve-animations",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -6417,6 +6443,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "youtube-clipper",
+      "name": "youtube-clipper",
+      "category": "Media / Devices",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "agent-orchestration/cmux",
       "name": "cmux",
       "category": "Productivity / Messaging",
@@ -7238,6 +7277,19 @@
     {
       "slug": "research-and-web/research-prompt",
       "name": "research-prompt",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "swap-integration",
+      "name": "swap-integration",
       "category": "Utilities",
       "mode": "tip",
       "merchant": {

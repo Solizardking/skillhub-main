@@ -232,6 +232,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/solana-dev/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/solana-dev/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/solana-dev/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/solana-dev-skill-main/skill/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/solana-dev-skill-main/skill/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/solana-dev-skill-main/skill/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/solana-formal-verification/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/solana-formal-verification/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/solana-formal-verification/SKILL.md</loc></url>
@@ -406,6 +409,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/github/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/github/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/github/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/improve-animations/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/improve-animations/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/improve-animations/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/in-progress/claude-handoff/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/in-progress/claude-handoff/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/in-progress/claude-handoff/SKILL.md</loc></url>
@@ -1483,6 +1489,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/voice-call/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/voice-call/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/voice-call/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/youtube-clipper/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/youtube-clipper/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/youtube-clipper/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/agent-orchestration/cmux/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/agent-orchestration/cmux/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/agent-orchestration/cmux/SKILL.md</loc></url>
@@ -1675,6 +1684,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/research-and-web/research-prompt/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/research-and-web/research-prompt/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/research-and-web/research-prompt/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/swap-integration/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/swap-integration/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/swap-integration/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/thinking-and-docs/brain-to-docs/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/thinking-and-docs/brain-to-docs/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/thinking-and-docs/brain-to-docs/SKILL.md</loc></url>

@@ -234,7 +234,8 @@ async function main() {
     scanner: {
       name: "local-skill-scanner",
       mode,
-      root,
+      // Keep generated, committed scan artifacts portable and free of contributor paths.
+      root: ".",
       rules: RULES.map(({ id, severity, category, message }) => ({ id, severity, category, message })),
     },
     scannedAt: new Date().toISOString(),

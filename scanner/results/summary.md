@@ -1,16 +1,16 @@
 # Skill Scanner Results
 
-Scanned at: 2026-07-09T17:54:40.957Z
+Scanned at: 2026-07-11T23:15:42.013Z
 
-- Skills scanned: 241
-- Local skills available: 241
-- On-chain skills: 146
-- Off-chain skills: 95
-- Verified skills: 241
+- Skills scanned: 562
+- Local skills available: 562
+- On-chain skills: 391
+- Off-chain skills: 171
+- Verified skills: 562
 - Changed skills: 0
 - Missing verification: 0
-- Critical findings: 0
-- High findings: 288
+- Critical findings: 18
+- High findings: 1773
 - Install telemetry source: not tracked locally
 
 ## On-Chain Registry
@@ -18,48 +18,48 @@ Scanned at: 2026-07-09T17:54:40.957Z
 - Status: anchor-ready
 - Anchor state: planned
 - Registry root valid: yes
-- Merkle root: sha256-1671b3f0f21ee4726dff9c31dbc7a17192062120665dda145799778dba08dcc4
-- Catalog hash: sha256-e5fc4bb4a853f6f53b06ede988f7db8d4c1af56ad15502fc2641aef9dbb5161b
+- Merkle root: sha256-c33ccb2863eefc6f5999c7c6e9ee2bd079947077d72b38526464d2cd08ea1f03
+- Catalog hash: sha256-e2689d683a914b17df4ea0dc39b1e8a0fee5aba1d8ca554f52ce9d45381586b7
 
 ## Skills Requiring Review
 
-- anthropic-skills/web-artifacts-builder: high risk, 8 findings, verification verified
-- forge: high risk, 33 findings, verification verified
-- notion: high risk, 12 findings, verification verified
-- trello: high risk, 10 findings, verification verified
 - dflow-phantom-connect: high risk, 55 findings, verification verified
 - helius-skills/helius-jupiter: high risk, 112 findings, verification verified
 - helius-skills/helius-phantom: high risk, 115 findings, verification verified
 - solana-clawd-agents: high risk, 692 findings, verification verified
+- solana-common-errors: high risk, 17 findings, verification verified
 - solana-dev: high risk, 180 findings, verification verified
 - sponge-wallet: high risk, 12 findings, verification verified
-- google/cloud/agent-platform-eval-flywheel: high risk, 7 findings, verification verified
-- solana-redpill-verifier: high risk, 16 findings, verification verified
-- compressed-pda: high risk, 28 findings, verification verified
-- google/cloud/gemini-agents-api: high risk, 6 findings, verification verified
-- create-agent-tui: high risk, 8 findings, verification verified
-- helius-skills/helius-dflow: high risk, 65 findings, verification verified
-- google/ads/data-manager-api/data-manager-api-setup: high risk, 5 findings, verification verified
-- google/ads/google-ads-api/google-ads-api-quickstart: high risk, 5 findings, verification verified
-- google/analytics/google-analytics-admin-api-basics: high risk, 4 findings, verification verified
-- google/analytics/google-analytics-data-api-basics: high risk, 4 findings, verification verified
-- anthropic-skills/pptx: high risk, 4 findings, verification verified
-- openrouter-typescript-sdk: high risk, 9 findings, verification verified
-- google/ads/google-ads-api/google-ads-api-mcp-setup: high risk, 4 findings, verification verified
-- solana-ralphy-skill: high risk, 43 findings, verification verified
-- google/cloud/agent-platform-migrate-from-ai-studio: high risk, 5 findings, verification verified
-- google/cloud/bigquery-basics: high risk, 3 findings, verification verified
-- google/cloud/gemini-interactions-api: high risk, 3 findings, verification verified
-- bear-notes: high risk, 7 findings, verification verified
-- coding-agent: high risk, 3 findings, verification verified
-- openrouter-agent-migration: high risk, 7 findings, verification verified
-- helius-skills/helius-okx: high risk, 10 findings, verification verified
-- compressed-token: high risk, 11 findings, verification verified
-- testing: high risk, 26 findings, verification verified
-- openclawd-clawd-code-skill-main: high risk, 2 findings, verification verified
-- google/cloud/agent-platform-alert-configuration: high risk, 2 findings, verification verified
-- google/cloud/agent-platform-inference: high risk, 2 findings, verification verified
-- google/cloud/cloud-run-basics: high risk, 2 findings, verification verified
-- google/cloud/cloud-sql-basics: high risk, 2 findings, verification verified
-- google/cloud/gemini-api: high risk, 2 findings, verification verified
-- google/cloud/gke-basics: high risk, 2 findings, verification verified
+- anthropic-skills/web-artifacts-builder: high risk, 8 findings, verification verified
+- cloudflare: high risk, 237 findings, verification verified
+- durable-objects: high risk, 11 findings, verification verified
+- forge: high risk, 33 findings, verification verified
+- sandbox-sdk: high risk, 9 findings, verification verified
+- nvidia/amc-setup-calibration-stack: high risk, 14 findings, verification verified
+- nvidia/deepstream-dev: critical risk, 85 findings, verification verified
+- nvidia/deepstream-import-vision-model: high risk, 10 findings, verification verified
+- nvidia/deepstream-sop: high risk, 11 findings, verification verified
+- nvidia/digital-health-clinical-asr-setup: high risk, 8 findings, verification verified
+- nvidia/holoscan-install-source: critical risk, 12 findings, verification verified
+- nvidia/hsb-flash: high risk, 8 findings, verification verified
+- nvidia/hsb-setup: critical risk, 57 findings, verification verified
+- nvidia/jetson-build-source: high risk, 11 findings, verification verified
+- nvidia/jetson-headless-mode: high risk, 18 findings, verification verified
+- nvidia/jetson-memory-audit: high risk, 12 findings, verification verified
+- nvidia/jetson-promote-image: high risk, 14 findings, verification verified
+- nvidia/jetson-validate-image: high risk, 59 findings, verification verified
+- nvidia/nemotron-speech: high risk, 26 findings, verification verified
+- nvidia/omniverse-realtime-viewer: high risk, 54 findings, verification verified
+- nvidia/omniverse-usd-performance-tuning: high risk, 8 findings, verification verified
+- nvidia/physical-ai-defect-image-generation: high risk, 10 findings, verification verified
+- nvidia/physical-ai-video-data-augmentation: high risk, 8 findings, verification verified
+- nvidia/tao-finetune-cosmos-embed: high risk, 11 findings, verification verified
+- nvidia/tao-finetune-huggingface-model: high risk, 28 findings, verification verified
+- nvidia/tao-port-huggingface-model: high risk, 62 findings, verification verified
+- nvidia/tao-run-automl: high risk, 16 findings, verification verified
+- nvidia/tao-run-on-slurm: high risk, 45 findings, verification verified
+- nvidia/tao-setup-nvidia-gpu-host: high risk, 51 findings, verification verified
+- nvidia/vss-deploy-dense-captioning: high risk, 25 findings, verification verified
+- nvidia/vss-deploy-detection-tracking-2d: critical risk, 36 findings, verification verified
+- nvidia/vss-deploy-detection-tracking-3d: high risk, 35 findings, verification verified
+- nvidia/vss-deploy-profile: critical risk, 146 findings, verification verified

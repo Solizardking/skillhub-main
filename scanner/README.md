@@ -1,6 +1,6 @@
 # Skill Scanner
 
-Local scanner and browser hub for the 222-skill catalog in this repository.
+Local scanner and browser hub for the generated skill catalog in this repository.
 
 The scanner is dependency-free Node.js. It reads `catalog.json`, verifies each skill against the generated `public/api/skills/**/verification.json` files and the Merkle registry, runs a static rule pass over published bundle files, and writes a static data file consumed by the hub UI.
 
@@ -51,7 +51,7 @@ For each canonical skill, the scanner checks:
 6. The registry Merkle root recomputes correctly.
 7. The on-chain anchor state is reported from local registry artifacts.
 
-This checkout currently has `onchain/publish-plan.json` but no `onchain/publish-receipt.json`, so the hub reports the registry as planned or anchor-ready rather than fully anchored.
+The hub reports the current anchor state from `onchain/publish-plan.json` and, when present, `onchain/publish-receipt.json`.
 
 ## Install Telemetry
 

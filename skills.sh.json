@@ -81,6 +81,7 @@
         "solana-clawd-agents",
         "solana-common-errors",
         "solana-dev",
+        "solana-dev-skill-main/skill",
         "solana-formal-verification",
         "solana-ralphy-skill",
         "solana-redpill-verifier",
@@ -145,6 +146,7 @@
         "find-skills",
         "forge",
         "github",
+        "improve-animations",
         "in-progress/claude-handoff",
         "in-progress/wizard",
         "mcporter",
@@ -539,7 +541,8 @@
         "spotify-player",
         "summarize",
         "video-frames",
-        "voice-call"
+        "voice-call",
+        "youtube-clipper"
       ]
     },
     {
@@ -616,6 +619,7 @@
         "productivity/grilling",
         "research-and-web/browser-harness",
         "research-and-web/research-prompt",
+        "swap-integration",
         "thinking-and-docs/brain-to-docs",
         "thinking-and-docs/read-all-adrs"
       ]

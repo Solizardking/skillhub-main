@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "solana-dev-skill-main/skill",
+  "name": "solana-dev-framework-kit",
+  "description": "End-to-end Solana development playbook (Jan 2026). Prefer Solana Foundation framework-kit (@solana/client + @solana/react-hooks) for React/Next.js UI. Prefer @solana/kit for all new client/RPC/transaction code. When legacy dependencies require web3.js, isolate it behind @solana/web3-compat (or @solana/web3.js as a true legacy fallback). Covers wallet-standard-first connection (incl. ConnectorKit), Anchor/Pinocchio programs, Codama-based client generation, LiteSVM/Mollusk/Surfpool testing, and security checklists.",
+  "source": "https://skills.x402.wtf/api/skills/solana-dev-skill-main/skill/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/solana-dev-skill-main/skill/metadata.json",
+  "bundleHash": "sha256-fa319c038d6e5539a92b640e06a1bd53d8665630ae2f6884a9ed4a73d55cd3d9",
+  "merkleLeaf": "sha256-c29ba3d3f929e1213da8c6f376c5b53eadae04ea97978ddf04272424af1fc1cc",
+  "files": [
+    {
+      "path": "frontend-framework-kit.md",
+      "bytes": 3144,
+      "sha256": "sha256-00bf8288c14add0733ae35506f52d6059a5b41b10215154c45acf8c526273480"
+    },
+    {
+      "path": "idl-codegen.md",
+      "bytes": 1455,
+      "sha256": "sha256-3c3bd1eebbb3fb223c18c180eb2a0711a6d271eb039aac1f00d74127d6081a2e"
+    },
+    {
+      "path": "kit-web3-interop.md",
+      "bytes": 2079,
+      "sha256": "sha256-96ada5c5a0ea70c5cb8cf8200b529cc38dcce95e2145b8a4bafdc4bd5035cf1f"
+    },
+    {
+      "path": "payments.md",
+      "bytes": 1737,
+      "sha256": "sha256-4ad3444b91f98289abb738971af8ddca2f917537f194a6fefe73e99eae15ffb0"
+    },
+    {
+      "path": "programs-anchor.md",
+      "bytes": 7779,
+      "sha256": "sha256-ca0117632d19bc1ad37bd7d8fe63aa1619871c22501bb3fb0ebf5c2ef51bc3f4"
+    },
+    {
+      "path": "programs-pinocchio.md",
+      "bytes": 16839,
+      "sha256": "sha256-521750c0ad29e7425719edafb6475c8bc75f039e8b11c60785bd62a8f6d152af"
+    },
+    {
+      "path": "resources.md",
+      "bytes": 3282,
+      "sha256": "sha256-83618d335ba35c1128842a1c72c4ff4d0d362ce1157dd72bfea4bded69ce1638"
+    },
+    {
+      "path": "security.md",
+      "bytes": 8026,
+      "sha256": "sha256-fb2448cbc088b56b3409e2ac3812bcbbc637143d0a1a79fab739e5a8f831abf2"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 3987,
+      "sha256": "sha256-e04c566e87e9eb0cfedce0ba0e397e44475c2d9254054e4964ba2d1fd1f2918e"
+    },
+    {
+      "path": "testing.md",
+      "bytes": 8431,
+      "sha256": "sha256-369ad4402c4d8645c1556f331338a1c263b500c68761a353fbebbb256b1e5295"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

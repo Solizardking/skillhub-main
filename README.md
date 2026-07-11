@@ -3,9 +3,9 @@
 <img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />
 
 [![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)
-![Skills](https://img.shields.io/badge/skills-558-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-10-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-229_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-562-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-10-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-229_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
 
-**558 installable agent skills** — including a **69-skill Google integration** and a **229-skill NVIDIA stack** (CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2). Every one is a `SKILL.md` playbook your agent can pull off the shelf —
+**562 installable agent skills** — including a **69-skill Google integration** and a **229-skill NVIDIA stack** (CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2). Every one is a `SKILL.md` playbook your agent can pull off the shelf —
 hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
 
 *Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️
@@ -20,16 +20,16 @@ Ten zones. Every skill lives in exactly one. Click a zone to jump to its catalog
 
 | Zone | Skills | Power level | What lives here |
 |---|---:|---|---|
-| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 102 | `████████░░░░░░░░░░` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
-| [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 60 | `█████░░░░░░░░░░░░░` | Build, orchestrate, and ship with agent tooling |
+| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 103 | `████████░░░░░░░░░░` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
+| [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 61 | `█████░░░░░░░░░░░░░` | Build, orchestrate, and ship with agent tooling |
 | [📣 **Google / Ads**](#-google--ads) | 11 | `█░░░░░░░░░░░░░░░░░` | Google Ads APIs, campaigns, and reporting |
 | [📈 **Google / Analytics**](#-google--analytics) | 2 | `█░░░░░░░░░░░░░░░░░` | GA4 data APIs and measurement |
 | [☁️ **Google / Cloud**](#️-google--cloud) | 56 | `████░░░░░░░░░░░░░░` | GCP, GKE, BigQuery, Vertex, and friends |
 | [🟩 **NVIDIA / Accelerated Computing**](#-nvidia--accelerated-computing) | 229 | `██████████████████` | CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, and GPU stacks |
 | [📍 **Local / Web Services**](#-local--web-services) | 9 | `█░░░░░░░░░░░░░░░░░` | Weather, places, food, and everyday web services |
-| [🎬 **Media / Devices**](#-media--devices) | 23 | `██░░░░░░░░░░░░░░░░` | Audio, video, images, TTS, cameras, and gadgets |
+| [🎬 **Media / Devices**](#-media--devices) | 24 | `██░░░░░░░░░░░░░░░░` | Audio, video, images, TTS, cameras, and gadgets |
 | [💬 **Productivity / Messaging**](#-productivity--messaging) | 23 | `██░░░░░░░░░░░░░░░░` | Notes, tasks, chat, and mail on autopilot |
-| [🧰 **Utilities**](#-utilities) | 43 | `███░░░░░░░░░░░░░░░` | Handy one-off power tools |
+| [🧰 **Utilities**](#-utilities) | 44 | `███░░░░░░░░░░░░░░░` | Handy one-off power tools |
 
 ## 🧭 Codebase Map
 
@@ -37,7 +37,7 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 | Layer | What it contains | Main paths |
 |---|---|---|
-| Skill sources | 558 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/nvidia/*/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
+| Skill sources | 562 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/nvidia/*/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
 | Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |
 | Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |
 | Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |
@@ -48,20 +48,20 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 ### Source Families
 
-This is the same 558-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
+This is the same 562-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
 
 | Source family | Skills | What it covers |
 |---|---:|---|
 | `nvidia/*` | 229 | NVIDIA accelerated computing: CUDA/cuDF, Jetson BSP, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2, Dynamo, and digital health. |
-| `single/root skills` | 87 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
+| `single/root skills` | 90 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
 | `google/*` | 69 | Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills. |
 | `pump/pumpfun/*` | 24 | Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows. |
 | `vulcan/*` | 18 | Vulcan/Phoenix perps trading skills for onboarding, market intel, execution, grids, TWAP, TP/SL, margin, and risk. |
 | `anthropic-skills/*` | 17 | Imported Anthropic-format skills for documents, spreadsheets, design, web apps, MCP, artifacts, and skill creation. |
 | `engineering/*` | 17 | Premiere engineering playbooks: TDD, implement, triage, architecture, domain modeling, specs, and tickets. |
 | `imperial/*` | 12 | Imperial trading deck skills for execution modes, margin, portfolio intelligence, position management, and risk. |
+| `solana/*` | 10 | Solana development, formal verification, Clawd, Redpill verifier, rent-free, and agentic-commerce skills. |
 | `dflow/*` | 9 | DFlow, Kalshi, Phantom Connect, spot trading, portfolio, market data, fees, and KYC workflows. |
-| `solana/*` | 9 | Solana development, formal verification, Clawd, Redpill verifier, rent-free, and agentic-commerce skills. |
 | `agent-orchestration/*` | 7 | Premiere agent orchestration: goal loops, handoffs, subagents, deep SWE, and self-scheduling. |
 | `in-progress/*` | 7 | Premiere in-progress drafts: wizards, deep modules, writing craft, and experimental loops. |
 | `research-and-web/*` | 7 | Premiere research and web: deep research, browser harness, transcripts, shopping, and web search. |
@@ -246,7 +246,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🟣 Solana / Blockchain
 
-> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **102 skills**
+> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **103 skills**
 
 <details>
 <summary>Open the Solana / Blockchain cabinet</summary>
@@ -328,6 +328,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`solana-clawd-agents`](./skills/solana-clawd-agents/SKILL.md) | solana-clawd-agents | Use the imported Solana Clawd Agents hub catalog to browse, validate, build, deploy, mint, stake, and integrate production-ready Solana agent definitions, including x402 paid-agent APIs, MCP catalog endpoints, Cloudflare Worker API, Metaplex Core minting, and agent JSON schema workflows. |
 | [`solana-common-errors`](./skills/solana-common-errors/SKILL.md) | solana-common-errors | Diagnose and fix common Solana development errors — GLIBC mismatches, Anchor version conflicts, cargo build-sbf / platform-tools failures, LiteSVM issues, edition2024 crate pins, RPC airdrops, and Anchor 0.29→0.32 migrations. Use when builds fail, Anchor CLI won't install, or CI breaks on Debian/Ubuntu. |
 | [`solana-dev`](./skills/solana-dev/SKILL.md) | solana-dev | Use when user asks to "build a Solana dapp", "write an Anchor program", "create a token", "debug Solana errors", "set up wallet connection", "test my Solana program", "deploy to devnet", or "explain Solana concepts" (rent, accounts, PDAs, CPIs, etc.). Also use for quick on-chain lookups via public RPC + curl — "what's the balance of <wallet>", "look up transaction <sig>", "token balance for <account>", "check this address on mainnet/devnet". End-to-end Solana development playbook covering wallet connection, Anchor/Pinocchio programs, Codama client generation, LiteSVM/Mollusk/Surfpool testing, security checklists, and JSON-RPC curl lookups against public clusters. Integrates with the Solana MCP server for live documentation search. Prefers framework-kit (@solana/client + @solana/react-hooks) for UI, wallet-standard-first connection (incl. ConnectorKit), @solana/kit for client/RPC code, and @solana/web3-compat for legacy boundaries. |
+| [`solana-dev-skill-main/skill`](./skills/solana-dev-skill-main/skill/SKILL.md) | solana-dev-framework-kit | End-to-end Solana development playbook (Jan 2026). Prefer Solana Foundation framework-kit (@solana/client + @solana/react-hooks) for React/Next.js UI. Prefer @solana/kit for all new client/RPC/transaction code. When legacy dependencies require web3.js, isolate it behind @solana/web3-compat (or @solana/web3.js as a true legacy fallback). Covers wallet-standard-first connection (incl. ConnectorKit), Anchor/Pinocchio programs, Codama-based client generation, LiteSVM/Mollusk/Surfpool testing, and security checklists. |
 | [`solana-formal-verification`](./skills/solana-formal-verification/SKILL.md) | qedgen | Formally verify programs by writing Lean 4 proofs. Trigger this skill whenever the user wants to formally verify code, generate Lean 4 proofs, prove properties about algorithms or smart contracts, verify invariants, convert program logic into formal specifications, or anything involving Lean 4 and formal verification. Also trigger when the user mentions "qedgen", "lean proof", "formal proof", "verify my code", "prove correctness", "formal verification", or wants mathematical guarantees about their implementation. |
 | [`solana-ralphy-skill`](./skills/solana-ralphy-skill/SKILL.md) | solana-ralphy-skill | Autonomous AI coding loop for Solana development that combines Ralphy-style task execution with Solana program, token launch, dApp, testing, and multi-engine coding workflows. Use when running PRD-driven or parallel Solana implementation tasks. |
 | [`solana-redpill-verifier`](./skills/solana-redpill-verifier/SKILL.md) | solana-redpill-verifier | Solana RedPill TEE verifier development and operations for the `web/solana-redpill-verifier` stack. Use for Pinocchio SVM proof storage, TeeProofV2 PDA layout, StoreProofV2 transactions, RedPill/TDX and NVIDIA NRAS attestation anchoring, CLAWD TEE Gateway setup, OpenAI-compatible attested inference proxying, Solana Attestation Service Token-2022 credentials, TypeScript client integration, OP-TEE signer integration, deployment, and debugging proof anchoring on Solana. |
@@ -360,7 +361,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🛠️ Dev Tools / Agents
 
-> Build, orchestrate, and ship with agent tooling — **60 skills**
+> Build, orchestrate, and ship with agent tooling — **61 skills**
 
 <details>
 <summary>Open the Dev Tools / Agents cabinet</summary>
@@ -398,6 +399,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`find-skills`](./skills/find-skills/SKILL.md) | find-skills | Helps users discover and install agent skills when they ask questions like "how do I do X", "find a skill for X", "is there a skill that can...", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill. |
 | [`forge`](./skills/forge/SKILL.md) | agent-skill-creator | Create cross-platform agent skills from workflow descriptions. Activates when users ask to create an agent, automate a repetitive workflow, create a custom skill, or need advanced agent creation. Triggers on phrases like create agent for, automate workflow, create skill for, every day I have to, daily I need to, turn process into agent, need to automate, create a cross-platform skill, validate this skill, export this skill, migrate this skill. Supports single skills, multi-agent suites, transcript processing, template-based creation, interactive configuration, cross-platform export, and spec validation. |
 | [`github`](./skills/github/SKILL.md) | github | Interact with GitHub using the `gh` CLI. Use `gh issue`, `gh pr`, `gh run`, and `gh api` for issues, PRs, CI runs, and advanced queries. |
+| [`improve-animations`](./skills/improve-animations/SKILL.md) | improve-animations | Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to "improve the animations", "audit the motion", "make this app feel better", or wants a roadmap of animation fixes rather than a review of a single diff. |
 | [`in-progress/claude-handoff`](./skills/in-progress/claude-handoff/SKILL.md) | claude-handoff | Hand the current conversation off to a fresh background agent that picks up the work immediately. |
 | [`in-progress/wizard`](./skills/in-progress/wizard/SKILL.md) | wizard | Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets. |
 | [`mcporter`](./skills/mcporter/SKILL.md) | mcporter | Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation. |
@@ -799,7 +801,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🎬 Media / Devices
 
-> Audio, video, images, TTS, cameras, and gadgets — **23 skills**
+> Audio, video, images, TTS, cameras, and gadgets — **24 skills**
 
 <details>
 <summary>Open the Media / Devices cabinet</summary>
@@ -829,6 +831,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`summarize`](./skills/summarize/SKILL.md) | summarize | Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”). |
 | [`video-frames`](./skills/video-frames/SKILL.md) | video-frames | Extract frames or short clips from videos using ffmpeg. |
 | [`voice-call`](./skills/voice-call/SKILL.md) | voice-call | Start voice calls via the Clawdbot voice-call plugin. |
+| [`youtube-clipper`](./skills/youtube-clipper/SKILL.md) | youtube-clipper | YouTube 视频智能剪辑工具。下载视频和字幕，AI 分析生成精细章节（几分钟级别）， 用户选择片段后自动剪辑、翻译字幕为中英双语、烧录字幕到视频，并生成总结文案。 使用场景：当用户需要剪辑 YouTube 视频、生成短视频片段、制作双语字幕版本时。 关键词：视频剪辑、YouTube、字幕翻译、双语字幕、视频下载、clip video |
 
 </details>
 
@@ -869,7 +872,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🧰 Utilities
 
-> Handy one-off power tools — **43 skills**
+> Handy one-off power tools — **44 skills**
 
 <details>
 <summary>Open the Utilities cabinet</summary>
@@ -917,6 +920,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`productivity/grilling`](./skills/productivity/grilling/SKILL.md) | grilling | Grill the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases. |
 | [`research-and-web/browser-harness`](./skills/research-and-web/browser-harness/SKILL.md) | browser-harness | Direct browser control via CDP. Use when the user wants to automate, scrape, test, or interact with web pages. Connects to the user's already-running Chrome. |
 | [`research-and-web/research-prompt`](./skills/research-and-web/research-prompt/SKILL.md) | research-prompt | Write a single-paragraph Deep Research prompt to hand to a human researcher (or a deep-research AI). Use when the user wants a research brief, a "deep research prompt", a one-paragraph task for a researcher, or asks "what should our researcher look for". Produces ONE tight paragraph with full context, numbered sub-questions, and per-finding output format. |
+| [`swap-integration`](./skills/swap-integration/SKILL.md) | swap-integration | Integrate Uniswap swaps into applications. Use when user says "integrate swaps", "uniswap", "trading api", "add swap functionality", "build a swap frontend", "create a swap script", "smart contract swap integration", "use Universal Router", "Trading API", or mentions swapping tokens via Uniswap. |
 | [`thinking-and-docs/brain-to-docs`](./skills/thinking-and-docs/brain-to-docs/SKILL.md) | brain-to-docs | Use when the user wants to extract project vision, decisions, and preferences from his head into clear documentation (README + ADRs) through a back-and-forth Q&A loop. Triggers on "brain-to-docs", "build out the docs", "extract the vision", "let's document this project". |
 | [`thinking-and-docs/read-all-adrs`](./skills/thinking-and-docs/read-all-adrs/SKILL.md) | read-all-adrs | Read every ADR markdown file in the project's docs/adr/ folder so you have full context on past decisions. Use only when the user explicitly calls it. |
 
