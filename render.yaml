@@ -29,6 +29,9 @@ services:
         source: /scanner
         destination: /scanner/index.html
       - type: rewrite
+        source: /skills-store
+        destination: /skills-store/index.html
+      - type: rewrite
         source: /publish
         destination: /publish/index.html
       - type: rewrite
@@ -65,3 +68,18 @@ services:
         value: "0"
       - key: SKILLHUB_CORS_ORIGIN
         value: "*"
+
+  - type: web
+    name: skillhub-scanner-api
+    runtime: docker
+    plan: starter
+    dockerContext: ./scanner
+    dockerfilePath: ./scanner/Dockerfile
+    healthCheckPath: /health
+    envVars:
+      - key: SKILL_SCANNER_LLM_API_KEY
+        sync: false
+      - key: SKILL_SCANNER_LLM_BASE_URL
+        sync: false
+      - key: SKILL_SCANNER_LLM_MODEL
+        sync: false

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cheshire Skills Store — Skill Hub</title>
+  <meta name="description" content="Curated Cheshire Terminal skills mirrored and verified by Skill Hub.">
+  <link rel="canonical" href="https://skills.x402.wtf/skills-store">
+  <style>
+    :root{color-scheme:dark;--bg:#0b0f0e;--panel:#151b19;--ink:#edf7f3;--muted:#9baba6;--line:#2b3834;--green:#39d7a6;--blue:#75a8ff}
+    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#121815,var(--bg));color:var(--ink);font:15px/1.55 Inter,system-ui,sans-serif}
+    a{color:inherit}.shell{width:min(1050px,calc(100% - 32px));margin:auto;padding:24px 0 60px}header{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;flex-wrap:wrap}
+    .brand{text-decoration:none;font-weight:850;font-size:1.25rem}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a,.button{padding:8px 12px;border:1px solid var(--line);border-radius:9px;text-decoration:none;font-weight:750;font-size:13px;background:var(--panel)}
+    .hero{padding:56px 0 30px}.kicker{color:var(--green);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}.hero h1{font-size:clamp(2rem,6vw,4rem);line-height:1.02;margin:10px 0 14px}.hero p{max-width:700px;color:var(--muted);font-size:1.05rem}.hero .button{display:inline-block;background:var(--green);color:#06110f;border-color:var(--green);margin-top:12px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}.card h2{font-size:1.1rem;margin:0 0 7px}.card p{color:var(--muted);margin:0 0 14px;min-height:68px}.links{display:flex;gap:12px;flex-wrap:wrap}.links a{color:var(--blue);font-weight:750;font-size:13px}code{font:12px ui-monospace,SFMono-Regular,monospace}.note{margin-top:24px;padding:16px;border:1px solid var(--line);border-radius:12px;color:var(--muted)}
+  </style>
+</head>
+<body><div class="shell">
+  <header><a class="brand" href="/">Skill Hub</a><nav class="nav"><a href="/">Catalog</a><a href="/publish">Publish</a><a href="/submissions">Submissions</a><a href="/scanner">Scanner</a></nav></header>
+  <main>
+    <section class="hero"><div class="kicker">Cheshire Terminal × Skill Hub</div><h1>Cheshire Skills Store</h1><p>Curated Cheshire Terminal packages, mirrored into Skill Hub with public metadata, bundle verification, scanner results, and one-command installation.</p><a class="button" href="https://cheshireterminal.ai/skills-store" target="_blank" rel="noopener">Open canonical Cheshire store ↗</a></section>
+    <section class="grid" id="skills"><div class="card">Loading verified store skills…</div></section>
+    <div class="note">Install any package with <code>npx github:Solizardking/skills install &lt;skill-name&gt;</code>. The canonical source store remains <a href="https://cheshireterminal.ai/skills-store">cheshireterminal.ai/skills-store</a>.</div>
+  </main>
+</div><script>
+const names=["cheshire-api","google-agent-registry","posthog-cheshire","skillhub-onchain","solana-common-errors","stripe"];
+const esc=s=>String(s).replace(/[&<>\"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
+fetch('/api/skills.json').then(r=>r.json()).then(data=>{const rows=(data.skills||data).filter(s=>names.includes(s.slug));document.querySelector('#skills').innerHTML=rows.map(s=>`<article class="card"><h2>${esc(s.name)}</h2><p>${esc(s.description)}</p><div class="links"><a href="/api/skills/${encodeURIComponent(s.slug)}/SKILL.md">Read skill</a><a href="/api/skills/${encodeURIComponent(s.slug)}/verification.json">Verify bundle</a></div></article>`).join('')}).catch(e=>document.querySelector('#skills').innerHTML=`<div class="card">Catalog unavailable: ${esc(e.message)}</div>`);
+</script></body></html>

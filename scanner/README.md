@@ -22,6 +22,14 @@ npm run relay:upload   # UI + API at http://127.0.0.1:8787
 
 Flow: **upload skill → scan → Solana fee → Arweave/memo**. See [UPLOAD.md](../UPLOAD.md).
 
+The production topology has three connected surfaces:
+
+- `/scanner` on the static `skillhub` service serves the generated dashboard and results.
+- `skillhub-upload-relay` imports `scanner/lib/scan-upload.mjs` directly for upload gating, so uploads do not depend on a network hop.
+- `skillhub-scanner-api` builds `scanner/Dockerfile` and exposes the optional Cisco scanner HTTP API with `/health` for external integrations.
+
+All three services are declared in [`render.yaml`](../render.yaml). The Docker API's LLM variables are configured as secret Render environment variables and are optional for static/local rule scanning.
+
 Open `http://localhost:8877` after the server starts.
 
 Useful direct commands:

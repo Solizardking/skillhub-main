@@ -21,6 +21,10 @@
       "destination": "/scanner/index.html"
     },
     {
+      "source": "/skills-store",
+      "destination": "/skills-store/index.html"
+    },
+    {
       "source": "/publish",
       "destination": "/publish/index.html"
     },

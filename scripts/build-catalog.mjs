@@ -364,6 +364,7 @@ async function addScannerDashboard(files) {
 /** Durable hub pages (survive full public/ wipe). Prefer site/ then existing public/. */
 async function addHubSurfacePages(files) {
   const pages = [
+    ["skills-store/index.html", ["site/skills-store/index.html", "public/skills-store/index.html"]],
     ["publish/index.html", ["site/publish/index.html", "public/publish/index.html"]],
     ["submissions/index.html", ["site/submissions/index.html", "public/submissions/index.html"]],
   ];
