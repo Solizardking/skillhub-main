@@ -15,8 +15,12 @@ const SITE_URL = process.env.SKILLHUB_SITE_URL || "https://skills.x402.wtf";
 const SITE_ALIASES = [
   "https://skills.x402.wtf",
   "https://skills.onchainai.fund",
+  "https://skills.clawdcode.net",
   "https://cheshireterminal.ai/skills",
 ];
+/** Hosted upload relay (Node service). Static hosts point publish UI here. */
+const UPLOAD_API_BASE =
+  (process.env.SKILLHUB_UPLOAD_API || "https://skillhub-upload-relay.onrender.com").replace(/\/$/, "");
 const DEFAULT_PAYMENT_NETWORK = process.env.SKILLHUB_PAYMENT_NETWORK || "mainnet";
 const DEFAULT_MERCHANT_NAME = process.env.SKILLHUB_MERCHANT_NAME || "Skill Hub";
 const DEFAULT_MERCHANT_WALLET = process.env.SKILLHUB_MERCHANT_WALLET || "";
@@ -302,6 +306,19 @@ async function renderPublic(skills) {
   files.set("api/skills.json", catalogJson);
   files.set("api/skills/index.json", catalogJson);
   files.set("api/monetization.json", `${JSON.stringify(monetization, null, 2)}\n`);
+  files.set(
+    "api/upload-config.json",
+    `${JSON.stringify({
+      schemaVersion: "skillhub-upload-config-pointer/v1",
+      generatedAt: new Date().toISOString(),
+      siteUrl: SITE_URL,
+      uploadApiBase: UPLOAD_API_BASE,
+      publishUi: `${SITE_URL}/publish`,
+      healthUrl: `${UPLOAD_API_BASE}/api/health`,
+      configUrl: `${UPLOAD_API_BASE}/api/config`,
+      note: "Static hosts serve the publish UI; POST /api/* is handled by skillhub-upload-relay.",
+    }, null, 2)}\n`,
+  );
   files.set("integrations/commerce-kit-payment-button.tsx", renderCommerceKitPaymentButton());
   files.set("CNAME", `${new URL(SITE_URL).hostname}\n`);
   files.set("robots.txt", `User-agent: *\nAllow: /\nSitemap: ${SITE_URL}/sitemap.xml\n`);

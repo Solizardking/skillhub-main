@@ -329,17 +329,71 @@ Instructions for the agent…
     const banner = $("banner");
     const resultPanel = $("resultPanel");
 
-    // Default API: same origin when served by upload-relay; else env override via query
-    const params = new URLSearchParams(location.search);
-    state.apiBase = (params.get("api") || localStorage.getItem("skillhub_upload_api") || "").replace(/\/$/, "");
+    // Default production upload relay (static hosts cannot serve POST /api/*).
+    const DEFAULT_UPLOAD_API = "https://skillhub-upload-relay.onrender.com";
+    const STATIC_HOSTS = new Set([
+      "skills.clawdcode.net",
+      "skillhub-buja.onrender.com",
+      "skills.x402.wtf",
+      "skills.onchainai.fund",
+      "skillhub-red.vercel.app",
+      "cheshireterminal.ai",
+    ]);
 
     init();
 
     async function init() {
       wireUi();
       seedDefaultSkill();
+      await resolveApiBase();
       await loadConfig();
       detectWallet();
+    }
+
+    /**
+     * Resolve upload-relay base URL:
+     *  1. ?api=… (session override, persisted)
+     *  2. localStorage skillhub_upload_api
+     *  3. /api/upload-config.json (build-time pointer)
+     *  4. known static host → hosted relay
+     *  5. same origin (when this page is served by relay:upload)
+     */
+    async function resolveApiBase() {
+      const params = new URLSearchParams(location.search);
+      const fromQuery = (params.get("api") || "").trim();
+      if (fromQuery) {
+        state.apiBase = fromQuery.replace(/\/$/, "");
+        try { localStorage.setItem("skillhub_upload_api", state.apiBase); } catch { /* ignore */ }
+        return;
+      }
+
+      try {
+        const fromLs = (localStorage.getItem("skillhub_upload_api") || "").trim();
+        if (fromLs) {
+          state.apiBase = fromLs.replace(/\/$/, "");
+          return;
+        }
+      } catch { /* ignore */ }
+
+      try {
+        const res = await fetch("/api/upload-config.json", { cache: "no-store" });
+        if (res.ok) {
+          const pointer = await res.json();
+          const base = (pointer.uploadApiBase || pointer.apiBase || "").trim();
+          if (base) {
+            state.apiBase = base.replace(/\/$/, "");
+            return;
+          }
+        }
+      } catch { /* ignore */ }
+
+      if (STATIC_HOSTS.has(location.hostname)) {
+        state.apiBase = DEFAULT_UPLOAD_API;
+        return;
+      }
+
+      // Same origin when npm run relay:upload serves this page.
+      state.apiBase = "";
     }
 
     function wireUi() {
@@ -393,17 +447,42 @@ Use this skill when the user wants a minimal example of a published agent skill.
     }
 
     async function loadConfig() {
-      try {
-        const cfg = await api("/api/config");
-        state.config = cfg;
-        $("relayStatus").textContent = "online";
-        $("configLine").textContent = `${cfg.network} · fee ${cfg.feeSol} SOL · merchant ${shortAddr(cfg.merchantWallet) || "not set"}`;
-        setBanner("info", `Relay online on ${cfg.network}. Fee: ${cfg.feeSol} SOL. ${cfg.merchantWallet ? "" : "Set SKILLHUB_MERCHANT_WALLET on the server before paying."}`);
-      } catch (err) {
-        $("relayStatus").textContent = "offline";
-        $("configLine").textContent = "relay offline — start with npm run relay:upload";
-        setBanner("warn", `Upload relay not reachable at ${state.apiBase || location.origin}. Run \`npm run relay:upload\` and open http://127.0.0.1:8787/ (or pass ?api=http://127.0.0.1:8787). ${err.message}`);
+      const tried = [];
+      const candidates = [
+        state.apiBase || null,
+        // Fallbacks if preferred base is cold-starting or misconfigured
+        state.apiBase !== DEFAULT_UPLOAD_API ? DEFAULT_UPLOAD_API : null,
+        state.apiBase ? null : "", // same-origin last for local relay
+      ].filter((v, i, a) => v !== null && a.indexOf(v) === i);
+
+      for (const base of candidates) {
+        const label = base || location.origin;
+        tried.push(label);
+        try {
+          state.apiBase = base || "";
+          const cfg = await api("/api/config");
+          state.config = cfg;
+          $("relayStatus").textContent = "online";
+          $("configLine").textContent = `${cfg.network} · fee ${cfg.feeSol} SOL · merchant ${shortAddr(cfg.merchantWallet) || "not set"} · api ${label.replace(/^https?:\/\//, "")}`;
+          const payHint = cfg.merchantWallet
+            ? ""
+            : " Merchant wallet not set on relay — scan works; pay needs SKILLHUB_MERCHANT_WALLET.";
+          setBanner("info", `Relay online on ${cfg.network}. Fee: ${cfg.feeSol} SOL.${payHint}`);
+          try {
+            if (state.apiBase) localStorage.setItem("skillhub_upload_api", state.apiBase);
+          } catch { /* ignore */ }
+          return;
+        } catch {
+          // try next candidate
+        }
       }
+
+      $("relayStatus").textContent = "offline";
+      $("configLine").textContent = "relay offline";
+      setBanner(
+        "warn",
+        `Upload relay not reachable (tried: ${tried.join(", ")}). Deploy skillhub-upload-relay or run \`npm run relay:upload\` and open with ?api=http://127.0.0.1:8787`,
+      );
     }
 
     function detectWallet() {

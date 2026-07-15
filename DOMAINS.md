@@ -4,11 +4,41 @@
 
 | Host | Status | Notes |
 |------|--------|--------|
-| **https://skillhub-red.vercel.app** | **Live** | Current production deploy (568 skills, on-chain ledger APIs) |
-| `skills.x402.wtf` | DNS not resolving | Intended primary; point CNAME at the Vercel project above |
-| `skills.onchainai.fund` | Stale | Still serves old `skills-sepia` (~192 skills); re-point to skillhub project |
+| **https://skills.clawdcode.net** | **Live primary** | Render static site `skillhub` (570 skills). Publish UI at `/publish` |
+| **https://skillhub-upload-relay.onrender.com** | **Live upload API** | Node `skillhub-upload-relay` — `/api/health`, scan, pay confirm |
+| **https://skillhub-red.vercel.app** | Live mirror | Vercel static deploy of same repo |
+| `skills.x402.wtf` | DNS not resolving | Intended alias; point CNAME at skillhub / clawdcode |
+| `skills.onchainai.fund` | Stale/partial | Re-point to skillhub project |
 
+Render static: `skillhub` (`srv-d962hc1oagis73eler8g`, `skillhub-buja.onrender.com`)  
+Render web: `skillhub-upload-relay` (`srv-d9bumppkh4rs73dmkumg`)  
 Vercel project: `mynameisjeffspicoli-2862s-projects/skillhub` (repo `Solizardking/skillhub-main`).
+
+### Publish pipeline hosts
+
+The static site cannot handle `POST /api/skills/upload`. The publish page loads the UI
+from `skills.clawdcode.net` and calls the upload relay at
+`https://skillhub-upload-relay.onrender.com` (overridable via `?api=` or
+`public/api/upload-config.json`).
+
+```bash
+# Verify relay
+curl -sS https://skillhub-upload-relay.onrender.com/api/health
+curl -sS https://skillhub-upload-relay.onrender.com/api/config
+
+# Optional: open UI pinned to relay
+open 'https://skills.clawdcode.net/publish?api=https://skillhub-upload-relay.onrender.com'
+```
+
+Set on the **upload-relay** service (Render dashboard → Environment):
+
+| Env | Purpose |
+|-----|---------|
+| `SKILLHUB_MERCHANT_WALLET` | **Required for Pay** — Solana fee recipient |
+| `SKILLHUB_PAYMENT_NETWORK` | `devnet` (default) or `mainnet` |
+| `SKILLHUB_PUBLISH_FEE_LAMPORTS` | default `10000000` (0.01 SOL) |
+| `SOLANA_KEYPAIR` | Optional — Arweave + memo anchor after payment |
+| `SKILLHUB_CORS_ORIGIN` | `*` or `https://skills.clawdcode.net` |
 
 ## Primary (intended): `skills.x402.wtf`
 

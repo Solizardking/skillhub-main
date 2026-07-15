@@ -44,6 +44,8 @@ services:
         source: /api/onchain
         destination: /api/onchain.json
 
+  # Live: https://skillhub-upload-relay.onrender.com (srv-d9bumppkh4rs73dmkumg)
+  # Static UI at skills.clawdcode.net/publish calls this service for POST /api/*
   - type: web
     name: skillhub-upload-relay
     runtime: node
@@ -68,6 +70,8 @@ services:
         value: "0"
       - key: SKILLHUB_CORS_ORIGIN
         value: "*"
+      - key: SKILLHUB_SITE_URL
+        value: https://skills.clawdcode.net
 
   - type: web
     name: skillhub-scanner-api

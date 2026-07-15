@@ -35,8 +35,15 @@ npm run publish:onchain        # catalog plan (writes publish-plan.json)
 npm run publish:onchain -- --execute --devnet   # Arweave pin + Solana memo
 npm run publish:agentregistry:onchain           # push proofs into local agentregistry
 npm run publish:agentregistry:onchain:dry       # preview payloads / mirror only
+npm run publish:agentregistry:onchain:plan      # rewrite agentregistry-mirror.json only
+npm run relay                  # full catalog rebuild + mirror/ledger refresh
+npm run relay:fast             # light path + mirror/ledger refresh
 npm run relay:upload           # community upload API + UI
 ```
+
+`npm run relay` / `relay:fast` always refresh `agentregistry-mirror.json` and
+`public-ledger.json` so those files cannot lag behind a catalog re-anchor
+(the previous drift mode was mirror stuck at 568 skills while the registry had 570).
 
 ## agentregistry bridge
 

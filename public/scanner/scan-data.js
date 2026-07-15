@@ -91,7 +91,7 @@ window.SKILL_SCAN_RESULTS = {
       }
     ]
   },
-  "scannedAt": "2026-07-15T14:51:56.830Z",
+  "scannedAt": "2026-07-15T20:16:28.547Z",
   "source": {
     "catalog": "local SKILL.md crawl",
     "canonicalSkills": 570,

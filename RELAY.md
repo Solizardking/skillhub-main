@@ -44,7 +44,14 @@ What a full relay run does:
 3. `npm run smoke` — frontmatter, uniqueness, public mirrors, verification artifacts
 4. Sample install of a few `nvidia/*` skills into `.relay-install-check/`
 5. Optional Arweave upload + Solana memo via `publish:onchain`
-6. Optional `git commit` / `git push` of generated artifacts
+6. Refresh on-chain hub surfaces (always, local-only):
+   - `publish:agentregistry:onchain:plan` → `onchain/agentregistry-mirror.json` + `public/api/agentregistry.json`
+   - `ledger:export` → `onchain/public-ledger.json` + `public/api/submissions.json` + `public/api/onchain.json`
+7. Optional `git commit` / `git push` of generated artifacts
+
+The light path (`relay:fast` / `skills:process` via `--fast`) also refreshes those on-chain
+surfaces after catalog rebuild so the static hub never keeps a stale mirror (e.g. 568 skills)
+after a re-anchor (e.g. 570 skills).
 
 ## GitHub Actions
 

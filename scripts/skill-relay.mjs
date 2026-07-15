@@ -13,12 +13,18 @@
  *   node scripts/skill-relay.mjs --onchain    # dry-run on-chain plan after build
  *   node scripts/skill-relay.mjs --onchain --execute [--devnet]
  *
+ * After every catalog rebuild the relay also refreshes local on-chain surfaces:
+ *   - onchain/agentregistry-mirror.json + public/api/agentregistry.json  (--plan-only)
+ *   - onchain/public-ledger.json + public/api/submissions.json + onchain.json
+ * so the hub never ships a stale 568-skill mirror after a 570-skill re-anchor.
+ *
  * For immediate detect→scan→categorize→README without relay extras, prefer:
  *   npm run skills:process / npm run skills:watch  (scripts/skills-process.mjs)
  *
  * Env:
  *   SKILLHUB_RELAY_INTERVAL_MS  poll interval in watch mode (default 2000)
  *   SKILLHUB_RELAY_COMMIT_MSG   commit message template (default auto)
+ *   SKILLHUB_RELAY_SKIP_ONCHAIN_SURFACES=1  skip mirror/ledger refresh (tests only)
  */
 
 import { spawn } from "node:child_process";
@@ -43,6 +49,9 @@ const ONCHAIN = args.includes("--onchain");
 const EXECUTE = args.includes("--execute");
 const DEVNET = args.includes("--devnet");
 const INTERVAL_MS = Number(process.env.SKILLHUB_RELAY_INTERVAL_MS || 2000);
+const SKIP_ONCHAIN_SURFACES =
+  args.includes("--skip-onchain-surfaces") ||
+  process.env.SKILLHUB_RELAY_SKIP_ONCHAIN_SURFACES === "1";
 
 const GENERATED_PATHS = [
   "catalog.json",
@@ -55,6 +64,9 @@ const GENERATED_PATHS = [
   "onchain/publish-plan.json",
   "onchain/publish-receipt.json",
   "onchain/relay-state.json",
+  "onchain/skills-process-state.json",
+  "onchain/agentregistry-mirror.json",
+  "onchain/public-ledger.json",
 ];
 
 async function main() {
@@ -78,6 +90,65 @@ async function main() {
   await runPipeline({ reason: "one-shot" });
 }
 
+/**
+ * Refresh git-safe on-chain surfaces so the static hub never serves a stale
+ * agentregistry mirror / public ledger after catalog or anchor changes.
+ * @param {{ root?: string, skip?: boolean }} [options]
+ */
+export async function refreshOnchainSurfaces(options = {}) {
+  const root = options.root || ROOT;
+  const skip = options.skip ?? SKIP_ONCHAIN_SURFACES;
+  if (skip) {
+    console.log(`[${ts()}] onchain surfaces: skipped`);
+    return { skipped: true };
+  }
+
+  // Mirror plan is local-only (no arctl POST). Always keep counts/hashes current.
+  await run("node", ["scripts/sync-onchain-agentregistry.mjs", "--plan-only"], root);
+  // Redacted submissions ledger + /api/onchain.json + /api/submissions.json
+  await run("node", ["scripts/export-public-ledger.mjs"], root);
+
+  const registry = JSON.parse(
+    await readFile(path.join(root, "public", ".well-known", "onchain-skill-registry.json"), "utf8"),
+  );
+  const mirror = JSON.parse(
+    await readFile(path.join(root, "onchain", "agentregistry-mirror.json"), "utf8"),
+  );
+  const ledger = JSON.parse(
+    await readFile(path.join(root, "onchain", "public-ledger.json"), "utf8"),
+  );
+
+  if (mirror.catalog?.merkleRoot !== registry.merkleRoot) {
+    throw new Error(
+      `agentregistry-mirror merkleRoot out of sync: ${mirror.catalog?.merkleRoot} !== ${registry.merkleRoot}`,
+    );
+  }
+  if (Number(mirror.catalog?.totalSkills) !== Number(registry.totalSkills)) {
+    throw new Error(
+      `agentregistry-mirror totalSkills out of sync: ${mirror.catalog?.totalSkills} !== ${registry.totalSkills}`,
+    );
+  }
+  if (Number(mirror.catalog?.selected) !== Number(registry.totalSkills)) {
+    throw new Error(
+      `agentregistry-mirror selected out of sync: ${mirror.catalog?.selected} !== ${registry.totalSkills}`,
+    );
+  }
+
+  const receipt = existsSync(path.join(root, "onchain", "publish-receipt.json"))
+    ? JSON.parse(await readFile(path.join(root, "onchain", "publish-receipt.json"), "utf8"))
+    : null;
+  if (receipt?.merkleRoot && ledger.catalogAnchor?.receipt?.merkleRoot !== receipt.merkleRoot) {
+    throw new Error(
+      `public-ledger catalogAnchor.receipt.merkleRoot out of sync with publish-receipt.json`,
+    );
+  }
+
+  console.log(
+    `[${ts()}] onchain surfaces: mirror ${mirror.catalog.selected}/${mirror.catalog.totalSkills} (${mirror.catalog.anchorStatus}), ledger submissions ${ledger.count}`,
+  );
+  return { skipped: false, mirror, ledger, registry };
+}
+
 async function runPipeline({ reason }) {
   const started = Date.now();
   console.log(`[${ts()}] relay start (${reason}${FAST ? ", fast" : ""})`);
@@ -97,6 +168,8 @@ async function runPipeline({ reason }) {
       if (DEVNET) onchainArgs.push("--devnet");
       await run("node", onchainArgs);
     }
+
+    const surfaces = await refreshOnchainSurfaces();
 
     const catalog = JSON.parse(await readFile(path.join(ROOT, "catalog.json"), "utf8"));
     const nvidiaCount = catalog.filter((s) => s.slug.startsWith("nvidia/")).length;
@@ -121,6 +194,14 @@ async function runPipeline({ reason }) {
       merkleRoot,
       catalogHash,
       process: processState,
+      onchainSurfaces: surfaces.skipped
+        ? { skipped: true }
+        : {
+            mirrorSelected: surfaces.mirror?.catalog?.selected ?? null,
+            mirrorTotal: surfaces.mirror?.catalog?.totalSkills ?? null,
+            anchorStatus: surfaces.mirror?.catalog?.anchorStatus ?? null,
+            ledgerCount: surfaces.ledger?.count ?? null,
+          },
       durationMs: Date.now() - started,
     };
     await mkdir(path.dirname(STATE_PATH), { recursive: true });
@@ -160,6 +241,9 @@ async function runPipeline({ reason }) {
     await run("node", onchainArgs);
   }
 
+  // Keep agentregistry mirror + public ledger aligned with the rebuilt catalog/anchor.
+  const surfaces = await refreshOnchainSurfaces();
+
   const catalog = JSON.parse(await readFile(path.join(ROOT, "catalog.json"), "utf8"));
   const nvidiaCount = catalog.filter((s) => s.slug.startsWith("nvidia/")).length;
   const registry = JSON.parse(
@@ -174,6 +258,14 @@ async function runPipeline({ reason }) {
     nvidiaSkills: nvidiaCount,
     merkleRoot: registry.merkleRoot,
     catalogHash: registry.catalogHash,
+    onchainSurfaces: surfaces.skipped
+      ? { skipped: true }
+      : {
+          mirrorSelected: surfaces.mirror?.catalog?.selected ?? null,
+          mirrorTotal: surfaces.mirror?.catalog?.totalSkills ?? null,
+          anchorStatus: surfaces.mirror?.catalog?.anchorStatus ?? null,
+          ledgerCount: surfaces.ledger?.count ?? null,
+        },
     durationMs: Date.now() - started,
   };
   await mkdir(path.dirname(STATE_PATH), { recursive: true });
@@ -215,11 +307,11 @@ async function gitCommit(state) {
   console.log(`[${ts()}] git: committed — ${msg}`);
 }
 
-function run(command, commandArgs) {
+function run(command, commandArgs, cwd = ROOT) {
   return new Promise((resolve, reject) => {
     console.log(`$ ${command} ${commandArgs.join(" ")}`);
     const child = spawn(command, commandArgs, {
-      cwd: ROOT,
+      cwd,
       stdio: "inherit",
       env: process.env,
     });
@@ -258,7 +350,13 @@ function ts() {
   return new Date().toISOString();
 }
 
-main().catch((error) => {
-  console.error(error.stack || error.message || error);
-  process.exitCode = 1;
-});
+const isMain =
+  process.argv[1] &&
+  path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
+
+if (isMain) {
+  main().catch((error) => {
+    console.error(error.stack || error.message || error);
+    process.exitCode = 1;
+  });
+}

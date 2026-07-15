@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "skillhub-upload-config-pointer/v1",
+  "generatedAt": "2026-07-15T20:21:16.739Z",
+  "siteUrl": "https://skills.clawdcode.net",
+  "uploadApiBase": "https://skillhub-upload-relay.onrender.com",
+  "publishUi": "https://skills.clawdcode.net/publish",
+  "healthUrl": "https://skillhub-upload-relay.onrender.com/api/health",
+  "configUrl": "https://skillhub-upload-relay.onrender.com/api/config",
+  "note": "Static hosts serve the publish UI; POST /api/* is handled by skillhub-upload-relay."
+}

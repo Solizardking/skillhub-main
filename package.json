@@ -66,8 +66,9 @@
     "skills:process": "node scripts/skills-process.mjs",
     "skills:watch": "node scripts/skills-process.mjs --watch",
     "ledger:export": "node scripts/export-public-ledger.mjs",
-    "test": "node scripts/build-catalog.mjs --check && node scripts/smoke-test-skills.mjs && node bin/skills.mjs list --json >/dev/null && node scripts/test-premiere-skills.mjs && node scripts/test-npm-pack.mjs && node scripts/test-skills-process.mjs",
-    "test:skills-process": "node scripts/test-skills-process.mjs"
+    "test": "node scripts/build-catalog.mjs --check && node scripts/smoke-test-skills.mjs && node bin/skills.mjs list --json >/dev/null && node scripts/test-premiere-skills.mjs && node scripts/test-npm-pack.mjs && node scripts/test-skills-process.mjs && node scripts/test-skill-relay-onchain.mjs",
+    "test:skills-process": "node scripts/test-skills-process.mjs",
+    "test:relay-onchain": "node scripts/test-skill-relay-onchain.mjs"
   },
   "engines": {
     "node": ">=18"

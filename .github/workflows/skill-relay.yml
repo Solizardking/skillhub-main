@@ -67,7 +67,16 @@ jobs:
         run: |
           git config user.name "skillhub-relay[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add catalog.json skills.sh.json HUB.md README.md assets public onchain/relay-state.json || true
+          # Include on-chain surfaces the relay regenerates (mirror + ledger + state).
+          git add \
+            catalog.json skills.sh.json HUB.md README.md assets public \
+            onchain/relay-state.json \
+            onchain/skills-process-state.json \
+            onchain/agentregistry-mirror.json \
+            onchain/public-ledger.json \
+            onchain/publish-plan.json \
+            onchain/publish-receipt.json \
+            || true
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
             echo "No generated catalog changes."
@@ -99,7 +108,18 @@ jobs:
             EXTRA="--devnet"
           fi
           node scripts/publish-onchain.mjs --execute --keypair /tmp/solana-keypair.json $EXTRA
-          git add onchain/publish-plan.json onchain/publish-receipt.json || true
+          # Re-anchor also needs a fresh mirror + ledger (receipt merkle moved).
+          node scripts/sync-onchain-agentregistry.mjs --plan-only
+          node scripts/export-public-ledger.mjs
+          git add \
+            onchain/publish-plan.json \
+            onchain/publish-receipt.json \
+            onchain/agentregistry-mirror.json \
+            onchain/public-ledger.json \
+            public/api/agentregistry.json \
+            public/api/submissions.json \
+            public/api/onchain.json \
+            || true
           if ! git diff --cached --quiet; then
             git commit -m "chore(relay): on-chain publish receipt"
             git push
@@ -121,6 +141,12 @@ jobs:
               const r=require('./public/.well-known/onchain-skill-registry.json');
               console.log('- Merkle root:', r.merkleRoot);
               console.log('- Catalog hash:', r.catalogHash);
+            " >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ -f onchain/agentregistry-mirror.json ]; then
+            node -e "
+              const m=require('./onchain/agentregistry-mirror.json');
+              console.log('- agentregistry mirror:', m.catalog?.selected, '/', m.catalog?.totalSkills, m.catalog?.anchorStatus);
             " >> "$GITHUB_STEP_SUMMARY"
           fi
           echo "- Site: https://skills.onchainai.fund" >> "$GITHUB_STEP_SUMMARY"
