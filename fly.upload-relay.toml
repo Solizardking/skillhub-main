@@ -1,0 +1,42 @@
+# Skill Hub upload relay (Node) — used by https://skills.clawdcode.net/publish
+#
+#   fly deploy -c fly.upload-relay.toml
+#   fly secrets set -c fly.upload-relay.toml SKILLHUB_MERCHANT_WALLET=...
+#
+# Public URL: https://skillhub-upload-relay.fly.dev
+
+app = "skillhub-upload-relay"
+primary_region = "iad"
+
+[build]
+  dockerfile = "Dockerfile.upload-relay"
+
+[env]
+  PORT = "8080"
+  SKILLHUB_UPLOAD_HOST = "0.0.0.0"
+  SKILLHUB_PAYMENT_NETWORK = "devnet"
+  SKILLHUB_PUBLISH_FEE_LAMPORTS = "10000000"
+  SKILLHUB_MERCHANT_NAME = "Skill Hub"
+  SKILLHUB_CORS_ORIGIN = "*"
+  SKILLHUB_AUTO_INGEST = "0"
+  SKILLHUB_SITE_URL = "https://skills.clawdcode.net"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = "stop"
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]
+
+  [[http_service.checks]]
+    interval = "15s"
+    timeout = "5s"
+    grace_period = "45s"
+    method = "GET"
+    path = "/api/health"
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1

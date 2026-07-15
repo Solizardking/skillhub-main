@@ -1,0 +1,36 @@
+# Skill Hub upload relay — scan → pay → optional on-chain anchor
+# Deploy: fly deploy -c fly.upload-relay.toml
+
+FROM node:20-bookworm-slim
+
+WORKDIR /app
+
+# Runtime deps used for optional Irys + Solana memo after payment
+COPY package.json package-lock.json ./
+RUN npm ci --omit=dev \
+  && npm install --no-save @solana/web3.js@^1.98.4 @irys/upload@^0.0.15 @irys/upload-solana@^0.1.8 \
+  && npm cache clean --force
+
+# App surface (no full skills catalog — uploads are scanned in-memory)
+COPY scripts/upload-relay-server.mjs ./scripts/
+COPY scanner/lib/scan-upload.mjs ./scanner/lib/
+COPY public/publish ./public/publish
+
+RUN mkdir -p onchain/submissions \
+  && chown -R node:node /app
+
+ENV NODE_ENV=production \
+    PORT=8080 \
+    SKILLHUB_UPLOAD_HOST=0.0.0.0 \
+    SKILLHUB_UPLOAD_DIR=/app/onchain/submissions \
+    SKILLHUB_PAYMENT_NETWORK=devnet \
+    SKILLHUB_CORS_ORIGIN=* \
+    SKILLHUB_AUTO_INGEST=0
+
+USER node
+EXPOSE 8080
+
+HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
+  CMD node -e "fetch('http://127.0.0.1:'+(process.env.PORT||8080)+'/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"
+
+CMD ["node", "scripts/upload-relay-server.mjs"]

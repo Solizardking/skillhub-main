@@ -53,6 +53,8 @@ const CORS_ORIGIN = process.env.SKILLHUB_CORS_ORIGIN || "*";
 const AUTO_INGEST = process.env.SKILLHUB_AUTO_INGEST === "1";
 const KEYPAIR_PATH = process.env.SOLANA_KEYPAIR
   || path.join(os.homedir(), ".config", "solana", "id.json");
+/** Optional inline keypair JSON (Fly secret) — preferred over file when set. */
+const KEYPAIR_JSON = process.env.SOLANA_KEYPAIR_JSON || process.env.SOLANA_KEYPAIR_BYTES || "";
 const UPLOAD_DIR = path.resolve(
   process.env.SKILLHUB_UPLOAD_DIR || path.join(ROOT, "onchain", "submissions"),
 );
@@ -156,7 +158,7 @@ function publicConfig() {
     memoProgram: MEMO_PROGRAM_ID,
     pipeline: ["upload", "scan", "pay", "publish"],
     autoIngest: AUTO_INGEST,
-    canAnchor: existsSync(KEYPAIR_PATH),
+    canAnchor: Boolean(KEYPAIR_JSON) || existsSync(KEYPAIR_PATH),
   };
 }
 
@@ -402,8 +404,14 @@ async function publishSkillJob(job) {
     memo: buildSkillMemo(scan, job),
   };
 
-  if (!existsSync(KEYPAIR_PATH)) {
-    result.note = "No SOLANA_KEYPAIR on server — package stored locally. Set keypair to enable Irys + Solana anchor.";
+  let secretKey;
+  try {
+    secretKey = await loadServerKeypair();
+  } catch {
+    secretKey = null;
+  }
+  if (!secretKey) {
+    result.note = "No SOLANA_KEYPAIR / SOLANA_KEYPAIR_JSON on server — package stored locally. Set keypair to enable Irys + Solana anchor.";
     // Write a local plan-style receipt for the catalog relay to pick up later
     const planPath = path.join(UPLOAD_DIR, job.id, "publish-plan.json");
     await writeFile(planPath, `${JSON.stringify({
@@ -420,7 +428,6 @@ async function publishSkillJob(job) {
   }
 
   const deps = await loadSolanaDeps();
-  const secretKey = Uint8Array.from(JSON.parse(await readFile(KEYPAIR_PATH, "utf8")));
 
   // Upload package to Arweave via Irys
   try {
@@ -605,6 +612,28 @@ async function loadSolanaDeps() {
   } catch (error) {
     throw new Error(`Missing publish SDKs: ${error.message}. Run npm install.`);
   }
+}
+
+/**
+ * Load server keypair from SOLANA_KEYPAIR_JSON env (Fly-friendly) or SOLANA_KEYPAIR path.
+ * @returns {Promise<Uint8Array|null>}
+ */
+async function loadServerKeypair() {
+  if (KEYPAIR_JSON) {
+    const raw = JSON.parse(KEYPAIR_JSON);
+    if (Array.isArray(raw)) return Uint8Array.from(raw);
+    if (raw?.secretKey) {
+      if (Array.isArray(raw.secretKey)) return Uint8Array.from(raw.secretKey);
+      if (typeof raw.secretKey === "string") {
+        return Uint8Array.from(Buffer.from(raw.secretKey, "base64"));
+      }
+    }
+    throw new Error("SOLANA_KEYPAIR_JSON must be a byte array or { secretKey }");
+  }
+  if (existsSync(KEYPAIR_PATH)) {
+    return Uint8Array.from(JSON.parse(await readFile(KEYPAIR_PATH, "utf8")));
+  }
+  return null;
 }
 
 async function uploadToIrys(deps, secretKey, data, tags) {
