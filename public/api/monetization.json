@@ -957,6 +957,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "rh-bonded-launch",
+      "name": "rh-bonded-launch",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "skillhub-onchain",
       "name": "skillhub-onchain",
       "category": "Solana / Blockchain",

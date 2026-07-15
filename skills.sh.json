@@ -78,6 +78,7 @@
         "pumpfun-fees",
         "pumpfun-launcher",
         "pumpfun-trading",
+        "rh-bonded-launch",
         "skillhub-onchain",
         "solana-clawd",
         "solana-clawd-agentic-commerce",
