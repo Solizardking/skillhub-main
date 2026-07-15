@@ -417,7 +417,7 @@ Instructions for the agent…
     }
 
     function wireUi() {
-      $("walletBtn").addEventListener("click", connectWallet);
+      $("walletBtn").addEventListener("click", toggleWallet);
       $("scanBtn").addEventListener("click", runUploadScan);
       $("resetBtn").addEventListener("click", resetAll);
       $("payBtn").addEventListener("click", payAndPublish);
@@ -504,36 +504,191 @@ Use this skill when the user wants a minimal example of a published agent skill.
       );
     }
 
+    let walletListenersBound = false;
+    let connectInFlight = null;
+
     function detectWallet() {
-      if (window.solana?.isPhantom || window.solana?.isSolflare || window.solana) {
-        if (window.solana.isConnected && window.solana.publicKey) {
-          state.wallet = window.solana.publicKey.toString();
+      // Wallet extensions inject after DOMContentLoaded — wait briefly.
+      waitForProvider(2500).then((provider) => {
+        if (!provider) return;
+        bindWalletEvents(provider);
+        if (provider.isConnected && provider.publicKey) {
+          state.wallet = pubkeyToString(provider.publicKey);
           paintWallet();
         }
+      });
+    }
+
+    /**
+     * Resolve the injected Solana provider.
+     * Prefer namespaced Phantom (`window.phantom.solana`) so multi-wallet installs
+     * don't hand us a broken/foreign `window.solana` that throws "Unexpected error".
+     */
+    function getProvider() {
+      const phantom = window.phantom?.solana;
+      if (phantom?.isPhantom) return phantom;
+
+      if (window.solflare?.isSolflare) return window.solflare;
+      if (window.backpack?.solana) return window.backpack.solana;
+      if (window.backpack?.isBackpack) return window.backpack;
+
+      // Legacy single-injection path (older Phantom / sole wallet)
+      if (window.solana?.isPhantom) return window.solana;
+      if (window.solana?.isSolflare) return window.solana;
+      if (window.solana?.connect) return window.solana;
+      return null;
+    }
+
+    function waitForProvider(timeoutMs = 3000) {
+      return new Promise((resolve) => {
+        const existing = getProvider();
+        if (existing) {
+          resolve(existing);
+          return;
+        }
+        let settled = false;
+        const done = () => {
+          if (settled) return;
+          settled = true;
+          resolve(getProvider());
+        };
+        window.addEventListener("solana#initialized", done, { once: true });
+        window.addEventListener("load", done, { once: true });
+        // Poll — some extensions don't fire solana#initialized
+        const started = Date.now();
+        const tick = () => {
+          if (getProvider() || Date.now() - started >= timeoutMs) done();
+          else requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        setTimeout(done, timeoutMs);
+      });
+    }
+
+    function pubkeyToString(pk) {
+      if (!pk) return "";
+      if (typeof pk === "string") return pk;
+      if (typeof pk.toBase58 === "function") return pk.toBase58();
+      if (typeof pk.toString === "function") return pk.toString();
+      return String(pk);
+    }
+
+    function bindWalletEvents(provider) {
+      if (!provider || walletListenersBound) return;
+      walletListenersBound = true;
+      try {
+        provider.on?.("connect", () => {
+          if (provider.publicKey) {
+            state.wallet = pubkeyToString(provider.publicKey);
+            paintWallet();
+          }
+        });
+        provider.on?.("disconnect", () => {
+          state.wallet = null;
+          paintWallet();
+          setBanner("info", "Wallet disconnected.");
+        });
+        provider.on?.("accountChanged", (publicKey) => {
+          if (publicKey) {
+            state.wallet = pubkeyToString(publicKey);
+            paintWallet();
+            setBanner("info", `Account switched: ${shortAddr(state.wallet)}`);
+          } else {
+            // Phantom may fire with null when locked — force re-connect next click
+            state.wallet = null;
+            paintWallet();
+          }
+        });
+      } catch {
+        // Some providers don't support .on
       }
     }
 
     async function connectWallet() {
-      const provider = getProvider();
-      if (!provider) {
-        setBanner("err", "No Solana wallet found. Install Phantom or Solflare, then retry.");
-        return;
-      }
-      try {
-        const resp = await provider.connect();
-        state.wallet = (resp.publicKey || provider.publicKey).toString();
-        paintWallet();
-        setBanner("ok", `Wallet connected: ${shortAddr(state.wallet)}`);
-      } catch (err) {
-        setBanner("err", `Wallet connect failed: ${err.message}`);
-      }
+      // De-dupe double-clicks
+      if (connectInFlight) return connectInFlight;
+      connectInFlight = (async () => {
+        try {
+          let provider = getProvider() || (await waitForProvider(2000));
+          if (!provider) {
+            setBanner(
+              "err",
+              "No Solana wallet found. Install Phantom (phantom.app) or Solflare, then refresh this page.",
+            );
+            return;
+          }
+          bindWalletEvents(provider);
+
+          // Already authorized for this origin
+          if (provider.isConnected && provider.publicKey) {
+            state.wallet = pubkeyToString(provider.publicKey);
+            paintWallet();
+            setBanner("ok", `Wallet connected: ${shortAddr(state.wallet)}`);
+            return;
+          }
+
+          // Phantom docs: onlyIfTrusted:false prompts the approval UI.
+          // Passing no options (or onlyIfTrusted:true after revoke) can yield "Unexpected error".
+          let resp;
+          try {
+            resp = await provider.connect({ onlyIfTrusted: false });
+          } catch (firstErr) {
+            // Retry once with zero-arg connect for Solflare / older injectors
+            const msg = String(firstErr?.message || firstErr || "");
+            if (/Unexpected error/i.test(msg) || firstErr?.code === -32603) {
+              try {
+                if (typeof provider.disconnect === "function") {
+                  await provider.disconnect().catch(() => {});
+                }
+              } catch { /* ignore */ }
+              resp = await provider.connect();
+            } else {
+              throw firstErr;
+            }
+          }
+
+          const pk = resp?.publicKey || provider.publicKey;
+          if (!pk) {
+            throw new Error(
+              "Wallet opened but returned no public key. Unlock the extension and approve the connection.",
+            );
+          }
+          state.wallet = pubkeyToString(pk);
+          paintWallet();
+          setBanner(
+            "ok",
+            `Wallet connected: ${shortAddr(state.wallet)}${
+              state.config?.network ? ` · pay on ${state.config.network}` : ""
+            }`,
+          );
+        } catch (err) {
+          setBanner("err", formatWalletError(err));
+          console.error("[skillhub] wallet connect", err);
+        } finally {
+          connectInFlight = null;
+        }
+      })();
+      return connectInFlight;
     }
 
-    function getProvider() {
-      if (window.solana?.isPhantom) return window.solana;
-      if (window.solflare?.isSolflare) return window.solflare;
-      if (window.solana) return window.solana;
-      return null;
+    function formatWalletError(err) {
+      const code = err?.code;
+      const msg = String(err?.message || err || "Unknown wallet error");
+      if (code === 4001 || /user rejected|denied|cancelled|canceled/i.test(msg)) {
+        return "Connection rejected in the wallet. Click Connect wallet and approve the request.";
+      }
+      if (/Unexpected error/i.test(msg) || code === -32603) {
+        return (
+          "Wallet connect failed (Phantom “Unexpected error”). " +
+          "Fix: (1) unlock Phantom, (2) disable other Solana wallet extensions for this tab, " +
+          "(3) hard-refresh, (4) connect again. " +
+          "If it still fails, open Phantom → Settings → Trusted Apps and remove this site, then retry."
+        );
+      }
+      if (/not been authorized|not authorized|forbidden/i.test(msg)) {
+        return "This site is not authorized in the wallet. Approve the connection prompt, or re-add the site under Trusted Apps.";
+      }
+      return `Wallet connect failed: ${msg}`;
     }
 
     function paintWallet() {
@@ -541,10 +696,26 @@ Use this skill when the user wants a minimal example of a published agent skill.
       if (state.wallet) {
         btn.textContent = shortAddr(state.wallet);
         btn.classList.add("connected");
+        btn.title = "Click to disconnect";
       } else {
         btn.textContent = "Connect wallet";
         btn.classList.remove("connected");
+        btn.title = "Connect Phantom or Solflare";
       }
+    }
+
+    async function toggleWallet() {
+      if (state.wallet) {
+        const provider = getProvider();
+        try {
+          await provider?.disconnect?.();
+        } catch { /* ignore */ }
+        state.wallet = null;
+        paintWallet();
+        setBanner("info", "Wallet disconnected.");
+        return;
+      }
+      await connectWallet();
     }
 
     async function ingestFileList(fileListLike) {
@@ -740,35 +911,58 @@ Use this skill when the user wants a minimal example of a published agent skill.
       const web3 = await loadWeb3();
       const { Connection, PublicKey, SystemProgram, Transaction, TransactionInstruction } = web3;
 
-      const connection = new Connection(state.config.rpcUrl || "https://api.devnet.solana.com", "confirmed");
+      const network = (state.config?.network || "devnet").toLowerCase();
+      const rpc =
+        state.config?.rpcUrl ||
+        (network.includes("mainnet")
+          ? "https://api.mainnet-beta.solana.com"
+          : "https://api.devnet.solana.com");
+      const connection = new Connection(rpc, "confirmed");
       const fromPubkey = new PublicKey(state.wallet);
       const toPubkey = new PublicKey(merchant);
+
+      // Ensure wallet is still authorized before signing
+      if (!provider.publicKey) {
+        await provider.connect({ onlyIfTrusted: false }).catch(() => provider.connect());
+      }
 
       const tx = new Transaction().add(
         SystemProgram.transfer({
           fromPubkey,
           toPubkey,
-          lamports,
+          lamports: Number(lamports),
         }),
         new TransactionInstruction({
           keys: [{ pubkey: fromPubkey, isSigner: true, isWritable: true }],
-          programId: new PublicKey("MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr"),
-          data: new TextEncoder().encode(memo),
+          programId: new PublicKey(
+            state.config?.memoProgram || "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
+          ),
+          data: new TextEncoder().encode(String(memo || "")),
         }),
       );
 
       tx.feePayer = fromPubkey;
-      const { blockhash, lastValidBlockHeight } = await connection.getLatestBlockhash();
+      const { blockhash, lastValidBlockHeight } = await connection.getLatestBlockhash("confirmed");
       tx.recentBlockhash = blockhash;
 
       let signature;
-      if (provider.signAndSendTransaction) {
-        const result = await provider.signAndSendTransaction(tx);
-        signature = typeof result === "string" ? result : result.signature;
-      } else {
-        const signed = await provider.signTransaction(tx);
-        signature = await connection.sendRawTransaction(signed.serialize());
+      try {
+        if (typeof provider.signAndSendTransaction === "function") {
+          const result = await provider.signAndSendTransaction(tx, { skipPreflight: false });
+          signature = typeof result === "string" ? result : result?.signature;
+        } else if (typeof provider.signTransaction === "function") {
+          const signed = await provider.signTransaction(tx);
+          signature = await connection.sendRawTransaction(signed.serialize(), {
+            skipPreflight: false,
+          });
+        } else {
+          throw new Error("Wallet cannot sign transactions (missing signAndSendTransaction).");
+        }
+      } catch (err) {
+        throw new Error(formatWalletError(err).replace(/^Wallet connect failed:\s*/i, "Payment failed: "));
       }
+
+      if (!signature) throw new Error("Wallet returned no transaction signature.");
 
       await connection.confirmTransaction({ signature, blockhash, lastValidBlockHeight }, "confirmed");
       return signature;
