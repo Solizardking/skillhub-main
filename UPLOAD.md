@@ -43,8 +43,14 @@ npm run relay:upload
 
 Open **http://127.0.0.1:8787/** or production:
 
-- **https://skills.clawdcode.net/publish** (UI) → API **https://skillhub-upload-relay.onrender.com**
-- Override: `?api=https://skillhub-upload-relay.onrender.com`
+- **https://skills.clawdcode.net/publish** (UI) → API **https://skillhub-upload-relay.fly.dev**
+- Fallback API: https://skillhub-upload-relay.onrender.com
+- Override: `?api=https://skillhub-upload-relay.fly.dev`
+
+```bash
+# Deploy upload relay to Fly
+fly deploy -c fly.upload-relay.toml
+```
 
 1. Paste or drop a skill (`SKILL.md` required).
 2. Click **Scan skill**.

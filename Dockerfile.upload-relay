@@ -5,10 +5,21 @@ FROM node:20-bookworm-slim
 
 WORKDIR /app
 
-# Runtime deps used for optional Irys + Solana memo after payment
-COPY package.json package-lock.json ./
-RUN npm ci --omit=dev \
-  && npm install --no-save @solana/web3.js@^1.98.4 @irys/upload@^0.0.15 @irys/upload-solana@^0.1.8 \
+# Minimal package.json for the relay runtime (avoids full monorepo lock sync issues).
+# Anchoring SDKs are optional — scan + pay verification work without them.
+RUN printf '%s\n' \
+  '{' \
+  '  "name": "skillhub-upload-relay",' \
+  '  "version": "0.1.0",' \
+  '  "type": "module",' \
+  '  "private": true,' \
+  '  "dependencies": {' \
+  '    "@irys/upload": "^0.0.15",' \
+  '    "@irys/upload-solana": "^0.1.8",' \
+  '    "@solana/web3.js": "^1.98.4"' \
+  '  }' \
+  '}' > package.json \
+  && npm install --omit=dev --no-audit --no-fund \
   && npm cache clean --force
 
 # App surface (no full skills catalog — uploads are scanned in-memory)

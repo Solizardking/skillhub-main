@@ -20,7 +20,7 @@ const SITE_ALIASES = [
 ];
 /** Hosted upload relay (Node service). Static hosts point publish UI here. */
 const UPLOAD_API_BASE =
-  (process.env.SKILLHUB_UPLOAD_API || "https://skillhub-upload-relay.onrender.com").replace(/\/$/, "");
+  (process.env.SKILLHUB_UPLOAD_API || "https://skillhub-upload-relay.fly.dev").replace(/\/$/, "");
 const DEFAULT_PAYMENT_NETWORK = process.env.SKILLHUB_PAYMENT_NETWORK || "mainnet";
 const DEFAULT_MERCHANT_NAME = process.env.SKILLHUB_MERCHANT_NAME || "Skill Hub";
 const DEFAULT_MERCHANT_WALLET = process.env.SKILLHUB_MERCHANT_WALLET || "";

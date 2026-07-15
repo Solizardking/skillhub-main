@@ -330,7 +330,12 @@ Instructions for the agent…
     const resultPanel = $("resultPanel");
 
     // Default production upload relay (static hosts cannot serve POST /api/*).
-    const DEFAULT_UPLOAD_API = "https://skillhub-upload-relay.onrender.com";
+    // Primary: Fly.io · fallback: Render (legacy).
+    const DEFAULT_UPLOAD_API = "https://skillhub-upload-relay.fly.dev";
+    const FALLBACK_UPLOAD_APIS = [
+      "https://skillhub-upload-relay.fly.dev",
+      "https://skillhub-upload-relay.onrender.com",
+    ];
     const STATIC_HOSTS = new Set([
       "skills.clawdcode.net",
       "skillhub-buja.onrender.com",
@@ -450,8 +455,7 @@ Use this skill when the user wants a minimal example of a published agent skill.
       const tried = [];
       const candidates = [
         state.apiBase || null,
-        // Fallbacks if preferred base is cold-starting or misconfigured
-        state.apiBase !== DEFAULT_UPLOAD_API ? DEFAULT_UPLOAD_API : null,
+        ...FALLBACK_UPLOAD_APIS,
         state.apiBase ? null : "", // same-origin last for local relay
       ].filter((v, i, a) => v !== null && a.indexOf(v) === i);
 
@@ -481,7 +485,7 @@ Use this skill when the user wants a minimal example of a published agent skill.
       $("configLine").textContent = "relay offline";
       setBanner(
         "warn",
-        `Upload relay not reachable (tried: ${tried.join(", ")}). Deploy skillhub-upload-relay or run \`npm run relay:upload\` and open with ?api=http://127.0.0.1:8787`,
+        `Upload relay not reachable (tried: ${tried.join(", ")}). Deploy with \`fly deploy -c fly.upload-relay.toml\` or run \`npm run relay:upload\` and open with ?api=http://127.0.0.1:8787`,
       );
     }
 
