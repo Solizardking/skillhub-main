@@ -191,7 +191,59 @@ async function loadKeypair(keypairPath) {
     process.exit(1);
   }
   const raw = JSON.parse(await readFile(keypairPath, "utf8"));
-  return Uint8Array.from(raw);
+
+  // Standard solana-keygen JSON: [u8; 64]
+  if (Array.isArray(raw)) {
+    if (raw.length !== 64 && raw.length !== 32) {
+      console.error(`Keypair at ${keypairPath} has length ${raw.length}; expected 64 (or 32-byte seed).`);
+      process.exit(1);
+    }
+    return Uint8Array.from(raw);
+  }
+
+  // Custom object format: { secretKey: base64|base58|number[] }
+  if (raw && typeof raw === "object" && raw.secretKey != null) {
+    const secret = raw.secretKey;
+    if (Array.isArray(secret)) return Uint8Array.from(secret);
+    if (typeof secret === "string") {
+      // base64
+      if (/^[A-Za-z0-9+/]+=*$/.test(secret) && secret.length % 4 === 0) {
+        const buf = Buffer.from(secret, "base64");
+        if (buf.length === 64 || buf.length === 32) return new Uint8Array(buf);
+      }
+      // base58
+      try {
+        const decoded = base58Decode(secret);
+        if (decoded.length === 64 || decoded.length === 32) return decoded;
+      } catch {
+        // fall through
+      }
+    }
+  }
+
+  console.error(`Unsupported keypair format at ${keypairPath}.`);
+  console.error("Use solana-keygen JSON (byte array) or { secretKey: base64|base58|number[] }.");
+  process.exit(1);
+}
+
+function base58Decode(str) {
+  const ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
+  let value = 0n;
+  for (const char of str) {
+    const index = ALPHABET.indexOf(char);
+    if (index === -1) throw new Error("invalid base58");
+    value = value * 58n + BigInt(index);
+  }
+  const bytes = [];
+  while (value > 0n) {
+    bytes.unshift(Number(value % 256n));
+    value /= 256n;
+  }
+  for (const char of str) {
+    if (char !== "1") break;
+    bytes.unshift(0);
+  }
+  return Uint8Array.from(bytes);
 }
 
 async function uploadToArweave(deps, secretKey, uploads) {

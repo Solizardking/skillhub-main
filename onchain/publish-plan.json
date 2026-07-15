@@ -1,6 +1,6 @@
 {
   "schemaVersion": "skillhub-publish-plan/v1",
-  "createdAt": "2026-07-15T13:45:32.627Z",
+  "createdAt": "2026-07-15T13:46:42.964Z",
   "cluster": "devnet",
   "rpc": "https://api.devnet.solana.com",
   "merkleRoot": "sha256-d4ff6790b47aa8d55cbeecb2862482d00f437f7936a78e4e4c6ac11ee5d17712",

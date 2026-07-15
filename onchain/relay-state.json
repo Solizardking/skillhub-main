@@ -1,5 +1,6 @@
 {
   "schemaVersion": "skillhub-relay-state/v1",
+<<<<<<< Updated upstream
   "updatedAt": "2026-07-13T15:31:08.867Z",
   "reason": "one-shot",
   "totalSkills": 567,
@@ -7,4 +8,19 @@
   "merkleRoot": "sha256-68923cb1571d5b77c478d20d52bff8da8d9277df6a462508c26545c5be13ca23",
   "catalogHash": "sha256-b908b148effdb0077a7f4605004dacdd88c36823089713bb222aa4c316c516fc",
   "durationMs": 3443
+=======
+  "updatedAt": "2026-07-15T13:48:29.577Z",
+  "reason": "onchain-reanchor-live",
+  "totalSkills": 568,
+  "nvidiaSkills": 229,
+  "merkleRoot": "sha256-d4ff6790b47aa8d55cbeecb2862482d00f437f7936a78e4e4c6ac11ee5d17712",
+  "catalogHash": "sha256-3d282606dade19ed51ec12a878aef032af9d7e3961dd101decff033913e6beae",
+  "durationMs": null,
+  "publishReceipt": "onchain/publish-receipt.json",
+  "solanaSignature": "5W12VCa8anAnYZkQWfF8oiMr2rvgkiWAQtiv1NKGxWksqo7BY2MZXQjtVzB4987NeHu94312TFUfzmumqsH8DoyB",
+  "arweave": [
+    "BbPGokADzB98WLvto42rfTKsyHDwVd34kaAvCu7UhHXf",
+    "7P7MbiBsC1SpehnHRaqM1jDEP3ZDbvKKzBUFXgZLiSAT"
+  ]
+>>>>>>> Stashed changes
 }

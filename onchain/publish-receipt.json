@@ -1,28 +1,28 @@
 {
   "schemaVersion": "skillhub-publish-receipt/v1",
-  "publishedAt": "2026-07-10T21:37:16.118Z",
+  "publishedAt": "2026-07-15T13:47:15.917Z",
   "cluster": "devnet",
-  "merkleRoot": "sha256-3232172cd852237bc775ead1e6b7083109d8e8a621f05415cae05b8213d7a9f4",
-  "catalogHash": "sha256-e9a98c6339fd6390b00a46063220a64c44d68cc5b495cb7b7704c6dad4b29103",
-  "totalSkills": 558,
+  "merkleRoot": "sha256-d4ff6790b47aa8d55cbeecb2862482d00f437f7936a78e4e4c6ac11ee5d17712",
+  "catalogHash": "sha256-3d282606dade19ed51ec12a878aef032af9d7e3961dd101decff033913e6beae",
+  "totalSkills": 568,
   "arweave": [
     {
       "label": "onchain-skill-registry.json",
-      "id": "8jggHuxjZqbv7WPxkBZACBQUwDoEjDG1wews8y7gy7sa",
-      "url": "https://gateway.irys.xyz/8jggHuxjZqbv7WPxkBZACBQUwDoEjDG1wews8y7gy7sa",
-      "arweaveUrl": "https://arweave.net/8jggHuxjZqbv7WPxkBZACBQUwDoEjDG1wews8y7gy7sa"
+      "id": "BbPGokADzB98WLvto42rfTKsyHDwVd34kaAvCu7UhHXf",
+      "url": "https://gateway.irys.xyz/BbPGokADzB98WLvto42rfTKsyHDwVd34kaAvCu7UhHXf",
+      "arweaveUrl": "https://arweave.net/BbPGokADzB98WLvto42rfTKsyHDwVd34kaAvCu7UhHXf"
     },
     {
       "label": "catalog.json",
-      "id": "7EVxjZu2XnPNPNo1vYdovFfVNS8ziMm99h4r79EyRNrk",
-      "url": "https://gateway.irys.xyz/7EVxjZu2XnPNPNo1vYdovFfVNS8ziMm99h4r79EyRNrk",
-      "arweaveUrl": "https://arweave.net/7EVxjZu2XnPNPNo1vYdovFfVNS8ziMm99h4r79EyRNrk"
+      "id": "7P7MbiBsC1SpehnHRaqM1jDEP3ZDbvKKzBUFXgZLiSAT",
+      "url": "https://gateway.irys.xyz/7P7MbiBsC1SpehnHRaqM1jDEP3ZDbvKKzBUFXgZLiSAT",
+      "arweaveUrl": "https://arweave.net/7P7MbiBsC1SpehnHRaqM1jDEP3ZDbvKKzBUFXgZLiSAT"
     }
   ],
   "solana": {
     "memoProgram": "MemoSq4gqABAXKb96qnH8TysNcWxMyWCqXgDLGmfcHr",
-    "signature": "m7qdAefoS6eaDqeubeSpCXuWeyL8VBqtAmgctNmLSum35JiCRdP3wRs41yzsidxKUGLMD6sUgaRDMmAs8uLQjTq",
-    "explorer": "https://solscan.io/tx/m7qdAefoS6eaDqeubeSpCXuWeyL8VBqtAmgctNmLSum35JiCRdP3wRs41yzsidxKUGLMD6sUgaRDMmAs8uLQjTq?cluster=devnet",
-    "memo": "skillhub:v1|skills:558|merkle:sha256-3232172cd852237bc775ead1e6b7083109d8e8a621f05415cae05b8213d7a9f4|catalog:sha256-e9a98c6339fd6390b00a46063220a64c44d68cc5b495cb7b7704c6dad4b29103|ar:8jggHuxjZqbv7WPxkBZACBQUwDoEjDG1wews8y7gy7sa,7EVxjZu2XnPNPNo1vYdovFfVNS8ziMm99h4r79EyRNrk"
+    "signature": "5W12VCa8anAnYZkQWfF8oiMr2rvgkiWAQtiv1NKGxWksqo7BY2MZXQjtVzB4987NeHu94312TFUfzmumqsH8DoyB",
+    "explorer": "https://solscan.io/tx/5W12VCa8anAnYZkQWfF8oiMr2rvgkiWAQtiv1NKGxWksqo7BY2MZXQjtVzB4987NeHu94312TFUfzmumqsH8DoyB?cluster=devnet",
+    "memo": "skillhub:v1|skills:568|merkle:sha256-d4ff6790b47aa8d55cbeecb2862482d00f437f7936a78e4e4c6ac11ee5d17712|catalog:sha256-3d282606dade19ed51ec12a878aef032af9d7e3961dd101decff033913e6beae|ar:BbPGokADzB98WLvto42rfTKsyHDwVd34kaAvCu7UhHXf,7P7MbiBsC1SpehnHRaqM1jDEP3ZDbvKKzBUFXgZLiSAT"
   }
 }
