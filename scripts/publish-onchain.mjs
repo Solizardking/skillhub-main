@@ -99,7 +99,7 @@ async function main() {
   }
 
   const deps = await loadDeps();
-  const secretKey = await loadKeypair(KEYPAIR_PATH);
+  const secretKey = await loadKeypair(KEYPAIR_PATH, deps.web3);
 
   let arweaveResults = [];
   if (SKIP_ARWEAVE) {
@@ -184,7 +184,7 @@ async function loadDeps() {
   }
 }
 
-async function loadKeypair(keypairPath) {
+async function loadKeypair(keypairPath, { Keypair }) {
   if (!existsSync(keypairPath)) {
     console.error(`Keypair not found at ${keypairPath}.`);
     console.error("Pass --keypair <path> or set SOLANA_KEYPAIR.");
@@ -198,23 +198,23 @@ async function loadKeypair(keypairPath) {
       console.error(`Keypair at ${keypairPath} has length ${raw.length}; expected 64 (or 32-byte seed).`);
       process.exit(1);
     }
-    return Uint8Array.from(raw);
+    return normalizeSecretKey(Uint8Array.from(raw), Keypair);
   }
 
   // Custom object format: { secretKey: base64|base58|number[] }
   if (raw && typeof raw === "object" && raw.secretKey != null) {
     const secret = raw.secretKey;
-    if (Array.isArray(secret)) return Uint8Array.from(secret);
+    if (Array.isArray(secret)) return normalizeSecretKey(Uint8Array.from(secret), Keypair);
     if (typeof secret === "string") {
       // base64
       if (/^[A-Za-z0-9+/]+=*$/.test(secret) && secret.length % 4 === 0) {
         const buf = Buffer.from(secret, "base64");
-        if (buf.length === 64 || buf.length === 32) return new Uint8Array(buf);
+        if (buf.length === 64 || buf.length === 32) return normalizeSecretKey(new Uint8Array(buf), Keypair);
       }
       // base58
       try {
         const decoded = base58Decode(secret);
-        if (decoded.length === 64 || decoded.length === 32) return decoded;
+        if (decoded.length === 64 || decoded.length === 32) return normalizeSecretKey(decoded, Keypair);
       } catch {
         // fall through
       }
@@ -224,6 +224,19 @@ async function loadKeypair(keypairPath) {
   console.error(`Unsupported keypair format at ${keypairPath}.`);
   console.error("Use solana-keygen JSON (byte array) or { secretKey: base64|base58|number[] }.");
   process.exit(1);
+}
+
+function normalizeSecretKey(secretKey, Keypair) {
+  if (secretKey.length === 32) return Keypair.fromSeed(secretKey).secretKey;
+
+  try {
+    return Keypair.fromSecretKey(secretKey).secretKey;
+  } catch {
+    // Some exported wallet objects contain a valid 32-byte seed followed by a
+    // stale or mismatched public-key half. Derive the canonical 64-byte keypair
+    // from the seed so both Irys and web3.js receive the same validated bytes.
+    return Keypair.fromSeed(secretKey.slice(0, 32)).secretKey;
+  }
 }
 
 function base58Decode(str) {
@@ -249,9 +262,7 @@ function base58Decode(str) {
 async function uploadToArweave(deps, secretKey, uploads) {
   const { Uploader } = deps.irysUpload;
   const { Solana } = deps.irysSolana;
-  const bs58Key = base58Encode(secretKey);
-
-  let builder = Uploader(Solana).withWallet(bs58Key).withRpc(RPC_URL);
+  let builder = Uploader(Solana).withWallet(secretKey).withRpc(RPC_URL);
   if (DEVNET) builder = builder.devnet();
   const irys = await builder;
 
@@ -297,22 +308,6 @@ async function anchorOnSolana(deps, secretKey, memoText) {
   const signature = await sendAndConfirmTransaction(connection, transaction, [payer]);
   console.log(`  anchored on solana: ${signature}`);
   return signature;
-}
-
-function base58Encode(bytes) {
-  const ALPHABET = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz";
-  let value = 0n;
-  for (const byte of bytes) value = value * 256n + BigInt(byte);
-  let encoded = "";
-  while (value > 0n) {
-    encoded = ALPHABET[Number(value % 58n)] + encoded;
-    value /= 58n;
-  }
-  for (const byte of bytes) {
-    if (byte !== 0) break;
-    encoded = `1${encoded}`;
-  }
-  return encoded;
 }
 
 main().catch((error) => {
