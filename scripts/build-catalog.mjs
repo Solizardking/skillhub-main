@@ -69,6 +69,8 @@ const CATEGORY_OVERRIDES = new Map([
   ["zkrouter", "Solana / Blockchain"],
   ["solana-common-errors", "Solana / Blockchain"],
   ["solana-dev", "Solana / Blockchain"],
+  ["metaplex-agent", "Solana / Blockchain"],
+  ["metaplex/skills/metaplex", "Solana / Blockchain"],
 ]);
 
 async function main() {
@@ -516,6 +518,7 @@ function renderReadme(catalog) {
   const nvidiaCount = catalog.filter((skill) => skill.slug.startsWith("nvidia/")).length;
   const featuredRuns = [
     // Premiere offerings — lead the hub with these families.
+    ["💎 Metaplex Agent mode", "premiere: onboard, register EIP-8004 identity, delegate, commerce, Genesis agent token", catalog.filter((skill) => skill.slug === "metaplex-agent" || skill.slug === "metaplex/skills/metaplex")],
     ["🎯 Engineering mode", "ship software the Matt Pocock way: TDD, triage, implement, architecture, specs, tickets", catalog.filter((skill) => skill.slug.startsWith("engineering/"))],
     ["🧭 Agent orchestration mode", "goal loops, handoffs, subagents, deep SWE runs, self-scheduling", catalog.filter((skill) => skill.slug.startsWith("agent-orchestration/"))],
     ["✍️ Productivity mode", "grill, teach, handoff, and write great skills", catalog.filter((skill) => skill.slug.startsWith("productivity/"))],
@@ -543,12 +546,29 @@ function renderReadme(catalog) {
     `[![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)`,
     `![Skills](https://img.shields.io/badge/skills-${catalog.length}-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-${byCategory.length}-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-${googleCount}_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-${nvidiaCount}_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)`,
     "",
-    `**${catalog.length} installable agent skills** — including a **${googleCount}-skill Google integration** and a **${nvidiaCount}-skill NVIDIA stack** (CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2). Every one is a \`SKILL.md\` playbook your agent can pull off the shelf —`,
+    `**${catalog.length} installable agent skills** — led by the **premiere [\`metaplex-agent\`](./skills/metaplex-agent/SKILL.md)** playbook (Metaplex Agent Registry, EIP-8004 identity, commerce, Genesis tokens), plus a **${googleCount}-skill Google integration** and a **${nvidiaCount}-skill NVIDIA stack** (CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2). Every one is a \`SKILL.md\` playbook your agent can pull off the shelf —`,
     "hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.",
     "",
     "*Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️",
     "",
     "</div>",
+    "",
+    "---",
+    "",
+    "## 💎 Premiere: Metaplex Agent",
+    "",
+    "The hub’s **#1 premiere skill** packages every Metaplex agent operation into one installable playbook — onboarding, Core identity registration (EIP-8004), Asset Signer PDA, executive delegation, agent commerce (services / x402 / A2A), agent finance, and Genesis agent-token launch.",
+    "",
+    "```bash",
+    "npx github:Solizardking/skills install metaplex-agent",
+    "```",
+    "",
+    "| | |",
+    "|---|---|",
+    "| Skill | [`metaplex-agent`](./skills/metaplex-agent/SKILL.md) · [README](./skills/metaplex-agent/README.md) |",
+    "| Full Metaplex programs | [`metaplex/skills/metaplex`](./skills/metaplex/skills/metaplex/SKILL.md) |",
+    "| Covers | CLI/RPC setup · register · fetch · executive delegate/revoke · set-agent-token · LaunchPool / Bonding Curve · commerce primitives |",
+    "| Docs | [metaplex.com/docs/agents](https://metaplex.com/docs/agents) |",
     "",
     "---",
     "",
@@ -609,6 +629,9 @@ function renderReadme(catalog) {
     "Or grab a **premiere** focused stack (the hub's lead offerings):",
     "",
     "```bash",
+    "# Premiere #1: Metaplex Agent (identity, commerce, Genesis agent token)",
+    "npx github:Solizardking/skills install metaplex-agent",
+    "",
     "# Premiere: engineering (TDD, implement, triage, architecture)",
     "npx github:Solizardking/skills install engineering/tdd engineering/implement engineering/triage engineering/codebase-design engineering/to-spec",
     "",
@@ -631,7 +654,7 @@ function renderReadme(catalog) {
     "# NVIDIA accelerated computing (Jetson, DeepStream, NeMo, cuOpt, CUDA-Q)",
     "npx github:Solizardking/skills install nvidia/jetson-quick-start nvidia/deepstream-dev nvidia/cudaq-guide nvidia/aiq-deploy nvidia/cuopt-developer",
     "",
-    "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock",
+    "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock metaplex/skills/metaplex",
     "npx github:Solizardking/skills install pumpfun pump-token-lifecycle pump-bonding-curve pump-security",
     "npx github:Solizardking/skills install compressed-pda compressed-token zk zkrouter",
     "npx github:Solizardking/skills install google/cloud/gcloud google/cloud/gke-basics google/cloud/bigquery-basics",
@@ -647,7 +670,7 @@ function renderReadme(catalog) {
     "",
     "## 🌟 Featured Runs",
     "",
-    "**Premiere loadouts first** — engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:",
+    "**Premiere loadouts first** — **Metaplex Agent**, then engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:",
     "",
   );
 
@@ -803,6 +826,7 @@ function renderHub(catalog) {
     "Install **premiere** focused stacks (lead offerings):",
     "",
     "```bash",
+    "npx github:Solizardking/skills install metaplex-agent --force",
     "npx github:Solizardking/skills install engineering/tdd engineering/implement engineering/triage engineering/codebase-design engineering/to-spec --force",
     "npx github:Solizardking/skills install agent-orchestration/goal-loop agent-orchestration/handoff agent-orchestration/codex-subagent agent-orchestration/run-deep-swe",
     "npx github:Solizardking/skills install productivity/grill-me productivity/teach productivity/writing-great-skills thinking-and-docs/brain-to-docs thinking-and-docs/prompt-me",
@@ -815,7 +839,7 @@ function renderHub(catalog) {
     "",
     "```bash",
     "npx github:Solizardking/skills install nvidia/jetson-quick-start nvidia/deepstream-dev nvidia/cudaq-guide nvidia/aiq-deploy nvidia/cuopt-developer --force",
-    "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock --force",
+    "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock metaplex/skills/metaplex --force",
     "npx github:Solizardking/skills install pumpfun pump-token-lifecycle pump-bonding-curve pump-fee-sharing pump-claims-readonly pump-security",
     "npx github:Solizardking/skills install ask-mcp compressed-pda compressed-token solana-redpill-verifier solana-rent-free-dev testing zk zkrouter",
     "npx github:Solizardking/skills install google/cloud/gke-basics google/cloud/gcloud google/cloud/bigquery-basics",
@@ -978,11 +1002,24 @@ function groupBySourceFamily(catalog) {
     groups.get(family).push(skill);
   }
 
-  return [...groups.entries()].sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+  // Premiere families pin to the top of the source-family table.
+  const premiereFirst = ["metaplex-agent/*", "metaplex/*"];
+  return [...groups.entries()].sort((a, b) => {
+    const ai = premiereFirst.indexOf(a[0]);
+    const bi = premiereFirst.indexOf(b[0]);
+    if (ai !== -1 || bi !== -1) {
+      if (ai === -1) return 1;
+      if (bi === -1) return -1;
+      return ai - bi;
+    }
+    return b[1].length - a[1].length || a[0].localeCompare(b[0]);
+  });
 }
 
 function sourceFamily(slug) {
   // Premiere families first — these are the hub's lead offerings.
+  if (slug === "metaplex-agent" || slug.startsWith("metaplex-agent/")) return "metaplex-agent/*";
+  if (slug === "metaplex/skills/metaplex" || slug.startsWith("metaplex/")) return "metaplex/*";
   if (slug.startsWith("engineering/")) return "engineering/*";
   if (slug.startsWith("agent-orchestration/")) return "agent-orchestration/*";
   if (slug.startsWith("productivity/")) return "productivity/*";
@@ -1010,6 +1047,8 @@ function sourceFamily(slug) {
 
 function sourceFamilyDescription(family) {
   const descriptions = {
+    "metaplex-agent/*": "Premiere #1: Metaplex Agent — EIP-8004 identity, Asset Signer, executive delegation, commerce, Genesis agent tokens.",
+    "metaplex/*": "Full Metaplex program skill: Core, Token Metadata, Bubblegum, Candy Machine, Genesis, and CLI/SDK references.",
     "engineering/*": "Premiere engineering playbooks: TDD, implement, triage, architecture, domain modeling, specs, and tickets.",
     "agent-orchestration/*": "Premiere agent orchestration: goal loops, handoffs, subagents, deep SWE, and self-scheduling.",
     "productivity/*": "Premiere productivity: grilling, teaching, handoffs, and writing great skills.",

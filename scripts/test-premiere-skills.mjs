@@ -20,6 +20,7 @@ const INSTALLER = path.join(ROOT, "bin", "skills.mjs");
 
 /** Premiere families listed in the hub objective — must stay installable. */
 export const PREMIERE_FAMILIES = [
+  "metaplex-agent", // premiere #1 — Metaplex Agent Registry / commerce / tokens
   "agent-orchestration",
   "animation-vocabulary",
   "apple-design",
