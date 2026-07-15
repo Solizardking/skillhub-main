@@ -136,6 +136,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/magicblock/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/magicblock/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/magicblock/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/metaplex/skills/metaplex/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/metaplex/skills/metaplex/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/metaplex/skills/metaplex/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/model-usage/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/model-usage/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/model-usage/SKILL.md</loc></url>

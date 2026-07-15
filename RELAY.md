@@ -6,9 +6,30 @@ static hub, and can re-anchor the Merkle root on Arweave × Solana.
 
 ## Local
 
+### Immediate path (detect → scan → categorize → README counter)
+
+When a skill folder is dropped or edited under `skills/`, use the light process path.
+It fingerprints `skills/`, rebuilds the catalog (categorize + README skills counter), and runs the local scanner — without smoke installs, git, or on-chain.
+
 ```bash
-npm run relay              # one-shot: build + smoke + sample install check
-npm run relay:watch        # poll skills/ and rebuild on change
+npm run skills:process     # one-shot: scan + catalog + README now
+npm run skills:watch       # poll skills/ and process on every change
+npm run relay:fast         # same light path via skill-relay --fast
+```
+
+| Command | What it does |
+|---|---|
+| `skills:process` | One cycle: `build-catalog` → `scanner --all-local` → assert README count == catalog length |
+| `skills:watch` | Poll (default 1.5s) + debounce (400ms); on fingerprint change, run the same cycle |
+| `relay:fast` | Alias of the light path through `skill-relay.mjs --fast` |
+
+State is written to `onchain/skills-process-state.json`. Tests: `npm run test:skills-process`.
+
+### Full relay (verify + optional publish)
+
+```bash
+npm run relay              # one-shot: build + scan + smoke + sample install check
+npm run relay:watch        # poll skills/ and full rebuild on change
 npm run relay:push         # rebuild, commit generated files, git push
 npm run relay -- --onchain --execute --devnet   # also publish on-chain
 npm run relay:upload       # HTTP upload → scan → Solana fee → on-chain pipeline
@@ -16,13 +37,14 @@ npm run relay:upload       # HTTP upload → scan → Solana fee → on-chain pi
 
 Community uploads (browser + wallet) use the upload relay — see [UPLOAD.md](./UPLOAD.md).
 
-What a relay run does:
+What a full relay run does:
 
 1. `npm run build:catalog` — README, HUB, `catalog.json`, public site, Merkle registry
-2. `npm run smoke` — frontmatter, uniqueness, public mirrors, verification artifacts
-3. Sample install of a few `nvidia/*` skills into `.relay-install-check/`
-4. Optional Arweave upload + Solana memo via `publish:onchain`
-5. Optional `git commit` / `git push` of generated artifacts
+2. `npm run scanner:scan:all` — local integrity/risk scan of disk `SKILL.md` inventory
+3. `npm run smoke` — frontmatter, uniqueness, public mirrors, verification artifacts
+4. Sample install of a few `nvidia/*` skills into `.relay-install-check/`
+5. Optional Arweave upload + Solana memo via `publish:onchain`
+6. Optional `git commit` / `git push` of generated artifacts
 
 ## GitHub Actions
 

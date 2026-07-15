@@ -7,10 +7,14 @@
  * Modes:
  *   node scripts/skill-relay.mjs              # one-shot rebuild + verify
  *   node scripts/skill-relay.mjs --watch      # poll skills/ and rebuild on change
+ *   node scripts/skill-relay.mjs --fast       # light path: catalog + scan only (no smoke/install)
  *   node scripts/skill-relay.mjs --commit     # git add/commit generated artifacts
  *   node scripts/skill-relay.mjs --push       # git push after commit
  *   node scripts/skill-relay.mjs --onchain    # dry-run on-chain plan after build
  *   node scripts/skill-relay.mjs --onchain --execute [--devnet]
+ *
+ * For immediate detect→scan→categorize→README without relay extras, prefer:
+ *   npm run skills:process / npm run skills:watch  (scripts/skills-process.mjs)
  *
  * Env:
  *   SKILLHUB_RELAY_INTERVAL_MS  poll interval in watch mode (default 2000)
@@ -18,12 +22,12 @@
  */
 
 import { spawn } from "node:child_process";
-import { createHash } from "node:crypto";
-import { readdir, readFile, stat, writeFile, mkdir } from "node:fs/promises";
+import { readFile, writeFile, mkdir } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
+import { fingerprintSkills } from "./lib/skills-inventory.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
@@ -32,6 +36,7 @@ const STATE_PATH = path.join(ROOT, "onchain", "relay-state.json");
 
 const args = process.argv.slice(2);
 const WATCH = args.includes("--watch");
+const FAST = args.includes("--fast");
 const COMMIT = args.includes("--commit");
 const PUSH = args.includes("--push");
 const ONCHAIN = args.includes("--onchain");
@@ -55,18 +60,18 @@ const GENERATED_PATHS = [
 async function main() {
   if (WATCH) {
     console.log(`Skill relay watching ${path.relative(ROOT, SKILLS_ROOT)} (every ${INTERVAL_MS}ms)`);
-    let lastFingerprint = await fingerprintSkills();
+    let lastFingerprint = await fingerprintSkills(SKILLS_ROOT);
     // Always run once at start so catalog is current.
     await runPipeline({ reason: "startup" });
-    lastFingerprint = await fingerprintSkills();
+    lastFingerprint = await fingerprintSkills(SKILLS_ROOT);
 
     for (;;) {
       await sleep(INTERVAL_MS);
-      const next = await fingerprintSkills();
+      const next = await fingerprintSkills(SKILLS_ROOT);
       if (next === lastFingerprint) continue;
       console.log(`\n[${ts()}] skills/ changed — rebuilding`);
       await runPipeline({ reason: "watch-change" });
-      lastFingerprint = await fingerprintSkills();
+      lastFingerprint = await fingerprintSkills(SKILLS_ROOT);
     }
   }
 
@@ -75,9 +80,64 @@ async function main() {
 
 async function runPipeline({ reason }) {
   const started = Date.now();
-  console.log(`[${ts()}] relay start (${reason})`);
+  console.log(`[${ts()}] relay start (${reason}${FAST ? ", fast" : ""})`);
+
+  // Light/immediate path: categorize + README via catalog builder, then scan.
+  if (FAST) {
+    const { processSkillsOnce } = await import("./skills-process.mjs");
+    const { state: processState } = await processSkillsOnce({
+      reason: `relay-fast:${reason}`,
+      root: ROOT,
+      skillsRoot: SKILLS_ROOT,
+    });
+
+    if (ONCHAIN) {
+      const onchainArgs = ["scripts/publish-onchain.mjs"];
+      if (EXECUTE) onchainArgs.push("--execute");
+      if (DEVNET) onchainArgs.push("--devnet");
+      await run("node", onchainArgs);
+    }
+
+    const catalog = JSON.parse(await readFile(path.join(ROOT, "catalog.json"), "utf8"));
+    const nvidiaCount = catalog.filter((s) => s.slug.startsWith("nvidia/")).length;
+    let merkleRoot = null;
+    let catalogHash = null;
+    try {
+      const registry = JSON.parse(
+        await readFile(path.join(ROOT, "public", ".well-known", "onchain-skill-registry.json"), "utf8"),
+      );
+      merkleRoot = registry.merkleRoot;
+      catalogHash = registry.catalogHash;
+    } catch {
+      // Registry may be mid-rebuild; not fatal for fast path.
+    }
+
+    const state = {
+      schemaVersion: "skillhub-relay-state/v1",
+      updatedAt: new Date().toISOString(),
+      reason: `fast:${reason}`,
+      totalSkills: catalog.length,
+      nvidiaSkills: nvidiaCount,
+      merkleRoot,
+      catalogHash,
+      process: processState,
+      durationMs: Date.now() - started,
+    };
+    await mkdir(path.dirname(STATE_PATH), { recursive: true });
+    await writeFile(STATE_PATH, `${JSON.stringify(state, null, 2)}\n`);
+    console.log(`[${ts()}] catalog: ${state.totalSkills} skills (${state.nvidiaSkills} nvidia)`);
+    if (state.merkleRoot) console.log(`[${ts()}] merkle : ${state.merkleRoot}`);
+    console.log(`[${ts()}] state  : onchain/relay-state.json`);
+
+    if (COMMIT) await gitCommit(state);
+    if (PUSH) await run("git", ["push"]);
+    console.log(`[${ts()}] relay done in ${state.durationMs}ms`);
+    return;
+  }
 
   await run("node", ["scripts/build-catalog.mjs"]);
+  // Scan after catalog so new skills are in inventory and risk results stay current.
+  await run("node", ["scanner/bin/scan-skills.mjs", "--all-local"]);
   await run("node", ["scripts/smoke-test-skills.mjs"]);
 
   // Sample install of a few NVIDIA skills into a temp root to prove installer paths.
@@ -153,49 +213,6 @@ async function gitCommit(state) {
 
   await run("git", ["commit", "-m", msg]);
   console.log(`[${ts()}] git: committed — ${msg}`);
-}
-
-async function fingerprintSkills() {
-  const files = [];
-  await walk(SKILLS_ROOT, files);
-  files.sort((a, b) => a.path.localeCompare(b.path));
-  const hash = createHash("sha256");
-  for (const file of files) {
-    hash.update(file.path);
-    hash.update("\0");
-    hash.update(String(file.mtimeMs));
-    hash.update("\0");
-    hash.update(String(file.size));
-    hash.update("\n");
-  }
-  return hash.digest("hex");
-}
-
-async function walk(dir, out) {
-  let entries;
-  try {
-    entries = await readdir(dir, { withFileTypes: true });
-  } catch {
-    return;
-  }
-  for (const entry of entries) {
-    if (entry.name.startsWith(".") || entry.name === "node_modules" || entry.name === "__pycache__") continue;
-    const full = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      await walk(full, out);
-      continue;
-    }
-    if (!entry.isFile()) continue;
-    // Fingerprint skill sources (md/json/yaml/scripts) — skip large binaries.
-    const ext = path.extname(entry.name).toLowerCase();
-    if (![".md", ".json", ".yaml", ".yml", ".py", ".sh", ".ts", ".js", ".toml", ".txt"].includes(ext)) continue;
-    const info = await stat(full);
-    out.push({
-      path: path.relative(SKILLS_ROOT, full),
-      mtimeMs: info.mtimeMs,
-      size: info.size,
-    });
-  }
 }
 
 function run(command, commandArgs) {

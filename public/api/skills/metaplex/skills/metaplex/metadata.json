@@ -1,0 +1,7 @@
+{
+  "slug": "metaplex/skills/metaplex",
+  "name": "metaplex",
+  "description": "Metaplex development on Solana — NFTs, tokens, compressed NFTs, candy machines, token launches, autonomous agents. Use when working with Token Metadata, Core, Bubblegum, Candy Machine, Genesis, Agent Registry, or the mplx CLI.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/metaplex/skills/metaplex/SKILL.md"
+}

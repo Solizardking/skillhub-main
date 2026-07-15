@@ -580,6 +580,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "metaplex/skills/metaplex",
+      "name": "metaplex",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "model-usage",
       "name": "model-usage",
       "category": "Solana / Blockchain",

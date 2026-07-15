@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 568,
-  "catalogHash": "sha256-3d282606dade19ed51ec12a878aef032af9d7e3961dd101decff033913e6beae",
-  "merkleRoot": "sha256-d4ff6790b47aa8d55cbeecb2862482d00f437f7936a78e4e4c6ac11ee5d17712",
+  "totalSkills": 569,
+  "catalogHash": "sha256-61a40b494ac24a295f315f787853291b550762c88cd73aa06d0aed127fd0c65f",
+  "merkleRoot": "sha256-2e9407a5733c627fb0602ca54377cacf5d6dd376e39f09d884fdd745ea517553",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -498,6 +498,17 @@
       "fileCount": 10,
       "metadata": "/api/skills/magicblock/metadata.json",
       "verification": "/api/skills/magicblock/verification.json"
+    },
+    {
+      "slug": "metaplex/skills/metaplex",
+      "name": "metaplex",
+      "description": "Metaplex development on Solana — NFTs, tokens, compressed NFTs, candy machines, token launches, autonomous agents. Use when working with Token Metadata, Core, Bubblegum, Candy Machine, Genesis, Agent Registry, or the mplx CLI.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-9ace7b6d23503f4f5a984e2929198c25da85b18e2f7462e4d03d041703cca08e",
+      "merkleLeaf": "sha256-5d5b72df9780f42ce6efbe7ddf9de28ded942d7474cd71ac790c6037a4f3be6d",
+      "fileCount": 22,
+      "metadata": "/api/skills/metaplex/skills/metaplex/metadata.json",
+      "verification": "/api/skills/metaplex/skills/metaplex/verification.json"
     },
     {
       "slug": "model-usage",

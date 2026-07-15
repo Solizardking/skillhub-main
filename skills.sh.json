@@ -49,6 +49,7 @@
         "imperial-trade-execution",
         "imperial-twap-execution",
         "magicblock",
+        "metaplex/skills/metaplex",
         "model-usage",
         "openai-image-gen",
         "pay",

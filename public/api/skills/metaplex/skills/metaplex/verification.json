@@ -1,0 +1,129 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "metaplex/skills/metaplex",
+  "name": "metaplex",
+  "description": "Metaplex development on Solana — NFTs, tokens, compressed NFTs, candy machines, token launches, autonomous agents. Use when working with Token Metadata, Core, Bubblegum, Candy Machine, Genesis, Agent Registry, or the mplx CLI.",
+  "source": "https://skills.x402.wtf/api/skills/metaplex/skills/metaplex/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/metaplex/skills/metaplex/metadata.json",
+  "bundleHash": "sha256-9ace7b6d23503f4f5a984e2929198c25da85b18e2f7462e4d03d041703cca08e",
+  "merkleLeaf": "sha256-5d5b72df9780f42ce6efbe7ddf9de28ded942d7474cd71ac790c6037a4f3be6d",
+  "files": [
+    {
+      "path": "references/cli-agent.md",
+      "bytes": 8111,
+      "sha256": "sha256-2cb6463f3f017bb5e796cb56b27c1566c7944c163e2c1aa6bfee9e266cb02b38"
+    },
+    {
+      "path": "references/cli-bubblegum.md",
+      "bytes": 4951,
+      "sha256": "sha256-a1c8c89f4084bbcee848a8d8e3e6b766acc6687119cd684d8e606cf69b617948"
+    },
+    {
+      "path": "references/cli-candy-machine.md",
+      "bytes": 9359,
+      "sha256": "sha256-9f72634705cee3ffbd874c8b705d32a9d7b60f2a812807f05f7dbb1c3c2238bd"
+    },
+    {
+      "path": "references/cli-config.md",
+      "bytes": 1101,
+      "sha256": "sha256-83f10e25b1b1183f5db99d6eed6dfc11e094a6bf99c3cab069cd3beebf73be28"
+    },
+    {
+      "path": "references/cli-core.md",
+      "bytes": 7814,
+      "sha256": "sha256-0df9d5a3e82bef38f5199aba56a1f61fe3162f8316ebf10bb7658f8ebecfd4ee"
+    },
+    {
+      "path": "references/cli-genesis.md",
+      "bytes": 24030,
+      "sha256": "sha256-10210767ebbf63528d439727f4b7c5462087861df736fec5cd0fd55885ddc8ab"
+    },
+    {
+      "path": "references/cli-initial-setup.md",
+      "bytes": 2385,
+      "sha256": "sha256-3aceaa2a65299a3d27b5e4ae86009889d843e672e4ceb640ece4931cdf969f4e"
+    },
+    {
+      "path": "references/cli-token-metadata.md",
+      "bytes": 2656,
+      "sha256": "sha256-9bc772bcdf653ef7872d106e2d0a6351f410f4c7835f0ce8a4bead3af2801fe9"
+    },
+    {
+      "path": "references/cli-toolbox.md",
+      "bytes": 3415,
+      "sha256": "sha256-d3835a536744de9aeda2fb7739293fe6f432fb9f31c1e0a7f5ce9446723e368c"
+    },
+    {
+      "path": "references/cli-troubleshooting.md",
+      "bytes": 1917,
+      "sha256": "sha256-4de2e951e0404fb80c9bc2ca46b1f0ad4ad7e91e14856a222f9ec334f5a8dcfd"
+    },
+    {
+      "path": "references/cli.md",
+      "bytes": 5014,
+      "sha256": "sha256-7a91b8a47684389ce2b7576a0d8c7a356a5c7f94dc3c773d66c2898e432a9d95"
+    },
+    {
+      "path": "references/concepts.md",
+      "bytes": 11428,
+      "sha256": "sha256-923f791f6bfb910f716513892142a77bd66365aaedc7589c94bba7f559c57d2f"
+    },
+    {
+      "path": "references/metadata-json.md",
+      "bytes": 1377,
+      "sha256": "sha256-9f74c756e110fcf205c2ca7d807566e3824eec41d2b7551399575127f918a5c3"
+    },
+    {
+      "path": "references/sdk-agent.md",
+      "bytes": 21308,
+      "sha256": "sha256-5584261a48ba4bd4707406ac6a86f41069c81f98181d7ec64e68e0747e57d352"
+    },
+    {
+      "path": "references/sdk-bubblegum.md",
+      "bytes": 10502,
+      "sha256": "sha256-4f8b87238bb002397e2594d1f054edd46519969e3b5250a1cf0ba9658a0970c5"
+    },
+    {
+      "path": "references/sdk-core.md",
+      "bytes": 19703,
+      "sha256": "sha256-3dec422ceda37e62cfd8887e0e2852ffd6d1f6c3eee08a5e1d0f61adeacdbc63"
+    },
+    {
+      "path": "references/sdk-genesis-low-level.md",
+      "bytes": 21211,
+      "sha256": "sha256-9c35a8f0d822cfcfbe944291976efe313a6ff3beb517df0aa3db9e8c5abbd38b"
+    },
+    {
+      "path": "references/sdk-genesis.md",
+      "bytes": 23958,
+      "sha256": "sha256-c4a741c7c40886fd8672c5d0f180fdb1e0b8e27ce1135325ea36f2edb686c015"
+    },
+    {
+      "path": "references/sdk-token-metadata-kit.md",
+      "bytes": 7934,
+      "sha256": "sha256-92abe1bd4dd5b96d3fdae5b24adfce1923bf58e524b82d0898e4e9c0909d793b"
+    },
+    {
+      "path": "references/sdk-token-metadata.md",
+      "bytes": 12881,
+      "sha256": "sha256-9b4a908a8faf2d46abdc404e7eaeb1ff582e4325ee9cabfe7b7055a8f5ca06ab"
+    },
+    {
+      "path": "references/sdk-umi.md",
+      "bytes": 5478,
+      "sha256": "sha256-0dfdffdcf8ed43dbd6757081efb9eb43e15eead6644c8ec9fe2d0391a2f4154f"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 9519,
+      "sha256": "sha256-cf0ca3258490c77458dc664de1b160bbd099f0a4a852153d3d8ee6bcac362646"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

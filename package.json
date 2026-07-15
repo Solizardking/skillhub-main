@@ -59,11 +59,15 @@
     "publish:agentregistry:onchain:plan": "node scripts/sync-onchain-agentregistry.mjs --plan-only",
     "relay": "node scripts/skill-relay.mjs",
     "relay:watch": "node scripts/skill-relay.mjs --watch",
+    "relay:fast": "node scripts/skill-relay.mjs --fast",
     "relay:push": "node scripts/skill-relay.mjs --commit --push",
     "relay:upload": "node scripts/upload-relay-server.mjs",
     "relay:upload:dev": "SKILLHUB_PAYMENT_NETWORK=devnet node scripts/upload-relay-server.mjs",
+    "skills:process": "node scripts/skills-process.mjs",
+    "skills:watch": "node scripts/skills-process.mjs --watch",
     "ledger:export": "node scripts/export-public-ledger.mjs",
-    "test": "node scripts/build-catalog.mjs --check && node scripts/smoke-test-skills.mjs && node bin/skills.mjs list --json >/dev/null && node scripts/test-premiere-skills.mjs && node scripts/test-npm-pack.mjs"
+    "test": "node scripts/build-catalog.mjs --check && node scripts/smoke-test-skills.mjs && node bin/skills.mjs list --json >/dev/null && node scripts/test-premiere-skills.mjs && node scripts/test-npm-pack.mjs && node scripts/test-skills-process.mjs",
+    "test:skills-process": "node scripts/test-skills-process.mjs"
   },
   "engines": {
     "node": ">=18"
