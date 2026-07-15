@@ -3,14 +3,31 @@
 <img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />
 
 [![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)
-![Skills](https://img.shields.io/badge/skills-569-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-10-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-229_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-570-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-10-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-229_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
 
-**569 installable agent skills** — including a **69-skill Google integration** and a **229-skill NVIDIA stack** (CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2). Every one is a `SKILL.md` playbook your agent can pull off the shelf —
+**570 installable agent skills** — led by the **premiere [`metaplex-agent`](./skills/metaplex-agent/SKILL.md)** playbook (Metaplex Agent Registry, EIP-8004 identity, commerce, Genesis tokens), plus a **69-skill Google integration** and a **229-skill NVIDIA stack** (CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2). Every one is a `SKILL.md` playbook your agent can pull off the shelf —
 hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
 
 *Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️
 
 </div>
+
+---
+
+## 💎 Premiere: Metaplex Agent
+
+The hub’s **#1 premiere skill** packages every Metaplex agent operation into one installable playbook — onboarding, Core identity registration (EIP-8004), Asset Signer PDA, executive delegation, agent commerce (services / x402 / A2A), agent finance, and Genesis agent-token launch.
+
+```bash
+npx github:Solizardking/skills install metaplex-agent
+```
+
+| | |
+|---|---|
+| Skill | [`metaplex-agent`](./skills/metaplex-agent/SKILL.md) · [README](./skills/metaplex-agent/README.md) |
+| Full Metaplex programs | [`metaplex/skills/metaplex`](./skills/metaplex/skills/metaplex/SKILL.md) |
+| Covers | CLI/RPC setup · register · fetch · executive delegate/revoke · set-agent-token · LaunchPool / Bonding Curve · commerce primitives |
+| Docs | [metaplex.com/docs/agents](https://metaplex.com/docs/agents) |
 
 ---
 
@@ -20,7 +37,7 @@ Ten zones. Every skill lives in exactly one. Click a zone to jump to its catalog
 
 | Zone | Skills | Power level | What lives here |
 |---|---:|---|---|
-| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 108 | `████████░░░░░░░░░░` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
+| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 109 | `█████████░░░░░░░░░` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
 | [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 63 | `█████░░░░░░░░░░░░░` | Build, orchestrate, and ship with agent tooling |
 | [📣 **Google / Ads**](#-google--ads) | 11 | `█░░░░░░░░░░░░░░░░░` | Google Ads APIs, campaigns, and reporting |
 | [📈 **Google / Analytics**](#-google--analytics) | 2 | `█░░░░░░░░░░░░░░░░░` | GA4 data APIs and measurement |
@@ -37,7 +54,7 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 | Layer | What it contains | Main paths |
 |---|---|---|
-| Skill sources | 569 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/nvidia/*/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
+| Skill sources | 570 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/nvidia/*/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
 | Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |
 | Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |
 | Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |
@@ -49,12 +66,14 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 ### Source Families
 
-This is the same 569-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
+This is the same 570-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
 
 | Source family | Skills | What it covers |
 |---|---:|---|
+| `metaplex-agent/*` | 1 | Premiere #1: Metaplex Agent — EIP-8004 identity, Asset Signer, executive delegation, commerce, Genesis agent tokens. |
+| `metaplex/*` | 1 | Full Metaplex program skill: Core, Token Metadata, Bubblegum, Candy Machine, Genesis, and CLI/SDK references. |
 | `nvidia/*` | 229 | NVIDIA accelerated computing: CUDA/cuDF, Jetson BSP, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2, Dynamo, and digital health. |
-| `single/root skills` | 97 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
+| `single/root skills` | 96 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
 | `google/*` | 69 | Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills. |
 | `pump/pumpfun/*` | 24 | Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows. |
 | `vulcan/*` | 18 | Vulcan/Phoenix perps trading skills for onboarding, market intel, execution, grids, TWAP, TP/SL, margin, and risk. |
@@ -89,6 +108,9 @@ npx github:Solizardking/skills install    # straight from GitHub
 Or grab a **premiere** focused stack (the hub's lead offerings):
 
 ```bash
+# Premiere #1: Metaplex Agent (identity, commerce, Genesis agent token)
+npx github:Solizardking/skills install metaplex-agent
+
 # Premiere: engineering (TDD, implement, triage, architecture)
 npx github:Solizardking/skills install engineering/tdd engineering/implement engineering/triage engineering/codebase-design engineering/to-spec
 
@@ -111,7 +133,7 @@ Also available — NVIDIA, Google, and Solana stacks:
 # NVIDIA accelerated computing (Jetson, DeepStream, NeMo, cuOpt, CUDA-Q)
 npx github:Solizardking/skills install nvidia/jetson-quick-start nvidia/deepstream-dev nvidia/cudaq-guide nvidia/aiq-deploy nvidia/cuopt-developer
 
-npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock
+npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock metaplex/skills/metaplex
 npx github:Solizardking/skills install pumpfun pump-token-lifecycle pump-bonding-curve pump-security
 npx github:Solizardking/skills install compressed-pda compressed-token zk zkrouter
 npx github:Solizardking/skills install google/cloud/gcloud google/cloud/gke-basics google/cloud/bigquery-basics
@@ -127,7 +149,14 @@ npx github:Solizardking/skills install --eve                      # eve (agent/s
 
 ## 🌟 Featured Runs
 
-**Premiere loadouts first** — engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:
+**Premiere loadouts first** — **Metaplex Agent**, then engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:
+
+<details>
+<summary><strong>💎 Metaplex Agent mode</strong> — premiere: onboard, register EIP-8004 identity, delegate, commerce, Genesis agent token <em>(2 skills)</em></summary>
+
+[`metaplex-agent`](./skills/metaplex-agent/SKILL.md) · [`metaplex/skills/metaplex`](./skills/metaplex/skills/metaplex/SKILL.md)
+
+</details>
 
 <details>
 <summary><strong>🎯 Engineering mode</strong> — ship software the Matt Pocock way: TDD, triage, implement, architecture, specs, tickets <em>(17 skills)</em></summary>
@@ -247,7 +276,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🟣 Solana / Blockchain
 
-> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **108 skills**
+> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **109 skills**
 
 <details>
 <summary>Open the Solana / Blockchain cabinet</summary>
@@ -297,6 +326,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`imperial-trade-execution`](./skills/imperial-trade-execution/SKILL.md) | imperial-trade-execution | Safe Imperial live execution: authenticated market orders, Phoenix-first venue preference, profile-aware routing, and post-trade verification. |
 | [`imperial-twap-execution`](./skills/imperial-twap-execution/SKILL.md) | imperial-twap-execution | TWAP execution guidance for Imperial: slice planning, venue pinning, profile budgeting, and durable-runner requirements. |
 | [`magicblock`](./skills/magicblock/SKILL.md) | magicblock | MagicBlock Ephemeral Rollups development patterns for Solana. Covers delegation/undelegation flows, dual-connection architecture (base layer + ER), cranks for scheduled tasks, VRF for verifiable randomness, magic actions for atomic ER-commit + base-layer follow-ups, private payments API (deposits, transfers, withdrawals, swaps, and challenge/login auth flow), commit sponsorship and fee vault wiring, lamports top-up for delegated accounts, and TypeScript/Anchor integration. Use for high-performance gaming, real-time apps, private transfers and swaps, and fast transaction throughput on Solana. |
+| [`metaplex-agent`](./skills/metaplex-agent/SKILL.md) | metaplex-agent | Premiere Metaplex Agent skill — package every Metaplex agent operation into one playbook: CLI/RPC setup, wallet funding, Core identity registration (EIP-8004), Asset Signer PDA activation, executive delegation/revocation, agent commerce (services discovery, x402Support, A2A payments), agent finance, Genesis agent token launch (LaunchPool or Bonding Curve), and setAgentToken. Use when the user mentions Metaplex agents, Agent Registry, mplx agents, mintAndSubmitAgent, AgentIdentity, executive delegation, agent commerce, agent finance, agent token, EIP-8004 registration, or autonomous Solana agents on Metaplex. |
 | [`metaplex/skills/metaplex`](./skills/metaplex/skills/metaplex/SKILL.md) | metaplex | Metaplex development on Solana — NFTs, tokens, compressed NFTs, candy machines, token launches, autonomous agents. Use when working with Token Metadata, Core, Bubblegum, Candy Machine, Genesis, Agent Registry, or the mplx CLI. |
 | [`model-usage`](./skills/model-usage/SKILL.md) | model-usage | Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON. |
 | [`openai-image-gen`](./skills/openai-image-gen/SKILL.md) | openai-image-gen | Batch-generate images via OpenAI Images API. Random prompt sampler + `index.html` gallery. |

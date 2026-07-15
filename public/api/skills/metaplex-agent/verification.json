@@ -1,0 +1,54 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "metaplex-agent",
+  "name": "metaplex-agent",
+  "description": "Premiere Metaplex Agent skill — package every Metaplex agent operation into one playbook: CLI/RPC setup, wallet funding, Core identity registration (EIP-8004), Asset Signer PDA activation, executive delegation/revocation, agent commerce (services discovery, x402Support, A2A payments), agent finance, Genesis agent token launch (LaunchPool or Bonding Curve), and setAgentToken. Use when the user mentions Metaplex agents, Agent Registry, mplx agents, mintAndSubmitAgent, AgentIdentity, executive delegation, agent commerce, agent finance, agent token, EIP-8004 registration, or autonomous Solana agents on Metaplex.",
+  "source": "https://skills.x402.wtf/api/skills/metaplex-agent/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/metaplex-agent/metadata.json",
+  "bundleHash": "sha256-b3da0ea3a8cd9d6017870fa74a99976a4de97582ac88f2290ad4f688e37c6c5f",
+  "merkleLeaf": "sha256-2615668af9ca1d068cab3645173d810b70fb0303c8947b8beabfb0584e8d5793",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 4370,
+      "sha256": "sha256-269590e2d44d5ef3f9d1adddcd3e7f2675bfab63fc7b6bff7c42bea8c7e02328"
+    },
+    {
+      "path": "references/cli-agent.md",
+      "bytes": 8111,
+      "sha256": "sha256-2cb6463f3f017bb5e796cb56b27c1566c7944c163e2c1aa6bfee9e266cb02b38"
+    },
+    {
+      "path": "references/cli-genesis.md",
+      "bytes": 24030,
+      "sha256": "sha256-10210767ebbf63528d439727f4b7c5462087861df736fec5cd0fd55885ddc8ab"
+    },
+    {
+      "path": "references/cli-initial-setup.md",
+      "bytes": 2385,
+      "sha256": "sha256-3aceaa2a65299a3d27b5e4ae86009889d843e672e4ceb640ece4931cdf969f4e"
+    },
+    {
+      "path": "references/cli.md",
+      "bytes": 5014,
+      "sha256": "sha256-7a91b8a47684389ce2b7576a0d8c7a356a5c7f94dc3c773d66c2898e432a9d95"
+    },
+    {
+      "path": "references/sdk-agent.md",
+      "bytes": 21308,
+      "sha256": "sha256-5584261a48ba4bd4707406ac6a86f41069c81f98181d7ec64e68e0747e57d352"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 11021,
+      "sha256": "sha256-afb698e3681f740bc640e4c67091f81949f6aea17d88e0fbaa06d597071ef599"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

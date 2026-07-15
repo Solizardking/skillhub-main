@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 569,
-  "catalogHash": "sha256-61a40b494ac24a295f315f787853291b550762c88cd73aa06d0aed127fd0c65f",
-  "merkleRoot": "sha256-2e9407a5733c627fb0602ca54377cacf5d6dd376e39f09d884fdd745ea517553",
+  "totalSkills": 570,
+  "catalogHash": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4",
+  "merkleRoot": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -498,6 +498,17 @@
       "fileCount": 10,
       "metadata": "/api/skills/magicblock/metadata.json",
       "verification": "/api/skills/magicblock/verification.json"
+    },
+    {
+      "slug": "metaplex-agent",
+      "name": "metaplex-agent",
+      "description": "Premiere Metaplex Agent skill — package every Metaplex agent operation into one playbook: CLI/RPC setup, wallet funding, Core identity registration (EIP-8004), Asset Signer PDA activation, executive delegation/revocation, agent commerce (services discovery, x402Support, A2A payments), agent finance, Genesis agent token launch (LaunchPool or Bonding Curve), and setAgentToken. Use when the user mentions Metaplex agents, Agent Registry, mplx agents, mintAndSubmitAgent, AgentIdentity, executive delegation, agent commerce, agent finance, agent token, EIP-8004 registration, or autonomous Solana agents on Metaplex.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-b3da0ea3a8cd9d6017870fa74a99976a4de97582ac88f2290ad4f688e37c6c5f",
+      "merkleLeaf": "sha256-2615668af9ca1d068cab3645173d810b70fb0303c8947b8beabfb0584e8d5793",
+      "fileCount": 7,
+      "metadata": "/api/skills/metaplex-agent/metadata.json",
+      "verification": "/api/skills/metaplex-agent/verification.json"
     },
     {
       "slug": "metaplex/skills/metaplex",

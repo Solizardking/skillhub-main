@@ -91,11 +91,11 @@
       }
     ]
   },
-  "scannedAt": "2026-07-15T14:24:35.836Z",
+  "scannedAt": "2026-07-15T14:52:07.105Z",
   "source": {
     "catalog": "local SKILL.md crawl",
-    "canonicalSkills": 569,
-    "localSkills": 569,
+    "canonicalSkills": 570,
+    "localSkills": 570,
     "duplicatePublicSkillsExcluded": true
   },
   "onchain": {
@@ -104,9 +104,9 @@
     "cluster": "mainnet-beta",
     "status": "anchor-ready",
     "anchorState": "planned",
-    "totalSkills": 569,
-    "catalogHash": "sha256-61a40b494ac24a295f315f787853291b550762c88cd73aa06d0aed127fd0c65f",
-    "merkleRoot": "sha256-2e9407a5733c627fb0602ca54377cacf5d6dd376e39f09d884fdd745ea517553",
+    "totalSkills": 570,
+    "catalogHash": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4",
+    "merkleRoot": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -116,9 +116,9 @@
     "solanaSignature": null
   },
   "summary": {
-    "totalSkills": 569,
-    "localSkills": 569,
-    "onChainSkills": 397,
+    "totalSkills": 570,
+    "localSkills": 570,
+    "onChainSkills": 398,
     "offChainSkills": 172,
     "categories": {
       "Dev Tools / Agents": 63,
@@ -128,34 +128,34 @@
       "Local / Web Services": 9,
       "Media / Devices": 24,
       "Productivity / Messaging": 23,
-      "Solana / Blockchain": 108,
+      "Solana / Blockchain": 109,
       "Utilities": 44,
       "NVIDIA / Accelerated Computing": 229
     },
     "verification": {
-      "verified": 569,
+      "verified": 570,
       "changed": 0,
       "missing": 0,
       "error": 0
     },
     "risk": {
       "pass": 375,
-      "review": 188,
+      "review": 189,
       "required": 6
     },
     "findings": {
-      "total": 3474,
+      "total": 3523,
       "bySeverity": {
-        "INFO": 1317,
+        "INFO": 1361,
         "LOW": 149,
-        "MEDIUM": 181,
-        "HIGH": 1809,
+        "MEDIUM": 184,
+        "HIGH": 1811,
         "CRITICAL": 18
       }
     },
     "installs": {
       "knownSkillCount": 0,
-      "unknownSkillCount": 569,
+      "unknownSkillCount": 570,
       "totalKnownInstalls": 0,
       "source": "not tracked locally"
     }
@@ -26384,6 +26384,521 @@
           "file": "typescript-setup.md",
           "line": 89,
           "excerpt": "tx = await erProvider.wallet.signTransaction(tx);"
+        }
+      ]
+    },
+    {
+      "slug": "metaplex-agent",
+      "name": "metaplex-agent",
+      "description": "Premiere Metaplex Agent skill — package every Metaplex agent operation into one playbook: CLI/RPC setup, wallet funding, Core identity registration (EIP-8004), Asset Signer PDA activation, executive delegation/revocation, agent commerce (services discovery, x402Support, A2A payments), agent finance, Genesis agent token launch (LaunchPool or Bonding Curve), and setAgentToken. Use when the user mentions Metaplex agents, Agent Registry, mplx agents, mintAndSubmitAgent, AgentIdentity, executive delegation, agent commerce, agent finance, agent token, EIP-8004 registration, or autonomous Solana agents on Metaplex.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/metaplex-agent",
+      "skillPath": "skills/metaplex-agent/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install metaplex-agent",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-b3da0ea3a8cd9d6017870fa74a99976a4de97582ac88f2290ad4f688e37c6c5f",
+        "localBundleHash": "sha256-b3da0ea3a8cd9d6017870fa74a99976a4de97582ac88f2290ad4f688e37c6c5f",
+        "merkleLeaf": "sha256-2615668af9ca1d068cab3645173d810b70fb0303c8947b8beabfb0584e8d5793",
+        "localMerkleLeaf": "sha256-2615668af9ca1d068cab3645173d810b70fb0303c8947b8beabfb0584e8d5793",
+        "fileCount": 7,
+        "localFileCount": 7,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 46,
+        "maxSeverity": "HIGH",
+        "findingsCount": 49,
+        "bySeverity": {
+          "INFO": 44,
+          "LOW": 0,
+          "MEDIUM": 3,
+          "HIGH": 2,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 7,
+        "textFiles": 7,
+        "scriptFiles": 0,
+        "referenceFiles": 5,
+        "assetFiles": 0,
+        "bytesScanned": 76239,
+        "lineCount": 1967
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "README.md",
+          "line": 11,
+          "excerpt": "| **Requires** | Node.js; funded wallet ≥ ~0.2 SOL; dedicated RPC on mainnet |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "README.md",
+          "line": 58,
+          "excerpt": "## Quick start (devnet)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "README.md",
+          "line": 62,
+          "excerpt": "mplx config rpcs add devnet https://api.devnet.solana.com"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "README.md",
+          "line": 63,
+          "excerpt": "mplx config rpcs set devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "README.md",
+          "line": 86,
+          "excerpt": "- Mainnet registration needs a **dedicated RPC** — not the public devnet endpoint."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-genesis.md",
+          "line": 131,
+          "excerpt": "| `--network` | - | No | auto-detected | `solana-mainnet` or `solana-devnet` |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-genesis.md",
+          "line": 165,
+          "excerpt": "| `--network` | - | No | auto-detected | `solana-mainnet` or `solana-devnet` |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-genesis.md",
+          "line": 194,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-genesis.md",
+          "line": 214,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-genesis.md",
+          "line": 235,
+          "excerpt": "\"network\": \"solana-mainnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 7,
+          "excerpt": "Ask the user whether they have their own RPC provider (e.g., Helius, Triton, QuickNode) or want to use the default public RPCs. Public RPCs are rate-limited and may fail under load. Recommend adding RPCs for both devnet "
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 13,
+          "excerpt": "mplx config rpcs add mainnet <USER_MAINNET_RPC_URL>"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 14,
+          "excerpt": "mplx config rpcs add devnet <USER_DEVNET_RPC_URL>"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 17,
+          "excerpt": "mplx config rpcs add mainnet https://api.mainnet-beta.solana.com"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 18,
+          "excerpt": "mplx config rpcs add devnet https://api.devnet.solana.com"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 25,
+          "excerpt": "mplx config rpcs set <name> # e.g., mplx config rpcs set devnet"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "references/cli-initial-setup.md",
+          "line": 42,
+          "excerpt": "mplx config wallets add <wallet-name> ~/.config/solana/id.json"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 45,
+          "excerpt": "### 3. Fund Your Wallet (devnet)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 62,
+          "excerpt": "- **`No RPC URL configured`** — Ask the user for an RPC address, or default to devnet: `mplx config set rpcUrl https://api.devnet.solana.com`"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "references/cli-initial-setup.md",
+          "line": 63,
+          "excerpt": "- **`No keypair configured`** — Ask the user if they want to create a new CLI wallet (`mplx config wallets new <name> --hidden`) or add an existing Solana keypair (`mplx config wallets add <name> ~/.config/solana/id.json"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 64,
+          "excerpt": "- **`0 SOL`** — Airdrop on devnet: `mplx toolbox sol airdrop --amount 2` (devnet only)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli-initial-setup.md",
+          "line": 66,
+          "excerpt": "> **Mainnet Safety:** If RPC URL contains `mainnet`, confirm with user before executing commands that spend SOL."
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "references/cli.md",
+          "line": 6,
+          "excerpt": "npm install -g @metaplex-foundation/cli"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli.md",
+          "line": 122,
+          "excerpt": "https://core.metaplex.com/explorer/<ADDRESS>?env=devnet # Devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli.md",
+          "line": 123,
+          "excerpt": "https://core.metaplex.com/explorer/<ADDRESS> # Mainnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli.md",
+          "line": 126,
+          "excerpt": "https://explorer.solana.com/address/<MINT_ADDRESS>?cluster=devnet # Devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli.md",
+          "line": 127,
+          "excerpt": "https://explorer.solana.com/address/<MINT_ADDRESS> # Mainnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli.md",
+          "line": 130,
+          "excerpt": "https://explorer.solana.com/tx/<SIGNATURE>?cluster=devnet # Devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli.md",
+          "line": 131,
+          "excerpt": "https://explorer.solana.com/tx/<SIGNATURE> # Mainnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli.md",
+          "line": 134,
+          "excerpt": "> **IMPORTANT**: Always add `?env=devnet` or `?cluster=devnet` when on devnet."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/cli.md",
+          "line": 136,
+          "excerpt": "> **Localnet note**: The CLI generates devnet explorer links even when connected to localhost. For localnet, use Solana Explorer with a custom cluster URL: `https://explorer.solana.com/address/<ADDRESS>?cluster=custom&cu"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "references/sdk-agent.md",
+          "line": 15,
+          "excerpt": "npm install @metaplex-foundation/mpl-agent-registry"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/sdk-agent.md",
+          "line": 27,
+          "excerpt": "const umi = createUmi('https://api.mainnet-beta.solana.com')"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/sdk-agent.md",
+          "line": 45,
+          "excerpt": "const umi = createUmi('https://api.mainnet-beta.solana.com');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/sdk-agent.md",
+          "line": 74,
+          "excerpt": "| `network` | No | Target network (defaults to `solana-mainnet`) |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/sdk-agent.md",
+          "line": 115,
+          "excerpt": "`solana-mainnet` (default), `solana-devnet`, `localnet`, `eclipse-mainnet`, `sonic-mainnet`, `sonic-devnet`, `fogo-mainnet`, `fogo-testnet`"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/sdk-agent.md",
+          "line": 471,
+          "excerpt": "const umi = createUmi('https://api.mainnet-beta.solana.com');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/sdk-agent.md",
+          "line": 541,
+          "excerpt": "Same addresses on Mainnet and Devnet."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 34,
+          "excerpt": "**Mainnet:** requires a dedicated RPC (public devnet RPC is not for mainnet)."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 66,
+          "excerpt": "- Confirm **mainnet** before any spend; default exploratory work to **devnet**."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 79,
+          "excerpt": "# Devnet (default public OK for experimentation)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 80,
+          "excerpt": "mplx config rpcs add devnet https://api.devnet.solana.com"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 81,
+          "excerpt": "mplx config rpcs set devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 83,
+          "excerpt": "# Mainnet — dedicated RPC only (Helius / Triton / QuickNode / etc.)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 84,
+          "excerpt": "mplx config rpcs add mainnet <USER_MAINNET_RPC_URL>"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 85,
+          "excerpt": "mplx config rpcs set mainnet"
+        },
+        {
+          "ruleId": "VETTER_SECRET_PATH_ACCESS",
+          "severity": "MEDIUM",
+          "category": "data_exfiltration",
+          "message": "References local secret or credential paths.",
+          "file": "SKILL.md",
+          "line": 92,
+          "excerpt": "# or: mplx config wallets add agent-main ~/.config/solana/id.json"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 95,
+          "excerpt": "# devnet: mplx toolbox sol airdrop --amount 2"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 96,
+          "excerpt": "# mainnet: fund from an exchange / faucet the user controls"
         }
       ]
     },

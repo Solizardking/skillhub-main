@@ -1,18 +1,18 @@
 {
   "schemaVersion": "skillhub-skills-process-state/v1",
-  "updatedAt": "2026-07-15T14:24:36.109Z",
-  "reason": "one-shot",
-  "totalSkills": 569,
-  "inventorySlugs": 569,
-  "fingerprint": "589d55cbb62afcfc9e241a083274f43850157565bbc929a83460542b704fef0e",
+  "updatedAt": "2026-07-15T14:52:07.612Z",
+  "reason": "stable-run-2",
+  "totalSkills": 570,
+  "inventorySlugs": 570,
+  "fingerprint": "da5a8c420d75cf47c00faa7b04ad452e7c6a1e519b676a9cabeee9cfb78536f6",
   "addedDuringCycle": [],
   "removedDuringCycle": [],
-  "categorizedCount": 569,
+  "categorizedCount": 570,
   "readmeBadgeMatchesCatalog": true,
   "scan": {
-    "totalSkills": 569,
-    "findingsTotal": 3474,
-    "scannedAt": "2026-07-15T14:24:35.836Z",
+    "totalSkills": 570,
+    "findingsTotal": 3523,
+    "scannedAt": "2026-07-15T14:52:07.105Z",
     "mode": "all-local",
     "skillSlugs": [
       "agent-desktop",
@@ -246,6 +246,7 @@
       "imperial-trade-execution",
       "imperial-twap-execution",
       "magicblock",
+      "metaplex-agent",
       "metaplex/skills/metaplex",
       "model-usage",
       "openai-image-gen",
@@ -586,5 +587,5 @@
       "nvidia/vss-summarize-video"
     ]
   },
-  "durationMs": 8069
+  "durationMs": 10374
 }

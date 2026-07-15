@@ -11,9 +11,9 @@
     "skillsStore": "https://cheshireterminal.ai/skills-store"
   },
   "generatedAt": "1970-01-01T00:00:00.000Z",
-  "totalSkills": 569,
+  "totalSkills": 570,
   "categories": {
-    "Solana / Blockchain": 108,
+    "Solana / Blockchain": 109,
     "Dev Tools / Agents": 63,
     "Google / Ads": 11,
     "Google / Analytics": 2,
@@ -79,8 +79,8 @@
   "verification": {
     "chain": "solana",
     "status": "anchor-ready",
-    "merkleRoot": "sha256-2e9407a5733c627fb0602ca54377cacf5d6dd376e39f09d884fdd745ea517553",
-    "catalogHash": "sha256-61a40b494ac24a295f315f787853291b550762c88cd73aa06d0aed127fd0c65f"
+    "merkleRoot": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c",
+    "catalogHash": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4"
   },
   "monetization": {
     "onchain": "Solana Pay tip URI per skill card",
