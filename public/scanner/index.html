@@ -4,28 +4,33 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Skill Verification Hub</title>
-  <link rel="icon" href="./hub-graph.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="/assets/clawd-lobster-logo.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#05050a">
   <style>
     :root {
       color-scheme: dark;
-      --bg: #0b0f0e;
-      --panel: #151b19;
-      --panel-strong: #1b2421;
-      --ink: #edf7f3;
-      --muted: #9baba6;
-      --line: #2b3834;
-      --green: #39d7a6;
-      --blue: #75a8ff;
+      --bg: #05050a;
+      --panel: #0f1018;
+      --panel-strong: #151622;
+      --ink: #f4f2ff;
+      --muted: #9a96b0;
+      --line: #2a2540;
+      --green: #14F195;
+      --blue: #00C2FF;
       --amber: #e8b44e;
-      --red: #ff8b82;
+      --red: #ff6b8a;
       --red-deep: #c2564f;
-      --purple: #b99cff;
-      --soft-green: rgba(57, 215, 166, 0.14);
-      --soft-blue: rgba(117, 168, 255, 0.14);
+      --purple: #9945FF;
+      --soft-green: rgba(20, 241, 149, 0.14);
+      --soft-blue: rgba(0, 194, 255, 0.12);
       --soft-amber: rgba(232, 180, 78, 0.14);
-      --soft-red: rgba(255, 139, 130, 0.14);
-      --soft-purple: rgba(185, 156, 255, 0.14);
-      --shadow: 0 1px 2px rgba(0, 0, 0, 0.28), 0 18px 42px rgba(0, 0, 0, 0.24);
+      --soft-red: rgba(255, 107, 138, 0.14);
+      --soft-purple: rgba(153, 69, 255, 0.16);
+      --gradient: linear-gradient(135deg, #9945FF 0%, #14F195 100%);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 18px 48px rgba(153, 69, 255, 0.12);
     }
 
     * {
@@ -35,7 +40,7 @@
     body {
       margin: 0;
       background:
-        linear-gradient(180deg, #121815 0%, var(--bg) 58%, #0f100c 100%);
+        radial-gradient(1200px 600px at 8% -12%, rgba(153, 69, 255, 0.22), transparent 55%), radial-gradient(900px 500px at 100% 0%, rgba(20, 241, 149, 0.14), transparent 52%), linear-gradient(180deg, #0a0614 0%, var(--bg) 48%, #030308 100%);
       color: var(--ink);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.45;
@@ -89,32 +94,35 @@
 
     .mark {
       position: relative;
-      width: 44px;
-      height: 44px;
-      border: 1px solid var(--green);
-      border-radius: 8px;
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      border: 1px solid transparent;
       background:
-        linear-gradient(90deg, transparent 48%, rgba(57, 215, 166, 0.34) 48% 52%, transparent 52%),
-        linear-gradient(0deg, transparent 48%, rgba(117, 168, 255, 0.26) 48% 52%, transparent 52%),
-        var(--panel-strong);
+        linear-gradient(var(--panel-strong), var(--panel-strong)) padding-box,
+        var(--gradient) border-box;
+      box-shadow: 0 0 24px rgba(153, 69, 255, 0.35), 0 0 40px rgba(20, 241, 149, 0.12);
       flex: 0 0 auto;
-      animation: mark-shift 8s ease-in-out infinite;
+      overflow: hidden;
+      padding: 0;
     }
 
-    .mark::after {
-      content: "";
-      position: absolute;
-      inset: 9px;
-      border: 1px solid rgba(232, 180, 78, 0.7);
-      border-radius: 4px;
-      animation: mark-scan 2.8s ease-in-out infinite;
+    .mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     h1 {
       margin: 0;
       font-size: 31px;
       line-height: 1.08;
-      letter-spacing: 0;
+      letter-spacing: -0.02em;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
 
     .subhead {
@@ -867,7 +875,7 @@
   <main class="shell">
     <header class="topbar">
       <div class="brand">
-        <div class="mark" aria-hidden="true"></div>
+        <div class="mark" aria-hidden="true"><img src="/assets/clawd-lobster-logo.png" alt="" width="48" height="48"></div>
         <div>
           <h1>Skill Verification Hub</h1>
           <p class="subhead"><span class="pulse-dot" aria-hidden="true"></span><span id="scanMeta">Loading scanner results</span></p>

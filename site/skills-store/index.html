@@ -6,24 +6,82 @@
   <title>Cheshire Skills Store — Skill Hub</title>
   <meta name="description" content="Curated Cheshire Terminal skills mirrored and verified by Skill Hub.">
   <link rel="canonical" href="https://skills.x402.wtf/skills-store">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="/assets/clawd-lobster-logo.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#05050a">
   <style>
-    :root{color-scheme:dark;--bg:#0b0f0e;--panel:#151b19;--ink:#edf7f3;--muted:#9baba6;--line:#2b3834;--green:#39d7a6;--blue:#75a8ff}
-    *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#121815,var(--bg));color:var(--ink);font:15px/1.55 Inter,system-ui,sans-serif}
-    a{color:inherit}.shell{width:min(1050px,calc(100% - 32px));margin:auto;padding:24px 0 60px}header{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;flex-wrap:wrap}
-    .brand{text-decoration:none;font-weight:850;font-size:1.25rem}.nav{display:flex;gap:8px;flex-wrap:wrap}.nav a,.button{padding:8px 12px;border:1px solid var(--line);border-radius:9px;text-decoration:none;font-weight:750;font-size:13px;background:var(--panel)}
-    .hero{padding:56px 0 30px}.kicker{color:var(--green);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}.hero h1{font-size:clamp(2rem,6vw,4rem);line-height:1.02;margin:10px 0 14px}.hero p{max-width:700px;color:var(--muted);font-size:1.05rem}.hero .button{display:inline-block;background:var(--green);color:#06110f;border-color:var(--green);margin-top:12px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px}.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}.card h2{font-size:1.1rem;margin:0 0 7px}.card p{color:var(--muted);margin:0 0 14px;min-height:68px}.links{display:flex;gap:12px;flex-wrap:wrap}.links a{color:var(--blue);font-weight:750;font-size:13px}code{font:12px ui-monospace,SFMono-Regular,monospace}.note{margin-top:24px;padding:16px;border:1px solid var(--line);border-radius:12px;color:var(--muted)}
+    :root{
+      color-scheme:dark;
+      --bg:#05050a;--panel:#0f1018;--panel-strong:#151622;--ink:#f4f2ff;--muted:#9a96b0;
+      --line:#2a2540;--green:#14F195;--blue:#00C2FF;--purple:#9945FF;
+      --soft-green:rgba(20,241,149,.14);--soft-purple:rgba(153,69,255,.16);
+      --gradient:linear-gradient(135deg,#9945FF 0%,#14F195 100%);
+      --shadow:0 1px 2px rgba(0,0,0,.4),0 18px 48px rgba(153,69,255,.12);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;color:var(--ink);font:15px/1.55 Inter,system-ui,sans-serif;min-height:100vh;
+      background:
+        radial-gradient(1200px 600px at 8% -12%, rgba(153,69,255,.22), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(20,241,149,.14), transparent 52%),
+        linear-gradient(180deg,#0a0614 0%,var(--bg) 48%,#030308 100%);
+    }
+    a{color:inherit}
+    .shell{width:min(1050px,calc(100% - 32px));margin:auto;padding:24px 0 60px}
+    header{display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid var(--line);padding-bottom:18px;flex-wrap:wrap}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+    .mark{
+      width:44px;height:44px;border-radius:50%;overflow:hidden;border:1px solid transparent;padding:0;
+      background:linear-gradient(var(--panel-strong),var(--panel-strong)) padding-box,var(--gradient) border-box;
+      box-shadow:0 0 20px rgba(153,69,255,.35);
+    }
+    .mark img{width:100%;height:100%;object-fit:cover;display:block}
+    .brand-title{font-weight:850;font-size:1.25rem;background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .nav{display:flex;gap:8px;flex-wrap:wrap}
+    .nav a,.button{padding:8px 12px;border:1px solid var(--line);border-radius:9px;text-decoration:none;font-weight:750;font-size:13px;background:var(--panel-strong)}
+    .hero{padding:56px 0 30px}
+    .kicker{color:var(--purple);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.1em}
+    .hero h1{font-size:clamp(2rem,6vw,4rem);line-height:1.02;margin:10px 0 14px;letter-spacing:-.02em}
+    .hero h1 span{background:var(--gradient);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{max-width:700px;color:var(--muted);font-size:1.05rem}
+    .hero .button{display:inline-block;background:var(--green);color:#04150f;border-color:var(--green);margin-top:12px;box-shadow:0 0 20px rgba(20,241,149,.25)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:12px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:var(--shadow)}
+    .card h2{font-size:1.1rem;margin:0 0 7px}
+    .card p{color:var(--muted);margin:0 0 14px;min-height:68px}
+    .links{display:flex;gap:12px;flex-wrap:wrap}
+    .links a{color:var(--blue);font-weight:750;font-size:13px}
+    code{font:12px ui-monospace,SFMono-Regular,monospace}
+    .note{margin-top:24px;padding:16px;border:1px solid var(--line);border-radius:12px;color:var(--muted);background:var(--panel)}
   </style>
 </head>
 <body><div class="shell">
-  <header><a class="brand" href="/">Skill Hub</a><nav class="nav"><a href="/">Catalog</a><a href="/publish">Publish</a><a href="/submissions">Submissions</a><a href="/scanner">Scanner</a></nav></header>
+  <header>
+    <a class="brand" href="/">
+      <div class="mark"><img src="/assets/clawd-lobster-logo.png" alt="" width="44" height="44"></div>
+      <span class="brand-title">Skill Hub</span>
+    </a>
+    <nav class="nav">
+      <a href="/">Catalog</a>
+      <a href="/publish">Publish</a>
+      <a href="/submissions">Submissions</a>
+      <a href="/scanner">Scanner</a>
+    </nav>
+  </header>
   <main>
-    <section class="hero"><div class="kicker">Cheshire Terminal × Skill Hub</div><h1>Cheshire Skills Store</h1><p>Curated Cheshire Terminal packages, mirrored into Skill Hub with public metadata, bundle verification, scanner results, and one-command installation.</p><a class="button" href="https://cheshireterminal.ai/skills-store" target="_blank" rel="noopener">Open canonical Cheshire store ↗</a></section>
+    <section class="hero">
+      <div class="kicker">Cheshire Terminal × Skill Hub</div>
+      <h1>Cheshire <span>Skills Store</span></h1>
+      <p>Curated Cheshire Terminal packages, mirrored into Skill Hub with public metadata, bundle verification, scanner results, and one-command installation.</p>
+      <a class="button" href="https://cheshireterminal.ai/skills-store" target="_blank" rel="noopener">Open canonical Cheshire store ↗</a>
+    </section>
     <section class="grid" id="skills"><div class="card">Loading verified store skills…</div></section>
     <div class="note">Install any package with <code>npx github:Solizardking/skills install &lt;skill-name&gt;</code>. The canonical source store remains <a href="https://cheshireterminal.ai/skills-store">cheshireterminal.ai/skills-store</a>.</div>
   </main>
 </div><script>
 const names=["cheshire-api","google-agent-registry","posthog-cheshire","skillhub-onchain","solana-common-errors","stripe"];
 const esc=s=>String(s).replace(/[&<>\"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
-fetch('/api/skills.json').then(r=>r.json()).then(data=>{const rows=(data.skills||data).filter(s=>names.includes(s.slug));document.querySelector('#skills').innerHTML=rows.map(s=>`<article class="card"><h2>${esc(s.name)}</h2><p>${esc(s.description)}</p><div class="links"><a href="/api/skills/${encodeURIComponent(s.slug)}/SKILL.md">Read skill</a><a href="/api/skills/${encodeURIComponent(s.slug)}/verification.json">Verify bundle</a></div></article>`).join('')}).catch(e=>document.querySelector('#skills').innerHTML=`<div class="card">Catalog unavailable: ${esc(e.message)}</div>`);
+fetch('/api/skills.json').then(r=>r.json()).then(data=>{const rows=(data.skills||data).filter(s=>names.includes(s.slug));document.querySelector('#skills').innerHTML=rows.map(s=>`<article class="card"><h2>${esc(s.name)}</h2><p>${esc(s.description)}</p><div class="links"><a href="/api/skills/${encodeURIComponent(s.slug)}/SKILL.md">Read skill</a><a href="/api/skills/${encodeURIComponent(s.slug)}/verification.json">Verify bundle</a></div></article>`).join('')||'<div class="card">No curated store skills found in catalog.</div>'}).catch(e=>document.querySelector('#skills').innerHTML=`<div class="card">Catalog unavailable: ${esc(e.message)}</div>`);
 </script></body></html>

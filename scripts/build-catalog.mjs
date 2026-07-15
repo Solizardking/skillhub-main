@@ -325,6 +325,7 @@ async function renderPublic(skills) {
   files.set("sitemap.xml", renderSitemap(catalog));
   files.set(".nojekyll", "");
   files.set("favicon.svg", renderFavicon());
+  await addBrandAssets(files);
   files.set("index.html", renderIndexHtml(catalog));
   files.set("skills/index.html", renderIndexHtml(catalog));
   await addScannerDashboard(files);
@@ -377,6 +378,29 @@ async function addScannerDashboard(files) {
     const absolutePath = path.join(scannerPublicDir, file);
     if (!existsSync(absolutePath)) continue;
     files.set(`scanner/${file}`, await readFile(absolutePath));
+  }
+}
+
+/** Brand logo + favicon PNGs (Clawd lobster / Solana neon mark). */
+async function addBrandAssets(files) {
+  const logo192 = path.join(ROOT, "assets", "clawd-lobster-logo-192.png");
+  const logo512 = path.join(ROOT, "assets", "clawd-lobster-logo-512.png");
+  const faviconPng = path.join(ROOT, "assets", "favicon.png");
+  const logoFull = path.join(ROOT, "assets", "clawd-lobster-logo.png");
+
+  if (existsSync(logo192)) {
+    const buf = await readFile(logo192);
+    files.set("assets/clawd-lobster-logo.png", buf);
+    files.set("apple-touch-icon.png", buf);
+  } else if (existsSync(logoFull)) {
+    const buf = await readFile(logoFull);
+    files.set("assets/clawd-lobster-logo.png", buf);
+  }
+  if (existsSync(logo512)) {
+    files.set("assets/clawd-lobster-logo-512.png", await readFile(logo512));
+  }
+  if (existsSync(faviconPng)) {
+    files.set("favicon.png", await readFile(faviconPng));
   }
 }
 
@@ -1456,28 +1480,36 @@ function renderIndexHtml(catalog) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Skill Hub</title>
   <link rel="canonical" href="${SITE_URL}/skills">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="/assets/clawd-lobster-logo.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#05050a">
   <style>
     :root {
       color-scheme: dark;
-      --bg: #0b0f0e;
-      --panel: #151b19;
-      --panel-strong: #1b2421;
-      --ink: #edf7f3;
-      --muted: #9baba6;
-      --line: #2b3834;
-      --green: #39d7a6;
-      --blue: #75a8ff;
+      /* Solana neon palette — purple #9945FF × green #14F195 on deep black */
+      --bg: #05050a;
+      --panel: #0f1018;
+      --panel-strong: #151622;
+      --ink: #f4f2ff;
+      --muted: #9a96b0;
+      --line: #2a2540;
+      --green: #14F195;
+      --solana-green: #14F195;
+      --purple: #9945FF;
+      --solana-purple: #9945FF;
+      --blue: #00C2FF;
       --amber: #e8b44e;
-      --purple: #b99cff;
-      --red: #ff8b82;
-      --chip: #1d2a26;
-      --soft-green: rgba(57, 215, 166, 0.14);
-      --soft-blue: rgba(117, 168, 255, 0.14);
+      --red: #ff6b8a;
+      --chip: #1a1528;
+      --soft-green: rgba(20, 241, 149, 0.14);
+      --soft-blue: rgba(0, 194, 255, 0.12);
       --soft-amber: rgba(232, 180, 78, 0.14);
-      --soft-red: rgba(255, 139, 130, 0.14);
-      --soft-purple: rgba(185, 156, 255, 0.14);
-      --shadow: 0 1px 2px rgba(0, 0, 0, 0.28), 0 18px 42px rgba(0, 0, 0, 0.24);
+      --soft-red: rgba(255, 107, 138, 0.14);
+      --soft-purple: rgba(153, 69, 255, 0.16);
+      --gradient: linear-gradient(135deg, #9945FF 0%, #14F195 100%);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 18px 48px rgba(153, 69, 255, 0.12);
     }
 
     * {
@@ -1487,10 +1519,13 @@ function renderIndexHtml(catalog) {
     body {
       margin: 0;
       background:
-        linear-gradient(180deg, #121815 0%, var(--bg) 58%, #0f100c 100%);
+        radial-gradient(1200px 600px at 8% -12%, rgba(153, 69, 255, 0.22), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(20, 241, 149, 0.14), transparent 52%),
+        linear-gradient(180deg, #0a0614 0%, var(--bg) 48%, #030308 100%);
       color: var(--ink);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.45;
+      min-height: 100vh;
     }
 
     a {
@@ -1531,32 +1566,35 @@ function renderIndexHtml(catalog) {
 
     .mark {
       position: relative;
-      width: 48px;
-      height: 48px;
-      border: 1px solid var(--green);
-      border-radius: 8px;
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      border: 1px solid transparent;
       background:
-        linear-gradient(90deg, transparent 48%, rgba(57, 215, 166, 0.34) 48% 52%, transparent 52%),
-        linear-gradient(0deg, transparent 48%, rgba(117, 168, 255, 0.26) 48% 52%, transparent 52%),
-        var(--panel-strong);
+        linear-gradient(var(--panel-strong), var(--panel-strong)) padding-box,
+        var(--gradient) border-box;
+      box-shadow: 0 0 24px rgba(153, 69, 255, 0.35), 0 0 40px rgba(20, 241, 149, 0.12);
       flex: 0 0 auto;
-      animation: mark-shift 8s ease-in-out infinite;
+      overflow: hidden;
+      padding: 0;
     }
 
-    .mark::after {
-      content: "";
-      position: absolute;
-      inset: 10px;
-      border: 1px solid rgba(109, 40, 217, 0.55);
-      border-radius: 4px;
-      animation: mark-scan 2.8s ease-in-out infinite;
+    .mark img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
     h1 {
       margin: 0;
       font-size: 31px;
       line-height: 1.08;
-      letter-spacing: 0;
+      letter-spacing: -0.02em;
+      background: var(--gradient);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
 
     .subhead {
@@ -1595,13 +1633,14 @@ function renderIndexHtml(catalog) {
     .copy-action {
       border-color: var(--green);
       background: var(--green);
-      color: #06110f;
+      color: #04150f;
+      box-shadow: 0 0 20px rgba(20, 241, 149, 0.25);
     }
 
     .open-action {
-      border-color: rgba(117, 168, 255, 0.28);
-      background: var(--soft-blue);
-      color: #cfe0ff;
+      border-color: rgba(153, 69, 255, 0.4);
+      background: var(--soft-purple);
+      color: #e8dcff;
     }
 
     .toolbar {
@@ -1631,8 +1670,14 @@ function renderIndexHtml(catalog) {
     select:focus,
     button:focus-visible,
     a:focus-visible {
-      outline: 3px solid rgba(117, 168, 255, 0.28);
+      outline: 3px solid rgba(153, 69, 255, 0.45);
       outline-offset: 1px;
+    }
+
+    input,
+    select {
+      background: #0c0c14;
+      border-color: var(--line);
     }
 
     .stats {
@@ -1691,7 +1736,7 @@ function renderIndexHtml(catalog) {
       left: -45%;
       width: 45%;
       height: 2px;
-      background: linear-gradient(90deg, transparent, var(--green), var(--blue), transparent);
+      background: linear-gradient(90deg, transparent, var(--purple), var(--green), transparent);
       animation: ops-scan 4.8s linear infinite;
     }
 
@@ -1808,16 +1853,16 @@ function renderIndexHtml(catalog) {
       border: 1px solid var(--line);
       border-radius: 999px;
       background: var(--chip);
-      color: #d9e8e3;
+      color: #e6e0ff;
       font-size: 12px;
       font-weight: 700;
       white-space: nowrap;
     }
 
     .badge.green {
-      border-color: rgba(57, 215, 166, 0.32);
+      border-color: rgba(20, 241, 149, 0.35);
       background: var(--soft-green);
-      color: #91f1d2;
+      color: #7dffc9;
     }
 
     .badge.amber {
@@ -1827,7 +1872,7 @@ function renderIndexHtml(catalog) {
     }
 
     .badge.red {
-      border-color: rgba(255, 139, 130, 0.34);
+      border-color: rgba(255, 107, 138, 0.34);
       background: var(--soft-red);
       color: var(--red);
     }
@@ -1874,8 +1919,8 @@ function renderIndexHtml(catalog) {
 
     .map-card:hover,
     .map-card[aria-pressed="true"] {
-      border-color: rgba(117, 168, 255, 0.48);
-      box-shadow: 0 0 0 1px rgba(117, 168, 255, 0.15), var(--shadow);
+      border-color: rgba(153, 69, 255, 0.55);
+      box-shadow: 0 0 0 1px rgba(153, 69, 255, 0.2), 0 0 28px rgba(20, 241, 149, 0.08), var(--shadow);
       transform: translateY(-1px);
     }
 
@@ -1903,7 +1948,7 @@ function renderIndexHtml(catalog) {
       height: 8px;
       overflow: hidden;
       border-radius: 999px;
-      background: #25312e;
+      background: #1a1528;
     }
 
     .rail span {
@@ -1911,7 +1956,7 @@ function renderIndexHtml(catalog) {
       height: 100%;
       width: var(--rail);
       border-radius: inherit;
-      background: linear-gradient(90deg, var(--green), var(--blue), var(--purple));
+      background: linear-gradient(90deg, var(--purple), var(--blue), var(--green));
       animation: rail-flow 3.2s linear infinite;
       background-size: 180% 100%;
     }
@@ -1944,8 +1989,8 @@ function renderIndexHtml(catalog) {
     }
 
     .skill-card:hover {
-      border-color: rgba(117, 168, 255, 0.38);
-      box-shadow: var(--shadow);
+      border-color: rgba(153, 69, 255, 0.45);
+      box-shadow: 0 0 32px rgba(153, 69, 255, 0.12), var(--shadow);
       transform: translateY(-2px);
     }
 
@@ -2208,7 +2253,9 @@ function renderIndexHtml(catalog) {
   <main class="shell">
     <header>
       <div class="brand">
-        <div class="mark" aria-hidden="true"></div>
+        <div class="mark" aria-hidden="true">
+          <img src="/assets/clawd-lobster-logo.png" alt="" width="52" height="52">
+        </div>
         <div>
           <h1>Skill Hub</h1>
           <p class="subhead">${catalog.length} repo-local skills mapped by zone, trigger text, install target, and verification surface.</p>
@@ -2750,10 +2797,20 @@ function renderIndexHtml(catalog) {
 }
 
 function renderFavicon() {
+  // Fallback vector when PNG favicon is unavailable; Solana purple × green neon ring.
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#111715"/>
-  <path d="M12 20h40M12 32h40M12 44h40" stroke="#39d7a6" stroke-width="6" stroke-linecap="round"/>
-  <path d="M22 12v40M42 12v40" stroke="#e8b44e" stroke-width="6" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#9945FF"/>
+      <stop offset="100%" stop-color="#14F195"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="32" fill="#05050a"/>
+  <circle cx="32" cy="32" r="28" fill="none" stroke="url(#g)" stroke-width="3"/>
+  <path d="M22 38c4 6 16 6 20 0" fill="none" stroke="url(#g)" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="24" cy="28" r="2.2" fill="#9945FF"/>
+  <circle cx="40" cy="28" r="2.2" fill="#14F195"/>
+  <path d="M28 18h8l-2 6h4l-8 12 2-8h-4z" fill="url(#g)" opacity="0.95"/>
 </svg>
 `;
 }

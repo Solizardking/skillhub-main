@@ -5,35 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Publish Skill — Skill Hub</title>
   <meta name="description" content="Upload an agent skill, run the security scanner, pay a Solana fee, and anchor it on-chain.">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="/assets/clawd-lobster-logo.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="theme-color" content="#05050a">
   <link rel="canonical" href="https://skills.onchainai.fund/publish">
   <style>
     :root {
       color-scheme: dark;
-      --bg: #0b0f0e;
-      --panel: #151b19;
-      --panel-strong: #1b2421;
-      --ink: #edf7f3;
-      --muted: #9baba6;
-      --line: #2b3834;
-      --green: #39d7a6;
-      --blue: #75a8ff;
+      --bg: #05050a;
+      --panel: #0f1018;
+      --panel-strong: #151622;
+      --ink: #f4f2ff;
+      --muted: #9a96b0;
+      --line: #2a2540;
+      --green: #14F195;
+      --blue: #00C2FF;
       --amber: #e8b44e;
-      --purple: #b99cff;
-      --red: #ff8b82;
-      --chip: #1d2a26;
-      --soft-green: rgba(57, 215, 166, 0.14);
-      --soft-blue: rgba(117, 168, 255, 0.14);
+      --purple: #9945FF;
+      --red: #ff6b8a;
+      --chip: #1a1528;
+      --soft-green: rgba(20, 241, 149, 0.14);
+      --soft-blue: rgba(0, 194, 255, 0.12);
       --soft-amber: rgba(232, 180, 78, 0.14);
-      --soft-red: rgba(255, 139, 130, 0.14);
-      --soft-purple: rgba(185, 156, 255, 0.14);
-      --shadow: 0 1px 2px rgba(0, 0, 0, 0.28), 0 18px 42px rgba(0, 0, 0, 0.24);
+      --soft-red: rgba(255, 107, 138, 0.14);
+      --soft-purple: rgba(153, 69, 255, 0.16);
+      --gradient: linear-gradient(135deg, #9945FF 0%, #14F195 100%);
+      --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 18px 48px rgba(153, 69, 255, 0.12);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       min-height: 100vh;
-      background: linear-gradient(180deg, #121815 0%, var(--bg) 58%, #0f100c 100%);
+      background:
+        radial-gradient(1200px 600px at 8% -12%, rgba(153, 69, 255, 0.22), transparent 55%),
+        radial-gradient(900px 500px at 100% 0%, rgba(20, 241, 149, 0.14), transparent 52%),
+        linear-gradient(180deg, #0a0614 0%, var(--bg) 48%, #030308 100%);
       color: var(--ink);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       line-height: 1.5;
@@ -49,14 +57,16 @@
     }
     .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
     .mark {
-      width: 40px; height: 40px; border-radius: 8px; border: 1px solid var(--green);
-      background:
-        linear-gradient(90deg, transparent 48%, rgba(57,215,166,.34) 48% 52%, transparent 52%),
-        linear-gradient(0deg, transparent 48%, rgba(117,168,255,.26) 48% 52%, transparent 52%),
-        var(--panel-strong);
-      flex: 0 0 auto;
+      width: 44px; height: 44px; border-radius: 50%; border: 1px solid transparent;
+      background: linear-gradient(var(--panel-strong), var(--panel-strong)) padding-box, var(--gradient) border-box;
+      box-shadow: 0 0 20px rgba(153, 69, 255, 0.35);
+      flex: 0 0 auto; overflow: hidden; padding: 0;
     }
-    .brand h1 { margin: 0; font-size: 1.25rem; letter-spacing: -.01em; }
+    .mark img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .brand h1 {
+      margin: 0; font-size: 1.25rem; letter-spacing: -.01em;
+      background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
     .brand p { margin: 2px 0 0; color: var(--muted); font-size: 13px; }
     .nav { display: flex; flex-wrap: wrap; gap: 8px; }
     .nav a, .wallet-btn {
@@ -67,18 +77,21 @@
     }
     .wallet-btn.connected { border-color: var(--green); background: var(--soft-green); color: var(--green); }
     .wallet-btn.primary, .btn-primary {
-      border-color: var(--green); background: var(--green); color: #06110f;
+      border-color: var(--green); background: var(--green); color: #04150f;
+      box-shadow: 0 0 20px rgba(20, 241, 149, 0.25);
     }
     .wallet-btn:disabled, .btn:disabled { opacity: .5; cursor: not-allowed; }
 
     .hero { margin-bottom: 28px; }
     .kicker {
       display: inline-flex; align-items: center; gap: 8px; font-size: 11px; letter-spacing: .08em;
-      text-transform: uppercase; color: var(--green); background: var(--soft-green);
-      border: 1px solid rgba(57,215,166,.45); padding: 5px 11px; border-radius: 999px; margin-bottom: 14px;
+      text-transform: uppercase; color: var(--purple); background: var(--soft-purple);
+      border: 1px solid rgba(153, 69, 255, .45); padding: 5px 11px; border-radius: 999px; margin-bottom: 14px;
     }
     .hero h2 { margin: 0 0 10px; font-size: clamp(1.6rem, 4vw, 2.2rem); letter-spacing: -.02em; line-height: 1.12; }
-    .hero h2 span { color: var(--green); }
+    .hero h2 span {
+      background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
     .hero .lede { margin: 0; color: var(--muted); max-width: 620px; font-size: 1.02rem; }
 
     .pipeline {
@@ -89,14 +102,14 @@
       background: var(--panel); border: 1px solid var(--line); border-radius: 12px;
       padding: 14px 14px 16px; box-shadow: var(--shadow); position: relative;
     }
-    .step.active { border-color: rgba(57,215,166,.55); box-shadow: 0 0 0 1px rgba(57,215,166,.2), var(--shadow); }
-    .step.done { border-color: rgba(57,215,166,.35); }
+    .step.active { border-color: rgba(153, 69, 255, .55); box-shadow: 0 0 0 1px rgba(153, 69, 255, .2), var(--shadow); }
+    .step.done { border-color: rgba(20, 241, 149, .35); }
     .step .n {
       font-size: 11px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase;
-      color: var(--blue); background: var(--soft-blue); border: 1px solid rgba(117,168,255,.35);
+      color: var(--purple); background: var(--soft-purple); border: 1px solid rgba(153, 69, 255, .35);
       display: inline-block; padding: 3px 8px; border-radius: 999px; margin-bottom: 8px;
     }
-    .step.done .n { color: var(--green); background: var(--soft-green); border-color: rgba(57,215,166,.4); }
+    .step.done .n { color: var(--green); background: var(--soft-green); border-color: rgba(20, 241, 149, .4); }
     .step h3 { margin: 0 0 4px; font-size: 14px; }
     .step p { margin: 0; font-size: 12.5px; color: var(--muted); }
 
@@ -123,7 +136,7 @@
       border: 1.5px dashed var(--line); border-radius: 12px; padding: 22px 16px; text-align: center;
       background: rgba(27,36,33,.45); margin-bottom: 12px; transition: .15s;
     }
-    .drop.drag { border-color: var(--green); background: var(--soft-green); }
+    .drop.drag { border-color: var(--purple); background: var(--soft-purple); }
     .drop p { margin: 0; color: var(--muted); font-size: 13px; }
     .drop strong { color: var(--ink); }
     .file-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; min-height: 0; }
@@ -131,7 +144,7 @@
       font-size: 11px; font-weight: 700; padding: 4px 8px; border-radius: 999px;
       background: var(--chip); border: 1px solid var(--line); color: var(--muted);
     }
-    .chip.ok { color: var(--green); border-color: rgba(57,215,166,.35); background: var(--soft-green); }
+    .chip.ok { color: var(--green); border-color: rgba(20, 241, 149, .35); background: var(--soft-green); }
 
     .btn-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
     .btn {
@@ -206,7 +219,9 @@
   <div class="shell">
     <header class="top">
       <a class="brand" href="/">
-        <div class="mark" aria-hidden="true"></div>
+        <div class="mark" aria-hidden="true">
+          <img src="/assets/clawd-lobster-logo.png" alt="" width="44" height="44">
+        </div>
         <div>
           <h1>Skill Hub</h1>
           <p>Upload · Scan · Pay · Anchor</p>
