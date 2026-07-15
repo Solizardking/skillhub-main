@@ -1,6 +1,16 @@
 # Domains
 
-## Primary: `skills.x402.wtf`
+## Live production (2026-07-15)
+
+| Host | Status | Notes |
+|------|--------|--------|
+| **https://skillhub-red.vercel.app** | **Live** | Current production deploy (568 skills, on-chain ledger APIs) |
+| `skills.x402.wtf` | DNS not resolving | Intended primary; point CNAME at the Vercel project above |
+| `skills.onchainai.fund` | Stale | Still serves old `skills-sepia` (~192 skills); re-point to skillhub project |
+
+Vercel project: `mynameisjeffspicoli-2862s-projects/skillhub` (repo `Solizardking/skillhub-main`).
+
+## Primary (intended): `skills.x402.wtf`
 
 Canonical Skill Hub hostname for catalog, publish, scanner, and on-chain ledger.
 
@@ -8,7 +18,7 @@ Canonical Skill Hub hostname for catalog, publish, scanner, and on-chain ledger.
 |--------|--------|
 | Type | `CNAME` (or A/ALIAS per host) |
 | Name | `skills` |
-| Target | Vercel project for `Solizardking/skills` (or Render static site) |
+| Target | Vercel project `skillhub` / `skillhub-red.vercel.app` |
 
 After DNS:
 
@@ -20,8 +30,9 @@ After DNS:
 
 | Host | Role |
 |------|------|
-| `skills.x402.wtf` | **Primary** |
-| `skills.onchainai.fund` | Legacy alias (same static output) |
+| `skills.x402.wtf` | **Primary** (intended) |
+| `skillhub-red.vercel.app` | **Live production** until custom DNS is wired |
+| `skills.onchainai.fund` | Legacy alias (re-point away from skills-sepia) |
 | `cheshireterminal.ai/skills` | Cheshire UI proxying hub API |
 | `cheshireterminal.ai/skills-store` | Curated store (repo `skills-store/`) |
 
@@ -29,17 +40,19 @@ After DNS:
 
 ```bash
 # Skill Hub build
-export SKILLHUB_SITE_URL=https://skills.x402.wtf
+export SKILLHUB_SITE_URL=https://skillhub-red.vercel.app
+# After DNS: export SKILLHUB_SITE_URL=https://skills.x402.wtf
 
 # Cheshire (Vercel / Fly)
-export SKILLS_LIVE_BASE_URL=https://skills.x402.wtf
+export SKILLS_LIVE_BASE_URL=https://skillhub-red.vercel.app
 ```
 
 ## Verify
 
 ```bash
-curl -sI https://skills.x402.wtf | head
-curl -sS https://skills.x402.wtf/api/skills.json | head -c 200
-curl -sS https://skills.x402.wtf/api/submissions.json | head -c 200
-curl -sS https://cheshireterminal.ai/api/skills | head -c 200
+curl -sI https://skillhub-red.vercel.app | head
+curl -sS https://skillhub-red.vercel.app/api/skills.json | head -c 200
+curl -sS https://skillhub-red.vercel.app/api/onchain.json | head -c 400
+curl -sS https://skillhub-red.vercel.app/api/submissions.json | head -c 200
+curl -sS https://skillhub-red.vercel.app/.well-known/onchain-skill-registry.json | head -c 200
 ```

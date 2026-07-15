@@ -384,11 +384,19 @@ async function addHubSurfacePages(files) {
 
 async function addPublicLedgerArtifacts(files) {
   const ledgerPath = path.join(ROOT, "onchain", "public-ledger.json");
+  const mirrorPath = path.join(ROOT, "onchain", "agentregistry-mirror.json");
+
+  if (existsSync(mirrorPath)) {
+    files.set("api/agentregistry.json", await readFile(mirrorPath, "utf8"));
+  }
+
   if (existsSync(ledgerPath)) {
     const raw = await readFile(ledgerPath, "utf8");
     files.set("api/submissions.json", raw);
     try {
       const ledger = JSON.parse(raw);
+      const hasPlan = existsSync(path.join(ROOT, "onchain", "publish-plan.json"));
+      const hasReceipt = existsSync(path.join(ROOT, "onchain", "publish-receipt.json"));
       files.set(
         "api/onchain.json",
         `${JSON.stringify({
@@ -396,9 +404,13 @@ async function addPublicLedgerArtifacts(files) {
           generatedAt: ledger.generatedAt || "1970-01-01T00:00:00.000Z",
           hubs: ledger.hubs || { primary: SITE_URL, aliases: SITE_ALIASES },
           catalogAnchor: ledger.catalogAnchor || null,
+          agentregistry: ledger.agentregistry || null,
           submissionCount: ledger.count || 0,
           submissionsUrl: "/api/submissions.json",
+          agentregistryUrl: "/api/agentregistry.json",
           registryUrl: "/.well-known/onchain-skill-registry.json",
+          publishPlan: hasPlan ? "onchain/publish-plan.json" : null,
+          publishReceipt: hasReceipt ? "onchain/publish-receipt.json" : null,
         }, null, 2)}\n`,
       );
     } catch {

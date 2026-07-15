@@ -39,6 +39,14 @@
     {
       "source": "/api/onchain",
       "destination": "/api/onchain.json"
+    },
+    {
+      "source": "/api/agentregistry",
+      "destination": "/api/agentregistry.json"
+    },
+    {
+      "source": "/.well-known/onchain-skill-registry",
+      "destination": "/.well-known/onchain-skill-registry.json"
     }
   ],
   "headers": [
