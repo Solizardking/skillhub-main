@@ -1,8 +1,8 @@
 {
   "schemaVersion": "skillhub-publish-plan/v1",
-  "createdAt": "2026-07-15T14:50:39.687Z",
-  "cluster": "mainnet-beta",
-  "rpc": "https://api.mainnet-beta.solana.com",
+  "createdAt": "2026-07-15T15:09:46.789Z",
+  "cluster": "devnet",
+  "rpc": "https://api.devnet.solana.com",
   "merkleRoot": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c",
   "catalogHash": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4",
   "totalSkills": 570,
