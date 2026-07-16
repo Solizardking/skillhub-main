@@ -19,6 +19,8 @@
         "coding-agent",
         "compressed-pda",
         "compressed-token",
+        "copy-trade",
+        "dca-bot",
         "dex-screener-scanner",
         "dflow-docs",
         "dflow-kalshi-market-data",
@@ -54,6 +56,8 @@
         "model-usage",
         "openai-image-gen",
         "pay",
+        "pay-with-any-token",
+        "pay-with-app",
         "phantom-wallet-mcp",
         "posthog-cheshire",
         "pump-admin-ops",
@@ -81,6 +85,7 @@
         "pumpfun-launcher",
         "pumpfun-trading",
         "rh-bonded-launch",
+        "rh-launchpad-v3",
         "skillhub-onchain",
         "solana-clawd",
         "solana-clawd-agentic-commerce",
@@ -93,8 +98,10 @@
         "solana-redpill-verifier",
         "solana-rent-free-dev",
         "sponge-wallet",
+        "swap-planner",
         "swarm-orchestrator",
         "testing",
+        "viem-integration",
         "vulcan",
         "vulcan-error-recovery",
         "vulcan-execution-modes",
@@ -156,6 +163,9 @@
         "improve-animations",
         "in-progress/claude-handoff",
         "in-progress/wizard",
+        "index-bot",
+        "liquidity-planner",
+        "lp-integration",
         "mcporter",
         "misc/git-guardrails-claude-code",
         "openclawd-clawd-code-skill-main",
@@ -181,6 +191,7 @@
         "thinking-and-docs/prompt-me",
         "thinking-and-docs/short",
         "tmux",
+        "v4-hook-generator",
         "web-perf",
         "workers-best-practices",
         "wrangler"
@@ -596,6 +607,7 @@
         "bird",
         "blogwatcher",
         "cloudflare-one-migrations",
+        "deployer",
         "deprecated/ubiquitous-language",
         "eightctl",
         "engineering/diagnosing-bugs",
@@ -629,7 +641,9 @@
         "research-and-web/research-prompt",
         "swap-integration",
         "thinking-and-docs/brain-to-docs",
-        "thinking-and-docs/read-all-adrs"
+        "thinking-and-docs/read-all-adrs",
+        "v4-sdk-integration",
+        "v4-security-foundations"
       ]
     }
   ]

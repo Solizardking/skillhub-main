@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 570,
-  "catalogHash": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4",
-  "merkleRoot": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c",
+  "totalSkills": 584,
+  "catalogHash": "sha256-b320ec433ebae7dfc1267463e1f6c950b7fc6f52ef30988d09efe5087e8298ca",
+  "merkleRoot": "sha256-15ebc74206721b7d2fb2a3429d0d5fca0d1a8569e63c0f693e0ce7e0ac0d5ef6",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -168,6 +168,28 @@
       "fileCount": 10,
       "metadata": "/api/skills/compressed-token/metadata.json",
       "verification": "/api/skills/compressed-token/verification.json"
+    },
+    {
+      "slug": "copy-trade",
+      "name": "copy-trade",
+      "description": "This skill should be used when the user asks to \"copy trades from\" a wallet, \"mirror a wallet\", \"follow this address\", set up \"copy trading\", \"track and replicate a trader\", or mirror another account's swaps bounded by guardrails. Watches a target wallet and mirrors its trades, filtered by chain, asset match, position size, and the follower's own portfolio state.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-f5612c5c04175682ae990afb40dd821e00fc93ea30880850f2e3eb951ed0bfea",
+      "merkleLeaf": "sha256-e686282eca6e334edd65517e5d50c2ef9383d7f36f0017b9c0a198009240bd70",
+      "fileCount": 1,
+      "metadata": "/api/skills/copy-trade/metadata.json",
+      "verification": "/api/skills/copy-trade/verification.json"
+    },
+    {
+      "slug": "dca-bot",
+      "name": "dca-bot",
+      "description": "This skill should be used when the user wants to \"dca into\" a token, \"buy X every day\", set up a \"recurring buy\", \"dollar cost average\" into an asset, \"schedule a buy\", or \"auto-buy on a dip\". Buys a fixed amount into a token on a schedule, optionally only when a condition holds (for example only when ETH is below a price threshold). The host agent's scheduler wakes the skill on a cadence; each wake is one self-contained run.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-666d4e4f84fb86f68ccfa3a995dd95fab13ba3b2cfc92b62f8f6b602645f5d5a",
+      "merkleLeaf": "sha256-acbed7e14e77685aa9912954da9ec95c983e832c674bf038c9f21ee43db256cc",
+      "fileCount": 1,
+      "metadata": "/api/skills/dca-bot/metadata.json",
+      "verification": "/api/skills/dca-bot/verification.json"
     },
     {
       "slug": "dex-screener-scanner",
@@ -555,6 +577,28 @@
       "verification": "/api/skills/pay/verification.json"
     },
     {
+      "slug": "pay-with-any-token",
+      "name": "pay-with-any-token",
+      "description": "Pay HTTP 402 payment challenges using tokens via the Tempo CLI and Uniswap Trading API. Use when the user encounters a 402 Payment Required response, needs to fulfill a machine payment, mentions \"MPP\", \"Tempo payment\", \"pay for API access\", \"HTTP 402\", \"x402\", \"machine payment protocol\", \"pay-with-any-token\", \"use tempo\", \"tempo request\", or \"tempo wallet\".",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-3949acd14c5f4c3d97cf3c873794ddb877701c2a06a7f731bd43c0bd6b2a7e97",
+      "merkleLeaf": "sha256-e132d23fefa7f98118eaca3f1a22c7c62ff217c3179890966390cf77d37df580",
+      "fileCount": 3,
+      "metadata": "/api/skills/pay-with-any-token/metadata.json",
+      "verification": "/api/skills/pay-with-any-token/verification.json"
+    },
+    {
+      "slug": "pay-with-app",
+      "name": "pay-with-app",
+      "description": "Pay HTTP 402 payment challenges issued by OKX's Agent Payments Protocol (APP) on X Layer using tokens from any chain via the Uniswap Trading API. Use this skill whenever the user encounters a 402 challenge whose network resolves to X Layer (chain 196), mentions \"APP\", \"Agent Payments Protocol\", \"OKX agent payment\", \"OKX Onchain OS\", \"OKX agentic wallet\", \"x402 on X Layer\", \"USDT0\", \"x42\", \"Instant Payment\", \"Batch Payment\", \"pay for X Layer API\", or wants to pay an OKX-backed merchant. Even when the user does not explicitly say APP, prefer this skill for any 402 challenge whose network resolves to X Layer (chain 196). For 402 challenges on other chains (Ethereum, Base, Arbitrum, Tempo) use pay-with-any-token instead.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-d4e57b8e439f956d5cb32b58413666b708e35172cda30626e8d160017aac0178",
+      "merkleLeaf": "sha256-2b40eb3f8b831d15fc4adbb8c473c8115b813ec9842b74e45513231977906724",
+      "fileCount": 3,
+      "metadata": "/api/skills/pay-with-app/metadata.json",
+      "verification": "/api/skills/pay-with-app/verification.json"
+    },
+    {
       "slug": "phantom-wallet-mcp",
       "name": "phantom-wallet-mcp",
       "description": "Execute wallet operations through the Phantom MCP server. Use when the user wants to interact with their Phantom wallet directly — get addresses, transfer SOL or SPL tokens, buy/swap tokens, sign transactions, and sign messages across Solana, Ethereum, Bitcoin, and Sui. Requires the @phantom/mcp-server to be configured as an MCP server.",
@@ -845,11 +889,22 @@
       "name": "rh-bonded-launch",
       "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via the live BondingCurveLaunchpad, or guide a user/agent to do so on ClawdCode /launch or Cheshire /rh-launch. Use when the user says \"launch a token\", \"create token on Robinhood\", \"bonded launch\", \"createToken\", \"fair launch on RH\", \"pump style on robinhood\", \"open a curve\", or brings an agent to clawdcode.net to launch. Does NOT mint wCLAWD or bridge Solana $CLAWD — that is a separate bridge skill path.",
       "category": "Solana / Blockchain",
-      "bundleHash": "sha256-721ec703e57fd9ff9fe841e2d67e40472c2afd6c2907cda0c2a7e8599db5af3f",
-      "merkleLeaf": "sha256-ab237dd05eaa9792dfb5de96ede8476a1f5ebeb1d31ee0c7462ebc88bf84ea6c",
+      "bundleHash": "sha256-f2b039f85d4ddd5f5cd065bbf12c4906b49e84a25040762ffe30bba1c4599b02",
+      "merkleLeaf": "sha256-e59bf6320420240695fcc8b59ab7a2a9f689151047ad353eb16e619ecf54d8fb",
       "fileCount": 1,
       "metadata": "/api/skills/rh-bonded-launch/metadata.json",
       "verification": "/api/skills/rh-bonded-launch/verification.json"
+    },
+    {
+      "slug": "rh-launchpad-v3",
+      "name": "rh-launchpad-v3",
+      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 — graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or ClawdCode /api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-b5231217ab6a6f88f5413409bf4c777c9d510ad24b56891418545988507c3c9a",
+      "merkleLeaf": "sha256-bb14ef385dfae77dc7fde3fa4ca478fd7355d95502b7b4276006f7b178c180db",
+      "fileCount": 1,
+      "metadata": "/api/skills/rh-launchpad-v3/metadata.json",
+      "verification": "/api/skills/rh-launchpad-v3/verification.json"
     },
     {
       "slug": "skillhub-onchain",
@@ -984,6 +1039,17 @@
       "verification": "/api/skills/sponge-wallet/verification.json"
     },
     {
+      "slug": "swap-planner",
+      "name": "swap-planner",
+      "description": "This skill should be used when the user asks to \"swap tokens\", \"trade ETH for USDC\", \"exchange tokens on Uniswap\", \"buy tokens\", \"sell tokens\", \"convert ETH to stablecoins\", \"find memecoins\", \"discover tokens\", \"research tokens\", \"tokens to buy\", \"find tokens to swap\", \"what should I buy\", or mentions swapping, trading, researching, discovering, buying, or exchanging tokens on any Uniswap-supported chain. Supports both known token swaps and token discovery workflows (discovery uses keyword search and web search — there is no live \"trending\" feed). Generates deep links to execute swaps in the Uniswap interface.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-6aeef887ea4b540b04855b110958aa9122e1a0aced702ceb937dc92fb0ab115f",
+      "merkleLeaf": "sha256-909e816442659c7f08e38f38e239f58345186c1dc02b2a08237bd7778c1853d8",
+      "fileCount": 2,
+      "metadata": "/api/skills/swap-planner/metadata.json",
+      "verification": "/api/skills/swap-planner/verification.json"
+    },
+    {
       "slug": "swarm-orchestrator",
       "name": "swarm-orchestrator",
       "description": "Orchestrate multi-bot trading swarms on Pump.fun with persona-driven agents",
@@ -1004,6 +1070,17 @@
       "fileCount": 5,
       "metadata": "/api/skills/testing/metadata.json",
       "verification": "/api/skills/testing/verification.json"
+    },
+    {
+      "slug": "viem-integration",
+      "name": "viem-integration",
+      "description": "Integrate EVM blockchains using viem. Use when user says \"read blockchain data\", \"send transaction\", \"interact with smart contract\", \"connect to Ethereum\", \"use viem\", \"use wagmi\", \"wallet integration\", \"viem setup\", or mentions blockchain/EVM development with TypeScript.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-5537ea966d39fc147d941c9a11ca81181b466b8bac23b61bdad776d17c9bdb7e",
+      "merkleLeaf": "sha256-3e70a47261ca72dcc9607a4ad730298e87466d9cddc485c5e9cc73af7e39c14c",
+      "fileCount": 7,
+      "metadata": "/api/skills/viem-integration/metadata.json",
+      "verification": "/api/skills/viem-integration/verification.json"
     },
     {
       "slug": "vulcan",
@@ -1611,6 +1688,39 @@
       "verification": "/api/skills/in-progress/wizard/verification.json"
     },
     {
+      "slug": "index-bot",
+      "name": "index-bot",
+      "description": "This skill should be used when the user asks to \"create an index\", \"build a basket of top assets\", \"buy a weighted basket\", \"make a portfolio of assets\", \"equal-weight basket\", \"rebalance my portfolio\", \"track the top N tokens\", or wants an automated, weighted multi-asset basket that buys in one pass and rebalances on a cadence. Builds the basket spec, delegates each buy and rebalance swap to the swap-integration Trading API flow, and records target weights in state.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-910df7ce2c08d17b9154eadd1deddd2ad52b1d48ed448e2fb5ad76831e51ca26",
+      "merkleLeaf": "sha256-6c114b571d333ff58e789c1c7fb46433d3c5cb0971003c5ee68054bfe22251d4",
+      "fileCount": 1,
+      "metadata": "/api/skills/index-bot/metadata.json",
+      "verification": "/api/skills/index-bot/verification.json"
+    },
+    {
+      "slug": "liquidity-planner",
+      "name": "liquidity-planner",
+      "description": "This skill should be used when the user asks to \"provide liquidity\", \"create LP position\", \"add liquidity to pool\", \"become a liquidity provider\", \"create v3 position\", \"create v4 position\", \"concentrated liquidity\", \"set price range\", or mentions providing liquidity, LP positions, or liquidity pools on Uniswap. Generates deep links to create positions in the Uniswap interface.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-8144d90eb084b75a700dcf91520fe7c6b7624e611e928d56e44ec5138e421c1d",
+      "merkleLeaf": "sha256-0456196cd6652281dd458d22b06cd1ffebbacd26d2a93514a2025d7d66fe54de",
+      "fileCount": 3,
+      "metadata": "/api/skills/liquidity-planner/metadata.json",
+      "verification": "/api/skills/liquidity-planner/verification.json"
+    },
+    {
+      "slug": "lp-integration",
+      "name": "lp-integration",
+      "description": "Integrate Uniswap liquidity provisioning (LP) into applications via the LP REST API. Use when the user says \"LP API\", \"liquidity provisioning API\", \"provide liquidity programmatically\", \"create LP position via API\", \"add liquidity via API\", \"increase liquidity\", \"decrease liquidity\", \"remove liquidity\", \"claim LP fees\", \"collect LP fees\", \"manage LP positions in code\", or mentions building a backend, bot, or frontend that creates or manages Uniswap v2/v3/v4 liquidity positions through an API. Also use when debugging LP API calls (e.g. /lp/create, /lp/check_approval, /lp/increase, /lp/decrease, /lp/claim_fees), unexpected response fields, the approval or EIP-712 permit flow, or transaction-building errors for liquidity positions. For generating deep links to the Uniswap web app instead of calling the API, use the liquidity-planner skill; for using the Uniswap v4 SDK directly rather than the REST API, use the v4-sdk-integration skill.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-dfd8e27cfca18b0bfbe6c6dc69a26e9f75b4ac8ea19387beca9028c18b2e632e",
+      "merkleLeaf": "sha256-d3831d93d136faaa593cb8995cfc1f5eaf5e8cb1b62fcbe3ba1398feae172b56",
+      "fileCount": 2,
+      "metadata": "/api/skills/lp-integration/metadata.json",
+      "verification": "/api/skills/lp-integration/verification.json"
+    },
+    {
       "slug": "mcporter",
       "name": "mcporter",
       "description": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
@@ -1884,6 +1994,17 @@
       "fileCount": 3,
       "metadata": "/api/skills/tmux/metadata.json",
       "verification": "/api/skills/tmux/verification.json"
+    },
+    {
+      "slug": "v4-hook-generator",
+      "name": "v4-hook-generator",
+      "description": "Generate Uniswap v4 hook contracts via OpenZeppelin MCP. Use when building custom swap logic, async swaps, hook-owned liquidity, custom curves, dynamic fees, MEV protection, limit orders, or oracle hooks.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-0ddf4d573211edf26da2a89c66a3e414bcdad8dc86dfc01135546f64ffe680bc",
+      "merkleLeaf": "sha256-c555a6a34873a1453b10e3aae23da7123956f51939a5697867518d3917a374b2",
+      "fileCount": 1,
+      "metadata": "/api/skills/v4-hook-generator/metadata.json",
+      "verification": "/api/skills/v4-hook-generator/verification.json"
     },
     {
       "slug": "web-perf",
@@ -5923,6 +6044,17 @@
       "verification": "/api/skills/cloudflare-one-migrations/verification.json"
     },
     {
+      "slug": "deployer",
+      "name": "deployer",
+      "description": "Deploy CCA (Continuous Clearing Auction) smart contracts using the Factory pattern. Use when user says \"deploy auction\", \"deploy cca\", \"factory deployment\", or wants to deploy a configured auction.",
+      "category": "Utilities",
+      "bundleHash": "sha256-b311695e8b1d2c418f7a2fbe8a513c8668542ba275562a15ea573e83002f4c15",
+      "merkleLeaf": "sha256-e5d2b777095dc95938c10280c8e131b0bab71ecc221561e13846eb039b5fb409",
+      "fileCount": 1,
+      "metadata": "/api/skills/deployer/metadata.json",
+      "verification": "/api/skills/deployer/verification.json"
+    },
+    {
       "slug": "deprecated/ubiquitous-language",
       "name": "ubiquitous-language",
       "description": "Extract a DDD-style ubiquitous language glossary from the current conversation, flagging ambiguities and proposing canonical terms. Saves to UBIQUITOUS_LANGUAGE.md. Use when user wants to define domain terms, build a glossary, harden terminology, create a ubiquitous language, or mentions \"domain model\" or \"DDD\".",
@@ -6295,6 +6427,28 @@
       "fileCount": 1,
       "metadata": "/api/skills/thinking-and-docs/read-all-adrs/metadata.json",
       "verification": "/api/skills/thinking-and-docs/read-all-adrs/verification.json"
+    },
+    {
+      "slug": "v4-sdk-integration",
+      "name": "v4-sdk-integration",
+      "description": "App-layer SDK guide for building swap and liquidity experiences directly with the Uniswap v4 SDK. Use when user asks about \"v4 sdk\", \"uniswap v4\", \"v4 swap\", \"v4 liquidity\", \"PoolManager\", \"V4Planner\", \"StateView\", \"PositionManager\", \"pool state\", \"v4 position\", \"uniswap sdk\", or when building swap/liquidity UX directly with SDKs rather than via the Trading API.",
+      "category": "Utilities",
+      "bundleHash": "sha256-5a8f9a3cf644b94848a6332903456c6db24de7f9fccc8ab1aee6a3f6a4983a26",
+      "merkleLeaf": "sha256-b5ef36fa9db5e0ddf9c9e1b52e197ebee3625912080f128110c59cd23df1f134",
+      "fileCount": 1,
+      "metadata": "/api/skills/v4-sdk-integration/metadata.json",
+      "verification": "/api/skills/v4-sdk-integration/verification.json"
+    },
+    {
+      "slug": "v4-security-foundations",
+      "name": "v4-security-foundations",
+      "description": "Security-first Uniswap v4 hook development. Use when user mentions \"v4 hooks\", \"hook security\", \"PoolManager\", \"beforeSwap\", \"afterSwap\", or asks about V4 hook best practices, vulnerabilities, or audit requirements.",
+      "category": "Utilities",
+      "bundleHash": "sha256-7e675a434c5d9dd08ee6273c3a08d862b3cdbbd49c770537f1f4e7b3d5650b35",
+      "merkleLeaf": "sha256-565667437c917b63405de943dbd290a916b7554303fafaf89d6753a2c431857a",
+      "fileCount": 4,
+      "metadata": "/api/skills/v4-security-foundations/metadata.json",
+      "verification": "/api/skills/v4-security-foundations/verification.json"
     }
   ]
 }

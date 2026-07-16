@@ -1,16 +1,16 @@
 # Skill Scanner Results
 
-Scanned at: 2026-07-15T20:16:35.238Z
+Scanned at: 2026-07-16T19:18:46.651Z
 
-- Skills scanned: 570
-- Local skills available: 570
-- On-chain skills: 398
+- Skills scanned: 584
+- Local skills available: 584
+- On-chain skills: 412
 - Off-chain skills: 172
-- Verified skills: 570
+- Verified skills: 584
 - Changed skills: 0
 - Missing verification: 0
 - Critical findings: 18
-- High findings: 1811
+- High findings: 1858
 - Install telemetry source: not tracked locally
 
 ## On-Chain Registry
@@ -18,8 +18,8 @@ Scanned at: 2026-07-15T20:16:35.238Z
 - Status: anchor-ready
 - Anchor state: planned
 - Registry root valid: yes
-- Merkle root: sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c
-- Catalog hash: sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4
+- Merkle root: sha256-15ebc74206721b7d2fb2a3429d0d5fca0d1a8569e63c0f693e0ce7e0ac0d5ef6
+- Catalog hash: sha256-b320ec433ebae7dfc1267463e1f6c950b7fc6f52ef30988d09efe5087e8298ca
 
 ## Skills Requiring Review
 
@@ -28,6 +28,7 @@ Scanned at: 2026-07-15T20:16:35.238Z
 - durable-objects: high risk, 11 findings, verification verified
 - forge: high risk, 33 findings, verification verified
 - google-agent-registry: high risk, 9 findings, verification verified
+- liquidity-planner: high risk, 13 findings, verification verified
 - sandbox-sdk: high risk, 9 findings, verification verified
 - youtube-clipper: high risk, 23 findings, verification verified
 - cloudflare-email-service: high risk, 13 findings, verification verified
@@ -38,10 +39,12 @@ Scanned at: 2026-07-15T20:16:35.238Z
 - helius-skills/helius-jupiter: high risk, 112 findings, verification verified
 - helius-skills/helius-phantom: high risk, 115 findings, verification verified
 - metaplex/skills/metaplex: high risk, 57 findings, verification verified
+- pay-with-any-token: high risk, 24 findings, verification verified
 - solana-clawd-agents: high risk, 692 findings, verification verified
 - solana-common-errors: high risk, 17 findings, verification verified
 - solana-dev: high risk, 180 findings, verification verified
 - sponge-wallet: high risk, 12 findings, verification verified
+- swap-planner: high risk, 16 findings, verification verified
 - nvidia/amc-setup-calibration-stack: high risk, 14 findings, verification verified
 - nvidia/deepstream-dev: critical risk, 85 findings, verification verified
 - nvidia/deepstream-import-vision-model: high risk, 10 findings, verification verified
@@ -60,6 +63,3 @@ Scanned at: 2026-07-15T20:16:35.238Z
 - nvidia/omniverse-usd-performance-tuning: high risk, 8 findings, verification verified
 - nvidia/physical-ai-defect-image-generation: high risk, 10 findings, verification verified
 - nvidia/physical-ai-video-data-augmentation: high risk, 8 findings, verification verified
-- nvidia/tao-finetune-cosmos-embed: high risk, 11 findings, verification verified
-- nvidia/tao-finetune-huggingface-model: high risk, 28 findings, verification verified
-- nvidia/tao-port-huggingface-model: high risk, 62 findings, verification verified

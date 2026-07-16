@@ -190,6 +190,32 @@
       "offchainEnabled": false
     },
     {
+      "slug": "copy-trade",
+      "name": "copy-trade",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "dca-bot",
+      "name": "dca-bot",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "dex-screener-scanner",
       "name": "dex-screener-scanner",
       "category": "Solana / Blockchain",
@@ -645,6 +671,32 @@
       "offchainEnabled": false
     },
     {
+      "slug": "pay-with-any-token",
+      "name": "pay-with-any-token",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "pay-with-app",
+      "name": "pay-with-app",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "phantom-wallet-mcp",
       "name": "phantom-wallet-mcp",
       "category": "Solana / Blockchain",
@@ -996,6 +1048,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "rh-launchpad-v3",
+      "name": "rh-launchpad-v3",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "skillhub-onchain",
       "name": "skillhub-onchain",
       "category": "Solana / Blockchain",
@@ -1152,6 +1217,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "swap-planner",
+      "name": "swap-planner",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "swarm-orchestrator",
       "name": "swarm-orchestrator",
       "category": "Solana / Blockchain",
@@ -1167,6 +1245,19 @@
     {
       "slug": "testing",
       "name": "testing",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "viem-integration",
+      "name": "viem-integration",
       "category": "Solana / Blockchain",
       "mode": "tip",
       "merchant": {
@@ -1893,6 +1984,45 @@
       "offchainEnabled": false
     },
     {
+      "slug": "index-bot",
+      "name": "index-bot",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "liquidity-planner",
+      "name": "liquidity-planner",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "lp-integration",
+      "name": "lp-integration",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "mcporter",
       "name": "mcporter",
       "category": "Dev Tools / Agents",
@@ -2207,6 +2337,19 @@
     {
       "slug": "tmux",
       "name": "tmux",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "v4-hook-generator",
+      "name": "v4-hook-generator",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -6989,6 +7132,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "deployer",
+      "name": "deployer",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "deprecated/ubiquitous-language",
       "name": "ubiquitous-language",
       "category": "Utilities",
@@ -7420,6 +7576,32 @@
     {
       "slug": "thinking-and-docs/read-all-adrs",
       "name": "read-all-adrs",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "v4-sdk-integration",
+      "name": "v4-sdk-integration",
+      "category": "Utilities",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "v4-security-foundations",
+      "name": "v4-security-foundations",
       "category": "Utilities",
       "mode": "tip",
       "merchant": {

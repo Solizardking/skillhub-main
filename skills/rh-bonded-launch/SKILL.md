@@ -23,25 +23,27 @@ It is **not** Solana `$CLAWD` and **not** wCLAWD. Pegged convert = bridge only.
 
 | Item | Value |
 |------|--------|
-| **Factory** | `0x3f60A0F1E9adDc81A45a2726a3D3c7EEEdB2C322` |
+| **Active factory (V2 graduate)** | `0x52603DC052beD1d45FA50493737C73d1e21D59C4` (99.5% creator share); still re-read `cfg()` before signing |
+| **LaunchpadV3 (curve → Uniswap V3)** | Prefer **`rh-launchpad-v3`** skill · factory `0x565dcaAA…4a4B` · API `/api/launchpad/v3` |
+| **Legacy factory (read/claim only)** | `0x3f60A0F1E9adDc81A45a2726a3D3c7EEEdB2C322` — 50% creator share; do not create |
 | **Chain ID** | `4663` (mainnet only for this factory) |
 | **Public RPC** | `https://rpc.mainnet.chain.robinhood.com` |
-| **Explorer** | `https://robinhoodchain.blockscout.com/address/0x3f60A0F1E9adDc81A45a2726a3D3c7EEEdB2C322` |
-| **Human UI (Cheshire)** | `https://cheshireterminal.ai/rh-launch` (public — no $CLAWD gate) |
-| **Trade UI (Cheshire)** | `https://cheshireterminal.ai/rh-launch/{tokenAddress}` |
-| **List API (Cheshire)** | `GET /api/rh-launchpad/tokens?limit=30` |
-| **Token API (Cheshire)** | `GET /api/rh-launchpad/token?address=0x…` |
-| **Agent discovery** | `/.well-known/rh-launchpad.json` |
+| **Explorer** | `https://robinhoodchain.blockscout.com/address/{activeFactory}` |
 | **Human UI (ClawdCode)** | `https://clawdcode.net/launch` (public) |
-| **Trade UI (ClawdCode)** | `https://clawdcode.net/launch/{tokenAddress}` |
-| **Interface (ClawdBrowser)** | `bridge/contracts/src/interfaces/ILaunchpad.sol` |
-| **TS ABI (Cheshire)** | `client/src/lib/rh-launchpad/abi.ts` |
+| **Trade UI** | `https://clawdcode.net/launch/{tokenAddress}` |
+| **List API** | `GET https://clawdcode.net/api/launchpad/tokens?limit=30` |
+| **Token API** | `GET https://clawdcode.net/api/launchpad/token?address=0x…` |
+| **Interface (repo)** | `funpump/contracts/src/interfaces/ILaunchpad.sol` |
+| **TS ABI (repo)** | `src/lib/evm/launchpad-abi.ts` |
+
+Cheshire Terminal (if integrated): `/rh-launch`, `GET /api/rh-launchpad/tokens`,  
+`.well-known/rh-launchpad.json` — same factory address.
 
 ## When to use which path
 
 | Goal | Action |
 |------|--------|
-| User wants to click-launch in browser | Send them to **https://cheshireterminal.ai/rh-launch** (or clawdcode.net/launch) |
+| User wants to click-launch in browser | Send them to **https://clawdcode.net/launch** (or Cheshire `/rh-launch`) |
 | Agent has a funded EVM key + RPC | Build and send `createToken` tx (below) |
 | User wants pegged CLAWD on RH | **Stop** — use bridge / wCLAWD, not this skill |
 | User asks “can anyone launch?” | **Yes** — state that clearly |
@@ -81,8 +83,6 @@ const RH = defineChain({
     },
   },
 });
-
-const LAUNCHPAD = "0x3f60A0F1E9adDc81A45a2726a3D3c7EEEdB2C322" as const;
 
 const LAUNCHPAD_ABI = [
   {
@@ -130,6 +130,7 @@ const LAUNCHPAD_ABI = [
  * Prefer user wallet signature over agent-held keys.
  */
 export async function launchBondedToken(opts: {
+  launchpad: `0x${string}`; // resolve from the ClawdCode API and verify cfg()
   privateKey?: `0x${string}`; // only if user explicitly authorized agent custody
   name: string;
   symbol: string;
@@ -147,12 +148,18 @@ export async function launchBondedToken(opts: {
   const devBuyWei = opts.devBuyEth ? parseEther(opts.devBuyEth) : 0n;
   let minTokensOut = 0n;
 
+  // Mandatory for zero-value and dev-buy launches alike. Never send to the
+  // legacy 5000-bps factory or to an unverified replacement.
+  const cfg = await publicClient.readContract({
+    address: opts.launchpad,
+    abi: LAUNCHPAD_ABI,
+    functionName: "cfg",
+  });
+  if (cfg[7] !== 9_950) {
+    throw new Error(`Launch blocked: creator fee share is ${cfg[7]} bps, expected 9950`);
+  }
+
   if (devBuyWei > 0n) {
-    const cfg = await publicClient.readContract({
-      address: LAUNCHPAD,
-      abi: LAUNCHPAD_ABI,
-      functionName: "cfg",
-    });
     const virtualEth = cfg[2];
     const virtualToken = cfg[3];
     const tradeFeeBps = BigInt(cfg[5]);
@@ -163,7 +170,7 @@ export async function launchBondedToken(opts: {
   }
 
   const hash = await walletClient.writeContract({
-    address: LAUNCHPAD,
+    address: opts.launchpad,
     abi: LAUNCHPAD_ABI,
     functionName: "createToken",
     args: [opts.name.trim(), opts.symbol.trim(), minTokensOut],
@@ -191,9 +198,11 @@ export async function launchBondedToken(opts: {
 ### CLI alternative (Foundry)
 
 ```bash
-cd bridge/contracts   # ClawdBrowser repo
+cd funpump/contracts   # ClawdBrowser repo
 export RH_RPC_URL=https://rpc.mainnet.chain.robinhood.com
 export PRIVATE_KEY=0x…   # funded on 4663; never commit
+export LAUNCHPAD_ADDRESS=0x52603DC052beD1d45FA50493737C73d1e21D59C4
+export EXPECTED_LAUNCHPAD_CODEHASH=0x287ef3d4643d5d48927923b5ca0e83129563556a934db48197179ad101754592
 TOKEN_NAME="MyToken" TOKEN_SYMBOL="MTK" \
 DEV_BUY_WEI=$(cast to-wei 0.01 ether) SLIPPAGE_BPS=200 \
 forge script script/LaunchViaLaunchpad.s.sol --rpc-url $RH_RPC_URL --broadcast
@@ -212,7 +221,7 @@ forge script script/LaunchViaLaunchpad.s.sol --rpc-url $RH_RPC_URL --broadcast
 ```bash
 curl -s 'https://clawdcode.net/api/launchpad/tokens?limit=10' | jq '.total, .tokens[0]'
 curl -s 'https://clawdcode.net/api/launchpad/token?address=0xTOKEN' | jq .
-cast call 0x3f60A0F1E9adDc81A45a2726a3D3c7EEEdB2C322 "tokenCount()(uint256)" \
+cast call "$LAUNCHPAD_ADDRESS" "tokenCount()(uint256)" \
   --rpc-url https://rpc.mainnet.chain.robinhood.com
 ```
 
@@ -223,8 +232,9 @@ cast call 0x3f60A0F1E9adDc81A45a2726a3D3c7EEEdB2C322 "tokenCount()(uint256)" \
 3. Prefer **user-signed** wallet txs; agent keys only with explicit user approval and a funded throwaway EVM key.
 4. Validate name ≤ 64 chars, symbol ≤ 16 chars.
 5. Ensure chain id is **4663** before sending.
-6. Warn about graduation / fees / irreversible deploys.
-7. If the user only wants CLAWD on RH: route to **bridge**, not this skill.
+6. Read `cfg()` from the exact transaction target immediately before simulation/signing and require `creatorFeeShareBps == 9950`.
+7. Warn about graduation / fees / irreversible deploys.
+8. If the user only wants CLAWD on RH: route to **bridge**, not this skill.
 
 ## Curve snapshot (for copy / UI)
 
@@ -235,6 +245,8 @@ cast call 0x3f60A0F1E9adDc81A45a2726a3D3c7EEEdB2C322 "tokenCount()(uint256)" \
 | Graduation | ~2.864 ETH |
 | Trade fee | 1% |
 | Graduation fee | 2% |
+| Creator share of collected fees | 99.5% |
+| Protocol share of collected fees | 0.5% |
 
 ## Install this skill elsewhere
 
@@ -254,5 +266,5 @@ Portable duplicate: `skills/rh-bonded-launch/SKILL.md` in ClawdBrowser.
 
 - Parallel Cheshire handoff: `launchagent.md` (ClawdBrowser root)
 - Saga: `hood.md`
-- Bridge + Option B: `bridge/README.md`
+- Bridge + Option B: `funpump/README.md`
 - Root product README: § “Launch a token (anyone can)”

@@ -91,11 +91,11 @@ window.SKILL_SCAN_RESULTS = {
       }
     ]
   },
-  "scannedAt": "2026-07-15T20:16:35.238Z",
+  "scannedAt": "2026-07-16T19:18:46.651Z",
   "source": {
     "catalog": "local SKILL.md crawl",
-    "canonicalSkills": 570,
-    "localSkills": 570,
+    "canonicalSkills": 584,
+    "localSkills": 584,
     "duplicatePublicSkillsExcluded": true
   },
   "onchain": {
@@ -104,9 +104,9 @@ window.SKILL_SCAN_RESULTS = {
     "cluster": "mainnet-beta",
     "status": "anchor-ready",
     "anchorState": "planned",
-    "totalSkills": 570,
-    "catalogHash": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4",
-    "merkleRoot": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c",
+    "totalSkills": 584,
+    "catalogHash": "sha256-b320ec433ebae7dfc1267463e1f6c950b7fc6f52ef30988d09efe5087e8298ca",
+    "merkleRoot": "sha256-15ebc74206721b7d2fb2a3429d0d5fca0d1a8569e63c0f693e0ce7e0ac0d5ef6",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -116,46 +116,46 @@ window.SKILL_SCAN_RESULTS = {
     "solanaSignature": null
   },
   "summary": {
-    "totalSkills": 570,
-    "localSkills": 570,
-    "onChainSkills": 398,
+    "totalSkills": 584,
+    "localSkills": 584,
+    "onChainSkills": 412,
     "offChainSkills": 172,
     "categories": {
-      "Dev Tools / Agents": 63,
+      "Dev Tools / Agents": 67,
       "Google / Ads": 11,
       "Google / Analytics": 2,
       "Google / Cloud": 56,
       "Local / Web Services": 9,
       "Media / Devices": 24,
       "Productivity / Messaging": 23,
-      "Solana / Blockchain": 109,
-      "Utilities": 44,
+      "Solana / Blockchain": 116,
+      "Utilities": 47,
       "NVIDIA / Accelerated Computing": 229
     },
     "verification": {
-      "verified": 570,
+      "verified": 584,
       "changed": 0,
       "missing": 0,
       "error": 0
     },
     "risk": {
-      "pass": 375,
-      "review": 189,
+      "pass": 383,
+      "review": 195,
       "required": 6
     },
     "findings": {
-      "total": 3523,
+      "total": 3749,
       "bySeverity": {
-        "INFO": 1361,
-        "LOW": 149,
+        "INFO": 1519,
+        "LOW": 170,
         "MEDIUM": 184,
-        "HIGH": 1811,
+        "HIGH": 1858,
         "CRITICAL": 18
       }
     },
     "installs": {
       "knownSkillCount": 0,
-      "unknownSkillCount": 570,
+      "unknownSkillCount": 584,
       "totalKnownInstalls": 0,
       "source": "not tracked locally"
     }
@@ -5551,6 +5551,578 @@ window.SKILL_SCAN_RESULTS = {
       "findings": []
     },
     {
+      "slug": "index-bot",
+      "name": "index-bot",
+      "description": "This skill should be used when the user asks to \"create an index\", \"build a basket of top assets\", \"buy a weighted basket\", \"make a portfolio of assets\", \"equal-weight basket\", \"rebalance my portfolio\", \"track the top N tokens\", or wants an automated, weighted multi-asset basket that buys in one pass and rebalances on a cadence. Builds the basket spec, delegates each buy and rebalance swap to the swap-integration Trading API flow, and records target weights in state.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/index-bot",
+      "skillPath": "skills/index-bot/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install index-bot",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-910df7ce2c08d17b9154eadd1deddd2ad52b1d48ed448e2fb5ad76831e51ca26",
+        "localBundleHash": "sha256-910df7ce2c08d17b9154eadd1deddd2ad52b1d48ed448e2fb5ad76831e51ca26",
+        "merkleLeaf": "sha256-6c114b571d333ff58e789c1c7fb46433d3c5cb0971003c5ee68054bfe22251d4",
+        "localMerkleLeaf": "sha256-6c114b571d333ff58e789c1c7fb46433d3c5cb0971003c5ee68054bfe22251d4",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 11270,
+        "lineCount": 159
+      },
+      "findings": []
+    },
+    {
+      "slug": "liquidity-planner",
+      "name": "liquidity-planner",
+      "description": "This skill should be used when the user asks to \"provide liquidity\", \"create LP position\", \"add liquidity to pool\", \"become a liquidity provider\", \"create v3 position\", \"create v4 position\", \"concentrated liquidity\", \"set price range\", or mentions providing liquidity, LP positions, or liquidity pools on Uniswap. Generates deep links to create positions in the Uniswap interface.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "mixed",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/liquidity-planner",
+      "skillPath": "skills/liquidity-planner/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install liquidity-planner",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-8144d90eb084b75a700dcf91520fe7c6b7624e611e928d56e44ec5138e421c1d",
+        "localBundleHash": "sha256-8144d90eb084b75a700dcf91520fe7c6b7624e611e928d56e44ec5138e421c1d",
+        "merkleLeaf": "sha256-0456196cd6652281dd458d22b06cd1ffebbacd26d2a93514a2025d7d66fe54de",
+        "localMerkleLeaf": "sha256-0456196cd6652281dd458d22b06cd1ffebbacd26d2a93514a2025d7d66fe54de",
+        "fileCount": 3,
+        "localFileCount": 3,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 100,
+        "maxSeverity": "HIGH",
+        "findingsCount": 13,
+        "bySeverity": {
+          "INFO": 1,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 12,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 3,
+        "textFiles": 3,
+        "scriptFiles": 0,
+        "referenceFiles": 2,
+        "assetFiles": 0,
+        "bytesScanned": 33857,
+        "lineCount": 1033
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 20,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/base/0xc3de830ea07524a0761646a6a4e4be0e114a3c83\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 36,
+          "excerpt": "curl -s \"https://api.dexscreener.com/latest/dex/pairs/base/0xab365f161dd501473a1ff0d2ef0dce94e7398839\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 52,
+          "excerpt": "curl -s \"https://api.dexscreener.com/latest/dex/search?q=ETH%20USDC%20base\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 87,
+          "excerpt": "curl -s \"https://yields.llama.fi/pools\" | jq '[.data[] | select("
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 124,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/{network}/{token_address}\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 138,
+          "excerpt": "curl -s \"https://yields.llama.fi/pools\" | jq '[.data[] | select("
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 179,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/base/0xc3de830ea07524a0761646a6a4e4be0e114a3c83\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 191,
+          "excerpt": "curl -s \"https://yields.llama.fi/pools\" | jq '[.data[] | select("
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/position-types.md",
+          "line": 190,
+          "excerpt": "- Ethereum Mainnet (limited pools)"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 128,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/{network}/{address}\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 180,
+          "excerpt": "curl -s \"https://yields.llama.fi/pools\" | jq '[.data[] | select(.project == \"uniswap-v3\" and .chain == \"Ethereum\" and (.symbol | test(\"WETH.*USDC|USDC.*WETH\")))]'"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 196,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/{network}/{address}\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 207,
+          "excerpt": "curl -s \"https://yields.llama.fi/pools\" | jq '[.data[] | select(.project == \"uniswap-v3\" and (.symbol | test(\"WETH.*USDC\")))] | map({symbol, tvlUsd, apy, volumeUsd1d})'"
+        }
+      ]
+    },
+    {
+      "slug": "lp-integration",
+      "name": "lp-integration",
+      "description": "Integrate Uniswap liquidity provisioning (LP) into applications via the LP REST API. Use when the user says \"LP API\", \"liquidity provisioning API\", \"provide liquidity programmatically\", \"create LP position via API\", \"add liquidity via API\", \"increase liquidity\", \"decrease liquidity\", \"remove liquidity\", \"claim LP fees\", \"collect LP fees\", \"manage LP positions in code\", or mentions building a backend, bot, or frontend that creates or manages Uniswap v2/v3/v4 liquidity positions through an API. Also use when debugging LP API calls (e.g. /lp/create, /lp/check_approval, /lp/increase, /lp/decrease, /lp/claim_fees), unexpected response fields, the approval or EIP-712 permit flow, or transaction-building errors for liquidity positions. For generating deep links to the Uniswap web app instead of calling the API, use the liquidity-planner skill; for using the Uniswap v4 SDK directly rather than the REST API, use the v4-sdk-integration skill.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "mixed",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/lp-integration",
+      "skillPath": "skills/lp-integration/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install lp-integration",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-dfd8e27cfca18b0bfbe6c6dc69a26e9f75b4ac8ea19387beca9028c18b2e632e",
+        "localBundleHash": "sha256-dfd8e27cfca18b0bfbe6c6dc69a26e9f75b4ac8ea19387beca9028c18b2e632e",
+        "merkleLeaf": "sha256-d3831d93d136faaa593cb8995cfc1f5eaf5e8cb1b62fcbe3ba1398feae172b56",
+        "localMerkleLeaf": "sha256-d3831d93d136faaa593cb8995cfc1f5eaf5e8cb1b62fcbe3ba1398feae172b56",
+        "fileCount": 2,
+        "localFileCount": 2,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 4,
+        "maxSeverity": "LOW",
+        "findingsCount": 26,
+        "bySeverity": {
+          "INFO": 24,
+          "LOW": 2,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 2,
+        "textFiles": 2,
+        "scriptFiles": 0,
+        "referenceFiles": 1,
+        "assetFiles": 0,
+        "bytesScanned": 45692,
+        "lineCount": 819
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 91,
+          "excerpt": "- **Gas estimation**: optional, when `simulateTransaction: true`."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 145,
+          "excerpt": "| `simulateTransaction` | No | Include gas estimates |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 213,
+          "excerpt": "\"simulateTransaction\": false"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 225,
+          "excerpt": "| `simulateTransaction` | No | Include `gasFee` in response |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 229,
+          "excerpt": "| `includeApprovalSimulation` | No | Include approval pre-calls in the gas simulation (only with `simulateTransaction: true`) |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 243,
+          "excerpt": "gasFee?: string; // present when simulateTransaction: true"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 268,
+          "excerpt": "\"simulateTransaction\": false"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 278,
+          "excerpt": "| `slippageTolerance`, `deadline`, `simulateTransaction`, `urgency`, `includeApprovalSimulation` | No | |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 300,
+          "excerpt": "\"simulateTransaction\": false"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 308,
+          "excerpt": "| `slippageTolerance`, `deadline`, `simulateTransaction`, `urgency` | No | |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 331,
+          "excerpt": "\"simulateTransaction\": false"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 341,
+          "excerpt": "| `slippageTolerance`, `deadline`, `simulateTransaction`, `urgency` | No | |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 359,
+          "excerpt": "\"simulateTransaction\": false"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 368,
+          "excerpt": "| `simulateTransaction` | No | |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 415,
+          "excerpt": "const hash = await walletClient.sendTransaction(approval.transaction);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 463,
+          "excerpt": "for (const a of transactions) await walletClient.sendTransaction(a);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 466,
+          "excerpt": "for (const a of transactions) await walletClient.sendTransaction(a.transaction);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 519,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "SKILL.md",
+          "line": 523,
+          "excerpt": "const API_KEY = process.env.UNISWAP_API_KEY!; // never hardcode"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "SKILL.md",
+          "line": 525,
+          "excerpt": "const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 528,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 531,
+          "excerpt": "const publicClient = createPublicClient({ chain: mainnet, transport: http(process.env.RPC_URL) });"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 575,
+          "excerpt": "const hash = await walletClient.sendTransaction(a.transaction);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 595,
+          "excerpt": "simulateTransaction: true,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 602,
+          "excerpt": "const hash = await walletClient.sendTransaction(created.create);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 647,
+          "excerpt": "(Mainnet 1, Optimism 10, BNB 56, Unichain 130, Polygon 137, Base 8453, Arbitrum 42161, Avalanche 43114, Linea 59144, Blast 81457, Zora 7777777, Sepolia 11155111, and others.) Confirm the live set against `/lp/pool_info` "
+        }
+      ]
+    },
+    {
       "slug": "mcporter",
       "name": "mcporter",
       "description": "Use the mcporter CLI to list, configure, auth, and call MCP servers/tools directly (HTTP or stdio), including ad-hoc servers, config edits, and CLI/type generation.",
@@ -7660,6 +8232,79 @@ window.SKILL_SCAN_RESULTS = {
           "excerpt": "- `pnpm install` first before running codex in fresh clones"
         }
       ]
+    },
+    {
+      "slug": "v4-hook-generator",
+      "name": "v4-hook-generator",
+      "description": "Generate Uniswap v4 hook contracts via OpenZeppelin MCP. Use when building custom swap logic, async swaps, hook-owned liquidity, custom curves, dynamic fees, MEV protection, limit orders, or oracle hooks.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/v4-hook-generator",
+      "skillPath": "skills/v4-hook-generator/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install v4-hook-generator",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-0ddf4d573211edf26da2a89c66a3e414bcdad8dc86dfc01135546f64ffe680bc",
+        "localBundleHash": "sha256-0ddf4d573211edf26da2a89c66a3e414bcdad8dc86dfc01135546f64ffe680bc",
+        "merkleLeaf": "sha256-c555a6a34873a1453b10e3aae23da7123956f51939a5697867518d3917a374b2",
+        "localMerkleLeaf": "sha256-c555a6a34873a1453b10e3aae23da7123956f51939a5697867518d3917a374b2",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 18413,
+        "lineCount": 310
+      },
+      "findings": []
     },
     {
       "slug": "web-perf",
@@ -20137,6 +20782,152 @@ window.SKILL_SCAN_RESULTS = {
       ]
     },
     {
+      "slug": "copy-trade",
+      "name": "copy-trade",
+      "description": "This skill should be used when the user asks to \"copy trades from\" a wallet, \"mirror a wallet\", \"follow this address\", set up \"copy trading\", \"track and replicate a trader\", or mirror another account's swaps bounded by guardrails. Watches a target wallet and mirrors its trades, filtered by chain, asset match, position size, and the follower's own portfolio state.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/copy-trade",
+      "skillPath": "skills/copy-trade/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install copy-trade",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-f5612c5c04175682ae990afb40dd821e00fc93ea30880850f2e3eb951ed0bfea",
+        "localBundleHash": "sha256-f5612c5c04175682ae990afb40dd821e00fc93ea30880850f2e3eb951ed0bfea",
+        "merkleLeaf": "sha256-e686282eca6e334edd65517e5d50c2ef9383d7f36f0017b9c0a198009240bd70",
+        "localMerkleLeaf": "sha256-e686282eca6e334edd65517e5d50c2ef9383d7f36f0017b9c0a198009240bd70",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 18450,
+        "lineCount": 143
+      },
+      "findings": []
+    },
+    {
+      "slug": "dca-bot",
+      "name": "dca-bot",
+      "description": "This skill should be used when the user wants to \"dca into\" a token, \"buy X every day\", set up a \"recurring buy\", \"dollar cost average\" into an asset, \"schedule a buy\", or \"auto-buy on a dip\". Buys a fixed amount into a token on a schedule, optionally only when a condition holds (for example only when ETH is below a price threshold). The host agent's scheduler wakes the skill on a cadence; each wake is one self-contained run.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/dca-bot",
+      "skillPath": "skills/dca-bot/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install dca-bot",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-666d4e4f84fb86f68ccfa3a995dd95fab13ba3b2cfc92b62f8f6b602645f5d5a",
+        "localBundleHash": "sha256-666d4e4f84fb86f68ccfa3a995dd95fab13ba3b2cfc92b62f8f6b602645f5d5a",
+        "merkleLeaf": "sha256-acbed7e14e77685aa9912954da9ec95c983e832c674bf038c9f21ee43db256cc",
+        "localMerkleLeaf": "sha256-acbed7e14e77685aa9912954da9ec95c983e832c674bf038c9f21ee43db256cc",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 9672,
+        "lineCount": 127
+      },
+      "findings": []
+    },
+    {
       "slug": "dex-screener-scanner",
       "name": "dex-screener-scanner",
       "description": "Automate DexScreener Solana token discovery and screening via browser automation. Navigate dexscreener.com/solana, scrape real-time token listings, filter by volume/liquidity/age/holders, and identify the best opportunities. Triggers: scan dexscreener, find new tokens, find trending tokens, screen Solana tokens, best tokens on Solana, dexscreener scanner.",
@@ -27784,6 +28575,478 @@ window.SKILL_SCAN_RESULTS = {
       ]
     },
     {
+      "slug": "pay-with-any-token",
+      "name": "pay-with-any-token",
+      "description": "Pay HTTP 402 payment challenges using tokens via the Tempo CLI and Uniswap Trading API. Use when the user encounters a 402 Payment Required response, needs to fulfill a machine payment, mentions \"MPP\", \"Tempo payment\", \"pay for API access\", \"HTTP 402\", \"x402\", \"machine payment protocol\", \"pay-with-any-token\", \"use tempo\", \"tempo request\", or \"tempo wallet\".",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/pay-with-any-token",
+      "skillPath": "skills/pay-with-any-token/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install pay-with-any-token",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-3949acd14c5f4c3d97cf3c873794ddb877701c2a06a7f731bd43c0bd6b2a7e97",
+        "localBundleHash": "sha256-3949acd14c5f4c3d97cf3c873794ddb877701c2a06a7f731bd43c0bd6b2a7e97",
+        "merkleLeaf": "sha256-e132d23fefa7f98118eaca3f1a22c7c62ff217c3179890966390cf77d37df580",
+        "localMerkleLeaf": "sha256-e132d23fefa7f98118eaca3f1a22c7c62ff217c3179890966390cf77d37df580",
+        "fileCount": 3,
+        "localFileCount": 3,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 100,
+        "maxSeverity": "HIGH",
+        "findingsCount": 24,
+        "bySeverity": {
+          "INFO": 9,
+          "LOW": 5,
+          "MEDIUM": 0,
+          "HIGH": 10,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 3,
+        "textFiles": 3,
+        "scriptFiles": 0,
+        "referenceFiles": 2,
+        "assetFiles": 0,
+        "bytesScanned": 60787,
+        "lineCount": 1385
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "references/credential-construction.md",
+          "line": 22,
+          "excerpt": "npm install mppx viem"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/credential-construction.md",
+          "line": 33,
+          "excerpt": "const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/credential-construction.md",
+          "line": 61,
+          "excerpt": "const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/credential-construction.md",
+          "line": 138,
+          "excerpt": "base|\"eip155:8453\") X402_CHAIN_ID=8453; SOURCE_RPC_URL=\"https://mainnet.base.org\" ;;"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/credential-construction.md",
+          "line": 211,
+          "excerpt": "const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/credential-construction.md",
+          "line": 214,
+          "excerpt": "name: process.env.X402_TOKEN_NAME!, // from extra.name, e.g. \"USDC\""
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/credential-construction.md",
+          "line": 215,
+          "excerpt": "version: process.env.X402_TOKEN_VERSION!, // from extra.version, e.g. \"2\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/trading-api-flows.md",
+          "line": 37,
+          "excerpt": "SOURCE_RPC_URL=\"https://mainnet.base.org\" # RPC URL for SOURCE_CHAIN_ID"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/trading-api-flows.md",
+          "line": 97,
+          "excerpt": "curl -s -X POST https://trade-api.gateway.uniswap.org/v1/check_approval \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/trading-api-flows.md",
+          "line": 139,
+          "excerpt": "curl -s -X POST https://trade-api.gateway.uniswap.org/v1/quote \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/trading-api-flows.md",
+          "line": 222,
+          "excerpt": "curl -s -X POST https://trade-api.gateway.uniswap.org/v1/swap \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/trading-api-flows.md",
+          "line": 317,
+          "excerpt": "APPROVAL=$(curl -s \"https://trade-api.gateway.uniswap.org/v1/check_approval\" \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/trading-api-flows.md",
+          "line": 389,
+          "excerpt": "BRIDGE_QUOTE=$(curl -s \"https://trade-api.gateway.uniswap.org/v1/quote\" \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/trading-api-flows.md",
+          "line": 432,
+          "excerpt": "BRIDGE_RESPONSE=$(curl -s \"https://trade-api.gateway.uniswap.org/v1/swap\" \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/trading-api-flows.md",
+          "line": 482,
+          "excerpt": "{ echo \"Bridge not confirmed after 10 minutes. Check $BRIDGE_TX on https://explore.mainnet.tempo.xyz\"; exit 1; }"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 31,
+          "excerpt": "&& curl -fsSL https://tempo.xyz/install -o /tmp/tempo_install.sh \\"
+        },
+        {
+          "ruleId": "VETTER_SUDO_REQUEST",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Requests sudo or elevated local privileges.",
+          "file": "SKILL.md",
+          "line": 50,
+          "excerpt": "> **Rules:** Do not use `sudo`. Use full absolute paths (`$HOME/.local/bin/tempo`)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 210,
+          "excerpt": "> The Tempo mainnet chain ID is `4217`. Use as fallback if not in the challenge."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 230,
+          "excerpt": "--rpc-url https://mainnet.base.org"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 238,
+          "excerpt": "cast balance \"$WALLET_ADDRESS\" --rpc-url https://mainnet.base.org"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 507,
+          "excerpt": "- **Tempo documentation**: `https://mainnet.docs.tempo.xyz`"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 508,
+          "excerpt": "- **Tempo chain ID**: `4217` (Tempo mainnet)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 510,
+          "excerpt": "- **Tempo Block Explorer**: `https://explore.mainnet.tempo.xyz`"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 515,
+          "excerpt": "- **Tempo payment SDK**: `mppx` (`npm install mppx viem`)"
+        }
+      ]
+    },
+    {
+      "slug": "pay-with-app",
+      "name": "pay-with-app",
+      "description": "Pay HTTP 402 payment challenges issued by OKX's Agent Payments Protocol (APP) on X Layer using tokens from any chain via the Uniswap Trading API. Use this skill whenever the user encounters a 402 challenge whose network resolves to X Layer (chain 196), mentions \"APP\", \"Agent Payments Protocol\", \"OKX agent payment\", \"OKX Onchain OS\", \"OKX agentic wallet\", \"x402 on X Layer\", \"USDT0\", \"x42\", \"Instant Payment\", \"Batch Payment\", \"pay for X Layer API\", or wants to pay an OKX-backed merchant. Even when the user does not explicitly say APP, prefer this skill for any 402 challenge whose network resolves to X Layer (chain 196). For 402 challenges on other chains (Ethereum, Base, Arbitrum, Tempo) use pay-with-any-token instead.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/pay-with-app",
+      "skillPath": "skills/pay-with-app/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install pay-with-app",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-d4e57b8e439f956d5cb32b58413666b708e35172cda30626e8d160017aac0178",
+        "localBundleHash": "sha256-d4e57b8e439f956d5cb32b58413666b708e35172cda30626e8d160017aac0178",
+        "merkleLeaf": "sha256-2b40eb3f8b831d15fc4adbb8c473c8115b813ec9842b74e45513231977906724",
+        "localMerkleLeaf": "sha256-2b40eb3f8b831d15fc4adbb8c473c8115b813ec9842b74e45513231977906724",
+        "fileCount": 3,
+        "localFileCount": 3,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 70,
+        "maxSeverity": "HIGH",
+        "findingsCount": 12,
+        "bySeverity": {
+          "INFO": 7,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 5,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 3,
+        "textFiles": 3,
+        "scriptFiles": 0,
+        "referenceFiles": 2,
+        "assetFiles": 0,
+        "bytesScanned": 74593,
+        "lineCount": 1541
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "references/app-x402-flow.md",
+          "line": 55,
+          "excerpt": "target=`$X402_SIGNER_DIR`, command=`npm install viem`, footprint=~13"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "references/app-x402-flow.md",
+          "line": 76,
+          "excerpt": "( cd \"$X402_SIGNER_DIR\" && npm install viem --no-audit --no-fund --loglevel=error )"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/funding-x-layer.md",
+          "line": 22,
+          "excerpt": "| USDC (`0x74b7F163…`) | ❌ not via Uniswap on X Layer | Trading API does not consistently return routes for USDC swaps on X Layer despite pools at 0.05% and 0.3% existing: TVL is too thin for reliable execution. If the m"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/funding-x-layer.md",
+          "line": 39,
+          "excerpt": "--rpc-url https://mainnet.base.org"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/funding-x-layer.md",
+          "line": 47,
+          "excerpt": "cast balance \"$WALLET_ADDRESS\" --rpc-url https://mainnet.base.org"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/funding-x-layer.md",
+          "line": 57,
+          "excerpt": "4. Wallet has a stablecoin (USDC) on Base / Arbitrum / Mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/funding-x-layer.md",
+          "line": 59,
+          "excerpt": "5. Wallet has native ETH on Base / Mainnet, cross-chain route from"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/funding-x-layer.md",
+          "line": 94,
+          "excerpt": "QUOTE=$(curl -fsS -X POST https://trade-api.gateway.uniswap.org/v1/quote \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/funding-x-layer.md",
+          "line": 240,
+          "excerpt": "QUOTE_HTTP_STATUS=$(curl -sS -X POST https://trade-api.gateway.uniswap.org/v1/quote \\"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 72,
+          "excerpt": "`AskUserQuestion` before running `npm install viem` into a cached"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 258,
+          "excerpt": "| USDC | `0x74b7F16337b8972027F6196A17a631aC6dE26d22` | 6 | ⏳ No reliable Uniswap v3 routing on X Layer. The Trading API does not consistently return routes for USDC swaps on X Layer; available pool liquidity is too thin"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 429,
+          "excerpt": "| APP requests USDC on X Layer | Surface a clear caveat: USDC has no reliable Uniswap v3 routing on X Layer. Suggest bridging USDC directly from a chain where it is liquid (Base, Arbitrum, Mainnet), or asking about USDT0"
+        }
+      ]
+    },
+    {
       "slug": "phantom-wallet-mcp",
       "name": "phantom-wallet-mcp",
       "description": "Execute wallet operations through the Phantom MCP server. Use when the user wants to interact with their Phantom wallet directly — get addresses, transfer SOL or SPL tokens, buy/swap tokens, sign transactions, and sign messages across Solana, Ethereum, Bitcoin, and Sui. Requires the @phantom/mcp-server to be configured as an MCP server.",
@@ -29845,10 +31108,10 @@ window.SKILL_SCAN_RESULTS = {
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-721ec703e57fd9ff9fe841e2d67e40472c2afd6c2907cda0c2a7e8599db5af3f",
-        "localBundleHash": "sha256-721ec703e57fd9ff9fe841e2d67e40472c2afd6c2907cda0c2a7e8599db5af3f",
-        "merkleLeaf": "sha256-ab237dd05eaa9792dfb5de96ede8476a1f5ebeb1d31ee0c7462ebc88bf84ea6c",
-        "localMerkleLeaf": "sha256-ab237dd05eaa9792dfb5de96ede8476a1f5ebeb1d31ee0c7462ebc88bf84ea6c",
+        "bundleHash": "sha256-f2b039f85d4ddd5f5cd065bbf12c4906b49e84a25040762ffe30bba1c4599b02",
+        "localBundleHash": "sha256-f2b039f85d4ddd5f5cd065bbf12c4906b49e84a25040762ffe30bba1c4599b02",
+        "merkleLeaf": "sha256-e59bf6320420240695fcc8b59ab7a2a9f689151047ad353eb16e619ecf54d8fb",
+        "localMerkleLeaf": "sha256-e59bf6320420240695fcc8b59ab7a2a9f689151047ad353eb16e619ecf54d8fb",
         "fileCount": 1,
         "localFileCount": 1,
         "changedFiles": 0,
@@ -29881,8 +31144,8 @@ window.SKILL_SCAN_RESULTS = {
         "scriptFiles": 0,
         "referenceFiles": 0,
         "assetFiles": 0,
-        "bytesScanned": 8907,
-        "lineCount": 259
+        "bytesScanned": 9733,
+        "lineCount": 271
       },
       "findings": [
         {
@@ -29900,7 +31163,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "onchain_surface",
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "SKILL.md",
-          "line": 27,
+          "line": 29,
           "excerpt": "| **Chain ID** | `4663` (mainnet only for this factory) |"
         },
         {
@@ -29909,7 +31172,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "onchain_surface",
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "SKILL.md",
-          "line": 28,
+          "line": 30,
           "excerpt": "| **Public RPC** | `https://rpc.mainnet.chain.robinhood.com` |"
         },
         {
@@ -29918,7 +31181,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "onchain_surface",
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "SKILL.md",
-          "line": 75,
+          "line": 77,
           "excerpt": "default: { http: [\"https://rpc.mainnet.chain.robinhood.com\"] },"
         },
         {
@@ -29936,7 +31199,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "onchain_surface",
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "SKILL.md",
-          "line": 195,
+          "line": 202,
           "excerpt": "export RH_RPC_URL=https://rpc.mainnet.chain.robinhood.com"
         },
         {
@@ -29945,7 +31208,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "data_exfiltration",
           "message": "Uses curl or wget against an external URL.",
           "file": "SKILL.md",
-          "line": 213,
+          "line": 222,
           "excerpt": "curl -s 'https://clawdcode.net/api/launchpad/tokens?limit=10' | jq '.total, .tokens[0]'"
         },
         {
@@ -29954,7 +31217,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "data_exfiltration",
           "message": "Uses curl or wget against an external URL.",
           "file": "SKILL.md",
-          "line": 214,
+          "line": 223,
           "excerpt": "curl -s 'https://clawdcode.net/api/launchpad/token?address=0xTOKEN' | jq ."
         },
         {
@@ -29963,8 +31226,172 @@ window.SKILL_SCAN_RESULTS = {
           "category": "onchain_surface",
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "SKILL.md",
-          "line": 216,
+          "line": 225,
           "excerpt": "--rpc-url https://rpc.mainnet.chain.robinhood.com"
+        }
+      ]
+    },
+    {
+      "slug": "rh-launchpad-v3",
+      "name": "rh-launchpad-v3",
+      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 — graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or ClawdCode /api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/rh-launchpad-v3",
+      "skillPath": "skills/rh-launchpad-v3/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install rh-launchpad-v3",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-b5231217ab6a6f88f5413409bf4c777c9d510ad24b56891418545988507c3c9a",
+        "localBundleHash": "sha256-b5231217ab6a6f88f5413409bf4c777c9d510ad24b56891418545988507c3c9a",
+        "merkleLeaf": "sha256-bb14ef385dfae77dc7fde3fa4ca478fd7355d95502b7b4276006f7b178c180db",
+        "localMerkleLeaf": "sha256-bb14ef385dfae77dc7fde3fa4ca478fd7355d95502b7b4276006f7b178c180db",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 44,
+        "maxSeverity": "HIGH",
+        "findingsCount": 10,
+        "bySeverity": {
+          "INFO": 6,
+          "LOW": 1,
+          "MEDIUM": 0,
+          "HIGH": 3,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 5382,
+        "lineCount": 155
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 17,
+          "excerpt": "| **Anyone can launch** | EVM wallet + ETH on **Robinhood mainnet 4663** |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 44,
+          "excerpt": "2. Sign response.eth_sendTransaction with bot EVM key (chainId 0x1237 = 4663)"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 56,
+          "excerpt": "curl -sS 'https://clawdcode.net/api/launchpad/v3' | jq '{launchpad,tokenCount,cfg}'"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 59,
+          "excerpt": "curl -sS -X POST 'https://clawdcode.net/api/launchpad/v3/prepare' \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 64,
+          "excerpt": "curl -sS -X POST 'https://clawdcode.net/api/launchpad/v3/submit' \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 79,
+          "excerpt": "\"eth_sendTransaction\": { \"to\": \"0x565d…\", \"data\": \"0x…\", \"value\": \"0x0\", \"chainId\": \"0x1237\" },"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 95,
+          "excerpt": "rpcUrls: { default: { http: [\"https://rpc.mainnet.chain.robinhood.com\"] } },"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "SKILL.md",
+          "line": 106,
+          "excerpt": "const account = privateKeyToAccount(process.env.EVM_PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 108,
+          "excerpt": "const hash = await wallet.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 115,
+          "excerpt": "// 3) Optional: submit path already done if you used sendTransaction;"
         }
       ]
     },
@@ -39721,6 +41148,224 @@ window.SKILL_SCAN_RESULTS = {
       ]
     },
     {
+      "slug": "swap-planner",
+      "name": "swap-planner",
+      "description": "This skill should be used when the user asks to \"swap tokens\", \"trade ETH for USDC\", \"exchange tokens on Uniswap\", \"buy tokens\", \"sell tokens\", \"convert ETH to stablecoins\", \"find memecoins\", \"discover tokens\", \"research tokens\", \"tokens to buy\", \"find tokens to swap\", \"what should I buy\", or mentions swapping, trading, researching, discovering, buying, or exchanging tokens on any Uniswap-supported chain. Supports both known token swaps and token discovery workflows (discovery uses keyword search and web search — there is no live \"trending\" feed). Generates deep links to execute swaps in the Uniswap interface.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/swap-planner",
+      "skillPath": "skills/swap-planner/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install swap-planner",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-6aeef887ea4b540b04855b110958aa9122e1a0aced702ceb937dc92fb0ab115f",
+        "localBundleHash": "sha256-6aeef887ea4b540b04855b110958aa9122e1a0aced702ceb937dc92fb0ab115f",
+        "merkleLeaf": "sha256-909e816442659c7f08e38f38e239f58345186c1dc02b2a08237bd7778c1853d8",
+        "localMerkleLeaf": "sha256-909e816442659c7f08e38f38e239f58345186c1dc02b2a08237bd7778c1853d8",
+        "fileCount": 2,
+        "localFileCount": 2,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 100,
+        "maxSeverity": "HIGH",
+        "findingsCount": 16,
+        "bySeverity": {
+          "INFO": 2,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 14,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 2,
+        "textFiles": 2,
+        "scriptFiles": 0,
+        "referenceFiles": 1,
+        "assetFiles": 0,
+        "bytesScanned": 23939,
+        "lineCount": 621
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 20,
+          "excerpt": "curl -s \"https://api.dexscreener.com/tokens/v1/{network}/{address}\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 27,
+          "excerpt": "curl -s \"https://api.dexscreener.com/tokens/v1/base/0x4200000000000000000000000000000000000006\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 39,
+          "excerpt": "curl -s \"https://api.dexscreener.com/latest/dex/search?q=degen\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 52,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-boosts/top/v1\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 60,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/{network}/{address}\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 93,
+          "excerpt": "curl -s \"https://coins.llama.fi/prices/current/{chain}:{address}\""
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 103,
+          "excerpt": "curl -s \"https://coins.llama.fi/prices/current/base:0x4200000000000000000000000000000000000006,base:0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 115,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/base/0x4200000000000000000000000000000000000006\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 138,
+          "excerpt": "curl -s \"https://api.dexscreener.com/latest/dex/search?q=base\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "references/data-providers.md",
+          "line": 152,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/base/{token_address}\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 45,
+          "excerpt": "curl -s \"https://api.dexscreener.com/latest/dex/search?q=degen\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 64,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-boosts/top/v1\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 77,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/{network}/{address}\" | \\"
+        },
+        {
+          "ruleId": "VETTER_CURL_WGET_EXTERNAL",
+          "severity": "HIGH",
+          "category": "data_exfiltration",
+          "message": "Uses curl or wget against an external URL.",
+          "file": "SKILL.md",
+          "line": 305,
+          "excerpt": "curl -s \"https://api.dexscreener.com/token-pairs/v1/{network}/{address}\" | \\"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 403,
+          "excerpt": "Gas costs vary by chain and network congestion. Base and Arbitrum typically have lower gas than Ethereum mainnet."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 417,
+          "excerpt": "- Ethereum Mainnet (`ethereum`)"
+        }
+      ]
+    },
+    {
       "slug": "swarm-orchestrator",
       "name": "swarm-orchestrator",
       "description": "Orchestrate multi-bot trading swarms on Pump.fun with persona-driven agents",
@@ -40098,6 +41743,1124 @@ window.SKILL_SCAN_RESULTS = {
           "file": "SKILL.md",
           "line": 75,
           "excerpt": "- **Declared dependencies.** Devnet testing requires `HELIUS_API_KEY` (RPC provider key). Localnet testing needs no credentials. In production, load from a secrets manager."
+        }
+      ]
+    },
+    {
+      "slug": "viem-integration",
+      "name": "viem-integration",
+      "description": "Integrate EVM blockchains using viem. Use when user says \"read blockchain data\", \"send transaction\", \"interact with smart contract\", \"connect to Ethereum\", \"use viem\", \"use wagmi\", \"wallet integration\", \"viem setup\", or mentions blockchain/EVM development with TypeScript.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/viem-integration",
+      "skillPath": "skills/viem-integration/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install viem-integration",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-5537ea966d39fc147d941c9a11ca81181b466b8bac23b61bdad776d17c9bdb7e",
+        "localBundleHash": "sha256-5537ea966d39fc147d941c9a11ca81181b466b8bac23b61bdad776d17c9bdb7e",
+        "merkleLeaf": "sha256-3e70a47261ca72dcc9607a4ad730298e87466d9cddc485c5e9cc73af7e39c14c",
+        "localMerkleLeaf": "sha256-3e70a47261ca72dcc9607a4ad730298e87466d9cddc485c5e9cc73af7e39c14c",
+        "fileCount": 7,
+        "localFileCount": 7,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 68,
+        "maxSeverity": "HIGH",
+        "findingsCount": 116,
+        "bySeverity": {
+          "INFO": 100,
+          "LOW": 13,
+          "MEDIUM": 0,
+          "HIGH": 3,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 7,
+        "textFiles": 7,
+        "scriptFiles": 0,
+        "referenceFiles": 6,
+        "assetFiles": 0,
+        "bytesScanned": 75617,
+        "lineCount": 3242
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/accounts-and-keys.md",
+          "line": 25,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/accounts-and-keys.md",
+          "line": 27,
+          "excerpt": "const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/accounts-and-keys.md",
+          "line": 31,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/accounts-and-keys.md",
+          "line": 188,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/accounts-and-keys.md",
+          "line": 191,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/accounts-and-keys.md",
+          "line": 269,
+          "excerpt": "const signedTx = await account.signTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/accounts-and-keys.md",
+          "line": 298,
+          "excerpt": "account.signTransaction(tx);"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/accounts-and-keys.md",
+          "line": 314,
+          "excerpt": "if (!process.env.PRIVATE_KEY) {"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/accounts-and-keys.md",
+          "line": 317,
+          "excerpt": "const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/accounts-and-keys.md",
+          "line": 345,
+          "excerpt": "privateKey: process.env.DEV_PRIVATE_KEY,"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/accounts-and-keys.md",
+          "line": 349,
+          "excerpt": "privateKey: process.env.PROD_PRIVATE_KEY,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/accounts-and-keys.md",
+          "line": 363,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/accounts-and-keys.md",
+          "line": 372,
+          "excerpt": "const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/accounts-and-keys.md",
+          "line": 375,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 13,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 16,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 25,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 26,
+          "excerpt": "transport: http('https://eth-mainnet.g.alchemy.com/v2/YOUR_API_KEY'),"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 34,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 55,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 61,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 70,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 73,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 106,
+          "excerpt": "http('https://eth-mainnet.g.alchemy.com/v2/KEY');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 131,
+          "excerpt": "webSocket('wss://eth-mainnet.g.alchemy.com/v2/KEY');"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 180,
+          "excerpt": "mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 207,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 209,
+          "excerpt": "mainnet.id; // 1"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 210,
+          "excerpt": "mainnet.name; // \"Ethereum\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 211,
+          "excerpt": "mainnet.nativeCurrency; // { name: \"Ether\", symbol: \"ETH\", decimals: 18 }"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 212,
+          "excerpt": "mainnet.rpcUrls; // { default: { http: [...] } }"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 213,
+          "excerpt": "mainnet.blockExplorers; // { default: { name: \"Etherscan\", url: \"...\" } }"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 222,
+          "excerpt": "| Ethereum Mainnet | 1 | `mainnet` |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 223,
+          "excerpt": "| OP Mainnet | 10 | `optimism` |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 282,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/clients-and-transports.md",
+          "line": 290,
+          "excerpt": "const ALCHEMY_KEY = process.env.ALCHEMY_API_KEY;"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 293,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 294,
+          "excerpt": "transport: http(`https://eth-mainnet.g.alchemy.com/v2/${ALCHEMY_KEY}`),"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 298,
+          "excerpt": "// Arbitrum: arb-mainnet.g.alchemy.com/v2/KEY"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 299,
+          "excerpt": "// Optimism: opt-mainnet.g.alchemy.com/v2/KEY"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 300,
+          "excerpt": "// Base: base-mainnet.g.alchemy.com/v2/KEY"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 301,
+          "excerpt": "// Polygon: polygon-mainnet.g.alchemy.com/v2/KEY"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/clients-and-transports.md",
+          "line": 307,
+          "excerpt": "const INFURA_KEY = process.env.INFURA_API_KEY;"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 310,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 311,
+          "excerpt": "transport: http(`https://mainnet.infura.io/v3/${INFURA_KEY}`),"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 315,
+          "excerpt": "// Arbitrum: arbitrum-mainnet.infura.io/v3/KEY"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 316,
+          "excerpt": "// Optimism: optimism-mainnet.infura.io/v3/KEY"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 317,
+          "excerpt": "// Polygon: polygon-mainnet.infura.io/v3/KEY"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 324,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 350,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 352,
+          "excerpt": "http('https://eth-mainnet.g.alchemy.com/v2/KEY', {"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 356,
+          "excerpt": "http('https://mainnet.infura.io/v3/KEY', {"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 377,
+          "excerpt": "import { mainnet, arbitrum, base } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 380,
+          "excerpt": "[mainnet.id]: createPublicClient({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 381,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 402,
+          "excerpt": "import { mainnet, arbitrum, base } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 405,
+          "excerpt": "[mainnet.id]: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 431,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 438,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/clients-and-transports.md",
+          "line": 443,
+          "excerpt": "export const walletClient = process.env.PRIVATE_KEY"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "references/clients-and-transports.md",
+          "line": 445,
+          "excerpt": "account: privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`),"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 446,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/clients-and-transports.md",
+          "line": 455,
+          "excerpt": "RPC_URL=https://eth-mainnet.g.alchemy.com/v2/YOUR_KEY"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/contract-patterns.md",
+          "line": 247,
+          "excerpt": "const hash = await walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/reading-data.md",
+          "line": 11,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/reading-data.md",
+          "line": 14,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/reading-data.md",
+          "line": 482,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/reading-data.md",
+          "line": 486,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "references/wagmi-react.md",
+          "line": 10,
+          "excerpt": "npm install wagmi viem @tanstack/react-query"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/wagmi-react.md",
+          "line": 18,
+          "excerpt": "import { mainnet, arbitrum, optimism, base, polygon } from 'wagmi/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/wagmi-react.md",
+          "line": 24,
+          "excerpt": "chains: [mainnet, arbitrum, optimism, base, polygon],"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/wagmi-react.md",
+          "line": 27,
+          "excerpt": "[mainnet.id]: http(),"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/wagmi-react.md",
+          "line": 306,
+          "excerpt": "### useSendTransaction"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/wagmi-react.md",
+          "line": 311,
+          "excerpt": "import { useSendTransaction, useWaitForTransactionReceipt } from 'wagmi';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/wagmi-react.md",
+          "line": 315,
+          "excerpt": "const { sendTransaction, data: hash, isPending } = useSendTransaction();"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/wagmi-react.md",
+          "line": 324,
+          "excerpt": "sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/wagmi-react.md",
+          "line": 547,
+          "excerpt": "| `useSendTransaction` | Send native token |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 12,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 18,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 22,
+          "excerpt": "const hash = await client.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 33,
+          "excerpt": "const hash = await client.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 54,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 60,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 102,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 107,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 113,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 213,
+          "excerpt": "const hash = await walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 248,
+          "excerpt": "const hash = await walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 266,
+          "excerpt": "const hash1 = await client.sendTransaction({ to: '0x...', value: parseEther('1') });"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 267,
+          "excerpt": "const hash2 = await client.sendTransaction({ to: '0x...', value: parseEther('1') });"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 277,
+          "excerpt": "const hash = await walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 293,
+          "excerpt": "walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 298,
+          "excerpt": "walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 303,
+          "excerpt": "walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 334,
+          "excerpt": "const hash = await walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 355,
+          "excerpt": "const hash = await walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 380,
+          "excerpt": "const signedTx = await walletClient.signTransaction(request);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 399,
+          "excerpt": "const hash = await walletClient.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 449,
+          "excerpt": "tx: Parameters\u003ctypeof client.sendTransaction>[0],"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/writing-transactions.md",
+          "line": 454,
+          "excerpt": "return await client.sendTransaction(tx);"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 29,
+          "excerpt": "npm install viem"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 32,
+          "excerpt": "npm install wagmi viem @tanstack/react-query"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 59,
+          "excerpt": "import { mainnet, arbitrum, optimism, base, polygon } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "SKILL.md",
+          "line": 70,
+          "excerpt": "- **Private keys**: MUST NEVER be hardcoded — always use `process.env.PRIVATE_KEY` with runtime validation"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 80,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 83,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 98,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 101,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 123,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "SKILL.md",
+          "line": 125,
+          "excerpt": "const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 129,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 133,
+          "excerpt": "const hash = await client.sendTransaction({"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 146,
+          "excerpt": "import { mainnet } from 'viem/chains';"
+        },
+        {
+          "ruleId": "VETTER_ENV_SECRET_ACCESS",
+          "severity": "LOW",
+          "category": "hardcoded_secrets",
+          "message": "Reads secret-like environment variables.",
+          "file": "SKILL.md",
+          "line": 148,
+          "excerpt": "const account = privateKeyToAccount(process.env.PRIVATE_KEY as `0x${string}`);"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 152,
+          "excerpt": "chain: mainnet,"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 157,
+          "excerpt": "chain: mainnet,"
         }
       ]
     },
@@ -42328,6 +45091,134 @@ window.SKILL_SCAN_RESULTS = {
         "lineCount": 111
       },
       "findings": []
+    },
+    {
+      "slug": "deployer",
+      "name": "deployer",
+      "description": "Deploy CCA (Continuous Clearing Auction) smart contracts using the Factory pattern. Use when user says \"deploy auction\", \"deploy cca\", \"factory deployment\", or wants to deploy a configured auction.",
+      "category": "Utilities",
+      "surface": {
+        "type": "on-chain",
+        "chain": "mixed",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/deployer",
+      "skillPath": "skills/deployer/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install deployer",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-b311695e8b1d2c418f7a2fbe8a513c8668542ba275562a15ea573e83002f4c15",
+        "localBundleHash": "sha256-b311695e8b1d2c418f7a2fbe8a513c8668542ba275562a15ea573e83002f4c15",
+        "merkleLeaf": "sha256-e5d2b777095dc95938c10280c8e131b0bab71ecc221561e13846eb039b5fb409",
+        "localMerkleLeaf": "sha256-e5d2b777095dc95938c10280c8e131b0bab71ecc221561e13846eb039b5fb409",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 6,
+        "bySeverity": {
+          "INFO": 6,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 16276,
+        "lineCount": 517
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 53,
+          "excerpt": "3. ✅ **Test on testnets first** before deploying to mainnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 83,
+          "excerpt": "- ❌ **Never** use mainnet private keys on untrusted computers"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 141,
+          "excerpt": "**Always test on testnets before mainnet:**"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 146,
+          "excerpt": "- Only deploy to mainnet after thorough testing"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 466,
+          "excerpt": "| 1 | Mainnet | 12s |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 498,
+          "excerpt": "- [ ] Block times match network (12s mainnet, 2s L2s)"
+        }
+      ]
     },
     {
       "slug": "deprecated/ubiquitous-language",
@@ -45068,6 +47959,180 @@ window.SKILL_SCAN_RESULTS = {
         "lineCount": 15
       },
       "findings": []
+    },
+    {
+      "slug": "v4-sdk-integration",
+      "name": "v4-sdk-integration",
+      "description": "App-layer SDK guide for building swap and liquidity experiences directly with the Uniswap v4 SDK. Use when user asks about \"v4 sdk\", \"uniswap v4\", \"v4 swap\", \"v4 liquidity\", \"PoolManager\", \"V4Planner\", \"StateView\", \"PositionManager\", \"pool state\", \"v4 position\", \"uniswap sdk\", or when building swap/liquidity UX directly with SDKs rather than via the Trading API.",
+      "category": "Utilities",
+      "surface": {
+        "type": "on-chain",
+        "chain": "mixed",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/v4-sdk-integration",
+      "skillPath": "skills/v4-sdk-integration/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install v4-sdk-integration",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-5a8f9a3cf644b94848a6332903456c6db24de7f9fccc8ab1aee6a3f6a4983a26",
+        "localBundleHash": "sha256-5a8f9a3cf644b94848a6332903456c6db24de7f9fccc8ab1aee6a3f6a4983a26",
+        "merkleLeaf": "sha256-b5ef36fa9db5e0ddf9c9e1b52e197ebee3625912080f128110c59cd23df1f134",
+        "localMerkleLeaf": "sha256-b5ef36fa9db5e0ddf9c9e1b52e197ebee3625912080f128110c59cd23df1f134",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 9569,
+        "lineCount": 241
+      },
+      "findings": []
+    },
+    {
+      "slug": "v4-security-foundations",
+      "name": "v4-security-foundations",
+      "description": "Security-first Uniswap v4 hook development. Use when user mentions \"v4 hooks\", \"hook security\", \"PoolManager\", \"beforeSwap\", \"afterSwap\", or asks about V4 hook best practices, vulnerabilities, or audit requirements.",
+      "category": "Utilities",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/v4-security-foundations",
+      "skillPath": "skills/v4-security-foundations/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install v4-security-foundations",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-7e675a434c5d9dd08ee6273c3a08d862b3cdbbd49c770537f1f4e7b3d5650b35",
+        "localBundleHash": "sha256-7e675a434c5d9dd08ee6273c3a08d862b3cdbbd49c770537f1f4e7b3d5650b35",
+        "merkleLeaf": "sha256-565667437c917b63405de943dbd290a916b7554303fafaf89d6753a2c431857a",
+        "localMerkleLeaf": "sha256-565667437c917b63405de943dbd290a916b7554303fafaf89d6753a2c431857a",
+        "fileCount": 4,
+        "localFileCount": 4,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 3,
+        "bySeverity": {
+          "INFO": 3,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 4,
+        "textFiles": 4,
+        "scriptFiles": 0,
+        "referenceFiles": 3,
+        "assetFiles": 0,
+        "bytesScanned": 50384,
+        "lineCount": 1397
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/audit-checklist.md",
+          "line": 185,
+          "excerpt": "- [ ] Fork tests against mainnet state"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/audit-checklist.md",
+          "line": 233,
+          "excerpt": "- [ ] Test transaction on mainnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 385,
+          "excerpt": "| 5 | Fork testing on mainnet | All hooks |"
+        }
+      ]
     },
     {
       "slug": "nvidia/accelerated-computing-cudf",
