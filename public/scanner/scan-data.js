@@ -91,11 +91,11 @@ window.SKILL_SCAN_RESULTS = {
       }
     ]
   },
-  "scannedAt": "2026-07-20T17:10:37.142Z",
+  "scannedAt": "2026-07-20T17:31:58.788Z",
   "source": {
     "catalog": "local SKILL.md crawl",
-    "canonicalSkills": 592,
-    "localSkills": 592,
+    "canonicalSkills": 594,
+    "localSkills": 594,
     "duplicatePublicSkillsExcluded": true
   },
   "onchain": {
@@ -104,9 +104,9 @@ window.SKILL_SCAN_RESULTS = {
     "cluster": "mainnet-beta",
     "status": "anchor-ready",
     "anchorState": "planned",
-    "totalSkills": 592,
-    "catalogHash": "sha256-0355badeed8cac5933a2bf1212f026f7aca71ce028966e7eef43bbbf829bcb06",
-    "merkleRoot": "sha256-01c3e9df6272dac5d15ff20d6b44957418148c80c15c5948b13dc7e4b704f4fd",
+    "totalSkills": 594,
+    "catalogHash": "sha256-6b1894b3bfe274be2d859a27fa60f5cbc2cc24cbabb5b09d65716b537c8c702e",
+    "merkleRoot": "sha256-c60e06beec03f9792cf635caaf3244b05b034b0d277d22129bba29baf97ebb39",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -116,9 +116,9 @@ window.SKILL_SCAN_RESULTS = {
     "solanaSignature": null
   },
   "summary": {
-    "totalSkills": 592,
-    "localSkills": 592,
-    "onChainSkills": 420,
+    "totalSkills": 594,
+    "localSkills": 594,
+    "onChainSkills": 422,
     "offChainSkills": 172,
     "categories": {
       "Dev Tools / Agents": 70,
@@ -128,34 +128,34 @@ window.SKILL_SCAN_RESULTS = {
       "Local / Web Services": 9,
       "Media / Devices": 24,
       "Productivity / Messaging": 23,
-      "Solana / Blockchain": 121,
+      "Solana / Blockchain": 123,
       "Utilities": 47,
       "NVIDIA / Accelerated Computing": 229
     },
     "verification": {
-      "verified": 592,
+      "verified": 594,
       "changed": 0,
       "missing": 0,
       "error": 0
     },
     "risk": {
-      "pass": 390,
-      "review": 196,
+      "pass": 391,
+      "review": 197,
       "required": 6
     },
     "findings": {
-      "total": 3778,
+      "total": 3782,
       "bySeverity": {
-        "INFO": 1546,
+        "INFO": 1549,
         "LOW": 170,
         "MEDIUM": 184,
-        "HIGH": 1860,
+        "HIGH": 1861,
         "CRITICAL": 18
       }
     },
     "installs": {
       "knownSkillCount": 0,
-      "unknownSkillCount": 592,
+      "unknownSkillCount": 594,
       "totalKnownInstalls": 0,
       "source": "not tracked locally"
     }
@@ -5493,10 +5493,10 @@ window.SKILL_SCAN_RESULTS = {
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-d3f43f3c4d0e4fae277ca4dfec404d10769264d73a27d9b92d40b2f2f694ec8c",
-        "localBundleHash": "sha256-d3f43f3c4d0e4fae277ca4dfec404d10769264d73a27d9b92d40b2f2f694ec8c",
-        "merkleLeaf": "sha256-edc18b5551fadbf4b5bbc1e021f0bcea85a90d238a205e0c77e6a6f5591b0804",
-        "localMerkleLeaf": "sha256-edc18b5551fadbf4b5bbc1e021f0bcea85a90d238a205e0c77e6a6f5591b0804",
+        "bundleHash": "sha256-d7a8b239ae842ac600a0820332bfdeccc2a42c442b03c22e720004a1de5ffd48",
+        "localBundleHash": "sha256-d7a8b239ae842ac600a0820332bfdeccc2a42c442b03c22e720004a1de5ffd48",
+        "merkleLeaf": "sha256-5d08a57507b094c99ec44da3d7e8a4a7f3e691c51536f2496973d83e84fc1e24",
+        "localMerkleLeaf": "sha256-5d08a57507b094c99ec44da3d7e8a4a7f3e691c51536f2496973d83e84fc1e24",
         "fileCount": 4,
         "localFileCount": 4,
         "changedFiles": 0,
@@ -5529,8 +5529,8 @@ window.SKILL_SCAN_RESULTS = {
         "scriptFiles": 1,
         "referenceFiles": 2,
         "assetFiles": 0,
-        "bytesScanned": 10011,
-        "lineCount": 352
+        "bytesScanned": 11710,
+        "lineCount": 385
       },
       "findings": [
         {
@@ -19684,10 +19684,10 @@ window.SKILL_SCAN_RESULTS = {
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-770eb32058e168217f4ffcef6649dfd9cc318eb01f4d26b646b901d94205f8ce",
-        "localBundleHash": "sha256-770eb32058e168217f4ffcef6649dfd9cc318eb01f4d26b646b901d94205f8ce",
-        "merkleLeaf": "sha256-c7428dc8e9295b33cb54d3b32a87a8c158c56978855afc25b8374c988d99eb4b",
-        "localMerkleLeaf": "sha256-c7428dc8e9295b33cb54d3b32a87a8c158c56978855afc25b8374c988d99eb4b",
+        "bundleHash": "sha256-30985c3b3e938fcd3f101731c17d0cfefcd3468c8bb8c28ecfad999103ec003f",
+        "localBundleHash": "sha256-30985c3b3e938fcd3f101731c17d0cfefcd3468c8bb8c28ecfad999103ec003f",
+        "merkleLeaf": "sha256-cf82d80bcf79b47576a2e948be7fba2830456adf7001434eb1f5ae36265ec5ed",
+        "localMerkleLeaf": "sha256-cf82d80bcf79b47576a2e948be7fba2830456adf7001434eb1f5ae36265ec5ed",
         "fileCount": 1,
         "localFileCount": 1,
         "changedFiles": 0,
@@ -19720,8 +19720,8 @@ window.SKILL_SCAN_RESULTS = {
         "scriptFiles": 0,
         "referenceFiles": 0,
         "assetFiles": 0,
-        "bytesScanned": 3452,
-        "lineCount": 89
+        "bytesScanned": 3543,
+        "lineCount": 90
       },
       "findings": [
         {
@@ -19784,7 +19784,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "onchain_surface",
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "SKILL.md",
-          "line": 81,
+          "line": 82,
           "excerpt": "5. Mainnet writes require explicit user confirmation."
         }
       ]
@@ -19986,6 +19986,190 @@ window.SKILL_SCAN_RESULTS = {
           "file": "SKILL.md",
           "line": 96,
           "excerpt": "curl -sS https://cheshireterminal.ai/api/skills-store/cheshire-api"
+        }
+      ]
+    },
+    {
+      "slug": "cheshire-noxa",
+      "name": "cheshire-noxa",
+      "description": "NOXA Fun/DEX collab for Cheshire Terminal — launch feed, DEX registry, QuoterV2 quotes, EVM RPC. One-shot npm package @x402solana/cheshire-noxa.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/cheshire-noxa",
+      "skillPath": "skills/cheshire-noxa/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install cheshire-noxa",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-dd7d46bb8de865d4b6b0ec7fd1b0297045c9e44b0f23b60c2365a56d64cf1d95",
+        "localBundleHash": "sha256-dd7d46bb8de865d4b6b0ec7fd1b0297045c9e44b0f23b60c2365a56d64cf1d95",
+        "merkleLeaf": "sha256-cc49526d463725828a057c6e87e266e640b2025be1133b670a5e26b256326316",
+        "localMerkleLeaf": "sha256-cc49526d463725828a057c6e87e266e640b2025be1133b670a5e26b256326316",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "medium",
+        "score": 14,
+        "maxSeverity": "HIGH",
+        "findingsCount": 1,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 1,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 925,
+        "lineCount": 46
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "SKILL.md",
+          "line": 20,
+          "excerpt": "npm install @x402solana/cheshire-noxa"
+        }
+      ]
+    },
+    {
+      "slug": "cheshire-omni-mint",
+      "name": "cheshire-omni-mint",
+      "description": "Dual-rail omni agent mint: Solana Metaplex Core + Agent Identity and Robinhood Chain ERC-8004 identity in one plan, optionally bound with LayerZero zk-omni (msgType 4 dual_identity_link). Use when the user wants omnichain identity, Solana and Robinhood together, Metaplex mintAgent + RH register, or Cheshire Terminal dual-rail forge. Product: cheshireterminal.ai/agents/forge · funpump.ai.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/cheshire-omni-mint",
+      "skillPath": "skills/cheshire-omni-mint/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install cheshire-omni-mint",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-5861ee9fab703718e3f9558095e11178226f1ad64fc387e77dcb4221d91771cf",
+        "localBundleHash": "sha256-5861ee9fab703718e3f9558095e11178226f1ad64fc387e77dcb4221d91771cf",
+        "merkleLeaf": "sha256-a5e225a2747f4d1456219be9507825d471aca0323e460b5a8dba6e8d1a1bbdf1",
+        "localMerkleLeaf": "sha256-a5e225a2747f4d1456219be9507825d471aca0323e460b5a8dba6e8d1a1bbdf1",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 3,
+        "bySeverity": {
+          "INFO": 3,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 3882,
+        "lineCount": 94
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 33,
+          "excerpt": "--solana-network solana-devnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 45,
+          "excerpt": "solanaNetwork: \"solana-devnet\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 63,
+          "excerpt": "2. Prefer RH **46630** / Solana **devnet**. Mainnet `4663` requires `confirmMainnet: true` / `--confirm-mainnet`."
         }
       ]
     },
@@ -31768,10 +31952,10 @@ window.SKILL_SCAN_RESULTS = {
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-f4e1ea406c9ceb62fbea644b61b601fd72ca00bc905eb45739f4c30de2a29abc",
-        "localBundleHash": "sha256-f4e1ea406c9ceb62fbea644b61b601fd72ca00bc905eb45739f4c30de2a29abc",
-        "merkleLeaf": "sha256-02a1773199433bc292cb1781564d6275ea0f3c44ee75ea9567f085308bab541a",
-        "localMerkleLeaf": "sha256-02a1773199433bc292cb1781564d6275ea0f3c44ee75ea9567f085308bab541a",
+        "bundleHash": "sha256-377aebcc49b71dbe3fe4ac837825301898f34286a8eb42ea859b17530bf2357b",
+        "localBundleHash": "sha256-377aebcc49b71dbe3fe4ac837825301898f34286a8eb42ea859b17530bf2357b",
+        "merkleLeaf": "sha256-69df730cf20150560f67f9dfa8729940c6ba122c58368198bdbf9be2a45170f2",
+        "localMerkleLeaf": "sha256-69df730cf20150560f67f9dfa8729940c6ba122c58368198bdbf9be2a45170f2",
         "fileCount": 4,
         "localFileCount": 4,
         "changedFiles": 0,
@@ -31804,8 +31988,8 @@ window.SKILL_SCAN_RESULTS = {
         "scriptFiles": 0,
         "referenceFiles": 0,
         "assetFiles": 0,
-        "bytesScanned": 17152,
-        "lineCount": 357
+        "bytesScanned": 17160,
+        "lineCount": 361
       },
       "findings": []
     },
@@ -32005,10 +32189,10 @@ window.SKILL_SCAN_RESULTS = {
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-4edaa93c1aa6f93cca5346934935bc6881978293ddbf9aef5cea54725c24f995",
-        "localBundleHash": "sha256-4edaa93c1aa6f93cca5346934935bc6881978293ddbf9aef5cea54725c24f995",
-        "merkleLeaf": "sha256-80dc7f8d5e531b607cf55fb0f1605dcf15c6f163c7fa9414b79fb9b0f418a3f1",
-        "localMerkleLeaf": "sha256-80dc7f8d5e531b607cf55fb0f1605dcf15c6f163c7fa9414b79fb9b0f418a3f1",
+        "bundleHash": "sha256-21a77bf3a394f06320527618f95fcc58f4fe0ce28e77d01b4ea14d8a545f37e8",
+        "localBundleHash": "sha256-21a77bf3a394f06320527618f95fcc58f4fe0ce28e77d01b4ea14d8a545f37e8",
+        "merkleLeaf": "sha256-ebe77db32fbad6fe2ac89423aed696ba820b16c508ff48521f10f8269c635808",
+        "localMerkleLeaf": "sha256-ebe77db32fbad6fe2ac89423aed696ba820b16c508ff48521f10f8269c635808",
         "fileCount": 5,
         "localFileCount": 5,
         "changedFiles": 0,
@@ -32041,8 +32225,8 @@ window.SKILL_SCAN_RESULTS = {
         "scriptFiles": 0,
         "referenceFiles": 3,
         "assetFiles": 0,
-        "bytesScanned": 29565,
-        "lineCount": 496
+        "bytesScanned": 29937,
+        "lineCount": 497
       },
       "findings": [
         {
@@ -32151,7 +32335,7 @@ window.SKILL_SCAN_RESULTS = {
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "SKILL.md",
           "line": 12,
-          "excerpt": "- Choose Robinhood Chain for an ERC-721 identity in the deployed ERC-8004-compatible identity, reputation, and validation suite. Prefer testnet chain `46630`. Require an explicit mainnet confirmation for chain `4663` imm"
+          "excerpt": "- Choose **Robinhood Chain** for an ERC-721 identity in the deployed ERC-8004-compatible identity, reputation, and validation suite. Prefer testnet chain `46630`. Require an explicit mainnet confirmation for chain `4663`"
         },
         {
           "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
@@ -32160,7 +32344,7 @@ window.SKILL_SCAN_RESULTS = {
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "SKILL.md",
           "line": 13,
-          "excerpt": "- Choose Solana for a Metaplex Core asset with Agent Identity. Prefer `POST /api/metaplex-agents/mint-prepare` (Metaplex API → user-signed tx) then `mint-confirm` (live feed). Treasury-sponsored `POST /api/metaplex-agent"
+          "excerpt": "- Choose **Solana** for a Metaplex Core asset with Agent Identity. Prefer `POST /api/metaplex-agents/mint-prepare` (Metaplex API → user-signed tx) then `mint-confirm` (live feed). Treasury-sponsored `POST /api/metaplex-a"
         },
         {
           "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
@@ -32168,7 +32352,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "onchain_surface",
           "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
           "file": "SKILL.md",
-          "line": 45,
+          "line": 46,
           "excerpt": "The canonical registry suites are already deployed on Robinhood testnet and mainnet. Do not rerun their deployer or create a competing Cheshire identity namespace. Registry deployment is an operator action; end-user `reg"
         }
       ]
@@ -38828,10 +39012,10 @@ window.SKILL_SCAN_RESULTS = {
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-964aaf39da5cadf92ed0b7560807b98703d415e1afb51f29f92c874c04469aac",
-        "localBundleHash": "sha256-964aaf39da5cadf92ed0b7560807b98703d415e1afb51f29f92c874c04469aac",
-        "merkleLeaf": "sha256-9599a438781e7449e7330123f110c7dc734c222cb55c7a82f1834b1086bef2d5",
-        "localMerkleLeaf": "sha256-9599a438781e7449e7330123f110c7dc734c222cb55c7a82f1834b1086bef2d5",
+        "bundleHash": "sha256-93c77bc26ceec9ab794d8db2d7c0c96a3ea9b5ac3787f56c9d3e49f05d821600",
+        "localBundleHash": "sha256-93c77bc26ceec9ab794d8db2d7c0c96a3ea9b5ac3787f56c9d3e49f05d821600",
+        "merkleLeaf": "sha256-36143dd238a6fced5b2a92f996aca47356a359576466a28d987651732be639bd",
+        "localMerkleLeaf": "sha256-36143dd238a6fced5b2a92f996aca47356a359576466a28d987651732be639bd",
         "fileCount": 2,
         "localFileCount": 2,
         "changedFiles": 0,
@@ -38864,8 +39048,8 @@ window.SKILL_SCAN_RESULTS = {
         "scriptFiles": 0,
         "referenceFiles": 1,
         "assetFiles": 0,
-        "bytesScanned": 36789,
-        "lineCount": 971
+        "bytesScanned": 36814,
+        "lineCount": 972
       },
       "findings": [
         {
@@ -39009,7 +39193,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "data_exfiltration",
           "message": "Uses curl or wget against an external URL.",
           "file": "SKILL.md",
-          "line": 62,
+          "line": 63,
           "excerpt": "sh -c \"$(curl -sSfL https://release.anza.xyz/stable/install)\""
         },
         {
@@ -39018,7 +39202,7 @@ window.SKILL_SCAN_RESULTS = {
           "category": "unauthorized_tool_use",
           "message": "Installs packages at runtime rather than relying on declared dependencies.",
           "file": "SKILL.md",
-          "line": 64,
+          "line": 65,
           "excerpt": "cargo install --git https://github.com/solana-foundation/anchor avm --force"
         }
       ]

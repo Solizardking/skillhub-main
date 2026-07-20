@@ -1,18 +1,18 @@
 {
   "schemaVersion": "skillhub-skills-process-state/v1",
-  "updatedAt": "2026-07-20T17:10:38.509Z",
-  "reason": "stable-run-2",
-  "totalSkills": 592,
-  "inventorySlugs": 592,
-  "fingerprint": "7d95339e7e8cc75b711e3a50cbd17f1ea20ffcf320923f00f827e9e7b85038b9",
+  "updatedAt": "2026-07-20T17:31:59.865Z",
+  "reason": "test-cleanup-restore",
+  "totalSkills": 594,
+  "inventorySlugs": 594,
+  "fingerprint": "249cfbfc22dd7870aadad880562ea209e78738cb145a06c5827d0b193657b4a3",
   "addedDuringCycle": [],
   "removedDuringCycle": [],
-  "categorizedCount": 592,
+  "categorizedCount": 594,
   "readmeBadgeMatchesCatalog": true,
   "scan": {
-    "totalSkills": 592,
-    "findingsTotal": 3778,
-    "scannedAt": "2026-07-20T17:10:37.142Z",
+    "totalSkills": 594,
+    "findingsTotal": 3782,
+    "scannedAt": "2026-07-20T17:31:58.788Z",
     "mode": "all-local",
     "skillSlugs": [
       "agent-desktop",
@@ -214,6 +214,8 @@
       "ask-mcp",
       "cheshire-agent-registries",
       "cheshire-api",
+      "cheshire-noxa",
+      "cheshire-omni-mint",
       "cheshire-terminal",
       "cheshire-zk-omni",
       "clawd-agent-launchpad",
@@ -609,5 +611,5 @@
       "nvidia/vss-summarize-video"
     ]
   },
-  "durationMs": 34538
+  "durationMs": 27418
 }
