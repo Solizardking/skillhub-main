@@ -1,7 +1,7 @@
 {
   "schemaVersion": "skillhub-skills-process-state/v1",
-  "updatedAt": "2026-07-20T17:31:59.865Z",
-  "reason": "test-cleanup-restore",
+  "updatedAt": "2026-07-20T17:32:25.514Z",
+  "reason": "stable-run-1",
   "totalSkills": 594,
   "inventorySlugs": 594,
   "fingerprint": "249cfbfc22dd7870aadad880562ea209e78738cb145a06c5827d0b193657b4a3",
@@ -12,7 +12,7 @@
   "scan": {
     "totalSkills": 594,
     "findingsTotal": 3782,
-    "scannedAt": "2026-07-20T17:31:58.788Z",
+    "scannedAt": "2026-07-20T17:32:24.210Z",
     "mode": "all-local",
     "skillSlugs": [
       "agent-desktop",
@@ -611,5 +611,5 @@
       "nvidia/vss-summarize-video"
     ]
   },
-  "durationMs": 27418
+  "durationMs": 25646
 }
