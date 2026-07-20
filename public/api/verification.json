@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 594,
-  "catalogHash": "sha256-6b1894b3bfe274be2d859a27fa60f5cbc2cc24cbabb5b09d65716b537c8c702e",
-  "merkleRoot": "sha256-c60e06beec03f9792cf635caaf3244b05b034b0d277d22129bba29baf97ebb39",
+  "totalSkills": 595,
+  "catalogHash": "sha256-24594e39a277fefe829962d7294aa8a616f5fb1658cdbabb76586a1039e62dd7",
+  "merkleRoot": "sha256-b1a2bb5e839cb9e4c06cfebeba3b5109b2148c3ce964851860cbf37bc929b246",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -102,6 +102,17 @@
       "fileCount": 2,
       "metadata": "/api/skills/cheshire-terminal/metadata.json",
       "verification": "/api/skills/cheshire-terminal/verification.json"
+    },
+    {
+      "slug": "cheshire-terminal-agents",
+      "name": "cheshire-terminal-agents",
+      "description": "One-shot Cheshire Terminal Agents skill pack — dual-rail forge (Robinhood Chain + Solana), ERC-8004 registries, FunPump bonded launch / Launchpad V3, omni mint, zk-omni messaging, and the full RH crypto-agent open stack (swaps, LP, DCA, copy-trade, viem). Use when the user says install cheshire agents, one-shot RH skills, npm cheshire-terminal-agents skills, or wants the whole Cheshire pack.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-311f9251c848e30a0ddeb9616de3f2dd26ee9dc1c2615bd665a116d5c2a88547",
+      "merkleLeaf": "sha256-2a0422316dc31bee55f59ca4fd4b22409d5b25d2a12987799297a8c23d156d04",
+      "fileCount": 2,
+      "metadata": "/api/skills/cheshire-terminal-agents/metadata.json",
+      "verification": "/api/skills/cheshire-terminal-agents/verification.json"
     },
     {
       "slug": "cheshire-zk-omni",

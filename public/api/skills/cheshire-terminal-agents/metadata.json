@@ -1,0 +1,7 @@
+{
+  "slug": "cheshire-terminal-agents",
+  "name": "cheshire-terminal-agents",
+  "description": "One-shot Cheshire Terminal Agents skill pack — dual-rail forge (Robinhood Chain + Solana), ERC-8004 registries, FunPump bonded launch / Launchpad V3, omni mint, zk-omni messaging, and the full RH crypto-agent open stack (swaps, LP, DCA, copy-trade, viem). Use when the user says install cheshire agents, one-shot RH skills, npm cheshire-terminal-agents skills, or wants the whole Cheshire pack.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/cheshire-terminal-agents/SKILL.md"
+}

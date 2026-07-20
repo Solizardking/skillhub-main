@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "cheshire-terminal-agents",
+  "name": "cheshire-terminal-agents",
+  "description": "One-shot Cheshire Terminal Agents skill pack — dual-rail forge (Robinhood Chain + Solana), ERC-8004 registries, FunPump bonded launch / Launchpad V3, omni mint, zk-omni messaging, and the full RH crypto-agent open stack (swaps, LP, DCA, copy-trade, viem). Use when the user says install cheshire agents, one-shot RH skills, npm cheshire-terminal-agents skills, or wants the whole Cheshire pack.",
+  "source": "https://skills.x402.wtf/api/skills/cheshire-terminal-agents/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/cheshire-terminal-agents/metadata.json",
+  "bundleHash": "sha256-311f9251c848e30a0ddeb9616de3f2dd26ee9dc1c2615bd665a116d5c2a88547",
+  "merkleLeaf": "sha256-2a0422316dc31bee55f59ca4fd4b22409d5b25d2a12987799297a8c23d156d04",
+  "files": [
+    {
+      "path": "pack-index.json",
+      "bytes": 1416,
+      "sha256": "sha256-77807f13822fedbd0b84ebc412f20ae112d31ddaef5793c69b325c8dc6e2ab1f"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2866,
+      "sha256": "sha256-dfc1a7ad793950d6f941309ec8d7e96b68d3cbb09428a65a728ef2f5c0df1102"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

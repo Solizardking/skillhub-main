@@ -13,15 +13,21 @@ const DEFAULT_TARGET = process.env.SKILLS_DIR || path.join(os.homedir(), ".agent
 const COPY_EXCLUDES = new Set([".DS_Store", ".git", "node_modules"]);
 
 const USAGE = `Usage:
-  skills install [skill ...] [--all] [--force] [--target DIR] [--eve]
+  skills install [skill|pack ...] [--all] [--force] [--target DIR] [--eve]
   skills list [--json]
 
 Examples:
   npx github:Solizardking/skills install
   npx github:Solizardking/skills install solana-dev magicblock --force
+  npx github:Solizardking/skills install cheshire-terminal-agents --force   # one-shot Cheshire pack
+  npx github:Solizardking/skills install rh-crypto-agent --force            # one-shot RH crypto pack
   npx github:Solizardking/skills install --target ~/.codex/skills
   npx github:Solizardking/skills install --claude
   npx github:Solizardking/skills install --eve
+
+Packs (one-shot like npm i cheshire-terminal-agents):
+  cheshire-terminal-agents | cheshire-agents | cheshire-robinhood-agents
+  rh-crypto-agent
 
 Targets:
   default       ~/.agents/skills
@@ -29,6 +35,14 @@ Targets:
   --codex       ~/.codex/skills
   --claude      ~/.claude/skills
   --eve         ./agent/skills`;
+
+/** Aliases that resolve to a pack skill directory (with pack-index.json). */
+const PACK_ALIASES = {
+  "cheshire-agents": "cheshire-terminal-agents",
+  "cheshire-robinhood-agents": "cheshire-terminal-agents",
+  "cheshire-terminal-agents": "cheshire-terminal-agents",
+  "rh-crypto-agent": "rh-crypto-agent",
+};
 
 async function main() {
   const [command = "help", ...args] = process.argv.slice(2);
@@ -71,9 +85,14 @@ async function install(args, defaults = {}) {
   const options = parseOptions(args);
   const catalog = await loadCatalog();
   const bySlug = new Map(catalog.map((skill) => [skill.slug, skill]));
-  const requested = options.skills.length > 0 && !options.all ? options.skills : catalog.map((skill) => skill.slug);
-  const missing = requested.filter((slug) => !bySlug.has(slug));
+  const rawRequested =
+    options.skills.length > 0 && !options.all
+      ? options.skills
+      : catalog.map((skill) => skill.slug);
 
+  const { slugs: requested, expansions } = await expandPackRequests(rawRequested, bySlug);
+
+  const missing = requested.filter((slug) => !bySlug.has(slug) && !existsSync(path.join(ROOT, "skills", slug)));
   if (missing.length > 0) {
     console.error(`Unknown skill${missing.length === 1 ? "" : "s"}: ${missing.join(", ")}`);
     console.error("Run `skills list` to see available skills.");
@@ -81,9 +100,20 @@ async function install(args, defaults = {}) {
     return;
   }
 
+  // Catalog may lag a brand-new pack skill until rebuild; allow on-disk skills.
+  for (const slug of requested) {
+    if (!bySlug.has(slug) && existsSync(path.join(ROOT, "skills", slug, "SKILL.md"))) {
+      bySlug.set(slug, { slug, name: path.basename(slug), description: "", category: "Utilities" });
+    }
+  }
+
   const target = expandHome(options.target || DEFAULT_TARGET);
   const force = options.force || defaults.update;
   await mkdir(target, { recursive: true });
+
+  for (const line of expansions) {
+    console.log(line);
+  }
 
   let installed = 0;
   let skipped = 0;
@@ -124,6 +154,54 @@ async function install(args, defaults = {}) {
   }
 
   console.log(`Done. Installed ${installed}, skipped ${skipped}. Target: ${target}`);
+}
+
+/**
+ * Expand pack aliases and pack-index.json members into a de-duplicated skill list.
+ * One-shot parity with `npm i cheshire-terminal-agents`.
+ */
+async function expandPackRequests(rawRequested, bySlug) {
+  const expansions = [];
+  const ordered = [];
+  const seen = new Set();
+
+  const push = (slug) => {
+    if (seen.has(slug)) return;
+    seen.add(slug);
+    ordered.push(slug);
+  };
+
+  for (const raw of rawRequested) {
+    const packId = PACK_ALIASES[raw] || raw;
+    const packIndexPath = path.join(ROOT, "skills", packId, "pack-index.json");
+    const isAlias = Boolean(PACK_ALIASES[raw]);
+    const isPack = existsSync(packIndexPath);
+
+    if (isPack) {
+      const pack = JSON.parse(await readFile(packIndexPath, "utf8"));
+      const members = Array.isArray(pack.skills) ? pack.skills : [];
+      expansions.push(
+        `one-shot pack ${raw}${isAlias && raw !== packId ? ` → ${packId}` : ""}: ${members.length} member skill(s) + pack index`,
+      );
+      push(packId);
+      for (const member of members) {
+        // Members may be nested only under pack in some trees; prefer top-level slug.
+        if (existsSync(path.join(ROOT, "skills", member, "SKILL.md")) || bySlug.has(member)) {
+          push(member);
+        } else if (existsSync(path.join(ROOT, "skills", packId, member, "SKILL.md"))) {
+          // Nested-only: install under flat name by copying nested path later via alias map
+          push(`${packId}/${member}`);
+        } else {
+          push(member);
+        }
+      }
+      continue;
+    }
+
+    push(raw);
+  }
+
+  return { slugs: ordered, expansions };
 }
 
 async function loadCatalog() {
