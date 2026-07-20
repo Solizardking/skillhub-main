@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "google-agent-registry",
+  "name": "google-agent-registry",
+  "description": "Maintain and register Cheshire Google Agent Registry artifacts under registry/google (A2A agent card, MCP tools list, MCP interface, server card, zero-service OpenAPI) and deploy Apigee reverse proxies on project x402-477302. Use for gcloud agent-registry, 10 KB size limits, tool-name parity with server/mcp/tools.ts, Apigee test-env, or validate:google-registry / register:google-agent.",
+  "source": "https://skills.x402.wtf/api/skills/google-agent-registry/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/google-agent-registry/metadata.json",
+  "bundleHash": "sha256-d3f43f3c4d0e4fae277ca4dfec404d10769264d73a27d9b92d40b2f2f694ec8c",
+  "merkleLeaf": "sha256-edc18b5551fadbf4b5bbc1e021f0bcea85a90d238a205e0c77e6a6f5591b0804",
+  "files": [
+    {
+      "path": "references/apigee.md",
+      "bytes": 1668,
+      "sha256": "sha256-242be6628e51ecb3b5b9acccb7f083579dd7059bd187fa1940784f531b2c6377"
+    },
+    {
+      "path": "references/registry-files.md",
+      "bytes": 2789,
+      "sha256": "sha256-29fc4e6e144af3b0713209676646bbdb722fb1fc7c9a79ea21a03e588b00b1df"
+    },
+    {
+      "path": "scripts/check-registry.sh",
+      "bytes": 2811,
+      "sha256": "sha256-5e72f26b763676fc09101ec3ffae7ca3e4647b4994ad982e5f8af4013074915c"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 2743,
+      "sha256": "sha256-00afa2d05ecaa30897951b2ea20643d333899990d7202cbf3d85687f4034146c"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}
