@@ -310,7 +310,8 @@ async function renderPublic(skills) {
     "api/upload-config.json",
     `${JSON.stringify({
       schemaVersion: "skillhub-upload-config-pointer/v1",
-      generatedAt: new Date().toISOString(),
+      // Deterministic (not wall-clock) so `npm run check` is stable across rebuilds.
+      generatedAt: "1970-01-01T00:00:00.000Z",
       siteUrl: SITE_URL,
       uploadApiBase: UPLOAD_API_BASE,
       publishUi: `${SITE_URL}/publish`,

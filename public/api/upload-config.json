@@ -1,6 +1,6 @@
 {
   "schemaVersion": "skillhub-upload-config-pointer/v1",
-  "generatedAt": "2026-07-20T17:02:17.634Z",
+  "generatedAt": "1970-01-01T00:00:00.000Z",
   "siteUrl": "https://skills.x402.wtf",
   "uploadApiBase": "https://skillhub-upload-relay.fly.dev",
   "publishUi": "https://skills.x402.wtf/publish",
