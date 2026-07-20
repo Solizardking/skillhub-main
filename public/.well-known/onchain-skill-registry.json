@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 584,
-  "catalogHash": "sha256-b320ec433ebae7dfc1267463e1f6c950b7fc6f52ef30988d09efe5087e8298ca",
-  "merkleRoot": "sha256-15ebc74206721b7d2fb2a3429d0d5fca0d1a8569e63c0f693e0ce7e0ac0d5ef6",
+  "totalSkills": 589,
+  "catalogHash": "sha256-d33a148c11008058d67921f344b7a8aef5530bcf2b8f377d5df2396e70de09e2",
+  "merkleRoot": "sha256-2f26a2b8a1ae19d86b97266b7626840630661bf6552ceb4ecbf88b6938072d35",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -49,6 +49,17 @@
       "verification": "/api/skills/ask-mcp/verification.json"
     },
     {
+      "slug": "cheshire-agent-registries",
+      "name": "cheshire-agent-registries",
+      "description": "Overview of the ERC-8004 Cheshire agent registry suite on Robinhood Chain: identity (ERC-721 RHAGENT), reputation feedback, validation request/response, and optional zk-omni messenger. Use when registering agents, reading registry addresses, wiring forge/UI, or deploying operator tooling. Product host: funpump.ai · forge: cheshireterminal.ai/agents/forge.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-770eb32058e168217f4ffcef6649dfd9cc318eb01f4d26b646b901d94205f8ce",
+      "merkleLeaf": "sha256-c7428dc8e9295b33cb54d3b32a87a8c158c56978855afc25b8374c988d99eb4b",
+      "fileCount": 1,
+      "metadata": "/api/skills/cheshire-agent-registries/metadata.json",
+      "verification": "/api/skills/cheshire-agent-registries/verification.json"
+    },
+    {
       "slug": "cheshire-api",
       "name": "cheshire-api",
       "description": "Call Cheshire Terminal REST, MCP, discovery, and developer API surfaces for Solana agents, arena rooms, Upstash boxes, trading health, and OpenAPI. Use when integrating cheshireterminal.ai, /mcp, /.well-known/agent-card.json, ct_sk_ API keys, arena coordination, box handoff, or Apigee/zero-service health probes.",
@@ -69,6 +80,17 @@
       "fileCount": 2,
       "metadata": "/api/skills/cheshire-terminal/metadata.json",
       "verification": "/api/skills/cheshire-terminal/verification.json"
+    },
+    {
+      "slug": "cheshire-zk-omni",
+      "name": "cheshire-zk-omni",
+      "description": "Zero-knowledge omnichain messaging (msgType 4) between Robinhood Chain and Solana via CheshireZkOmniMessenger — LayerZero V2 peers, nullifier anti-replay, optional identity authorization. Use for sendZkOmni, quoteSend, nullifiers, zk-omni relayer. Source: contracts/zk-omni/CheshireZkOmniMessenger.sol.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-2951bb390e8cb7b5e250a81741bed8ee94141296acdd3af22251e85270a3214f",
+      "merkleLeaf": "sha256-f849d868a74e2fb432b9176a76dc6e9a797f42c1985961d9592cf1e5f7b4dd2a",
+      "fileCount": 1,
+      "metadata": "/api/skills/cheshire-zk-omni/metadata.json",
+      "verification": "/api/skills/cheshire-zk-omni/verification.json"
     },
     {
       "slug": "clawd-agent-launchpad",
@@ -887,10 +909,10 @@
     {
       "slug": "rh-bonded-launch",
       "name": "rh-bonded-launch",
-      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via the live BondingCurveLaunchpad, or guide a user/agent to do so on ClawdCode /launch or Cheshire /rh-launch. Use when the user says \"launch a token\", \"create token on Robinhood\", \"bonded launch\", \"createToken\", \"fair launch on RH\", \"pump style on robinhood\", \"open a curve\", or brings an agent to clawdcode.net to launch. Does NOT mint wCLAWD or bridge Solana $CLAWD — that is a separate bridge skill path.",
+      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via the live BondingCurveLaunchpad, or guide a user/agent to do so on FunPump /launch or Cheshire /rh-launch. Use when the user says \"launch a token\", \"create token on Robinhood\", \"bonded launch\", \"createToken\", \"fair launch on RH\", \"pump style on robinhood\", \"open a curve\", or brings an agent to funpump.ai to launch. Does NOT mint wCLAWD or bridge Solana $CLAWD — that is a separate bridge skill path.",
       "category": "Solana / Blockchain",
-      "bundleHash": "sha256-f2b039f85d4ddd5f5cd065bbf12c4906b49e84a25040762ffe30bba1c4599b02",
-      "merkleLeaf": "sha256-e59bf6320420240695fcc8b59ab7a2a9f689151047ad353eb16e619ecf54d8fb",
+      "bundleHash": "sha256-bbe16bdade8d5a298bd82f9c4dbeb406ac84b15ef03d8966a176d09ffe95d244",
+      "merkleLeaf": "sha256-4a4c6de57cf2b6b38ac92a71d40ad7e5fd7f445bb3ea65f34261fc7c45c9ce47",
       "fileCount": 1,
       "metadata": "/api/skills/rh-bonded-launch/metadata.json",
       "verification": "/api/skills/rh-bonded-launch/verification.json"
@@ -898,10 +920,10 @@
     {
       "slug": "rh-launchpad-v3",
       "name": "rh-launchpad-v3",
-      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 — graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or ClawdCode /api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
+      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 — graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or FunPump https://funpump.ai/api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
       "category": "Solana / Blockchain",
-      "bundleHash": "sha256-b5231217ab6a6f88f5413409bf4c777c9d510ad24b56891418545988507c3c9a",
-      "merkleLeaf": "sha256-bb14ef385dfae77dc7fde3fa4ca478fd7355d95502b7b4276006f7b178c180db",
+      "bundleHash": "sha256-65a7cb8b0c6459ba3d4c1efb3104f3fe3f02d9ba54727bfe6249bad0d4d5b51f",
+      "merkleLeaf": "sha256-08a32eaf5d37bf642f9870e6988097119a43702607a76d2e9a1041e695df2fc1",
       "fileCount": 1,
       "metadata": "/api/skills/rh-launchpad-v3/metadata.json",
       "verification": "/api/skills/rh-launchpad-v3/verification.json"
@@ -1444,6 +1466,39 @@
       "fileCount": 53,
       "metadata": "/api/skills/anthropic-skills/xlsx/metadata.json",
       "verification": "/api/skills/anthropic-skills/xlsx/verification.json"
+    },
+    {
+      "slug": "cheshire-agent-identity-registry",
+      "name": "cheshire-agent-identity-registry",
+      "description": "Register and operate Cheshire Robinhood agent identities (ERC-721 RHAGENT) via CheshireAgentIdentityRegistry on Robinhood Chain. Use for register(agentURI), agentWallet EIP-712/1271 proofs, metadata, isAuthorized, and ownerOf reads. Source: robinhood-agents/contracts/CheshireAgentIdentityRegistry.sol.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-de63188bec4a192efe3314c3a8e2031f2b12f3a5c9c99442b8fa538147f95d84",
+      "merkleLeaf": "sha256-17964815b1ab1d704fd6eddf1c7e4bf2e511fd536c4bd65a0e338e14960b0d83",
+      "fileCount": 1,
+      "metadata": "/api/skills/cheshire-agent-identity-registry/metadata.json",
+      "verification": "/api/skills/cheshire-agent-identity-registry/verification.json"
+    },
+    {
+      "slug": "cheshire-agent-reputation-registry",
+      "name": "cheshire-agent-reputation-registry",
+      "description": "Post and query ERC-8004 reputation feedback for Cheshire agents on Robinhood Chain via CheshireAgentReputationRegistry. Use for giveFeedback, revokeFeedback, appendResponse, getSummary, and client lists. Requires identity registry 0x7036…c950. Source: CheshireAgentReputationRegistry.sol.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-ab06a4ceccb5f265d3d2b36aea79b9b1ba22a20a0329f59b51ee9fb7b73b23cb",
+      "merkleLeaf": "sha256-f1707e589c63b3129f0af4ccdf4c916c4d4386284243aa08c1f65d21c5f4c51e",
+      "fileCount": 1,
+      "metadata": "/api/skills/cheshire-agent-reputation-registry/metadata.json",
+      "verification": "/api/skills/cheshire-agent-reputation-registry/verification.json"
+    },
+    {
+      "slug": "cheshire-agent-validation-registry",
+      "name": "cheshire-agent-validation-registry",
+      "description": "ERC-8004 validation request/response flow for Cheshire agents on Robinhood Chain via CheshireAgentValidationRegistry. Use for validationRequest, validationResponse, getValidationStatus, getSummary. Operators request; named validators respond (0–100 score). Source: CheshireAgentValidationRegistry.sol.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-5e1f31140c26ee47d5f068a832380cc461093352f0ac375c35b8320c136974d1",
+      "merkleLeaf": "sha256-46dd3f943966c6055c0fa6945a50869f6b1fa2707fa4adda27a0d9159c3b494c",
+      "fileCount": 1,
+      "metadata": "/api/skills/cheshire-agent-validation-registry/metadata.json",
+      "verification": "/api/skills/cheshire-agent-validation-registry/verification.json"
     },
     {
       "slug": "clawdhub",

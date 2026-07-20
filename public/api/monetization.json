@@ -47,6 +47,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "cheshire-agent-registries",
+      "name": "cheshire-agent-registries",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "cheshire-api",
       "name": "cheshire-api",
       "category": "Solana / Blockchain",
@@ -62,6 +75,19 @@
     {
       "slug": "cheshire-terminal",
       "name": "cheshire-terminal",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "cheshire-zk-omni",
+      "name": "cheshire-zk-omni",
       "category": "Solana / Blockchain",
       "mode": "tip",
       "merchant": {
@@ -1687,6 +1713,45 @@
     {
       "slug": "anthropic-skills/xlsx",
       "name": "xlsx",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "cheshire-agent-identity-registry",
+      "name": "cheshire-agent-identity-registry",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "cheshire-agent-reputation-registry",
+      "name": "cheshire-agent-reputation-registry",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "cheshire-agent-validation-registry",
+      "name": "cheshire-agent-validation-registry",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {

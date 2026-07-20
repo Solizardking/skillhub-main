@@ -13,12 +13,18 @@
   <url><loc>https://skills.x402.wtf/api/skills/ask-mcp/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/ask-mcp/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/ask-mcp/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-registries/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-registries/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-registries/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-api/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-api/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-api/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-terminal/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-terminal/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-terminal/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-zk-omni/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-zk-omni/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-zk-omni/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/clawd-agent-launchpad/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/clawd-agent-launchpad/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/clawd-agent-launchpad/SKILL.md</loc></url>
@@ -394,6 +400,15 @@
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/xlsx/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/xlsx/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/xlsx/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-identity-registry/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-identity-registry/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-identity-registry/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-reputation-registry/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-reputation-registry/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-reputation-registry/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-validation-registry/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-validation-registry/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-validation-registry/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/clawdhub/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/clawdhub/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/clawdhub/SKILL.md</loc></url>

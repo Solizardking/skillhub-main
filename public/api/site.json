@@ -12,10 +12,10 @@
     "skillsStore": "https://cheshireterminal.ai/skills-store"
   },
   "generatedAt": "1970-01-01T00:00:00.000Z",
-  "totalSkills": 584,
+  "totalSkills": 589,
   "categories": {
-    "Solana / Blockchain": 116,
-    "Dev Tools / Agents": 67,
+    "Solana / Blockchain": 118,
+    "Dev Tools / Agents": 70,
     "Google / Ads": 11,
     "Google / Analytics": 2,
     "Google / Cloud": 56,
@@ -29,8 +29,10 @@
     "solana": [
       "anthropic-skills/claude-api",
       "ask-mcp",
+      "cheshire-agent-registries",
       "cheshire-api",
       "cheshire-terminal",
+      "cheshire-zk-omni",
       "clawd-agent-launchpad",
       "clawd-skills-installer",
       "clawd-token-ops",
@@ -48,9 +50,7 @@
       "dflow-kalshi-market-scanner",
       "dflow-kalshi-portfolio",
       "dflow-kalshi-trading",
-      "dflow-phantom-connect",
-      "dflow-platform-fees",
-      "dflow-proof-kyc"
+      "dflow-phantom-connect"
     ],
     "prioritySkills": [
       "solana-common-errors",
@@ -80,8 +80,8 @@
   "verification": {
     "chain": "solana",
     "status": "anchor-ready",
-    "merkleRoot": "sha256-15ebc74206721b7d2fb2a3429d0d5fca0d1a8569e63c0f693e0ce7e0ac0d5ef6",
-    "catalogHash": "sha256-b320ec433ebae7dfc1267463e1f6c950b7fc6f52ef30988d09efe5087e8298ca"
+    "merkleRoot": "sha256-2f26a2b8a1ae19d86b97266b7626840630661bf6552ceb4ecbf88b6938072d35",
+    "catalogHash": "sha256-d33a148c11008058d67921f344b7a8aef5530bcf2b8f377d5df2396e70de09e2"
   },
   "monetization": {
     "onchain": "Solana Pay tip URI per skill card",

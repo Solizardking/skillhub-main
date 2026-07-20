@@ -2,16 +2,16 @@
   "schemaVersion": "skill-verification/v1",
   "slug": "rh-launchpad-v3",
   "name": "rh-launchpad-v3",
-  "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 — graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or ClawdCode /api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
+  "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 — graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or FunPump https://funpump.ai/api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
   "source": "https://skills.x402.wtf/api/skills/rh-launchpad-v3/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/rh-launchpad-v3/metadata.json",
-  "bundleHash": "sha256-b5231217ab6a6f88f5413409bf4c777c9d510ad24b56891418545988507c3c9a",
-  "merkleLeaf": "sha256-bb14ef385dfae77dc7fde3fa4ca478fd7355d95502b7b4276006f7b178c180db",
+  "bundleHash": "sha256-65a7cb8b0c6459ba3d4c1efb3104f3fe3f02d9ba54727bfe6249bad0d4d5b51f",
+  "merkleLeaf": "sha256-08a32eaf5d37bf642f9870e6988097119a43702607a76d2e9a1041e695df2fc1",
   "files": [
     {
       "path": "SKILL.md",
-      "bytes": 5382,
-      "sha256": "sha256-39d05b6b5596156574032fe5bffe7e6a371601f8be778956cf7ac0543ca1ba84"
+      "bytes": 5380,
+      "sha256": "sha256-4403689b9d41a9dbd2d7791d8d4051b4fb0047cb9fb29ed47f43b20ebc92c483"
     }
   ],
   "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
