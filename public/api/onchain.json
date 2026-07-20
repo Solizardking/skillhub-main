@@ -1,6 +1,6 @@
 {
   "schemaVersion": "skillhub-onchain-summary/v1",
-  "generatedAt": "2026-07-20T17:10:38.977Z",
+  "generatedAt": "2026-07-20T17:32:57.193Z",
   "hubs": {
     "primary": "https://skills.x402.wtf",
     "aliases": [
@@ -46,13 +46,13 @@
   },
   "agentregistry": {
     "mirrorUrl": "/api/agentregistry.json",
-    "generatedAt": "2026-07-20T17:10:38.886Z",
-    "selected": 592,
-    "totalSkills": 592,
-    "merkleRoot": "sha256-01c3e9df6272dac5d15ff20d6b44957418148c80c15c5948b13dc7e4b704f4fd",
-    "catalogHash": "sha256-0355badeed8cac5933a2bf1212f026f7aca71ce028966e7eef43bbbf829bcb06",
+    "generatedAt": "2026-07-20T17:32:57.116Z",
+    "selected": 594,
+    "totalSkills": 594,
+    "merkleRoot": "sha256-c60e06beec03f9792cf635caaf3244b05b034b0d277d22129bba29baf97ebb39",
+    "catalogHash": "sha256-6b1894b3bfe274be2d859a27fa60f5cbc2cc24cbabb5b09d65716b537c8c702e",
     "anchorStatus": "anchor-stale",
-    "versionField": "1.0.0-onchain.0355bade.5e2jW64H",
+    "versionField": "1.0.0-onchain.6b1894b3.5e2jW64H",
     "importCommand": "npm run publish:agentregistry:onchain"
   },
   "submissionCount": 2,

@@ -1,0 +1,91 @@
+{
+  "name": "Skill Hub — skills.x402.wtf",
+  "url": "https://skills.x402.wtf",
+  "aliases": [
+    "https://skills.x402.wtf",
+    "https://skills.onchainai.fund",
+    "https://skills.clawdcode.net",
+    "https://cheshireterminal.ai/skills"
+  ],
+  "cheshire": {
+    "skills": "https://cheshireterminal.ai/skills",
+    "skillsStore": "https://cheshireterminal.ai/skills-store"
+  },
+  "generatedAt": "1970-01-01T00:00:00.000Z",
+  "totalSkills": 594,
+  "categories": {
+    "Solana / Blockchain": 123,
+    "Dev Tools / Agents": 70,
+    "Google / Ads": 11,
+    "Google / Analytics": 2,
+    "Google / Cloud": 56,
+    "NVIDIA / Accelerated Computing": 229,
+    "Local / Web Services": 9,
+    "Media / Devices": 24,
+    "Productivity / Messaging": 23,
+    "Utilities": 47
+  },
+  "featured": {
+    "solana": [
+      "anthropic-skills/claude-api",
+      "ask-mcp",
+      "cheshire-agent-registries",
+      "cheshire-api",
+      "cheshire-noxa",
+      "cheshire-omni-mint",
+      "cheshire-terminal",
+      "cheshire-zk-omni",
+      "clawd-agent-launchpad",
+      "clawd-skills-installer",
+      "clawd-token-ops",
+      "clawd-trading-terminal",
+      "clawdex",
+      "cloudflare-one",
+      "coding-agent",
+      "compressed-pda",
+      "compressed-token",
+      "copy-trade",
+      "dca-bot",
+      "dex-screener-scanner",
+      "dflow-docs",
+      "dflow-kalshi-market-data",
+      "dflow-kalshi-market-scanner",
+      "dflow-kalshi-portfolio"
+    ],
+    "prioritySkills": [
+      "solana-common-errors",
+      "solana-dev",
+      "solana-clawd"
+    ]
+  },
+  "endpoints": {
+    "ui": "https://skills.x402.wtf/skills",
+    "catalog": "https://skills.x402.wtf/api/skills.json",
+    "catalogIndex": "https://skills.x402.wtf/api/skills",
+    "monetization": "https://skills.x402.wtf/api/monetization.json",
+    "commerceKitIntegration": "https://skills.x402.wtf/integrations/commerce-kit-payment-button.tsx",
+    "skillMetadata": "https://skills.x402.wtf/api/skills/{skill}/metadata.json",
+    "skillSource": "https://skills.x402.wtf/api/skills/{skill}/SKILL.md",
+    "skillVerification": "https://skills.x402.wtf/api/skills/{skill}/verification.json",
+    "onchainRegistry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+    "submissions": "https://skills.x402.wtf/api/submissions.json",
+    "onchainSummary": "https://skills.x402.wtf/api/onchain.json",
+    "publish": "https://skills.x402.wtf/publish",
+    "submissionsUi": "https://skills.x402.wtf/submissions"
+  },
+  "skillsSh": {
+    "install": "npx skills add Solizardking/skills",
+    "repoConfig": "skills.sh.json"
+  },
+  "verification": {
+    "chain": "solana",
+    "status": "anchor-ready",
+    "merkleRoot": "sha256-c60e06beec03f9792cf635caaf3244b05b034b0d277d22129bba29baf97ebb39",
+    "catalogHash": "sha256-6b1894b3bfe274be2d859a27fa60f5cbc2cc24cbabb5b09d65716b537c8c702e"
+  },
+  "monetization": {
+    "onchain": "Solana Pay tip URI per skill card",
+    "offchain": "Optional checkout URL carried in api/monetization.json",
+    "commerceKit": "@solana-commerce/kit PaymentButton integration"
+  }
+}
