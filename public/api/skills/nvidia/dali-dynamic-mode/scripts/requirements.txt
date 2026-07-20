@@ -1,2 +1,0 @@
-nvidia-dali-cuda130
-torch

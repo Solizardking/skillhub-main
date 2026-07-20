@@ -1,0 +1,7 @@
+{
+  "slug": "rh-crypto-agent/cheshire-agent-reputation-registry",
+  "name": "cheshire-agent-reputation-registry",
+  "description": "Post and query ERC-8004 reputation feedback for Cheshire agents on Robinhood Chain via CheshireAgentReputationRegistry. Use for giveFeedback, revokeFeedback, appendResponse, getSummary, and client lists. Requires identity registry 0x7036…c950. Source: CheshireAgentReputationRegistry.sol.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/rh-crypto-agent/cheshire-agent-reputation-registry/SKILL.md"
+}

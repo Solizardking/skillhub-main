@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "robinhood-agent-forge",
+  "name": "robinhood-agent-forge",
+  "description": "Prepare, register, inspect, and safely operate chain-scoped AI agent identities on Robinhood Chain (EVM/ERC-8004-compatible) or Solana (SVM/Metaplex Core) through Cheshire Terminal and the open-source robinhood-agents SDK. Use for chain selection, deployment verification, metadata, unsigned EVM registration intents, wallet-authorized sponsored Solana identity mints, ownership and authority review, reputation, validation, or guarded infrastructure deployment.",
+  "source": "https://skills.x402.wtf/api/skills/robinhood-agent-forge/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/robinhood-agent-forge/metadata.json",
+  "bundleHash": "sha256-4edaa93c1aa6f93cca5346934935bc6881978293ddbf9aef5cea54725c24f995",
+  "merkleLeaf": "sha256-80dc7f8d5e531b607cf55fb0f1605dcf15c6f163c7fa9414b79fb9b0f418a3f1",
+  "files": [
+    {
+      "path": "agents/openai.yaml",
+      "bytes": 300,
+      "sha256": "sha256-2342fb8c470a951a7e15bf1449d194796f87bc71b70ca9ffaf4260cb0f3d81c7"
+    },
+    {
+      "path": "references/api.md",
+      "bytes": 11216,
+      "sha256": "sha256-9f8ddd2baed91ae3508194360f6f220ec23127c8229d84d5acb44797767b2b60"
+    },
+    {
+      "path": "references/deployment.md",
+      "bytes": 5538,
+      "sha256": "sha256-828b5b6c29fe46c6b755ae68e424d29d263b9cb358e85a1c90e75345575547b5"
+    },
+    {
+      "path": "references/sdk.md",
+      "bytes": 6551,
+      "sha256": "sha256-b530e9ce8fe158ef2e86ee609907927c3cfc531213f377ca3f361c29c1abe261"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 5960,
+      "sha256": "sha256-114592fc2767bf256bb6878f4140ae7b02158ac083b4d130f3cd1d9dc99bdb3f"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

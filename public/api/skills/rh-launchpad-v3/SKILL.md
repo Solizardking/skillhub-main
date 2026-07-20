@@ -22,7 +22,7 @@ description: >
 
 Legacy V2 pad `0x52603DC0…` is a different contract (V2 graduate). Prefer **V3** for new agent launches.
 
-## Canonical endpoints (FunPump.ai)
+## Canonical endpoints (FunPump)
 
 | Method | Path | Auth |
 |--------|------|------|
