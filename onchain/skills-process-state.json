@@ -1,18 +1,18 @@
 {
   "schemaVersion": "skillhub-skills-process-state/v1",
-  "updatedAt": "2026-07-16T19:18:46.919Z",
-  "reason": "one-shot",
-  "totalSkills": 584,
-  "inventorySlugs": 584,
-  "fingerprint": "924e35d2f64005dad7af844524160219aa85ecd5ec5a9e5367a14cc6972ea769",
+  "updatedAt": "2026-07-20T17:10:03.968Z",
+  "reason": "stable-run-1",
+  "totalSkills": 592,
+  "inventorySlugs": 592,
+  "fingerprint": "7d95339e7e8cc75b711e3a50cbd17f1ea20ffcf320923f00f827e9e7b85038b9",
   "addedDuringCycle": [],
   "removedDuringCycle": [],
-  "categorizedCount": 584,
+  "categorizedCount": 592,
   "readmeBadgeMatchesCatalog": true,
   "scan": {
-    "totalSkills": 584,
-    "findingsTotal": 3749,
-    "scannedAt": "2026-07-16T19:18:46.651Z",
+    "totalSkills": 592,
+    "findingsTotal": 3778,
+    "scannedAt": "2026-07-20T17:10:02.537Z",
     "mode": "all-local",
     "skillSlugs": [
       "agent-desktop",
@@ -28,6 +28,9 @@
       "anthropic-skills/skill-creator",
       "anthropic-skills/web-artifacts-builder",
       "anthropic-skills/xlsx",
+      "cheshire-agent-identity-registry",
+      "cheshire-agent-reputation-registry",
+      "cheshire-agent-validation-registry",
       "clawdhub",
       "cloudflare",
       "create-agent-tui",
@@ -209,8 +212,10 @@
       "wacli",
       "anthropic-skills/claude-api",
       "ask-mcp",
+      "cheshire-agent-registries",
       "cheshire-api",
       "cheshire-terminal",
+      "cheshire-zk-omni",
       "clawd-agent-launchpad",
       "clawd-skills-installer",
       "clawd-token-ops",
@@ -286,7 +291,9 @@
       "pumpfun-launcher",
       "pumpfun-trading",
       "rh-bonded-launch",
+      "rh-crypto-agent",
       "rh-launchpad-v3",
+      "robinhood-agent-forge",
       "skillhub-onchain",
       "solana-clawd",
       "solana-clawd-agentic-commerce",
@@ -322,6 +329,7 @@
       "vulcan-trade-execution",
       "vulcan-twap-execution",
       "zk",
+      "zk-omni-messaging",
       "zkrouter",
       "1password",
       "animation-vocabulary",
@@ -601,5 +609,5 @@
       "nvidia/vss-summarize-video"
     ]
   },
-  "durationMs": 6637
+  "durationMs": 31503
 }

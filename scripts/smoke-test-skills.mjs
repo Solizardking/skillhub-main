@@ -188,7 +188,8 @@ function validateSkillSet(skills, errors) {
     if (!SLUG_PATTERN.test(skill.slug)) {
       errors.push(`${skill.slug}: slug must use lowercase letters, digits, hyphens, and nested slashes only`);
     }
-    if (skill.slug.includes("copy")) {
+    // Reject leftover flat "copy" dirs only — not legitimate skills like copy-trade.
+    if (skill.slug === "copy" || skill.slug.endsWith("/copy")) {
       errors.push(`${skill.slug}: copy directory is still present`);
     }
     if (!skill.name) {

@@ -250,69 +250,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/rh-bonded-launch/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/rh-bonded-launch/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/rh-bonded-launch/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-identity-registry/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-identity-registry/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-identity-registry/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-registries/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-registries/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-registries/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-reputation-registry/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-reputation-registry/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-reputation-registry/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-validation-registry/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-validation-registry/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-agent-validation-registry/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-zk-omni/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-zk-omni/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/cheshire-zk-omni/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/copy-trade/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/copy-trade/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/copy-trade/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/dca-bot/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/dca-bot/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/dca-bot/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/deployer/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/deployer/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/deployer/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/index-bot/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/index-bot/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/index-bot/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/liquidity-planner/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/liquidity-planner/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/liquidity-planner/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/lp-integration/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/lp-integration/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/lp-integration/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/pay-with-any-token/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/pay-with-any-token/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/pay-with-any-token/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/pay-with-app/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/pay-with-app/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/pay-with-app/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/rh-bonded-launch/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/rh-bonded-launch/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/rh-bonded-launch/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/rh-launchpad-v3/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/rh-launchpad-v3/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/rh-launchpad-v3/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/swap-integration/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/swap-integration/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/swap-integration/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/swap-planner/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/swap-planner/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/swap-planner/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/v4-hook-generator/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/v4-hook-generator/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/v4-hook-generator/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/v4-sdk-integration/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/v4-sdk-integration/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/v4-sdk-integration/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/v4-security-foundations/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/v4-security-foundations/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/v4-security-foundations/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/viem-integration/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/viem-integration/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/viem-integration/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/rh-crypto-agent/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/rh-launchpad-v3/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/rh-launchpad-v3/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/rh-launchpad-v3/SKILL.md</loc></url>

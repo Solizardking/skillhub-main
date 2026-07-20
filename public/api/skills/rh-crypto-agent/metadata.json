@@ -1,0 +1,7 @@
+{
+  "slug": "rh-crypto-agent",
+  "name": "rh-crypto-agent",
+  "description": "Robinhood Crypto Agent open stack — pack index for Robinhood Chain / Uniswap EVM agent skills (bonded launch, LaunchpadV3, swaps, LP, DCA, copy-trade, payments, viem, Cheshire agent registries). Use when installing the RH pack, pointing clawdbot at the open stack, or choosing which RH/EVM skill to load next.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/rh-crypto-agent/SKILL.md"
+}

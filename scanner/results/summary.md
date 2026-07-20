@@ -1,16 +1,16 @@
 # Skill Scanner Results
 
-Scanned at: 2026-07-16T19:18:46.651Z
+Scanned at: 2026-07-20T17:10:02.537Z
 
-- Skills scanned: 584
-- Local skills available: 584
-- On-chain skills: 412
+- Skills scanned: 592
+- Local skills available: 592
+- On-chain skills: 420
 - Off-chain skills: 172
-- Verified skills: 584
+- Verified skills: 592
 - Changed skills: 0
 - Missing verification: 0
 - Critical findings: 18
-- High findings: 1858
+- High findings: 1860
 - Install telemetry source: not tracked locally
 
 ## On-Chain Registry
@@ -18,8 +18,8 @@ Scanned at: 2026-07-16T19:18:46.651Z
 - Status: anchor-ready
 - Anchor state: planned
 - Registry root valid: yes
-- Merkle root: sha256-15ebc74206721b7d2fb2a3429d0d5fca0d1a8569e63c0f693e0ce7e0ac0d5ef6
-- Catalog hash: sha256-b320ec433ebae7dfc1267463e1f6c950b7fc6f52ef30988d09efe5087e8298ca
+- Merkle root: sha256-01c3e9df6272dac5d15ff20d6b44957418148c80c15c5948b13dc7e4b704f4fd
+- Catalog hash: sha256-0355badeed8cac5933a2bf1212f026f7aca71ce028966e7eef43bbbf829bcb06
 
 ## Skills Requiring Review
 

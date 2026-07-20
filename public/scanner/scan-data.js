@@ -91,11 +91,11 @@ window.SKILL_SCAN_RESULTS = {
       }
     ]
   },
-  "scannedAt": "2026-07-16T19:18:46.651Z",
+  "scannedAt": "2026-07-20T17:10:02.537Z",
   "source": {
     "catalog": "local SKILL.md crawl",
-    "canonicalSkills": 584,
-    "localSkills": 584,
+    "canonicalSkills": 592,
+    "localSkills": 592,
     "duplicatePublicSkillsExcluded": true
   },
   "onchain": {
@@ -104,9 +104,9 @@ window.SKILL_SCAN_RESULTS = {
     "cluster": "mainnet-beta",
     "status": "anchor-ready",
     "anchorState": "planned",
-    "totalSkills": 584,
-    "catalogHash": "sha256-b320ec433ebae7dfc1267463e1f6c950b7fc6f52ef30988d09efe5087e8298ca",
-    "merkleRoot": "sha256-15ebc74206721b7d2fb2a3429d0d5fca0d1a8569e63c0f693e0ce7e0ac0d5ef6",
+    "totalSkills": 592,
+    "catalogHash": "sha256-0355badeed8cac5933a2bf1212f026f7aca71ce028966e7eef43bbbf829bcb06",
+    "merkleRoot": "sha256-01c3e9df6272dac5d15ff20d6b44957418148c80c15c5948b13dc7e4b704f4fd",
     "registryRootValid": true,
     "registryProgramId": null,
     "registryPda": null,
@@ -116,46 +116,46 @@ window.SKILL_SCAN_RESULTS = {
     "solanaSignature": null
   },
   "summary": {
-    "totalSkills": 584,
-    "localSkills": 584,
-    "onChainSkills": 412,
+    "totalSkills": 592,
+    "localSkills": 592,
+    "onChainSkills": 420,
     "offChainSkills": 172,
     "categories": {
-      "Dev Tools / Agents": 67,
+      "Dev Tools / Agents": 70,
       "Google / Ads": 11,
       "Google / Analytics": 2,
       "Google / Cloud": 56,
       "Local / Web Services": 9,
       "Media / Devices": 24,
       "Productivity / Messaging": 23,
-      "Solana / Blockchain": 116,
+      "Solana / Blockchain": 121,
       "Utilities": 47,
       "NVIDIA / Accelerated Computing": 229
     },
     "verification": {
-      "verified": 584,
+      "verified": 592,
       "changed": 0,
       "missing": 0,
       "error": 0
     },
     "risk": {
-      "pass": 383,
-      "review": 195,
+      "pass": 390,
+      "review": 196,
       "required": 6
     },
     "findings": {
-      "total": 3749,
+      "total": 3778,
       "bySeverity": {
-        "INFO": 1519,
+        "INFO": 1546,
         "LOW": 170,
         "MEDIUM": 184,
-        "HIGH": 1858,
+        "HIGH": 1860,
         "CRITICAL": 18
       }
     },
     "installs": {
       "knownSkillCount": 0,
-      "unknownSkillCount": 584,
+      "unknownSkillCount": 592,
       "totalKnownInstalls": 0,
       "source": "not tracked locally"
     }
@@ -1254,6 +1254,291 @@ window.SKILL_SCAN_RESULTS = {
           "file": "scripts/recalc.py",
           "line": 18,
           "excerpt": "MACRO_DIR_LINUX = \"~/.config/libreoffice/4/user/basic/Standard\""
+        }
+      ]
+    },
+    {
+      "slug": "cheshire-agent-identity-registry",
+      "name": "cheshire-agent-identity-registry",
+      "description": "Register and operate Cheshire Robinhood agent identities (ERC-721 RHAGENT) via CheshireAgentIdentityRegistry on Robinhood Chain. Use for register(agentURI), agentWallet EIP-712/1271 proofs, metadata, isAuthorized, and ownerOf reads. Source: robinhood-agents/contracts/CheshireAgentIdentityRegistry.sol.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/cheshire-agent-identity-registry",
+      "skillPath": "skills/cheshire-agent-identity-registry/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install cheshire-agent-identity-registry",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-de63188bec4a192efe3314c3a8e2031f2b12f3a5c9c99442b8fa538147f95d84",
+        "localBundleHash": "sha256-de63188bec4a192efe3314c3a8e2031f2b12f3a5c9c99442b8fa538147f95d84",
+        "merkleLeaf": "sha256-17964815b1ab1d704fd6eddf1c7e4bf2e511fd536c4bd65a0e338e14960b0d83",
+        "localMerkleLeaf": "sha256-17964815b1ab1d704fd6eddf1c7e4bf2e511fd536c4bd65a0e338e14960b0d83",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 4,
+        "bySeverity": {
+          "INFO": 4,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 3951,
+        "lineCount": 87
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 14,
+          "excerpt": "## Mainnet (4663)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 22,
+          "excerpt": "| **RPC** | `https://rpc.mainnet.chain.robinhood.com` |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 24,
+          "excerpt": "| **Deploy JSON** | `deployments/agent-registries-mainnet-4663.json` |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 65,
+          "excerpt": "rpcUrls: { default: { http: [\"https://rpc.mainnet.chain.robinhood.com\"] } },"
+        }
+      ]
+    },
+    {
+      "slug": "cheshire-agent-reputation-registry",
+      "name": "cheshire-agent-reputation-registry",
+      "description": "Post and query ERC-8004 reputation feedback for Cheshire agents on Robinhood Chain via CheshireAgentReputationRegistry. Use for giveFeedback, revokeFeedback, appendResponse, getSummary, and client lists. Requires identity registry 0x7036…c950. Source: CheshireAgentReputationRegistry.sol.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "mixed",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/cheshire-agent-reputation-registry",
+      "skillPath": "skills/cheshire-agent-reputation-registry/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install cheshire-agent-reputation-registry",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-ab06a4ceccb5f265d3d2b36aea79b9b1ba22a20a0329f59b51ee9fb7b73b23cb",
+        "localBundleHash": "sha256-ab06a4ceccb5f265d3d2b36aea79b9b1ba22a20a0329f59b51ee9fb7b73b23cb",
+        "merkleLeaf": "sha256-f1707e589c63b3129f0af4ccdf4c916c4d4386284243aa08c1f65d21c5f4c51e",
+        "localMerkleLeaf": "sha256-f1707e589c63b3129f0af4ccdf4c916c4d4386284243aa08c1f65d21c5f4c51e",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 1,
+        "bySeverity": {
+          "INFO": 1,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 2436,
+        "lineCount": 65
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 15,
+          "excerpt": "## Mainnet (4663)"
+        }
+      ]
+    },
+    {
+      "slug": "cheshire-agent-validation-registry",
+      "name": "cheshire-agent-validation-registry",
+      "description": "ERC-8004 validation request/response flow for Cheshire agents on Robinhood Chain via CheshireAgentValidationRegistry. Use for validationRequest, validationResponse, getValidationStatus, getSummary. Operators request; named validators respond (0–100 score). Source: CheshireAgentValidationRegistry.sol.",
+      "category": "Dev Tools / Agents",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/cheshire-agent-validation-registry",
+      "skillPath": "skills/cheshire-agent-validation-registry/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install cheshire-agent-validation-registry",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-5e1f31140c26ee47d5f068a832380cc461093352f0ac375c35b8320c136974d1",
+        "localBundleHash": "sha256-5e1f31140c26ee47d5f068a832380cc461093352f0ac375c35b8320c136974d1",
+        "merkleLeaf": "sha256-46dd3f943966c6055c0fa6945a50869f6b1fa2707fa4adda27a0d9159c3b494c",
+        "localMerkleLeaf": "sha256-46dd3f943966c6055c0fa6945a50869f6b1fa2707fa4adda27a0d9159c3b494c",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 2,
+        "bySeverity": {
+          "INFO": 2,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 2691,
+        "lineCount": 75
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 15,
+          "excerpt": "## Mainnet (4663)"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 67,
+          "excerpt": "- Mainnet (4663) writes need explicit user confirmation."
         }
       ]
     },
@@ -19368,6 +19653,143 @@ window.SKILL_SCAN_RESULTS = {
       "findings": []
     },
     {
+      "slug": "cheshire-agent-registries",
+      "name": "cheshire-agent-registries",
+      "description": "Overview of the ERC-8004 Cheshire agent registry suite on Robinhood Chain: identity (ERC-721 RHAGENT), reputation feedback, validation request/response, and optional zk-omni messenger. Use when registering agents, reading registry addresses, wiring forge/UI, or deploying operator tooling. Product host: funpump.ai · forge: cheshireterminal.ai/agents/forge.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/cheshire-agent-registries",
+      "skillPath": "skills/cheshire-agent-registries/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install cheshire-agent-registries",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-770eb32058e168217f4ffcef6649dfd9cc318eb01f4d26b646b901d94205f8ce",
+        "localBundleHash": "sha256-770eb32058e168217f4ffcef6649dfd9cc318eb01f4d26b646b901d94205f8ce",
+        "merkleLeaf": "sha256-c7428dc8e9295b33cb54d3b32a87a8c158c56978855afc25b8374c988d99eb4b",
+        "localMerkleLeaf": "sha256-c7428dc8e9295b33cb54d3b32a87a8c158c56978855afc25b8374c988d99eb4b",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 7,
+        "bySeverity": {
+          "INFO": 7,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 3452,
+        "lineCount": 89
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 14,
+          "excerpt": "**Do not redeploy** a competing identity namespace — use the canonical mainnet pins."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 22,
+          "excerpt": "| RH mainnet explorer | `https://robinhoodchain.blockscout.com` |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 23,
+          "excerpt": "| Public RPC | `https://rpc.mainnet.chain.robinhood.com` |"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 25,
+          "excerpt": "## Mainnet 4663 pins"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 27,
+          "excerpt": "Source: `robinhood-agents/deployments/agent-registries-mainnet-4663.json`"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 37,
+          "excerpt": "Testnet **46630** pins: see `deployments/agent-registries-testnet-46630.json`. Prefer testnet for agent experiments; require explicit mainnet confirmation before writes on 4663."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 81,
+          "excerpt": "5. Mainnet writes require explicit user confirmation."
+        }
+      ]
+    },
+    {
       "slug": "cheshire-api",
       "name": "cheshire-api",
       "description": "Call Cheshire Terminal REST, MCP, discovery, and developer API surfaces for Solana agents, arena rooms, Upstash boxes, trading health, and OpenAPI. Use when integrating cheshireterminal.ai, /mcp, /.well-known/agent-card.json, ct_sk_ API keys, arena coordination, box handoff, or Apigee/zero-service health probes.",
@@ -19674,6 +20096,89 @@ window.SKILL_SCAN_RESULTS = {
           "file": "SKILL.md",
           "line": 31,
           "excerpt": "- Never execute a mainnet transaction from a voice transcript without restating the action in text and receiving confirmation."
+        }
+      ]
+    },
+    {
+      "slug": "cheshire-zk-omni",
+      "name": "cheshire-zk-omni",
+      "description": "Zero-knowledge omnichain messaging (msgType 4) between Robinhood Chain and Solana via CheshireZkOmniMessenger — LayerZero V2 peers, nullifier anti-replay, optional identity authorization. Use for sendZkOmni, quoteSend, nullifiers, zk-omni relayer. Source: contracts/zk-omni/CheshireZkOmniMessenger.sol.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/cheshire-zk-omni",
+      "skillPath": "skills/cheshire-zk-omni/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install cheshire-zk-omni",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-2951bb390e8cb7b5e250a81741bed8ee94141296acdd3af22251e85270a3214f",
+        "localBundleHash": "sha256-2951bb390e8cb7b5e250a81741bed8ee94141296acdd3af22251e85270a3214f",
+        "merkleLeaf": "sha256-f849d868a74e2fb432b9176a76dc6e9a797f42c1985961d9592cf1e5f7b4dd2a",
+        "localMerkleLeaf": "sha256-f849d868a74e2fb432b9176a76dc6e9a797f42c1985961d9592cf1e5f7b4dd2a",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 1,
+        "bySeverity": {
+          "INFO": 1,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 2955,
+        "lineCount": 86
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 67,
+          "excerpt": "1. Deploy once with a live LayerZero Endpoint V2; never use `MockLzEndpoint` on mainnet."
         }
       ]
     },
@@ -31079,7 +31584,7 @@ window.SKILL_SCAN_RESULTS = {
     {
       "slug": "rh-bonded-launch",
       "name": "rh-bonded-launch",
-      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via the live BondingCurveLaunchpad, or guide a user/agent to do so on ClawdCode /launch or Cheshire /rh-launch. Use when the user says \"launch a token\", \"create token on Robinhood\", \"bonded launch\", \"createToken\", \"fair launch on RH\", \"pump style on robinhood\", \"open a curve\", or brings an agent to clawdcode.net to launch. Does NOT mint wCLAWD or bridge Solana $CLAWD — that is a separate bridge skill path.",
+      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via the live BondingCurveLaunchpad, or guide a user/agent to do so on FunPump /launch or Cheshire /rh-launch. Use when the user says \"launch a token\", \"create token on Robinhood\", \"bonded launch\", \"createToken\", \"fair launch on RH\", \"pump style on robinhood\", \"open a curve\", or brings an agent to funpump.ai to launch. Does NOT mint wCLAWD or bridge Solana $CLAWD — that is a separate bridge skill path.",
       "category": "Solana / Blockchain",
       "surface": {
         "type": "on-chain",
@@ -31108,10 +31613,10 @@ window.SKILL_SCAN_RESULTS = {
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-f2b039f85d4ddd5f5cd065bbf12c4906b49e84a25040762ffe30bba1c4599b02",
-        "localBundleHash": "sha256-f2b039f85d4ddd5f5cd065bbf12c4906b49e84a25040762ffe30bba1c4599b02",
-        "merkleLeaf": "sha256-e59bf6320420240695fcc8b59ab7a2a9f689151047ad353eb16e619ecf54d8fb",
-        "localMerkleLeaf": "sha256-e59bf6320420240695fcc8b59ab7a2a9f689151047ad353eb16e619ecf54d8fb",
+        "bundleHash": "sha256-bbe16bdade8d5a298bd82f9c4dbeb406ac84b15ef03d8966a176d09ffe95d244",
+        "localBundleHash": "sha256-bbe16bdade8d5a298bd82f9c4dbeb406ac84b15ef03d8966a176d09ffe95d244",
+        "merkleLeaf": "sha256-4a4c6de57cf2b6b38ac92a71d40ad7e5fd7f445bb3ea65f34261fc7c45c9ce47",
+        "localMerkleLeaf": "sha256-4a4c6de57cf2b6b38ac92a71d40ad7e5fd7f445bb3ea65f34261fc7c45c9ce47",
         "fileCount": 1,
         "localFileCount": 1,
         "changedFiles": 0,
@@ -31144,7 +31649,7 @@ window.SKILL_SCAN_RESULTS = {
         "scriptFiles": 0,
         "referenceFiles": 0,
         "assetFiles": 0,
-        "bytesScanned": 9733,
+        "bytesScanned": 9771,
         "lineCount": 271
       },
       "findings": [
@@ -31209,7 +31714,7 @@ window.SKILL_SCAN_RESULTS = {
           "message": "Uses curl or wget against an external URL.",
           "file": "SKILL.md",
           "line": 222,
-          "excerpt": "curl -s 'https://clawdcode.net/api/launchpad/tokens?limit=10' | jq '.total, .tokens[0]'"
+          "excerpt": "curl -s 'https://funpump.ai/api/launchpad/tokens?limit=10' | jq '.total, .tokens[0]'"
         },
         {
           "ruleId": "VETTER_CURL_WGET_EXTERNAL",
@@ -31218,7 +31723,7 @@ window.SKILL_SCAN_RESULTS = {
           "message": "Uses curl or wget against an external URL.",
           "file": "SKILL.md",
           "line": 223,
-          "excerpt": "curl -s 'https://clawdcode.net/api/launchpad/token?address=0xTOKEN' | jq ."
+          "excerpt": "curl -s 'https://funpump.ai/api/launchpad/token?address=0xTOKEN' | jq ."
         },
         {
           "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
@@ -31232,9 +31737,82 @@ window.SKILL_SCAN_RESULTS = {
       ]
     },
     {
+      "slug": "rh-crypto-agent",
+      "name": "rh-crypto-agent",
+      "description": "Robinhood Crypto Agent open stack — pack index for Robinhood Chain / Uniswap EVM agent skills (bonded launch, LaunchpadV3, swaps, LP, DCA, copy-trade, payments, viem, Cheshire agent registries). Use when installing the RH pack, pointing clawdbot at the open stack, or choosing which RH/EVM skill to load next.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/rh-crypto-agent",
+      "skillPath": "skills/rh-crypto-agent/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install rh-crypto-agent",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-f4e1ea406c9ceb62fbea644b61b601fd72ca00bc905eb45739f4c30de2a29abc",
+        "localBundleHash": "sha256-f4e1ea406c9ceb62fbea644b61b601fd72ca00bc905eb45739f4c30de2a29abc",
+        "merkleLeaf": "sha256-02a1773199433bc292cb1781564d6275ea0f3c44ee75ea9567f085308bab541a",
+        "localMerkleLeaf": "sha256-02a1773199433bc292cb1781564d6275ea0f3c44ee75ea9567f085308bab541a",
+        "fileCount": 4,
+        "localFileCount": 4,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 4,
+        "textFiles": 4,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 17152,
+        "lineCount": 357
+      },
+      "findings": []
+    },
+    {
       "slug": "rh-launchpad-v3",
       "name": "rh-launchpad-v3",
-      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 — graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or ClawdCode /api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
+      "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 — graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or FunPump https://funpump.ai/api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
       "category": "Solana / Blockchain",
       "surface": {
         "type": "on-chain",
@@ -31263,10 +31841,10 @@ window.SKILL_SCAN_RESULTS = {
           "registryRoot": true,
           "onchainAnchor": "planned"
         },
-        "bundleHash": "sha256-b5231217ab6a6f88f5413409bf4c777c9d510ad24b56891418545988507c3c9a",
-        "localBundleHash": "sha256-b5231217ab6a6f88f5413409bf4c777c9d510ad24b56891418545988507c3c9a",
-        "merkleLeaf": "sha256-bb14ef385dfae77dc7fde3fa4ca478fd7355d95502b7b4276006f7b178c180db",
-        "localMerkleLeaf": "sha256-bb14ef385dfae77dc7fde3fa4ca478fd7355d95502b7b4276006f7b178c180db",
+        "bundleHash": "sha256-a1efc00ee8c92409b7c47041963841308eebbb5c8fe95754eef039e9e28adc40",
+        "localBundleHash": "sha256-a1efc00ee8c92409b7c47041963841308eebbb5c8fe95754eef039e9e28adc40",
+        "merkleLeaf": "sha256-7cae9ec867321a1a27dde2a19d2531c383affa90131df0d645e9b0566048e83c",
+        "localMerkleLeaf": "sha256-7cae9ec867321a1a27dde2a19d2531c383affa90131df0d645e9b0566048e83c",
         "fileCount": 1,
         "localFileCount": 1,
         "changedFiles": 0,
@@ -31299,7 +31877,7 @@ window.SKILL_SCAN_RESULTS = {
         "scriptFiles": 0,
         "referenceFiles": 0,
         "assetFiles": 0,
-        "bytesScanned": 5382,
+        "bytesScanned": 5377,
         "lineCount": 155
       },
       "findings": [
@@ -31328,7 +31906,7 @@ window.SKILL_SCAN_RESULTS = {
           "message": "Uses curl or wget against an external URL.",
           "file": "SKILL.md",
           "line": 56,
-          "excerpt": "curl -sS 'https://clawdcode.net/api/launchpad/v3' | jq '{launchpad,tokenCount,cfg}'"
+          "excerpt": "curl -sS 'https://funpump.ai/api/launchpad/v3' | jq '{launchpad,tokenCount,cfg}'"
         },
         {
           "ruleId": "VETTER_CURL_WGET_EXTERNAL",
@@ -31337,7 +31915,7 @@ window.SKILL_SCAN_RESULTS = {
           "message": "Uses curl or wget against an external URL.",
           "file": "SKILL.md",
           "line": 59,
-          "excerpt": "curl -sS -X POST 'https://clawdcode.net/api/launchpad/v3/prepare' \\"
+          "excerpt": "curl -sS -X POST 'https://funpump.ai/api/launchpad/v3/prepare' \\"
         },
         {
           "ruleId": "VETTER_CURL_WGET_EXTERNAL",
@@ -31346,7 +31924,7 @@ window.SKILL_SCAN_RESULTS = {
           "message": "Uses curl or wget against an external URL.",
           "file": "SKILL.md",
           "line": 64,
-          "excerpt": "curl -sS -X POST 'https://clawdcode.net/api/launchpad/v3/submit' \\"
+          "excerpt": "curl -sS -X POST 'https://funpump.ai/api/launchpad/v3/submit' \\"
         },
         {
           "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
@@ -31392,6 +31970,206 @@ window.SKILL_SCAN_RESULTS = {
           "file": "SKILL.md",
           "line": 115,
           "excerpt": "// 3) Optional: submit path already done if you used sendTransaction;"
+        }
+      ]
+    },
+    {
+      "slug": "robinhood-agent-forge",
+      "name": "robinhood-agent-forge",
+      "description": "Prepare, register, inspect, and safely operate chain-scoped AI agent identities on Robinhood Chain (EVM/ERC-8004-compatible) or Solana (SVM/Metaplex Core) through Cheshire Terminal and the open-source robinhood-agents SDK. Use for chain selection, deployment verification, metadata, unsigned EVM registration intents, wallet-authorized sponsored Solana identity mints, ownership and authority review, reputation, validation, or guarded infrastructure deployment.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/robinhood-agent-forge",
+      "skillPath": "skills/robinhood-agent-forge/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install robinhood-agent-forge",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-4edaa93c1aa6f93cca5346934935bc6881978293ddbf9aef5cea54725c24f995",
+        "localBundleHash": "sha256-4edaa93c1aa6f93cca5346934935bc6881978293ddbf9aef5cea54725c24f995",
+        "merkleLeaf": "sha256-80dc7f8d5e531b607cf55fb0f1605dcf15c6f163c7fa9414b79fb9b0f418a3f1",
+        "localMerkleLeaf": "sha256-80dc7f8d5e531b607cf55fb0f1605dcf15c6f163c7fa9414b79fb9b0f418a3f1",
+        "fileCount": 5,
+        "localFileCount": 5,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "review",
+        "level": "high",
+        "score": 28,
+        "maxSeverity": "HIGH",
+        "findingsCount": 14,
+        "bySeverity": {
+          "INFO": 12,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 2,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 5,
+        "textFiles": 5,
+        "scriptFiles": 0,
+        "referenceFiles": 3,
+        "assetFiles": 0,
+        "bytesScanned": 29565,
+        "lineCount": 496
+      },
+      "findings": [
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/api.md",
+          "line": 28,
+          "excerpt": "\"manifest\": \"packages/robinhood-deploy/deployments/agent-registries-mainnet-4663.json\","
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/api.md",
+          "line": 88,
+          "excerpt": "\"network\": \"mainnet-beta\""
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/api.md",
+          "line": 146,
+          "excerpt": "Require `runtimeVerification.trusted === true` and require every role's check to pass. A failed runtime check returns HTTP `503` with `{ \"success\": false, \"error\", \"runtimeVerification\" }`. Require `value === \"0x0\"`; req"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/api.md",
+          "line": 164,
+          "excerpt": "Require registry, owner, initial agent wallet, and URI to match. `GET /api/robinhood/agents?owner=0x...` discovers mainnet identity NFT instances through Blockscout, but direct registry reads remain canonical."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/deployment.md",
+          "line": 5,
+          "excerpt": "- `deployments/agent-registries-mainnet-4663.json`"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/deployment.md",
+          "line": 10,
+          "excerpt": "## Robinhood Chain mainnet"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/deployment.md",
+          "line": 13,
+          "excerpt": "- RPC: `https://rpc.mainnet.chain.robinhood.com`"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/deployment.md",
+          "line": 57,
+          "excerpt": "4. Obtain an independent audit and explicit mainnet approval."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "references/deployment.md",
+          "line": 66,
+          "excerpt": "Treat devnet and mainnet-beta as separate clusters. Resolve Metaplex Core and Agent Registry program IDs from the installed official SDK and current runtime. Do not deploy replacement programs merely to mint a Core ident"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "references/sdk.md",
+          "line": 10,
+          "excerpt": "npm install cheshire-terminal-agents"
+        },
+        {
+          "ruleId": "VETTER_RUNTIME_INSTALL",
+          "severity": "HIGH",
+          "category": "unauthorized_tool_use",
+          "message": "Installs packages at runtime rather than relying on declared dependencies.",
+          "file": "references/sdk.md",
+          "line": 14,
+          "excerpt": "From source: clone the repository, run `npm install` and `npm run check`."
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 12,
+          "excerpt": "- Choose Robinhood Chain for an ERC-721 identity in the deployed ERC-8004-compatible identity, reputation, and validation suite. Prefer testnet chain `46630`. Require an explicit mainnet confirmation for chain `4663` imm"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 13,
+          "excerpt": "- Choose Solana for a Metaplex Core asset with Agent Identity. Prefer `POST /api/metaplex-agents/mint-prepare` (Metaplex API → user-signed tx) then `mint-confirm` (live feed). Treasury-sponsored `POST /api/metaplex-agent"
+        },
+        {
+          "ruleId": "VETTER_ONCHAIN_WRITE_SURFACE",
+          "severity": "INFO",
+          "category": "onchain_surface",
+          "message": "Mentions transaction signing, simulation, deployment, or mainnet/devnet behavior.",
+          "file": "SKILL.md",
+          "line": 45,
+          "excerpt": "The canonical registry suites are already deployed on Robinhood testnet and mainnet. Do not rerun their deployer or create a competing Cheshire identity namespace. Registry deployment is an operator action; end-user `reg"
         }
       ]
     },
@@ -44248,6 +45026,79 @@ window.SKILL_SCAN_RESULTS = {
         "assetFiles": 0,
         "bytesScanned": 10806,
         "lineCount": 316
+      },
+      "findings": []
+    },
+    {
+      "slug": "zk-omni-messaging",
+      "name": "zk-omni-messaging",
+      "description": "Zero-knowledge omnichain messaging between Robinhood Chain and Solana using CheshireZkOmniMessenger (msgType 4) with nullifier anti-replay and the zk-omni-relayer service.",
+      "category": "Solana / Blockchain",
+      "surface": {
+        "type": "on-chain",
+        "chain": "solana",
+        "reason": "Matched blockchain, wallet, transaction, or registry language."
+      },
+      "path": "skills/zk-omni-messaging",
+      "skillPath": "skills/zk-omni-messaging/SKILL.md",
+      "install": {
+        "command": "npx github:Solizardking/skills install zk-omni-messaging",
+        "installs": null,
+        "status": "unknown",
+        "source": "not tracked locally",
+        "updatedAt": null,
+        "note": "No local install telemetry file was found for this skill."
+      },
+      "verification": {
+        "status": "verified",
+        "method": "sha256 file hashes, deterministic bundle hash, merkle leaf, and registry root",
+        "checks": {
+          "verificationFile": true,
+          "fileHashes": true,
+          "bundleHash": true,
+          "merkleLeaf": true,
+          "registryMembership": true,
+          "registryRoot": true,
+          "onchainAnchor": "planned"
+        },
+        "bundleHash": "sha256-7f8f3e74a3f5f02df7df6a330a6c95eac01ea985af399f5061873feaaf0293b1",
+        "localBundleHash": "sha256-7f8f3e74a3f5f02df7df6a330a6c95eac01ea985af399f5061873feaaf0293b1",
+        "merkleLeaf": "sha256-d15edd6bb5a6e4e31316f1aa0f09511f4f1e03a6b1f9cf6537fd7253c12c5ed2",
+        "localMerkleLeaf": "sha256-d15edd6bb5a6e4e31316f1aa0f09511f4f1e03a6b1f9cf6537fd7253c12c5ed2",
+        "fileCount": 1,
+        "localFileCount": 1,
+        "changedFiles": 0,
+        "changedFileSamples": [],
+        "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+        "solana": {
+          "cluster": "mainnet-beta",
+          "status": "anchor-ready",
+          "registryProgramId": null,
+          "registryPda": null
+        }
+      },
+      "risk": {
+        "status": "pass",
+        "level": "low",
+        "score": 0,
+        "maxSeverity": "INFO",
+        "findingsCount": 0,
+        "bySeverity": {
+          "INFO": 0,
+          "LOW": 0,
+          "MEDIUM": 0,
+          "HIGH": 0,
+          "CRITICAL": 0
+        }
+      },
+      "stats": {
+        "filesScanned": 1,
+        "textFiles": 1,
+        "scriptFiles": 0,
+        "referenceFiles": 0,
+        "assetFiles": 0,
+        "bytesScanned": 1907,
+        "lineCount": 62
       },
       "findings": []
     },
