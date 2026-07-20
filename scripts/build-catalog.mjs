@@ -558,9 +558,40 @@ function renderReadme(catalog) {
   const bySourceFamily = groupBySourceFamily(catalog);
   const googleCount = catalog.filter((skill) => skill.slug.startsWith("google/")).length;
   const nvidiaCount = catalog.filter((skill) => skill.slug.startsWith("nvidia/")).length;
+  const cheshireAgentSlugs = new Set([
+    "cheshire-agent-identity-registry",
+    "cheshire-agent-registries",
+    "cheshire-agent-reputation-registry",
+    "cheshire-agent-validation-registry",
+    "cheshire-zk-omni",
+    "cheshire-omni-mint",
+    "cheshire-api",
+    "cheshire-terminal",
+    "cheshire-noxa",
+    "rh-bonded-launch",
+    "rh-launchpad-v3",
+    "rh-crypto-agent",
+    "robinhood-agent-forge",
+    "zk-omni-messaging",
+    "copy-trade",
+    "dca-bot",
+    "deployer",
+    "index-bot",
+    "liquidity-planner",
+    "lp-integration",
+    "pay-with-any-token",
+    "pay-with-app",
+    "swap-integration",
+    "swap-planner",
+    "v4-hook-generator",
+    "v4-sdk-integration",
+    "v4-security-foundations",
+    "viem-integration",
+  ]);
   const featuredRuns = [
     // Premiere offerings — lead the hub with these families.
     ["💎 Metaplex Agent mode", "premiere: onboard, register EIP-8004 identity, delegate, commerce, Genesis agent token", catalog.filter((skill) => skill.slug === "metaplex-agent" || skill.slug === "metaplex/skills/metaplex")],
+    ["🐱 Cheshire / Robinhood Agents mode", "dual-rail forge, ERC-8004 registries, FunPump launch, omni mint, zk-omni, RH crypto agent pack", catalog.filter((skill) => cheshireAgentSlugs.has(skill.slug))],
     ["🎯 Engineering mode", "ship software the Matt Pocock way: TDD, triage, implement, architecture, specs, tickets", catalog.filter((skill) => skill.slug.startsWith("engineering/"))],
     ["🧭 Agent orchestration mode", "goal loops, handoffs, subagents, deep SWE runs, self-scheduling", catalog.filter((skill) => skill.slug.startsWith("agent-orchestration/"))],
     ["✍️ Productivity mode", "grill, teach, handoff, and write great skills", catalog.filter((skill) => skill.slug.startsWith("productivity/"))],
@@ -588,7 +619,7 @@ function renderReadme(catalog) {
     `[![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)`,
     `![Skills](https://img.shields.io/badge/skills-${catalog.length}-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-${byCategory.length}-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-${googleCount}_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-${nvidiaCount}_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)`,
     "",
-    `**${catalog.length} installable agent skills** — led by the **premiere [\`metaplex-agent\`](./skills/metaplex-agent/SKILL.md)** playbook (Metaplex Agent Registry, EIP-8004 identity, commerce, Genesis tokens), plus a **${googleCount}-skill Google integration** and a **${nvidiaCount}-skill NVIDIA stack** (CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2). Every one is a \`SKILL.md\` playbook your agent can pull off the shelf —`,
+    `**${catalog.length} installable agent skills** — led by the **premiere [\`metaplex-agent\`](./skills/metaplex-agent/SKILL.md)** playbook and the **Cheshire / Robinhood Agents** stack (dual-rail forge, ERC-8004 registries, FunPump launch, omni mint, zk-omni), plus a **${googleCount}-skill Google integration** and a **${nvidiaCount}-skill NVIDIA stack**. Every one is a \`SKILL.md\` playbook your agent can pull off the shelf —`,
     "hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.",
     "",
     "*Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️",
@@ -611,6 +642,30 @@ function renderReadme(catalog) {
     "| Full Metaplex programs | [`metaplex/skills/metaplex`](./skills/metaplex/skills/metaplex/SKILL.md) |",
     "| Covers | CLI/RPC setup · register · fetch · executive delegate/revoke · set-agent-token · LaunchPool / Bonding Curve · commerce primitives |",
     "| Docs | [metaplex.com/docs/agents](https://metaplex.com/docs/agents) |",
+    "",
+    "---",
+    "",
+    "## 🐱 Premiere: Cheshire / Robinhood Agents",
+    "",
+    "Dual-rail agent identity (Robinhood Chain ERC-8004 + Solana Metaplex), FunPump bonded launch, Uniswap EVM stack, and zk-omni messaging. Shipped as Skill Hub playbooks and as the **[`cheshire-terminal-agents`](https://www.npmjs.com/package/cheshire-terminal-agents)** npm package.",
+    "",
+    "```bash",
+    "# Skill Hub install",
+    "npx github:Solizardking/skills install robinhood-agent-forge cheshire-agent-registries cheshire-omni-mint rh-bonded-launch rh-launchpad-v3 rh-crypto-agent zk-omni-messaging",
+    "",
+    "# npm package (SDK + skills + CLI)",
+    "npm i cheshire-terminal-agents",
+    "```",
+    "",
+    "| | |",
+    "|---|---|",
+    "| Forge | [`robinhood-agent-forge`](./skills/robinhood-agent-forge/SKILL.md) — RH or Solana or **omni dual-rail** |",
+    "| Registries | [`cheshire-agent-registries`](./skills/cheshire-agent-registries/SKILL.md) · identity · reputation · validation |",
+    "| Omni | [`cheshire-omni-mint`](./skills/cheshire-omni-mint/SKILL.md) · [`cheshire-zk-omni`](./skills/cheshire-zk-omni/SKILL.md) · [`zk-omni-messaging`](./skills/zk-omni-messaging/SKILL.md) |",
+    "| Launch | [`rh-bonded-launch`](./skills/rh-bonded-launch/SKILL.md) · [`rh-launchpad-v3`](./skills/rh-launchpad-v3/SKILL.md) (FunPump) |",
+    "| Pack index | [`rh-crypto-agent`](./skills/rh-crypto-agent/SKILL.md) — swaps, LP, DCA, copy-trade, viem, v4 hooks |",
+    "| npm | [cheshire-terminal-agents](https://www.npmjs.com/package/cheshire-terminal-agents) |",
+    "| Product | [cheshireterminal.ai/agents/forge](https://cheshireterminal.ai/agents/forge) · [funpump.ai](https://funpump.ai) |",
     "",
     "---",
     "",
@@ -674,6 +729,10 @@ function renderReadme(catalog) {
     "# Premiere #1: Metaplex Agent (identity, commerce, Genesis agent token)",
     "npx github:Solizardking/skills install metaplex-agent",
     "",
+    "# Premiere: Cheshire / Robinhood Agents (forge, registries, FunPump, omni, RH pack)",
+    "npx github:Solizardking/skills install robinhood-agent-forge cheshire-agent-registries cheshire-omni-mint rh-bonded-launch rh-launchpad-v3 rh-crypto-agent zk-omni-messaging cheshire-zk-omni",
+    "npm i cheshire-terminal-agents",
+    "",
     "# Premiere: engineering (TDD, implement, triage, architecture)",
     "npx github:Solizardking/skills install engineering/tdd engineering/implement engineering/triage engineering/codebase-design engineering/to-spec",
     "",
@@ -712,7 +771,7 @@ function renderReadme(catalog) {
     "",
     "## 🌟 Featured Runs",
     "",
-    "**Premiere loadouts first** — **Metaplex Agent**, then engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:",
+    "**Premiere loadouts first** — **Metaplex Agent**, **Cheshire / Robinhood Agents**, then engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:",
     "",
   );
 
@@ -1006,10 +1065,16 @@ function renderHeroBanner(catalog) {
     <text font-size="72" font-weight="800" fill="url(#title)" letter-spacing="6">⚡ SKILL HUB</text>
   </g>
   <g transform="translate(600 178)" text-anchor="middle">
-    <text font-size="24" fill="#c4b5fd">${catalog.length} agent skills · ${byCategory.length} zones · merkle-verified · arweave-permanent · solana-anchored</text>
+    <text font-size="22" fill="#c4b5fd">${catalog.length} agent skills · ${byCategory.length} zones · Cheshire dual-rail · FunPump · merkle · arweave · solana</text>
   </g>
-  <g transform="translate(600 232)" text-anchor="middle">
-    <text font-size="30">${emojis}
+  <g transform="translate(600 210)" text-anchor="middle">
+    <text font-size="16" fill="#a78bfa">
+      <tspan>🐱 forge · registries · omni-mint · rh-launch · zk-omni</tspan>
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  <g transform="translate(600 248)" text-anchor="middle">
+    <text font-size="28">${emojis}
       <animate attributeName="opacity" values="0.55;1;0.55" dur="3s" repeatCount="indefinite"/>
     </text>
   </g>

@@ -67,9 +67,17 @@ curl -sS https://34.54.168.40.nip.io/zero/health
 | Key | Value |
 |-----|-------|
 | GCP project | `x402-477302` |
+| Location | `us-central1` |
+| A2A service | `cheshire-terminal` |
+| MCP service | `cheshire-terminal-mcp` |
+| ADK `ApiRegistry.get_toolset` | `projects/x402-477302/locations/us-central1/mcpServers/agentregistry-00000000-0000-0000-2490-10e4bb2ec4c0` |
+| Agent Registry service | `projects/x402-477302/locations/us-central1/services/cheshire-terminal-mcp` |
 | Apigee env | `test-env` (BASE) |
 | Env hostname | `34.54.168.40.nip.io` |
 | Zero-service | Cloud Run `clawd-zero-service` (us-central1) |
+
+Canonical path file: `registry/google/canonical-mcp-resource.json`  
+ADK sample: `python3 scripts/google-cloud/adk_cheshire_mcp_agent.py --print-path-only`
 
 Full GCP map: repo `GOOGLE.md`.
 

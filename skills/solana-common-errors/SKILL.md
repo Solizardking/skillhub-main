@@ -6,9 +6,10 @@ description: >
   edition2024 crate pins, RPC airdrops, and Anchor 0.29→0.32 migrations. Use when
   builds fail, Anchor CLI won't install, or CI breaks on Debian/Ubuntu.
 license: MIT
+version: "1.0.0"
 compatibility: Anchor 0.30–0.32, Solana CLI 2.x, Node 18+, Linux/macOS
 metadata:
-  author: skill-hub
+  author: cheshire-terminal
   version: "1.0.0"
   homepage: https://skills.x402.wtf/api/skills/solana-common-errors/SKILL.md
   category: Solana / Blockchain

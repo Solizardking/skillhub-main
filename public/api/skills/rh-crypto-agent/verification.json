@@ -5,8 +5,8 @@
   "description": "Robinhood Crypto Agent open stack — pack index for Robinhood Chain / Uniswap EVM agent skills (bonded launch, LaunchpadV3, swaps, LP, DCA, copy-trade, payments, viem, Cheshire agent registries). Use when installing the RH pack, pointing clawdbot at the open stack, or choosing which RH/EVM skill to load next.",
   "source": "https://skills.x402.wtf/api/skills/rh-crypto-agent/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/rh-crypto-agent/metadata.json",
-  "bundleHash": "sha256-f4e1ea406c9ceb62fbea644b61b601fd72ca00bc905eb45739f4c30de2a29abc",
-  "merkleLeaf": "sha256-02a1773199433bc292cb1781564d6275ea0f3c44ee75ea9567f085308bab541a",
+  "bundleHash": "sha256-377aebcc49b71dbe3fe4ac837825301898f34286a8eb42ea859b17530bf2357b",
+  "merkleLeaf": "sha256-69df730cf20150560f67f9dfa8729940c6ba122c58368198bdbf9be2a45170f2",
   "files": [
     {
       "path": "catalog.json",
@@ -25,8 +25,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 3045,
-      "sha256": "sha256-c9d868e3268521418cadbd12b7c87aceff64eee80e380966c803dbfcec5105e0"
+      "bytes": 3053,
+      "sha256": "sha256-fee1f727be81136830d95a68922a88e533d7d792b603356dac1f78e02e3ae206"
     }
   ],
   "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",

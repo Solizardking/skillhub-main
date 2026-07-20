@@ -3,9 +3,9 @@
 <img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />
 
 [![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)
-![Skills](https://img.shields.io/badge/skills-592-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-10-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-229_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-594-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-10-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-229_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
 
-**592 installable agent skills** — led by the **premiere [`metaplex-agent`](./skills/metaplex-agent/SKILL.md)** playbook (Metaplex Agent Registry, EIP-8004 identity, commerce, Genesis tokens), plus a **69-skill Google integration** and a **229-skill NVIDIA stack** (CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2). Every one is a `SKILL.md` playbook your agent can pull off the shelf —
+**594 installable agent skills** — led by the **premiere [`metaplex-agent`](./skills/metaplex-agent/SKILL.md)** playbook and the **Cheshire / Robinhood Agents** stack (dual-rail forge, ERC-8004 registries, FunPump launch, omni mint, zk-omni), plus a **69-skill Google integration** and a **229-skill NVIDIA stack**. Every one is a `SKILL.md` playbook your agent can pull off the shelf —
 hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
 
 *Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️
@@ -31,13 +31,37 @@ npx github:Solizardking/skills install metaplex-agent
 
 ---
 
+## 🐱 Premiere: Cheshire / Robinhood Agents
+
+Dual-rail agent identity (Robinhood Chain ERC-8004 + Solana Metaplex), FunPump bonded launch, Uniswap EVM stack, and zk-omni messaging. Shipped as Skill Hub playbooks and as the **[`cheshire-terminal-agents`](https://www.npmjs.com/package/cheshire-terminal-agents)** npm package.
+
+```bash
+# Skill Hub install
+npx github:Solizardking/skills install robinhood-agent-forge cheshire-agent-registries cheshire-omni-mint rh-bonded-launch rh-launchpad-v3 rh-crypto-agent zk-omni-messaging
+
+# npm package (SDK + skills + CLI)
+npm i cheshire-terminal-agents
+```
+
+| | |
+|---|---|
+| Forge | [`robinhood-agent-forge`](./skills/robinhood-agent-forge/SKILL.md) — RH or Solana or **omni dual-rail** |
+| Registries | [`cheshire-agent-registries`](./skills/cheshire-agent-registries/SKILL.md) · identity · reputation · validation |
+| Omni | [`cheshire-omni-mint`](./skills/cheshire-omni-mint/SKILL.md) · [`cheshire-zk-omni`](./skills/cheshire-zk-omni/SKILL.md) · [`zk-omni-messaging`](./skills/zk-omni-messaging/SKILL.md) |
+| Launch | [`rh-bonded-launch`](./skills/rh-bonded-launch/SKILL.md) · [`rh-launchpad-v3`](./skills/rh-launchpad-v3/SKILL.md) (FunPump) |
+| Pack index | [`rh-crypto-agent`](./skills/rh-crypto-agent/SKILL.md) — swaps, LP, DCA, copy-trade, viem, v4 hooks |
+| npm | [cheshire-terminal-agents](https://www.npmjs.com/package/cheshire-terminal-agents) |
+| Product | [cheshireterminal.ai/agents/forge](https://cheshireterminal.ai/agents/forge) · [funpump.ai](https://funpump.ai) |
+
+---
+
 ## 🗺️ Choose Your Quest
 
 Ten zones. Every skill lives in exactly one. Click a zone to jump to its catalog.
 
 | Zone | Skills | Power level | What lives here |
 |---|---:|---|---|
-| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 121 | `██████████░░░░░░░░` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
+| [🟣 **Solana / Blockchain**](#-solana--blockchain) | 123 | `██████████░░░░░░░░` | The deep end: DeFi, perps, tokens, ZK, and on-chain agents |
 | [🛠️ **Dev Tools / Agents**](#️-dev-tools--agents) | 70 | `██████░░░░░░░░░░░░` | Build, orchestrate, and ship with agent tooling |
 | [📣 **Google / Ads**](#-google--ads) | 11 | `█░░░░░░░░░░░░░░░░░` | Google Ads APIs, campaigns, and reporting |
 | [📈 **Google / Analytics**](#-google--analytics) | 2 | `█░░░░░░░░░░░░░░░░░` | GA4 data APIs and measurement |
@@ -54,7 +78,7 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 | Layer | What it contains | Main paths |
 |---|---|---|
-| Skill sources | 592 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/nvidia/*/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
+| Skill sources | 594 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/nvidia/*/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
 | Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |
 | Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |
 | Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |
@@ -66,14 +90,14 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 ### Source Families
 
-This is the same 592-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
+This is the same 594-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
 
 | Source family | Skills | What it covers |
 |---|---:|---|
 | `metaplex-agent/*` | 1 | Premiere #1: Metaplex Agent — EIP-8004 identity, Asset Signer, executive delegation, commerce, Genesis agent tokens. |
 | `metaplex/*` | 1 | Full Metaplex program skill: Core, Token Metadata, Bubblegum, Candy Machine, Genesis, and CLI/SDK references. |
 | `nvidia/*` | 229 | NVIDIA accelerated computing: CUDA/cuDF, Jetson BSP, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2, Dynamo, and digital health. |
-| `single/root skills` | 118 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
+| `single/root skills` | 120 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
 | `google/*` | 69 | Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills. |
 | `pump/pumpfun/*` | 24 | Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows. |
 | `vulcan/*` | 18 | Vulcan/Phoenix perps trading skills for onboarding, market intel, execution, grids, TWAP, TP/SL, margin, and risk. |
@@ -110,6 +134,10 @@ Or grab a **premiere** focused stack (the hub's lead offerings):
 ```bash
 # Premiere #1: Metaplex Agent (identity, commerce, Genesis agent token)
 npx github:Solizardking/skills install metaplex-agent
+
+# Premiere: Cheshire / Robinhood Agents (forge, registries, FunPump, omni, RH pack)
+npx github:Solizardking/skills install robinhood-agent-forge cheshire-agent-registries cheshire-omni-mint rh-bonded-launch rh-launchpad-v3 rh-crypto-agent zk-omni-messaging cheshire-zk-omni
+npm i cheshire-terminal-agents
 
 # Premiere: engineering (TDD, implement, triage, architecture)
 npx github:Solizardking/skills install engineering/tdd engineering/implement engineering/triage engineering/codebase-design engineering/to-spec
@@ -149,12 +177,19 @@ npx github:Solizardking/skills install --eve                      # eve (agent/s
 
 ## 🌟 Featured Runs
 
-**Premiere loadouts first** — **Metaplex Agent**, then engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:
+**Premiere loadouts first** — **Metaplex Agent**, **Cheshire / Robinhood Agents**, then engineering, orchestration, productivity, design, research, authoring, and ops. NVIDIA, Solana, and trading runs follow:
 
 <details>
 <summary><strong>💎 Metaplex Agent mode</strong> — premiere: onboard, register EIP-8004 identity, delegate, commerce, Genesis agent token <em>(2 skills)</em></summary>
 
 [`metaplex-agent`](./skills/metaplex-agent/SKILL.md) · [`metaplex/skills/metaplex`](./skills/metaplex/skills/metaplex/SKILL.md)
+
+</details>
+
+<details>
+<summary><strong>🐱 Cheshire / Robinhood Agents mode</strong> — dual-rail forge, ERC-8004 registries, FunPump launch, omni mint, zk-omni, RH crypto agent pack <em>(28 skills)</em></summary>
+
+[`cheshire-agent-registries`](./skills/cheshire-agent-registries/SKILL.md) · [`cheshire-api`](./skills/cheshire-api/SKILL.md) · [`cheshire-noxa`](./skills/cheshire-noxa/SKILL.md) · [`cheshire-omni-mint`](./skills/cheshire-omni-mint/SKILL.md) · [`cheshire-terminal`](./skills/cheshire-terminal/SKILL.md) · [`cheshire-zk-omni`](./skills/cheshire-zk-omni/SKILL.md) · [`copy-trade`](./skills/copy-trade/SKILL.md) · [`dca-bot`](./skills/dca-bot/SKILL.md) · [`pay-with-any-token`](./skills/pay-with-any-token/SKILL.md) · [`pay-with-app`](./skills/pay-with-app/SKILL.md) · [`rh-bonded-launch`](./skills/rh-bonded-launch/SKILL.md) · [`rh-crypto-agent`](./skills/rh-crypto-agent/SKILL.md) · [`rh-launchpad-v3`](./skills/rh-launchpad-v3/SKILL.md) · [`robinhood-agent-forge`](./skills/robinhood-agent-forge/SKILL.md) · [`swap-planner`](./skills/swap-planner/SKILL.md) · [`viem-integration`](./skills/viem-integration/SKILL.md) · [`zk-omni-messaging`](./skills/zk-omni-messaging/SKILL.md) · [`cheshire-agent-identity-registry`](./skills/cheshire-agent-identity-registry/SKILL.md) · [`cheshire-agent-reputation-registry`](./skills/cheshire-agent-reputation-registry/SKILL.md) · [`cheshire-agent-validation-registry`](./skills/cheshire-agent-validation-registry/SKILL.md) · [`index-bot`](./skills/index-bot/SKILL.md) · [`liquidity-planner`](./skills/liquidity-planner/SKILL.md) · [`lp-integration`](./skills/lp-integration/SKILL.md) · [`v4-hook-generator`](./skills/v4-hook-generator/SKILL.md) · [`deployer`](./skills/deployer/SKILL.md) · [`swap-integration`](./skills/swap-integration/SKILL.md) · [`v4-sdk-integration`](./skills/v4-sdk-integration/SKILL.md) · [`v4-security-foundations`](./skills/v4-security-foundations/SKILL.md)
 
 </details>
 
@@ -276,7 +311,7 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🟣 Solana / Blockchain
 
-> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **121 skills**
+> The deep end: DeFi, perps, tokens, ZK, and on-chain agents — **123 skills**
 
 <details>
 <summary>Open the Solana / Blockchain cabinet</summary>
@@ -287,6 +322,8 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 | [`ask-mcp`](./skills/ask-mcp/SKILL.md) | ask-mcp | For questions about Light Protocol's SDK, smart contracts and Solana development, Claude Code features, or agent skills. AI-powered answers grounded in repository context via DeepWiki MCP. |
 | [`cheshire-agent-registries`](./skills/cheshire-agent-registries/SKILL.md) | cheshire-agent-registries | Overview of the ERC-8004 Cheshire agent registry suite on Robinhood Chain: identity (ERC-721 RHAGENT), reputation feedback, validation request/response, and optional zk-omni messenger. Use when registering agents, reading registry addresses, wiring forge/UI, or deploying operator tooling. Product host: funpump.ai · forge: cheshireterminal.ai/agents/forge. |
 | [`cheshire-api`](./skills/cheshire-api/SKILL.md) | cheshire-api | Call Cheshire Terminal REST, MCP, discovery, and developer API surfaces for Solana agents, arena rooms, Upstash boxes, trading health, and OpenAPI. Use when integrating cheshireterminal.ai, /mcp, /.well-known/agent-card.json, ct_sk_ API keys, arena coordination, box handoff, or Apigee/zero-service health probes. |
+| [`cheshire-noxa`](./skills/cheshire-noxa/SKILL.md) | cheshire-noxa | NOXA Fun/DEX collab for Cheshire Terminal — launch feed, DEX registry, QuoterV2 quotes, EVM RPC. One-shot npm package @x402solana/cheshire-noxa. |
+| [`cheshire-omni-mint`](./skills/cheshire-omni-mint/SKILL.md) | cheshire-omni-mint | Dual-rail omni agent mint: Solana Metaplex Core + Agent Identity and Robinhood Chain ERC-8004 identity in one plan, optionally bound with LayerZero zk-omni (msgType 4 dual_identity_link). Use when the user wants omnichain identity, Solana and Robinhood together, Metaplex mintAgent + RH register, or Cheshire Terminal dual-rail forge. Product: cheshireterminal.ai/agents/forge · funpump.ai. |
 | [`cheshire-terminal`](./skills/cheshire-terminal/SKILL.md) | cheshire-terminal | Operate and extend Cheshire Terminal, the cheshireterminal.ai voice-controlled Solana terminal powered by $CLAWD. Use when working on voice terminal flows, token launch commands, LiveKit voice integration, Jupiter swap surfaces, burn/staking flows, or any task that mentions Cheshire Terminal, cheshireterminal.ai, $CLAWD terminal, or Clawd voice commands. |
 | [`cheshire-zk-omni`](./skills/cheshire-zk-omni/SKILL.md) | cheshire-zk-omni | Zero-knowledge omnichain messaging (msgType 4) between Robinhood Chain and Solana via CheshireZkOmniMessenger — LayerZero V2 peers, nullifier anti-replay, optional identity authorization. Use for sendZkOmni, quoteSend, nullifiers, zk-omni relayer. Source: contracts/zk-omni/CheshireZkOmniMessenger.sol. |
 | [`clawd-agent-launchpad`](./skills/clawd-agent-launchpad/SKILL.md) | clawd-agent-launchpad | Build, launch, stake, and manage Clawd or Cheshire Terminal agents. Use when working on Agent Launchpad, agent templates, agent builder, agent hub, deployed agent detail pages, runtime matrix, Metaplex agent minting, staking, agent chat, or Clawd/Cheshire agent lifecycle tasks. |

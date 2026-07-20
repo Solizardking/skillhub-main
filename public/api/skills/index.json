@@ -24,6 +24,18 @@
     "category": "Solana / Blockchain"
   },
   {
+    "slug": "cheshire-noxa",
+    "name": "cheshire-noxa",
+    "description": "NOXA Fun/DEX collab for Cheshire Terminal — launch feed, DEX registry, QuoterV2 quotes, EVM RPC. One-shot npm package @x402solana/cheshire-noxa.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "cheshire-omni-mint",
+    "name": "cheshire-omni-mint",
+    "description": "Dual-rail omni agent mint: Solana Metaplex Core + Agent Identity and Robinhood Chain ERC-8004 identity in one plan, optionally bound with LayerZero zk-omni (msgType 4 dual_identity_link). Use when the user wants omnichain identity, Solana and Robinhood together, Metaplex mintAgent + RH register, or Cheshire Terminal dual-rail forge. Product: cheshireterminal.ai/agents/forge · funpump.ai.",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "cheshire-terminal",
     "name": "cheshire-terminal",
     "description": "Operate and extend Cheshire Terminal, the cheshireterminal.ai voice-controlled Solana terminal powered by $CLAWD. Use when working on voice terminal flows, token launch commands, LiveKit voice integration, Jupiter swap surfaces, burn/staking flows, or any task that mentions Cheshire Terminal, cheshireterminal.ai, $CLAWD terminal, or Clawd voice commands.",

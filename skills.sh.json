@@ -10,6 +10,8 @@
         "ask-mcp",
         "cheshire-agent-registries",
         "cheshire-api",
+        "cheshire-noxa",
+        "cheshire-omni-mint",
         "cheshire-terminal",
         "cheshire-zk-omni",
         "clawd-agent-launchpad",

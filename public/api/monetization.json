@@ -73,6 +73,32 @@
       "offchainEnabled": false
     },
     {
+      "slug": "cheshire-noxa",
+      "name": "cheshire-noxa",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "cheshire-omni-mint",
+      "name": "cheshire-omni-mint",
+      "category": "Solana / Blockchain",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "cheshire-terminal",
       "name": "cheshire-terminal",
       "category": "Solana / Blockchain",

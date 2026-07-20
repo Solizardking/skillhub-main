@@ -5,8 +5,8 @@
   "description": "Diagnose and fix common Solana development errors — GLIBC mismatches, Anchor version conflicts, cargo build-sbf / platform-tools failures, LiteSVM issues, edition2024 crate pins, RPC airdrops, and Anchor 0.29→0.32 migrations. Use when builds fail, Anchor CLI won't install, or CI breaks on Debian/Ubuntu.",
   "source": "https://skills.x402.wtf/api/skills/solana-common-errors/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/solana-common-errors/metadata.json",
-  "bundleHash": "sha256-964aaf39da5cadf92ed0b7560807b98703d415e1afb51f29f92c874c04469aac",
-  "merkleLeaf": "sha256-9599a438781e7449e7330123f110c7dc734c222cb55c7a82f1834b1086bef2d5",
+  "bundleHash": "sha256-93c77bc26ceec9ab794d8db2d7c0c96a3ea9b5ac3787f56c9d3e49f05d821600",
+  "merkleLeaf": "sha256-36143dd238a6fced5b2a92f996aca47356a359576466a28d987651732be639bd",
   "files": [
     {
       "path": "references/common-errors.md",
@@ -15,8 +15,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 2791,
-      "sha256": "sha256-c14f01112778858394f7144997382a9ebce6e5c462e30b4e6affd22d9c37dc9f"
+      "bytes": 2816,
+      "sha256": "sha256-864d6f5687476a957634623ac231d38fd9e890dc86086bb3e2e1876135e77d69"
     }
   ],
   "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",

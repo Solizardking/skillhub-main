@@ -94,11 +94,36 @@ if [[ $node_status -ne 0 ]]; then
   failed=$((failed + 1))
 fi
 
-# Prefer full repo validator when available
+# Prefer full repo validator when available (static only; optional live health is separate)
 if [[ -f "${ROOT}/scripts/google-cloud/validate-google-registry.mjs" ]]; then
   echo ""
   echo "Running pnpm validate:google-registry …"
   (cd "$ROOT" && pnpm run validate:google-registry) || failed=$((failed + 1))
+fi
+
+# Canonical ADK path must be present and non-placeholder
+if [[ -f "${REG}/canonical-mcp-resource.json" ]]; then
+  REG="$REG" node --input-type=module <<'NODE' || failed=$((failed + 1))
+import { readFileSync } from "node:fs";
+const reg = process.env.REG;
+const c = JSON.parse(readFileSync(`${reg}/canonical-mcp-resource.json`, "utf8"));
+const expectedService = "projects/x402-477302/locations/us-central1/services/cheshire-terminal-mcp";
+const expectedMcp =
+  "projects/x402-477302/locations/us-central1/mcpServers/agentregistry-00000000-0000-0000-2490-10e4bb2ec4c0";
+if (c.resourceName !== expectedService || c.adk?.getMcpToolsetArg !== expectedService) {
+  console.log("FAIL  canonical service resource path mismatch");
+  process.exit(1);
+}
+if (c.mcpServerResourceName !== expectedMcp || c.adk?.getToolsetArg !== expectedMcp) {
+  console.log("FAIL  canonical mcpServers resource path mismatch");
+  process.exit(1);
+}
+console.log(`PASS  service resource ${c.resourceName}`);
+console.log(`PASS  ApiRegistry mcpServers ${c.mcpServerResourceName}`);
+NODE
+else
+  echo "FAIL  missing canonical-mcp-resource.json"
+  failed=$((failed + 1))
 fi
 
 echo ""

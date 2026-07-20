@@ -11,7 +11,7 @@ description: >
 
 Open-source skill pack for **anyone** building Robinhood Chain / EVM trading and launch agents (Zero Clawd / clawdbot).
 
-This Skill Hub entry is the **pack index**. Member skills are installed as top-level hub slugs (not nested under this path) so catalog names stay unique.
+This Skill Hub entry is the **pack index**. Member skills are installed as top-level hub slugs (not nested under this path) so catalog names stay unique. Upstream `cheshire-terminal-agents` npm package vendors the nested pack under `skills/rh-crypto-agent/`.
 
 ## Member skills (21)
 
@@ -43,13 +43,17 @@ This Skill Hub entry is the **pack index**. Member skills are installed as top-l
 - Pointing clawdbot / go-bot at a skills directory for RH work
 - Deciding which member skill to open next (launch vs swap vs LP vs registry)
 
-## Point clawdbot at the pack (upstream checkout)
-
-In the upstream `robinhood-agents` or `go-bot` tree the pack is a **skills root** (`CLAWDBOT_SKILLS_DIR=…/skills/rh-crypto-agent`). On Skill Hub, install members by name:
+## Install (Skill Hub)
 
 ```bash
-npx github:Solizardking/skills install rh-bonded-launch rh-launchpad-v3 viem-integration swap-planner
-npx github:Solizardking/skills install cheshire-agent-registries robinhood-agent-forge zk-omni-messaging
+npx github:Solizardking/skills install rh-crypto-agent rh-bonded-launch rh-launchpad-v3 viem-integration
+npx github:Solizardking/skills install cheshire-agent-registries robinhood-agent-forge cheshire-omni-mint zk-omni-messaging
+```
+
+## npm package
+
+```bash
+npm i cheshire-terminal-agents
 ```
 
 Pack metadata: [pack-index.json](./pack-index.json) · [README.md](./README.md)
@@ -59,7 +63,7 @@ Pack metadata: [pack-index.json](./pack-index.json) · [README.md](./README.md)
 - Permissionless bonded token launch (`rh-bonded-launch`) and V3 graduation (`rh-launchpad-v3`)
 - Swaps / LP / Uniswap v4 hooks
 - DCA, index baskets, and copy-trade
-- Cheshire agent identity / reputation / validation registries + zk-omni
+- Cheshire agent identity / reputation / validation registries + zk-omni / omni dual-rail mint
 - EVM reads/writes with `viem-integration`
 
 ## License
