@@ -1,6 +1,6 @@
 {
   "schemaVersion": "skillhub-public-ledger/v1",
-  "generatedAt": "2026-07-15T20:17:41.337Z",
+  "generatedAt": "2026-07-20T17:10:38.977Z",
   "security": {
     "redacted": true,
     "policy": [
@@ -55,13 +55,13 @@
   },
   "agentregistry": {
     "mirrorUrl": "/api/agentregistry.json",
-    "generatedAt": "2026-07-15T20:17:41.292Z",
-    "selected": 570,
-    "totalSkills": 570,
-    "merkleRoot": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c",
-    "catalogHash": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4",
-    "anchorStatus": "anchored",
-    "versionField": "1.0.0-onchain.ff0f0c78.5e2jW64H",
+    "generatedAt": "2026-07-20T17:10:38.886Z",
+    "selected": 592,
+    "totalSkills": 592,
+    "merkleRoot": "sha256-01c3e9df6272dac5d15ff20d6b44957418148c80c15c5948b13dc7e4b704f4fd",
+    "catalogHash": "sha256-0355badeed8cac5933a2bf1212f026f7aca71ce028966e7eef43bbbf829bcb06",
+    "anchorStatus": "anchor-stale",
+    "versionField": "1.0.0-onchain.0355bade.5e2jW64H",
     "importCommand": "npm run publish:agentregistry:onchain"
   },
   "count": 2,
