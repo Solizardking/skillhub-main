@@ -1,27 +1,29 @@
 /**
- * IosFrame — iPhone设备边框
+ * IosFrame — iPhone device frame
  *
- * 参考iPhone 15 Pro（393×852 logical pixels）
- * 含：灵动岛 + 状态栏（时间/信号/电池）+ Home Indicator + 圆角
+ * Inspired by iPhone 15 Pro (393×852 logical pixels)
+ * Includes: Dynamic Island + status bar (time/signal/battery) + Home Indicator + rounded corners
  *
- * 用法：
+ * Usage:
  *   <IosFrame time="9:41" battery={85}>
  *     <YourAppContent />
  *   </IosFrame>
  *
- * 自定义：
+ * Custom:
  *   <IosFrame width={390} height={844} darkMode showKeyboard>
  *     ...
  *   </IosFrame>
+ *
+ * Solana theme: dark titanium shell, green status text matches Solana brand.
  */
 
 const iosFrameStyles = {
   wrapper: {
     display: 'inline-block',
     padding: 12,
-    background: '#000',
+    background: '#0d0d0d',
     borderRadius: 60,
-    boxShadow: '0 0 0 2px #1f2937, 0 20px 60px rgba(0,0,0,0.3)',
+    boxShadow: '0 0 0 2px #1f2937, 0 20px 60px rgba(0,0,0,0.3), 0 0 40px rgba(153, 69, 255, 0.15)',
     position: 'relative',
   },
   screen: {
@@ -116,7 +118,7 @@ const iosFrameStyles = {
     zIndex: 10,
   },
   homeIndicatorDark: {
-    background: 'rgba(255,255,255,0.5)',
+    background: 'rgba(20, 241, 149, 0.6)',
   },
 };
 
@@ -131,7 +133,7 @@ function IosFrame({
   showDynamicIsland = true,
   showHomeIndicator = true,
 }) {
-  const textColor = darkMode ? '#fff' : '#000';
+  const textColor = darkMode ? '#14F195' : '#000';
 
   return (
     <div style={iosFrameStyles.wrapper}>

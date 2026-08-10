@@ -1,10 +1,12 @@
 /**
- * MacosWindow — macOS应用窗口边框（含traffic lights）
+ * MacosWindow — macOS application window frame (with traffic lights)
  *
- * 用法：
- *   <MacosWindow title="Finder">
+ * Usage:
+ *   <MacosWindow title="Solana Explorer">
  *     <YourAppContent />
  *   </MacosWindow>
+ *
+ * Solana theme: dark title bar with Solana purple/green accents.
  */
 
 const macosWindowStyles = {
@@ -13,15 +15,15 @@ const macosWindowStyles = {
     background: '#fff',
     borderRadius: 10,
     overflow: 'hidden',
-    boxShadow: '0 30px 80px rgba(0,0,0,0.25), 0 0 0 0.5px rgba(0,0,0,0.15)',
+    boxShadow: '0 0 0 0.5px rgba(0,0,0,0.15), 0 0 40px rgba(153, 69, 255, 0.1)',
   },
   titleBar: {
     height: 38,
-    background: 'linear-gradient(to bottom, #e8e8e8, #d8d8d8)',
+    background: 'linear-gradient(to bottom, #232323, #161616)',
     display: 'flex',
     alignItems: 'center',
     padding: '0 14px',
-    borderBottom: '0.5px solid rgba(0,0,0,0.1)',
+    borderBottom: '0.5px solid rgba(153, 69, 255, 0.25)',
     position: 'relative',
     userSelect: 'none',
   },
@@ -45,7 +47,7 @@ const macosWindowStyles = {
     right: 0,
     textAlign: 'center',
     fontSize: 13,
-    color: '#333',
+    color: '#eaeaea',
     fontWeight: 500,
     fontFamily: '-apple-system, "SF Pro Text", sans-serif',
     pointerEvents: 'none',
@@ -56,7 +58,7 @@ const macosWindowStyles = {
   },
   titleBarDark: {
     background: 'linear-gradient(to bottom, #3c3c3c, #2c2c2c)',
-    borderBottom: '0.5px solid rgba(255,255,255,0.1)',
+    borderBottom: '0.5px solid rgba(20, 241, 149, 0.2)',
   },
   titleDark: {
     color: '#ddd',

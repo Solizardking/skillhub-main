@@ -1,12 +1,14 @@
 /**
- * BrowserWindow — 浏览器窗口边框（Chrome风格）
+ * BrowserWindow — Browser window frame (Chrome style)
  *
- * 含：traffic lights + tab bar + URL bar
+ * Includes: traffic lights + tab bar + URL bar
  *
- * 用法：
- *   <BrowserWindow url="https://example.com" title="Example">
+ * Usage:
+ *   <BrowserWindow url="https://solana.com" title="Solana">
  *     <YourWebPage />
  *   </BrowserWindow>
+ *
+ * Solana theme: dark chrome with Solana purple/green accents.
  */
 
 const browserWindowStyles = {
@@ -15,10 +17,10 @@ const browserWindowStyles = {
     background: '#fff',
     borderRadius: 10,
     overflow: 'hidden',
-    boxShadow: '0 30px 80px rgba(0,0,0,0.25), 0 0 0 0.5px rgba(0,0,0,0.15)',
+    boxShadow: '0 0 0 0.5px rgba(0,0,0,0.15), 0 0 40px rgba(153, 69, 255, 0.1)',
   },
   chrome: {
-    background: '#dee1e6',
+    background: '#1a1a1a',
     paddingTop: 10,
     paddingLeft: 10,
     paddingRight: 10,
@@ -47,12 +49,12 @@ const browserWindowStyles = {
   minimize: { background: '#febc2e' },
   maximize: { background: '#28c840' },
   tab: {
-    background: '#fff',
+    background: '#141414',
     padding: '8px 30px 8px 14px',
     borderTopLeftRadius: 10,
     borderTopRightRadius: 10,
     fontSize: 12,
-    color: '#222',
+    color: '#fff',
     fontFamily: '-apple-system, sans-serif',
     maxWidth: 220,
     display: 'flex',
@@ -62,26 +64,27 @@ const browserWindowStyles = {
     whiteSpace: 'nowrap',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
+    borderTop: '1px solid rgba(153, 69, 255, 0.3)',
   },
   favicon: {
     width: 14,
     height: 14,
     borderRadius: 2,
-    background: '#999',
+    background: 'linear-gradient(135deg, #9945FF, #14F195)',
     flexShrink: 0,
   },
   navBar: {
-    background: '#fff',
+    background: '#141414',
     padding: '8px 14px',
     display: 'flex',
     alignItems: 'center',
     gap: 10,
-    borderBottom: '1px solid #e5e7eb',
+    borderBottom: '1px solid rgba(20, 241, 149, 0.15)',
   },
   navButtons: {
     display: 'flex',
     gap: 4,
-    color: '#5f6368',
+    color: '#9a9a9a',
     fontSize: 16,
   },
   navButton: {
@@ -95,18 +98,18 @@ const browserWindowStyles = {
   },
   urlBar: {
     flex: 1,
-    background: '#f1f3f4',
+    background: '#0a0a0a',
     borderRadius: 999,
     padding: '7px 14px',
     fontSize: 13,
-    color: '#333',
+    color: '#ddd',
     display: 'flex',
     alignItems: 'center',
     gap: 8,
     fontFamily: '-apple-system, sans-serif',
   },
   lockIcon: {
-    color: '#5f6368',
+    color: '#14F195',
     fontSize: 12,
   },
   content: {
@@ -118,7 +121,7 @@ const browserWindowStyles = {
 
 function BrowserWindow({
   title = 'New Tab',
-  url = 'https://example.com',
+  url = 'https://solana.com',
   width = 1200,
   height = 800,
   showTrafficLights = true,

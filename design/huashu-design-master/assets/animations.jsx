@@ -1,17 +1,17 @@
 /**
- * animations.jsx — 时间轴动画引擎
+ * animations.jsx — Timeline animation engine
  *
- * Stage + Sprite 模式，借鉴Remotion但轻量化。
+ * Stage + Sprite pattern, inspired by Remotion but lightweight.
  *
- * 导出（挂到 window.Animations）：
- * - Stage: 整个动画容器，提供时间+控制
- * - Sprite: 时间片段，start/end内显示，提供本地进度
- * - useTime(): 读全局时间（秒）
- * - useSprite(): 读本地进度 {t: 0→1, elapsed: seconds, duration: seconds}
+ * Exports (mounted to window.Animations):
+ * - Stage: the animation container, provides time + controls
+ * - Sprite: a time segment, visible within start/end, provides local progress
+ * - useTime(): read global time (seconds)
+ * - useSprite(): read local progress {t: 0→1, elapsed: seconds, duration: seconds}
  * - Easing: {linear, easeIn, easeOut, easeInOut, spring, anticipation}
  * - interpolate(t, [input0, input1], [output0, output1], easing?)
  *
- * 用法：
+ * Usage:
  *   <Stage duration={10}>
  *     <Sprite start={0} end={3}>
  *       <Title />
@@ -21,7 +21,9 @@
  *     </Sprite>
  *   </Stage>
  *
- * 在Sprite子组件里用 useSprite() 读当前片段进度。
+ * Inside a Sprite child, use useSprite() to read the current segment progress.
+ *
+ * Solana theme: dark stage with Solana's signature purple/green accent on controls.
  */
 
 (function() {
@@ -35,10 +37,10 @@
     easeIn: t => t * t,
     easeOut: t => 1 - (1 - t) * (1 - t),
     easeInOut: t => t < 0.5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2,
-    // expoOut: Anthropic-level 主 easing (cubic-bezier(0.16, 1, 0.3, 1))
-    // 迅速启动 + 缓慢刹车，给数字元素物理重量感
+    // expoOut: Anthropic-level primary easing (cubic-bezier(0.16, 1, 0.3, 1))
+    // Fast start + slow brake gives numeric elements physical weight
     expoOut: t => t === 1 ? 1 : 1 - Math.pow(2, -10 * t),
-    // overshoot: 带弹性的 toggle/按钮弹出 (cubic-bezier(0.34, 1.56, 0.64, 1))
+    // overshoot: springy toggle/button pops (cubic-bezier(0.34, 1.56, 0.64, 1))
     overshoot: t => {
       const c1 = 1.70158, c3 = c1 + 1;
       return 1 + c3 * Math.pow(t - 1, 3) + c1 * Math.pow(t - 1, 2);
@@ -86,7 +88,7 @@
     wrapper: {
       position: 'fixed',
       inset: 0,
-      background: '#000',
+      background: '#0a0a0a',
       display: 'flex',
       flexDirection: 'column',
       fontFamily: '-apple-system, sans-serif',
@@ -109,7 +111,7 @@
       bottom: 0,
       left: 0,
       right: 0,
-      background: 'rgba(0, 0, 0, 0.8)',
+      background: 'rgba(10, 10, 10, 0.85)',
       backdropFilter: 'blur(10px)',
       padding: '12px 20px',
       display: 'flex',
@@ -118,10 +120,11 @@
       color: '#fff',
       fontSize: 12,
       zIndex: 100,
+      borderTop: '1px solid rgba(153, 69, 255, 0.25)',
     },
     button: {
       background: 'none',
-      border: '1px solid rgba(255,255,255,0.3)',
+      border: '1px solid rgba(20, 241, 149, 0.35)',
       color: '#fff',
       padding: '6px 14px',
       borderRadius: 4,
@@ -136,7 +139,7 @@
     scrubber: {
       flex: 1,
       height: 4,
-      background: 'rgba(255,255,255,0.2)',
+      background: 'rgba(255,255,255,0.15)',
       borderRadius: 2,
       position: 'relative',
       cursor: 'pointer',
@@ -146,7 +149,7 @@
       top: 0,
       left: 0,
       height: '100%',
-      background: '#fff',
+      background: 'linear-gradient(90deg, #9945FF, #14F195)',
       borderRadius: 2,
       pointerEvents: 'none',
     },
@@ -155,10 +158,11 @@
       top: '50%',
       width: 12,
       height: 12,
-      background: '#fff',
+      background: '#14F195',
       borderRadius: '50%',
       transform: 'translate(-50%, -50%)',
       pointerEvents: 'none',
+      boxShadow: '0 0 8px rgba(20, 241, 149, 0.5)',
     },
   };
 
@@ -288,14 +292,14 @@
               style={stageStyles.button}
               onClick={() => setPlaying(p => !p)}
             >
-              {playing ? '⏸ 暂停' : '▶ 播放'}
+              {playing ? '⏸ Pause' : '▶ Play'}
             </button>
 
             <button
               style={stageStyles.button}
               onClick={() => setTime(0)}
             >
-              ⏮ 开始
+              ⏮ Start
             </button>
 
             <div style={stageStyles.timeDisplay}>

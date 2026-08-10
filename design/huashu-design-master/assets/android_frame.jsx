@@ -1,21 +1,23 @@
 /**
- * AndroidFrame — Android设备边框（参考Pixel 8系列）
+ * AndroidFrame — Android device frame (inspired by Pixel 8 series)
  *
- * 含：punch-hole相机 + 状态栏 + 导航栏 + 圆角
+ * Includes: punch-hole camera + status bar + navigation bar + rounded corners
  *
- * 用法：
+ * Usage:
  *   <AndroidFrame time="9:41" battery={85}>
  *     <YourAppContent />
  *   </AndroidFrame>
+ *
+ * Solana theme: dark shell with Solana's signature purple/green accents.
  */
 
 const androidFrameStyles = {
   wrapper: {
     display: 'inline-block',
     padding: 10,
-    background: '#1a1a1a',
+    background: '#141414',
     borderRadius: 44,
-    boxShadow: '0 0 0 2px #2a2a2a, 0 20px 60px rgba(0,0,0,0.3)',
+    boxShadow: '0 0 0 2px #262626, 0 20px 60px rgba(0,0,0,0.3)',
     position: 'relative',
   },
   screen: {
