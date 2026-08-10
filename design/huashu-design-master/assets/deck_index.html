@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <title>Deck · Multi-file Slide Index</title>
 <!--
-  deck_index.html — 多文件 slide deck 拼接器 · 双概览模式
+  deck_index.html — Multi-file slide deck assembler · Dual overview modes
 
-  概览（默认进入，两种模式按 getSeconds()%5 随机：20% 画廊 / 80% 网格）：
-   · grid  自适应网格墙：列数随页数+视口自适应，行多则倾斜变平，scale-to-fit 居中铺满（任意页数都不溢出/不失真）
-   · gallery 无限画廊：固定卡片大小，无缝无限平铺 + 缓慢漂移 + 轻微呼吸；一个 tile 含全部页（洗牌），看完所有页才重复
-  演示 present：单页 fit 缩放翻页。ESC / ⊞ 回概览。
-  性能：manifest 每项可带 thumb（预渲染缩略图），概览即用 <img> 平铺，避免 N 个 iframe 同时加载。
+  Overview (default entry, modes randomized by getSeconds()%5: 20% gallery / 80% grid):
+   · grid  adaptive grid wall: columns adapt to page count + viewport, single-plane tilt,
+          scale-to-fit centered (any page count fits without overflow/distortion)
+   · gallery infinite gallery: fixed card size, seamless infinite tiling + slow drift +
+          subtle breathing; each tile contains all pages (shuffled), repeats only after
+          all pages have been seen
+  Present: single-page fit-scale paging. ESC / ⊞ back to overview.
+  Performance: manifest items can carry thumb (pre-rendered thumbnail) so the overview
+  tiles with <img> instead of loading N iframes simultaneously.
 
-  用法：复制为 index.html；建 slides/ 放每页独立 HTML；编辑 MANIFEST。
-  可选覆盖：window.DECK_OVERVIEW = 'grid' | 'gallery'（不写则随机）；URL ?ov=grid|gallery 临时强制。
-  键盘（演示）：← / → / Space / PgUp / PgDown / Home / End / 1-9 / P 打印 / ESC 回概览
+  Usage: copy to index.html; create slides/ with each page as its own HTML; edit MANIFEST.
+  Optional override: window.DECK_OVERVIEW = 'grid' | 'gallery' (default random); URL ?ov=grid|gallery forces temporarily.
+  Keyboard (present): ← / → / Space / PgUp / PgDown / Home / End / 1-9 / P print / ESC back to overview
+
+  Solana theme: animated overview backgrounds, Solana purple/green accents throughout.
 -->
 <script>
   window.DECK_MANIFEST = [
@@ -22,14 +28,14 @@
   ];
   window.DECK_WIDTH = 1920;
   window.DECK_HEIGHT = 1080;
-  window.GALLERY_CARD_W = 300;       // 画廊卡片基准宽度
-  window.GALLERY_DRIFT_SECONDS = 80; // 画廊漂移一圈时长
-  // window.DECK_OVERVIEW = 'grid';  // 取消注释可固定概览模式
+  window.GALLERY_CARD_W = 300;       // gallery card base width
+  window.GALLERY_DRIFT_SECONDS = 80; // gallery drift-loop duration
+  // window.DECK_OVERVIEW = 'grid';  // uncomment to pin the overview mode
 </script>
 
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
-  html, body { height: 100%; overflow: hidden; font-family: -apple-system, "PingFang SC", sans-serif; background: #0a0a0a; }
+  html, body { height: 100%; overflow: hidden; font-family: -apple-system, "PingFang SC", sans-serif; background: #0a0a0f; }
 
   .overview { position: fixed; inset: 0; }
   body[data-mode="present"] .overview { display: none; }
@@ -37,75 +43,75 @@
   body[data-mode="overview"] #present-ui { display: none; }
   body[data-ov="grid"]    #ov-gallery { display: none; }
   body[data-ov="gallery"] #ov-grid    { display: none; }
-  body[data-ov="gallery"][data-mode="overview"] { background: #0a0805; }
-  body[data-ov="grid"][data-mode="overview"]    { background: #efece4; }
+  body[data-ov="gallery"][data-mode="overview"] { background: #0a0a0f; }
+  body[data-ov="grid"][data-mode="overview"]    { background: #0f0f18; }
 
-  /* ════════ 模式 1 · 自适应网格墙（一屏装得下→居中轻斜；装不下→舒适大小竖向滚动）════════ */
+  /* ════════ Mode 1 · Adaptive grid wall (one screen fits → centered light tilt; too many → comfortable vertical scroll) ════════ */
   #ov-grid { display: flex; justify-content: center; perspective: 2200px; perspective-origin: 50% 42%;
-    background: radial-gradient(120% 90% at 50% 0%, #f4f1e9, #e7e3d8 75%); }
+    background: radial-gradient(120% 90% at 50% 0%, #161620, #0d0d14 75%); }
   body[data-grid="fit"]    #ov-grid { overflow: hidden;   align-items: center; }
   body[data-grid="scroll"] #ov-grid { overflow-y: auto; overflow-x: hidden; align-items: flex-start; padding: 74px 0 110px; }
   .wall-wrap { }
   body[data-grid="fit"]    .wall-wrap { transform: translateY(-3vh); }
-  .wall { display: grid; gap: 20px; transform-origin: center center; margin: 0 auto; }  /* 不用 preserve-3d：整墙作单个倾斜平面，命中测试可靠 */
+  .wall { display: grid; gap: 20px; transform-origin: center center; margin: 0 auto; }  /* no preserve-3d: whole wall as one tilted plane, reliable hit-testing */
   #ov-grid .card {
-    position: relative; aspect-ratio: 16/9; border-radius: 9px; overflow: hidden; background: #fff; cursor: pointer;
-    box-shadow: 0 16px 34px rgba(40,34,24,0.20), 0 3px 10px rgba(40,34,24,0.12);
+    position: relative; aspect-ratio: 16/9; border-radius: 9px; overflow: hidden; background: #181820; cursor: pointer;
+    box-shadow: 0 16px 34px rgba(0,0,0,0.45), 0 3px 10px rgba(0,0,0,0.3);
     transition: transform .28s cubic-bezier(.2,.7,.2,1), box-shadow .28s;
   }
   #ov-grid .card:hover {
     transform: scale(1.18);
-    box-shadow: 0 48px 92px rgba(40,34,24,0.36), 0 14px 30px rgba(40,34,24,0.22); z-index: 20;
+    box-shadow: 0 0 0 1px rgba(153,69,255,0.5), 0 48px 92px rgba(0,0,0,0.6), 0 14px 30px rgba(0,0,0,0.4); z-index: 20;
   }
 
-  /* ════════ 模式 2 · 无限画廊 ════════ */
+  /* ════════ Mode 2 · Infinite gallery ════════ */
   #ov-gallery { overflow: hidden; perspective: 2200px; perspective-origin: 50% 42%;
-    background: radial-gradient(130% 120% at 50% 38%, #1b1610, #0a0805 82%); }
+    background: radial-gradient(130% 120% at 50% 38%, #0f0f1a, #05050a 82%); }
   .stage3d { --rx: 18; --rz: 9; position: absolute; inset: 0; transform-style: preserve-3d; transform: scale(1.22) rotateX(18deg) rotateZ(-9deg); transform-origin: center center; }
   .breathe { position: absolute; inset: 0; animation: breathe 26s ease-in-out infinite; transform-origin: center center; transform-style: preserve-3d; }
   .drift-layer { position: absolute; top: 0; left: 0; will-change: transform; animation: drift var(--driftSec, 80s) linear infinite; transform-style: preserve-3d; }
   #ov-gallery:hover .drift-layer { animation-play-state: paused; }
   .gallery { display: grid; }
   #ov-gallery .card {
-    position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden; background: #fff; cursor: pointer;
-    box-shadow: 0 14px 30px rgba(0,0,0,0.42), 0 3px 9px rgba(0,0,0,0.3);
+    position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 8px; overflow: hidden; background: #181820; cursor: pointer;
+    box-shadow: 0 14px 30px rgba(0,0,0,0.55), 0 3px 9px rgba(0,0,0,0.4);
     transition: transform .34s cubic-bezier(.2,.7,.2,1), box-shadow .34s; transform-style: preserve-3d; will-change: transform;
   }
   #ov-gallery .card:hover {
     transform: translateZ(60px) rotateX(calc(var(--rx,18)*-1deg)) rotateZ(calc(var(--rz,9)*1deg)) scale(1.06);
-    box-shadow: 0 30px 64px rgba(0,0,0,0.55), 0 8px 20px rgba(0,0,0,0.4); z-index: 30;
+    box-shadow: 0 0 0 1px rgba(20,241,149,0.4), 0 30px 64px rgba(0,0,0,0.65), 0 8px 20px rgba(0,0,0,0.5); z-index: 30;
   }
-  .vignette { position: fixed; inset: 0; pointer-events: none; z-index: 20; box-shadow: inset 0 0 240px 70px rgba(8,6,3,0.62); }
+  .vignette { position: fixed; inset: 0; pointer-events: none; z-index: 20; box-shadow: inset 0 0 240px 70px rgba(2,2,8,0.75); }
   @keyframes drift { from { transform: translate3d(0,0,0); } to { transform: translate3d(calc(var(--dx)*-1), calc(var(--dy)*-1), 0); } }
   @keyframes breathe { 0%,100% { transform: scale(1.0); } 50% { transform: scale(1.045); } }
 
-  /* 卡片通用内容 */
+  /* Card common content */
   .card .thumb { position: absolute; top: 0; left: 0; width: 1920px; height: 1080px; transform-origin: top left; pointer-events: none; }
   .card .thumb iframe { width: 1920px; height: 1080px; border: 0; display: block; background: #fff; pointer-events: none; }
   .card .thumb-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none; }
-  .card .num { position: absolute; bottom: 6px; left: 7px; background: rgba(16,12,7,0.76); color: #fff; font-size: 11px; line-height: 1; padding: 4px 7px; border-radius: 5px; font-variant-numeric: tabular-nums; letter-spacing: 0.03em; z-index: 3; pointer-events: none; max-width: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card .num { position: absolute; bottom: 6px; left: 7px; background: rgba(10,10,20,0.8); color: #fff; font-size: 11px; line-height: 1; padding: 4px 7px; border-radius: 5px; font-variant-numeric: tabular-nums; letter-spacing: 0.03em; z-index: 3; pointer-events: none; max-width: 90%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
   #ov-gallery .card .num { opacity: 0; transition: opacity .25s; }
   #ov-gallery .card:hover .num { opacity: 1; }
 
   .overview-title { position: fixed; top: 24px; left: 0; right: 0; text-align: center; font-size: 13px; letter-spacing: 0.22em; text-transform: uppercase; z-index: 40; pointer-events: none; }
-  body[data-ov="grid"]    .overview-title { color: #5a5346; opacity: 0.66; }
-  body[data-ov="gallery"] .overview-title { color: rgba(244,238,224,0.7); text-shadow: 0 2px 12px rgba(0,0,0,0.6); }
+  body[data-ov="grid"]    .overview-title { color: rgba(20,241,149,0.7); opacity: 0.75; }
+  body[data-ov="gallery"] .overview-title { color: rgba(153,69,255,0.8); text-shadow: 0 2px 12px rgba(0,0,0,0.6); }
 
   .start-btn { position: fixed; bottom: 26px; right: 26px; border: 0; padding: 13px 24px; border-radius: 999px; font-size: 15px; font-family: inherit; letter-spacing: 0.04em; cursor: pointer; z-index: 200; transition: transform .18s, box-shadow .18s; }
-  body[data-ov="grid"]    .start-btn { background: #1a1712; color: #fff; box-shadow: 0 8px 28px rgba(40,34,24,0.28); }
+  body[data-ov="grid"]    .start-btn { background: linear-gradient(135deg, #9945FF, #14F195); color: #fff; box-shadow: 0 8px 28px rgba(153,69,255,0.35); }
   body[data-ov="gallery"] .start-btn { background: #f4eee0; color: #1a1712; box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
   .start-btn:hover { transform: translateY(-2px); }
 
-  /* ════════ 演示模式 ════════ */
+  /* ════════ Present mode ════════ */
   #stage { position: fixed; top: 50%; left: 50%; transform-origin: top left; will-change: transform; background: #fff; box-shadow: 0 10px 60px rgba(0,0,0,0.4); }
   #stage iframe { width: 100%; height: 100%; border: 0; display: block; background: #fff; }
-  .counter { position: fixed; bottom: 20px; right: 20px; background: rgba(0,0,0,0.65); color: #fff; padding: 6px 14px; border-radius: 999px; font-size: 13px; letter-spacing: 0.05em; font-variant-numeric: tabular-nums; z-index: 100; opacity: 0.7; }
-  .counter .label { color: rgba(255,255,255,0.7); margin-left: 8px; }
-  .overview-btn { position: fixed; top: 20px; left: 20px; background: rgba(0,0,0,0.55); color: rgba(255,255,255,0.85); border: 0; padding: 7px 14px; border-radius: 999px; font-size: 13px; font-family: inherit; cursor: pointer; z-index: 100; opacity: 0.6; }
+  .counter { position: fixed; bottom: 20px; right: 20px; background: linear-gradient(135deg, rgba(153,69,255,0.8), rgba(20,241,149,0.7)); color: #fff; padding: 6px 14px; border-radius: 999px; font-size: 13px; letter-spacing: 0.05em; font-variant-numeric: tabular-nums; z-index: 100; opacity: 0.75; }
+  .counter .label { color: rgba(255,255,255,0.75); margin-left: 8px; }
+  .overview-btn { position: fixed; top: 20px; left: 20px; background: rgba(153,69,255,0.3); color: rgba(255,255,255,0.9); border: 1px solid rgba(20,241,149,0.3); padding: 7px 14px; border-radius: 999px; font-size: 13px; font-family: inherit; cursor: pointer; z-index: 100; opacity: 0.7; }
   .overview-btn:hover { opacity: 1; }
   .nav-zone { position: fixed; top: 0; bottom: 0; width: 15%; cursor: pointer; z-index: 50; }
   .nav-zone.left { left: 0; } .nav-zone.right { right: 0; }
-  .nav-hint { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 999px; background: rgba(255,255,255,0.08); color: rgba(255,255,255,0.6); display: flex; align-items: center; justify-content: center; font-size: 22px; opacity: 0; transition: opacity .2s; }
+  .nav-hint { position: absolute; top: 50%; transform: translateY(-50%); width: 44px; height: 44px; border-radius: 999px; background: rgba(153,69,255,0.2); color: rgba(20,241,149,0.85); display: flex; align-items: center; justify-content: center; font-size: 22px; opacity: 0; transition: opacity .2s; }
   .nav-zone.left .nav-hint { left: 20px; } .nav-zone.right .nav-hint { right: 20px; }
   .nav-zone:hover .nav-hint { opacity: 1; }
 
@@ -123,21 +129,21 @@
 <body data-mode="overview">
 
 <div id="ov-grid" class="overview">
-  <div class="overview-title">Overview · 点击任意页进入演示</div>
+  <div class="overview-title">Overview · Click any page to enter present mode</div>
   <div class="wall-wrap"><div class="wall" id="wall"></div></div>
 </div>
 
 <div id="ov-gallery" class="overview">
   <div class="stage3d"><div class="breathe"><div class="drift-layer" id="driftLayer"><div class="gallery" id="gallery"></div></div></div></div>
   <div class="vignette"></div>
-  <div class="overview-title">Infinite Gallery · 悬停暂停 · 点击任意页进入演示</div>
+  <div class="overview-title">Infinite Gallery · Hover to pause · Click any page to present</div>
 </div>
 
-<button class="start-btn" id="startBtn">▶ 开始演示</button>
+<button class="start-btn" id="startBtn">▶ Start Presenting</button>
 
 <div id="present-ui">
   <div id="stage"><iframe id="frame" src="about:blank"></iframe></div>
-  <button class="overview-btn" id="overviewBtn">⊞ 概览</button>
+  <button class="overview-btn" id="overviewBtn">⊞ Overview</button>
   <div class="nav-zone left"  id="navL"><div class="nav-hint">‹</div></div>
   <div class="nav-zone right" id="navR"><div class="nav-hint">›</div></div>
   <div class="counter" id="counter">1 / 1</div>
@@ -165,9 +171,9 @@
   stage.style.width = W + 'px'; stage.style.height = H + 'px';
   driftLayer.style.setProperty('--driftSec', DRIFT_SEC + 's');
 
-  // 概览模式：URL ?ov= > window.DECK_OVERVIEW > 随机(秒%5==0 → 20% 画廊)
+  // Overview mode: URL ?ov= > window.DECK_OVERVIEW > random (seconds%5==0 → 20% gallery)
   const qp = new URLSearchParams(location.search).get('ov');
-  // 用户未指定时按秒数随机：网格(iframe 真页面) 60% / 无限画廊(图片缩略图) 40%。可用 ?ov=grid|gallery 或 window.DECK_OVERVIEW 固定。
+  // When the user hasn't pinned it, choose by seconds: grid (real iframe pages) 60% / infinite gallery (image thumbs) 40%. Pin with ?ov=grid|gallery or window.DECK_OVERVIEW.
   const OVERVIEW = qp || window.DECK_OVERVIEW || ((new Date().getSeconds() % 5 < 2) ? 'gallery' : 'grid');
   document.body.setAttribute('data-ov', OVERVIEW === 'gallery' ? 'gallery' : 'grid');
 
@@ -177,18 +183,18 @@
     else { requestAnimationFrame(buildOverview); }
   }
 
-  /* ─ 媒体（缩略图优先，否则 iframe） ─ */
+  /* ─ Media (thumbnail first, otherwise iframe) ─ */
   function makeCard(idx, useScale, useImg) {
     const card = document.createElement('div');
     card.className = 'card'; card.dataset.idx = idx;
     const item = deck[idx];
     if (useImg && item.thumb) {
-      // 仅画廊用：预渲染缩略图，扛无限平铺的性能
+      // Gallery only: pre-rendered thumbnail, handles infinite-tile performance
       const im = document.createElement('img');
       im.className = 'thumb-img'; im.src = item.thumb; im.decoding = 'async';
       card.appendChild(im);
     } else {
-      // 网格默认用：真实 HTML 子页面（清晰、所见即所得）
+      // Grid default: real HTML sub-page (crisp, what-you-see-is-what-you-get)
       const thumb = document.createElement('div');
       thumb.className = 'thumb';
       if (useScale != null) thumb.style.transform = 'scale(' + useScale + ')';
@@ -209,18 +215,18 @@
     if (OVERVIEW === 'gallery') buildGallery(); else buildGrid();
   }
 
-  /* ════════ 网格墙（自适应） ════════ */
+  /* ════════ Grid wall (adaptive) ════════ */
   function buildGrid() {
     const n = deck.length; if (!n) return;
     wall.innerHTML = '';
-    for (let i = 0; i < n; i++) wall.appendChild(makeCard(i, null, false));  // 网格 = iframe 真页面
+    for (let i = 0; i < n; i++) wall.appendChild(makeCard(i, null, false));  // grid = real iframe pages
     layoutWall();
   }
-  const GRID_PAD = 74;  // #ov-grid scroll 顶部 padding，算动态 transform-origin 用
+  const GRID_PAD = 74;  // #ov-grid scroll top padding, used for dynamic transform-origin
   function layoutWall() {
     const n = deck.length; if (!n) return;
     const vw = innerWidth, vh = innerHeight, gap = 26;
-    const availW = vw * 0.86;                                   // 留 rotateZ 横向余量（强对角也不裁切）
+    const availW = vw * 0.86;                                   // leave rotateZ horizontal margin (strong diagonal won't clip)
     const target = 280;
     let cols = Math.max(3, Math.min(9, Math.floor((availW + gap) / (target + gap))));
     cols = Math.min(cols, n);
@@ -232,7 +238,7 @@
     wall.style.gridTemplateColumns = 'repeat(' + cols + ', 1fr)';
     wall.style.gap = gap + 'px';
     wall.style.width = baseW + 'px';
-    // 单平面(无 preserve-3d)→任意角度都不重叠、可点；fit 与 scroll 都给强对角倾斜
+    // Single plane (no preserve-3d): no overlap at any angle, clickable; fit & scroll both get strong diagonal tilt
     if (wallH <= vh * 0.80) {
       document.body.setAttribute('data-grid', 'fit');
       const rx = Math.max(11, Math.min(15, 15 - (rows - 2) * 1.1));
@@ -246,7 +252,7 @@
       s = Math.max(0.6, Math.min(s, 1.6));
       wall.style.transform = 'scale(' + s + ') ' + tilt;
     } else {
-      // 多页：舒适大小竖向滚动 + 强对角倾斜；transform-origin 跟随滚动→消除高墙 rotateZ 把远端行甩出屏幕
+      // Many pages: comfortable vertical scroll + strong diagonal tilt; transform-origin follows scroll → prevents rotateZ flinging far rows off-screen
       document.body.setAttribute('data-grid', 'scroll');
       wall.style.setProperty('--rx', 14); wall.style.setProperty('--rz', 7);
       wall.style.transform = 'rotateX(14deg) rotateZ(-7deg)';
@@ -260,7 +266,7 @@
     wall.style.transformOrigin = '50% ' + (ovg.scrollTop + window.innerHeight / 2 - GRID_PAD) + 'px';
   }
 
-  /* ════════ 无限画廊（洗牌不重复） ════════ */
+  /* ════════ Infinite gallery (shuffled, no repeats) ════════ */
   function mulberry32(a) { return function () { a |= 0; a = a + 0x6D2B79F5 | 0; let t = Math.imul(a ^ a >>> 15, 1 | a); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; }; }
   function shuffledRange(n, seed) { const rnd = mulberry32(seed); const a = Array.from({ length: n }, (_, i) => i); for (let i = n - 1; i > 0; i--) { const j = Math.floor(rnd() * (i + 1)); const tmp = a[i]; a[i] = a[j]; a[j] = tmp; } return a; }
 
@@ -270,15 +276,15 @@
     const cardW = CARD_W, cardH = cardW * 9 / 16;
     const cellW = cardW + gap, cellH = cardH + gap;
     const visCols = Math.ceil(vw / cellW), visRows = Math.ceil(vh / cellH);
-    // tile：宽够铺满；行数取「够铺满」与「装下全部 N 页」的较大者 → 看完所有页才重复
+    // tile: wide enough to fill; row count = max(fill, all N pages) → repeats only after every page is seen
     const tileCols = visCols + 1;
     const tileRows = Math.max(visRows + 1, Math.ceil(n / tileCols));
     const tileCells = tileCols * tileRows;
-    const perm = shuffledRange(n, 0x9e3779b9);        // 洗牌一次，打散规则感
+    const perm = shuffledRange(n, 0x9e3779b9);        // shuffle once to break up patterns
     const tilePage = new Array(tileCells);
     for (let k = 0; k < tileCells; k++) tilePage[k] = perm[k % n];
 
-    const cols = tileCols * 2, rows = tileRows * 2;    // 2× tile 保证无缝漂移
+    const cols = tileCols * 2, rows = tileRows * 2;    // 2× tile for seamless drift
     driftLayer.style.setProperty('--dx', (tileCols * cellW) + 'px');
     driftLayer.style.setProperty('--dy', (tileRows * cellH) + 'px');
     gallery.style.gridTemplateColumns = 'repeat(' + cols + ', ' + cardW + 'px)';
@@ -289,12 +295,12 @@
     for (let r = 0; r < rows; r++) {
       for (let c = 0; c < cols; c++) {
         const idx = tilePage[(r % tileRows) * tileCols + (c % tileCols)];
-        gallery.appendChild(makeCard(idx, scale, true));  // 画廊 = 图片缩略图（性能）
+        gallery.appendChild(makeCard(idx, scale, true));  // gallery = image thumbnails (performance)
       }
     }
   }
 
-  /* ════════ 演示 ════════ */
+  /* ════════ Present ════════ */
   function fit() {
     const s = Math.min(innerWidth / W, innerHeight / H);
     stage.style.transform = 'translate(' + ((innerWidth - W * s) / 2) + 'px, ' + ((innerHeight - H * s) / 2) + 'px) scale(' + s + ')';

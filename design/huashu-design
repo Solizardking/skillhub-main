@@ -1,0 +1,543 @@
+/**
+ * narration_stage.jsx · Narration-driven Stage
+ *
+ * ╔══════════════════════════════════════════════════════════════════╗
+ * ║  🛑 READ BEFORE USING THIS KIT: references/voiceover-pipeline.md ║
+ * ║                                                                  ║
+ * ║  RULE #1: The whole piece is one continuous motion narrative,    ║
+ * ║          not a set of independent scenes                          ║
+ * ║          You are not making 7 slides. You are directing 1 movie. ║
+ * ║                                                                  ║
+ * ║  RULE #2: A chosen hero element persists across scenes —         ║
+ * ║          don't invent a new layout every segment                 ║
+ * ║                                                                  ║
+ * ║  RULE #3: No hard cuts between scenes (opacity 1→0/0→1)          ║
+ * ║          Morph, don't cut                                         ║
+ * ║                                                                  ║
+ * ║  Failure mode #1 (learned the hard way in skill v1):             ║
+ * ║          Each Scene with its own layout + fade-up cue + scene     ║
+ * ║          switch, whole-page opacity flips = a narrated           ║
+ * ║          PowerPoint = zero craftsmanship                         ║
+ * ║                                                                  ║
+ * ║  The right way: put the hero directly as a <NarrationStage>      ║
+ * ║  child (not inside a Scene). Read time/scene/cue state inside     ║
+ * ║  the hero with useNarration(). The hero decides its own form      ║
+ * ║  from the current time → continuous motion across scenes.         ║
+ * ╚══════════════════════════════════════════════════════════════════╝
+ *
+ * Usage (inline into an HTML <script type="text/babel">):
+ *   const { NarrationStage, Scene, Cue, useNarration } = NarrationStageLib;
+ *
+ *   const App = () => (
+ *     <NarrationStage timeline={TIMELINE} audioSrc="voiceover.mp3"
+ *                     width={1920} height={1080}>
+ *       <Scene id="intro">
+ *         <h1>What is a token?</h1>
+ *         <Cue id="question">
+ *           {(triggered) => triggered && <p>↑ This is the question</p>}
+ *         </Cue>
+ *       </Scene>
+ *       <Scene id="token-2">
+ *         <Cue id="split">
+ *           {(triggered, progress) => (
+ *             <div style={{opacity: triggered ? 1 : 0.3}}>...</div>
+ *           )}
+ *         </Cue>
+ *       </Scene>
+ *     </NarrationStage>
+ *   );
+ *
+ * Time source (auto-picks one of two):
+ *   - Video recording mode (window.__recording === true): uses window.__time (external driver pushes frames)
+ *   - Live playback mode: follows the <audio> currentTime (strictly in sync with audio when user hits play)
+ *
+ * Compatible with render-video.js:
+ *   - Sets window.__ready = true on the first tick frame
+ *   - In recording mode, detects window.__recording, forces audio off, uses window.__time
+ *   - Exposes window.__totalDuration for the driver to compute total frame count
+ *
+ * Dependencies: React 18 + ReactDOM 18 + Babel standalone (same as animations.jsx)
+ *
+ * Solana theme: default background #0e0e0e, brand accent Solana purple #9945FF.
+ */
+
+const NarrationStageLib = (() => {
+  const NarrationContext = React.createContext({
+    time: 0,
+    scene: null,
+    sceneTime: 0,
+    isCueTriggered: () => false,
+    cueProgress: () => 0,
+  });
+
+  /**
+   * Main component: consumes timeline + audio, provides context
+   *
+   * Props:
+   *   timeline       timeline.json object (required)
+   *   audioSrc       voiceover.mp3 path (required)
+   *   width/height   Stage size, default 1920x1080
+   *   background     default '#0e0e0e'
+   *   controls       whether to show the bottom player bar, default true
+   *   children       animation content (orgranized with <Scene>/<Cue>)
+   */
+  function NarrationStage({
+    timeline,
+    audioSrc,
+    width = 1920,
+    height = 1080,
+    background = '#0e0e0e',
+    controls = true,
+    children,
+  }) {
+    const audioRef = React.useRef(null);
+    const [time, setTime] = React.useState(0);
+    const [playing, setPlaying] = React.useState(false);
+    const recording = typeof window !== 'undefined' && window.__recording === true;
+
+    // Expose to render-video.js
+    React.useEffect(() => {
+      if (typeof window === 'undefined') return;
+      window.__totalDuration = timeline.totalDuration;
+      window.__ready = true;
+    }, [timeline.totalDuration]);
+
+    // Time tick
+    React.useEffect(() => {
+      let raf;
+      if (recording) {
+        // Seek-render (render-video-seek.js injects window.__seekRender): freeze the
+        // self-driven clock, advance frame by frame via external window.__seek(t).
+        // Every frame is a deterministic seek, no rAF.
+        if (typeof window !== 'undefined' && window.__seekRender) {
+          window.__seek = (t) => setTime(Math.min(t, timeline.totalDuration));
+          return;
+        }
+        // Recording mode: rAF wall-clock self-drive starting from 0
+        // Compatible with render-video.js (it relies on natural animation + window.__seek reset)
+        let startedAt = null;
+        const tick = (now) => {
+          if (startedAt === null) startedAt = now;
+          setTime(Math.min((now - startedAt) / 1000, timeline.totalDuration));
+          raf = requestAnimationFrame(tick);
+        };
+        raf = requestAnimationFrame(tick);
+        // Expose __seek for render-video.js to call __seek(0) after ready
+        if (typeof window !== 'undefined') {
+          window.__seek = (t) => {
+            startedAt = performance.now() - t * 1000;
+            setTime(t);
+          };
+        }
+      } else {
+        // Live playback mode: follow audio.currentTime
+        const tick = () => {
+          if (audioRef.current && !audioRef.current.paused) {
+            setTime(audioRef.current.currentTime);
+          }
+          raf = requestAnimationFrame(tick);
+        };
+        tick();
+      }
+      return () => cancelAnimationFrame(raf);
+    }, [recording, timeline.totalDuration]);
+
+    // Current scene
+    const currentScene = React.useMemo(() => {
+      if (!timeline.scenes) return null;
+      // Find the segment where start <= time < end. Keep the last segment until its end.
+      for (let i = 0; i < timeline.scenes.length; i++) {
+        const s = timeline.scenes[i];
+        const next = timeline.scenes[i + 1];
+        if (time >= s.start && (!next || time < next.start)) return s;
+      }
+      return timeline.scenes[0];
+    }, [time, timeline.scenes]);
+
+    const sceneTime = currentScene ? Math.max(0, time - currentScene.start) : 0;
+
+    // Find cue state (compared by absoluteTime, works across scenes too)
+    const allCues = React.useMemo(() => {
+      const map = {};
+      for (const s of timeline.scenes || []) {
+        for (const c of s.cues || []) {
+          map[c.id] = c;
+        }
+      }
+      return map;
+    }, [timeline.scenes]);
+
+    const isCueTriggered = React.useCallback(
+      (cueId) => {
+        const c = allCues[cueId];
+        if (!c) return false;
+        return time >= c.absoluteTime;
+      },
+      [allCues, time],
+    );
+
+    /** Seconds after trigger 0→1, stays at 1 past 1. Used for fade-in animation after a cue. */
+    const cueProgress = React.useCallback(
+      (cueId, ramp = 0.5) => {
+        const c = allCues[cueId];
+        if (!c) return 0;
+        const dt = time - c.absoluteTime;
+        if (dt <= 0) return 0;
+        if (dt >= ramp) return 1;
+        return dt / ramp;
+      },
+      [allCues, time],
+    );
+
+    const ctx = { time, scene: currentScene, sceneTime, isCueTriggered, cueProgress, timeline };
+
+    // play/pause/seek controls
+    const handlePlayPause = () => {
+      if (!audioRef.current) return;
+      if (audioRef.current.paused) {
+        audioRef.current.play();
+        setPlaying(true);
+      } else {
+        audioRef.current.pause();
+        setPlaying(false);
+      }
+    };
+
+    const handleSeek = (e) => {
+      if (!audioRef.current) return;
+      const t = parseFloat(e.target.value);
+      audioRef.current.currentTime = t;
+      setTime(t);
+    };
+
+    const handleAudioEnded = () => setPlaying(false);
+
+    return (
+      <NarrationContext.Provider value={ctx}>
+        <div
+          style={{
+            position: 'relative',
+            width,
+            height,
+            background,
+            overflow: 'hidden',
+            color: '#fff',
+            fontFamily: '-apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif',
+          }}
+        >
+          {children}
+        </div>
+        {!recording && (
+          <audio
+            ref={audioRef}
+            src={audioSrc}
+            preload="auto"
+            onEnded={handleAudioEnded}
+          />
+        )}
+        {!recording && controls && (
+          <div
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: 12,
+              padding: '12px 16px',
+              background: '#1a1a1a',
+              color: '#ddd',
+              fontFamily: 'monospace',
+              fontSize: 13,
+              width,
+              boxSizing: 'border-box',
+              borderTop: '1px solid rgba(153, 69, 255, 0.25)',
+            }}
+          >
+            <button
+              onClick={handlePlayPause}
+              style={{
+                padding: '6px 14px',
+                background: 'linear-gradient(135deg, #9945FF, #14F195)',
+                color: '#fff',
+                border: 0,
+                borderRadius: 4,
+                cursor: 'pointer',
+                fontWeight: 600,
+              }}
+            >
+              {playing ? '❚❚ Pause' : '▶ Play'}
+            </button>
+            <input
+              type="range"
+              min={0}
+              max={timeline.totalDuration}
+              step={0.01}
+              value={time}
+              onChange={handleSeek}
+              style={{ flex: 1 }}
+            />
+            <span style={{ minWidth: 110, textAlign: 'right' }}>
+              {time.toFixed(2)} / {timeline.totalDuration.toFixed(2)}s
+            </span>
+            <span
+              style={{
+                padding: '4px 10px',
+                background: 'rgba(153, 69, 255, 0.2)',
+                borderRadius: 4,
+                minWidth: 100,
+                textAlign: 'center',
+                color: '#14F195',
+              }}
+            >
+              {currentScene ? currentScene.id : '—'}
+            </span>
+          </div>
+        )}
+      </NarrationContext.Provider>
+    );
+  }
+
+  /**
+   * Scene wrapper: renders children only when the specified scene id is active
+   *
+   * Props:
+   *   id        scene id (matches timeline.scenes[].id)
+   *   children  content to render; can be ReactNode or (sceneTime, sceneInfo) => ReactNode
+   *   keepMounted  default false. When true, stays mounted and only toggles visibility (for animation continuity)
+   */
+  function Scene({ id, children, keepMounted = false }) {
+    const { scene, sceneTime } = React.useContext(NarrationContext);
+    const isActive = scene && scene.id === id;
+    if (!isActive && !keepMounted) return null;
+    const content = typeof children === 'function' ? children(sceneTime, scene) : children;
+    return (
+      <div
+        style={{
+          position: 'absolute',
+          inset: 0,
+          opacity: isActive ? 1 : 0,
+          pointerEvents: isActive ? 'auto' : 'none',
+          transition: keepMounted ? 'opacity 0.2s' : undefined,
+        }}
+      >
+        {content}
+      </div>
+    );
+  }
+
+  /**
+   * Cue wrapper: listens for cue trigger state
+   *
+   * Props:
+   *   id        cue id (matches timeline.scenes[].cues[].id)
+   *   ramp      ramp duration (seconds) for progress 0→1 after trigger, default 0.5
+   *   children  must be a function: (triggered: bool, progress: 0-1) => ReactNode
+   */
+  function Cue({ id, ramp = 0.5, children }) {
+    const { isCueTriggered, cueProgress } = React.useContext(NarrationContext);
+    const triggered = isCueTriggered(id);
+    const progress = cueProgress(id, ramp);
+    return children(triggered, progress);
+  }
+
+  /** Hook: grab narration state directly inside custom components */
+  function useNarration() {
+    return React.useContext(NarrationContext);
+  }
+
+  /**
+   * splitChunkToLines · Split a block of text into short lines of ≤maxLen visual chars
+   *
+   * Used for subtitle display — YouTube's standard is ~42 chars per line for readability.
+   * This function:
+   * 1. First splits sentences at strong punctuation (. ! ? \n), never cuts across a sentence
+   * 2. Uses each sentence directly if ≤ maxLen; otherwise slices+merges at weak punctuation (, ; :)
+   * 3. Mixed CJK/Latin: English/numbers count as 0.5 visual width
+   * 4. Fallback hard cut (rare: single punctuation segment exceeds maxLen)
+   *
+   * @param text   the source text
+   * @param maxLen max visual length per line, default 13 (≈12 CJK chars + one punctuation)
+   * @returns array of subtitle lines
+   */
+  function visualLen(s) {
+    let n = 0;
+    for (const ch of s) n += /[a-zA-Z0-9 .,'":;\-]/.test(ch) ? 0.5 : 1;
+    return n;
+  }
+  function splitChunkToLines(text, maxLen = 13) {
+    const lines = [];
+    const sentences = [];
+    let buf = '';
+    for (const ch of text) {
+      buf += ch;
+      if ('.!?\n'.includes(ch)) { if (buf.trim()) sentences.push(buf.trim()); buf = ''; }
+    }
+    if (buf.trim()) sentences.push(buf.trim());
+    for (const sent of sentences) {
+      if (visualLen(sent) <= maxLen) { lines.push(sent); continue; }
+      const parts = [];
+      let pbuf = '';
+      for (const ch of sent) {
+        pbuf += ch;
+        if (',、;:：'.includes(ch)) { parts.push(pbuf); pbuf = ''; }
+      }
+      if (pbuf) parts.push(pbuf);
+      let merged = '';
+      for (const p of parts) {
+        if (visualLen(merged) + visualLen(p) <= maxLen) merged += p;
+        else { if (merged) lines.push(merged); merged = p; }
+      }
+      if (merged) {
+        if (visualLen(merged) <= maxLen) lines.push(merged);
+        else {
+          let hbuf = '';
+          for (const ch of merged) { hbuf += ch; if (visualLen(hbuf) >= maxLen) { lines.push(hbuf); hbuf = ''; } }
+          if (hbuf) lines.push(hbuf);
+        }
+      }
+    }
+    return lines.filter(l => l.trim());
+  }
+
+  /**
+   * Subtitles · Clean subtitle component (light halo on dark text, no box, shown by chunk timing)
+   *
+   * Automatically takes the active chunk from the current scene.chunks and splits it
+   * into short lines with splitChunkToLines, allocating the chunk time window to each
+   * line proportional to character count.
+   *
+   * Required: timeline.scenes[].chunks[] (narrate-pipeline.mjs outputs by default)
+   *
+   * Props (overridable default styles):
+   *   bottom    pixels from the bottom, default 90 (not flush to edge)
+   *   fontSize  font size, default 32
+   *   color     text color, default dark ink #1a1a1a (suits light paper background)
+   *   haloColor halo color, default rgba(245,241,232,0.9) (suits the #f5f1e8 background)
+   *   maxLen    max visual length per line, default 13
+   *
+   * Dark scenes: switch color to '#fff', haloColor to 'rgba(0,0,0,0.85)'.
+   *
+   * Karaoke mode (character-level highlight, requires words in timeline chunks — narrate-pipeline.mjs outputs by default):
+   *   karaoke       true enables, default false. Shows whole line, highlights word-by-word as read.
+   *   karaokeColor  color of read words, default Solana purple '#9945FF'
+   *   Falls back to normal chunk mode automatically when a chunk has no words data.
+   *   Note: words are TTS-normalized text ("2025"→"twenty twenty-five"), karaoke lines are
+   *   assembled directly from words to keep highlighting strictly aligned with pronunciation
+   *   (may differ slightly from chunk.text).
+   */
+  function splitWordsToLines(words, maxLen = 13) {
+    // Greedily pack word-level timestamp tokens into ≤maxLen lines; force a line break
+    // after strong punctuation (. ! ?), never across a sentence
+    const lines = [];
+    let cur = [];
+    let curLen = 0;
+    for (const w of words) {
+      const wLen = visualLen(w.text);
+      if (cur.length > 0 && curLen + wLen > maxLen) { lines.push(cur); cur = []; curLen = 0; }
+      cur.push(w);
+      curLen += wLen;
+      if (/[.!?]\s*$/.test(w.text)) { lines.push(cur); cur = []; curLen = 0; }
+    }
+    if (cur.length > 0) lines.push(cur);
+    return lines;
+  }
+
+  function Subtitles({ bottom = 90, fontSize = 32, color = '#1a1a1a', haloColor = 'rgba(245,241,232,0.9)', maxLen = 13, karaoke = false, karaokeColor = '#9945FF' } = {}) {
+    const { time, scene } = React.useContext(NarrationContext);
+    if (!scene || !scene.chunks) return null;
+    const active = scene.chunks.find(c => time >= c.absoluteStart && time < c.absoluteEnd);
+    if (!active) return null;
+
+    // —— Karaoke mode: whole line shown + word-by-word highlight (read = recolor, no CSS transition, deterministic for seek rendering) ——
+    if (karaoke && active.words && active.words.length > 0) {
+      const wordLines = splitWordsToLines(active.words, maxLen);
+      let activeWLine = wordLines[0];
+      for (const ln of wordLines) {
+        if (time >= ln[0].absoluteStart) activeWLine = ln;
+        else break;
+      }
+      const lineStart = activeWLine[0].absoluteStart;
+      const lineProg = Math.max(0, Math.min(1, (time - (lineStart - 0.15)) / 0.15)); // line fades in 0.15s early
+      return React.createElement('div', {
+        style: { position: 'absolute', left: 0, right: 0, bottom, display: 'flex', justifyContent: 'center', pointerEvents: 'none', zIndex: 50 },
+      }, React.createElement('div', {
+        key: lineStart,
+        style: {
+          fontFamily: '"PingFang SC", "Noto Sans SC", -apple-system, sans-serif',
+          fontSize, fontWeight: 600,
+          letterSpacing: '0.04em', lineHeight: 1.2, textAlign: 'center',
+          textShadow: `0 0 6px ${haloColor}, 0 0 12px ${haloColor}, 0 1px 2px rgba(255,255,255,0.5)`,
+          opacity: lineProg, transform: `translateY(${(1 - lineProg) * 4}px)`,
+        },
+      }, activeWLine.map((w, i) => React.createElement('span', {
+        key: i,
+        style: { color: time >= w.absoluteStart ? karaokeColor : color },
+      }, w.text))));
+    }
+
+    // —— Normal chunk mode (original behavior, unchanged) ——
+    const lines = splitChunkToLines(active.text, maxLen);
+    if (lines.length === 0) return null;
+    const totalLen = lines.reduce((s, l) => s + visualLen(l), 0);
+    const chunkDur = active.absoluteEnd - active.absoluteStart;
+    let acc = active.absoluteStart;
+    let activeLine = lines[lines.length - 1];
+    let lineStart = active.absoluteStart;
+    for (const line of lines) {
+      const dur = (visualLen(line) / totalLen) * chunkDur;
+      if (time < acc + dur) { activeLine = line; lineStart = acc; break; }
+      acc += dur;
+    }
+    const lineProg = Math.min(1, (time - lineStart) / 0.15);
+    return React.createElement('div', {
+      style: { position: 'absolute', left: 0, right: 0, bottom, display: 'flex', justifyContent: 'center', pointerEvents: 'none', zIndex: 50 },
+    }, React.createElement('div', {
+      key: lineStart,
+      style: {
+        fontFamily: '"PingFang SC", "Noto Sans SC", -apple-system, sans-serif',
+        fontSize, fontWeight: 600, color,
+        letterSpacing: '0.04em', lineHeight: 1.2, textAlign: 'center',
+        textShadow: `0 0 6px ${haloColor}, 0 0 12px ${haloColor}, 0 1px 2px rgba(255,255,255,0.5)`,
+        opacity: lineProg, transform: `translateY(${(1 - lineProg) * 4}px)`,
+      },
+    }, activeLine));
+  }
+
+  /**
+   * useSceneFade · Soft fade in/out helper for secondary elements within a scene
+   *
+   * RULE #2 forbids hard cuts between scenes — but secondary elements inside a scene
+   * (data cards, quote blocks) normally stay lit until the scene ends once their cue
+   * triggers. Without fade-out they'd pop out abruptly when leaving a segment. This hook
+   * provides a uniform soft transition: [enter fade-in → hold → exit fade-out].
+   *
+   * Usage (multiply op into the element's opacity):
+   *   const op = useSceneFade('md-side', 0.6, 0.8);  // in 0.6s, out 0.8s
+   *   <Cue id="agents-md">{(t, p) => (
+   *     <div style={{ opacity: op * p }}>...</div>
+   *   )}</Cue>
+   *
+   * So a data card fades in within 0.6s of the segment start and starts fading out
+   * 0.8s before the segment ends — overlapping with the next segment's fade-in so
+   * no hard cuts appear on screen.
+   *
+   * @param sceneId  scene id
+   * @param fadeIn   enter fade-in seconds (default 0.5)
+   * @param fadeOut  exit fade-out seconds (default 0.5)
+   * @returns opacity multiplier between 0-1
+   */
+  function useSceneFade(sceneId, fadeIn = 0.5, fadeOut = 0.5) {
+    const { time, timeline } = React.useContext(NarrationContext);
+    if (!timeline) return 0;
+    const s = timeline.scenes.find(x => x.id === sceneId);
+    if (!s) return 0;
+    const inT = (time - s.start) / fadeIn;
+    const outT = (s.end - time) / fadeOut;
+    const v = Math.min(1, Math.min(inT, outT));
+    return Math.max(0, v);
+  }
+
+  return { NarrationStage, Scene, Cue, useNarration, useSceneFade, Subtitles, splitChunkToLines, splitWordsToLines };
+})();
+
+if (typeof window !== 'undefined') {
+  Object.assign(window, { NarrationStageLib });
+}
