@@ -1,27 +1,29 @@
 /**
- * DesignCanvas — 变体并排网格布局
+ * DesignCanvas — Side-by-side variant grid layout
  *
- * 用于展示2+个静态设计variations让用户对比选择。
- * 每个variation有label，可hover放大。
+ * For displaying 2+ static design variations for user comparison.
+ * Each variation has a label and can be enlarged on hover/click.
  *
- * 用法：
+ * Usage:
  *   <DesignCanvas
- *     title="Hero区设计探索"
- *     subtitle="3个方向对比"
+ *     title="Hero Section Design Exploration"
+ *     subtitle="3 directions compared"
  *     columns={3}
  *   >
- *     <Variation label="Minimal" description="极简克制版">
- *       <div>...你的设计1...</div>
+ *     <Variation label="Minimal" description="Restrained minimal version">
+ *       <div>...your design 1...</div>
  *     </Variation>
- *     <Variation label="Editorial" description="杂志编辑风">
- *       <div>...你的设计2...</div>
+ *     <Variation label="Editorial" description="Magazine editorial style">
+ *       <div>...your design 2...</div>
  *     </Variation>
- *     <Variation label="Brutalist" description="粗粝原始">
- *       <div>...你的设计3...</div>
+ *     <Variation label="Web3" description="Solana-native gradient accents">
+ *       <div>...your design 3...</div>
  *     </Variation>
  *   </DesignCanvas>
  *
- * 配合React+Babel使用。放在合适的script里，然后window.DesignCanvas/window.Variation可用。
+ * Works with React+Babel. Place in the appropriate script, then window.DesignCanvas/window.Variation become available.
+ *
+ * Solana theme: warm paper background with Solana purple labels.
  */
 
 const canvasStyles = {
@@ -90,7 +92,7 @@ const canvasStyles = {
     position: 'absolute',
     top: 12,
     left: 12,
-    background: 'rgba(0, 0, 0, 0.7)',
+    background: 'linear-gradient(135deg, #9945FF, #14F195)',
     color: '#fff',
     padding: '3px 8px',
     borderRadius: 4,
@@ -172,7 +174,7 @@ function Variation({ label, description, number, children, _index, _expanded, _o
   return (
     <div style={canvasStyles.cell}>
       <div style={canvasStyles.cellHeader}>
-        <span style={{ ...canvasStyles.label, color: '#999', fontFamily: 'ui-monospace, monospace', fontSize: 12 }}>
+        <span style={{ ...canvasStyles.label, color: '#9945FF', fontFamily: 'ui-monospace, monospace', fontSize: 12 }}>
           {displayNumber}
         </span>
         <span style={canvasStyles.label}>{label}</span>
@@ -186,7 +188,7 @@ function Variation({ label, description, number, children, _index, _expanded, _o
           aspectRatio,
         }}
         onMouseEnter={e => {
-          e.currentTarget.style.boxShadow = '0 8px 24px rgba(0,0,0,0.08)';
+          e.currentTarget.style.boxShadow = '0 8px 24px rgba(153,69,255,0.15)';
         }}
         onMouseLeave={e => {
           e.currentTarget.style.boxShadow = 'none';
