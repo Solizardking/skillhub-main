@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-price-alerts",
+  "name": "moonpay-price-alerts",
+  "description": "Set up desktop price alerts that notify you when tokens hit target prices. Observe-only — no trading, just notifications.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-price-alerts/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-price-alerts/metadata.json",
+  "bundleHash": "sha256-d4f8a2bb309a7d1a1e24044a131e7e0a69683f69a8aa093e5d1ac36ae0d88c24",
+  "merkleLeaf": "sha256-df9897d4c3a4d12200a17a47455c6aaf668ba112e55db1272b1a0ce76c34d2e1",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 5018,
+      "sha256": "sha256-c2d7be9c74253b7d8466b63fc68cb54698672ccacb623f6d6656639152e623af"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

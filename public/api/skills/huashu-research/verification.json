@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-research",
+  "name": "huashu-research",
+  "description": "结构化网络调研流程，确保调研成果增量保存到文件，不因会话截断丢失。当用户说\"调研\"、\"搜索资料\"、\"帮我查一下\"、\"了解一下\"、\"最新信息\"时使用此技能。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-research/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-research/metadata.json",
+  "bundleHash": "sha256-3cd149a0fb3bd6ec2228d4c0c644b5a73a2ba95cdbd49f9f669b5f9d55cfc698",
+  "merkleLeaf": "sha256-a33b09e1aa538c8c22a2995d3383cda780e79ee1db8faa331917ade64d357c3c",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2852,
+      "sha256": "sha256-d2db5ef94c207ddf4fdcf220731d6fc519864b96ea209165ed2675ee806d1f98"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

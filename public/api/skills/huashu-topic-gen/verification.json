@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-topic-gen",
+  "name": "huashu-topic-gen",
+  "description": "快速生成3-4个选题方向，含标题、大纲和优劣分析。当用户提到\"选题\"、\"写什么\"、\"文章方向\"、\"题目建议\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-topic-gen/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-topic-gen/metadata.json",
+  "bundleHash": "sha256-19c7ccfeeabba03ea5e7957da86586b8a7abba4b2053092626a9f77f08593374",
+  "merkleLeaf": "sha256-685b112603d5bc41f2662aae12ec86a2784ad43df9fdc67c6c45d64927e09cad",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2460,
+      "sha256": "sha256-56537e60e5443ba0c016b7b3af0970cccd0c7b9530a639a1dcc5607e5569b819"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

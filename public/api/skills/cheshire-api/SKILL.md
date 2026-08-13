@@ -110,8 +110,14 @@ npx skills add ./skills-store/cheshire-api
 |------|------|
 | `API.md` | Canonical API reference |
 | `docs/cheshire-terminal-api.md` | Product-facing API notes |
+| `client/` | `/skills`, `/skills-store`, `/cli` UI |
+| `cli/` | `cheshire-terminal-cli` (`skills`, `skills:store`) |
+| `server/routes/skills.ts` | `GET /api/skills` (skills + store + skillhub) |
+| `server/routes/skills-store.ts` | `GET /api/skills-store` |
 | `server/mcp/tools.ts` | MCP tool implementations |
 | `server/routes/developer-api.ts` | OpenAPI + keys + status |
+| `skills/` | Community / Skill Hub dump |
+| `skills-store/` | Curated store pack |
 | `registry/google/` | A2A / MCP registry cards |
 
 ## Verify this package

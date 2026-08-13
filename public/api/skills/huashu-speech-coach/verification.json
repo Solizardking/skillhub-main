@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-speech-coach",
+  "name": "huashu-speech-coach",
+  "description": "演讲与分享教练。基于Patrick Winston（MIT AI教授）的How to Speak方法论，帮助准备线下培训、技术分享、B站教程视频等演讲场景。当用户提到\"演讲\"、\"分享\"、\"培训\"、\"讲课\"、\"PPT演讲\"、\"开场\"、\"结尾\"、\"如何讲\"、\"演讲结构\"时使用此技能。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-speech-coach/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-speech-coach/metadata.json",
+  "bundleHash": "sha256-1c01df90cecc31bc13f674dff596531274844bf9f90d8abd80c8e046414b2cb1",
+  "merkleLeaf": "sha256-e9fbc701b582ad4961d6d28838ab6a222795dc7282aea710a3b1eea90223bc1d",
+  "files": [
+    {
+      "path": "references/patrick-winston-how-to-speak.md",
+      "bytes": 9996,
+      "sha256": "sha256-e3fc581c5d7144b5b50af74a6101ae94a4d334c7fa07a8e07a9fcc23c3231f10"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 11292,
+      "sha256": "sha256-9ad3a3a81968189c137885644226e45844ca5f9b88491ad287a293c05cba603f"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

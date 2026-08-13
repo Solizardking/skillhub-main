@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "agentic-wallet",
+  "name": "agentic-wallet",
+  "description": "Crypto wallet operations via the awal CLI — sign in, check balances, send USDC/ETH/POL/SOL, trade tokens, fund the wallet, and use the x402 payment protocol to discover paid services, pay for API calls, monetize an API, or query onchain data. Use whenever the user mentions signing in, login, authentication, wallet status, balance, address, sending money, paying someone, transferring tokens, ENS names, swapping/trading/converting tokens, funding/topping up/onramp, USDC, ETH, POL, SOL, the x402 bazaar, paid APIs, monetizing an endpoint, or querying onchain data on Base.",
+  "source": "https://skills.x402.wtf/api/skills/agentic-wallet/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/agentic-wallet/metadata.json",
+  "bundleHash": "sha256-abe7f781f882eba3a3337dfe8fa4f14e8ed59c5840273995bb53eaed455704af",
+  "merkleLeaf": "sha256-111ef392231f853690d2b6b518a4b5673b4be7b4097cde35cc3adf384390f2b8",
+  "files": [
+    {
+      "path": "references/auth.md",
+      "bytes": 4217,
+      "sha256": "sha256-9a8264a015d48de8a60b408162446ca67ab88a54c25e6ebe904ccb43e6a36d5c"
+    },
+    {
+      "path": "references/balance.md",
+      "bytes": 13133,
+      "sha256": "sha256-7a646871e9711e6f001809c2309e7241009ad401e661f87213c4e1913893938c"
+    },
+    {
+      "path": "references/fund.md",
+      "bytes": 1933,
+      "sha256": "sha256-a86a81506cba43b18a85c6ec953b41b5bd2cd17b922d670910ebfce2821ca8b8"
+    },
+    {
+      "path": "references/query-onchain.md",
+      "bytes": 8392,
+      "sha256": "sha256-c4705c8d3816edad7297f554d944ad1e855fa05c0ca059c889bcb51da906b965"
+    },
+    {
+      "path": "references/send-usdc.md",
+      "bytes": 4181,
+      "sha256": "sha256-71b3476b8c95ab36342e1b70f2d0ac9dfc346d10a35e34a1ec83249ee11831c2"
+    },
+    {
+      "path": "references/trade.md",
+      "bytes": 4395,
+      "sha256": "sha256-724974db4015666e48d9dacd0d9a1422e001f37f3918fac83120b9d2d9a6261d"
+    },
+    {
+      "path": "references/x402-monetize.md",
+      "bytes": 11398,
+      "sha256": "sha256-78fd7c98f43d57edd3beea3bb8a1881f74d219a2273684bbb7ffffa3e216b8d6"
+    },
+    {
+      "path": "references/x402-pay.md",
+      "bytes": 2816,
+      "sha256": "sha256-1e6c5039528866906365c0451de139780db853848a34c2c0d245a575ed287ef4"
+    },
+    {
+      "path": "references/x402-search.md",
+      "bytes": 3240,
+      "sha256": "sha256-a0be9c8043e9c548de6f82923f94bb48e8090b60f2d2ad2a3f3361a37bdc944a"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 5349,
+      "sha256": "sha256-07e0d23611ec4fcaf82585451857d25d9da7ab68dc359533cddf5282d16525bd"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

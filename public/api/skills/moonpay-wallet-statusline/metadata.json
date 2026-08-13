@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-wallet-statusline",
+  "name": "moonpay-wallet-statusline",
+  "description": "Show MoonPay wallet balances in a compatible CLI status line using a local cache and refresh script. Use when the user asks to \"show balances in the status bar\", \"add wallet to the CLI status line\", or wants a persistent balance display while working.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-wallet-statusline/SKILL.md"
+}

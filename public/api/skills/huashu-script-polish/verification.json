@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-script-polish",
+  "name": "huashu-script-polish",
+  "description": "视频脚本口语化审校，去书面腔让脚本适合说出来。当用户提到\"口语化\"、\"太书面了\"、\"像说话一样\"、\"脚本审校\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-script-polish/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-script-polish/metadata.json",
+  "bundleHash": "sha256-3cfcf34003c1b66da871ea222d36a296f98d40c730bb90550a2296e4003a2787",
+  "merkleLeaf": "sha256-b820f7b4a466f91d57a6435729f40ee4e249b66a3044e580fa6bcc4107b97a0f",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2130,
+      "sha256": "sha256-bc4f7d7f9f552c83493e44c4adc138f4317241e5f916c1d3c1eb3e41e46fb528"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

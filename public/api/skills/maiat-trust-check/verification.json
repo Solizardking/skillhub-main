@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "maiat-trust-check",
+  "name": "maiat-trust-check",
+  "description": "Check if an agent or token is trustworthy before transacting. Returns trust score and verdict from 29,000+ indexed agents on Base. Use before any swap, transfer, or agent interaction.",
+  "source": "https://skills.x402.wtf/api/skills/maiat-trust-check/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/maiat-trust-check/metadata.json",
+  "bundleHash": "sha256-1d94c06cdc91cdb1812237dc01ec7d29734959cffc8e1d4f77d7d45a374d7649",
+  "merkleLeaf": "sha256-e2b067f37ddab86f6a16dbd58b43780c7b3a97a060386f25c592e7c760d3ba75",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2089,
+      "sha256": "sha256-7fc9c83ebe772e9326f2ff4e4389573cd03d5266d0e55eeb5ce272cf899a423d"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

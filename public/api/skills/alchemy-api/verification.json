@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "alchemy-api",
+  "name": "alchemy-api",
+  "description": "Integrates Alchemy blockchain APIs using an API key. Requires $ALCHEMY_API_KEY to be set; if unavailable, use the alchemy-agentic-gateway skill instead. Use when user asks about EVM JSON-RPC calls, token balances, NFT ownership or metadata, transfer history, token prices, portfolio data, transaction simulation, webhooks, Solana RPC, or any Alchemy product integration. Covers base URLs, authentication, endpoint selection, pagination, and common patterns.",
+  "source": "https://skills.x402.wtf/api/skills/alchemy-api/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/alchemy-api/metadata.json",
+  "bundleHash": "sha256-4ed456ad19f1940633fc57ef5c786f17f23c8266cf4fd8b59678cee16e5a5df2",
+  "merkleLeaf": "sha256-40f43d178f5f43a33f3dd231106472a0b3a3f19f13f216d7671d0005aab3afde",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 8312,
+      "sha256": "sha256-8d5ed775494ecf62c98ac6ba389bb21bef89b19a73c9591b54b94b90c8faef3d"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

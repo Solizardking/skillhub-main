@@ -1,0 +1,7 @@
+{
+  "slug": "allium-onchain-data",
+  "name": "allium-onchain-data",
+  "description": "Query blockchain data via Allium APIs. Token prices, wallet balances, transactions, historical data. Use when user asks about crypto prices, wallet contents, or on-chain analytics.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/allium-onchain-data/SKILL.md"
+}

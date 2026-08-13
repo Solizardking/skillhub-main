@@ -1,0 +1,139 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-slides",
+  "name": "huashu-slides",
+  "description": "从内容到成品PPTX的端到端演示文稿制作，含AI插画生成和18种设计风格。当用户提到\"做PPT\"、\"做幻灯片\"、\"演示文稿\"、\"Keynote\"、\"slides\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-slides/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-slides/metadata.json",
+  "bundleHash": "sha256-6ddc85f6723581e91d718326e4c106851d48c6510bc8ebc535b357c12e8798d1",
+  "merkleLeaf": "sha256-fae186d6bf0f6cce407ca42140bb5a5b6f23e52535ce2f737ccdb02471ef2b52",
+  "files": [
+    {
+      "path": "assets/style-samples/slide04-01-苏联构成主义-constructivism.png",
+      "bytes": 744080,
+      "sha256": "sha256-808fca50128910e8b74d5245ee1fbdbe73f3bc303524c98fc9a53bf3ef7ee932"
+    },
+    {
+      "path": "assets/style-samples/slide04-02-浮世绘-ukiyo-e.png",
+      "bytes": 984335,
+      "sha256": "sha256-11a4de3cdabfa576014b53d4e7a013f6ce73d606be57949dbc05d5953d9c150c"
+    },
+    {
+      "path": "assets/style-samples/slide04-03-包豪斯-bauhaus.png",
+      "bytes": 998923,
+      "sha256": "sha256-5066316108ae2998e65217a3f62260128ab0ea2cb7a481a669707ecd38e641c2"
+    },
+    {
+      "path": "assets/style-samples/slide04-04-孔版印刷-risograph.png",
+      "bytes": 853799,
+      "sha256": "sha256-093ad2d9a66bf841f9fef1e6be8b8952d32f8fe8600d09d6d4c50543bb5cc961"
+    },
+    {
+      "path": "assets/style-samples/slide04-05-等轴测-isometric.png",
+      "bytes": 717723,
+      "sha256": "sha256-2379cf5be265ca37e67582f31d32449f09da34b53e9eee6de509f8a3ef4a6f04"
+    },
+    {
+      "path": "assets/style-samples/slide04-06-工程蓝图-blueprint.png",
+      "bytes": 775474,
+      "sha256": "sha256-48ca66fcdcf447997046ec1ba1fefc091d9a6543e4d03f45e665a40aa2aedebc"
+    },
+    {
+      "path": "assets/style-samples/slide04-07-复古广告-vintage-ad.png",
+      "bytes": 997945,
+      "sha256": "sha256-1092a1725c903bdb52e87408ae6fa3a51c3fbccb10522b5f3825972f053f0989"
+    },
+    {
+      "path": "assets/style-samples/slide04-08-达达拼贴-collage.png",
+      "bytes": 903201,
+      "sha256": "sha256-a7d90f3cce9edfe35c9a2a0843d0c662fabf6d6ce16a7e03c041b80399813e24"
+    },
+    {
+      "path": "assets/style-samples/slide04-09-像素画-pixel-art.png",
+      "bytes": 823644,
+      "sha256": "sha256-9a56a3e27b504286f91b2619cfdc1065cc9c9f077d0622ea52474a7e82b9fa04"
+    },
+    {
+      "path": "assets/style-samples/slide04-10-敦煌壁画-dunhuang.png",
+      "bytes": 932844,
+      "sha256": "sha256-3764dd5bbc666fa860c774d7130d4a157ebc594ff6062d700f0d87b0b61666ae"
+    },
+    {
+      "path": "assets/style-samples/slide04-13-温暖叙事-warm-narrative.png",
+      "bytes": 689747,
+      "sha256": "sha256-178bfb9ac24c3bb6f254276aeff85c610afda10148fb5604c71e45f78cc51050"
+    },
+    {
+      "path": "assets/style-samples/slide04-ligne-claire.png",
+      "bytes": 682624,
+      "sha256": "sha256-4d49c2d9f1ebaef844c4a526eacae33f34af3a388c7c499b952ebe7a3796a815"
+    },
+    {
+      "path": "assets/style-samples/slide04-manga.png",
+      "bytes": 921806,
+      "sha256": "sha256-a68445fa88d4061add0d66872b2d5ae422fbf27016d9256dbad489437662f122"
+    },
+    {
+      "path": "assets/style-samples/slide04-neo-pop.png",
+      "bytes": 707114,
+      "sha256": "sha256-3774f45dc8dc83888c0abf955673bb985a21e5faa846233164c40856239225e8"
+    },
+    {
+      "path": "assets/style-samples/slide04-oatmeal.png",
+      "bytes": 823071,
+      "sha256": "sha256-1816a6b0b4fd7537ad334aace8b412763f2c39258e73fccbfee8b7e4802d690d"
+    },
+    {
+      "path": "assets/style-samples/slide04-snoopy.png",
+      "bytes": 804259,
+      "sha256": "sha256-20161f415627947310c059e5ee7fd472fbef234ca8133f91cbfb70cbca0e6ec6"
+    },
+    {
+      "path": "assets/style-samples/slide04-xkcd.png",
+      "bytes": 962289,
+      "sha256": "sha256-9f77f9acf1bd1c7a1f0fbc106f4d637cddbf8eb5dbdbcdea33f097c7104c5f81"
+    },
+    {
+      "path": "references/design-movements.md",
+      "bytes": 8696,
+      "sha256": "sha256-c104d2c35b698e710ce9fbd755bd34e3c16f9952256ab4369a194259e38958a0"
+    },
+    {
+      "path": "references/design-principles.md",
+      "bytes": 8022,
+      "sha256": "sha256-b5ae29e6ea05e1994ab3f6e5575cbb9643d5b13ce30f94faedeffa0f5d79e160"
+    },
+    {
+      "path": "references/prompt-templates.md",
+      "bytes": 24131,
+      "sha256": "sha256-7f07b23698b39ac7cdfed5d0713d5cd3d133ce71ac6f19d5208eb18fcf61f92f"
+    },
+    {
+      "path": "references/proven-styles-gallery.md",
+      "bytes": 13338,
+      "sha256": "sha256-1efe44797f6044c4c0caf72134da9bb415155d4572a7ad267c1c0a3afc7fe740"
+    },
+    {
+      "path": "references/proven-styles-snoopy.md",
+      "bytes": 3597,
+      "sha256": "sha256-44930eaef09de80f2e641e3591b1abe45c54ac00b95ce19452b4df3dfafb1309"
+    },
+    {
+      "path": "scripts/create_slides.py",
+      "bytes": 9643,
+      "sha256": "sha256-3f79f448dd0e92b689495e389026d3a45eb96004644f532be379b5ebaacc9ca3"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 32607,
+      "sha256": "sha256-d9d58f48350e8fefff3c67fa875e1775157f418a40d18fa2beb016f200259c7a"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

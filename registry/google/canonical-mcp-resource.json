@@ -1,0 +1,62 @@
+{
+  "projectId": "x402-477302",
+  "projectNumber": "1013652097839",
+  "location": "us-central1",
+  "serviceId": "cheshire-terminal-mcp",
+  "displayName": "Cheshire Terminal MCP",
+  "resourceName": "projects/x402-477302/locations/us-central1/services/cheshire-terminal-mcp",
+  "mcpServerResourceName": "projects/x402-477302/locations/us-central1/mcpServers/agentregistry-00000000-0000-0000-2490-10e4bb2ec4c0",
+  "mcpServerId": "urn:mcp:projects-1013652097839:projects:1013652097839:locations:us-central1:agentregistry:services:cheshire-terminal-mcp",
+  "mcpUrl": "https://cheshireterminal.ai/mcp",
+  "agentServiceId": "cheshire-terminal",
+  "agentResourceName": "projects/x402-477302/locations/us-central1/services/cheshire-terminal",
+  "adk": {
+    "api": "google.adk.tools.api_registry.ApiRegistry",
+    "getToolsetArg": "projects/x402-477302/locations/us-central1/mcpServers/agentregistry-00000000-0000-0000-2490-10e4bb2ec4c0",
+    "getMcpToolsetArg": "projects/x402-477302/locations/us-central1/services/cheshire-terminal-mcp",
+    "envKeys": {
+      "GOOGLE_CLOUD_PROJECT": "x402-477302",
+      "GOOGLE_CLOUD_LOCATION": "us-central1",
+      "MCP_SERVER_NAME": "cheshire-terminal-mcp",
+      "MCP_SERVER_RESOURCE": "projects/x402-477302/locations/us-central1/services/cheshire-terminal-mcp",
+      "MCP_SERVER_MCP_RESOURCE": "projects/x402-477302/locations/us-central1/mcpServers/agentregistry-00000000-0000-0000-2490-10e4bb2ec4c0",
+      "ZEROEX_API_KEY": "(server-only; from .env.local — never ship to browser or registry)"
+    },
+    "note": "ApiRegistry.get_toolset(mcp_server_name=...) uses mcpServers/... resource from `gcloud alpha agent-registry mcp-servers list`. AgentRegistry services path (services/cheshire-terminal-mcp) is the human service id used by register-agent-registry.sh. 0x Swap tools (cheshire_0x_status, cheshire_0x_price) call https://cheshireterminal.ai/api/0x/* which injects ZEROEX_API_KEY server-side."
+  },
+  "zeroX": {
+    "proxyBase": "https://cheshireterminal.ai/api/0x",
+    "statusUrl": "https://cheshireterminal.ai/api/0x/status",
+    "openapi": "registry/google/openapi-0x-swap.yaml",
+    "publicOpenapi": "https://cheshireterminal.ai/api/developer/registry/google/openapi-0x-swap.yaml",
+    "envKey": "ZEROEX_API_KEY",
+    "envAliases": [
+      "ZEROEX_API_KEY",
+      "ZERO_EX_API_KEY",
+      "ZEROX_API_KEY",
+      "ox_KEY",
+      "OX_KEY",
+      "OX_API_KEY"
+    ],
+    "mcpTools": ["cheshire_0x_status", "cheshire_0x_price"],
+    "agentSkillId": "0x-swap",
+    "related": {
+      "zeroServiceOpenapi": "registry/google/openapi-zero-service.yaml",
+      "zeroServiceNote": "clawd-zero-service is SOL-GPT NL trading (DFlow); openapi-0x-swap is the 0x Swap API proxy"
+    }
+  },
+  "registryFiles": [
+    "registry/google/canonical-mcp-resource.json",
+    "registry/google/cheshire-agent-card.json",
+    "registry/google/cheshire-mcp-interface.json",
+    "registry/google/cheshire-mcp-server-card.json",
+    "registry/google/cheshire-mcp-tools-list.json",
+    "registry/google/openapi-zero-service.yaml",
+    "registry/google/openapi-0x-swap.yaml"
+  ],
+  "gcloud": {
+    "describeService": "gcloud alpha agent-registry services describe cheshire-terminal-mcp --project=x402-477302 --location=us-central1",
+    "listMcpServers": "gcloud alpha agent-registry mcp-servers list --project=x402-477302 --location=us-central1",
+    "describeMcpServer": "gcloud alpha agent-registry mcp-servers describe agentregistry-00000000-0000-0000-2490-10e4bb2ec4c0 --project=x402-477302 --location=us-central1"
+  }
+}

@@ -48,6 +48,15 @@ async function main() {
     }
   }
 
+  // Private job dirs are gitignored. If they are absent locally, keep the
+  // already-redacted submissions from the last public ledger instead of wiping it.
+  if (entries.length === 0) {
+    const existing = await readJsonIfExists(LEDGER_PATH);
+    if (Array.isArray(existing?.submissions) && existing.submissions.length) {
+      entries.push(...existing.submissions);
+    }
+  }
+
   entries.sort((a, b) => String(b.updatedAt || b.createdAt).localeCompare(String(a.updatedAt || a.createdAt)));
 
   const plan = await readJsonIfExists(path.join(ROOT, "onchain", "publish-plan.json"));

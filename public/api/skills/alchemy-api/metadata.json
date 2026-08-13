@@ -1,0 +1,7 @@
+{
+  "slug": "alchemy-api",
+  "name": "alchemy-api",
+  "description": "Integrates Alchemy blockchain APIs using an API key. Requires $ALCHEMY_API_KEY to be set; if unavailable, use the alchemy-agentic-gateway skill instead. Use when user asks about EVM JSON-RPC calls, token balances, NFT ownership or metadata, transfer history, token prices, portfolio data, transaction simulation, webhooks, Solana RPC, or any Alchemy product integration. Covers base URLs, authentication, endpoint selection, pagination, and common patterns.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/alchemy-api/SKILL.md"
+}

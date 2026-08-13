@@ -1,0 +1,7 @@
+{
+  "slug": "huashu-xhs-image",
+  "name": "huashu-xhs-image",
+  "description": "为小红书笔记生成高质量配图。默认AI生成（Gemini），仅精确数据表格用HTML兜底。当用户提到\"小红书配图\"、\"小红书封面\"、\"小红书图片\"、\"做张小红书图\"、\"笔记配图\"时使用此技能。",
+  "category": "Media / Devices",
+  "skill": "/api/skills/huashu-xhs-image/SKILL.md"
+}

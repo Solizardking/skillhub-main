@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-design",
+  "name": "huashu-design",
+  "description": "设计哲学顾问，从20种风格中推荐3个方向并生成视觉Demo和AI提示词。当用户提到\"设计风格\"、\"设计方向\"、\"配色方案\"、\"视觉风格\"、\"设计评审\"、\"推荐风格\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-design/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-design/metadata.json",
+  "bundleHash": "sha256-9d2a816fd047da78ccf1a5f104f16e062fb32ad9b2691bd07a4d5abb446d2cfa",
+  "merkleLeaf": "sha256-aab27e977ded7fbbf76767597ed6b0b6e8ab5048178b9c4f17390e755be4b306",
+  "files": [
+    {
+      "path": "references/critique-guide.md",
+      "bytes": 7391,
+      "sha256": "sha256-2d7e61424bd65ce775a4f4b2c79033f01155126644874d14b13dcfe1d2671407"
+    },
+    {
+      "path": "references/design-styles.md",
+      "bytes": 18439,
+      "sha256": "sha256-2e3cc214937edf616edbffd8486558826749e2510245908ea14eb409ffe52ae3"
+    },
+    {
+      "path": "references/scene-templates.md",
+      "bytes": 7144,
+      "sha256": "sha256-c91852062d923787896076368fff883bed2eb8b53087f1efdc2f81ed3014a314"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 8522,
+      "sha256": "sha256-a66f6a59124ce9fccb6ba141a4b63f70818e1637592e381bb2ba527b35a5dabf"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

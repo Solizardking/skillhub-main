@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "nansen-dca-tracker",
+  "name": "nansen-dca-tracker",
+  "description": "What tokens are whales dollar-cost averaging into? Jupiter DCA strategies by smart money and target token fundamentals.",
+  "source": "https://skills.x402.wtf/api/skills/nansen-dca-tracker/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/nansen-dca-tracker/metadata.json",
+  "bundleHash": "sha256-d3bb1d2be29a7247732d1cf2019ca9afcd33450579de5f8fd5fe1764634d2e11",
+  "merkleLeaf": "sha256-37026b788084637b818cd981636427670ee0f19f888fc839c658413ba4b0c0d3",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 1585,
+      "sha256": "sha256-5328293f608dfbe4d820038097e971ca7ea9d198484a835df350d4b1edbfe3ef"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

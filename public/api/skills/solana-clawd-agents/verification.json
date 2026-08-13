@@ -5,8 +5,8 @@
   "description": "Use the imported Solana Clawd Agents hub catalog to browse, validate, build, deploy, mint, stake, and integrate production-ready Solana agent definitions, including x402 paid-agent APIs, MCP catalog endpoints, Cloudflare Worker API, Metaplex Core minting, and agent JSON schema workflows.",
   "source": "https://skills.x402.wtf/api/skills/solana-clawd-agents/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/solana-clawd-agents/metadata.json",
-  "bundleHash": "sha256-b6dec8b225e1963fcc1fe14e7b6f40a7304ecbba0d46295471d6d29ad2ffc436",
-  "merkleLeaf": "sha256-a923b27512d9353209bf042e985c8276cdb39d20b6ab917c9dc0b0ea4321b27e",
+  "bundleHash": "sha256-802e0c5febb2225516270f48cedf0b49a34da0c9f234439778c0f4301e449fba",
+  "merkleLeaf": "sha256-9af62875471e5a6dcfdfc8452730a046c13013cf1e0943cef49fa6e2fcdb964c",
   "files": [
     {
       "path": "agents/agent-minter/Cargo.lock",
@@ -6255,8 +6255,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 2577,
-      "sha256": "sha256-007f4ff7eae22716bd5b732012f61e261a33c062c25f3e3bf66d628e92498945"
+      "bytes": 2579,
+      "sha256": "sha256-7eb67441ed910e6287c34264cf23b27417f999e0e66fe4afdbd0315e6a187d86"
     }
   ],
   "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",

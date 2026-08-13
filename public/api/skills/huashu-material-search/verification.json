@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-material-search",
+  "name": "huashu-material-search",
+  "description": "搜索个人素材库1800+条真实经历和观点，为内容增加人味。当用户提到\"个人经历\"、\"真实案例\"、\"素材\"、\"人味\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-material-search/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-material-search/metadata.json",
+  "bundleHash": "sha256-9e0e82b6f797c98318ad4c0fced738538c47a8d8c97ea93caccb5c8a2debeddf",
+  "merkleLeaf": "sha256-11263beb53ea0059b9986120e6bfeff0da760e705e7a7e0100a6c3d88e601321",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 10836,
+      "sha256": "sha256-580715690c03c6231f6d66c608b69e16cc54c6e36bb89317f95d4490216067d4"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

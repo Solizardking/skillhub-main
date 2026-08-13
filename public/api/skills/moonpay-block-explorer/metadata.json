@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-block-explorer",
+  "name": "moonpay-block-explorer",
+  "description": "Open transactions, wallets, and tokens in the correct block explorer. Use after swaps, bridges, or transfers to view results in the browser.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-block-explorer/SKILL.md"
+}

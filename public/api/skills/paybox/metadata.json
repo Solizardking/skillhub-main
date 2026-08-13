@@ -1,0 +1,7 @@
+{
+  "slug": "paybox",
+  "name": "paybox",
+  "description": "MoonPay PayBox payment vault for AI agents — official MCP at https://api.paybox.sh/mcp, OAuth 2.1, scoped credentials, and Cheshire mcp-server proxy tools (get_paybox_*).",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/paybox/SKILL.md"
+}

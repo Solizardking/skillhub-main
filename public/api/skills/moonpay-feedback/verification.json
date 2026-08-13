@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-feedback",
+  "name": "moonpay-feedback",
+  "description": "Submit feedback, bug reports, or feature requests for the MoonPay CLI. Use when the user encounters issues, wants to suggest improvements, or has general feedback.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-feedback/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-feedback/metadata.json",
+  "bundleHash": "sha256-43205a3c43b06c32faa273f6ec695e5cedb7739c45422b5299a37cf9d43572e8",
+  "merkleLeaf": "sha256-15f4bb279b845f61e5693ffe8b384db713aa8ffd4b00d8277af433b0fac6bcf2",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 1755,
+      "sha256": "sha256-5a756f138ec919ce4619b12b1817b6875c5c1e0e8b7b340a8fc67d18b0bf62cb"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

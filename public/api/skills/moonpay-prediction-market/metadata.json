@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-prediction-market",
+  "name": "moonpay-prediction-market",
+  "description": "Trade on prediction markets (Polymarket, Kalshi). Search markets, buy/sell positions, track PnL, and view trade history.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-prediction-market/SKILL.md"
+}

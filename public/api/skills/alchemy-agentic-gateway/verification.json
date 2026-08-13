@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "alchemy-agentic-gateway",
+  "name": "alchemy-agentic-gateway",
+  "description": "Use when accessing Alchemy APIs for RPC calls, token balances, NFT metadata, asset transfers, transaction simulation, or Alchemy-specific features. Also use when the user mentions \"SIWE\", \"SIWS\", \"x402\", \"MPP\", \"mppx\", or \"agentic gateway\" — this skill covers wallet-based auth flows for Alchemy's x402 and MPP protocols on EVM (Ethereum, Base, Polygon) and SVM (Solana).",
+  "source": "https://skills.x402.wtf/api/skills/alchemy-agentic-gateway/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/alchemy-agentic-gateway/metadata.json",
+  "bundleHash": "sha256-54b2c4c8c6e81ce08ee1e7f1f668f10410f38f458b580c896d698b20322726bc",
+  "merkleLeaf": "sha256-8b75476340b3cace1d428e3f4df2c2fe3a38b50b0c9bca53d754f5092d732c3b",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 8273,
+      "sha256": "sha256-cbb8418de01c34593ef2fdce3999ec34ed298a5bd3f8abd1d49c0e2a77ae5dbe"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

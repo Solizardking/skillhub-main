@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-block-explorer",
+  "name": "moonpay-block-explorer",
+  "description": "Open transactions, wallets, and tokens in the correct block explorer. Use after swaps, bridges, or transfers to view results in the browser.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-block-explorer/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-block-explorer/metadata.json",
+  "bundleHash": "sha256-fe2c732486b3a0b99a797a220239b5afeba2053f7eac2b88d10f4c1e57964767",
+  "merkleLeaf": "sha256-f4dd7a2aa8152370ff25bd738742fcfde7742dab043b9a0b9a502c824ec74d97",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 4376,
+      "sha256": "sha256-bd97a984553810bf55d504bad00ea6e13022ac53a916d5f734771863daa3186e"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

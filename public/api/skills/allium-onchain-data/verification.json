@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "allium-onchain-data",
+  "name": "allium-onchain-data",
+  "description": "Query blockchain data via Allium APIs. Token prices, wallet balances, transactions, historical data. Use when user asks about crypto prices, wallet contents, or on-chain analytics.",
+  "source": "https://skills.x402.wtf/api/skills/allium-onchain-data/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/allium-onchain-data/metadata.json",
+  "bundleHash": "sha256-de3361bdd2e70ef3c6dd7f961ed0e14a0cf93c56e5cabdb683ae72e74c591994",
+  "merkleLeaf": "sha256-c2f0008ea560d71e92924d84318f4acfc52a8089ec2add4fdf6897277649f37e",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 7646,
+      "sha256": "sha256-8d68291c15dcb4d1961a66c4a0da3d5a4d0fa2b4156b5ab9d83461aaaf31d958"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

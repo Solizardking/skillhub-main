@@ -1,0 +1,7 @@
+{
+  "slug": "messari-alpha-scout",
+  "name": "messari-alpha-scout",
+  "description": "Alpha scouting workflow using Messari x402. Scans mindshare gainers, trending topics, and news to surface emerging narratives and high-momentum assets. Total cost ~$1.25 USDC per run.",
+  "category": "Utilities",
+  "skill": "/api/skills/messari-alpha-scout/SKILL.md"
+}

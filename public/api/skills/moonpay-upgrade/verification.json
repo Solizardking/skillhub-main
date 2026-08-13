@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-upgrade",
+  "name": "moonpay-upgrade",
+  "description": "Increase your MoonPay API rate limit by paying with crypto via x402.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-upgrade/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-upgrade/metadata.json",
+  "bundleHash": "sha256-454a51ef469854a9d83fb667453d06bbd29be7fea5fadc985ec5d3ba9c6ec7ce",
+  "merkleLeaf": "sha256-0f914c1ace23aa5fc08c874ce86b13f45590cd832ea2b3c2955633f728bd90f7",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 1032,
+      "sha256": "sha256-5f54c7e5b4b5bb783f2ec1fcee35ed6cc22224b0cb912a7d20e2f1032715d3ef"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

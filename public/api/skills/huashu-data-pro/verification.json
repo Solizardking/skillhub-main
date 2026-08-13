@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-data-pro",
+  "name": "huashu-data-pro",
+  "description": "数据分析与办公提效全能助手。覆盖数据处理、分析洞察、报告撰写、PPT制作、数据可视化的端到端工作流。 始终从专家视角出发，帮用户多想一步。遇到不确定的问题主动与用户确认。 支持：Excel数据分析、投放数据复盘、ROI测算、数据可视化、报告生成、PPT制作、公式生成。 当用户提到\"分析数据\"、\"做报告\"、\"做PPT\"、\"Excel\"、\"投放分析\"、\"ROI\"、\"复盘\"、 \"周报\"、\"月报\"、\"数据处理\"、\"图表\"、\"可视化\"、\"汇报\"、\"表格\"、\"公式\"时使用此技能。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-data-pro/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-data-pro/metadata.json",
+  "bundleHash": "sha256-d4a314e50322b1e53267667ba0229660c59d2bab5ada4a374d5fcc03f8b732f3",
+  "merkleLeaf": "sha256-c58dd7d1326fcdd2e586a8ef62f1e6a2869519df9584ba48fa51f1727a3943fe",
+  "files": [
+    {
+      "path": "references/ad-analytics.md",
+      "bytes": 1477,
+      "sha256": "sha256-bb2a87dec8d3ebb6f03acdd5f3399f4905be46aae0ba867ffaeb7690308c10c8"
+    },
+    {
+      "path": "references/html-templates.md",
+      "bytes": 16785,
+      "sha256": "sha256-acff9778ee89e3cc27ba5768333d07679031bb010b7467b079c87ef88421b33d"
+    },
+    {
+      "path": "references/report-style-gallery.md",
+      "bytes": 9771,
+      "sha256": "sha256-1a39693ac5a54e1d5385b55faa92da994b4bd17313e09479b8f0e66d473a6b26"
+    },
+    {
+      "path": "references/visual-design-system.md",
+      "bytes": 18545,
+      "sha256": "sha256-a74955fc3e0ec9ed46afd7158440e28151a22bb2a5f4fe735fa24c4cd8ea1da6"
+    },
+    {
+      "path": "references/workflows.md",
+      "bytes": 6728,
+      "sha256": "sha256-1a3e2fcfaf2e43a133937966bd6694919d3cf38047f62332c09fcbbd10a4f3a8"
+    },
+    {
+      "path": "scripts/build_pptx.js",
+      "bytes": 7017,
+      "sha256": "sha256-672bb0cd322110a8fb76017d06dacc07c5b4e191676bd2e2515c257360885be7"
+    },
+    {
+      "path": "scripts/html2pptx.js",
+      "bytes": 37795,
+      "sha256": "sha256-c675d09a54d6a002e8ca5917b9d24a6568aa8d455bb7abeb212d4f564dd07a34"
+    },
+    {
+      "path": "scripts/read_excel.py",
+      "bytes": 3883,
+      "sha256": "sha256-4d48ef1de2b93b38f81f00449f61b1a57fa67414f590699eeab960f944b09492"
+    },
+    {
+      "path": "scripts/read_pptx.py",
+      "bytes": 7562,
+      "sha256": "sha256-dbde24b034ac1052f66942ab778a41a6f6bf119c38a3a75b574641b5424aafd0"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 7021,
+      "sha256": "sha256-f384c8b345a7f0b5439343dbad3a15e07af80b06e465b0bdc501bada70f00828"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

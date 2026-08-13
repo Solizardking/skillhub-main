@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "handoff",
+  "name": "productivity-handoff",
+  "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+  "source": "https://skills.x402.wtf/api/skills/handoff/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/handoff/metadata.json",
+  "bundleHash": "sha256-84f93f08eb1a4de3ff66ec40ae019afe3bde38a3a3ea3e5fb11b57b7cff28041",
+  "merkleLeaf": "sha256-1a9de2e350b91fbf1a89f8b60fbb845b22c12acce7cba0127b15b13e6bce6a36",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 892,
+      "sha256": "sha256-aad6e967efe165f6ce8d2b907eaa3d99cc7b994d9a1451524e072232071f4f7e"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

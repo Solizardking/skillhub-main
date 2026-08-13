@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-video-check",
+  "name": "huashu-video-check",
+  "description": "基于MrBeast策略检查视频标题、封面和开头钩子。当用户提到\"视频标题\"、\"封面图\"、\"点击率\"、\"CTR\"、\"观看时长\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-video-check/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-video-check/metadata.json",
+  "bundleHash": "sha256-a8a0ddb6d95f54d9226af29ca958ea608efa52052b1ca4153599b12f64750df0",
+  "merkleLeaf": "sha256-f056adafde7af410b43c71836104dc20ac5e28618506bb1c48d635e2f247c386",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 11791,
+      "sha256": "sha256-319aae013c17ef6203a1e04bb902ab8c42931bb05a288f74e1abd3e122a29884"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

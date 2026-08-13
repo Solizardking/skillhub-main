@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-discover-tokens",
+  "name": "moonpay-discover-tokens",
+  "description": "Search for tokens, check prices, get trading briefs, and evaluate risk. Use for token research, \"is this token safe?\", price checks, and market analysis.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-discover-tokens/SKILL.md"
+}

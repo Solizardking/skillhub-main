@@ -1,0 +1,7 @@
+{
+  "slug": "dune-analytics",
+  "name": "dune-analytics",
+  "description": "Blockchain analytics via Dune REST API — execute DuneSQL queries against live on-chain data, discover decoded contract tables, and monitor credit usage. Use when the user asks about on-chain data, wallet activity, DEX trades, token transfers, smart contract events, or says \"query Dune\", \"run a Dune query\", or \"search Dune datasets\". Pairs with MoonPay to analyze wallets you create and fund.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/dune-analytics/SKILL.md"
+}

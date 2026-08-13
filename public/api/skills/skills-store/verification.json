@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "skills-store",
+  "name": "skills-store",
+  "description": "Cheshire Skills Store index — curated Agent Skills packages for Cheshire Terminal (API, PostHog, Google Agent Registry, Skill Hub onchain, Stripe, Solana common errors, NOXA) plus the community skills collection. Use when installing store skills, browsing the store catalog, or wiring cheshireterminal.ai/skills-store.",
+  "source": "https://skills.x402.wtf/api/skills/skills-store/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/skills-store/metadata.json",
+  "bundleHash": "sha256-43a77b854c1814dce46f2a04f858153789217b6f03536a29e8d21689560441f1",
+  "merkleLeaf": "sha256-524e0dd364125d3196783554302b2d11334f6a12b9ac189833559e4b02fa85df",
+  "files": [
+    {
+      "path": "catalog.json",
+      "bytes": 7526,
+      "sha256": "sha256-0a80279499224ebdf7129abe772710d57c4348217e81c2b4043193f08ab96365"
+    },
+    {
+      "path": "imported-skills.json",
+      "bytes": 345008,
+      "sha256": "sha256-4ff294ffeb457da94ce11a5aa40dab2e15e7353f7d6beba4f3939ff2628551e1"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5594,
+      "sha256": "sha256-2b66b600fcf594212f81d17f515f16db613bfea56c3f55e3926e5b87c5aea083"
+    },
+    {
+      "path": "scripts/agentic-wallet-skill.test.ts",
+      "bytes": 5992,
+      "sha256": "sha256-2de814164b6280f7a2b7783dbc7291bd7d5fc23c3606be810a107478f3f366ba"
+    },
+    {
+      "path": "scripts/hub-skills-integration.test.ts",
+      "bytes": 6013,
+      "sha256": "sha256-61733e82e833064d18c1cd61ed069500928b42ac785a1e26376e0ba43ef54326"
+    },
+    {
+      "path": "scripts/index-imported-skills.mjs",
+      "bytes": 2897,
+      "sha256": "sha256-ed9f1c0c1c75c9cfdbd07aab568ec2a9e9d91c0b27bc36176e1d3dc6e7f39bfb"
+    },
+    {
+      "path": "scripts/list-store-skills.test.ts",
+      "bytes": 2797,
+      "sha256": "sha256-23bdce0d3177c70f3636d60c121f1aaccad0c69e1570a0efc78ed85a1b0bf2a9"
+    },
+    {
+      "path": "scripts/user-skills-upload.test.ts",
+      "bytes": 5793,
+      "sha256": "sha256-35836b25aacf497d92484392f732b46dd2c547f95fb46f14c389698cd24b72ad"
+    },
+    {
+      "path": "scripts/validate-store.mjs",
+      "bytes": 5371,
+      "sha256": "sha256-fc1b5f7d3c1c73b9596107a07de7a02e1ddd0bd3b101c78c2b52187e82a31f0c"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 1464,
+      "sha256": "sha256-3cd32ad2598c7e9df62a6f822db712e8a99720646fe4676659a9a70335a4c1f4"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

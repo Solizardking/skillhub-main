@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-douyin-script",
+  "name": "huashu-douyin-script",
+  "description": "抖音爆款脚本创作工作流。从竞品视频拆解到脚本生成的完整流程：下载抖音视频→Gemini视频分析→爆款公式提炼→脚本+分镜生成→AI味审校。 当用户提到\"抖音脚本\"、\"爆款拆解\"、\"竞品分析\"、\"带货脚本\"、\"千川素材\"、\"种草脚本\"、\"视频拆解\"、\"抖音视频分析\"时使用此技能。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-douyin-script/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-douyin-script/metadata.json",
+  "bundleHash": "sha256-41971cce62cdb52b3837d6f2e0b10c773b96576bc417cd11da5717e982385ac2",
+  "merkleLeaf": "sha256-788cd51aef967d7277ed2c5bc6aac4459cc43b3f4d9fb087b045b26bd2ccb755",
+  "files": [
+    {
+      "path": "references/analysis-dimensions.md",
+      "bytes": 6102,
+      "sha256": "sha256-9c9b26b9f2bc04aca09475e996da435816bcc6375c53a65a675b36549b53100f"
+    },
+    {
+      "path": "references/proven-formulas.md",
+      "bytes": 6727,
+      "sha256": "sha256-3c5de93a9887fa1b9111c58a0478dbf842002ae62fc791d4036469b75279c48a"
+    },
+    {
+      "path": "references/script-style-samples.md",
+      "bytes": 7149,
+      "sha256": "sha256-ff2ece4675432b93b819940b0c9abc47ec52501a47fbc9c22e03a7cf2d44d42b"
+    },
+    {
+      "path": "scripts/analyze_video.py",
+      "bytes": 7898,
+      "sha256": "sha256-8af0b33bd61250f3bcf8dc5762c91e92b33a77612e6de4a16777cca28c60fb5c"
+    },
+    {
+      "path": "scripts/download_douyin.py",
+      "bytes": 7423,
+      "sha256": "sha256-3ebe9535a6c91d349f50f00a236ab1aa059fe827113ba70bf87d3b6412fa3cf0"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 13746,
+      "sha256": "sha256-b6ca5501cecd2ae189cac70de531daa7afe0d24a06402635e99f16b02ca61068"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

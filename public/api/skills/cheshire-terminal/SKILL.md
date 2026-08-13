@@ -9,12 +9,13 @@ Use this skill for product, code, or operations work around Cheshire Terminal. K
 
 ## Operating Flow
 
-1. Load `references/current-site.md` when the task needs current product routes, addresses, voice configuration, or page/module names.
-2. Treat `https://cheshireterminal.ai` as the canonical public app.
-3. Use the `$CLAWD` mint from the reference file for token-gated reads, balance checks, swap prefill, burn tracking, and docs.
-4. Use LiveKit only through the configured public agent ID unless the user provides a different deployment.
-5. Use Jupiter for swaps and quotes; never fabricate prices, routes, slippage, or transaction status.
-6. Require explicit user confirmation before any wallet signature, token launch, swap, burn, stake, treasury payment, or mainnet write.
+1. Load `references/mesh.md` when the task needs the skills-store / skills / client / cli / server wiring.
+2. Load `references/current-site.md` when the task needs current product routes, addresses, voice configuration, or page/module names.
+3. Treat `https://cheshireterminal.ai` as the canonical public app and live skill hub (`/skills`, `/skills-store`, `/cli`). Skill Hub static catalog: `https://skills.x402.wtf`.
+4. Use the `$CLAWD` mint from the reference file for token-gated reads, balance checks, swap prefill, burn tracking, and docs.
+5. Use LiveKit only through the configured public agent ID unless the user provides a different deployment.
+6. Use Jupiter for swaps and quotes; never fabricate prices, routes, slippage, or transaction status.
+7. Require explicit user confirmation before any wallet signature, token launch, swap, burn, stake, treasury payment, or mainnet write.
 
 ## Implementation Guidance
 

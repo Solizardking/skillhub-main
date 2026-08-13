@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-image-upload",
+  "name": "huashu-image-upload",
+  "description": "文章配图一键生成并上传图床，自动插入Markdown链接。当用户提到\"配图\"、\"插图\"、\"上传图片\"、\"文章配图\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-image-upload/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-image-upload/metadata.json",
+  "bundleHash": "sha256-60a2bcaf540470b978b728a55364deb846c8d484cf895f759277a951356928eb",
+  "merkleLeaf": "sha256-31d3ddb8b31c35192e1f371eacb888cc50ffb256afbc9d59b03be4801ad68247",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 7287,
+      "sha256": "sha256-8705ac24111300123de6b06a10b7f3fac2e0f8392294a715cf3b87f701e1fa0a"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

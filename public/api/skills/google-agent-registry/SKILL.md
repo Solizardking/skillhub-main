@@ -30,6 +30,7 @@ Load details when needed:
 
 - [references/registry-files.md](references/registry-files.md) — file roles, size limits, extensions
 - [references/apigee.md](references/apigee.md) — proxies, hostnames, smoke
+- [references/artifacts/](references/artifacts/) — hub copies of `registry/google/` cards and OpenAPI
 - [scripts/check-registry.sh](scripts/check-registry.sh) — local size + parity smoke
 
 ## Hard rules

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-info-search",
+  "name": "huashu-info-search",
+  "description": "多渠道搜索新产品新技术，交叉验证后存入知识库。当用户提到\"最新信息\"、\"新产品\"、\"搜索资料\"、\"查资料\"、\"了解XX\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-info-search/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-info-search/metadata.json",
+  "bundleHash": "sha256-f31197fdc16f632d0e36e94bfb344f0b4aa5d15b4b7f7211326c9ed37c30d48b",
+  "merkleLeaf": "sha256-12bc4835c54ad4eba86e8c99c2b74616c11ad6eb575c2e08aa53b042b43f3689",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2329,
+      "sha256": "sha256-78aa1593f2ac1eed93843945c80fde8fcd393b3f94ea94310d0e3a29727d70c5"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

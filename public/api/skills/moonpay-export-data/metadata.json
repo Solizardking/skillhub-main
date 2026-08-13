@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-export-data",
+  "name": "moonpay-export-data",
+  "description": "Export portfolio balances and transaction history to CSV or JSON files. Use for spreadsheets, tax reporting, or record-keeping.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-export-data/SKILL.md"
+}

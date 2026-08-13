@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "paybox",
+  "name": "paybox",
+  "description": "MoonPay PayBox payment vault for AI agents — official MCP at https://api.paybox.sh/mcp, OAuth 2.1, scoped credentials, and Cheshire mcp-server proxy tools (get_paybox_*).",
+  "source": "https://skills.x402.wtf/api/skills/paybox/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/paybox/metadata.json",
+  "bundleHash": "sha256-7d7cf7184a84261dc97e2a850c4d2a54aaa1187c7c5453ad15bde2bc4306699d",
+  "merkleLeaf": "sha256-a4ba0a48ee0a6472bcd27085f9ee781383f4bf3c53bfbf615550eaf0f5941465",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 3527,
+      "sha256": "sha256-f182c9fcf497693fbeba706aee16090718e86e2ec8a56b92aa72b72a71dcc2e4"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

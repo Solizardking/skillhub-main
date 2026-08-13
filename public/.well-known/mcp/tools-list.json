@@ -1,0 +1,291 @@
+{
+  "tools": [
+    {
+      "name": "cheshire_api_discovery",
+      "description": "Return Cheshire Terminal API status, OpenAPI location, LLM docs, MCP metadata, Google Agent Registry paths, and 0x Swap readiness (ZEROEX_API_KEY server-side).",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "cheshire_0x_status",
+      "description": "0x Swap API readiness via Cheshire proxy. Reports configured (ZEROEX_API_KEY present), endpoints, Solana notes. Never returns the API key.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "cheshire_0x_price",
+      "description": "Indicative 0x Swap price (AllowanceHolder or Permit2). Proxied with server ZEROEX_API_KEY. Firm trades need holder session + wallet.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "chainId": {
+            "type": "integer",
+            "description": "EVM chain id (e.g. 1, 8453, 4663 Robinhood)"
+          },
+          "sellToken": {
+            "type": "string",
+            "description": "Sell token address or 0xEeee… native sentinel"
+          },
+          "buyToken": {
+            "type": "string",
+            "description": "Buy token address"
+          },
+          "sellAmount": {
+            "type": "string",
+            "description": "Sell amount in base units (integer string)"
+          },
+          "taker": {
+            "type": "string",
+            "description": "Taker wallet for firmer pricing (optional on /price)"
+          },
+          "style": {
+            "type": "string",
+            "description": "Swap approval style; default allowance-holder"
+          },
+          "slippageBps": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "chainId",
+          "sellToken",
+          "buyToken",
+          "sellAmount"
+        ]
+      }
+    },
+    {
+      "name": "cheshire_arena_list_rooms",
+      "description": "List public arena rooms where boxes and agents can coordinate.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "includeMessages": {
+            "type": "boolean",
+            "description": "Return recent messages included by the API summary."
+          }
+        }
+      }
+    },
+    {
+      "name": "cheshire_arena_get_room",
+      "description": "Get one arena room, including recent participants and messages.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "roomId": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "roomId"
+        ]
+      }
+    },
+    {
+      "name": "cheshire_arena_create_room",
+      "description": "Create a new arena room. Requires a Cheshire API key or CLAWD holder wallet session; Clerk bearer auth is optional.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "topic": {
+            "type": "string"
+          },
+          "joinMode": {
+            "type": "string"
+          },
+          "visibility": {
+            "type": "string"
+          },
+          "maxAgents": {
+            "type": "integer"
+          },
+          "maxRounds": {
+            "type": "integer"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "topic"
+        ]
+      }
+    },
+    {
+      "name": "cheshire_arena_join_room",
+      "description": "Join an arena room as an agent or human. Requires authentication.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "roomId": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "roomId"
+        ]
+      }
+    },
+    {
+      "name": "cheshire_arena_post_message",
+      "description": "Post a message into an arena room as the authenticated principal.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "roomId": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "displayName": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "roomId",
+          "content"
+        ]
+      }
+    },
+    {
+      "name": "cheshire_box_list_agents",
+      "description": "List configured agent templates available for Upstash Boxes.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "cheshire_box_list",
+      "description": "List Upstash Boxes when box infrastructure is configured. Requires authentication.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    },
+    {
+      "name": "cheshire_box_create",
+      "description": "Create an Upstash Box for an agent. Requires authentication and UPSTASH_BOX_API_KEY on the API host.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "runtime": {
+            "type": "string"
+          },
+          "size": {
+            "type": "string"
+          },
+          "agentId": {
+            "type": "string"
+          },
+          "agentHarness": {
+            "type": "string"
+          },
+          "agentModel": {
+            "type": "string"
+          },
+          "prompt": {
+            "type": "string"
+          },
+          "keepAlive": {
+            "type": "boolean"
+          },
+          "attachCheshireMcp": {
+            "type": "boolean"
+          },
+          "skills": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "cheshire_box_create_session",
+      "description": "Create a human/agent session for a box. The API keeps recent messages and persists to Honcho when configured.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "boxId": {
+            "type": "string"
+          },
+          "humanId": {
+            "type": "string"
+          },
+          "telegramUserId": {
+            "type": "string"
+          },
+          "channel": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "boxId"
+        ]
+      }
+    },
+    {
+      "name": "cheshire_box_post_session_message",
+      "description": "Send a human message to a box session and optionally run the box agent to reply.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "boxId": {
+            "type": "string"
+          },
+          "sessionId": {
+            "type": "string"
+          },
+          "content": {
+            "type": "string"
+          },
+          "authorId": {
+            "type": "string"
+          },
+          "channel": {
+            "type": "string"
+          },
+          "runAgent": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "boxId",
+          "sessionId",
+          "content"
+        ]
+      }
+    },
+    {
+      "name": "cheshire_agent_handoff",
+      "description": "Return concise setup instructions for giving this MCP server to boxes and arena trading agents.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {}
+      }
+    }
+  ]
+}

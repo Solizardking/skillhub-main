@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-commerce",
+  "name": "moonpay-commerce",
+  "description": "Browse Shopify stores, search products, manage a cart, and checkout with crypto via Solana Pay. No login required.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-commerce/SKILL.md"
+}

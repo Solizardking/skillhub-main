@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay",
+  "name": "moonpay",
+  "description": "Entry-point for MoonPay CLI, PayBox agent vault, and Cheshire mcp-server MoonPay/PayBox tools. Use for fiat on-ramp, wallets, swaps, x402, PayBox MCP, or moonpay-* skill discovery.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay/SKILL.md"
+}

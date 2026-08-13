@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "shipp-sports-data",
+  "name": "shipp-sports-data",
+  "description": "Real-time sports & events data for AI agents via Shipp. Use when the user wants live scores, schedules, or game events for NBA, NFL, NCAA Football, MLB, or Soccer — especially to power prediction market trading strategies on Polymarket or Kalshi using a MoonPay wallet.",
+  "source": "https://skills.x402.wtf/api/skills/shipp-sports-data/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/shipp-sports-data/metadata.json",
+  "bundleHash": "sha256-1b44ff4908afab1db8e19e9844c72bc2d45a5eea01dd7b657dc33148d7a626dd",
+  "merkleLeaf": "sha256-724a62683379dbec532764c0aa6f620fcfd9b5b290eb947de3a6c51b01d6494d",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 5826,
+      "sha256": "sha256-597cda5ae9cd182a84c877493b85da7bd021aa85c73898db90356adef9fc1bbe"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

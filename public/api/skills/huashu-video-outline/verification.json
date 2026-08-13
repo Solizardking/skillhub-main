@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-video-outline",
+  "name": "huashu-video-outline",
+  "description": "快速生成2-3个视频大纲方案，含标题、封面建议和结构设计。当用户提到\"视频大纲\"、\"视频结构\"、\"脚本大纲\"、\"视频选题\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-video-outline/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-video-outline/metadata.json",
+  "bundleHash": "sha256-be13ef566353fe14af634c91e4da1b1866da32182840f25fd690c6c36324fe31",
+  "merkleLeaf": "sha256-04a2483757957b754035ca1731c60cffc0427f2f8e0717a2fb47993786e277ab",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2142,
+      "sha256": "sha256-434439278a449e9b5923f51d31399fd171d867ddc6dce467281c4bf8040dab69"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

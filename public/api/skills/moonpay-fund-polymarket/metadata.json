@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-fund-polymarket",
+  "name": "moonpay-fund-polymarket",
+  "description": "Install the Polymarket CLI and fund its wallet with USDC.e and POL on Polygon via MoonPay.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-fund-polymarket/SKILL.md"
+}

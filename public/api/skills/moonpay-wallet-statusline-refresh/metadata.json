@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-wallet-statusline-refresh",
+  "name": "moonpay-wallet-statusline-refresh",
+  "description": "Manually refresh wallet balances shown in a compatible CLI status line. Use when the user says \"refresh balances\", \"update status bar\", or after receiving funds from outside the CLI.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-wallet-statusline-refresh/SKILL.md"
+}

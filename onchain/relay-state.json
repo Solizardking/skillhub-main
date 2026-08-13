@@ -1,16 +1,30 @@
 {
   "schemaVersion": "skillhub-relay-state/v1",
-  "updatedAt": "2026-07-15T20:16:35.794Z",
-  "reason": "one-shot",
-  "totalSkills": 570,
+  "updatedAt": "2026-08-13T20:13:27.603Z",
+  "reason": "fast:one-shot",
+  "totalSkills": 674,
   "nvidiaSkills": 229,
-  "merkleRoot": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c",
-  "catalogHash": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4",
+  "merkleRoot": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793",
+  "catalogHash": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849",
+  "process": {
+    "schemaVersion": "skillhub-skills-process-state/v1",
+    "updatedAt": "2026-08-13T20:13:23.892Z",
+    "reason": "relay-fast:one-shot",
+    "totalSkills": 674,
+    "inventorySlugs": 674,
+    "fingerprint": "1a93f5285d6977a289a403235e44363ca2d419ecd82213aa14dde58dce0462b0",
+    "addedDuringCycle": [],
+    "removedDuringCycle": [],
+    "categorizedCount": 674,
+    "readmeBadgeMatchesCatalog": true,
+    "scan": null,
+    "durationMs": 335463
+  },
   "onchainSurfaces": {
-    "mirrorSelected": 570,
-    "mirrorTotal": 570,
-    "anchorStatus": "anchored",
+    "mirrorSelected": 674,
+    "mirrorTotal": 674,
+    "anchorStatus": "anchor-stale",
     "ledgerCount": 2
   },
-  "durationMs": 6691
+  "durationMs": 339334
 }

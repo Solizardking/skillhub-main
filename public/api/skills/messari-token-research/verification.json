@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "messari-token-research",
+  "name": "messari-token-research",
+  "description": "Full token research workflow using Messari x402 API. Fetches asset fundamentals, price history, sentiment signals, and news, then synthesizes a research brief via Messari AI. Total cost ~$1.00–$1.50 USDC per run.",
+  "source": "https://skills.x402.wtf/api/skills/messari-token-research/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/messari-token-research/metadata.json",
+  "bundleHash": "sha256-2330507150ee56e0c8846c540f3a26b236e15a31f12195edfdfd0b53d2d7aa4c",
+  "merkleLeaf": "sha256-b19aeadc9ef442da40aa72ec632af84298c4ba45cf6146b557f6b6b152cf28ee",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 5669,
+      "sha256": "sha256-eaee1fccfe85593e1c445038de1f3ea9ceb86d9964d85a594065d5f5d4fb936e"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

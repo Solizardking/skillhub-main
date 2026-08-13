@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "yield-optimization",
+  "name": "yield-optimization",
+  "description": "Multi-chain yield optimization via yield.xyz (StakeKit). Discover 2,988+ yield opportunities across 75+ blockchains, build deposit/withdrawal transactions with shell scripts, and sign them with a MoonPay wallet. Use when the user wants to earn yield, find the best lending or staking rate, enter/exit a position, or check portfolio balances.",
+  "source": "https://skills.x402.wtf/api/skills/yield-optimization/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/yield-optimization/metadata.json",
+  "bundleHash": "sha256-9c506da6f3b29353a08f9dce02e7ce0c6db470659d69d2fb19425ad4779c28bc",
+  "merkleLeaf": "sha256-f837fddaf6806194879595aa5284c11dd7cb6b9118520fa91f3af70e128d9cf5",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 6466,
+      "sha256": "sha256-feaebed5b3b26ecc48f782a0187fbe06a9d6782ccb302929d16d3723aaf50e54"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

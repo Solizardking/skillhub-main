@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-buy-crypto",
+  "name": "moonpay-buy-crypto",
+  "description": "Buy crypto with fiat via MoonPay. Returns a checkout URL to complete the purchase in a browser.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-buy-crypto/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-buy-crypto/metadata.json",
+  "bundleHash": "sha256-0fadbd0112f4fdbad24e2a4bd9126b9f750ab05347614b1106634418f007eff2",
+  "merkleLeaf": "sha256-003e7883c6beeef488cf82b083bab7a7fbb32a7192dbbb59f52fcd7467040123",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 1483,
+      "sha256": "sha256-2d0e6365cbd6e08e61a9f357894a7f468c18d047f80a145a6b593cdab3d3ddab"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

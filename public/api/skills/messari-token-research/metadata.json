@@ -1,0 +1,7 @@
+{
+  "slug": "messari-token-research",
+  "name": "messari-token-research",
+  "description": "Full token research workflow using Messari x402 API. Fetches asset fundamentals, price history, sentiment signals, and news, then synthesizes a research brief via Messari AI. Total cost ~$1.00–$1.50 USDC per run.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/messari-token-research/SKILL.md"
+}

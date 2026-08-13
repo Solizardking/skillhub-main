@@ -1,0 +1,7 @@
+{
+  "slug": "messari-funding-intel",
+  "name": "messari-funding-intel",
+  "description": "Funding intelligence workflow using Messari x402. Scans recent rounds, M&A activity, venture funds, and organizations, then synthesizes a VC landscape brief via Messari AI. Total cost ~$0.75–$1.25 USDC per run.",
+  "category": "Utilities",
+  "skill": "/api/skills/messari-funding-intel/SKILL.md"
+}

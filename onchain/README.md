@@ -8,6 +8,8 @@
 | `publish-receipt.json` | yes | Last successful **catalog** anchor (public explorer links only) |
 | `public-ledger.json` | yes | **Redacted** community submissions (safe for GitHub) |
 | `agentregistry-mirror.json` | yes | Proof map for importing skills into local agentregistry |
+| `relay-state.json` | yes | Last skill-relay run (counts, merkle, surface health) |
+| `skills-process-state.json` | yes | Last `skills:process` inventory fingerprint + scan summary |
 | `submissions/` | **no** (gitignored) | Private job store: full files, scan detail, payment memos |
 
 ## Security
@@ -74,9 +76,10 @@ Open http://localhost:12121 and look for skills with Arweave packages and verifi
 
 ## Hubs
 
-- Primary: https://skills.x402.wtf
+- Live product hub: https://cheshireterminal.ai/skills
+- Skills store: https://cheshireterminal.ai/skills-store
+- Static catalog: https://skills.x402.wtf
 - Alias: https://skills.onchainai.fund
-- Cheshire: https://cheshireterminal.ai/skills
 - Ledger UI: https://skills.x402.wtf/submissions
 - API: https://skills.x402.wtf/api/submissions.json
 - agentregistry mirror: https://skills.x402.wtf/api/agentregistry.json

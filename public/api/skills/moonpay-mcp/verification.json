@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-mcp",
+  "name": "moonpay-mcp",
+  "description": "Set up MoonPay as an MCP server for Claude Desktop or Claude Code. Provides all MoonPay CLI tools via the Model Context Protocol.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-mcp/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-mcp/metadata.json",
+  "bundleHash": "sha256-8d4f0aeec5ad98102a7c412b7911aed3bcdaa01d7a41ac8999c8a496d260ca4e",
+  "merkleLeaf": "sha256-5fab52bf7742fcf110666c49eb5dedd75a88f24479c7a33ec3c25f2ec6a22d90",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2373,
+      "sha256": "sha256-2436d8310049087042112ba07ee9e6b422c0567dd1087a17e3a4373234ecbae9"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "grilling",
+  "name": "grilling",
+  "description": "Grill the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
+  "source": "https://skills.x402.wtf/api/skills/grilling/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/grilling/metadata.json",
+  "bundleHash": "sha256-b354f730432cb7ab24ec6b663e5dc0a2ce5d2c7c5bd2d97c2cd1ec1ada852e3b",
+  "merkleLeaf": "sha256-370977141a1440d3765db29a147e5f5c7d9bad7234a77c4e2e5e2370120412c0",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 821,
+      "sha256": "sha256-5a35925d03a391bcfa46940868b649b72dba89ec9c19525e785bbb6bd3a7f478"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

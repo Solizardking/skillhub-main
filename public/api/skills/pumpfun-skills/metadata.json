@@ -1,0 +1,7 @@
+{
+  "slug": "pumpfun-skills",
+  "name": "pumpfun-skills",
+  "description": "Full Pump.fun skill pack with nested pump-* and pumpfun-* playbooks (admin, bonding curve, fees, lifecycle, MCP, security, testing, wallets). Use when installing the complete pump suite or navigating pumpfun-skills/* packages. Distinct from the pumpfun entry-point router skill.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/pumpfun-skills/SKILL.md"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "messari-deep-research",
+  "name": "messari-deep-research",
+  "description": "Async deep-research report workflow using Messari AI. Starts a long-form research job, polls until complete, and returns a comprehensive report on any crypto topic, asset, or protocol. Cost varies; typically $0.50–$2.00 USDC.",
+  "source": "https://skills.x402.wtf/api/skills/messari-deep-research/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/messari-deep-research/metadata.json",
+  "bundleHash": "sha256-c557fa611af84be3013deb7d4f66907c128a90af33ed6cfd6fa21af972a7a497",
+  "merkleLeaf": "sha256-00efccf825e9b04f5d5aeafe9a5a8adc89c401432bff48e998172c0c73d4f1fa",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 6245,
+      "sha256": "sha256-640c4d989d4cbc3770989de3b5919af5d73f93c43d8eba9f1b78b88e0f57c08a"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

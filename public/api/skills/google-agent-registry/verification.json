@@ -5,8 +5,8 @@
   "description": "Maintain and register Cheshire Google Agent Registry artifacts under registry/google (A2A agent card, MCP tools list, MCP interface, server card, zero-service OpenAPI) and deploy Apigee reverse proxies on project x402-477302. Use for gcloud agent-registry, 10 KB size limits, tool-name parity with server/mcp/tools.ts, Apigee test-env, or validate:google-registry / register:google-agent.",
   "source": "https://skills.x402.wtf/api/skills/google-agent-registry/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/google-agent-registry/metadata.json",
-  "bundleHash": "sha256-d7a8b239ae842ac600a0820332bfdeccc2a42c442b03c22e720004a1de5ffd48",
-  "merkleLeaf": "sha256-5d08a57507b094c99ec44da3d7e8a4a7f3e691c51536f2496973d83e84fc1e24",
+  "bundleHash": "sha256-000c6029c913825237868d019fdb850a38c40298ce3050a4843b90cb7cae5216",
+  "merkleLeaf": "sha256-4ccc45a0a1d11c31b02ad1dbc8e3669d84d848f0bb0ad66646259856a172a7ea",
   "files": [
     {
       "path": "references/apigee.md",
@@ -14,9 +14,44 @@
       "sha256": "sha256-242be6628e51ecb3b5b9acccb7f083579dd7059bd187fa1940784f531b2c6377"
     },
     {
+      "path": "references/artifacts/canonical-mcp-resource.json",
+      "bytes": 3543,
+      "sha256": "sha256-0eeb9c03a6e3157a1f55b24af47fcbbe31c5cb325ca18380a1c0ff246fb0cbb6"
+    },
+    {
+      "path": "references/artifacts/cheshire-agent-card.json",
+      "bytes": 3694,
+      "sha256": "sha256-a01a835c5e617fbcfc5af22c0e54f49299cd4daa188f5573169c906d8031a245"
+    },
+    {
+      "path": "references/artifacts/cheshire-mcp-interface.json",
+      "bytes": 91,
+      "sha256": "sha256-8958b6883873b3ad38066e130cefe7a297a27046256c00d9a7a1814b783b9565"
+    },
+    {
+      "path": "references/artifacts/cheshire-mcp-server-card.json",
+      "bytes": 1342,
+      "sha256": "sha256-c326b74073742aaa77c849effabb0ea8eb474efbab905bba6f7590eaabc02004"
+    },
+    {
+      "path": "references/artifacts/cheshire-mcp-tools-list.json",
+      "bytes": 7593,
+      "sha256": "sha256-a2977cc1558760d3c42528e1d2b8345440d35aa6902705064db7c2e57e40e6fe"
+    },
+    {
+      "path": "references/artifacts/openapi-0x-swap.yaml",
+      "bytes": 5790,
+      "sha256": "sha256-afdc63d8608451f4bcfcd3fec9a59156d9a654b19190cb0bcdd5643c555043c1"
+    },
+    {
+      "path": "references/artifacts/openapi-zero-service.yaml",
+      "bytes": 1570,
+      "sha256": "sha256-3ea346ffd8a263836fb6459b4ae6290e2785edf7b472e91d19f87030b40ad4fe"
+    },
+    {
       "path": "references/registry-files.md",
-      "bytes": 2789,
-      "sha256": "sha256-29fc4e6e144af3b0713209676646bbdb722fb1fc7c9a79ea21a03e588b00b1df"
+      "bytes": 3172,
+      "sha256": "sha256-622e6fab4192470bc7b0880e56a2a5e57b1780a311888d5bc696a507af9317ca"
     },
     {
       "path": "scripts/check-registry.sh",
@@ -25,8 +60,8 @@
     },
     {
       "path": "SKILL.md",
-      "bytes": 3257,
-      "sha256": "sha256-652e13cda5e8c1bacdf716fab2a637730396cb8602a76dc7e4f220ecc21b35f3"
+      "bytes": 3361,
+      "sha256": "sha256-49788211aa6bb022d46b9ed245ea400a5d9216c79dc9dcfdfad7924a86abe4ff"
     }
   ],
   "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",

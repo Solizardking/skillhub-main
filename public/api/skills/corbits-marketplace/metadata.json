@@ -1,0 +1,7 @@
+{
+  "slug": "corbits-marketplace",
+  "name": "corbits-marketplace",
+  "description": "Paid API marketplace for AI agents via Corbits. Search hundreds of premium API proxies, call them with automatic USDC micropayments (x402 protocol), and fund the payment wallet with MoonPay. Use when the user wants to access paid data APIs (crypto prices, weather, financial data, etc.) with per-request billing and no API key management.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/corbits-marketplace/SKILL.md"
+}

@@ -1,71 +1,67 @@
 ---
 name: rh-crypto-agent
 description: >
-  Robinhood Crypto Agent open stack — pack index for Robinhood Chain / Uniswap EVM
-  agent skills (bonded launch, LaunchpadV3, swaps, LP, DCA, copy-trade, payments,
-  viem, Cheshire agent registries). Use when installing the RH pack, pointing
-  clawdbot at the open stack, or choosing which RH/EVM skill to load next.
+  Robinhood Crypto Agent open skill pack for Robinhood Chain / EVM trading and launch
+  agents. Covers bonded launch, Launchpad V3, Uniswap swaps/LP, DCA, copy-trade,
+  payments, viem, and Cheshire agent registry skills. Use when pointing clawdbot at
+  the RH pack, installing the suite, or building Robinhood Chain crypto agents.
 ---
 
 # Robinhood Crypto Agent Open Stack
 
-Open-source skill pack for **anyone** building Robinhood Chain / EVM trading and launch agents (Zero Clawd / clawdbot).
+Open-source skill **pack** for building Robinhood Chain / EVM trading and launch agents with Zero Clawd (`go-bot` / `clawdbot`).
 
-This Skill Hub entry is the **pack index**. Member skills are installed as top-level hub slugs (not nested under this path) so catalog names stay unique. Upstream `cheshire-terminal-agents` npm package vendors the nested pack under `skills/rh-crypto-agent/`.
+This hub entry is the **pack index**. Nested skill bodies for the full open stack live in the Cheshire agents monorepo at `skills/rh-crypto-agent/` (or install individual first-class suite skills from this hub).
 
-## Member skills (21)
+## Suite membership
 
-- [`cheshire-agent-identity-registry`](../cheshire-agent-identity-registry/SKILL.md)
-- [`cheshire-agent-registries`](../cheshire-agent-registries/SKILL.md)
-- [`cheshire-agent-reputation-registry`](../cheshire-agent-reputation-registry/SKILL.md)
-- [`cheshire-agent-validation-registry`](../cheshire-agent-validation-registry/SKILL.md)
-- [`cheshire-zk-omni`](../cheshire-zk-omni/SKILL.md)
-- [`copy-trade`](../copy-trade/SKILL.md)
-- [`dca-bot`](../dca-bot/SKILL.md)
-- [`deployer`](../deployer/SKILL.md)
-- [`index-bot`](../index-bot/SKILL.md)
-- [`liquidity-planner`](../liquidity-planner/SKILL.md)
-- [`lp-integration`](../lp-integration/SKILL.md)
-- [`pay-with-any-token`](../pay-with-any-token/SKILL.md)
-- [`pay-with-app`](../pay-with-app/SKILL.md)
-- [`rh-bonded-launch`](../rh-bonded-launch/SKILL.md)
-- [`rh-launchpad-v3`](../rh-launchpad-v3/SKILL.md)
-- [`swap-integration`](../swap-integration/SKILL.md)
-- [`swap-planner`](../swap-planner/SKILL.md)
-- [`v4-hook-generator`](../v4-hook-generator/SKILL.md)
-- [`v4-sdk-integration`](../v4-sdk-integration/SKILL.md)
-- [`v4-security-foundations`](../v4-security-foundations/SKILL.md)
-- [`viem-integration`](../viem-integration/SKILL.md)
+Listed in `suite-index.json` as pack root (`pack-index.json` + nested skills). First-class suite skills also ship as top-level hub entries:
 
-## When to use this skill
+- `cheshire-agent-identity-registry`
+- `cheshire-agent-registries`
+- `cheshire-agent-reputation-registry`
+- `cheshire-agent-validation-registry`
+- `cheshire-zk-omni`
+- `rh-bonded-launch`
+- `rh-launchpad-v3`
+- plus forge / omni / messaging: `robinhood-agent-forge`, `cheshire-omni-mint`, `zk-omni-messaging`
 
-- User asks for the **RH crypto agent pack**, open stack, or full Robinhood/EVM skill set
-- Pointing clawdbot / go-bot at a skills directory for RH work
-- Deciding which member skill to open next (launch vs swap vs LP vs registry)
-
-## Install (Skill Hub)
+## Point clawdbot at the pack
 
 ```bash
-npx github:Solizardking/skills install rh-crypto-agent rh-bonded-launch rh-launchpad-v3 viem-integration
-npx github:Solizardking/skills install cheshire-agent-registries robinhood-agent-forge cheshire-omni-mint zk-omni-messaging
+# Full suite (registries + forge + launch + pack)
+export CLAWDBOT_SKILLS_DIR="/path/to/agents/skills"
+
+# Or the vendored RH open pack only
+export CLAWDBOT_SKILLS_DIR="/path/to/agents/skills/rh-crypto-agent"
 ```
 
-## npm package
+## Install first-class skills from this hub
 
 ```bash
-npm i cheshire-terminal-agents
+npx github:Solizardking/skills install \
+  cheshire-agent-registries \
+  cheshire-agent-identity-registry \
+  robinhood-agent-forge \
+  cheshire-omni-mint \
+  cheshire-zk-omni \
+  rh-bonded-launch \
+  rh-launchpad-v3 \
+  zk-omni-messaging \
+  rh-crypto-agent
 ```
 
-Pack metadata: [pack-index.json](./pack-index.json) · [README.md](./README.md)
+## Pack metadata
 
-## Robinhood use cases
+- `pack-index.json` — skill id list and counts
+- `catalog.json` — flat catalog entries for the open stack
+- `README.md` — operator-facing pack docs
+- Root indexes: `suite-index.json`, `skillhub-index.json`
 
-- Permissionless bonded token launch (`rh-bonded-launch`) and V3 graduation (`rh-launchpad-v3`)
-- Swaps / LP / Uniswap v4 hooks
-- DCA, index baskets, and copy-trade
-- Cheshire agent identity / reputation / validation registries + zk-omni / omni dual-rail mint
-- EVM reads/writes with `viem-integration`
+## Product surfaces
 
-## License
-
-MIT (same as parent unless a member skill notes otherwise).
+| Surface | URL |
+|---------|-----|
+| Agent hub | https://cheshireterminal.ai/agents |
+| Forge | https://cheshireterminal.ai/agents/forge |
+| FunPump | https://funpump.ai |

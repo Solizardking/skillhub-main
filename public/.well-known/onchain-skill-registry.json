@@ -7,9 +7,9 @@
   "cluster": "mainnet-beta",
   "status": "anchor-ready",
   "hashAlgorithm": "sha256",
-  "totalSkills": 595,
-  "catalogHash": "sha256-24594e39a277fefe829962d7294aa8a616f5fb1658cdbabb76586a1039e62dd7",
-  "merkleRoot": "sha256-b1a2bb5e839cb9e4c06cfebeba3b5109b2148c3ce964851860cbf37bc929b246",
+  "totalSkills": 674,
+  "catalogHash": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849",
+  "merkleRoot": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793",
   "solana": {
     "registryProgramId": null,
     "registryPda": null,
@@ -26,6 +26,61 @@
     "skillSource": "https://skills.x402.wtf/api/skills/{skill}/SKILL.md"
   },
   "skills": [
+    {
+      "slug": "agentic-wallet",
+      "name": "agentic-wallet",
+      "description": "Crypto wallet operations via the awal CLI — sign in, check balances, send USDC/ETH/POL/SOL, trade tokens, fund the wallet, and use the x402 payment protocol to discover paid services, pay for API calls, monetize an API, or query onchain data. Use whenever the user mentions signing in, login, authentication, wallet status, balance, address, sending money, paying someone, transferring tokens, ENS names, swapping/trading/converting tokens, funding/topping up/onramp, USDC, ETH, POL, SOL, the x402 bazaar, paid APIs, monetizing an endpoint, or querying onchain data on Base.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-abe7f781f882eba3a3337dfe8fa4f14e8ed59c5840273995bb53eaed455704af",
+      "merkleLeaf": "sha256-111ef392231f853690d2b6b518a4b5673b4be7b4097cde35cc3adf384390f2b8",
+      "fileCount": 10,
+      "metadata": "/api/skills/agentic-wallet/metadata.json",
+      "verification": "/api/skills/agentic-wallet/verification.json"
+    },
+    {
+      "slug": "alchemy-agentic-gateway",
+      "name": "alchemy-agentic-gateway",
+      "description": "Use when accessing Alchemy APIs for RPC calls, token balances, NFT metadata, asset transfers, transaction simulation, or Alchemy-specific features. Also use when the user mentions \"SIWE\", \"SIWS\", \"x402\", \"MPP\", \"mppx\", or \"agentic gateway\" — this skill covers wallet-based auth flows for Alchemy's x402 and MPP protocols on EVM (Ethereum, Base, Polygon) and SVM (Solana).",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-54b2c4c8c6e81ce08ee1e7f1f668f10410f38f458b580c896d698b20322726bc",
+      "merkleLeaf": "sha256-8b75476340b3cace1d428e3f4df2c2fe3a38b50b0c9bca53d754f5092d732c3b",
+      "fileCount": 1,
+      "metadata": "/api/skills/alchemy-agentic-gateway/metadata.json",
+      "verification": "/api/skills/alchemy-agentic-gateway/verification.json"
+    },
+    {
+      "slug": "alchemy-api",
+      "name": "alchemy-api",
+      "description": "Integrates Alchemy blockchain APIs using an API key. Requires $ALCHEMY_API_KEY to be set; if unavailable, use the alchemy-agentic-gateway skill instead. Use when user asks about EVM JSON-RPC calls, token balances, NFT ownership or metadata, transfer history, token prices, portfolio data, transaction simulation, webhooks, Solana RPC, or any Alchemy product integration. Covers base URLs, authentication, endpoint selection, pagination, and common patterns.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-4ed456ad19f1940633fc57ef5c786f17f23c8266cf4fd8b59678cee16e5a5df2",
+      "merkleLeaf": "sha256-40f43d178f5f43a33f3dd231106472a0b3a3f19f13f216d7671d0005aab3afde",
+      "fileCount": 1,
+      "metadata": "/api/skills/alchemy-api/metadata.json",
+      "verification": "/api/skills/alchemy-api/verification.json"
+    },
+    {
+      "slug": "allium-onchain-data",
+      "name": "allium-onchain-data",
+      "description": "Query blockchain data via Allium APIs. Token prices, wallet balances, transactions, historical data. Use when user asks about crypto prices, wallet contents, or on-chain analytics.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-de3361bdd2e70ef3c6dd7f961ed0e14a0cf93c56e5cabdb683ae72e74c591994",
+      "merkleLeaf": "sha256-c2f0008ea560d71e92924d84318f4acfc52a8089ec2add4fdf6897277649f37e",
+      "fileCount": 1,
+      "metadata": "/api/skills/allium-onchain-data/metadata.json",
+      "verification": "/api/skills/allium-onchain-data/verification.json"
+    },
+    {
+      "slug": "allium-x402",
+      "name": "allium-x402",
+      "description": "Query blockchain data via Allium APIs. Supports API key, x402 micropayments, and Tempo auth. Covers prices, wallets, tokens, and SQL analytics.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-0144998bae02c9d36b825027a02788cc49b3510ec646e2450217e6ebbbec3ac0",
+      "merkleLeaf": "sha256-753795063544a49962864d92455c40c968199b473322ed6fc921ecddeb9b4457",
+      "fileCount": 1,
+      "metadata": "/api/skills/allium-x402/metadata.json",
+      "verification": "/api/skills/allium-x402/verification.json"
+    },
     {
       "slug": "anthropic-skills/claude-api",
       "name": "claude-api",
@@ -64,8 +119,8 @@
       "name": "cheshire-api",
       "description": "Call Cheshire Terminal REST, MCP, discovery, and developer API surfaces for Solana agents, arena rooms, Upstash boxes, trading health, and OpenAPI. Use when integrating cheshireterminal.ai, /mcp, /.well-known/agent-card.json, ct_sk_ API keys, arena coordination, box handoff, or Apigee/zero-service health probes.",
       "category": "Solana / Blockchain",
-      "bundleHash": "sha256-4d04283b35eee220a891140742f015315d631a0b451faf2e2330dbea5032905e",
-      "merkleLeaf": "sha256-944407f680e52f6b9f9685d67a7567907bd367805e1129ad1beb11c24f6f9d39",
+      "bundleHash": "sha256-1fe816513b0ec16c705d3131a8d60a06179f76355bb87fef366acf819192dc56",
+      "merkleLeaf": "sha256-a0ad22c27ba582e953d0d499b5ca88d898926110d1ca1d78d447aee83b9d5a6f",
       "fileCount": 4,
       "metadata": "/api/skills/cheshire-api/metadata.json",
       "verification": "/api/skills/cheshire-api/verification.json"
@@ -97,9 +152,9 @@
       "name": "cheshire-terminal",
       "description": "Operate and extend Cheshire Terminal, the cheshireterminal.ai voice-controlled Solana terminal powered by $CLAWD. Use when working on voice terminal flows, token launch commands, LiveKit voice integration, Jupiter swap surfaces, burn/staking flows, or any task that mentions Cheshire Terminal, cheshireterminal.ai, $CLAWD terminal, or Clawd voice commands.",
       "category": "Solana / Blockchain",
-      "bundleHash": "sha256-798f6cc6d1846f2925a30f7ad470d9485614cecbb28f2bf69c2dd6fcfc44b4db",
-      "merkleLeaf": "sha256-1deb187d2b0aa7579483a9b965c7d934d6c78b059cc742a86a6ccf3e9f3162df",
-      "fileCount": 2,
+      "bundleHash": "sha256-03c99b665ff0db0db1b628435bcf0e58e836ce4758ce2bfd7ee3222020d1f5d1",
+      "merkleLeaf": "sha256-acc82f7fcb25be0528b127aa5bafd8006c7cf530628820dc78420267a70471d4",
+      "fileCount": 3,
       "metadata": "/api/skills/cheshire-terminal/metadata.json",
       "verification": "/api/skills/cheshire-terminal/verification.json"
     },
@@ -203,6 +258,17 @@
       "verification": "/api/skills/coding-agent/verification.json"
     },
     {
+      "slug": "coingecko",
+      "name": "coingecko",
+      "description": "Use this skill for any request involving cryptocurrency market data, coin prices, trading volume, market cap, OHLC charts, historical data, exchanges, derivatives, NFTs, DeFi, on-chain token data, liquidity pools, DEX data, or anything powered by CoinGecko or GeckoTerminal APIs. Trigger this skill whenever the user asks about crypto prices, token data, market trends, or wants to call any CoinGecko or GeckoTerminal endpoint — even if they don't explicitly say \"CoinGecko\". Also trigger when the user asks about API keys, rate limits, or authentication for these APIs.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-c3d8a8c67fdfdeca777c1cec57d2e23c6a7bc00f2c6b51a9f6e8b5e9aa087ee3",
+      "merkleLeaf": "sha256-764b5c7dff25398638c4adab8381086b7ab24e2b84cb8d408fceac4f4c5a3fa6",
+      "fileCount": 23,
+      "metadata": "/api/skills/coingecko/metadata.json",
+      "verification": "/api/skills/coingecko/verification.json"
+    },
+    {
       "slug": "compressed-pda",
       "name": "compressed-pda",
       "description": "For client and program development on Solana ~160x cheaper and without rent-exemption for per-user state, DePIN registrations, or custom compressed accounts. Create, update, close, burn, and reinitialize compressed accounts.",
@@ -234,6 +300,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/copy-trade/metadata.json",
       "verification": "/api/skills/copy-trade/verification.json"
+    },
+    {
+      "slug": "corbits-marketplace",
+      "name": "corbits-marketplace",
+      "description": "Paid API marketplace for AI agents via Corbits. Search hundreds of premium API proxies, call them with automatic USDC micropayments (x402 protocol), and fund the payment wallet with MoonPay. Use when the user wants to access paid data APIs (crypto prices, weather, financial data, etc.) with per-request billing and no API key management.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-8027b85b9016301d182820d81cf8eafe24b3d77eda4a5ba7f79c1d506568edc3",
+      "merkleLeaf": "sha256-d86a2146947f8c0d828e2a4894800cb91fcc2969bc4113e7b49034d7aa12cd64",
+      "fileCount": 1,
+      "metadata": "/api/skills/corbits-marketplace/metadata.json",
+      "verification": "/api/skills/corbits-marketplace/verification.json"
     },
     {
       "slug": "dca-bot",
@@ -357,6 +434,17 @@
       "verification": "/api/skills/dflow-spot-trading/verification.json"
     },
     {
+      "slug": "dune-analytics",
+      "name": "dune-analytics",
+      "description": "Blockchain analytics via Dune REST API — execute DuneSQL queries against live on-chain data, discover decoded contract tables, and monitor credit usage. Use when the user asks about on-chain data, wallet activity, DEX trades, token transfers, smart contract events, or says \"query Dune\", \"run a Dune query\", or \"search Dune datasets\". Pairs with MoonPay to analyze wallets you create and fund.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-600eb1ccbbfdd8f6531ee1397b012c4c92a9a1930d12223212933883e92e2ae1",
+      "merkleLeaf": "sha256-da524bbe4d0c9c172dd2927e32be2b3c3715ea81a3843442aa18f0d283ccf9ab",
+      "fileCount": 1,
+      "metadata": "/api/skills/dune-analytics/metadata.json",
+      "verification": "/api/skills/dune-analytics/verification.json"
+    },
+    {
       "slug": "gateway-node-ops",
       "name": "gateway-node-ops",
       "description": "How to spawn a SolanaOS Gateway and connect headless nodes",
@@ -432,6 +520,17 @@
       "fileCount": 11,
       "metadata": "/api/skills/helius-skills/svm/metadata.json",
       "verification": "/api/skills/helius-skills/svm/verification.json"
+    },
+    {
+      "slug": "huashu-agent-swarm",
+      "name": "huashu-agent-swarm",
+      "description": "多Agent蜂群并行协作，纯git自组织，适合大型项目开发。当用户提到\"蜂群模式\"、\"多agent\"、\"并行开发\"、\"agent swarm\"时使用。",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-644c3a0f02226f4b3944cfe8d40990831233bfe051fe09d8a953282ad23d9c97",
+      "merkleLeaf": "sha256-2ce0ffde884302dc9d2342784d6f5867c520e898dffad135539cb26f82b0bb51",
+      "fileCount": 10,
+      "metadata": "/api/skills/huashu-agent-swarm/metadata.json",
+      "verification": "/api/skills/huashu-agent-swarm/verification.json"
     },
     {
       "slug": "imperial",
@@ -577,6 +676,61 @@
       "verification": "/api/skills/magicblock/verification.json"
     },
     {
+      "slug": "maiat-token-safety",
+      "name": "maiat-token-safety",
+      "description": "Check if an ERC-20 token is safe before swapping. Detects honeypots, high-tax tokens, and rug pulls. Use before any token swap.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-cb7538abf3b3adaabe2db434e55e916b95dddb79505dc2a8180e6f2922df3b55",
+      "merkleLeaf": "sha256-c58548612ca9b50d0c0f2b811b26e0a72eb7e4cf6d9116fd83867fc24cdf79f6",
+      "fileCount": 1,
+      "metadata": "/api/skills/maiat-token-safety/metadata.json",
+      "verification": "/api/skills/maiat-token-safety/verification.json"
+    },
+    {
+      "slug": "maiat-trust-check",
+      "name": "maiat-trust-check",
+      "description": "Check if an agent or token is trustworthy before transacting. Returns trust score and verdict from 29,000+ indexed agents on Base. Use before any swap, transfer, or agent interaction.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-1d94c06cdc91cdb1812237dc01ec7d29734959cffc8e1d4f77d7d45a374d7649",
+      "merkleLeaf": "sha256-e2b067f37ddab86f6a16dbd58b43780c7b3a97a060386f25c592e7c760d3ba75",
+      "fileCount": 1,
+      "metadata": "/api/skills/maiat-trust-check/metadata.json",
+      "verification": "/api/skills/maiat-trust-check/verification.json"
+    },
+    {
+      "slug": "messari-deep-research",
+      "name": "messari-deep-research",
+      "description": "Async deep-research report workflow using Messari AI. Starts a long-form research job, polls until complete, and returns a comprehensive report on any crypto topic, asset, or protocol. Cost varies; typically $0.50–$2.00 USDC.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-c557fa611af84be3013deb7d4f66907c128a90af33ed6cfd6fa21af972a7a497",
+      "merkleLeaf": "sha256-00efccf825e9b04f5d5aeafe9a5a8adc89c401432bff48e998172c0c73d4f1fa",
+      "fileCount": 1,
+      "metadata": "/api/skills/messari-deep-research/metadata.json",
+      "verification": "/api/skills/messari-deep-research/verification.json"
+    },
+    {
+      "slug": "messari-token-research",
+      "name": "messari-token-research",
+      "description": "Full token research workflow using Messari x402 API. Fetches asset fundamentals, price history, sentiment signals, and news, then synthesizes a research brief via Messari AI. Total cost ~$1.00–$1.50 USDC per run.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-2330507150ee56e0c8846c540f3a26b236e15a31f12195edfdfd0b53d2d7aa4c",
+      "merkleLeaf": "sha256-b19aeadc9ef442da40aa72ec632af84298c4ba45cf6146b557f6b6b152cf28ee",
+      "fileCount": 1,
+      "metadata": "/api/skills/messari-token-research/metadata.json",
+      "verification": "/api/skills/messari-token-research/verification.json"
+    },
+    {
+      "slug": "messari-x402",
+      "name": "messari-x402",
+      "description": "Access Messari's full API via x402 pay-per-request — no API key needed. Asset data, market metrics, signals, news, fundraising, token unlocks, on-chain networks, and AI chat, all paid with USDC on Base.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-b179c8d1992dd5bbe862e51202e7fbe2cd604eb59e84b30aef5fbbc8ee489702",
+      "merkleLeaf": "sha256-a7e67f4ed0d266bd459177df09bc787112f5ec4a85170b58089c85e47e761079",
+      "fileCount": 1,
+      "metadata": "/api/skills/messari-x402/metadata.json",
+      "verification": "/api/skills/messari-x402/verification.json"
+    },
+    {
       "slug": "metaplex-agent",
       "name": "metaplex-agent",
       "description": "Premiere Metaplex Agent skill — package every Metaplex agent operation into one playbook: CLI/RPC setup, wallet funding, Core identity registration (EIP-8004), Asset Signer PDA activation, executive delegation/revocation, agent commerce (services discovery, x402Support, A2A payments), agent finance, Genesis agent token launch (LaunchPool or Bonding Curve), and setAgentToken. Use when the user mentions Metaplex agents, Agent Registry, mplx agents, mintAndSubmitAgent, AgentIdentity, executive delegation, agent commerce, agent finance, agent token, EIP-8004 registration, or autonomous Solana agents on Metaplex.",
@@ -608,6 +762,303 @@
       "fileCount": 3,
       "metadata": "/api/skills/model-usage/metadata.json",
       "verification": "/api/skills/model-usage/verification.json"
+    },
+    {
+      "slug": "moonpay",
+      "name": "moonpay",
+      "description": "Entry-point for MoonPay CLI, PayBox agent vault, and Cheshire mcp-server MoonPay/PayBox tools. Use for fiat on-ramp, wallets, swaps, x402, PayBox MCP, or moonpay-* skill discovery.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-9cef15fbae4e686503fa3108d1278e1f35470d7a30f2b8a0dd81414da722e5e6",
+      "merkleLeaf": "sha256-1123ec2947f6d2e7c856db488df8857242ee028280bfba3afe6e43d033de80f6",
+      "fileCount": 3,
+      "metadata": "/api/skills/moonpay/metadata.json",
+      "verification": "/api/skills/moonpay/verification.json"
+    },
+    {
+      "slug": "moonpay-auth",
+      "name": "moonpay-auth",
+      "description": "Set up the MoonPay CLI, authenticate, and manage local wallets. Use when commands fail, for login, or to create/import wallets.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-0caa1268969de6e9dedbfe8d731f1a8a191fb57858980333ddb9feafb54705df",
+      "merkleLeaf": "sha256-2459861d6548429d9e9d45a15e9fb4e5eb40058b8dd733fc983f0a6e1b08bd19",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-auth/metadata.json",
+      "verification": "/api/skills/moonpay-auth/verification.json"
+    },
+    {
+      "slug": "moonpay-block-explorer",
+      "name": "moonpay-block-explorer",
+      "description": "Open transactions, wallets, and tokens in the correct block explorer. Use after swaps, bridges, or transfers to view results in the browser.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-fe2c732486b3a0b99a797a220239b5afeba2053f7eac2b88d10f4c1e57964767",
+      "merkleLeaf": "sha256-f4dd7a2aa8152370ff25bd738742fcfde7742dab043b9a0b9a502c824ec74d97",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-block-explorer/metadata.json",
+      "verification": "/api/skills/moonpay-block-explorer/verification.json"
+    },
+    {
+      "slug": "moonpay-buy-crypto",
+      "name": "moonpay-buy-crypto",
+      "description": "Buy crypto with fiat via MoonPay. Returns a checkout URL to complete the purchase in a browser.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-0fadbd0112f4fdbad24e2a4bd9126b9f750ab05347614b1106634418f007eff2",
+      "merkleLeaf": "sha256-003e7883c6beeef488cf82b083bab7a7fbb32a7192dbbb59f52fcd7467040123",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-buy-crypto/metadata.json",
+      "verification": "/api/skills/moonpay-buy-crypto/verification.json"
+    },
+    {
+      "slug": "moonpay-check-wallet",
+      "name": "moonpay-check-wallet",
+      "description": "Check wallet balances and holdings. Use for \"what's in my wallet\", portfolio breakdown, token balances, allocation percentages, and USD values.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-8767da4d55608aa23e82f097431504a7103b11268184f0768f8f45d39b5da493",
+      "merkleLeaf": "sha256-4e7c4a5f8a5cb3c6863d40a0d1a382b50df16bb60bbbe7b5c26c577afabfce24",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-check-wallet/metadata.json",
+      "verification": "/api/skills/moonpay-check-wallet/verification.json"
+    },
+    {
+      "slug": "moonpay-commerce",
+      "name": "moonpay-commerce",
+      "description": "Browse Shopify stores, search products, manage a cart, and checkout with crypto via Solana Pay. No login required.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-2b2e5029f0622f6c0ac2901617afa2c9483bfb760a4a442abcedd2ed07a42c54",
+      "merkleLeaf": "sha256-8a68e900818a9fcbdf774bf2bd8cd21395717749c3df157cb73c372290083e00",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-commerce/metadata.json",
+      "verification": "/api/skills/moonpay-commerce/verification.json"
+    },
+    {
+      "slug": "moonpay-deposit",
+      "name": "moonpay-deposit",
+      "description": "Create deposit links that accept crypto from any chain and auto-convert to stablecoins. No login required.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-ee8c47cd428ba3624cf4f8fddf55a804edb354567e5d323aabaffdf0b16789f4",
+      "merkleLeaf": "sha256-49c643321d4c246a7528f19d24064bd8fdf0d4c6f3a519eac375171ed028a4ff",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-deposit/metadata.json",
+      "verification": "/api/skills/moonpay-deposit/verification.json"
+    },
+    {
+      "slug": "moonpay-discover-tokens",
+      "name": "moonpay-discover-tokens",
+      "description": "Search for tokens, check prices, get trading briefs, and evaluate risk. Use for token research, \"is this token safe?\", price checks, and market analysis.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-c122d307cfb235b244fb2c48c050c3cfb063fd4314b2ff05c830f84df4db2657",
+      "merkleLeaf": "sha256-bcf4b80dc8d504f9a200b873b3b6d7559db0c73721cd48b3f691938528c9f49b",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-discover-tokens/metadata.json",
+      "verification": "/api/skills/moonpay-discover-tokens/verification.json"
+    },
+    {
+      "slug": "moonpay-export-data",
+      "name": "moonpay-export-data",
+      "description": "Export portfolio balances and transaction history to CSV or JSON files. Use for spreadsheets, tax reporting, or record-keeping.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-ff026237bed4a8eccfbc321f424526544ed5fcb2c5bc3e70535363290ab919da",
+      "merkleLeaf": "sha256-677a05a5d5005877c4a0c7e36306f73cb4eb5678a7db4a9ff546166d85f29bff",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-export-data/metadata.json",
+      "verification": "/api/skills/moonpay-export-data/verification.json"
+    },
+    {
+      "slug": "moonpay-feedback",
+      "name": "moonpay-feedback",
+      "description": "Submit feedback, bug reports, or feature requests for the MoonPay CLI. Use when the user encounters issues, wants to suggest improvements, or has general feedback.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-43205a3c43b06c32faa273f6ec695e5cedb7739c45422b5299a37cf9d43572e8",
+      "merkleLeaf": "sha256-15f4bb279b845f61e5693ffe8b384db713aa8ffd4b00d8277af433b0fac6bcf2",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-feedback/metadata.json",
+      "verification": "/api/skills/moonpay-feedback/verification.json"
+    },
+    {
+      "slug": "moonpay-fund-polymarket",
+      "name": "moonpay-fund-polymarket",
+      "description": "Install the Polymarket CLI and fund its wallet with USDC.e and POL on Polygon via MoonPay.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-ba266185a151c98aa80b79f337170d554047fe5b758745dee9047cab9517578c",
+      "merkleLeaf": "sha256-210139f03ee00dc810debbd4c2230cf7d9753346d6f69f6dda18b6bfb4449f88",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-fund-polymarket/metadata.json",
+      "verification": "/api/skills/moonpay-fund-polymarket/verification.json"
+    },
+    {
+      "slug": "moonpay-hardware-wallet",
+      "name": "moonpay-hardware-wallet",
+      "description": "Connect a hardware wallet (Ledger) to the MoonPay CLI. Sign transactions on the physical device — no private keys stored locally.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-50550f66e3e8c199eb880145bdbf8abb52618929700e7f7a4479788371468a7e",
+      "merkleLeaf": "sha256-5ba02cd2987c0dcb79ceea5756a1e4d15b3bca4c43b4b3b10e5135c1cc9fbd32",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-hardware-wallet/metadata.json",
+      "verification": "/api/skills/moonpay-hardware-wallet/verification.json"
+    },
+    {
+      "slug": "moonpay-mcp",
+      "name": "moonpay-mcp",
+      "description": "Set up MoonPay as an MCP server for Claude Desktop or Claude Code. Provides all MoonPay CLI tools via the Model Context Protocol.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-8d4f0aeec5ad98102a7c412b7911aed3bcdaa01d7a41ac8999c8a496d260ca4e",
+      "merkleLeaf": "sha256-5fab52bf7742fcf110666c49eb5dedd75a88f24479c7a33ec3c25f2ec6a22d90",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-mcp/metadata.json",
+      "verification": "/api/skills/moonpay-mcp/verification.json"
+    },
+    {
+      "slug": "moonpay-missions",
+      "name": "moonpay-missions",
+      "description": "A series of missions that walk through every MoonPay CLI capability. Use when the user is new or says \"get started\", \"show me what you can do\", or \"run the missions\".",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-66674122b24a8fcb1054c9fd568df396f4f3bdaedd3d3e63697f32204a27ea14",
+      "merkleLeaf": "sha256-2d7cc96faa074763960e5f4ba853bd3b7a79018767d4948c24880c08cdedc16f",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-missions/metadata.json",
+      "verification": "/api/skills/moonpay-missions/verification.json"
+    },
+    {
+      "slug": "moonpay-prediction-market",
+      "name": "moonpay-prediction-market",
+      "description": "Trade on prediction markets (Polymarket, Kalshi). Search markets, buy/sell positions, track PnL, and view trade history.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-f07717aa2f8e569188f0834b05b2c2a56d2becb68e1026cb7ffc07e01105c9c8",
+      "merkleLeaf": "sha256-174e3aa2dbf16d007da15651f26a3f53fa9182da497efe80b2e253f32ac4c44e",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-prediction-market/metadata.json",
+      "verification": "/api/skills/moonpay-prediction-market/verification.json"
+    },
+    {
+      "slug": "moonpay-price-alerts",
+      "name": "moonpay-price-alerts",
+      "description": "Set up desktop price alerts that notify you when tokens hit target prices. Observe-only — no trading, just notifications.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-d4f8a2bb309a7d1a1e24044a131e7e0a69683f69a8aa093e5d1ac36ae0d88c24",
+      "merkleLeaf": "sha256-df9897d4c3a4d12200a17a47455c6aaf668ba112e55db1272b1a0ce76c34d2e1",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-price-alerts/metadata.json",
+      "verification": "/api/skills/moonpay-price-alerts/verification.json"
+    },
+    {
+      "slug": "moonpay-scout",
+      "name": "moonpay-scout",
+      "description": "Prediction market arbitrage & alpha scout. Searches Polymarket and Kalshi for the same event, runs cross-platform arb math (including fees), and ranks opportunities by profitability. Use when asked to \"find arb\", \"scout markets\", \"find edge\", or scan a specific topic across prediction markets.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-3ca174fb221543e0da1ed923df986289be0be015307a2ef9ee819776a5617917",
+      "merkleLeaf": "sha256-a4872a386b50ab24eab013e7f8832d49354bc8232b32373422893270d11a23f7",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-scout/metadata.json",
+      "verification": "/api/skills/moonpay-scout/verification.json"
+    },
+    {
+      "slug": "moonpay-skills-index",
+      "name": "moonpay-skills-index",
+      "description": "Index of MoonPay and partner agent skills installed in the Cheshire/Solizardking skills hub. Use to discover moonpay-*, messari-*, PayBox, and related crypto infrastructure skills.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-8132b96396fef96bd8c66307eba54a1c0beeca8c58b88125668e06ad1fa9a79d",
+      "merkleLeaf": "sha256-aaa6cedf41e54daa85af53d54c35030c3da1c94a703fdbaa9f1257f5466bb073",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-skills-index/metadata.json",
+      "verification": "/api/skills/moonpay-skills-index/verification.json"
+    },
+    {
+      "slug": "moonpay-swap-tokens",
+      "name": "moonpay-swap-tokens",
+      "description": "Swap tokens on the same chain or bridge tokens across chains. Use when the user wants to swap, bridge, or move tokens.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-54ebb3c578a3f56d48986dbce8252c6dfd972824594425d505989355414b8aa8",
+      "merkleLeaf": "sha256-80fddbddb8788204dd4ec5069c53bb4e01155b99ca0ec11222b268bd71d79744",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-swap-tokens/metadata.json",
+      "verification": "/api/skills/moonpay-swap-tokens/verification.json"
+    },
+    {
+      "slug": "moonpay-trading-automation",
+      "name": "moonpay-trading-automation",
+      "description": "Set up automated trading strategies — DCA, limit orders, and stop losses — by composing mp CLI commands with OS scheduling (cron/launchd).",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-a9cb5a30dfb5b0a79c2cbe902a2bc13955cde12a4ef65831ec4bd2036f2fb7ec",
+      "merkleLeaf": "sha256-49b99251629c27ac5eeb9b6096f8b4ee69152a2616a38574f2e6411089edf5fe",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-trading-automation/metadata.json",
+      "verification": "/api/skills/moonpay-trading-automation/verification.json"
+    },
+    {
+      "slug": "moonpay-upgrade",
+      "name": "moonpay-upgrade",
+      "description": "Increase your MoonPay API rate limit by paying with crypto via x402.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-454a51ef469854a9d83fb667453d06bbd29be7fea5fadc985ec5d3ba9c6ec7ce",
+      "merkleLeaf": "sha256-0f914c1ace23aa5fc08c874ce86b13f45590cd832ea2b3c2955633f728bd90f7",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-upgrade/metadata.json",
+      "verification": "/api/skills/moonpay-upgrade/verification.json"
+    },
+    {
+      "slug": "moonpay-virtual-account",
+      "name": "moonpay-virtual-account",
+      "description": "Set up a virtual account for fiat on-ramp and off-ramp. Covers KYC, wallet registration, bank accounts, onramp (fiat to stablecoin), and offramp (stablecoin to fiat).",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-3d594b6a1bdde4f342e3ac3e42b5ff781689631ed9f6033bd4f25692afc0e225",
+      "merkleLeaf": "sha256-e0c77b4ca1cb2f9331ccd607e0129dbc09124b789f3f7ec7492c64f528671a4f",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-virtual-account/metadata.json",
+      "verification": "/api/skills/moonpay-virtual-account/verification.json"
+    },
+    {
+      "slug": "moonpay-wallet-statusline",
+      "name": "moonpay-wallet-statusline",
+      "description": "Show MoonPay wallet balances in a compatible CLI status line using a local cache and refresh script. Use when the user asks to \"show balances in the status bar\", \"add wallet to the CLI status line\", or wants a persistent balance display while working.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-96a3ba0b1fcea5da61b9089cace603e50da103df2ece923a07ef6421cef95cb4",
+      "merkleLeaf": "sha256-8b101e057009f1909ebacc41690b95d0a21a299653fbd8f4492f2efb8bca8184",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-wallet-statusline/metadata.json",
+      "verification": "/api/skills/moonpay-wallet-statusline/verification.json"
+    },
+    {
+      "slug": "moonpay-wallet-statusline-refresh",
+      "name": "moonpay-wallet-statusline-refresh",
+      "description": "Manually refresh wallet balances shown in a compatible CLI status line. Use when the user says \"refresh balances\", \"update status bar\", or after receiving funds from outside the CLI.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-f35c4955e9f799339a4c331907e5b05a6db5264b0ddeec5f12ac4072cd2fe779",
+      "merkleLeaf": "sha256-27549ea80d08124ce1aae2b7f7403f9aa3c792162637a6f365709ea01dbc6388",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-wallet-statusline-refresh/metadata.json",
+      "verification": "/api/skills/moonpay-wallet-statusline-refresh/verification.json"
+    },
+    {
+      "slug": "moonpay-x402",
+      "name": "moonpay-x402",
+      "description": "Make paid API requests to x402-protected endpoints. Automatically handles payment with your local wallet.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-d0a5b964754bd5882441ef50f1f6c93dac9d67259207b26942b9808f23263df3",
+      "merkleLeaf": "sha256-fa30fd8f2f2cd94691bbe4f2353d7857bbceb575a38d401015aa90e012e44491",
+      "fileCount": 1,
+      "metadata": "/api/skills/moonpay-x402/metadata.json",
+      "verification": "/api/skills/moonpay-x402/verification.json"
+    },
+    {
+      "slug": "myriad-prediction-markets",
+      "name": "myriad-prediction-markets",
+      "description": "AI trading agent for Myriad prediction markets on BNB Chain. Discover live markets, execute buy/sell trades, monitor portfolio exposure, claim winnings, and run as an MCP server for multi-agent workflows. Use when the user wants to trade prediction markets on BNB Chain, find market opportunities by keyword, or automate a trading + claims loop.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-1379e76fcbd6964826961fbc9791315b9dcb7fc864c7d6e5676a337b49383128",
+      "merkleLeaf": "sha256-a51aa9461a8ed1b31c7e393c50bd32fad5dfe4c0d846a0da26b74eac7116aa40",
+      "fileCount": 1,
+      "metadata": "/api/skills/myriad-prediction-markets/metadata.json",
+      "verification": "/api/skills/myriad-prediction-markets/verification.json"
+    },
+    {
+      "slug": "nansen-dca-tracker",
+      "name": "nansen-dca-tracker",
+      "description": "What tokens are whales dollar-cost averaging into? Jupiter DCA strategies by smart money and target token fundamentals.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-d3bb1d2be29a7247732d1cf2019ca9afcd33450579de5f8fd5fe1764634d2e11",
+      "merkleLeaf": "sha256-37026b788084637b818cd981636427670ee0f19f888fc839c658413ba4b0c0d3",
+      "fileCount": 1,
+      "metadata": "/api/skills/nansen-dca-tracker/metadata.json",
+      "verification": "/api/skills/nansen-dca-tracker/verification.json"
     },
     {
       "slug": "openai-image-gen",
@@ -654,6 +1105,17 @@
       "verification": "/api/skills/pay-with-app/verification.json"
     },
     {
+      "slug": "paybox",
+      "name": "paybox",
+      "description": "MoonPay PayBox payment vault for AI agents — official MCP at https://api.paybox.sh/mcp, OAuth 2.1, scoped credentials, and Cheshire mcp-server proxy tools (get_paybox_*).",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-7d7cf7184a84261dc97e2a850c4d2a54aaa1187c7c5453ad15bde2bc4306699d",
+      "merkleLeaf": "sha256-a4ba0a48ee0a6472bcd27085f9ee781383f4bf3c53bfbf615550eaf0f5941465",
+      "fileCount": 1,
+      "metadata": "/api/skills/paybox/metadata.json",
+      "verification": "/api/skills/paybox/verification.json"
+    },
+    {
       "slug": "phantom-wallet-mcp",
       "name": "phantom-wallet-mcp",
       "description": "Execute wallet operations through the Phantom MCP server. Use when the user wants to interact with their Phantom wallet directly — get addresses, transfer SOL or SPL tokens, buy/swap tokens, sign transactions, and sign messages across Solana, Ethereum, Bitcoin, and Sui. Requires the @phantom/mcp-server to be configured as an MCP server.",
@@ -663,6 +1125,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/phantom-wallet-mcp/metadata.json",
       "verification": "/api/skills/phantom-wallet-mcp/verification.json"
+    },
+    {
+      "slug": "pons-launch",
+      "name": "pons-launch",
+      "description": "Launch a fixed-supply V3 token on Robinhood Chain (4663) via PonsLaunchFactory (pons.family), reverse-discover the factory from live PonsLauncherToken tokens, prepare launchToken txs, and verify TokenLaunched receipts. Use when the user says \"launch on Pons\", \"pons.family launch\", \"PonsLaunchFactory\", \"launchToken\", \"PonsLauncherToken\", \"V3 launch on Robinhood\", or wants agents to create a Pons token. Does NOT use RH bonding-curve createToken (rh-bonded-launch), does NOT mint Solana $CLAWD, and does NOT use NOXA Fun factories.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-1ce5722f9334dfeeb3401688e22789b6865bfbc5411f52bf9c3419b68b748224",
+      "merkleLeaf": "sha256-536523515b7d67b7b39f1eee6a45c451bb21c1124d663e2d521766b8c921685d",
+      "fileCount": 1,
+      "metadata": "/api/skills/pons-launch/metadata.json",
+      "verification": "/api/skills/pons-launch/verification.json"
     },
     {
       "slug": "posthog-cheshire",
@@ -929,6 +1402,17 @@
       "verification": "/api/skills/pumpfun-launcher/verification.json"
     },
     {
+      "slug": "pumpfun-skills",
+      "name": "pumpfun-skills",
+      "description": "Full Pump.fun skill pack with nested pump-* and pumpfun-* playbooks (admin, bonding curve, fees, lifecycle, MCP, security, testing, wallets). Use when installing the complete pump suite or navigating pumpfun-skills/* packages. Distinct from the pumpfun entry-point router skill.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-2b93e895bd84404f732c1bd46c627059e6369846606c6ed661b76814ebd46b51",
+      "merkleLeaf": "sha256-b432eec568f002bd1654ae5fdc129d870b48c4598534640734ad09fab266aff9",
+      "fileCount": 1,
+      "metadata": "/api/skills/pumpfun-skills/metadata.json",
+      "verification": "/api/skills/pumpfun-skills/verification.json"
+    },
+    {
       "slug": "pumpfun-trading",
       "name": "pumpfun-trading",
       "description": "Quick Pump.fun trading shortcut for buy/sell flow selection, bonding curve versus AMM state checks, slippage handling, risk controls, and SDK trade instruction building.",
@@ -953,10 +1437,10 @@
     {
       "slug": "rh-crypto-agent",
       "name": "rh-crypto-agent",
-      "description": "Robinhood Crypto Agent open stack — pack index for Robinhood Chain / Uniswap EVM agent skills (bonded launch, LaunchpadV3, swaps, LP, DCA, copy-trade, payments, viem, Cheshire agent registries). Use when installing the RH pack, pointing clawdbot at the open stack, or choosing which RH/EVM skill to load next.",
+      "description": "Robinhood Crypto Agent open skill pack for Robinhood Chain / EVM trading and launch agents. Covers bonded launch, Launchpad V3, Uniswap swaps/LP, DCA, copy-trade, payments, viem, and Cheshire agent registry skills. Use when pointing clawdbot at the RH pack, installing the suite, or building Robinhood Chain crypto agents.",
       "category": "Solana / Blockchain",
-      "bundleHash": "sha256-377aebcc49b71dbe3fe4ac837825301898f34286a8eb42ea859b17530bf2357b",
-      "merkleLeaf": "sha256-69df730cf20150560f67f9dfa8729940c6ba122c58368198bdbf9be2a45170f2",
+      "bundleHash": "sha256-eae1f80c2213adb380683fe26699f24a31bd421552d8787e05b57d600fdaee65",
+      "merkleLeaf": "sha256-eab2dd8a2fedfbfcceff1f9c5bf3d27d369e9db70650230105c35509d9c8ac04",
       "fileCount": 4,
       "metadata": "/api/skills/rh-crypto-agent/metadata.json",
       "verification": "/api/skills/rh-crypto-agent/verification.json"
@@ -977,11 +1461,22 @@
       "name": "robinhood-agent-forge",
       "description": "Prepare, register, inspect, and safely operate chain-scoped AI agent identities on Robinhood Chain (EVM/ERC-8004-compatible) or Solana (SVM/Metaplex Core) through Cheshire Terminal and the open-source robinhood-agents SDK. Use for chain selection, deployment verification, metadata, unsigned EVM registration intents, wallet-authorized sponsored Solana identity mints, ownership and authority review, reputation, validation, or guarded infrastructure deployment.",
       "category": "Solana / Blockchain",
-      "bundleHash": "sha256-21a77bf3a394f06320527618f95fcc58f4fe0ce28e77d01b4ea14d8a545f37e8",
-      "merkleLeaf": "sha256-ebe77db32fbad6fe2ac89423aed696ba820b16c508ff48521f10f8269c635808",
+      "bundleHash": "sha256-b14b16dac8f765897829105e008ef70aa2c349208933033b3217c3222a78292f",
+      "merkleLeaf": "sha256-1e04837361049a5d89f084f7023618a3cde5832f324ee296f408e4f20e19660a",
       "fileCount": 5,
       "metadata": "/api/skills/robinhood-agent-forge/metadata.json",
       "verification": "/api/skills/robinhood-agent-forge/verification.json"
+    },
+    {
+      "slug": "shipp-sports-data",
+      "name": "shipp-sports-data",
+      "description": "Real-time sports & events data for AI agents via Shipp. Use when the user wants live scores, schedules, or game events for NBA, NFL, NCAA Football, MLB, or Soccer — especially to power prediction market trading strategies on Polymarket or Kalshi using a MoonPay wallet.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-1b44ff4908afab1db8e19e9844c72bc2d45a5eea01dd7b657dc33148d7a626dd",
+      "merkleLeaf": "sha256-724a62683379dbec532764c0aa6f620fcfd9b5b290eb947de3a6c51b01d6494d",
+      "fileCount": 1,
+      "metadata": "/api/skills/shipp-sports-data/metadata.json",
+      "verification": "/api/skills/shipp-sports-data/verification.json"
     },
     {
       "slug": "skillhub-onchain",
@@ -993,6 +1488,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/skillhub-onchain/metadata.json",
       "verification": "/api/skills/skillhub-onchain/verification.json"
+    },
+    {
+      "slug": "skills-store",
+      "name": "skills-store",
+      "description": "Cheshire Skills Store index — curated Agent Skills packages for Cheshire Terminal (API, PostHog, Google Agent Registry, Skill Hub onchain, Stripe, Solana common errors, NOXA) plus the community skills collection. Use when installing store skills, browsing the store catalog, or wiring cheshireterminal.ai/skills-store.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-43a77b854c1814dce46f2a04f858153789217b6f03536a29e8d21689560441f1",
+      "merkleLeaf": "sha256-524e0dd364125d3196783554302b2d11334f6a12b9ac189833559e4b02fa85df",
+      "fileCount": 10,
+      "metadata": "/api/skills/skills-store/metadata.json",
+      "verification": "/api/skills/skills-store/verification.json"
     },
     {
       "slug": "solana-clawd",
@@ -1021,8 +1527,8 @@
       "name": "solana-clawd-agents",
       "description": "Use the imported Solana Clawd Agents hub catalog to browse, validate, build, deploy, mint, stake, and integrate production-ready Solana agent definitions, including x402 paid-agent APIs, MCP catalog endpoints, Cloudflare Worker API, Metaplex Core minting, and agent JSON schema workflows.",
       "category": "Solana / Blockchain",
-      "bundleHash": "sha256-b6dec8b225e1963fcc1fe14e7b6f40a7304ecbba0d46295471d6d29ad2ffc436",
-      "merkleLeaf": "sha256-a923b27512d9353209bf042e985c8276cdb39d20b6ab917c9dc0b0ea4321b27e",
+      "bundleHash": "sha256-802e0c5febb2225516270f48cedf0b49a34da0c9f234439778c0f4301e449fba",
+      "merkleLeaf": "sha256-9af62875471e5a6dcfdfc8452730a046c13013cf1e0943cef49fa6e2fcdb964c",
       "fileCount": 1250,
       "metadata": "/api/skills/solana-clawd-agents/metadata.json",
       "verification": "/api/skills/solana-clawd-agents/verification.json"
@@ -1356,6 +1862,28 @@
       "fileCount": 1,
       "metadata": "/api/skills/vulcan-twap-execution/metadata.json",
       "verification": "/api/skills/vulcan-twap-execution/verification.json"
+    },
+    {
+      "slug": "yield-optimization",
+      "name": "yield-optimization",
+      "description": "Multi-chain yield optimization via yield.xyz (StakeKit). Discover 2,988+ yield opportunities across 75+ blockchains, build deposit/withdrawal transactions with shell scripts, and sign them with a MoonPay wallet. Use when the user wants to earn yield, find the best lending or staking rate, enter/exit a position, or check portfolio balances.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-9c506da6f3b29353a08f9dce02e7ce0c6db470659d69d2fb19425ad4779c28bc",
+      "merkleLeaf": "sha256-f837fddaf6806194879595aa5284c11dd7cb6b9118520fa91f3af70e128d9cf5",
+      "fileCount": 1,
+      "metadata": "/api/skills/yield-optimization/metadata.json",
+      "verification": "/api/skills/yield-optimization/verification.json"
+    },
+    {
+      "slug": "zerion-wallet-data",
+      "name": "zerion-wallet-data",
+      "description": "Use when the user asks to check a wallet's portfolio, token balances, DeFi positions, PnL, transaction history, or NFTs. Provides interpreted on-chain data across 40+ EVM chains and Solana via x402 pay-per-request or API key — no raw RPC decoding needed.",
+      "category": "Solana / Blockchain",
+      "bundleHash": "sha256-b0be4f7a2d385b55a2aa95cc18b34682174339a1acfc517145e5d8fc2f044daf",
+      "merkleLeaf": "sha256-d0cf46f58b83089e94d9536b9226d7a2b9dd7870c8b85862dfb5b87a07548e4a",
+      "fileCount": 1,
+      "metadata": "/api/skills/zerion-wallet-data/metadata.json",
+      "verification": "/api/skills/zerion-wallet-data/verification.json"
     },
     {
       "slug": "zk",
@@ -1769,11 +2297,22 @@
       "name": "google-agent-registry",
       "description": "Maintain and register Cheshire Google Agent Registry artifacts under registry/google (A2A agent card, MCP tools list, MCP interface, server card, zero-service OpenAPI) and deploy Apigee reverse proxies on project x402-477302. Use for gcloud agent-registry, 10 KB size limits, tool-name parity with server/mcp/tools.ts, Apigee test-env, or validate:google-registry / register:google-agent.",
       "category": "Dev Tools / Agents",
-      "bundleHash": "sha256-d7a8b239ae842ac600a0820332bfdeccc2a42c442b03c22e720004a1de5ffd48",
-      "merkleLeaf": "sha256-5d08a57507b094c99ec44da3d7e8a4a7f3e691c51536f2496973d83e84fc1e24",
-      "fileCount": 4,
+      "bundleHash": "sha256-000c6029c913825237868d019fdb850a38c40298ce3050a4843b90cb7cae5216",
+      "merkleLeaf": "sha256-4ccc45a0a1d11c31b02ad1dbc8e3669d84d848f0bb0ad66646259856a172a7ea",
+      "fileCount": 11,
       "metadata": "/api/skills/google-agent-registry/metadata.json",
       "verification": "/api/skills/google-agent-registry/verification.json"
+    },
+    {
+      "slug": "handoff",
+      "name": "productivity-handoff",
+      "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-84f93f08eb1a4de3ff66ec40ae019afe3bde38a3a3ea3e5fb11b57b7cff28041",
+      "merkleLeaf": "sha256-1a9de2e350b91fbf1a89f8b60fbb845b22c12acce7cba0127b15b13e6bce6a36",
+      "fileCount": 1,
+      "metadata": "/api/skills/handoff/metadata.json",
+      "verification": "/api/skills/handoff/verification.json"
     },
     {
       "slug": "improve-animations",
@@ -2106,6 +2645,17 @@
       "verification": "/api/skills/thinking-and-docs/short/verification.json"
     },
     {
+      "slug": "thoughtproof-reasoning-check",
+      "name": "thoughtproof-reasoning-check",
+      "description": "Verify whether an AI agent's decision is well-reasoned before executing. Adversarial multi-model critique (Claude, Grok, DeepSeek) returns ALLOW, BLOCK, or UNCERTAIN with confidence score. Use before any high-value swap, trade, or autonomous action.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-afd3777488f33065eca7f7844dcb21d25d72f48455b538ed20bed43135af79e4",
+      "merkleLeaf": "sha256-23b254dab3b4a9eb9f1ecc417de0f68eb4096251f81b976b4e221e4dc6047b48",
+      "fileCount": 1,
+      "metadata": "/api/skills/thoughtproof-reasoning-check/metadata.json",
+      "verification": "/api/skills/thoughtproof-reasoning-check/verification.json"
+    },
+    {
       "slug": "tmux",
       "name": "tmux",
       "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
@@ -2159,6 +2709,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/wrangler/metadata.json",
       "verification": "/api/skills/wrangler/verification.json"
+    },
+    {
+      "slug": "writing-great-skills",
+      "name": "writing-great-skills",
+      "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
+      "category": "Dev Tools / Agents",
+      "bundleHash": "sha256-f8bd4506da080baca865d092457c8bff4ff6ffc6ea935c7e062fff694b2085cf",
+      "merkleLeaf": "sha256-f99b9108f3b3d017b3c6c285bbfa72f2617832f3eaeb9eff4d7227875434756d",
+      "fileCount": 2,
+      "metadata": "/api/skills/writing-great-skills/metadata.json",
+      "verification": "/api/skills/writing-great-skills/verification.json"
     },
     {
       "slug": "google/ads/data-manager-api/data-manager-api-audience-ingestion",
@@ -2770,8 +3331,8 @@
       "name": "gke-upgrades",
       "description": "Plans, executes, and validates Google Kubernetes Engine (GKE) cluster upgrades and maintenance operations for both Standard and Autopilot clusters. Produces upgrade plans, pre/post-upgrade checklists, maintenance runbooks with gcloud commands, release channel strategy, and troubleshooting guides. Handles node pool upgrade strategies (surge, blue-green), version compatibility, PDB management, and workload-specific concerns (stateful, GPU, operators). Use this skill whenever the user mentions GKE upgrades, Kubernetes version bumps, node pool maintenance, GKE patching, cluster version management, release channel selection, maintenance windows, surge upgrades, stuck upgrades, or any GKE lifecycle management task — even casual mentions like \"we need to upgrade our clusters\" or \"plan our next GKE maintenance\" or \"our upgrade is stuck.\" Don't use for GKE cluster creation, application onboarding, general networking/routing setup, or security policy configurations (use gke-basics or relevant GKE skills instead).",
       "category": "Google / Cloud",
-      "bundleHash": "sha256-50944d037655c33267ead2666317d521f4ed21d8471710f974ca30c82cdc82e0",
-      "merkleLeaf": "sha256-f4e75d629c31fb14ca4223991cd91d9959c67c2c2611b4d0d453d6fba3ed0c74",
+      "bundleHash": "sha256-03b2d1c5bda28281a4d46a2e8ea616c8c897c641125a73df91235efa47be3efa",
+      "merkleLeaf": "sha256-eef16108fe6f0bb3ea10e6e45ccabcbfb0738114ed2c7d25e702a62b7a75b4c4",
       "fileCount": 4,
       "metadata": "/api/skills/google/cloud/gke-upgrades/metadata.json",
       "verification": "/api/skills/google/cloud/gke-upgrades/verification.json"
@@ -3342,8 +3903,8 @@
       "name": "earth2studio-create-diagnostic",
       "description": "Create Earth2Studio diagnostic model wrappers for single-step data transformations, including simple derived diagnostics, packaged AutoModel diagnostics, and generative or diffusion diagnostics. Do NOT use for prognostic time-stepping models, data sources, or installation.",
       "category": "NVIDIA / Accelerated Computing",
-      "bundleHash": "sha256-ae77de7d7866dcbf93b753b39b08e57d84f3f18993eb4b1769eb1eff21700e13",
-      "merkleLeaf": "sha256-c1603d27f75b880b2227eb85b022c50dd77ae402d6921b1c3e4a6e99e8ab711f",
+      "bundleHash": "sha256-17af10352a1859fd5e2bfabb8c0ab46e0b20cfb4cc42531b36fa0f618c556028",
+      "merkleLeaf": "sha256-d6a2f3caa09fb58d6145c0c3aa0f00f05dc6ae0914c7d73a85ba974e5791c938",
       "fileCount": 9,
       "metadata": "/api/skills/nvidia/earth2studio-create-diagnostic/metadata.json",
       "verification": "/api/skills/nvidia/earth2studio-create-diagnostic/verification.json"
@@ -4519,9 +5080,9 @@
       "name": "physical-ai-video-data-augmentation",
       "description": "Use when running video data augmentation and auto-labeling workflows on OSMO: flow selection, preflight, submit-time interpolation, monitoring, and output retrieval. Trigger keywords: video data augmentation, data enrichment, auto labeling, VDA demo, OSMO workflow, pseudo labeling.",
       "category": "NVIDIA / Accelerated Computing",
-      "bundleHash": "sha256-04cfe8af953223f749e7bd10408614c2fb42298f7e381700454369e2e1b0b3d1",
-      "merkleLeaf": "sha256-4a6ff570398e4c484b43eb024311d15b29dc3b4203ba3788f8e1a2e2ed36fd3b",
-      "fileCount": 73,
+      "bundleHash": "sha256-f5c7f7fb5cd078f6bf9cb19591f897a689adf96bd74d22342fc19f3726e9bd14",
+      "merkleLeaf": "sha256-d6ab90894614c9d13a9de1e683b2344f6a6a465fa30c2d796c7336d7d0e89061",
+      "fileCount": 58,
       "metadata": "/api/skills/nvidia/physical-ai-video-data-augmentation/metadata.json",
       "verification": "/api/skills/nvidia/physical-ai-video-data-augmentation/verification.json"
     },
@@ -5626,6 +6187,83 @@
       "verification": "/api/skills/gifgrep/verification.json"
     },
     {
+      "slug": "huashu-image-upload",
+      "name": "huashu-image-upload",
+      "description": "文章配图一键生成并上传图床，自动插入Markdown链接。当用户提到\"配图\"、\"插图\"、\"上传图片\"、\"文章配图\"时使用。",
+      "category": "Media / Devices",
+      "bundleHash": "sha256-60a2bcaf540470b978b728a55364deb846c8d484cf895f759277a951356928eb",
+      "merkleLeaf": "sha256-31d3ddb8b31c35192e1f371eacb888cc50ffb256afbc9d59b03be4801ad68247",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-image-upload/metadata.json",
+      "verification": "/api/skills/huashu-image-upload/verification.json"
+    },
+    {
+      "slug": "huashu-md-to-pdf",
+      "name": "huashu-md-to-pdf",
+      "description": "将 Markdown 文档转换为专业的 PDF 白皮书，采用苹果设计风格。 支持完整的 Markdown 语法（代码块、表格、引用、列表等）。 自动生成封面、目录、页眉页脚。 使用场景：技术文档、白皮书、教程、报告等需要专业排版的 Markdown 文档。",
+      "category": "Media / Devices",
+      "bundleHash": "sha256-bbe4d3b0dd597c122fd057dfbaad5432cb757521d15f2cff3ceded4f394d899e",
+      "merkleLeaf": "sha256-45c6a4989e2a76865326f8f9b6b7d7b75a4d9ea6dd749bf78e4f1400acd1aef3",
+      "fileCount": 4,
+      "metadata": "/api/skills/huashu-md-to-pdf/metadata.json",
+      "verification": "/api/skills/huashu-md-to-pdf/verification.json"
+    },
+    {
+      "slug": "huashu-speech-coach",
+      "name": "huashu-speech-coach",
+      "description": "演讲与分享教练。基于Patrick Winston（MIT AI教授）的How to Speak方法论，帮助准备线下培训、技术分享、B站教程视频等演讲场景。当用户提到\"演讲\"、\"分享\"、\"培训\"、\"讲课\"、\"PPT演讲\"、\"开场\"、\"结尾\"、\"如何讲\"、\"演讲结构\"时使用此技能。",
+      "category": "Media / Devices",
+      "bundleHash": "sha256-1c01df90cecc31bc13f674dff596531274844bf9f90d8abd80c8e046414b2cb1",
+      "merkleLeaf": "sha256-e9fbc701b582ad4961d6d28838ab6a222795dc7282aea710a3b1eea90223bc1d",
+      "fileCount": 2,
+      "metadata": "/api/skills/huashu-speech-coach/metadata.json",
+      "verification": "/api/skills/huashu-speech-coach/verification.json"
+    },
+    {
+      "slug": "huashu-video-check",
+      "name": "huashu-video-check",
+      "description": "基于MrBeast策略检查视频标题、封面和开头钩子。当用户提到\"视频标题\"、\"封面图\"、\"点击率\"、\"CTR\"、\"观看时长\"时使用。",
+      "category": "Media / Devices",
+      "bundleHash": "sha256-a8a0ddb6d95f54d9226af29ca958ea608efa52052b1ca4153599b12f64750df0",
+      "merkleLeaf": "sha256-f056adafde7af410b43c71836104dc20ac5e28618506bb1c48d635e2f247c386",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-video-check/metadata.json",
+      "verification": "/api/skills/huashu-video-check/verification.json"
+    },
+    {
+      "slug": "huashu-video-outline",
+      "name": "huashu-video-outline",
+      "description": "快速生成2-3个视频大纲方案，含标题、封面建议和结构设计。当用户提到\"视频大纲\"、\"视频结构\"、\"脚本大纲\"、\"视频选题\"时使用。",
+      "category": "Media / Devices",
+      "bundleHash": "sha256-be13ef566353fe14af634c91e4da1b1866da32182840f25fd690c6c36324fe31",
+      "merkleLeaf": "sha256-04a2483757957b754035ca1731c60cffc0427f2f8e0717a2fb47993786e277ab",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-video-outline/metadata.json",
+      "verification": "/api/skills/huashu-video-outline/verification.json"
+    },
+    {
+      "slug": "huashu-wechat-image",
+      "name": "huashu-wechat-image",
+      "description": "为微信公众号文章生成高质量配图。支持封面图（2.35:1）、正文插图（16:9/4:3）、信息图。提供两条路径：AI生成（视觉创意型）和HTML渲染（文字精确型）。当用户提到\"公众号配图\"、\"公众号封面\"、\"文章配图\"、\"正文插图\"、\"公众号图片\"时使用此技能。",
+      "category": "Media / Devices",
+      "bundleHash": "sha256-8e901c29ebc9c8d01d0b8af89da016e3a026cde457e175eae97576ff7101068a",
+      "merkleLeaf": "sha256-43953c6deb85480fdc64cfc76d69026861d748cba102498f7c64360a3dc4c50f",
+      "fileCount": 4,
+      "metadata": "/api/skills/huashu-wechat-image/metadata.json",
+      "verification": "/api/skills/huashu-wechat-image/verification.json"
+    },
+    {
+      "slug": "huashu-xhs-image",
+      "name": "huashu-xhs-image",
+      "description": "为小红书笔记生成高质量配图。默认AI生成（Gemini），仅精确数据表格用HTML兜底。当用户提到\"小红书配图\"、\"小红书封面\"、\"小红书图片\"、\"做张小红书图\"、\"笔记配图\"时使用此技能。",
+      "category": "Media / Devices",
+      "bundleHash": "sha256-872febbc50678e8cd1bad752eecfff351fa1b39fdc8563eb8608be2c468ccaa2",
+      "merkleLeaf": "sha256-2a49817bdb7f6ab203967809a37f13ab5ee37a9a6be3ca6bc53e4035810f3aad",
+      "fileCount": 4,
+      "metadata": "/api/skills/huashu-xhs-image/metadata.json",
+      "verification": "/api/skills/huashu-xhs-image/verification.json"
+    },
+    {
       "slug": "nano-banana-pro",
       "name": "nano-banana-pro",
       "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
@@ -5967,6 +6605,17 @@
       "verification": "/api/skills/obsidian/verification.json"
     },
     {
+      "slug": "obsidian-vault",
+      "name": "obsidian-vault",
+      "description": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-7e1619b7a3e755aa5bb5b270c74a31818b01125a51cd64104b220f6f502e7197",
+      "merkleLeaf": "sha256-841f6dbc1b339f015c639749b6b2112ad44eb4df850bedbeaffe857098ec3421",
+      "fileCount": 1,
+      "metadata": "/api/skills/obsidian-vault/metadata.json",
+      "verification": "/api/skills/obsidian-vault/verification.json"
+    },
+    {
       "slug": "personal/obsidian-vault",
       "name": "obsidian-vault",
       "description": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
@@ -6009,6 +6658,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/slack/metadata.json",
       "verification": "/api/skills/slack/verification.json"
+    },
+    {
+      "slug": "teach",
+      "name": "productivity-teach",
+      "description": "Teach the user a new skill or concept in a multi-session teaching workspace with missions, lessons, and learning records.",
+      "category": "Productivity / Messaging",
+      "bundleHash": "sha256-761d7d1cbf99875731fa240785fbf12b595c30609c32ee9f2b208c0ad502ce35",
+      "merkleLeaf": "sha256-730d9f17cae1d6b2195e77097665d258afed278ea866c30b97c2bd646ae86b73",
+      "fileCount": 5,
+      "metadata": "/api/skills/teach/metadata.json",
+      "verification": "/api/skills/teach/verification.json"
     },
     {
       "slug": "things-mac",
@@ -6187,6 +6847,17 @@
       "verification": "/api/skills/deprecated/ubiquitous-language/verification.json"
     },
     {
+      "slug": "edit-article",
+      "name": "edit-article",
+      "description": "Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft.",
+      "category": "Utilities",
+      "bundleHash": "sha256-3d1df50a645d24df0eb3354b97c78d7b329505449449ef8897bab00e742946d5",
+      "merkleLeaf": "sha256-4ad50c8f6ffdb0464f76947ee83ddeedfd929a36ca1352095e18da677c04c754",
+      "fileCount": 1,
+      "metadata": "/api/skills/edit-article/metadata.json",
+      "verification": "/api/skills/edit-article/verification.json"
+    },
+    {
       "slug": "eightctl",
       "name": "eightctl",
       "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
@@ -6319,6 +6990,171 @@
       "verification": "/api/skills/gemini/verification.json"
     },
     {
+      "slug": "grill-me",
+      "name": "grill-me",
+      "description": "A relentless interview to sharpen a plan or design.",
+      "category": "Utilities",
+      "bundleHash": "sha256-d35cd841fb63edab3559ce43b8c35be6129d1ff5c0ca07373c391d797419497e",
+      "merkleLeaf": "sha256-2ffaa48d12def1ed789fe6cdc93793c2bdd7d1fe97aca7551e099169a84d27aa",
+      "fileCount": 1,
+      "metadata": "/api/skills/grill-me/metadata.json",
+      "verification": "/api/skills/grill-me/verification.json"
+    },
+    {
+      "slug": "grilling",
+      "name": "grilling",
+      "description": "Grill the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
+      "category": "Utilities",
+      "bundleHash": "sha256-b354f730432cb7ab24ec6b663e5dc0a2ce5d2c7c5bd2d97c2cd1ec1ada852e3b",
+      "merkleLeaf": "sha256-370977141a1440d3765db29a147e5f5c7d9bad7234a77c4e2e5e2370120412c0",
+      "fileCount": 1,
+      "metadata": "/api/skills/grilling/metadata.json",
+      "verification": "/api/skills/grilling/verification.json"
+    },
+    {
+      "slug": "huashu-article-edit",
+      "name": "huashu-article-edit",
+      "description": "标准化文章编辑流程，确保修改范围明确、进度可追踪、变更有记录。当用户说\"编辑文章\"、\"修改文章\"、\"调整内容\"、\"改一下这篇\"时使用此技能。",
+      "category": "Utilities",
+      "bundleHash": "sha256-c50c1aab25d8db0d3bee6afbd54ffac98d2b94d123207905e84cc5c7f1527400",
+      "merkleLeaf": "sha256-da3bbaa6fe524b0c98e874a2b3971a85f74542de87429b5e0bd3a963e7020196",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-article-edit/metadata.json",
+      "verification": "/api/skills/huashu-article-edit/verification.json"
+    },
+    {
+      "slug": "huashu-article-to-x",
+      "name": "huashu-article-to-x",
+      "description": "长文精简为X平台内容（200-500字），保留核心观点和个人风格。当用户提到\"转微博\"、\"发小红书\"、\"社交媒体\"、\"缩短文章\"时使用。",
+      "category": "Utilities",
+      "bundleHash": "sha256-2943fffc93181b4bf904dce842bc162a5bf0f509a941c486feb9696829c509b5",
+      "merkleLeaf": "sha256-1faabf39ec1c204635a5d34763aab34513fc5c378c86a68b0b2f66454cc316d5",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-article-to-x/metadata.json",
+      "verification": "/api/skills/huashu-article-to-x/verification.json"
+    },
+    {
+      "slug": "huashu-data-pro",
+      "name": "huashu-data-pro",
+      "description": "数据分析与办公提效全能助手。覆盖数据处理、分析洞察、报告撰写、PPT制作、数据可视化的端到端工作流。 始终从专家视角出发，帮用户多想一步。遇到不确定的问题主动与用户确认。 支持：Excel数据分析、投放数据复盘、ROI测算、数据可视化、报告生成、PPT制作、公式生成。 当用户提到\"分析数据\"、\"做报告\"、\"做PPT\"、\"Excel\"、\"投放分析\"、\"ROI\"、\"复盘\"、 \"周报\"、\"月报\"、\"数据处理\"、\"图表\"、\"可视化\"、\"汇报\"、\"表格\"、\"公式\"时使用此技能。",
+      "category": "Utilities",
+      "bundleHash": "sha256-d4a314e50322b1e53267667ba0229660c59d2bab5ada4a374d5fcc03f8b732f3",
+      "merkleLeaf": "sha256-c58dd7d1326fcdd2e586a8ef62f1e6a2869519df9584ba48fa51f1727a3943fe",
+      "fileCount": 10,
+      "metadata": "/api/skills/huashu-data-pro/metadata.json",
+      "verification": "/api/skills/huashu-data-pro/verification.json"
+    },
+    {
+      "slug": "huashu-design",
+      "name": "huashu-design",
+      "description": "设计哲学顾问，从20种风格中推荐3个方向并生成视觉Demo和AI提示词。当用户提到\"设计风格\"、\"设计方向\"、\"配色方案\"、\"视觉风格\"、\"设计评审\"、\"推荐风格\"时使用。",
+      "category": "Utilities",
+      "bundleHash": "sha256-9d2a816fd047da78ccf1a5f104f16e062fb32ad9b2691bd07a4d5abb446d2cfa",
+      "merkleLeaf": "sha256-aab27e977ded7fbbf76767597ed6b0b6e8ab5048178b9c4f17390e755be4b306",
+      "fileCount": 4,
+      "metadata": "/api/skills/huashu-design/metadata.json",
+      "verification": "/api/skills/huashu-design/verification.json"
+    },
+    {
+      "slug": "huashu-douyin-script",
+      "name": "huashu-douyin-script",
+      "description": "抖音爆款脚本创作工作流。从竞品视频拆解到脚本生成的完整流程：下载抖音视频→Gemini视频分析→爆款公式提炼→脚本+分镜生成→AI味审校。 当用户提到\"抖音脚本\"、\"爆款拆解\"、\"竞品分析\"、\"带货脚本\"、\"千川素材\"、\"种草脚本\"、\"视频拆解\"、\"抖音视频分析\"时使用此技能。",
+      "category": "Utilities",
+      "bundleHash": "sha256-41971cce62cdb52b3837d6f2e0b10c773b96576bc417cd11da5717e982385ac2",
+      "merkleLeaf": "sha256-788cd51aef967d7277ed2c5bc6aac4459cc43b3f4d9fb087b045b26bd2ccb755",
+      "fileCount": 6,
+      "metadata": "/api/skills/huashu-douyin-script/metadata.json",
+      "verification": "/api/skills/huashu-douyin-script/verification.json"
+    },
+    {
+      "slug": "huashu-info-search",
+      "name": "huashu-info-search",
+      "description": "多渠道搜索新产品新技术，交叉验证后存入知识库。当用户提到\"最新信息\"、\"新产品\"、\"搜索资料\"、\"查资料\"、\"了解XX\"时使用。",
+      "category": "Utilities",
+      "bundleHash": "sha256-f31197fdc16f632d0e36e94bfb344f0b4aa5d15b4b7f7211326c9ed37c30d48b",
+      "merkleLeaf": "sha256-12bc4835c54ad4eba86e8c99c2b74616c11ad6eb575c2e08aa53b042b43f3689",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-info-search/metadata.json",
+      "verification": "/api/skills/huashu-info-search/verification.json"
+    },
+    {
+      "slug": "huashu-material-search",
+      "name": "huashu-material-search",
+      "description": "搜索个人素材库1800+条真实经历和观点，为内容增加人味。当用户提到\"个人经历\"、\"真实案例\"、\"素材\"、\"人味\"时使用。",
+      "category": "Utilities",
+      "bundleHash": "sha256-9e0e82b6f797c98318ad4c0fced738538c47a8d8c97ea93caccb5c8a2debeddf",
+      "merkleLeaf": "sha256-11263beb53ea0059b9986120e6bfeff0da760e705e7a7e0100a6c3d88e601321",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-material-search/metadata.json",
+      "verification": "/api/skills/huashu-material-search/verification.json"
+    },
+    {
+      "slug": "huashu-prompt-save",
+      "name": "huashu-prompt-save",
+      "description": "自动识别Prompt类型并分类保存（技术/内容/教学/产品/通用）。当用户提到\"保存prompt\"、\"记录prompt\"、\"整理prompt\"时使用。",
+      "category": "Utilities",
+      "bundleHash": "sha256-f8235f17c84dd89da00d3e677a07813bc902fa6559d4b15c43c445241a0a13f9",
+      "merkleLeaf": "sha256-862c28f99ca025ce5dc3afda9c06836771f39ba8ec273e3cf6268725dc2cae4e",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-prompt-save/metadata.json",
+      "verification": "/api/skills/huashu-prompt-save/verification.json"
+    },
+    {
+      "slug": "huashu-proofreading",
+      "name": "huashu-proofreading",
+      "description": "三遍审校降低AI检测率，让文章更有人味。当用户提到\"AI味太重\"、\"像AI写的\"、\"降低AI检测率\"、\"审校\"、\"自然一些\"时使用。",
+      "category": "Utilities",
+      "bundleHash": "sha256-a9b574ab70122acb5c2af8ddf2fa5ea0e49e0a39cdb1d5d374c4510250720626",
+      "merkleLeaf": "sha256-ca5868722ae88a88db22291a2339c09b81c9993d0ec7556fb90c6e14e3d1fdfb",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-proofreading/metadata.json",
+      "verification": "/api/skills/huashu-proofreading/verification.json"
+    },
+    {
+      "slug": "huashu-research",
+      "name": "huashu-research",
+      "description": "结构化网络调研流程，确保调研成果增量保存到文件，不因会话截断丢失。当用户说\"调研\"、\"搜索资料\"、\"帮我查一下\"、\"了解一下\"、\"最新信息\"时使用此技能。",
+      "category": "Utilities",
+      "bundleHash": "sha256-3cd149a0fb3bd6ec2228d4c0c644b5a73a2ba95cdbd49f9f669b5f9d55cfc698",
+      "merkleLeaf": "sha256-a33b09e1aa538c8c22a2995d3383cda780e79ee1db8faa331917ade64d357c3c",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-research/metadata.json",
+      "verification": "/api/skills/huashu-research/verification.json"
+    },
+    {
+      "slug": "huashu-script-polish",
+      "name": "huashu-script-polish",
+      "description": "视频脚本口语化审校，去书面腔让脚本适合说出来。当用户提到\"口语化\"、\"太书面了\"、\"像说话一样\"、\"脚本审校\"时使用。",
+      "category": "Utilities",
+      "bundleHash": "sha256-3cfcf34003c1b66da871ea222d36a296f98d40c730bb90550a2296e4003a2787",
+      "merkleLeaf": "sha256-b820f7b4a466f91d57a6435729f40ee4e249b66a3044e580fa6bcc4107b97a0f",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-script-polish/metadata.json",
+      "verification": "/api/skills/huashu-script-polish/verification.json"
+    },
+    {
+      "slug": "huashu-slides",
+      "name": "huashu-slides",
+      "description": "从内容到成品PPTX的端到端演示文稿制作，含AI插画生成和18种设计风格。当用户提到\"做PPT\"、\"做幻灯片\"、\"演示文稿\"、\"Keynote\"、\"slides\"时使用。",
+      "category": "Utilities",
+      "bundleHash": "sha256-6ddc85f6723581e91d718326e4c106851d48c6510bc8ebc535b357c12e8798d1",
+      "merkleLeaf": "sha256-fae186d6bf0f6cce407ca42140bb5a5b6f23e52535ce2f737ccdb02471ef2b52",
+      "fileCount": 24,
+      "metadata": "/api/skills/huashu-slides/metadata.json",
+      "verification": "/api/skills/huashu-slides/verification.json"
+    },
+    {
+      "slug": "huashu-topic-gen",
+      "name": "huashu-topic-gen",
+      "description": "快速生成3-4个选题方向，含标题、大纲和优劣分析。当用户提到\"选题\"、\"写什么\"、\"文章方向\"、\"题目建议\"时使用。",
+      "category": "Utilities",
+      "bundleHash": "sha256-19c7ccfeeabba03ea5e7957da86586b8a7abba4b2053092626a9f77f08593374",
+      "merkleLeaf": "sha256-685b112603d5bc41f2662aae12ec86a2784ad43df9fdc67c6c45d64927e09cad",
+      "fileCount": 1,
+      "metadata": "/api/skills/huashu-topic-gen/metadata.json",
+      "verification": "/api/skills/huashu-topic-gen/verification.json"
+    },
+    {
       "slug": "in-progress/setup-ts-deep-modules",
       "name": "setup-ts-deep-modules",
       "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module — implementation hidden in subfolders, reachable only through its entry-point files. User-invoked.",
@@ -6361,6 +7197,28 @@
       "fileCount": 1,
       "metadata": "/api/skills/in-progress/writing-shape/metadata.json",
       "verification": "/api/skills/in-progress/writing-shape/verification.json"
+    },
+    {
+      "slug": "messari-alpha-scout",
+      "name": "messari-alpha-scout",
+      "description": "Alpha scouting workflow using Messari x402. Scans mindshare gainers, trending topics, and news to surface emerging narratives and high-momentum assets. Total cost ~$1.25 USDC per run.",
+      "category": "Utilities",
+      "bundleHash": "sha256-3da9928f95b81387d026d0f30a86fb014cf51ec1839a1ecb935a1341d354f598",
+      "merkleLeaf": "sha256-7cf9179179ffd91a6f95f04a0eab83175da932dc701d1224c7cdb6d6bfae386b",
+      "fileCount": 1,
+      "metadata": "/api/skills/messari-alpha-scout/metadata.json",
+      "verification": "/api/skills/messari-alpha-scout/verification.json"
+    },
+    {
+      "slug": "messari-funding-intel",
+      "name": "messari-funding-intel",
+      "description": "Funding intelligence workflow using Messari x402. Scans recent rounds, M&A activity, venture funds, and organizations, then synthesizes a VC landscape brief via Messari AI. Total cost ~$0.75–$1.25 USDC per run.",
+      "category": "Utilities",
+      "bundleHash": "sha256-4dbef9e062be5b729867d6178cec13c4657cf616b75e7634bf59490054a5340f",
+      "merkleLeaf": "sha256-ea3f4324e33560bbf03f4caad9d66c2e5cc31a39169f2ab5622cc0554616c741",
+      "fileCount": 1,
+      "metadata": "/api/skills/messari-funding-intel/metadata.json",
+      "verification": "/api/skills/messari-funding-intel/verification.json"
     },
     {
       "slug": "misc/migrate-to-shoehorn",
@@ -6515,6 +7373,17 @@
       "fileCount": 1,
       "metadata": "/api/skills/research-and-web/research-prompt/metadata.json",
       "verification": "/api/skills/research-and-web/research-prompt/verification.json"
+    },
+    {
+      "slug": "shadcn",
+      "name": "shadcn",
+      "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
+      "category": "Utilities",
+      "bundleHash": "sha256-a86fee39273470b2569f4f5a891c85be8a9577f4464e601ee2d6ce57c23cd07a",
+      "merkleLeaf": "sha256-c451356ebd999e6662e0ecd40a02222f122f1a06abc6eafe0dc078f750af4376",
+      "fileCount": 8,
+      "metadata": "/api/skills/shadcn/metadata.json",
+      "verification": "/api/skills/shadcn/verification.json"
     },
     {
       "slug": "swap-integration",

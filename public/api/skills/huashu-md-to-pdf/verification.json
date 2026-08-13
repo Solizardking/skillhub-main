@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-md-to-pdf",
+  "name": "huashu-md-to-pdf",
+  "description": "将 Markdown 文档转换为专业的 PDF 白皮书，采用苹果设计风格。 支持完整的 Markdown 语法（代码块、表格、引用、列表等）。 自动生成封面、目录、页眉页脚。 使用场景：技术文档、白皮书、教程、报告等需要专业排版的 Markdown 文档。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-md-to-pdf/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-md-to-pdf/metadata.json",
+  "bundleHash": "sha256-bbe4d3b0dd597c122fd057dfbaad5432cb757521d15f2cff3ceded4f394d899e",
+  "merkleLeaf": "sha256-45c6a4989e2a76865326f8f9b6b7d7b75a4d9ea6dd749bf78e4f1400acd1aef3",
+  "files": [
+    {
+      "path": "EXAMPLES.md",
+      "bytes": 3803,
+      "sha256": "sha256-2adb96acbcf17f0ec89bac69b725cd7efef2395393b000c4c025285c68e094ab"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2197,
+      "sha256": "sha256-e3ea879e63c8ff1f381816fd990da9005c4890ea1d8908413936c2d9aa7ce3af"
+    },
+    {
+      "path": "scripts/convert.py",
+      "bytes": 16976,
+      "sha256": "sha256-6467e3a2cd567bc16fe802309ab5640612b41f993bf96b09d56711e40118ad0a"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 4271,
+      "sha256": "sha256-2e0094c2af064849e30923ddc50b83616aa06d76ab77c784962ca5bf68ec12ed"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

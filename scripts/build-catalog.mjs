@@ -250,6 +250,29 @@ function categorize(skill, existingCategories) {
     return "NVIDIA / Accelerated Computing";
   }
 
+  if (
+    skill.slug === "moonpay" ||
+    skill.slug.startsWith("moonpay-") ||
+    skill.slug.startsWith("allium-") ||
+    skill.slug.startsWith("maiat-") ||
+    [
+      "corbits-marketplace",
+      "dune-analytics",
+      "myriad-prediction-markets",
+      "paybox",
+      "pumpfun-skills",
+      "shipp-sports-data",
+      "skills-store",
+      "coingecko",
+    ].includes(skill.slug)
+  ) {
+    return "Solana / Blockchain";
+  }
+
+  if (skill.slug === "shadcn") {
+    return "Dev Tools / Agents";
+  }
+
   const text = `${skill.slug} ${skill.name} ${skill.description}`.toLowerCase();
 
   if (/\b(solana|anchor|pinocchio|codama|litesvm|mollusk|surfpool|magicblock|wallet|token|crypto|blockchain|dflow|kalshi|phantom|dex|pump|clawd|vulcan|imperial|phoenix|perp|tee|zk|gateway|swarm|light protocol|zkcompression|compressed)\b/.test(text)) {
@@ -367,8 +390,28 @@ async function renderPublic(skills) {
   files.set(".well-known/onchain-skill-registry.json", `${JSON.stringify(registry, null, 2)}\n`);
   files.set("api/site.json", `${JSON.stringify(renderSiteManifest(catalog, registry), null, 2)}\n`);
   files.set(".well-known/skills-hub.json", `${JSON.stringify(renderSiteManifest(catalog, registry), null, 2)}\n`);
+  await addGoogleRegistryArtifacts(files);
 
   return files;
+}
+
+async function addGoogleRegistryArtifacts(files) {
+  const dir = path.join(ROOT, "registry", "google");
+  if (!existsSync(dir)) return;
+  const mapping = [
+    ["cheshire-agent-card.json", ".well-known/agent-card.json"],
+    ["cheshire-mcp-interface.json", ".well-known/mcp.json"],
+    ["cheshire-mcp-server-card.json", ".well-known/mcp/server-card.json"],
+    ["cheshire-mcp-tools-list.json", ".well-known/mcp/tools-list.json"],
+    ["canonical-mcp-resource.json", ".well-known/canonical-mcp-resource.json"],
+    ["openapi-0x-swap.yaml", ".well-known/openapi-0x-swap.yaml"],
+    ["openapi-zero-service.yaml", ".well-known/openapi-zero-service.yaml"],
+  ];
+  for (const [src, dest] of mapping) {
+    const srcPath = path.join(dir, src);
+    if (!existsSync(srcPath)) continue;
+    files.set(dest, await readFile(srcPath, "utf8"));
+  }
 }
 
 async function addScannerDashboard(files) {
@@ -606,6 +649,8 @@ function renderReadme(catalog) {
     ["🟩 NVIDIA mode", "CUDA, Jetson, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2, Dynamo", catalog.filter((skill) => skill.slug.startsWith("nvidia/"))],
     ["🌞 Helius mode", "Helius infra: Sender, DAS, LaserStream + Jupiter, DFlow, OKX, Phantom, SVM internals", catalog.filter((skill) => skill.slug.startsWith("helius-skills/"))],
     ["🎰 Pump.fun mode", "launch → curve → fees → security, the whole token lifecycle", catalog.filter((skill) => skill.slug === "pumpfun" || skill.slug.startsWith("pump-") || skill.slug.startsWith("pumpfun-"))],
+    ["🌙 MoonPay / PayBox mode", "fiat on-ramp, agent vault, swaps, x402, prediction markets, token safety", catalog.filter((skill) => skill.slug === "moonpay" || skill.slug.startsWith("moonpay-") || ["paybox", "maiat-token-safety", "maiat-trust-check", "allium-onchain-data", "allium-x402", "corbits-marketplace", "dune-analytics", "myriad-prediction-markets", "shipp-sports-data"].includes(skill.slug))],
+    ["🦎 CoinGecko mode", "live market data, GeckoTerminal on-chain, NFTs, treasuries — docs index at docs.coingecko.com/llms.txt", catalog.filter((skill) => skill.slug === "coingecko")],
     ["🌋 Vulcan / Phoenix mode", "perps trading: TA, grids, TWAP, TP/SL, risk", catalog.filter((skill) => skill.slug === "vulcan" || skill.slug.startsWith("vulcan-"))],
     ["👑 Imperial mode", "the imperial trading deck: execution, margin, portfolio intel", catalog.filter((skill) => skill.slug === "imperial" || skill.slug.startsWith("imperial-"))],
     ["🎲 DFlow / Kalshi mode", "prediction markets: scan, trade, portfolio, KYC", catalog.filter((skill) => skill.slug.startsWith("dflow-"))],
@@ -701,6 +746,7 @@ function renderReadme(catalog) {
     "| Skill relay | Full pipeline: rebuild catalog, scan, smoke/install checks, optional GitHub commit/push and on-chain re-anchor. | [`scripts/skill-relay.mjs`](./scripts/skill-relay.mjs), [`.github/workflows/skill-relay.yml`](./.github/workflows/skill-relay.yml) |",
     "| Scanner | Local integrity/risk scanner plus a live, interactive verification dashboard: real-time verification/risk/category charts, keyboard-navigable skill list (`/` search, arrow keys), shareable deep links, and one-click install/hash/link copy. Rebuilds from `scanner/results/scan-results.json` on every `npm run scanner:scan`. | [`scanner/bin/scan-skills.mjs`](./scanner/bin/scan-skills.mjs), [`scanner/results/`](./scanner/results/), [`scanner/public/index.html`](./scanner/public/index.html) |",
     "| Deployment | Static-hosting configs that run the catalog build and publish `public/`. | [`vercel.json`](./vercel.json), [`render.yaml`](./render.yaml) |",
+    "| Cheshire Terminal mesh | Live product hub: client UI, CLI, and server APIs serve `skills/` + `skills-store/`; Google registry cards under `registry/google/`. | [cheshireterminal.ai/skills](https://cheshireterminal.ai/skills), [cheshireterminal.ai/skills-store](https://cheshireterminal.ai/skills-store), [cheshireterminal.ai/cli](https://cheshireterminal.ai/cli), [`skills/cheshire-terminal/references/mesh.md`](./skills/cheshire-terminal/references/mesh.md) |",
     "",
     "### Source Families",
     "",
@@ -723,6 +769,10 @@ function renderReadme(catalog) {
     "```bash",
     "npx skills add Solizardking/skills        # via skills.sh",
     "npx github:Solizardking/skills install    # straight from GitHub",
+    "",
+    "# Live Cheshire hub (curated store + CLI)",
+    "npx skills add Solizardking/cheshire-terminal --path skills-store",
+    "npx cheshire-terminal-cli skills",
     "```",
     "",
     "Or grab a **premiere** focused stack (the hub's lead offerings):",
@@ -759,6 +809,8 @@ function renderReadme(catalog) {
     "",
     "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock metaplex/skills/metaplex",
     "npx github:Solizardking/skills install pumpfun pump-token-lifecycle pump-bonding-curve pump-security",
+    "npx github:Solizardking/skills install moonpay moonpay-auth paybox allium-onchain-data dune-analytics maiat-token-safety",
+    "npx github:Solizardking/skills install coingecko",
     "npx github:Solizardking/skills install compressed-pda compressed-token zk zkrouter",
     "npx github:Solizardking/skills install google/cloud/gcloud google/cloud/gke-basics google/cloud/bigquery-basics",
     "```",
@@ -916,6 +968,23 @@ function renderHub(catalog) {
     "| Public catalog | `/skills` or `public/index.html` |",
     "| Scanner dashboard | Live, interactive verification/risk/category charts at `/scanner` or `npm run scanner:serve` |",
     `| Production site | ${SITE_URL} |`,
+    "| Live product hub | https://cheshireterminal.ai |",
+    "| Skills UI | https://cheshireterminal.ai/skills |",
+    "| Skills store | https://cheshireterminal.ai/skills-store |",
+    "| CLI | https://cheshireterminal.ai/cli |",
+    "",
+    "## Cheshire Terminal mesh",
+    "",
+    "Cheshire Terminal is the live hub. This repo is the `SKILL.md` inventory that feeds it.",
+    "",
+    "| Tree | Connects to |",
+    "|---|---|",
+    "| `skills-store/` | Curated pack · `GET /api/skills-store` · `/skills-store` |",
+    "| `skills/` | Community dump · `GET /api/skills` · `/skills` |",
+    "| `client/` | Product UI for skills, store, and CLI |",
+    "| `cli/` | `cheshire-terminal-cli` (`skills`, `skills:store`) |",
+    "| `server/` | `server/routes/skills.ts`, `skills-store.ts`, `server/mcp/tools.ts` |",
+    "| `registry/google/` | A2A agent card + MCP tools list + OpenAPI |",
     "",
     "## Launch Sequences",
     "",
@@ -924,6 +993,16 @@ function renderHub(catalog) {
     "```bash",
     "npx skills add Solizardking/skills",
     "npx github:Solizardking/skills install",
+    "```",
+    "",
+    "Live Cheshire Terminal hub (store + CLI + API):",
+    "",
+    "```bash",
+    "npx skills add Solizardking/cheshire-terminal --path skills-store",
+    "npx cheshire-terminal-cli skills",
+    "npx cheshire-terminal-cli skills:store",
+    "curl -sS https://cheshireterminal.ai/api/skills | jq 'keys'",
+    "curl -sS https://cheshireterminal.ai/api/skills-store",
     "```",
     "",
     "Install **premiere** focused stacks (lead offerings):",
@@ -944,6 +1023,8 @@ function renderHub(catalog) {
     "npx github:Solizardking/skills install nvidia/jetson-quick-start nvidia/deepstream-dev nvidia/cudaq-guide nvidia/aiq-deploy nvidia/cuopt-developer --force",
     "npx github:Solizardking/skills install solana-dev solana-formal-verification magicblock metaplex/skills/metaplex --force",
     "npx github:Solizardking/skills install pumpfun pump-token-lifecycle pump-bonding-curve pump-fee-sharing pump-claims-readonly pump-security",
+    "npx github:Solizardking/skills install moonpay moonpay-auth paybox allium-onchain-data dune-analytics maiat-token-safety",
+    "npx github:Solizardking/skills install coingecko",
     "npx github:Solizardking/skills install ask-mcp compressed-pda compressed-token solana-redpill-verifier solana-rent-free-dev testing zk zkrouter",
     "npx github:Solizardking/skills install google/cloud/gke-basics google/cloud/gcloud google/cloud/bigquery-basics",
     "npx github:Solizardking/skills install google/ads/google-ads-api/google-ads-api-quickstart google/analytics/google-analytics-data-api-basics",
@@ -1351,8 +1432,25 @@ function renderSiteManifest(catalog, registry) {
     url: SITE_URL,
     aliases: SITE_ALIASES,
     cheshire: {
+      site: "https://cheshireterminal.ai",
       skills: "https://cheshireterminal.ai/skills",
       skillsStore: "https://cheshireterminal.ai/skills-store",
+      cli: "https://cheshireterminal.ai/cli",
+      mcp: "https://cheshireterminal.ai/mcp",
+      agentCard: "https://cheshireterminal.ai/.well-known/agent-card.json",
+      api: {
+        skills: "https://cheshireterminal.ai/api/skills",
+        skillsStore: "https://cheshireterminal.ai/api/skills-store",
+        cli: "https://cheshireterminal.ai/api/cli",
+      },
+      trees: {
+        skillsStore: "skills-store/",
+        skills: "skills/",
+        client: "client/",
+        cli: "cli/",
+        server: "server/",
+        googleRegistry: "registry/google/",
+      },
     },
     generatedAt: "1970-01-01T00:00:00.000Z",
     totalSkills: catalog.length,

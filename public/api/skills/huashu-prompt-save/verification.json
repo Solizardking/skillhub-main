@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-prompt-save",
+  "name": "huashu-prompt-save",
+  "description": "自动识别Prompt类型并分类保存（技术/内容/教学/产品/通用）。当用户提到\"保存prompt\"、\"记录prompt\"、\"整理prompt\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-prompt-save/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-prompt-save/metadata.json",
+  "bundleHash": "sha256-f8235f17c84dd89da00d3e677a07813bc902fa6559d4b15c43c445241a0a13f9",
+  "merkleLeaf": "sha256-862c28f99ca025ce5dc3afda9c06836771f39ba8ec273e3cf6268725dc2cae4e",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2423,
+      "sha256": "sha256-163eca8059065ddee1a73cd6d7ccf085f90f01934a099a637c6368a0756f0678"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

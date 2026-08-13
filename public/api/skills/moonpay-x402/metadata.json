@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-x402",
+  "name": "moonpay-x402",
+  "description": "Make paid API requests to x402-protected endpoints. Automatically handles payment with your local wallet.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-x402/SKILL.md"
+}

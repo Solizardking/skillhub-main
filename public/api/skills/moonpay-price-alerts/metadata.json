@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-price-alerts",
+  "name": "moonpay-price-alerts",
+  "description": "Set up desktop price alerts that notify you when tokens hit target prices. Observe-only — no trading, just notifications.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-price-alerts/SKILL.md"
+}

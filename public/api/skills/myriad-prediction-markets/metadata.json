@@ -1,0 +1,7 @@
+{
+  "slug": "myriad-prediction-markets",
+  "name": "myriad-prediction-markets",
+  "description": "AI trading agent for Myriad prediction markets on BNB Chain. Discover live markets, execute buy/sell trades, monitor portfolio exposure, claim winnings, and run as an MCP server for multi-agent workflows. Use when the user wants to trade prediction markets on BNB Chain, find market opportunities by keyword, or automate a trading + claims loop.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/myriad-prediction-markets/SKILL.md"
+}

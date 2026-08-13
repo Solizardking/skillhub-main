@@ -1,0 +1,7 @@
+{
+  "slug": "huashu-video-check",
+  "name": "huashu-video-check",
+  "description": "基于MrBeast策略检查视频标题、封面和开头钩子。当用户提到\"视频标题\"、\"封面图\"、\"点击率\"、\"CTR\"、\"观看时长\"时使用。",
+  "category": "Media / Devices",
+  "skill": "/api/skills/huashu-video-check/SKILL.md"
+}

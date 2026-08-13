@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-hardware-wallet",
+  "name": "moonpay-hardware-wallet",
+  "description": "Connect a hardware wallet (Ledger) to the MoonPay CLI. Sign transactions on the physical device — no private keys stored locally.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-hardware-wallet/SKILL.md"
+}

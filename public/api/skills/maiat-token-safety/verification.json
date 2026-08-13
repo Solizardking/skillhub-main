@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "maiat-token-safety",
+  "name": "maiat-token-safety",
+  "description": "Check if an ERC-20 token is safe before swapping. Detects honeypots, high-tax tokens, and rug pulls. Use before any token swap.",
+  "source": "https://skills.x402.wtf/api/skills/maiat-token-safety/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/maiat-token-safety/metadata.json",
+  "bundleHash": "sha256-cb7538abf3b3adaabe2db434e55e916b95dddb79505dc2a8180e6f2922df3b55",
+  "merkleLeaf": "sha256-c58548612ca9b50d0c0f2b811b26e0a72eb7e4cf6d9116fd83867fc24cdf79f6",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2325,
+      "sha256": "sha256-2863e7e0bcb9b78451b232709b41f344ba1e530858b1305ab6d17ffdf8342687"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

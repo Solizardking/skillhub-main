@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-auth",
+  "name": "moonpay-auth",
+  "description": "Set up the MoonPay CLI, authenticate, and manage local wallets. Use when commands fail, for login, or to create/import wallets.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-auth/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-auth/metadata.json",
+  "bundleHash": "sha256-0caa1268969de6e9dedbfe8d731f1a8a191fb57858980333ddb9feafb54705df",
+  "merkleLeaf": "sha256-2459861d6548429d9e9d45a15e9fb4e5eb40058b8dd733fc983f0a6e1b08bd19",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 4716,
+      "sha256": "sha256-489ab0e66c8e9ae717a1f75c432cecea1258f2d988bb863a1789fc4991f026c4"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

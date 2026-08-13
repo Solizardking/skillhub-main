@@ -1,0 +1,59 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "shadcn",
+  "name": "shadcn",
+  "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
+  "source": "https://skills.x402.wtf/api/skills/shadcn/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/shadcn/metadata.json",
+  "bundleHash": "sha256-a86fee39273470b2569f4f5a891c85be8a9577f4464e601ee2d6ce57c23cd07a",
+  "merkleLeaf": "sha256-c451356ebd999e6662e0ecd40a02222f122f1a06abc6eafe0dc078f750af4376",
+  "files": [
+    {
+      "path": "agents/openai.yml",
+      "bytes": 238,
+      "sha256": "sha256-35db91b1eef58b2abe01da9b88577de5a44e233b740cd93d692ddeeadd2afe4d"
+    },
+    {
+      "path": "assets/shadcn-small.png",
+      "bytes": 1049,
+      "sha256": "sha256-0ecc62d682727f68fc4937eed19960c706714fa084d44f63028d611ae02bf3d7"
+    },
+    {
+      "path": "assets/shadcn.png",
+      "bytes": 3852,
+      "sha256": "sha256-7d60ad6fec4d89a0d44ba5a3c9283d2fea0047af5467f9227040e20d927d39b7"
+    },
+    {
+      "path": "cli.md",
+      "bytes": 17304,
+      "sha256": "sha256-a381e35bf36fe7bb851952c13707e01e82434fd7a4a4e53f6df26c6370838904"
+    },
+    {
+      "path": "customization.md",
+      "bytes": 6074,
+      "sha256": "sha256-84c1d47168c4b8adb5840e4af30a4e373ae3377c1110478c8974f398dd63f5ba"
+    },
+    {
+      "path": "mcp.md",
+      "bytes": 3510,
+      "sha256": "sha256-8d696b4e45b7d0e337367248513bd9acebe8f3bcfd7b748c775e5a337c8f38c8"
+    },
+    {
+      "path": "registry.md",
+      "bytes": 8817,
+      "sha256": "sha256-4f239be36bd2b58e17047db1ca80ab7da00e15a8b73242e5e4d50d113c4caa05"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 19415,
+      "sha256": "sha256-a45cddd4511f8262df05b20506f4d52be8210a9ee05a13d9e36d4ee321bab593"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-article-edit",
+  "name": "huashu-article-edit",
+  "description": "标准化文章编辑流程，确保修改范围明确、进度可追踪、变更有记录。当用户说\"编辑文章\"、\"修改文章\"、\"调整内容\"、\"改一下这篇\"时使用此技能。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-article-edit/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-article-edit/metadata.json",
+  "bundleHash": "sha256-c50c1aab25d8db0d3bee6afbd54ffac98d2b94d123207905e84cc5c7f1527400",
+  "merkleLeaf": "sha256-da3bbaa6fe524b0c98e874a2b3971a85f74542de87429b5e0bd3a963e7020196",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 1974,
+      "sha256": "sha256-2e85422c3cf7b0f53cda632e5438e05d3c9fd3cc35fd0f58ad8053585889941f"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

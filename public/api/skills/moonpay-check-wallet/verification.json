@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-check-wallet",
+  "name": "moonpay-check-wallet",
+  "description": "Check wallet balances and holdings. Use for \"what's in my wallet\", portfolio breakdown, token balances, allocation percentages, and USD values.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-check-wallet/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-check-wallet/metadata.json",
+  "bundleHash": "sha256-8767da4d55608aa23e82f097431504a7103b11268184f0768f8f45d39b5da493",
+  "merkleLeaf": "sha256-4e7c4a5f8a5cb3c6863d40a0d1a382b50df16bb60bbbe7b5c26c577afabfce24",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 1815,
+      "sha256": "sha256-498f22152c0d688bc8fa7bd18d9f830b2d16553145c6aabb73ba70e8e4e44b0a"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

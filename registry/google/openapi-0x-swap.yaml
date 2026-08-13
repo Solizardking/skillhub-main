@@ -1,0 +1,225 @@
+swagger: '2.0'
+info:
+  title: cheshire-0x-swap
+  description: >-
+    Cheshire Terminal proxy for 0x Swap API v2 (EVM AllowanceHolder / Permit2,
+    Gasless, Cross-Chain, Solana swap-instructions). The server holds
+    ZEROEX_API_KEY; clients call Cheshire only — the 0x key never leaves the host.
+  version: 1.0.0
+  contact:
+    name: Cheshire Terminal
+    url: https://cheshireterminal.ai
+host: cheshireterminal.ai
+basePath: /api/0x
+schemes:
+  - https
+produces:
+  - application/json
+securityDefinitions:
+  cheshireBearer:
+    type: apiKey
+    name: Authorization
+    in: header
+    description: 'Bearer ct_sk_... or CLAWD holder session cookie (quotes/swaps)'
+paths:
+  /status:
+    get:
+      summary: 0x proxy readiness (public)
+      operationId: zeroXStatus
+      description: >-
+        Returns configured=true when ZEROEX_API_KEY (or legacy ox_KEY aliases)
+        is present. Never returns the secret.
+      responses:
+        '200':
+          description: Status payload with endpoints and warnings
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+              configured:
+                type: boolean
+              version:
+                type: string
+              data:
+                type: object
+  /swap/allowance-holder/price:
+    get:
+      summary: Indicative AllowanceHolder price
+      operationId: swapAllowanceHolderPrice
+      security:
+        - cheshireBearer: []
+      parameters:
+        - name: chainId
+          in: query
+          type: string
+          required: true
+        - name: sellToken
+          in: query
+          type: string
+          required: true
+        - name: buyToken
+          in: query
+          type: string
+          required: true
+        - name: sellAmount
+          in: query
+          type: string
+          required: true
+        - name: taker
+          in: query
+          type: string
+          required: false
+        - name: slippageBps
+          in: query
+          type: string
+          required: false
+      responses:
+        '200':
+          description: 0x price response wrapped as { success, data }
+  /swap/allowance-holder/quote:
+    get:
+      summary: Firm AllowanceHolder quote
+      operationId: swapAllowanceHolderQuote
+      security:
+        - cheshireBearer: []
+      parameters:
+        - name: chainId
+          in: query
+          type: string
+          required: true
+        - name: sellToken
+          in: query
+          type: string
+          required: true
+        - name: buyToken
+          in: query
+          type: string
+          required: true
+        - name: sellAmount
+          in: query
+          type: string
+          required: true
+        - name: taker
+          in: query
+          type: string
+          required: true
+        - name: slippageBps
+          in: query
+          type: string
+          required: false
+      responses:
+        '200':
+          description: Firm quote with transaction payload
+  /swap/permit2/price:
+    get:
+      summary: Indicative Permit2 price (advanced)
+      operationId: swapPermit2Price
+      security:
+        - cheshireBearer: []
+      parameters:
+        - name: chainId
+          in: query
+          type: string
+          required: true
+        - name: sellToken
+          in: query
+          type: string
+          required: true
+        - name: buyToken
+          in: query
+          type: string
+          required: true
+        - name: sellAmount
+          in: query
+          type: string
+          required: true
+        - name: taker
+          in: query
+          type: string
+          required: false
+      responses:
+        '200':
+          description: Permit2 style price
+  /swap/permit2/quote:
+    get:
+      summary: Firm Permit2 quote (sign eip712 + append sig)
+      operationId: swapPermit2Quote
+      security:
+        - cheshireBearer: []
+      parameters:
+        - name: chainId
+          in: query
+          type: string
+          required: true
+        - name: sellToken
+          in: query
+          type: string
+          required: true
+        - name: buyToken
+          in: query
+          type: string
+          required: true
+        - name: sellAmount
+          in: query
+          type: string
+          required: true
+        - name: taker
+          in: query
+          type: string
+          required: true
+      responses:
+        '200':
+          description: Firm quote with permit2.eip712
+  /solana/swap-instructions:
+    post:
+      summary: Solana swap instructions (flat IX array + ALTs)
+      operationId: solanaSwapInstructions
+      security:
+        - cheshireBearer: []
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            required:
+              - token_in
+              - token_out
+              - amount_in
+              - taker
+            properties:
+              token_in:
+                type: string
+              token_out:
+                type: string
+              amount_in:
+                type: string
+              taker:
+                type: string
+              slippage_bps:
+                type: integer
+              integrator_bytes:
+                type: integer
+              swap_fee_recipient:
+                type: string
+      responses:
+        '200':
+          description: Instructions + address_lookup_tables
+x-cheshire:
+  envKey: ZEROEX_API_KEY
+  envAliases:
+    - ZEROEX_API_KEY
+    - ZERO_EX_API_KEY
+    - ZEROX_API_KEY
+    - ox_KEY
+    - OX_KEY
+    - OX_API_KEY
+  registry:
+    - registry/google/canonical-mcp-resource.json
+    - registry/google/cheshire-agent-card.json
+    - registry/google/cheshire-mcp-tools-list.json
+  neverApprove: Settler
+  approveOnly:
+    - AllowanceHolder
+    - Permit2

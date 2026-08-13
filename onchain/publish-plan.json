@@ -1,15 +1,15 @@
 {
   "schemaVersion": "skillhub-publish-plan/v1",
-  "createdAt": "2026-07-15T15:17:31.752Z",
+  "createdAt": "2026-08-13T20:28:52.653Z",
   "cluster": "devnet",
-  "rpc": "https://api.devnet.solana.com",
-  "merkleRoot": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c",
-  "catalogHash": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4",
-  "totalSkills": 570,
+  "rpc": "https://devnet.helius-rpc.com/?api-key=6b52d42b-5d24-4841-a093-02b0d2cc9fc0",
+  "merkleRoot": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793",
+  "catalogHash": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849",
+  "totalSkills": 674,
   "uploads": [
     {
       "label": "onchain-skill-registry.json",
-      "bytes": 459350,
+      "bytes": 537680,
       "tags": [
         {
           "name": "Content-Type",
@@ -25,15 +25,15 @@
         },
         {
           "name": "Skill-Count",
-          "value": "570"
+          "value": "674"
         },
         {
           "name": "Merkle-Root",
-          "value": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c"
+          "value": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793"
         },
         {
           "name": "Catalog-Hash",
-          "value": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4"
+          "value": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849"
         },
         {
           "name": "Hub-Url",
@@ -43,7 +43,7 @@
     },
     {
       "label": "catalog.json",
-      "bytes": 241288,
+      "bytes": 281927,
       "tags": [
         {
           "name": "Content-Type",
@@ -59,15 +59,15 @@
         },
         {
           "name": "Skill-Count",
-          "value": "570"
+          "value": "674"
         },
         {
           "name": "Merkle-Root",
-          "value": "sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c"
+          "value": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793"
         },
         {
           "name": "Catalog-Hash",
-          "value": "sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4"
+          "value": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849"
         },
         {
           "name": "Hub-Url",
@@ -76,5 +76,5 @@
       ]
     }
   ],
-  "memoPreview": "skillhub:v1|skills:570|merkle:sha256-05a0d8ea835dceed13c801bfad419cf797790098a8f08ab931532ea78db4b94c|catalog:sha256-ff0f0c7867d45c7a05609ad70f4069dbb9776620379fb92fa0f5706c9db02cf4|ar:<registry-ar-tx>,<catalog-ar-tx>"
+  "memoPreview": "skillhub:v1|skills:674|merkle:sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793|catalog:sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849|ar:<registry-ar-tx>,<catalog-ar-tx>"
 }

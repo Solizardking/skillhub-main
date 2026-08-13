@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-export-data",
+  "name": "moonpay-export-data",
+  "description": "Export portfolio balances and transaction history to CSV or JSON files. Use for spreadsheets, tax reporting, or record-keeping.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-export-data/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-export-data/metadata.json",
+  "bundleHash": "sha256-ff026237bed4a8eccfbc321f424526544ed5fcb2c5bc3e70535363290ab919da",
+  "merkleLeaf": "sha256-677a05a5d5005877c4a0c7e36306f73cb4eb5678a7db4a9ff546166d85f29bff",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 3547,
+      "sha256": "sha256-cc6cd740b78ae814c7b3e95ba7814e9f1d69c52aa35ebf3045d36f03e2da823b"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

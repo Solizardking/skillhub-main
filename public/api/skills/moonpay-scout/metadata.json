@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-scout",
+  "name": "moonpay-scout",
+  "description": "Prediction market arbitrage & alpha scout. Searches Polymarket and Kalshi for the same event, runs cross-platform arb math (including fees), and ranks opportunities by profitability. Use when asked to \"find arb\", \"scout markets\", \"find edge\", or scan a specific topic across prediction markets.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-scout/SKILL.md"
+}

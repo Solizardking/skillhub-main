@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "myriad-prediction-markets",
+  "name": "myriad-prediction-markets",
+  "description": "AI trading agent for Myriad prediction markets on BNB Chain. Discover live markets, execute buy/sell trades, monitor portfolio exposure, claim winnings, and run as an MCP server for multi-agent workflows. Use when the user wants to trade prediction markets on BNB Chain, find market opportunities by keyword, or automate a trading + claims loop.",
+  "source": "https://skills.x402.wtf/api/skills/myriad-prediction-markets/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/myriad-prediction-markets/metadata.json",
+  "bundleHash": "sha256-1379e76fcbd6964826961fbc9791315b9dcb7fc864c7d6e5676a337b49383128",
+  "merkleLeaf": "sha256-a51aa9461a8ed1b31c7e393c50bd32fad5dfe4c0d846a0da26b74eac7116aa40",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 6300,
+      "sha256": "sha256-04224a0ba84c3acbdba62d8f89d32c78b1b8b9c5d48c6b64525690a71029e596"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

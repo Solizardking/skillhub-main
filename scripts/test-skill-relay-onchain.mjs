@@ -9,8 +9,9 @@
  * the shipped artifacts match the live registry + publish-receipt.
  */
 
-import { copyFile, readFile, writeFile } from "node:fs/promises";
+import { copyFile, mkdir, readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
+import os from "node:os";
 import path from "node:path";
 import process from "node:process";
 import { fileURLToPath } from "node:url";
@@ -21,9 +22,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, "..");
 const SCRATCH =
   process.env.SKILLHUB_TEST_SCRATCH ||
-  path.join(
-    "/var/folders/z2/fjzp59x97m5cmb81szvryzxh0000gn/T/grok-goal-5b46f7071a6a/implementer",
-  );
+  path.join(os.tmpdir(), "skillhub-relay-onchain-test");
 
 const MIRROR_PATH = path.join(ROOT, "onchain", "agentregistry-mirror.json");
 const LEDGER_PATH = path.join(ROOT, "onchain", "public-ledger.json");
@@ -210,12 +209,8 @@ async function testRefreshIsAssertiveWhenStillStale() {
 
 async function main() {
   console.log("test-skill-relay-onchain: driving real refreshOnchainSurfaces path\n");
-  await writeFile(path.join(SCRATCH, ".keep"), "ok\n").catch(async () => {
-    // scratch may need mkdir
-    const { mkdir } = await import("node:fs/promises");
-    await mkdir(SCRATCH, { recursive: true });
-    await writeFile(path.join(SCRATCH, ".keep"), "ok\n");
-  });
+  await mkdir(SCRATCH, { recursive: true });
+  await writeFile(path.join(SCRATCH, ".keep"), "ok\n");
 
   await testRefreshRepairsStaleMirrorAndLedger();
   await testRefreshIsAssertiveWhenStillStale();

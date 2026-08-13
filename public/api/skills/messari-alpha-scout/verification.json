@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "messari-alpha-scout",
+  "name": "messari-alpha-scout",
+  "description": "Alpha scouting workflow using Messari x402. Scans mindshare gainers, trending topics, and news to surface emerging narratives and high-momentum assets. Total cost ~$1.25 USDC per run.",
+  "source": "https://skills.x402.wtf/api/skills/messari-alpha-scout/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/messari-alpha-scout/metadata.json",
+  "bundleHash": "sha256-3da9928f95b81387d026d0f30a86fb014cf51ec1839a1ecb935a1341d354f598",
+  "merkleLeaf": "sha256-7cf9179179ffd91a6f95f04a0eab83175da932dc701d1224c7cdb6d6bfae386b",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 6092,
+      "sha256": "sha256-aa7be41d07e4c420d5939bc3acf994135a7ceba1512fde1e2a5c02a7d68affe2"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

@@ -12,7 +12,7 @@ deployment, and localized public catalog assets.
 
 ## Source Snapshot
 
-- Local source imported from `/Users/8bit/agents/agents`
+- Local source imported from the configured agent catalog.
 - Hub copy lives at `solana-clawd-agents/agents`
 - Primary catalog: `agents/agents-catalog.json`
 - Manifest: `agents/agents-manifest.json`

@@ -8,25 +8,47 @@
     "https://cheshireterminal.ai/skills"
   ],
   "cheshire": {
+    "site": "https://cheshireterminal.ai",
     "skills": "https://cheshireterminal.ai/skills",
-    "skillsStore": "https://cheshireterminal.ai/skills-store"
+    "skillsStore": "https://cheshireterminal.ai/skills-store",
+    "cli": "https://cheshireterminal.ai/cli",
+    "mcp": "https://cheshireterminal.ai/mcp",
+    "agentCard": "https://cheshireterminal.ai/.well-known/agent-card.json",
+    "api": {
+      "skills": "https://cheshireterminal.ai/api/skills",
+      "skillsStore": "https://cheshireterminal.ai/api/skills-store",
+      "cli": "https://cheshireterminal.ai/api/cli"
+    },
+    "trees": {
+      "skillsStore": "skills-store/",
+      "skills": "skills/",
+      "client": "client/",
+      "cli": "cli/",
+      "server": "server/",
+      "googleRegistry": "registry/google/"
+    }
   },
   "generatedAt": "1970-01-01T00:00:00.000Z",
-  "totalSkills": 595,
+  "totalSkills": 674,
   "categories": {
-    "Solana / Blockchain": 124,
-    "Dev Tools / Agents": 70,
+    "Solana / Blockchain": 172,
+    "Dev Tools / Agents": 73,
     "Google / Ads": 11,
     "Google / Analytics": 2,
     "Google / Cloud": 56,
     "NVIDIA / Accelerated Computing": 229,
     "Local / Web Services": 9,
-    "Media / Devices": 24,
-    "Productivity / Messaging": 23,
-    "Utilities": 47
+    "Media / Devices": 31,
+    "Productivity / Messaging": 25,
+    "Utilities": 66
   },
   "featured": {
     "solana": [
+      "agentic-wallet",
+      "alchemy-agentic-gateway",
+      "alchemy-api",
+      "allium-onchain-data",
+      "allium-x402",
       "anthropic-skills/claude-api",
       "ask-mcp",
       "cheshire-agent-registries",
@@ -43,14 +65,9 @@
       "clawdex",
       "cloudflare-one",
       "coding-agent",
+      "coingecko",
       "compressed-pda",
-      "compressed-token",
-      "copy-trade",
-      "dca-bot",
-      "dex-screener-scanner",
-      "dflow-docs",
-      "dflow-kalshi-market-data",
-      "dflow-kalshi-market-scanner"
+      "compressed-token"
     ],
     "prioritySkills": [
       "solana-common-errors",
@@ -80,8 +97,8 @@
   "verification": {
     "chain": "solana",
     "status": "anchor-ready",
-    "merkleRoot": "sha256-b1a2bb5e839cb9e4c06cfebeba3b5109b2148c3ce964851860cbf37bc929b246",
-    "catalogHash": "sha256-24594e39a277fefe829962d7294aa8a616f5fb1658cdbabb76586a1039e62dd7"
+    "merkleRoot": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793",
+    "catalogHash": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849"
   },
   "monetization": {
     "onchain": "Solana Pay tip URI per skill card",

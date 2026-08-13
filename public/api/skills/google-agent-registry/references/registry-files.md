@@ -10,7 +10,11 @@ All paths relative to repo root. Project: **x402-477302**.
 | `registry/google/cheshire-mcp-tools-list.json` | MCP tool-spec (`tools[]`) | ≤ 10 KB |
 | `registry/google/cheshire-mcp-interface.json` | `protocolBinding: mcp` | small |
 | `registry/google/cheshire-mcp-server-card.json` | MCP server card mirror | small |
+| `registry/google/canonical-mcp-resource.json` | Canonical GCP MCP / ADK resource names | small |
+| `registry/google/openapi-0x-swap.yaml` | 0x Swap OpenAPI | small |
 | `registry/google/openapi-zero-service.yaml` | Swagger 2.0 + `x-google-backend` | for zero-service / gateway |
+
+Hub copies of the same files: `skills/google-agent-registry/references/artifacts/`. On Cheshire Terminal, `client/`, `cli/`, and `server/` consume the live mirrors under `https://cheshireterminal.ai/.well-known/`.
 
 ## Agent card essentials
 

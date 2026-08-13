@@ -1,0 +1,7 @@
+{
+  "slug": "allium-x402",
+  "name": "allium-x402",
+  "description": "Query blockchain data via Allium APIs. Supports API key, x402 micropayments, and Tempo auth. Covers prices, wallets, tokens, and SQL analytics.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/allium-x402/SKILL.md"
+}

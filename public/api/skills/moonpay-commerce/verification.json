@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-commerce",
+  "name": "moonpay-commerce",
+  "description": "Browse Shopify stores, search products, manage a cart, and checkout with crypto via Solana Pay. No login required.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-commerce/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-commerce/metadata.json",
+  "bundleHash": "sha256-2b2e5029f0622f6c0ac2901617afa2c9483bfb760a4a442abcedd2ed07a42c54",
+  "merkleLeaf": "sha256-8a68e900818a9fcbdf774bf2bd8cd21395717749c3df157cb73c372290083e00",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2925,
+      "sha256": "sha256-d2ec000c833f0c6b5707833726f60ed20d339cae7f28a1a2fb0d60d578942821"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

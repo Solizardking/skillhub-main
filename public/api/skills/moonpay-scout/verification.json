@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-scout",
+  "name": "moonpay-scout",
+  "description": "Prediction market arbitrage & alpha scout. Searches Polymarket and Kalshi for the same event, runs cross-platform arb math (including fees), and ranks opportunities by profitability. Use when asked to \"find arb\", \"scout markets\", \"find edge\", or scan a specific topic across prediction markets.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-scout/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-scout/metadata.json",
+  "bundleHash": "sha256-3ca174fb221543e0da1ed923df986289be0be015307a2ef9ee819776a5617917",
+  "merkleLeaf": "sha256-a4872a386b50ab24eab013e7f8832d49354bc8232b32373422893270d11a23f7",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 7705,
+      "sha256": "sha256-9806180a598af827d70ddcfe68a97180f40c861e6ad8d4e410cd426be086b877"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

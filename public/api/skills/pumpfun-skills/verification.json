@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "pumpfun-skills",
+  "name": "pumpfun-skills",
+  "description": "Full Pump.fun skill pack with nested pump-* and pumpfun-* playbooks (admin, bonding curve, fees, lifecycle, MCP, security, testing, wallets). Use when installing the complete pump suite or navigating pumpfun-skills/* packages. Distinct from the pumpfun entry-point router skill.",
+  "source": "https://skills.x402.wtf/api/skills/pumpfun-skills/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/pumpfun-skills/metadata.json",
+  "bundleHash": "sha256-2b93e895bd84404f732c1bd46c627059e6369846606c6ed661b76814ebd46b51",
+  "merkleLeaf": "sha256-b432eec568f002bd1654ae5fdc129d870b48c4598534640734ad09fab266aff9",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2968,
+      "sha256": "sha256-b8aaaf230deed6a799cd75ec37c95c8aebd792e6bd93d3250ac2e69895ecf35d"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

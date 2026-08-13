@@ -1,0 +1,7 @@
+{
+  "slug": "shipp-sports-data",
+  "name": "shipp-sports-data",
+  "description": "Real-time sports & events data for AI agents via Shipp. Use when the user wants live scores, schedules, or game events for NBA, NFL, NCAA Football, MLB, or Soccer — especially to power prediction market trading strategies on Polymarket or Kalshi using a MoonPay wallet.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/shipp-sports-data/SKILL.md"
+}

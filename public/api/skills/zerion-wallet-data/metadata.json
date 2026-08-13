@@ -1,0 +1,7 @@
+{
+  "slug": "zerion-wallet-data",
+  "name": "zerion-wallet-data",
+  "description": "Use when the user asks to check a wallet's portfolio, token balances, DeFi positions, PnL, transaction history, or NFTs. Provides interpreted on-chain data across 40+ EVM chains and Solana via x402 pay-per-request or API key — no raw RPC decoding needed.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/zerion-wallet-data/SKILL.md"
+}

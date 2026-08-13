@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-prediction-market",
+  "name": "moonpay-prediction-market",
+  "description": "Trade on prediction markets (Polymarket, Kalshi). Search markets, buy/sell positions, track PnL, and view trade history.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-prediction-market/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-prediction-market/metadata.json",
+  "bundleHash": "sha256-f07717aa2f8e569188f0834b05b2c2a56d2becb68e1026cb7ffc07e01105c9c8",
+  "merkleLeaf": "sha256-174e3aa2dbf16d007da15651f26a3f53fa9182da497efe80b2e253f32ac4c44e",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 5374,
+      "sha256": "sha256-114a9176ca8c99ab804a3692940c9c3639ff14b4997c48a149b5d20cec33c6b8"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

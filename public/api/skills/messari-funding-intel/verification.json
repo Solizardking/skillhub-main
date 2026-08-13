@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "messari-funding-intel",
+  "name": "messari-funding-intel",
+  "description": "Funding intelligence workflow using Messari x402. Scans recent rounds, M&A activity, venture funds, and organizations, then synthesizes a VC landscape brief via Messari AI. Total cost ~$0.75–$1.25 USDC per run.",
+  "source": "https://skills.x402.wtf/api/skills/messari-funding-intel/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/messari-funding-intel/metadata.json",
+  "bundleHash": "sha256-4dbef9e062be5b729867d6178cec13c4657cf616b75e7634bf59490054a5340f",
+  "merkleLeaf": "sha256-ea3f4324e33560bbf03f4caad9d66c2e5cc31a39169f2ab5622cc0554616c741",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 5757,
+      "sha256": "sha256-408ac138772d9c8c443b6b92362b2c270e4ccfd73864c0482a2174880b4481c7"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

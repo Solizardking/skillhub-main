@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay",
+  "name": "moonpay",
+  "description": "Entry-point for MoonPay CLI, PayBox agent vault, and Cheshire mcp-server MoonPay/PayBox tools. Use for fiat on-ramp, wallets, swaps, x402, PayBox MCP, or moonpay-* skill discovery.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay/metadata.json",
+  "bundleHash": "sha256-9cef15fbae4e686503fa3108d1278e1f35470d7a30f2b8a0dd81414da722e5e6",
+  "merkleLeaf": "sha256-1123ec2947f6d2e7c856db488df8857242ee028280bfba3afe6e43d033de80f6",
+  "files": [
+    {
+      "path": "references/marketplace.json",
+      "bytes": 5171,
+      "sha256": "sha256-9c40c4701e48ef3e06841e137774f033ec6099867aa6717c7ca78124015d3341"
+    },
+    {
+      "path": "references/upstream-readme.md",
+      "bytes": 5388,
+      "sha256": "sha256-07221ea97b2252eca7d823549705977c8f364172a9700e252c4f3345761def93"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 9321,
+      "sha256": "sha256-9639219c9bb288a520d992b228d2c95d12eb48cdccc4054a117807dc180054ba"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

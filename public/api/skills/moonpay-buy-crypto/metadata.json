@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-buy-crypto",
+  "name": "moonpay-buy-crypto",
+  "description": "Buy crypto with fiat via MoonPay. Returns a checkout URL to complete the purchase in a browser.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-buy-crypto/SKILL.md"
+}

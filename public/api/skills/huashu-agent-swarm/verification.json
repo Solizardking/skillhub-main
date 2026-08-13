@@ -1,0 +1,69 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-agent-swarm",
+  "name": "huashu-agent-swarm",
+  "description": "多Agent蜂群并行协作，纯git自组织，适合大型项目开发。当用户提到\"蜂群模式\"、\"多agent\"、\"并行开发\"、\"agent swarm\"时使用。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-agent-swarm/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-agent-swarm/metadata.json",
+  "bundleHash": "sha256-644c3a0f02226f4b3944cfe8d40990831233bfe051fe09d8a953282ad23d9c97",
+  "merkleLeaf": "sha256-2ce0ffde884302dc9d2342784d6f5867c520e898dffad135539cb26f82b0bb51",
+  "files": [
+    {
+      "path": "references/agent-prompt-template.md",
+      "bytes": 4248,
+      "sha256": "sha256-cb05b2a716a9b514616837cdfb030ca0dacc9a35a0198b0d45190c499d523eb2"
+    },
+    {
+      "path": "references/carlini-lessons.md",
+      "bytes": 3396,
+      "sha256": "sha256-e26ff8fd476199d03c2d1892a7358ec5de9bdf1126fff9d6851c3d59ff8598e6"
+    },
+    {
+      "path": "scripts/agent_loop.sh",
+      "bytes": 2862,
+      "sha256": "sha256-4523ef424260a84768ec4b4ec8ca45e443fb8c507eddf8aa830663122f481cf1"
+    },
+    {
+      "path": "scripts/dashboard.py",
+      "bytes": 21105,
+      "sha256": "sha256-2c08b0c8e9b42cc8a8632024573f1543ebc6d32e55942de61648dd77f38fb45c"
+    },
+    {
+      "path": "scripts/send_input.sh",
+      "bytes": 1054,
+      "sha256": "sha256-28332d1d04e29cf26ba23228bb47143cf4416d351abb29396a35a2e151062e46"
+    },
+    {
+      "path": "scripts/setup_project.sh",
+      "bytes": 2770,
+      "sha256": "sha256-88656636fc7d3124592df07e35795a944f3feb1508f5a117664452669346336e"
+    },
+    {
+      "path": "scripts/start_swarm.sh",
+      "bytes": 3384,
+      "sha256": "sha256-0549229c56716165e18053676146f532f635b83afb3bbad92de96d0c765a26d2"
+    },
+    {
+      "path": "scripts/status.sh",
+      "bytes": 2768,
+      "sha256": "sha256-3c253c9585f27247cfc182228e2b375c4b27d753a4bb8fe33321ddf6eb99072d"
+    },
+    {
+      "path": "scripts/stop_swarm.sh",
+      "bytes": 2369,
+      "sha256": "sha256-654b6532afc40fbf33114666daa160fe47d6b72a5d046b70252f9136574ac56e"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 3718,
+      "sha256": "sha256-9e8fce92d9060e2bc12cf692773d7490f52f9cf3dc9d376beb0a988c1fedc425"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

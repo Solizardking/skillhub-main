@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "thoughtproof-reasoning-check",
+  "name": "thoughtproof-reasoning-check",
+  "description": "Verify whether an AI agent's decision is well-reasoned before executing. Adversarial multi-model critique (Claude, Grok, DeepSeek) returns ALLOW, BLOCK, or UNCERTAIN with confidence score. Use before any high-value swap, trade, or autonomous action.",
+  "source": "https://skills.x402.wtf/api/skills/thoughtproof-reasoning-check/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/thoughtproof-reasoning-check/metadata.json",
+  "bundleHash": "sha256-afd3777488f33065eca7f7844dcb21d25d72f48455b538ed20bed43135af79e4",
+  "merkleLeaf": "sha256-23b254dab3b4a9eb9f1ecc417de0f68eb4096251f81b976b4e221e4dc6047b48",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 3350,
+      "sha256": "sha256-490a283a8654f88c588c6ea31c05d86371841a4e46845476c27695e4d5aa6615"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

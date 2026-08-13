@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-fund-polymarket",
+  "name": "moonpay-fund-polymarket",
+  "description": "Install the Polymarket CLI and fund its wallet with USDC.e and POL on Polygon via MoonPay.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-fund-polymarket/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-fund-polymarket/metadata.json",
+  "bundleHash": "sha256-ba266185a151c98aa80b79f337170d554047fe5b758745dee9047cab9517578c",
+  "merkleLeaf": "sha256-210139f03ee00dc810debbd4c2230cf7d9753346d6f69f6dda18b6bfb4449f88",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 5168,
+      "sha256": "sha256-7e0afb52f6ff9ec2c5e11a70871a13e76f2930777c6418ed0f643610ca087b21"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

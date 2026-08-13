@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "grill-me",
+  "name": "grill-me",
+  "description": "A relentless interview to sharpen a plan or design.",
+  "source": "https://skills.x402.wtf/api/skills/grill-me/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/grill-me/metadata.json",
+  "bundleHash": "sha256-d35cd841fb63edab3559ce43b8c35be6129d1ff5c0ca07373c391d797419497e",
+  "merkleLeaf": "sha256-2ffaa48d12def1ed789fe6cdc93793c2bdd7d1fe97aca7551e099169a84d27aa",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 147,
+      "sha256": "sha256-6189dfceb7304a6e5558f75d87e68fa3bc7fcf7ba120e44f21f8a61fe01eba54"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

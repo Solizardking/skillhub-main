@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-xhs-image",
+  "name": "huashu-xhs-image",
+  "description": "为小红书笔记生成高质量配图。默认AI生成（Gemini），仅精确数据表格用HTML兜底。当用户提到\"小红书配图\"、\"小红书封面\"、\"小红书图片\"、\"做张小红书图\"、\"笔记配图\"时使用此技能。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-xhs-image/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-xhs-image/metadata.json",
+  "bundleHash": "sha256-872febbc50678e8cd1bad752eecfff351fa1b39fdc8563eb8608be2c468ccaa2",
+  "merkleLeaf": "sha256-2a49817bdb7f6ab203967809a37f13ab5ee37a9a6be3ca6bc53e4035810f3aad",
+  "files": [
+    {
+      "path": "references/design-guidelines.md",
+      "bytes": 5736,
+      "sha256": "sha256-59b39398d27ae293a4a89611f21ed31617c788a7787aa72ca129ec11bb0f5f0f"
+    },
+    {
+      "path": "references/style-gallery.md",
+      "bytes": 7089,
+      "sha256": "sha256-5f587244dc35e41108242ad02fcff880f4e68f6c4c1e284a2f976c22d04beb11"
+    },
+    {
+      "path": "scripts/generate_image.py",
+      "bytes": 6536,
+      "sha256": "sha256-1fda2000c2653d2b60f344300e63225d1bfa360bebea898068233c77b24a6352"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 10463,
+      "sha256": "sha256-18c0f74a2a8aacbd39768725e46636302b8b9b8ec29398b37e36c0bc13e0ed8b"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

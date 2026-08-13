@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "zerion-wallet-data",
+  "name": "zerion-wallet-data",
+  "description": "Use when the user asks to check a wallet's portfolio, token balances, DeFi positions, PnL, transaction history, or NFTs. Provides interpreted on-chain data across 40+ EVM chains and Solana via x402 pay-per-request or API key — no raw RPC decoding needed.",
+  "source": "https://skills.x402.wtf/api/skills/zerion-wallet-data/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/zerion-wallet-data/metadata.json",
+  "bundleHash": "sha256-b0be4f7a2d385b55a2aa95cc18b34682174339a1acfc517145e5d8fc2f044daf",
+  "merkleLeaf": "sha256-d0cf46f58b83089e94d9536b9226d7a2b9dd7870c8b85862dfb5b87a07548e4a",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 6767,
+      "sha256": "sha256-0e5d566ca6670bce0b5a9023780c1e4c228df2e201c0a6d183970bc8eb9519dd"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

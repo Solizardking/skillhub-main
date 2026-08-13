@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-wallet-statusline-refresh",
+  "name": "moonpay-wallet-statusline-refresh",
+  "description": "Manually refresh wallet balances shown in a compatible CLI status line. Use when the user says \"refresh balances\", \"update status bar\", or after receiving funds from outside the CLI.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-wallet-statusline-refresh/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-wallet-statusline-refresh/metadata.json",
+  "bundleHash": "sha256-f35c4955e9f799339a4c331907e5b05a6db5264b0ddeec5f12ac4072cd2fe779",
+  "merkleLeaf": "sha256-27549ea80d08124ce1aae2b7f7403f9aa3c792162637a6f365709ea01dbc6388",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2681,
+      "sha256": "sha256-5664fdebadbee81aef8327f4905beedbeca556b63db1a8c876afb620cc5fce39"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

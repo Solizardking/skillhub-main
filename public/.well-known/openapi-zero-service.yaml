@@ -1,0 +1,61 @@
+swagger: '2.0'
+info:
+  title: zero-service
+  description: SOL-GPT Solana trading API — natural-language spot trading via DFlow (Cloud Run clawd-zero-service)
+  version: 1.0.0
+host: clawd-zero-service-1013652097839.us-central1.run.app
+schemes:
+  - https
+produces:
+  - application/json
+x-google-backend:
+  address: https://clawd-zero-service-1013652097839.us-central1.run.app
+  path_translation: APPEND_PATH_TO_ADDRESS
+securityDefinitions:
+  api_key:
+    type: "apiKey"
+    name: "key"
+    in: "query"
+paths:
+  /health:
+    get:
+      summary: Health check
+      operationId: health
+      security:
+      - api_key: []
+      responses:
+        '200':
+          description: Service health status
+          schema:
+            type: object
+            properties:
+              ok:
+                type: boolean
+              wallet:
+                type: string
+  /chat:
+    post:
+      summary: Send a trading prompt via SSE
+      operationId: chat
+      x-google-backend:
+        address: https://clawd-zero-service-1013652097839.us-central1.run.app/chat
+        path_translation: CONSTANT_ADDRESS
+      security:
+      - api_key: []
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            type: object
+            required:
+              - prompt
+            properties:
+              prompt:
+                type: string
+                description: Natural-language trading prompt
+      responses:
+        '200':
+          description: SSE stream of trading events
+          schema:
+            type: string

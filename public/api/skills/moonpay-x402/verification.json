@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-x402",
+  "name": "moonpay-x402",
+  "description": "Make paid API requests to x402-protected endpoints. Automatically handles payment with your local wallet.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-x402/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-x402/metadata.json",
+  "bundleHash": "sha256-d0a5b964754bd5882441ef50f1f6c93dac9d67259207b26942b9808f23263df3",
+  "merkleLeaf": "sha256-fa30fd8f2f2cd94691bbe4f2353d7857bbceb575a38d401015aa90e012e44491",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 1487,
+      "sha256": "sha256-555b0bfada51738ebba6e7c5c1d447c6be4e6974c7616298d545069f2f5747a3"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

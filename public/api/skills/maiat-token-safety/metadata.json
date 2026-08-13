@@ -1,0 +1,7 @@
+{
+  "slug": "maiat-token-safety",
+  "name": "maiat-token-safety",
+  "description": "Check if an ERC-20 token is safe before swapping. Detects honeypots, high-tax tokens, and rug pulls. Use before any token swap.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/maiat-token-safety/SKILL.md"
+}

@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-skills-index",
+  "name": "moonpay-skills-index",
+  "description": "Index of MoonPay and partner agent skills installed in the Cheshire/Solizardking skills hub. Use to discover moonpay-*, messari-*, PayBox, and related crypto infrastructure skills.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-skills-index/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-skills-index/metadata.json",
+  "bundleHash": "sha256-8132b96396fef96bd8c66307eba54a1c0beeca8c58b88125668e06ad1fa9a79d",
+  "merkleLeaf": "sha256-aaa6cedf41e54daa85af53d54c35030c3da1c94a703fdbaa9f1257f5466bb073",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2863,
+      "sha256": "sha256-9a591916c24cab537cbfbcd141b2c683f38956d614a2164c4d31c8fb2781fffa"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

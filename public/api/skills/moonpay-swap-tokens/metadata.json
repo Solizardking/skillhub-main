@@ -1,0 +1,7 @@
+{
+  "slug": "moonpay-swap-tokens",
+  "name": "moonpay-swap-tokens",
+  "description": "Swap tokens on the same chain or bridge tokens across chains. Use when the user wants to swap, bridge, or move tokens.",
+  "category": "Solana / Blockchain",
+  "skill": "/api/skills/moonpay-swap-tokens/SKILL.md"
+}

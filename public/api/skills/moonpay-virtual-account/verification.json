@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-virtual-account",
+  "name": "moonpay-virtual-account",
+  "description": "Set up a virtual account for fiat on-ramp and off-ramp. Covers KYC, wallet registration, bank accounts, onramp (fiat to stablecoin), and offramp (stablecoin to fiat).",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-virtual-account/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-virtual-account/metadata.json",
+  "bundleHash": "sha256-3d594b6a1bdde4f342e3ac3e42b5ff781689631ed9f6033bd4f25692afc0e225",
+  "merkleLeaf": "sha256-e0c77b4ca1cb2f9331ccd607e0129dbc09124b789f3f7ec7492c64f528671a4f",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 4552,
+      "sha256": "sha256-6479ffe1046500699ca96d16ed71c67ba59f5dc714e2fdbeadc2e01bf959a8df"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

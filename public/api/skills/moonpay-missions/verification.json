@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-missions",
+  "name": "moonpay-missions",
+  "description": "A series of missions that walk through every MoonPay CLI capability. Use when the user is new or says \"get started\", \"show me what you can do\", or \"run the missions\".",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-missions/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-missions/metadata.json",
+  "bundleHash": "sha256-66674122b24a8fcb1054c9fd568df396f4f3bdaedd3d3e63697f32204a27ea14",
+  "merkleLeaf": "sha256-2d7cc96faa074763960e5f4ba853bd3b7a79018767d4948c24880c08cdedc16f",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 4829,
+      "sha256": "sha256-82f39d0fd9d93b78a484bf082d635e12857a05906831d53e879fc8958ecc8792"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

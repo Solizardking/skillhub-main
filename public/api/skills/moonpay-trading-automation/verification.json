@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-trading-automation",
+  "name": "moonpay-trading-automation",
+  "description": "Set up automated trading strategies — DCA, limit orders, and stop losses — by composing mp CLI commands with OS scheduling (cron/launchd).",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-trading-automation/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-trading-automation/metadata.json",
+  "bundleHash": "sha256-a9cb5a30dfb5b0a79c2cbe902a2bc13955cde12a4ef65831ec4bd2036f2fb7ec",
+  "merkleLeaf": "sha256-49b99251629c27ac5eeb9b6096f8b4ee69152a2616a38574f2e6411089edf5fe",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 8488,
+      "sha256": "sha256-719dc6893f848133670320ae3c0c130334669bf4edc541b951f239215e9e3118"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

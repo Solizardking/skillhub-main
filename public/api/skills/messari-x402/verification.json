@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "messari-x402",
+  "name": "messari-x402",
+  "description": "Access Messari's full API via x402 pay-per-request — no API key needed. Asset data, market metrics, signals, news, fundraising, token unlocks, on-chain networks, and AI chat, all paid with USDC on Base.",
+  "source": "https://skills.x402.wtf/api/skills/messari-x402/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/messari-x402/metadata.json",
+  "bundleHash": "sha256-b179c8d1992dd5bbe862e51202e7fbe2cd604eb59e84b30aef5fbbc8ee489702",
+  "merkleLeaf": "sha256-a7e67f4ed0d266bd459177df09bc787112f5ec4a85170b58089c85e47e761079",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 7103,
+      "sha256": "sha256-a6761b6eaad440a8ed41b33cff49a63f83c34d9260326a2b00892de3e28cc5b9"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

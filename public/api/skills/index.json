@@ -1,5 +1,35 @@
 [
   {
+    "slug": "agentic-wallet",
+    "name": "agentic-wallet",
+    "description": "Crypto wallet operations via the awal CLI — sign in, check balances, send USDC/ETH/POL/SOL, trade tokens, fund the wallet, and use the x402 payment protocol to discover paid services, pay for API calls, monetize an API, or query onchain data. Use whenever the user mentions signing in, login, authentication, wallet status, balance, address, sending money, paying someone, transferring tokens, ENS names, swapping/trading/converting tokens, funding/topping up/onramp, USDC, ETH, POL, SOL, the x402 bazaar, paid APIs, monetizing an endpoint, or querying onchain data on Base.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "alchemy-agentic-gateway",
+    "name": "alchemy-agentic-gateway",
+    "description": "Use when accessing Alchemy APIs for RPC calls, token balances, NFT metadata, asset transfers, transaction simulation, or Alchemy-specific features. Also use when the user mentions \"SIWE\", \"SIWS\", \"x402\", \"MPP\", \"mppx\", or \"agentic gateway\" — this skill covers wallet-based auth flows for Alchemy's x402 and MPP protocols on EVM (Ethereum, Base, Polygon) and SVM (Solana).",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "alchemy-api",
+    "name": "alchemy-api",
+    "description": "Integrates Alchemy blockchain APIs using an API key. Requires $ALCHEMY_API_KEY to be set; if unavailable, use the alchemy-agentic-gateway skill instead. Use when user asks about EVM JSON-RPC calls, token balances, NFT ownership or metadata, transfer history, token prices, portfolio data, transaction simulation, webhooks, Solana RPC, or any Alchemy product integration. Covers base URLs, authentication, endpoint selection, pagination, and common patterns.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "allium-onchain-data",
+    "name": "allium-onchain-data",
+    "description": "Query blockchain data via Allium APIs. Token prices, wallet balances, transactions, historical data. Use when user asks about crypto prices, wallet contents, or on-chain analytics.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "allium-x402",
+    "name": "allium-x402",
+    "description": "Query blockchain data via Allium APIs. Supports API key, x402 micropayments, and Tempo auth. Covers prices, wallets, tokens, and SQL analytics.",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "anthropic-skills/claude-api",
     "name": "claude-api",
     "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens). SKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai|langchain_openai|google.generativeai|genai|mistralai|cohere|ollama'` over the project hits (run this grep FIRST if no provider named — don't Read the file).",
@@ -96,6 +126,12 @@
     "category": "Solana / Blockchain"
   },
   {
+    "slug": "coingecko",
+    "name": "coingecko",
+    "description": "Use this skill for any request involving cryptocurrency market data, coin prices, trading volume, market cap, OHLC charts, historical data, exchanges, derivatives, NFTs, DeFi, on-chain token data, liquidity pools, DEX data, or anything powered by CoinGecko or GeckoTerminal APIs. Trigger this skill whenever the user asks about crypto prices, token data, market trends, or wants to call any CoinGecko or GeckoTerminal endpoint — even if they don't explicitly say \"CoinGecko\". Also trigger when the user asks about API keys, rate limits, or authentication for these APIs.",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "compressed-pda",
     "name": "compressed-pda",
     "description": "For client and program development on Solana ~160x cheaper and without rent-exemption for per-user state, DePIN registrations, or custom compressed accounts. Create, update, close, burn, and reinitialize compressed accounts.",
@@ -111,6 +147,12 @@
     "slug": "copy-trade",
     "name": "copy-trade",
     "description": "This skill should be used when the user asks to \"copy trades from\" a wallet, \"mirror a wallet\", \"follow this address\", set up \"copy trading\", \"track and replicate a trader\", or mirror another account's swaps bounded by guardrails. Watches a target wallet and mirrors its trades, filtered by chain, asset match, position size, and the follower's own portfolio state.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "corbits-marketplace",
+    "name": "corbits-marketplace",
+    "description": "Paid API marketplace for AI agents via Corbits. Search hundreds of premium API proxies, call them with automatic USDC micropayments (x402 protocol), and fund the payment wallet with MoonPay. Use when the user wants to access paid data APIs (crypto prices, weather, financial data, etc.) with per-request billing and no API key management.",
     "category": "Solana / Blockchain"
   },
   {
@@ -180,6 +222,12 @@
     "category": "Solana / Blockchain"
   },
   {
+    "slug": "dune-analytics",
+    "name": "dune-analytics",
+    "description": "Blockchain analytics via Dune REST API — execute DuneSQL queries against live on-chain data, discover decoded contract tables, and monitor credit usage. Use when the user asks about on-chain data, wallet activity, DEX trades, token transfers, smart contract events, or says \"query Dune\", \"run a Dune query\", or \"search Dune datasets\". Pairs with MoonPay to analyze wallets you create and fund.",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "gateway-node-ops",
     "name": "gateway-node-ops",
     "description": "How to spawn a SolanaOS Gateway and connect headless nodes",
@@ -219,6 +267,12 @@
     "slug": "helius-skills/svm",
     "name": "svm",
     "description": "Explore Solana's architecture and protocol internals. Covers the SVM execution engine, account model, consensus, transactions, validator economics, data layer, development tooling, and token extensions using the Helius blog, SIMDs, and Agave/Firedancer source code.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "huashu-agent-swarm",
+    "name": "huashu-agent-swarm",
+    "description": "多Agent蜂群并行协作，纯git自组织，适合大型项目开发。当用户提到\"蜂群模式\"、\"多agent\"、\"并行开发\"、\"agent swarm\"时使用。",
     "category": "Solana / Blockchain"
   },
   {
@@ -300,6 +354,36 @@
     "category": "Solana / Blockchain"
   },
   {
+    "slug": "maiat-token-safety",
+    "name": "maiat-token-safety",
+    "description": "Check if an ERC-20 token is safe before swapping. Detects honeypots, high-tax tokens, and rug pulls. Use before any token swap.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "maiat-trust-check",
+    "name": "maiat-trust-check",
+    "description": "Check if an agent or token is trustworthy before transacting. Returns trust score and verdict from 29,000+ indexed agents on Base. Use before any swap, transfer, or agent interaction.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "messari-deep-research",
+    "name": "messari-deep-research",
+    "description": "Async deep-research report workflow using Messari AI. Starts a long-form research job, polls until complete, and returns a comprehensive report on any crypto topic, asset, or protocol. Cost varies; typically $0.50–$2.00 USDC.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "messari-token-research",
+    "name": "messari-token-research",
+    "description": "Full token research workflow using Messari x402 API. Fetches asset fundamentals, price history, sentiment signals, and news, then synthesizes a research brief via Messari AI. Total cost ~$1.00–$1.50 USDC per run.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "messari-x402",
+    "name": "messari-x402",
+    "description": "Access Messari's full API via x402 pay-per-request — no API key needed. Asset data, market metrics, signals, news, fundraising, token unlocks, on-chain networks, and AI chat, all paid with USDC on Base.",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "metaplex-agent",
     "name": "metaplex-agent",
     "description": "Premiere Metaplex Agent skill — package every Metaplex agent operation into one playbook: CLI/RPC setup, wallet funding, Core identity registration (EIP-8004), Asset Signer PDA activation, executive delegation/revocation, agent commerce (services discovery, x402Support, A2A payments), agent finance, Genesis agent token launch (LaunchPool or Bonding Curve), and setAgentToken. Use when the user mentions Metaplex agents, Agent Registry, mplx agents, mintAndSubmitAgent, AgentIdentity, executive delegation, agent commerce, agent finance, agent token, EIP-8004 registration, or autonomous Solana agents on Metaplex.",
@@ -315,6 +399,168 @@
     "slug": "model-usage",
     "name": "model-usage",
     "description": "Use CodexBar CLI local cost usage to summarize per-model usage for Codex or Claude, including the current (most recent) model or a full model breakdown. Trigger when asked for model-level usage/cost data from codexbar, or when you need a scriptable per-model summary from codexbar cost JSON.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay",
+    "name": "moonpay",
+    "description": "Entry-point for MoonPay CLI, PayBox agent vault, and Cheshire mcp-server MoonPay/PayBox tools. Use for fiat on-ramp, wallets, swaps, x402, PayBox MCP, or moonpay-* skill discovery.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-auth",
+    "name": "moonpay-auth",
+    "description": "Set up the MoonPay CLI, authenticate, and manage local wallets. Use when commands fail, for login, or to create/import wallets.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-block-explorer",
+    "name": "moonpay-block-explorer",
+    "description": "Open transactions, wallets, and tokens in the correct block explorer. Use after swaps, bridges, or transfers to view results in the browser.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-buy-crypto",
+    "name": "moonpay-buy-crypto",
+    "description": "Buy crypto with fiat via MoonPay. Returns a checkout URL to complete the purchase in a browser.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-check-wallet",
+    "name": "moonpay-check-wallet",
+    "description": "Check wallet balances and holdings. Use for \"what's in my wallet\", portfolio breakdown, token balances, allocation percentages, and USD values.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-commerce",
+    "name": "moonpay-commerce",
+    "description": "Browse Shopify stores, search products, manage a cart, and checkout with crypto via Solana Pay. No login required.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-deposit",
+    "name": "moonpay-deposit",
+    "description": "Create deposit links that accept crypto from any chain and auto-convert to stablecoins. No login required.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-discover-tokens",
+    "name": "moonpay-discover-tokens",
+    "description": "Search for tokens, check prices, get trading briefs, and evaluate risk. Use for token research, \"is this token safe?\", price checks, and market analysis.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-export-data",
+    "name": "moonpay-export-data",
+    "description": "Export portfolio balances and transaction history to CSV or JSON files. Use for spreadsheets, tax reporting, or record-keeping.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-feedback",
+    "name": "moonpay-feedback",
+    "description": "Submit feedback, bug reports, or feature requests for the MoonPay CLI. Use when the user encounters issues, wants to suggest improvements, or has general feedback.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-fund-polymarket",
+    "name": "moonpay-fund-polymarket",
+    "description": "Install the Polymarket CLI and fund its wallet with USDC.e and POL on Polygon via MoonPay.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-hardware-wallet",
+    "name": "moonpay-hardware-wallet",
+    "description": "Connect a hardware wallet (Ledger) to the MoonPay CLI. Sign transactions on the physical device — no private keys stored locally.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-mcp",
+    "name": "moonpay-mcp",
+    "description": "Set up MoonPay as an MCP server for Claude Desktop or Claude Code. Provides all MoonPay CLI tools via the Model Context Protocol.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-missions",
+    "name": "moonpay-missions",
+    "description": "A series of missions that walk through every MoonPay CLI capability. Use when the user is new or says \"get started\", \"show me what you can do\", or \"run the missions\".",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-prediction-market",
+    "name": "moonpay-prediction-market",
+    "description": "Trade on prediction markets (Polymarket, Kalshi). Search markets, buy/sell positions, track PnL, and view trade history.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-price-alerts",
+    "name": "moonpay-price-alerts",
+    "description": "Set up desktop price alerts that notify you when tokens hit target prices. Observe-only — no trading, just notifications.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-scout",
+    "name": "moonpay-scout",
+    "description": "Prediction market arbitrage & alpha scout. Searches Polymarket and Kalshi for the same event, runs cross-platform arb math (including fees), and ranks opportunities by profitability. Use when asked to \"find arb\", \"scout markets\", \"find edge\", or scan a specific topic across prediction markets.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-skills-index",
+    "name": "moonpay-skills-index",
+    "description": "Index of MoonPay and partner agent skills installed in the Cheshire/Solizardking skills hub. Use to discover moonpay-*, messari-*, PayBox, and related crypto infrastructure skills.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-swap-tokens",
+    "name": "moonpay-swap-tokens",
+    "description": "Swap tokens on the same chain or bridge tokens across chains. Use when the user wants to swap, bridge, or move tokens.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-trading-automation",
+    "name": "moonpay-trading-automation",
+    "description": "Set up automated trading strategies — DCA, limit orders, and stop losses — by composing mp CLI commands with OS scheduling (cron/launchd).",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-upgrade",
+    "name": "moonpay-upgrade",
+    "description": "Increase your MoonPay API rate limit by paying with crypto via x402.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-virtual-account",
+    "name": "moonpay-virtual-account",
+    "description": "Set up a virtual account for fiat on-ramp and off-ramp. Covers KYC, wallet registration, bank accounts, onramp (fiat to stablecoin), and offramp (stablecoin to fiat).",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-wallet-statusline",
+    "name": "moonpay-wallet-statusline",
+    "description": "Show MoonPay wallet balances in a compatible CLI status line using a local cache and refresh script. Use when the user asks to \"show balances in the status bar\", \"add wallet to the CLI status line\", or wants a persistent balance display while working.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-wallet-statusline-refresh",
+    "name": "moonpay-wallet-statusline-refresh",
+    "description": "Manually refresh wallet balances shown in a compatible CLI status line. Use when the user says \"refresh balances\", \"update status bar\", or after receiving funds from outside the CLI.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "moonpay-x402",
+    "name": "moonpay-x402",
+    "description": "Make paid API requests to x402-protected endpoints. Automatically handles payment with your local wallet.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "myriad-prediction-markets",
+    "name": "myriad-prediction-markets",
+    "description": "AI trading agent for Myriad prediction markets on BNB Chain. Discover live markets, execute buy/sell trades, monitor portfolio exposure, claim winnings, and run as an MCP server for multi-agent workflows. Use when the user wants to trade prediction markets on BNB Chain, find market opportunities by keyword, or automate a trading + claims loop.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "nansen-dca-tracker",
+    "name": "nansen-dca-tracker",
+    "description": "What tokens are whales dollar-cost averaging into? Jupiter DCA strategies by smart money and target token fundamentals.",
     "category": "Solana / Blockchain"
   },
   {
@@ -342,9 +588,21 @@
     "category": "Solana / Blockchain"
   },
   {
+    "slug": "paybox",
+    "name": "paybox",
+    "description": "MoonPay PayBox payment vault for AI agents — official MCP at https://api.paybox.sh/mcp, OAuth 2.1, scoped credentials, and Cheshire mcp-server proxy tools (get_paybox_*).",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "phantom-wallet-mcp",
     "name": "phantom-wallet-mcp",
     "description": "Execute wallet operations through the Phantom MCP server. Use when the user wants to interact with their Phantom wallet directly — get addresses, transfer SOL or SPL tokens, buy/swap tokens, sign transactions, and sign messages across Solana, Ethereum, Bitcoin, and Sui. Requires the @phantom/mcp-server to be configured as an MCP server.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "pons-launch",
+    "name": "pons-launch",
+    "description": "Launch a fixed-supply V3 token on Robinhood Chain (4663) via PonsLaunchFactory (pons.family), reverse-discover the factory from live PonsLauncherToken tokens, prepare launchToken txs, and verify TokenLaunched receipts. Use when the user says \"launch on Pons\", \"pons.family launch\", \"PonsLaunchFactory\", \"launchToken\", \"PonsLauncherToken\", \"V3 launch on Robinhood\", or wants agents to create a Pons token. Does NOT use RH bonding-curve createToken (rh-bonded-launch), does NOT mint Solana $CLAWD, and does NOT use NOXA Fun factories.",
     "category": "Solana / Blockchain"
   },
   {
@@ -492,6 +750,12 @@
     "category": "Solana / Blockchain"
   },
   {
+    "slug": "pumpfun-skills",
+    "name": "pumpfun-skills",
+    "description": "Full Pump.fun skill pack with nested pump-* and pumpfun-* playbooks (admin, bonding curve, fees, lifecycle, MCP, security, testing, wallets). Use when installing the complete pump suite or navigating pumpfun-skills/* packages. Distinct from the pumpfun entry-point router skill.",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "pumpfun-trading",
     "name": "pumpfun-trading",
     "description": "Quick Pump.fun trading shortcut for buy/sell flow selection, bonding curve versus AMM state checks, slippage handling, risk controls, and SDK trade instruction building.",
@@ -506,7 +770,7 @@
   {
     "slug": "rh-crypto-agent",
     "name": "rh-crypto-agent",
-    "description": "Robinhood Crypto Agent open stack — pack index for Robinhood Chain / Uniswap EVM agent skills (bonded launch, LaunchpadV3, swaps, LP, DCA, copy-trade, payments, viem, Cheshire agent registries). Use when installing the RH pack, pointing clawdbot at the open stack, or choosing which RH/EVM skill to load next.",
+    "description": "Robinhood Crypto Agent open skill pack for Robinhood Chain / EVM trading and launch agents. Covers bonded launch, Launchpad V3, Uniswap swaps/LP, DCA, copy-trade, payments, viem, and Cheshire agent registry skills. Use when pointing clawdbot at the RH pack, installing the suite, or building Robinhood Chain crypto agents.",
     "category": "Solana / Blockchain"
   },
   {
@@ -522,9 +786,21 @@
     "category": "Solana / Blockchain"
   },
   {
+    "slug": "shipp-sports-data",
+    "name": "shipp-sports-data",
+    "description": "Real-time sports & events data for AI agents via Shipp. Use when the user wants live scores, schedules, or game events for NBA, NFL, NCAA Football, MLB, or Soccer — especially to power prediction market trading strategies on Polymarket or Kalshi using a MoonPay wallet.",
+    "category": "Solana / Blockchain"
+  },
+  {
     "slug": "skillhub-onchain",
     "name": "skillhub-onchain",
     "description": "Publish agent skills on-chain via Skill Hub (skills.x402.wtf): upload SKILL.md, run the security scanner, pay a Solana fee, and anchor package hashes on Arweave and Solana. Use when shipping skills to the public catalog, reading the public submission ledger, or connecting Cheshire Terminal to the Skill Hub API.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "skills-store",
+    "name": "skills-store",
+    "description": "Cheshire Skills Store index — curated Agent Skills packages for Cheshire Terminal (API, PostHog, Google Agent Registry, Skill Hub onchain, Stripe, Solana common errors, NOXA) plus the community skills collection. Use when installing store skills, browsing the store catalog, or wiring cheshireterminal.ai/skills-store.",
     "category": "Solana / Blockchain"
   },
   {
@@ -723,6 +999,18 @@
     "slug": "vulcan-twap-execution",
     "name": "vulcan-twap-execution",
     "description": "TWAP strategy execution on Phoenix perps using Vulcan's first-class runner, tick logs, ledgers, status/monitor/finalize controls.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "yield-optimization",
+    "name": "yield-optimization",
+    "description": "Multi-chain yield optimization via yield.xyz (StakeKit). Discover 2,988+ yield opportunities across 75+ blockchains, build deposit/withdrawal transactions with shell scripts, and sign them with a MoonPay wallet. Use when the user wants to earn yield, find the best lending or staking rate, enter/exit a position, or check portfolio balances.",
+    "category": "Solana / Blockchain"
+  },
+  {
+    "slug": "zerion-wallet-data",
+    "name": "zerion-wallet-data",
+    "description": "Use when the user asks to check a wallet's portfolio, token balances, DeFi positions, PnL, transaction history, or NFTs. Provides interpreted on-chain data across 40+ EVM chains and Solana via x402 pay-per-request or API key — no raw RPC decoding needed.",
     "category": "Solana / Blockchain"
   },
   {
@@ -954,6 +1242,12 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "handoff",
+    "name": "productivity-handoff",
+    "description": "Compact the current conversation into a handoff document for another agent to pick up.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "improve-animations",
     "name": "improve-animations",
     "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
@@ -1134,6 +1428,12 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "thoughtproof-reasoning-check",
+    "name": "thoughtproof-reasoning-check",
+    "description": "Verify whether an AI agent's decision is well-reasoned before executing. Adversarial multi-model critique (Claude, Grok, DeepSeek) returns ALLOW, BLOCK, or UNCERTAIN with confidence score. Use before any high-value swap, trade, or autonomous action.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "tmux",
     "name": "tmux",
     "description": "Remote-control tmux sessions for interactive CLIs by sending keystrokes and scraping pane output.",
@@ -1161,6 +1461,12 @@
     "slug": "wrangler",
     "name": "wrangler",
     "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "writing-great-skills",
+    "name": "writing-great-skills",
+    "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -3054,6 +3360,48 @@
     "category": "Media / Devices"
   },
   {
+    "slug": "huashu-image-upload",
+    "name": "huashu-image-upload",
+    "description": "文章配图一键生成并上传图床，自动插入Markdown链接。当用户提到\"配图\"、\"插图\"、\"上传图片\"、\"文章配图\"时使用。",
+    "category": "Media / Devices"
+  },
+  {
+    "slug": "huashu-md-to-pdf",
+    "name": "huashu-md-to-pdf",
+    "description": "将 Markdown 文档转换为专业的 PDF 白皮书，采用苹果设计风格。 支持完整的 Markdown 语法（代码块、表格、引用、列表等）。 自动生成封面、目录、页眉页脚。 使用场景：技术文档、白皮书、教程、报告等需要专业排版的 Markdown 文档。",
+    "category": "Media / Devices"
+  },
+  {
+    "slug": "huashu-speech-coach",
+    "name": "huashu-speech-coach",
+    "description": "演讲与分享教练。基于Patrick Winston（MIT AI教授）的How to Speak方法论，帮助准备线下培训、技术分享、B站教程视频等演讲场景。当用户提到\"演讲\"、\"分享\"、\"培训\"、\"讲课\"、\"PPT演讲\"、\"开场\"、\"结尾\"、\"如何讲\"、\"演讲结构\"时使用此技能。",
+    "category": "Media / Devices"
+  },
+  {
+    "slug": "huashu-video-check",
+    "name": "huashu-video-check",
+    "description": "基于MrBeast策略检查视频标题、封面和开头钩子。当用户提到\"视频标题\"、\"封面图\"、\"点击率\"、\"CTR\"、\"观看时长\"时使用。",
+    "category": "Media / Devices"
+  },
+  {
+    "slug": "huashu-video-outline",
+    "name": "huashu-video-outline",
+    "description": "快速生成2-3个视频大纲方案，含标题、封面建议和结构设计。当用户提到\"视频大纲\"、\"视频结构\"、\"脚本大纲\"、\"视频选题\"时使用。",
+    "category": "Media / Devices"
+  },
+  {
+    "slug": "huashu-wechat-image",
+    "name": "huashu-wechat-image",
+    "description": "为微信公众号文章生成高质量配图。支持封面图（2.35:1）、正文插图（16:9/4:3）、信息图。提供两条路径：AI生成（视觉创意型）和HTML渲染（文字精确型）。当用户提到\"公众号配图\"、\"公众号封面\"、\"文章配图\"、\"正文插图\"、\"公众号图片\"时使用此技能。",
+    "category": "Media / Devices"
+  },
+  {
+    "slug": "huashu-xhs-image",
+    "name": "huashu-xhs-image",
+    "description": "为小红书笔记生成高质量配图。默认AI生成（Gemini），仅精确数据表格用HTML兜底。当用户提到\"小红书配图\"、\"小红书封面\"、\"小红书图片\"、\"做张小红书图\"、\"笔记配图\"时使用此技能。",
+    "category": "Media / Devices"
+  },
+  {
     "slug": "nano-banana-pro",
     "name": "nano-banana-pro",
     "description": "Generate or edit images via Gemini 3 Pro Image (Nano Banana Pro).",
@@ -3240,6 +3588,12 @@
     "category": "Productivity / Messaging"
   },
   {
+    "slug": "obsidian-vault",
+    "name": "obsidian-vault",
+    "description": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
+    "category": "Productivity / Messaging"
+  },
+  {
     "slug": "personal/obsidian-vault",
     "name": "obsidian-vault",
     "description": "Search, create, and manage notes in the Obsidian vault with wikilinks and index notes. Use when user wants to find, create, or organize notes in Obsidian.",
@@ -3261,6 +3615,12 @@
     "slug": "slack",
     "name": "slack",
     "description": "Use when you need to control Slack from Clawdbot via the slack tool, including reacting to messages or pinning/unpinning items in Slack channels or DMs.",
+    "category": "Productivity / Messaging"
+  },
+  {
+    "slug": "teach",
+    "name": "productivity-teach",
+    "description": "Teach the user a new skill or concept in a multi-session teaching workspace with missions, lessons, and learning records.",
     "category": "Productivity / Messaging"
   },
   {
@@ -3360,6 +3720,12 @@
     "category": "Utilities"
   },
   {
+    "slug": "edit-article",
+    "name": "edit-article",
+    "description": "Edit and improve articles by restructuring sections, improving clarity, and tightening prose. Use when user wants to edit, revise, or improve an article draft.",
+    "category": "Utilities"
+  },
+  {
     "slug": "eightctl",
     "name": "eightctl",
     "description": "Control Eight Sleep pods (status, temperature, alarms, schedules).",
@@ -3432,6 +3798,96 @@
     "category": "Utilities"
   },
   {
+    "slug": "grill-me",
+    "name": "grill-me",
+    "description": "A relentless interview to sharpen a plan or design.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "grilling",
+    "name": "grilling",
+    "description": "Grill the user relentlessly about a plan or design. Use when the user wants to stress-test a plan before building, or uses any 'grill' trigger phrases.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-article-edit",
+    "name": "huashu-article-edit",
+    "description": "标准化文章编辑流程，确保修改范围明确、进度可追踪、变更有记录。当用户说\"编辑文章\"、\"修改文章\"、\"调整内容\"、\"改一下这篇\"时使用此技能。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-article-to-x",
+    "name": "huashu-article-to-x",
+    "description": "长文精简为X平台内容（200-500字），保留核心观点和个人风格。当用户提到\"转微博\"、\"发小红书\"、\"社交媒体\"、\"缩短文章\"时使用。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-data-pro",
+    "name": "huashu-data-pro",
+    "description": "数据分析与办公提效全能助手。覆盖数据处理、分析洞察、报告撰写、PPT制作、数据可视化的端到端工作流。 始终从专家视角出发，帮用户多想一步。遇到不确定的问题主动与用户确认。 支持：Excel数据分析、投放数据复盘、ROI测算、数据可视化、报告生成、PPT制作、公式生成。 当用户提到\"分析数据\"、\"做报告\"、\"做PPT\"、\"Excel\"、\"投放分析\"、\"ROI\"、\"复盘\"、 \"周报\"、\"月报\"、\"数据处理\"、\"图表\"、\"可视化\"、\"汇报\"、\"表格\"、\"公式\"时使用此技能。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-design",
+    "name": "huashu-design",
+    "description": "设计哲学顾问，从20种风格中推荐3个方向并生成视觉Demo和AI提示词。当用户提到\"设计风格\"、\"设计方向\"、\"配色方案\"、\"视觉风格\"、\"设计评审\"、\"推荐风格\"时使用。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-douyin-script",
+    "name": "huashu-douyin-script",
+    "description": "抖音爆款脚本创作工作流。从竞品视频拆解到脚本生成的完整流程：下载抖音视频→Gemini视频分析→爆款公式提炼→脚本+分镜生成→AI味审校。 当用户提到\"抖音脚本\"、\"爆款拆解\"、\"竞品分析\"、\"带货脚本\"、\"千川素材\"、\"种草脚本\"、\"视频拆解\"、\"抖音视频分析\"时使用此技能。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-info-search",
+    "name": "huashu-info-search",
+    "description": "多渠道搜索新产品新技术，交叉验证后存入知识库。当用户提到\"最新信息\"、\"新产品\"、\"搜索资料\"、\"查资料\"、\"了解XX\"时使用。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-material-search",
+    "name": "huashu-material-search",
+    "description": "搜索个人素材库1800+条真实经历和观点，为内容增加人味。当用户提到\"个人经历\"、\"真实案例\"、\"素材\"、\"人味\"时使用。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-prompt-save",
+    "name": "huashu-prompt-save",
+    "description": "自动识别Prompt类型并分类保存（技术/内容/教学/产品/通用）。当用户提到\"保存prompt\"、\"记录prompt\"、\"整理prompt\"时使用。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-proofreading",
+    "name": "huashu-proofreading",
+    "description": "三遍审校降低AI检测率，让文章更有人味。当用户提到\"AI味太重\"、\"像AI写的\"、\"降低AI检测率\"、\"审校\"、\"自然一些\"时使用。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-research",
+    "name": "huashu-research",
+    "description": "结构化网络调研流程，确保调研成果增量保存到文件，不因会话截断丢失。当用户说\"调研\"、\"搜索资料\"、\"帮我查一下\"、\"了解一下\"、\"最新信息\"时使用此技能。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-script-polish",
+    "name": "huashu-script-polish",
+    "description": "视频脚本口语化审校，去书面腔让脚本适合说出来。当用户提到\"口语化\"、\"太书面了\"、\"像说话一样\"、\"脚本审校\"时使用。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-slides",
+    "name": "huashu-slides",
+    "description": "从内容到成品PPTX的端到端演示文稿制作，含AI插画生成和18种设计风格。当用户提到\"做PPT\"、\"做幻灯片\"、\"演示文稿\"、\"Keynote\"、\"slides\"时使用。",
+    "category": "Utilities"
+  },
+  {
+    "slug": "huashu-topic-gen",
+    "name": "huashu-topic-gen",
+    "description": "快速生成3-4个选题方向，含标题、大纲和优劣分析。当用户提到\"选题\"、\"写什么\"、\"文章方向\"、\"题目建议\"时使用。",
+    "category": "Utilities"
+  },
+  {
     "slug": "in-progress/setup-ts-deep-modules",
     "name": "setup-ts-deep-modules",
     "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module — implementation hidden in subfolders, reachable only through its entry-point files. User-invoked.",
@@ -3453,6 +3909,18 @@
     "slug": "in-progress/writing-shape",
     "name": "writing-shape",
     "description": "Writing, exploit — shape raw material into an article, paragraph by paragraph.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "messari-alpha-scout",
+    "name": "messari-alpha-scout",
+    "description": "Alpha scouting workflow using Messari x402. Scans mindshare gainers, trending topics, and news to surface emerging narratives and high-momentum assets. Total cost ~$1.25 USDC per run.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "messari-funding-intel",
+    "name": "messari-funding-intel",
+    "description": "Funding intelligence workflow using Messari x402. Scans recent rounds, M&A activity, venture funds, and organizations, then synthesizes a VC landscape brief via Messari AI. Total cost ~$0.75–$1.25 USDC per run.",
     "category": "Utilities"
   },
   {
@@ -3537,6 +4005,12 @@
     "slug": "research-and-web/research-prompt",
     "name": "research-prompt",
     "description": "Write a single-paragraph Deep Research prompt to hand to a human researcher (or a deep-research AI). Use when the user wants a research brief, a \"deep research prompt\", a one-paragraph task for a researcher, or asks \"what should our researcher look for\". Produces ONE tight paragraph with full context, numbered sub-questions, and per-finding output format.",
+    "category": "Utilities"
+  },
+  {
+    "slug": "shadcn",
+    "name": "shadcn",
+    "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
     "category": "Utilities"
   },
   {

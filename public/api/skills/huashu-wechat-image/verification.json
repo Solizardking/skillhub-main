@@ -1,0 +1,39 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "huashu-wechat-image",
+  "name": "huashu-wechat-image",
+  "description": "为微信公众号文章生成高质量配图。支持封面图（2.35:1）、正文插图（16:9/4:3）、信息图。提供两条路径：AI生成（视觉创意型）和HTML渲染（文字精确型）。当用户提到\"公众号配图\"、\"公众号封面\"、\"文章配图\"、\"正文插图\"、\"公众号图片\"时使用此技能。",
+  "source": "https://skills.x402.wtf/api/skills/huashu-wechat-image/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/huashu-wechat-image/metadata.json",
+  "bundleHash": "sha256-8e901c29ebc9c8d01d0b8af89da016e3a026cde457e175eae97576ff7101068a",
+  "merkleLeaf": "sha256-43953c6deb85480fdc64cfc76d69026861d748cba102498f7c64360a3dc4c50f",
+  "files": [
+    {
+      "path": "references/design-guidelines.md",
+      "bytes": 8164,
+      "sha256": "sha256-3bb6b996003a85b567635d8b24ee8e74c9b7ab4ae5bac961a4cced0d751533fa"
+    },
+    {
+      "path": "references/style-gallery.md",
+      "bytes": 7472,
+      "sha256": "sha256-65b537b60b3dc0311ba066c2455d0c436c84fe6d850c966e438106607514d79a"
+    },
+    {
+      "path": "scripts/generate_image.py",
+      "bytes": 7614,
+      "sha256": "sha256-20b88d6d5d9a9ec68793541354216c2b30b5f27b319f3052026874611d93bf85"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 14520,
+      "sha256": "sha256-a0012a13dcdb30164dda5e0e9c419da96aaf155135e88532ec034f44b4f10d0f"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

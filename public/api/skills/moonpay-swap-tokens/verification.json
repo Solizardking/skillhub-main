@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "moonpay-swap-tokens",
+  "name": "moonpay-swap-tokens",
+  "description": "Swap tokens on the same chain or bridge tokens across chains. Use when the user wants to swap, bridge, or move tokens.",
+  "source": "https://skills.x402.wtf/api/skills/moonpay-swap-tokens/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/moonpay-swap-tokens/metadata.json",
+  "bundleHash": "sha256-54ebb3c578a3f56d48986dbce8252c6dfd972824594425d505989355414b8aa8",
+  "merkleLeaf": "sha256-80fddbddb8788204dd4ec5069c53bb4e01155b99ca0ec11222b268bd71d79744",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 2954,
+      "sha256": "sha256-38b1ce5aff85f1ead90f26bb2df480fb7fbd0e0ae5c706291b643dd50bf37c7a"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

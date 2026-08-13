@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "corbits-marketplace",
+  "name": "corbits-marketplace",
+  "description": "Paid API marketplace for AI agents via Corbits. Search hundreds of premium API proxies, call them with automatic USDC micropayments (x402 protocol), and fund the payment wallet with MoonPay. Use when the user wants to access paid data APIs (crypto prices, weather, financial data, etc.) with per-request billing and no API key management.",
+  "source": "https://skills.x402.wtf/api/skills/corbits-marketplace/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/corbits-marketplace/metadata.json",
+  "bundleHash": "sha256-8027b85b9016301d182820d81cf8eafe24b3d77eda4a5ba7f79c1d506568edc3",
+  "merkleLeaf": "sha256-d86a2146947f8c0d828e2a4894800cb91fcc2969bc4113e7b49034d7aa12cd64",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 6001,
+      "sha256": "sha256-a7a1ba2d1e23977580ef938ade9445819467cdc71a88667a0171a89010846191"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

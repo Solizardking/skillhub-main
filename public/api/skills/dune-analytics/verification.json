@@ -1,0 +1,24 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "dune-analytics",
+  "name": "dune-analytics",
+  "description": "Blockchain analytics via Dune REST API — execute DuneSQL queries against live on-chain data, discover decoded contract tables, and monitor credit usage. Use when the user asks about on-chain data, wallet activity, DEX trades, token transfers, smart contract events, or says \"query Dune\", \"run a Dune query\", or \"search Dune datasets\". Pairs with MoonPay to analyze wallets you create and fund.",
+  "source": "https://skills.x402.wtf/api/skills/dune-analytics/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/dune-analytics/metadata.json",
+  "bundleHash": "sha256-600eb1ccbbfdd8f6531ee1397b012c4c92a9a1930d12223212933883e92e2ae1",
+  "merkleLeaf": "sha256-da524bbe4d0c9c172dd2927e32be2b3c3715ea81a3843442aa18f0d283ccf9ab",
+  "files": [
+    {
+      "path": "SKILL.md",
+      "bytes": 5351,
+      "sha256": "sha256-5b89866bf485c80bae9dcae68e1f87e561918e550f011564c13af8fd33ffaab9"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}
