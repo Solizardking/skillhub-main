@@ -1,8 +1,8 @@
 {
   "schemaVersion": "skillhub-publish-plan/v1",
-  "createdAt": "2026-08-13T20:28:52.653Z",
-  "cluster": "devnet",
-  "rpc": "https://devnet.helius-rpc.com/?api-key=6b52d42b-5d24-4841-a093-02b0d2cc9fc0",
+  "createdAt": "2026-08-13T21:20:47.443Z",
+  "cluster": "mainnet-beta",
+  "rpc": "https://mainnet.helius-rpc.com/?api-key=6b52d42b-5d24-4841-a093-02b0d2cc9fc0",
   "merkleRoot": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793",
   "catalogHash": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849",
   "totalSkills": 674,

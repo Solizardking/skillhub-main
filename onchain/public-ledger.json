@@ -1,6 +1,6 @@
 {
   "schemaVersion": "skillhub-public-ledger/v1",
-  "generatedAt": "2026-08-13T20:29:55.731Z",
+  "generatedAt": "2026-08-13T21:22:02.897Z",
   "security": {
     "redacted": true,
     "policy": [
@@ -23,45 +23,45 @@
   },
   "catalogAnchor": {
     "plan": {
-      "cluster": "devnet",
+      "cluster": "mainnet-beta",
       "merkleRoot": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793",
       "catalogHash": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849",
       "totalSkills": 674,
-      "createdAt": "2026-08-13T20:28:52.653Z"
+      "createdAt": "2026-08-13T21:20:47.443Z"
     },
     "receipt": {
-      "cluster": "devnet",
+      "cluster": "mainnet-beta",
       "merkleRoot": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793",
       "catalogHash": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849",
       "totalSkills": 674,
-      "publishedAt": "2026-08-13T20:29:21.040Z",
+      "publishedAt": "2026-08-13T21:21:27.785Z",
       "solana": {
-        "signature": "5PxjRJELGdFLsggTUNGfzWHF4FdYyGU33WjhHTnn7rJ25gGCkM8uANtnGMkTpzfiK5ZPNynhLJaADD1GHrDb24oZ",
-        "explorer": "https://solscan.io/tx/5PxjRJELGdFLsggTUNGfzWHF4FdYyGU33WjhHTnn7rJ25gGCkM8uANtnGMkTpzfiK5ZPNynhLJaADD1GHrDb24oZ?cluster=devnet"
+        "signature": "r6rCVKjxx9Hj8H8ETQRVEpQX9bYhswefLiJhwQsqtteH6cNx9mN9tULmQSZo7a8MHxN5BuN9RVHGf47hNEgqs8a",
+        "explorer": "https://solscan.io/tx/r6rCVKjxx9Hj8H8ETQRVEpQX9bYhswefLiJhwQsqtteH6cNx9mN9tULmQSZo7a8MHxN5BuN9RVHGf47hNEgqs8a"
       },
       "arweave": [
         {
           "label": "onchain-skill-registry.json",
-          "id": "AkPosADvHvYHLGP7eaZ2MJnMdKKepzdQUTFxuKoznFvY",
-          "url": "https://arweave.net/AkPosADvHvYHLGP7eaZ2MJnMdKKepzdQUTFxuKoznFvY"
+          "id": "3cU5zC494UeCwTzkxjRMZrAaooQ6rSunRJgHsmvpe1i4",
+          "url": "https://arweave.net/3cU5zC494UeCwTzkxjRMZrAaooQ6rSunRJgHsmvpe1i4"
         },
         {
           "label": "catalog.json",
-          "id": "GbcPPRKkeiEm8Pqtsh95PsGdDCPD23uHXYQfdHyphMdg",
-          "url": "https://arweave.net/GbcPPRKkeiEm8Pqtsh95PsGdDCPD23uHXYQfdHyphMdg"
+          "id": "FKkUakYaXEbh8ZQ4GSHmaLT4bBLEeGbayJPFx3815HmV",
+          "url": "https://arweave.net/FKkUakYaXEbh8ZQ4GSHmaLT4bBLEeGbayJPFx3815HmV"
         }
       ]
     }
   },
   "agentregistry": {
     "mirrorUrl": "/api/agentregistry.json",
-    "generatedAt": "2026-08-13T20:29:55.458Z",
+    "generatedAt": "2026-08-13T21:22:02.321Z",
     "selected": 674,
     "totalSkills": 674,
     "merkleRoot": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793",
     "catalogHash": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849",
     "anchorStatus": "anchored",
-    "versionField": "1.0.0-onchain.4f387aa2.5PxjRJEL",
+    "versionField": "1.0.0-onchain.4f387aa2.r6rCVKjx",
     "importCommand": "npm run publish:agentregistry:onchain"
   },
   "count": 2,
