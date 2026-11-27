@@ -88,3 +88,26 @@ Anyone can verify any skill against the anchor, with no trust in GitHub or the s
 | `--rpc <url>` | Custom RPC endpoint |
 | `--keypair <path>` | Keypair JSON to pay and sign with |
 | `--skip-arweave` | Re-anchor using the Arweave tx IDs from the last receipt |
+
+
+## Metaplex Core attestations (alongside the memo anchor)
+
+The catalog memo + Arweave pin remains the source of truth for *which bytes* were published (`bundleHash`, `merkleLeaf`, `merkleRoot`, `catalogHash`).
+
+OnchainAI / the Musebook-shaped artifact registry can also mint a **Metaplex Core asset** per skill (and for tools / MCP servers) on **Solana devnet**, using this same encoding:
+
+```
+bundleHash  = SHA-256("skill-bundle-v1" || 0x00 || path || 0x00 || content || 0x00 …)
+merkleLeaf  = SHA-256(slug || 0x00 || bundleHash)   // bundleHash includes the "sha256-" prefix
+contentHash = bundleHash                             // 32-byte digest stored on the registry record
+```
+
+That is exactly what `scripts/build-catalog.mjs` already computes. Do not invent a second hash scheme.
+
+The Core asset is an *identity/registry record* in the same spirit as [registry.musebook.trade](https://registry.musebook.trade) agent identities: type `skill` | `tool` | `mcp_server` | `model` | `agent`, uniqueness key `(type, contentHash, version)`. Version for catalog skills is `1.0.0-onchain.<catalogHash8>`, matching the agentregistry mirror.
+
+A sidecar file [`onchain/metaplex-attestations.json`](./onchain/metaplex-attestations.json) lists any minted devnet assets. It does **not** replace `onchain-skill-registry.json`.
+
+zk-clawd-primitives attestation is hooked as `pending`: the `clawd-zk` program is not deployed and verifying-key slots are empty, so every ZK proof is refused. Records are attested by the registering authority until circuits exist.
+
+Devnet only for those Core mints. Do not write mainnet assets or production `registry.musebook.trade` rows from this hook until reviewed and deployed on purpose.
