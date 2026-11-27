@@ -1,0 +1,61 @@
+{
+  "schema": "skillhub-metaplex-attestations/v1",
+  "cluster": "devnet",
+  "hashAlgorithm": "sha256",
+  "encoding": {
+    "bundleHash": "skill-bundle-v1 as in scripts/build-catalog.mjs hashBundle",
+    "merkleLeaf": "sha256(slug || 0x00 || bundleHash) where bundleHash includes the sha256- prefix",
+    "contentHash": "the bundleHash digest, used as the artifact-registry uniqueness key with type=skill"
+  },
+  "zk": {
+    "status": "pending",
+    "programId": "4vJ9JU1bJJE96FWSVKmnrL3xFU5jSBSVdk9x4La2vzhn",
+    "programDeployed": false,
+    "vkSlotsEmpty": true,
+    "note": "zk-clawd-primitives is not live. Do not treat these records as ZK attestations."
+  },
+  "registry": {
+    "onchainai": "https://onchainai.fun/registry",
+    "skillHub": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+    "musebookAgents": "https://registry.musebook.trade",
+    "sourcePRs": "Draft PRs only; no production deploys from this change."
+  },
+  "entries": [
+    {
+      "type": "skill",
+      "slug": "skillhub-onchain",
+      "version": "1.0.0-onchain.4f387aa2",
+      "bundleHash": "sha256-f393b771a8b5fdfb2665f9eaa1a1205dc9fdf6ed1b118819527152a4d1493c46",
+      "merkleLeaf": "sha256-24484a5bb5712efe6da4539a414f93def47042022774308603421bde3b1ae442",
+      "sourceRepo": "Solizardking/skillhub-main",
+      "commit": "be3de0244dc1a57e323d8160787ebb40fb64930e",
+      "asset": null,
+      "collection": null,
+      "mintSignature": null,
+      "note": "Content hashes are bound. The Metaplex Core asset address is filled after a successful devnet mint with a throwaway keypair (see solana-clawd-ai-training/artifact-registry)."
+    },
+    {
+      "type": "tool",
+      "name": "cheshire-mcp-tools",
+      "version": "2026-07-21",
+      "manifestPath": "registry/google/cheshire-mcp-tools-list.json",
+      "manifestHash": "sha256-a2977cc1558760d3c42528e1d2b8345440d35aa6902705064db7c2e57e40e6fe",
+      "sourceRepo": "Solizardking/skillhub-main",
+      "commit": "be3de0244dc1a57e323d8160787ebb40fb64930e",
+      "asset": null,
+      "collection": null
+    },
+    {
+      "type": "mcp_server",
+      "name": "cheshire-terminal",
+      "version": "2026-07-21",
+      "endpoint": "https://cheshireterminal.ai/mcp",
+      "manifestPath": "registry/google/cheshire-mcp-server-card.json",
+      "manifestHash": "sha256-c326b74073742aaa77c849effabb0ea8eb474efbab905bba6f7590eaabc02004",
+      "sourceRepo": "Solizardking/skillhub-main",
+      "commit": "be3de0244dc1a57e323d8160787ebb40fb64930e",
+      "asset": null,
+      "collection": null
+    }
+  ]
+}

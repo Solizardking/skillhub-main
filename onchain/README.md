@@ -10,6 +10,7 @@
 | `agentregistry-mirror.json` | yes | Proof map for importing skills into local agentregistry |
 | `relay-state.json` | yes | Last skill-relay run (counts, merkle, surface health) |
 | `skills-process-state.json` | yes | Last `skills:process` inventory fingerprint + scan summary |
+| `metaplex-attestations.json` | yes | Optional Metaplex Core asset pointers (devnet) keyed by SkillHub `bundleHash` |
 | `submissions/` | **no** (gitignored) | Private job store: full files, scan detail, payment memos |
 
 ## Security
