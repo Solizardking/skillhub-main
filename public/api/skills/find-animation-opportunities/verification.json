@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "find-animation-opportunities",
+  "name": "find-animation-opportunities",
+  "description": "Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks \"what could be animated here?\" or wants to \"make this feel more alive\". For fixing existing animations, use improve-animations or review-animations instead.",
+  "source": "https://skills.x402.wtf/api/skills/find-animation-opportunities/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/find-animation-opportunities/metadata.json",
+  "bundleHash": "sha256-b8eb437a1c2d2c81c36c00bc21fa36ea99108fac32c61ae8a78c878789c21b30",
+  "merkleLeaf": "sha256-b4a4740ccd091dcebd8b5e91fd88d476bab9fdf1e99d32defb4f12002914a5bc",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 9884,
+      "sha256": "sha256-331479e0d867f90d637ef3ef1bdbbd38498d144ab493442afdfbc138abc751b4"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

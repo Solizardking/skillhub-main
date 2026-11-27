@@ -5,13 +5,18 @@
   "description": "Use this skill whenever the user wants to do anything with PDF files. This includes reading or extracting text/tables from PDFs, combining or merging multiple PDFs into one, splitting PDFs apart, rotating pages, adding watermarks, creating new PDFs, filling PDF forms, encrypting/decrypting PDFs, extracting images, and OCR on scanned PDFs to make them searchable. If the user mentions a .pdf file or asks to produce one, use this skill.",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/pdf/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/pdf/metadata.json",
-  "bundleHash": "sha256-0104d25ce717856fb86f5f1680486aa910a17439b1081dc92a31627a40dbd127",
-  "merkleLeaf": "sha256-57090aef3c74f8de6c96452d0d7068279d2b078887ebb4eaa8e49b6266f07593",
+  "bundleHash": "sha256-e54f0c45fc5f7f179bbf69be86bb8d16ee4fdee69fa82bbf11fbc2b4049ecd03",
+  "merkleLeaf": "sha256-8cd62484524bae40152b626918273c5ca336eaf246d40273b8bb1fb6883f0a21",
   "files": [
     {
       "path": "forms.md",
       "bytes": 11854,
       "sha256": "sha256-9530b3f57034792e0242a3abfe8b3c296466329551916f2ff6c5a70db78f7e44"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1467,
+      "sha256": "sha256-79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa"
     },
     {
       "path": "reference.md",

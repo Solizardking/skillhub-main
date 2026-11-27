@@ -5,9 +5,14 @@
   "description": "Build frontend Solana applications with Phantom Connect SDK and Helius infrastructure. Covers React, React Native, and browser SDK integration, transaction signing via Helius Sender, API key proxying, token gating, NFT minting, crypto payments, real-time updates, and secure frontend architecture.",
   "source": "https://skills.x402.wtf/api/skills/helius-skills/helius-phantom/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/helius-skills/helius-phantom/metadata.json",
-  "bundleHash": "sha256-5a84b110c23f942e669ec32fb17b1c5ef4e3b4ae71c4aeb71f2ef8b338ac5ac4",
-  "merkleLeaf": "sha256-1a4a6c7560e9ae8e264428ebd8558e4fa2959a67f6f64728e303894d9028f0a0",
+  "bundleHash": "sha256-e34855a72408ca0cbc0aead9f23a68d52665ae17bc128cb3a926fe6f5904c5d2",
+  "merkleLeaf": "sha256-253d2bbcb12f1942f57b849ab7b850ab60871ea75f54581bd5f47253265ad77e",
   "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "sha256-73038fea06251a60c2a585f5235ea1be2b6b4f6851864502a32bc8ac0c115c2c"
+    },
     {
       "path": "references/browser-sdk.md",
       "bytes": 8629,

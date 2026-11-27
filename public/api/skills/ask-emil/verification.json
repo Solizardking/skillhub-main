@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "ask-emil",
+  "name": "ask-emil",
+  "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+  "source": "https://skills.x402.wtf/api/skills/ask-emil/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/ask-emil/metadata.json",
+  "bundleHash": "sha256-ec3b269ad29306aa09a075295a7e204112c682deb7685f20f93ae3751c28af84",
+  "merkleLeaf": "sha256-bce1a7ca36d23cc6785f0d677b7f53c1b4da36d5ed02c89db666eb5323f69700",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 4948,
+      "sha256": "sha256-b14d6fec27af1ce59e48c5444520c08abc3ae90e93e1843e19ca382512ac6233"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

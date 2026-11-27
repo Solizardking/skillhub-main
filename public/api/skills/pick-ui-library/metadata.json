@@ -1,0 +1,7 @@
+{
+  "slug": "pick-ui-library",
+  "name": "pick-ui-library",
+  "description": "Pick the library for a frontend task from a curated list — primitives, toasts, drawers, command menus, OTP, numbers, charts, virtualization, drag and drop, state, styling.",
+  "category": "Dev Tools / Agents",
+  "skill": "/api/skills/pick-ui-library/SKILL.md"
+}

@@ -5,18 +5,23 @@
   "description": "Reviews animation and motion code against a high craft bar derived from Emil Kowalski's design engineering philosophy. Default to flagging; approval is earned.",
   "source": "https://skills.x402.wtf/api/skills/review-animations/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/review-animations/metadata.json",
-  "bundleHash": "sha256-84bfe2c5f85a291b72ebbe7e7f9fbfd6c77e34919c94600187a9b3ab68c6b2fb",
-  "merkleLeaf": "sha256-e3d9f5b25b66987845c226348d501a76842cfdf6db3d89805ea1c59ec46d47fa",
+  "bundleHash": "sha256-7e987c17594a235089c3e07b2f9e88a550edc435689114e5c04363b4ab9b0141",
+  "merkleLeaf": "sha256-09c802a207b97cd9dca65b7193cad682425d5ed9306f72b72488dc7b3dd4a2cb",
   "files": [
     {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
       "path": "SKILL.md",
-      "bytes": 8120,
-      "sha256": "sha256-27c1ec78634a08bcb588229497f4fbc3bcb9db8f8032dcdd275eb844f30fc004"
+      "bytes": 8309,
+      "sha256": "sha256-9ceb5072ce5d5e51b07efa60817c66d06fc6492b7900b44dff5ff0f8f7bcf188"
     },
     {
       "path": "STANDARDS.md",
-      "bytes": 9915,
-      "sha256": "sha256-12b1a9dcee667981294ea065651b755910977f676e6300a31614003cde444db9"
+      "bytes": 10347,
+      "sha256": "sha256-2d2c28e9fe98dd55a879bafa1684827c812eb31f6b63fe578141d3978ddc664e"
     }
   ],
   "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",

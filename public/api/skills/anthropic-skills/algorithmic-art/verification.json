@@ -5,9 +5,14 @@
   "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/algorithmic-art/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/algorithmic-art/metadata.json",
-  "bundleHash": "sha256-69cb5719ee0afef4dd3fc6b4326056cca6c677cc5ad40e118cb27d6588e920eb",
-  "merkleLeaf": "sha256-6f82c7c81839fb8eb35767309f00f48df98ffb2ed012ccb5d14286132c7c14ef",
+  "bundleHash": "sha256-6dbfcb0c9ffcca9564858363055e6918606cd4a75582302a52ea46f400dee754",
+  "merkleLeaf": "sha256-9b97c62baa70c91014459553b98cdcfc77b9bfbaf71f121386482cf1ace71b00",
   "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11345,
+      "sha256": "sha256-bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+    },
     {
       "path": "SKILL.md",
       "bytes": 19769,

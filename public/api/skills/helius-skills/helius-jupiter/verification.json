@@ -5,9 +5,14 @@
   "description": "Build Solana DeFi applications combining Jupiter APIs with Helius infrastructure. Covers token swaps (Swap API V2), lending/borrowing (Lend protocol), limit orders (Trigger), DCA (Recurring), token/price data, transaction submission via Sender, fee optimization, real-time streaming, and wallet intelligence.",
   "source": "https://skills.x402.wtf/api/skills/helius-skills/helius-jupiter/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/helius-skills/helius-jupiter/metadata.json",
-  "bundleHash": "sha256-944eaf5a1ff49d8c95bc6678f0c07e4834aa9306cf0867b0e7ff301a7bccbccf",
-  "merkleLeaf": "sha256-421cdaaea885d4610ae560923e9c990431cd25aaf9d14f7a6b1e467bb31f2410",
+  "bundleHash": "sha256-5183c7bcc49d7f8f9d49485d4e8f074c90a7c0e5ebb9d85b4655fcd1f455b797",
+  "merkleLeaf": "sha256-2a6846a5218bdd05a314d3457b49588343254662e49c107a66a0ae389a2611a3",
   "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1067,
+      "sha256": "sha256-dda3b31f3f7ed99173ea85af5741ac703f3aa9b3800be9c0c5f8acee99268d8c"
+    },
     {
       "path": "references/helius-das.md",
       "bytes": 9256,

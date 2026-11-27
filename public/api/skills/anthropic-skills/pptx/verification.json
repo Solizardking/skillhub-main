@@ -5,13 +5,18 @@
   "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/pptx/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/pptx/metadata.json",
-  "bundleHash": "sha256-b6ddbe8d2c34bb790d77a7de82131349a4fe54d159b59974260d8872f436bebe",
-  "merkleLeaf": "sha256-62aac00da2eb6a537ed637496a96496d6c98ba5a2fd41f2cf60f2706cb5cf645",
+  "bundleHash": "sha256-c4663576ece9b09d92695f6740aa6a3de22c3e38f712844c72a5d0de2cee70f8",
+  "merkleLeaf": "sha256-25bf0bc415f831d703a3f0a01bb9eb35718045b244d1afd1e07d6f391273dec1",
   "files": [
     {
       "path": "editing.md",
       "bytes": 6885,
       "sha256": "sha256-6cb47c3ab17e60b7de37e83131c409ef5a90a01bfb54e999905a9c9f7dd88e68"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1467,
+      "sha256": "sha256-79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa"
     },
     {
       "path": "pptxgenjs.md",

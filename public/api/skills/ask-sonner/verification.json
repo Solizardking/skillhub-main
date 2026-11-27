@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "ask-sonner",
+  "name": "ask-sonner",
+  "description": "Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it — toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.",
+  "source": "https://skills.x402.wtf/api/skills/ask-sonner/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/ask-sonner/metadata.json",
+  "bundleHash": "sha256-5112df7996170f88e396ebee4ebd5667ba9d6ded5b0d07b70b4c653ce325bbbe",
+  "merkleLeaf": "sha256-e5002eb5051c612542c2668cc7e08a7b356dc8b1569ccf5f3a42fa29fb197d4d",
+  "files": [
+    {
+      "path": "API.md",
+      "bytes": 4663,
+      "sha256": "sha256-0e0c44a4a28c5f2ceaefc5fb215bf75febe29166066dd502fc7a47ef390c0593"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 7326,
+      "sha256": "sha256-4350ebfef0437875de80cc989059900b21ad621ea09f4709cc2917e7dee82d46"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

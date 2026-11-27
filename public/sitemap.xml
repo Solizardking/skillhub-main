@@ -544,6 +544,18 @@
   <url><loc>https://skills.x402.wtf/api/skills/agents-sdk/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/agents-sdk/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/agents-sdk/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animate/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animate/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animate/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animate-expo/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animate-expo/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animate-expo/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animation-performance/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animation-performance/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animation-performance/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animation-vocabulary/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animation-vocabulary/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/animation-vocabulary/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/algorithmic-art/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/algorithmic-art/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/algorithmic-art/SKILL.md</loc></url>
@@ -562,6 +574,18 @@
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/xlsx/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/xlsx/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/xlsx/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/apple-design/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/apple-design/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/apple-design/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/ask-emil/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/ask-emil/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/ask-emil/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/ask-sonner/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/ask-sonner/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/ask-sonner/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/break-ui/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/break-ui/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/break-ui/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-identity-registry/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-identity-registry/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-identity-registry/SKILL.md</loc></url>
@@ -571,6 +595,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-validation-registry/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-validation-registry/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/cheshire-agent-validation-registry/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/choreograph/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/choreograph/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/choreograph/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/clawdhub/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/clawdhub/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/clawdhub/SKILL.md</loc></url>
@@ -616,12 +643,18 @@
   <url><loc>https://skills.x402.wtf/api/skills/engineering/wayfinder/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/engineering/wayfinder/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/engineering/wayfinder/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/find-animation-opportunities/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/find-animation-opportunities/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/find-animation-opportunities/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/find-skills/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/find-skills/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/find-skills/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/forge/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/forge/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/forge/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/gestures/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/gestures/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/gestures/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/github/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/github/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/github/SKILL.md</loc></url>
@@ -643,6 +676,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/index-bot/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/index-bot/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/index-bot/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/learn-taste/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/learn-taste/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/learn-taste/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/liquidity-planner/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/liquidity-planner/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/liquidity-planner/SKILL.md</loc></url>
@@ -655,6 +691,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/misc/git-guardrails-claude-code/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/misc/git-guardrails-claude-code/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/misc/git-guardrails-claude-code/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/mobile-native/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/mobile-native/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/mobile-native/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/openclawd-clawd-code-skill-main/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/openclawd-clawd-code-skill-main/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/openclawd-clawd-code-skill-main/SKILL.md</loc></url>
@@ -673,12 +712,21 @@
   <url><loc>https://skills.x402.wtf/api/skills/oracle/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/oracle/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/oracle/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/pick-ui-library/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/pick-ui-library/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/pick-ui-library/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/productivity/handoff/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/productivity/handoff/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/productivity/handoff/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/productivity/writing-great-skills/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/productivity/writing-great-skills/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/productivity/writing-great-skills/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/prototype/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/prototype/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/prototype/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/remove-animations/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/remove-animations/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/remove-animations/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/research-and-web/deep-research/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/research-and-web/deep-research/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/research-and-web/deep-research/SKILL.md</loc></url>
@@ -739,6 +787,9 @@
   <url><loc>https://skills.x402.wtf/api/skills/wrangler/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/wrangler/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/wrangler/SKILL.md</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/write-swift/metadata.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/write-swift/verification.json</loc></url>
+  <url><loc>https://skills.x402.wtf/api/skills/write-swift/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/writing-great-skills/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/writing-great-skills/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/writing-great-skills/SKILL.md</loc></url>
@@ -1831,9 +1882,6 @@
   <url><loc>https://skills.x402.wtf/api/skills/wacli/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/wacli/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/wacli/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/animation-vocabulary/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/animation-vocabulary/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/animation-vocabulary/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/brand-guidelines/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/brand-guidelines/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/brand-guidelines/SKILL.md</loc></url>
@@ -1846,9 +1894,6 @@
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/theme-factory/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/theme-factory/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/anthropic-skills/theme-factory/SKILL.md</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/apple-design/metadata.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/apple-design/verification.json</loc></url>
-  <url><loc>https://skills.x402.wtf/api/skills/apple-design/SKILL.md</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/bird/metadata.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/bird/verification.json</loc></url>
   <url><loc>https://skills.x402.wtf/api/skills/bird/SKILL.md</loc></url>

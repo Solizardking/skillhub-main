@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "mobile-native",
+  "name": "mobile-native",
+  "description": "Make a web app feel native on a phone — the small CSS and meta-tag fixes that separate \"a website in a browser\" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, inputs that zoom the page, laggy taps, pull-to-refresh hijacking scroll, content under the notch, long-press selecting button text, carousels that scroll the wrong way, mismatched status bars, and the rule that you test on real hardware. Use when a web app is being built for or reviewed on mobile, when something \"works in Chrome but feels wrong on my phone\", when building a PWA, a bottom sheet, a carousel, a full-screen layout, or any touch interaction. For motion itself use animate; for React Native use animate-expo.",
+  "source": "https://skills.x402.wtf/api/skills/mobile-native/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/mobile-native/metadata.json",
+  "bundleHash": "sha256-d749644676e44f6de943b71c46eb064306d9f64216f048c6bcd734922e225a48",
+  "merkleLeaf": "sha256-b634d1ba0e1cb5b4f17863edd4446fc5dcd577248d189a0eb24e2429a90b8b10",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 16904,
+      "sha256": "sha256-705e267bc47ea61e4c6f94d121efeebdb994055f482673b8a72f4a0dd62f1968"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

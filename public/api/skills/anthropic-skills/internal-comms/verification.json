@@ -5,9 +5,14 @@
   "description": "A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenever asked to write some sort of internal communications (status reports, leadership updates, 3P updates, company newsletters, FAQs, incident reports, project updates, etc.).",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/internal-comms/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/internal-comms/metadata.json",
-  "bundleHash": "sha256-058c687b4a13f2848fc15d9019d92e6819c75f5d77ee7fce9e41126525b5a128",
-  "merkleLeaf": "sha256-c8ef82f837c93e168897bb5dae25e510b50cc91948a9a33b7e7b4a4b1becfae7",
+  "bundleHash": "sha256-3ec11d5edb26c8466fdc502e1c00e539a16227f93e1812e7e15855cd300f580e",
+  "merkleLeaf": "sha256-b8e1e76bc235ba03a6191eff8d6d8aa05ade601874bf87793a0dec746c5f0576",
   "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11345,
+      "sha256": "sha256-bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+    },
     {
       "path": "SKILL.md",
       "bytes": 1511,

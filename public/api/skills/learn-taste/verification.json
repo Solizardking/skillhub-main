@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "learn-taste",
+  "name": "learn-taste",
+  "description": "Turn a session's design corrections into rules, with their why, in DESIGN.md, a project skill, or a lint check.",
+  "source": "https://skills.x402.wtf/api/skills/learn-taste/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/learn-taste/metadata.json",
+  "bundleHash": "sha256-c46bfc707810c8c1d97b248274067e9d17a992c6ec980621a39eaa4d975b46b8",
+  "merkleLeaf": "sha256-21ec60644d7cba71751d5b16923d907d1ead22bf89caaa982e316b0f94a3dc5f",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 9251,
+      "sha256": "sha256-d624b8cd475eec24c5dc3f49b0380b56c8dab8399df11b92d7c9685aa8d4d33e"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

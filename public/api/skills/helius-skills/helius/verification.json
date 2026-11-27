@@ -5,9 +5,14 @@
   "description": "Build Solana applications with Helius infrastructure. Covers transaction sending (Sender), asset/NFT queries (DAS API), real-time streaming (WebSockets, Laserstream), event pipelines (webhooks), priority fees, wallet analysis, and agent onboarding.",
   "source": "https://skills.x402.wtf/api/skills/helius-skills/helius/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/helius-skills/helius/metadata.json",
-  "bundleHash": "sha256-f09267838b5e402ad8ab2bfabb23fec75c17923d8b7bb3cf1336166ed4401ae7",
-  "merkleLeaf": "sha256-e78de6e90c095ef7686e1e5c7ddbeb669db497911f72752e5df4e086f843464e",
+  "bundleHash": "sha256-b33c2e54416177e12d4805753a6a0477e247f3eaf95640cdd0a923ec8206bd5a",
+  "merkleLeaf": "sha256-b49215a67ef95e36517563c18386f5162768379a13d86b7806e4d16ad5c9f64e",
   "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "sha256-73038fea06251a60c2a585f5235ea1be2b6b4f6851864502a32bc8ac0c115c2c"
+    },
     {
       "path": "references/das.md",
       "bytes": 9248,

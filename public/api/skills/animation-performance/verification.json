@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "animation-performance",
+  "name": "animation-performance",
+  "description": "Keep web animations inside the frame budget — animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
+  "source": "https://skills.x402.wtf/api/skills/animation-performance/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/animation-performance/metadata.json",
+  "bundleHash": "sha256-121af042349672e3813206871d98eb1913aa69bb58b495b3029c4efa7be3ba1b",
+  "merkleLeaf": "sha256-3a77aa79e5d4df9f64ab5764dc80c036af01673abbd63ada5e77355724b54bfa",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 14002,
+      "sha256": "sha256-6481e7a611b54c0d1d229ac3ac516c05648e63aa79de88c0a1bdc5ae2666ab80"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

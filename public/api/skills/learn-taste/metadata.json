@@ -1,0 +1,7 @@
+{
+  "slug": "learn-taste",
+  "name": "learn-taste",
+  "description": "Turn a session's design corrections into rules, with their why, in DESIGN.md, a project skill, or a lint check.",
+  "category": "Dev Tools / Agents",
+  "skill": "/api/skills/learn-taste/SKILL.md"
+}

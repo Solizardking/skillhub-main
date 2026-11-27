@@ -5,9 +5,14 @@
   "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack like \"make me a GIF of X doing Y for Slack.\"",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/slack-gif-creator/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/slack-gif-creator/metadata.json",
-  "bundleHash": "sha256-5dc57a825da5a5b9a9a2c1cce612ddea6a21814bf9f123ae7678ec2c417e9595",
-  "merkleLeaf": "sha256-0ce4f23c48e432010f1f70c9de4348041930d0574cfb050d7d38dadbf02a9d03",
+  "bundleHash": "sha256-3915a8915cdeb9e9c8d5f783bc7688e541ae8b0449927d192d590206915cd8f2",
+  "merkleLeaf": "sha256-23283c26245fc6d306b370a38b04b08b73cf213fedf1d8ee223c280daaba6f6b",
   "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11345,
+      "sha256": "sha256-bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+    },
     {
       "path": "SKILL.md",
       "bytes": 7841,
