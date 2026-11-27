@@ -29,7 +29,7 @@
     }
   },
   "generatedAt": "1970-01-01T00:00:00.000Z",
-  "totalSkills": 674,
+  "totalSkills": 673,
   "categories": {
     "Solana / Blockchain": 172,
     "Dev Tools / Agents": 73,
@@ -40,7 +40,7 @@
     "Local / Web Services": 9,
     "Media / Devices": 31,
     "Productivity / Messaging": 25,
-    "Utilities": 66
+    "Utilities": 65
   },
   "featured": {
     "solana": [
@@ -97,8 +97,8 @@
   "verification": {
     "chain": "solana",
     "status": "anchor-ready",
-    "merkleRoot": "sha256-2c4114d939baec093447807cebbd5777ed2116ab912c94c326e53c2bd80a9793",
-    "catalogHash": "sha256-4f387aa29c6ba4a26135abe0e7d36b87eaa371c263d0b1a33a28821fc4aa5849"
+    "merkleRoot": "sha256-329c4b275593bc66c075fa17aec29a1a1652c23256aacdeff2d0f453332e504a",
+    "catalogHash": "sha256-78989d2dcde9749f5685210777b9d893ecd2c13cf82c7e37fdac92539e077708"
   },
   "monetization": {
     "onchain": "Solana Pay tip URI per skill card",

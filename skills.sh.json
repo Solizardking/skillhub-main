@@ -668,7 +668,6 @@
       "title": "Utilities",
       "description": "General utility skills for local tools and everyday agent operations.",
       "skills": [
-        "1password",
         "animation-vocabulary",
         "anthropic-skills/brand-guidelines",
         "anthropic-skills/doc-coauthoring",

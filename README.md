@@ -3,9 +3,9 @@
 <img src="./assets/hub-banner.svg" alt="Skill Hub — an animated constellation of agent skills" width="100%" />
 
 [![skills.sh](https://skills.sh/b/Solizardking/skills)](https://skills.sh/Solizardking/skills)
-![Skills](https://img.shields.io/badge/skills-674-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-10-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-229_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
+![Skills](https://img.shields.io/badge/skills-673-8A2BE2?style=flat-square) ![Categories](https://img.shields.io/badge/categories-10-00C2FF?style=flat-square) ![Google](https://img.shields.io/badge/google_integration-69_skills-4285F4?style=flat-square) ![NVIDIA](https://img.shields.io/badge/nvidia_integration-229_skills-76B900?style=flat-square) ![Verified](https://img.shields.io/badge/merkle-verified-14F195?style=flat-square) ![Arweave](https://img.shields.io/badge/arweave-permanent-222222?style=flat-square) ![Solana](https://img.shields.io/badge/solana-anchored-9945FF?style=flat-square)
 
-**674 installable agent skills** — led by the **premiere [`metaplex-agent`](./skills/metaplex-agent/SKILL.md)** playbook and the **Cheshire / Robinhood Agents** stack (dual-rail forge, ERC-8004 registries, FunPump launch, omni mint, zk-omni), plus a **69-skill Google integration** and a **229-skill NVIDIA stack**. Every one is a `SKILL.md` playbook your agent can pull off the shelf —
+**673 installable agent skills** — led by the **premiere [`metaplex-agent`](./skills/metaplex-agent/SKILL.md)** playbook and the **Cheshire / Robinhood Agents** stack (dual-rail forge, ERC-8004 registries, FunPump launch, omni mint, zk-omni), plus a **69-skill Google integration** and a **229-skill NVIDIA stack**. Every one is a `SKILL.md` playbook your agent can pull off the shelf —
 hashed, Merkle-rooted, and ready to be pinned to Arweave and anchored on Solana.
 
 *Pick a cabinet. Pull the lever. The right playbook lights up.* 🕹️
@@ -71,7 +71,7 @@ Ten zones. Every skill lives in exactly one. Click a zone to jump to its catalog
 | [📍 **Local / Web Services**](#-local--web-services) | 9 | `█░░░░░░░░░░░░░░░░░` | Weather, places, food, and everyday web services |
 | [🎬 **Media / Devices**](#-media--devices) | 31 | `██░░░░░░░░░░░░░░░░` | Audio, video, images, TTS, cameras, and gadgets |
 | [💬 **Productivity / Messaging**](#-productivity--messaging) | 25 | `██░░░░░░░░░░░░░░░░` | Notes, tasks, chat, and mail on autopilot |
-| [🧰 **Utilities**](#-utilities) | 66 | `█████░░░░░░░░░░░░░` | Handy one-off power tools |
+| [🧰 **Utilities**](#-utilities) | 65 | `█████░░░░░░░░░░░░░` | Handy one-off power tools |
 
 ## 🧭 Codebase Map
 
@@ -79,7 +79,7 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 | Layer | What it contains | Main paths |
 |---|---|---|
-| Skill sources | 674 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/nvidia/*/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
+| Skill sources | 673 canonical skills. Each slug is the directory path (relative to `skills/`) that owns a `SKILL.md`. | `skills/*/SKILL.md`, `skills/google/**/SKILL.md`, `skills/nvidia/*/SKILL.md`, `skills/anthropic-skills/*/SKILL.md`, plus optional `references/`, `scripts/`, `assets/`, and `agents/` folders |
 | Catalog builder | The single source of generated truth for README, Hub docs, catalog JSON, public API, static UI, bundle hashes, and Merkle registry. | [`scripts/build-catalog.mjs`](./scripts/build-catalog.mjs), [`catalog.json`](./catalog.json), [`skills.sh.json`](./skills.sh.json), [`HUB.md`](./HUB.md) |
 | Installer CLI | Lists and installs skills into agent skill roots without external dependencies. | [`bin/skills.mjs`](./bin/skills.mjs), [`package.json`](./package.json) |
 | Static site and API | Browser catalog, per-skill metadata, mirrored `SKILL.md` files, copied public resources, CORS-ready JSON endpoints, and generated payment config. | [`public/index.html`](./public/index.html), [`public/api/skills.json`](./public/api/skills.json), `public/api/skills/**`, [`public/api/monetization.json`](./public/api/monetization.json) |
@@ -92,14 +92,14 @@ The hub is a source catalog plus generated distribution surfaces. Canonical skil
 
 ### Source Families
 
-This is the same 674-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
+This is the same 673-skill inventory grouped by where the source directories live. The full per-skill catalog appears below.
 
 | Source family | Skills | What it covers |
 |---|---:|---|
 | `metaplex-agent/*` | 1 | Premiere #1: Metaplex Agent — EIP-8004 identity, Asset Signer, executive delegation, commerce, Genesis agent tokens. |
 | `metaplex/*` | 1 | Full Metaplex program skill: Core, Token Metadata, Bubblegum, Candy Machine, Genesis, and CLI/SDK references. |
 | `nvidia/*` | 229 | NVIDIA accelerated computing: CUDA/cuDF, Jetson BSP, NeMo, DeepStream, cuOpt, TAO, Holoscan, Earth-2, Dynamo, and digital health. |
-| `single/root skills` | 199 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
+| `single/root skills` | 198 | One-skill source directories for local tools, messaging, utilities, media, devices, and specialized workflows. |
 | `google/*` | 69 | Nested Google Ads, Analytics, Cloud, GKE, BigQuery, Firebase, Gemini, and Well-Architected Framework skills. |
 | `pump/pumpfun/*` | 25 | Pump.fun and pump-program launch, fee, security, wallet, testing, SDK, and token-lifecycle workflows. |
 | `vulcan/*` | 18 | Vulcan/Phoenix perps trading skills for onboarding, market intel, execution, grids, TWAP, TP/SL, margin, and risk. |
@@ -1049,14 +1049,13 @@ Every skill, every zone. Click a zone to expand it — descriptions keep the exa
 
 ### 🧰 Utilities
 
-> Handy one-off power tools — **66 skills**
+> Handy one-off power tools — **65 skills**
 
 <details>
 <summary>Open the Utilities cabinet</summary>
 
 | Skill | Name | Description |
 |---|---|---|
-| [`1password`](./skills/1password/SKILL.md) | 1password | Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op. |
 | [`animation-vocabulary`](./skills/animation-vocabulary/SKILL.md) | animation-vocabulary | Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term ("the bouncy thing when a popover opens" → Pop in; "the iOS rubber-band scroll" → Rubber-banding). Use when the user asks "what's it called when…", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one. |
 | [`anthropic-skills/brand-guidelines`](./skills/anthropic-skills/brand-guidelines/SKILL.md) | brand-guidelines | Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply. |
 | [`anthropic-skills/doc-coauthoring`](./skills/anthropic-skills/doc-coauthoring/SKILL.md) | doc-coauthoring | Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content. This workflow helps users efficiently transfer context, refine content through iteration, and verify the doc works for readers. Trigger when user mentions writing docs, creating proposals, drafting specs, or similar documentation tasks. |

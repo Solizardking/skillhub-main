@@ -7925,19 +7925,6 @@
       "offchainEnabled": false
     },
     {
-      "slug": "1password",
-      "name": "1password",
-      "category": "Utilities",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
       "slug": "animation-vocabulary",
       "name": "animation-vocabulary",
       "category": "Utilities",
