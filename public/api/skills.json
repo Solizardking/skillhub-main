@@ -3648,12 +3648,6 @@
     "category": "Productivity / Messaging"
   },
   {
-    "slug": "1password",
-    "name": "1password",
-    "description": "Set up and use 1Password CLI (op). Use when installing the CLI, enabling desktop app integration, signing in (single or multi-account), or reading/injecting/running secrets via op.",
-    "category": "Utilities"
-  },
-  {
     "slug": "animation-vocabulary",
     "name": "animation-vocabulary",
     "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",

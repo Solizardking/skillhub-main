@@ -2,13 +2,13 @@
   {
     "slug": "agentic-wallet",
     "name": "agentic-wallet",
-    "description": "Crypto wallet operations via the awal CLI \u2014 sign in, check balances, send USDC/ETH/POL/SOL, trade tokens, fund the wallet, and use the x402 payment protocol to discover paid services, pay for API calls, monetize an API, or query onchain data. Use whenever the user mentions signing in, login, authentication, wallet status, balance, address, sending money, paying someone, transferring tokens, ENS names, swapping/trading/converting tokens, funding/topping up/onramp, USDC, ETH, POL, SOL, the x402 bazaar, paid APIs, monetizing an endpoint, or querying onchain data on Base.",
+    "description": "Crypto wallet operations via the awal CLI — sign in, check balances, send USDC/ETH/POL/SOL, trade tokens, fund the wallet, and use the x402 payment protocol to discover paid services, pay for API calls, monetize an API, or query onchain data. Use whenever the user mentions signing in, login, authentication, wallet status, balance, address, sending money, paying someone, transferring tokens, ENS names, swapping/trading/converting tokens, funding/topping up/onramp, USDC, ETH, POL, SOL, the x402 bazaar, paid APIs, monetizing an endpoint, or querying onchain data on Base.",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "alchemy-agentic-gateway",
     "name": "alchemy-agentic-gateway",
-    "description": "Use when accessing Alchemy APIs for RPC calls, token balances, NFT metadata, asset transfers, transaction simulation, or Alchemy-specific features. Also use when the user mentions \"SIWE\", \"SIWS\", \"x402\", \"MPP\", \"mppx\", or \"agentic gateway\" \u2014 this skill covers wallet-based auth flows for Alchemy's x402 and MPP protocols on EVM (Ethereum, Base, Polygon) and SVM (Solana).",
+    "description": "Use when accessing Alchemy APIs for RPC calls, token balances, NFT metadata, asset transfers, transaction simulation, or Alchemy-specific features. Also use when the user mentions \"SIWE\", \"SIWS\", \"x402\", \"MPP\", \"mppx\", or \"agentic gateway\" — this skill covers wallet-based auth flows for Alchemy's x402 and MPP protocols on EVM (Ethereum, Base, Polygon) and SVM (Solana).",
     "category": "Solana / Blockchain"
   },
   {
@@ -32,7 +32,7 @@
   {
     "slug": "anthropic-skills/claude-api",
     "name": "claude-api",
-    "description": "Reference for the Claude API / Anthropic SDK \u2014 model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER \u2014 read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" \u2014 whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) \u2014 never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens). SKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai|langchain_openai|google.generativeai|genai|mistralai|cohere|ollama'` over the project hits (run this grep FIRST if no provider named \u2014 don't Read the file).",
+    "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens). SKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai|langchain_openai|google.generativeai|genai|mistralai|cohere|ollama'` over the project hits (run this grep FIRST if no provider named — don't Read the file).",
     "category": "Solana / Blockchain"
   },
   {
@@ -44,7 +44,7 @@
   {
     "slug": "cheshire-agent-registries",
     "name": "cheshire-agent-registries",
-    "description": "Overview of the ERC-8004 Cheshire agent registry suite on Robinhood Chain: identity (ERC-721 RHAGENT), reputation feedback, validation request/response, and optional zk-omni messenger. Use when registering agents, reading registry addresses, wiring forge/UI, or deploying operator tooling. Product host: funpump.ai \u00b7 forge: cheshireterminal.ai/agents/forge.",
+    "description": "Overview of the ERC-8004 Cheshire agent registry suite on Robinhood Chain: identity (ERC-721 RHAGENT), reputation feedback, validation request/response, and optional zk-omni messenger. Use when registering agents, reading registry addresses, wiring forge/UI, or deploying operator tooling. Product host: funpump.ai · forge: cheshireterminal.ai/agents/forge.",
     "category": "Solana / Blockchain"
   },
   {
@@ -56,13 +56,13 @@
   {
     "slug": "cheshire-noxa",
     "name": "cheshire-noxa",
-    "description": "NOXA Fun/DEX collab for Cheshire Terminal \u2014 launch feed, DEX registry, QuoterV2 quotes, EVM RPC. One-shot npm package @x402solana/cheshire-noxa.",
+    "description": "NOXA Fun/DEX collab for Cheshire Terminal — launch feed, DEX registry, QuoterV2 quotes, EVM RPC. One-shot npm package @x402solana/cheshire-noxa.",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "cheshire-omni-mint",
     "name": "cheshire-omni-mint",
-    "description": "Dual-rail omni agent mint: Solana Metaplex Core + Agent Identity and Robinhood Chain ERC-8004 identity in one plan, optionally bound with LayerZero zk-omni (msgType 4 dual_identity_link). Use when the user wants omnichain identity, Solana and Robinhood together, Metaplex mintAgent + RH register, or Cheshire Terminal dual-rail forge. Product: cheshireterminal.ai/agents/forge \u00b7 funpump.ai.",
+    "description": "Dual-rail omni agent mint: Solana Metaplex Core + Agent Identity and Robinhood Chain ERC-8004 identity in one plan, optionally bound with LayerZero zk-omni (msgType 4 dual_identity_link). Use when the user wants omnichain identity, Solana and Robinhood together, Metaplex mintAgent + RH register, or Cheshire Terminal dual-rail forge. Product: cheshireterminal.ai/agents/forge · funpump.ai.",
     "category": "Solana / Blockchain"
   },
   {
@@ -74,13 +74,13 @@
   {
     "slug": "cheshire-terminal-agents",
     "name": "cheshire-terminal-agents",
-    "description": "One-shot Cheshire Terminal Agents skill pack \u2014 dual-rail forge (Robinhood Chain + Solana), ERC-8004 registries, FunPump bonded launch / Launchpad V3, omni mint, zk-omni messaging, and the full RH crypto-agent open stack (swaps, LP, DCA, copy-trade, viem). Use when the user says install cheshire agents, one-shot RH skills, npm cheshire-terminal-agents skills, or wants the whole Cheshire pack.",
+    "description": "One-shot Cheshire Terminal Agents skill pack — dual-rail forge (Robinhood Chain + Solana), ERC-8004 registries, FunPump bonded launch / Launchpad V3, omni mint, zk-omni messaging, and the full RH crypto-agent open stack (swaps, LP, DCA, copy-trade, viem). Use when the user says install cheshire agents, one-shot RH skills, npm cheshire-terminal-agents skills, or wants the whole Cheshire pack.",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "cheshire-zk-omni",
     "name": "cheshire-zk-omni",
-    "description": "Zero-knowledge omnichain messaging (msgType 4) between Robinhood Chain and Solana via CheshireZkOmniMessenger \u2014 LayerZero V2 peers, nullifier anti-replay, optional identity authorization. Use for sendZkOmni, quoteSend, nullifiers, zk-omni relayer. Source: contracts/zk-omni/CheshireZkOmniMessenger.sol.",
+    "description": "Zero-knowledge omnichain messaging (msgType 4) between Robinhood Chain and Solana via CheshireZkOmniMessenger — LayerZero V2 peers, nullifier anti-replay, optional identity authorization. Use for sendZkOmni, quoteSend, nullifiers, zk-omni relayer. Source: contracts/zk-omni/CheshireZkOmniMessenger.sol.",
     "category": "Solana / Blockchain"
   },
   {
@@ -110,7 +110,7 @@
   {
     "slug": "clawdex",
     "name": "clawdex",
-    "description": "Clawdex \u2014 dual-engine coding agent. Claude Code (reasoning + planning) + OpenAI Codex (fast execution) + Browser Use boxes (web research) + Upstash compute boxes (isolated sandboxes).",
+    "description": "Clawdex — dual-engine coding agent. Claude Code (reasoning + planning) + OpenAI Codex (fast execution) + Browser Use boxes (web research) + Upstash compute boxes (isolated sandboxes).",
     "category": "Solana / Blockchain"
   },
   {
@@ -128,7 +128,7 @@
   {
     "slug": "coingecko",
     "name": "coingecko",
-    "description": "Use this skill for any request involving cryptocurrency market data, coin prices, trading volume, market cap, OHLC charts, historical data, exchanges, derivatives, NFTs, DeFi, on-chain token data, liquidity pools, DEX data, or anything powered by CoinGecko or GeckoTerminal APIs. Trigger this skill whenever the user asks about crypto prices, token data, market trends, or wants to call any CoinGecko or GeckoTerminal endpoint \u2014 even if they don't explicitly say \"CoinGecko\". Also trigger when the user asks about API keys, rate limits, or authentication for these APIs.",
+    "description": "Use this skill for any request involving cryptocurrency market data, coin prices, trading volume, market cap, OHLC charts, historical data, exchanges, derivatives, NFTs, DeFi, on-chain token data, liquidity pools, DEX data, or anything powered by CoinGecko or GeckoTerminal APIs. Trigger this skill whenever the user asks about crypto prices, token data, market trends, or wants to call any CoinGecko or GeckoTerminal endpoint — even if they don't explicitly say \"CoinGecko\". Also trigger when the user asks about API keys, rate limits, or authentication for these APIs.",
     "category": "Solana / Blockchain"
   },
   {
@@ -176,19 +176,19 @@
   {
     "slug": "dflow-kalshi-market-data",
     "name": "dflow-kalshi-market-data",
-    "description": "Read market data for a known Kalshi prediction market on DFlow \u2014 orderbook, trades, top-of-book prices, candlesticks, forecast-percentile history, and Kalshi in-game live data \u2014 via one-shot REST snapshots, historical ranges, or live WebSocket streams. Use when the user asks \"show me the orderbook for X\", \"get last hour of trades\", \"build a live price ticker\", \"stream orderbook depth\", \"pull 1-minute candles for the last day\", \"watch in-game scores for this sports market\", or \"alert me when the orderbook moves\". Do NOT use to discover markets matching a criterion (use `dflow-kalshi-market-scanner`), to place orders (use `dflow-kalshi-trading`), or to read a user's own positions/P&L (use `dflow-kalshi-portfolio`).",
+    "description": "Read market data for a known Kalshi prediction market on DFlow — orderbook, trades, top-of-book prices, candlesticks, forecast-percentile history, and Kalshi in-game live data — via one-shot REST snapshots, historical ranges, or live WebSocket streams. Use when the user asks \"show me the orderbook for X\", \"get last hour of trades\", \"build a live price ticker\", \"stream orderbook depth\", \"pull 1-minute candles for the last day\", \"watch in-game scores for this sports market\", or \"alert me when the orderbook moves\". Do NOT use to discover markets matching a criterion (use `dflow-kalshi-market-scanner`), to place orders (use `dflow-kalshi-trading`), or to read a user's own positions/P&L (use `dflow-kalshi-portfolio`).",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "dflow-kalshi-market-scanner",
     "name": "dflow-kalshi-market-scanner",
-    "description": "Find Kalshi prediction markets on DFlow that match a criterion \u2014 arbitrage (YES+NO<$1), cheap long-shots, near-certain short-dated plays, biggest movers, widest spreads, highest volume, closing soonest, and series/event-level scans. Use when the user asks \"where's the free money?\", \"any mispriced markets?\", \"cheap YES with volume\", \"what moved today?\", \"markets closing soon\", \"cheapest YES in this event\", \"top markets by volume\", or \"alert me when X happens\" (streaming). Do NOT use to place orders (use `dflow-kalshi-trading`), to view a user's own positions (use `dflow-kalshi-portfolio`), or for general live-data plumbing unrelated to a scan (use `dflow-kalshi-market-data`).",
+    "description": "Find Kalshi prediction markets on DFlow that match a criterion — arbitrage (YES+NO<$1), cheap long-shots, near-certain short-dated plays, biggest movers, widest spreads, highest volume, closing soonest, and series/event-level scans. Use when the user asks \"where's the free money?\", \"any mispriced markets?\", \"cheap YES with volume\", \"what moved today?\", \"markets closing soon\", \"cheapest YES in this event\", \"top markets by volume\", or \"alert me when X happens\" (streaming). Do NOT use to place orders (use `dflow-kalshi-trading`), to view a user's own positions (use `dflow-kalshi-portfolio`), or for general live-data plumbing unrelated to a scan (use `dflow-kalshi-market-data`).",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "dflow-kalshi-portfolio",
     "name": "dflow-kalshi-portfolio",
-    "description": "View what a wallet holds on DFlow's Kalshi prediction markets \u2014 current positions, unrealized mark-to-market, realized P&L, activity history, and redeemable winners. Use when the user asks \"what are my positions?\", \"what do I own?\", \"am I up or down?\", \"what's my fill history?\", \"what can I redeem?\", \"mark my portfolio to market\", or \"show me this wallet's DFlow activity\". Read-only. Do NOT use to place sells or redemptions (use `dflow-kalshi-trading`), for market-wide data unrelated to a wallet (use `dflow-kalshi-market-data`), or to discover new markets (use `dflow-kalshi-market-scanner`).",
+    "description": "View what a wallet holds on DFlow's Kalshi prediction markets — current positions, unrealized mark-to-market, realized P&L, activity history, and redeemable winners. Use when the user asks \"what are my positions?\", \"what do I own?\", \"am I up or down?\", \"what's my fill history?\", \"what can I redeem?\", \"mark my portfolio to market\", or \"show me this wallet's DFlow activity\". Read-only. Do NOT use to place sells or redemptions (use `dflow-kalshi-trading`), for market-wide data unrelated to a wallet (use `dflow-kalshi-market-data`), or to discover new markets (use `dflow-kalshi-market-scanner`).",
     "category": "Solana / Blockchain"
   },
   {
@@ -206,13 +206,13 @@
   {
     "slug": "dflow-platform-fees",
     "name": "dflow-platform-fees",
-    "description": "Monetize a DFlow integration by collecting a builder-defined fee on trades your app routes through the Trade API \u2014 either a fixed percentage (spot + PM) via `platformFeeBps`, or a probability-weighted dynamic fee (PM outcome tokens only) via `platformFeeScale`. Use when the user asks \"how do I take a cut of trades?\", \"add a builder fee\", \"monetize my swap UI\", \"charge a platform fee\", \"how does platformFeeBps / platformFeeScale work?\", or \"where do my fees get paid?\". Do NOT use to run a trade itself (use `dflow-spot-trading` or `dflow-kalshi-trading` \u2014 both also cover priority fees and sponsored / gasless flows).",
+    "description": "Monetize a DFlow integration by collecting a builder-defined fee on trades your app routes through the Trade API — either a fixed percentage (spot + PM) via `platformFeeBps`, or a probability-weighted dynamic fee (PM outcome tokens only) via `platformFeeScale`. Use when the user asks \"how do I take a cut of trades?\", \"add a builder fee\", \"monetize my swap UI\", \"charge a platform fee\", \"how does platformFeeBps / platformFeeScale work?\", or \"where do my fees get paid?\". Do NOT use to run a trade itself (use `dflow-spot-trading` or `dflow-kalshi-trading` — both also cover priority fees and sponsored / gasless flows).",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "dflow-proof-kyc",
     "name": "dflow-proof-kyc",
-    "description": "Integrate DFlow Proof \u2014 a Solana wallet identity-verification primitive (Stripe Identity under the hood) \u2014 for either (a) gating your own app's features behind KYC, or (b) completing the mandatory verification step for Kalshi prediction-market buys on DFlow. Use when the user asks \"how do I KYC a wallet?\", \"check if a wallet is verified\", \"add KYC to my DeFi app\", \"handle unverified_wallet_not_allowed / PROOF_NOT_VERIFIED\", \"redirect to dflow.net/proof\", or \"gate a feature by jurisdiction or identity\". Do NOT use to actually place trades (use `dflow-kalshi-trading`), for geoblocking (separate concern, handled inline in the trading skill), for age gating (Proof doesn't currently verify age), or for spot swaps (no KYC required).",
+    "description": "Integrate DFlow Proof — a Solana wallet identity-verification primitive (Stripe Identity under the hood) — for either (a) gating your own app's features behind KYC, or (b) completing the mandatory verification step for Kalshi prediction-market buys on DFlow. Use when the user asks \"how do I KYC a wallet?\", \"check if a wallet is verified\", \"add KYC to my DeFi app\", \"handle unverified_wallet_not_allowed / PROOF_NOT_VERIFIED\", \"redirect to dflow.net/proof\", or \"gate a feature by jurisdiction or identity\". Do NOT use to actually place trades (use `dflow-kalshi-trading`), for geoblocking (separate concern, handled inline in the trading skill), for age gating (Proof doesn't currently verify age), or for spot swaps (no KYC required).",
     "category": "Solana / Blockchain"
   },
   {
@@ -224,7 +224,7 @@
   {
     "slug": "dune-analytics",
     "name": "dune-analytics",
-    "description": "Blockchain analytics via Dune REST API \u2014 execute DuneSQL queries against live on-chain data, discover decoded contract tables, and monitor credit usage. Use when the user asks about on-chain data, wallet activity, DEX trades, token transfers, smart contract events, or says \"query Dune\", \"run a Dune query\", or \"search Dune datasets\". Pairs with MoonPay to analyze wallets you create and fund.",
+    "description": "Blockchain analytics via Dune REST API — execute DuneSQL queries against live on-chain data, discover decoded contract tables, and monitor credit usage. Use when the user asks about on-chain data, wallet activity, DEX trades, token transfers, smart contract events, or says \"query Dune\", \"run a Dune query\", or \"search Dune datasets\". Pairs with MoonPay to analyze wallets you create and fund.",
     "category": "Solana / Blockchain"
   },
   {
@@ -254,7 +254,7 @@
   {
     "slug": "helius-skills/helius-okx",
     "name": "helius-okx",
-    "description": "Build Solana trading and intelligence applications combining OKX DEX aggregation with Helius infrastructure. Integration-only layer \u2014 describes when and how to compose OKX tools with Helius tools for swaps, token discovery, smart money signals, meme token analysis, and portfolio intelligence.",
+    "description": "Build Solana trading and intelligence applications combining OKX DEX aggregation with Helius infrastructure. Integration-only layer — describes when and how to compose OKX tools with Helius tools for swaps, token discovery, smart money signals, meme token analysis, and portfolio intelligence.",
     "category": "Solana / Blockchain"
   },
   {
@@ -272,7 +272,7 @@
   {
     "slug": "huashu-agent-swarm",
     "name": "huashu-agent-swarm",
-    "description": "\u591aAgent\u8702\u7fa4\u5e76\u884c\u534f\u4f5c\uff0c\u7eafgit\u81ea\u7ec4\u7ec7\uff0c\u9002\u5408\u5927\u578b\u9879\u76ee\u5f00\u53d1\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u8702\u7fa4\u6a21\u5f0f\"\u3001\"\u591aagent\"\u3001\"\u5e76\u884c\u5f00\u53d1\"\u3001\"agent swarm\"\u65f6\u4f7f\u7528\u3002",
+    "description": "多Agent蜂群并行协作，纯git自组织，适合大型项目开发。当用户提到\"蜂群模式\"、\"多agent\"、\"并行开发\"、\"agent swarm\"时使用。",
     "category": "Solana / Blockchain"
   },
   {
@@ -368,31 +368,31 @@
   {
     "slug": "messari-deep-research",
     "name": "messari-deep-research",
-    "description": "Async deep-research report workflow using Messari AI. Starts a long-form research job, polls until complete, and returns a comprehensive report on any crypto topic, asset, or protocol. Cost varies; typically $0.50\u2013$2.00 USDC.",
+    "description": "Async deep-research report workflow using Messari AI. Starts a long-form research job, polls until complete, and returns a comprehensive report on any crypto topic, asset, or protocol. Cost varies; typically $0.50–$2.00 USDC.",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "messari-token-research",
     "name": "messari-token-research",
-    "description": "Full token research workflow using Messari x402 API. Fetches asset fundamentals, price history, sentiment signals, and news, then synthesizes a research brief via Messari AI. Total cost ~$1.00\u2013$1.50 USDC per run.",
+    "description": "Full token research workflow using Messari x402 API. Fetches asset fundamentals, price history, sentiment signals, and news, then synthesizes a research brief via Messari AI. Total cost ~$1.00–$1.50 USDC per run.",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "messari-x402",
     "name": "messari-x402",
-    "description": "Access Messari's full API via x402 pay-per-request \u2014 no API key needed. Asset data, market metrics, signals, news, fundraising, token unlocks, on-chain networks, and AI chat, all paid with USDC on Base.",
+    "description": "Access Messari's full API via x402 pay-per-request — no API key needed. Asset data, market metrics, signals, news, fundraising, token unlocks, on-chain networks, and AI chat, all paid with USDC on Base.",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "metaplex-agent",
     "name": "metaplex-agent",
-    "description": "Premiere Metaplex Agent skill \u2014 package every Metaplex agent operation into one playbook: CLI/RPC setup, wallet funding, Core identity registration (EIP-8004), Asset Signer PDA activation, executive delegation/revocation, agent commerce (services discovery, x402Support, A2A payments), agent finance, Genesis agent token launch (LaunchPool or Bonding Curve), and setAgentToken. Use when the user mentions Metaplex agents, Agent Registry, mplx agents, mintAndSubmitAgent, AgentIdentity, executive delegation, agent commerce, agent finance, agent token, EIP-8004 registration, or autonomous Solana agents on Metaplex.",
+    "description": "Premiere Metaplex Agent skill — package every Metaplex agent operation into one playbook: CLI/RPC setup, wallet funding, Core identity registration (EIP-8004), Asset Signer PDA activation, executive delegation/revocation, agent commerce (services discovery, x402Support, A2A payments), agent finance, Genesis agent token launch (LaunchPool or Bonding Curve), and setAgentToken. Use when the user mentions Metaplex agents, Agent Registry, mplx agents, mintAndSubmitAgent, AgentIdentity, executive delegation, agent commerce, agent finance, agent token, EIP-8004 registration, or autonomous Solana agents on Metaplex.",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "metaplex/skills/metaplex",
     "name": "metaplex",
-    "description": "Metaplex development on Solana \u2014 NFTs, tokens, compressed NFTs, candy machines, token launches, autonomous agents. Use when working with Token Metadata, Core, Bubblegum, Candy Machine, Genesis, Agent Registry, or the mplx CLI.",
+    "description": "Metaplex development on Solana — NFTs, tokens, compressed NFTs, candy machines, token launches, autonomous agents. Use when working with Token Metadata, Core, Bubblegum, Candy Machine, Genesis, Agent Registry, or the mplx CLI.",
     "category": "Solana / Blockchain"
   },
   {
@@ -470,7 +470,7 @@
   {
     "slug": "moonpay-hardware-wallet",
     "name": "moonpay-hardware-wallet",
-    "description": "Connect a hardware wallet (Ledger) to the MoonPay CLI. Sign transactions on the physical device \u2014 no private keys stored locally.",
+    "description": "Connect a hardware wallet (Ledger) to the MoonPay CLI. Sign transactions on the physical device — no private keys stored locally.",
     "category": "Solana / Blockchain"
   },
   {
@@ -494,7 +494,7 @@
   {
     "slug": "moonpay-price-alerts",
     "name": "moonpay-price-alerts",
-    "description": "Set up desktop price alerts that notify you when tokens hit target prices. Observe-only \u2014 no trading, just notifications.",
+    "description": "Set up desktop price alerts that notify you when tokens hit target prices. Observe-only — no trading, just notifications.",
     "category": "Solana / Blockchain"
   },
   {
@@ -518,7 +518,7 @@
   {
     "slug": "moonpay-trading-automation",
     "name": "moonpay-trading-automation",
-    "description": "Set up automated trading strategies \u2014 DCA, limit orders, and stop losses \u2014 by composing mp CLI commands with OS scheduling (cron/launchd).",
+    "description": "Set up automated trading strategies — DCA, limit orders, and stop losses — by composing mp CLI commands with OS scheduling (cron/launchd).",
     "category": "Solana / Blockchain"
   },
   {
@@ -590,13 +590,13 @@
   {
     "slug": "paybox",
     "name": "paybox",
-    "description": "MoonPay PayBox payment vault for AI agents \u2014 official MCP at https://api.paybox.sh/mcp, OAuth 2.1, scoped credentials, and Cheshire mcp-server proxy tools (get_paybox_*).",
+    "description": "MoonPay PayBox payment vault for AI agents — official MCP at https://api.paybox.sh/mcp, OAuth 2.1, scoped credentials, and Cheshire mcp-server proxy tools (get_paybox_*).",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "phantom-wallet-mcp",
     "name": "phantom-wallet-mcp",
-    "description": "Execute wallet operations through the Phantom MCP server. Use when the user wants to interact with their Phantom wallet directly \u2014 get addresses, transfer SOL or SPL tokens, buy/swap tokens, sign transactions, and sign messages across Solana, Ethereum, Bitcoin, and Sui. Requires the @phantom/mcp-server to be configured as an MCP server.",
+    "description": "Execute wallet operations through the Phantom MCP server. Use when the user wants to interact with their Phantom wallet directly — get addresses, transfer SOL or SPL tokens, buy/swap tokens, sign transactions, and sign messages across Solana, Ethereum, Bitcoin, and Sui. Requires the @phantom/mcp-server to be configured as an MCP server.",
     "category": "Solana / Blockchain"
   },
   {
@@ -764,7 +764,7 @@
   {
     "slug": "rh-bonded-launch",
     "name": "rh-bonded-launch",
-    "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via the live BondingCurveLaunchpad, or guide a user/agent to do so on FunPump /launch or Cheshire /rh-launch. Use when the user says \"launch a token\", \"create token on Robinhood\", \"bonded launch\", \"createToken\", \"fair launch on RH\", \"pump style on robinhood\", \"open a curve\", or brings an agent to funpump.ai to launch. Does NOT mint wCLAWD or bridge Solana $CLAWD \u2014 that is a separate bridge skill path.",
+    "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via the live BondingCurveLaunchpad, or guide a user/agent to do so on FunPump /launch or Cheshire /rh-launch. Use when the user says \"launch a token\", \"create token on Robinhood\", \"bonded launch\", \"createToken\", \"fair launch on RH\", \"pump style on robinhood\", \"open a curve\", or brings an agent to funpump.ai to launch. Does NOT mint wCLAWD or bridge Solana $CLAWD — that is a separate bridge skill path.",
     "category": "Solana / Blockchain"
   },
   {
@@ -776,7 +776,7 @@
   {
     "slug": "rh-launchpad-v3",
     "name": "rh-launchpad-v3",
-    "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 \u2014 graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or FunPump https://funpump.ai/api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
+    "description": "Launch a permissionless bonding-curve token on Robinhood Chain (4663) via BondingCurveLaunchpadV3 — graduates into a Uniswap V3 pool (not V2). Use for bots, agents, Telegram, \"launch with V3 pool\", createToken on LaunchpadV3, curve-v3 rail, or FunPump https://funpump.ai/api/launchpad/v3. Distinct from legacy V2 BondingCurveLaunchpad and from NOXA Fun instant V3.",
     "category": "Solana / Blockchain"
   },
   {
@@ -788,7 +788,7 @@
   {
     "slug": "shipp-sports-data",
     "name": "shipp-sports-data",
-    "description": "Real-time sports & events data for AI agents via Shipp. Use when the user wants live scores, schedules, or game events for NBA, NFL, NCAA Football, MLB, or Soccer \u2014 especially to power prediction market trading strategies on Polymarket or Kalshi using a MoonPay wallet.",
+    "description": "Real-time sports & events data for AI agents via Shipp. Use when the user wants live scores, schedules, or game events for NBA, NFL, NCAA Football, MLB, or Soccer — especially to power prediction market trading strategies on Polymarket or Kalshi using a MoonPay wallet.",
     "category": "Solana / Blockchain"
   },
   {
@@ -800,7 +800,7 @@
   {
     "slug": "skills-store",
     "name": "skills-store",
-    "description": "Cheshire Skills Store index \u2014 curated Agent Skills packages for Cheshire Terminal (API, PostHog, Google Agent Registry, Skill Hub onchain, Stripe, Solana common errors, NOXA) plus the community skills collection. Use when installing store skills, browsing the store catalog, or wiring cheshireterminal.ai/skills-store.",
+    "description": "Cheshire Skills Store index — curated Agent Skills packages for Cheshire Terminal (API, PostHog, Google Agent Registry, Skill Hub onchain, Stripe, Solana common errors, NOXA) plus the community skills collection. Use when installing store skills, browsing the store catalog, or wiring cheshireterminal.ai/skills-store.",
     "category": "Solana / Blockchain"
   },
   {
@@ -824,13 +824,13 @@
   {
     "slug": "solana-common-errors",
     "name": "solana-common-errors",
-    "description": "Diagnose and fix common Solana development errors \u2014 GLIBC mismatches, Anchor version conflicts, cargo build-sbf / platform-tools failures, LiteSVM issues, edition2024 crate pins, RPC airdrops, and Anchor 0.29\u21920.32 migrations. Use when builds fail, Anchor CLI won't install, or CI breaks on Debian/Ubuntu.",
+    "description": "Diagnose and fix common Solana development errors — GLIBC mismatches, Anchor version conflicts, cargo build-sbf / platform-tools failures, LiteSVM issues, edition2024 crate pins, RPC airdrops, and Anchor 0.29→0.32 migrations. Use when builds fail, Anchor CLI won't install, or CI breaks on Debian/Ubuntu.",
     "category": "Solana / Blockchain"
   },
   {
     "slug": "solana-dev",
     "name": "solana-dev",
-    "description": "Use when user asks to \"build a Solana dapp\", \"write an Anchor program\", \"create a token\", \"debug Solana errors\", \"set up wallet connection\", \"test my Solana program\", \"deploy to devnet\", or \"explain Solana concepts\" (rent, accounts, PDAs, CPIs, etc.). Also use for quick on-chain lookups via public RPC + curl \u2014 \"what's the balance of <wallet>\", \"look up transaction <sig>\", \"token balance for <account>\", \"check this address on mainnet/devnet\". End-to-end Solana development playbook covering wallet connection, Anchor/Pinocchio programs, Codama client generation, LiteSVM/Mollusk/Surfpool testing, security checklists, and JSON-RPC curl lookups against public clusters. Integrates with the Solana MCP server for live documentation search. Prefers framework-kit (@solana/client + @solana/react-hooks) for UI, wallet-standard-first connection (incl. ConnectorKit), @solana/kit for client/RPC code, and @solana/web3-compat for legacy boundaries.",
+    "description": "Use when user asks to \"build a Solana dapp\", \"write an Anchor program\", \"create a token\", \"debug Solana errors\", \"set up wallet connection\", \"test my Solana program\", \"deploy to devnet\", or \"explain Solana concepts\" (rent, accounts, PDAs, CPIs, etc.). Also use for quick on-chain lookups via public RPC + curl — \"what's the balance of <wallet>\", \"look up transaction <sig>\", \"token balance for <account>\", \"check this address on mainnet/devnet\". End-to-end Solana development playbook covering wallet connection, Anchor/Pinocchio programs, Codama client generation, LiteSVM/Mollusk/Surfpool testing, security checklists, and JSON-RPC curl lookups against public clusters. Integrates with the Solana MCP server for live documentation search. Prefers framework-kit (@solana/client + @solana/react-hooks) for UI, wallet-standard-first connection (incl. ConnectorKit), @solana/kit for client/RPC code, and @solana/web3-compat for legacy boundaries.",
     "category": "Solana / Blockchain"
   },
   {
@@ -872,7 +872,7 @@
   {
     "slug": "swap-planner",
     "name": "swap-planner",
-    "description": "This skill should be used when the user asks to \"swap tokens\", \"trade ETH for USDC\", \"exchange tokens on Uniswap\", \"buy tokens\", \"sell tokens\", \"convert ETH to stablecoins\", \"find memecoins\", \"discover tokens\", \"research tokens\", \"tokens to buy\", \"find tokens to swap\", \"what should I buy\", or mentions swapping, trading, researching, discovering, buying, or exchanging tokens on any Uniswap-supported chain. Supports both known token swaps and token discovery workflows (discovery uses keyword search and web search \u2014 there is no live \"trending\" feed). Generates deep links to execute swaps in the Uniswap interface.",
+    "description": "This skill should be used when the user asks to \"swap tokens\", \"trade ETH for USDC\", \"exchange tokens on Uniswap\", \"buy tokens\", \"sell tokens\", \"convert ETH to stablecoins\", \"find memecoins\", \"discover tokens\", \"research tokens\", \"tokens to buy\", \"find tokens to swap\", \"what should I buy\", or mentions swapping, trading, researching, discovering, buying, or exchanging tokens on any Uniswap-supported chain. Supports both known token swaps and token discovery workflows (discovery uses keyword search and web search — there is no live \"trending\" feed). Generates deep links to execute swaps in the Uniswap interface.",
     "category": "Solana / Blockchain"
   },
   {
@@ -1010,7 +1010,7 @@
   {
     "slug": "zerion-wallet-data",
     "name": "zerion-wallet-data",
-    "description": "Use when the user asks to check a wallet's portfolio, token balances, DeFi positions, PnL, transaction history, or NFTs. Provides interpreted on-chain data across 40+ EVM chains and Solana via x402 pay-per-request or API key \u2014 no raw RPC decoding needed.",
+    "description": "Use when the user asks to check a wallet's portfolio, token balances, DeFi positions, PnL, transaction history, or NFTs. Provides interpreted on-chain data across 40+ EVM chains and Solana via x402 pay-per-request or API key — no raw RPC decoding needed.",
     "category": "Solana / Blockchain"
   },
   {
@@ -1028,7 +1028,7 @@
   {
     "slug": "zkrouter",
     "name": "zkrouter",
-    "description": "Self-hosted OpenAI-compatible LLM router \u2014 smart tier-based routing, ZK-stamped routing decisions, mode overrides, free OpenRouter at install via the Birth bot. Save 60-80% on inference costs by routing to the cheapest capable model across 12+ OpenRouter models.",
+    "description": "Self-hosted OpenAI-compatible LLM router — smart tier-based routing, ZK-stamped routing decisions, mode overrides, free OpenRouter at install via the Birth bot. Save 60-80% on inference costs by routing to the cheapest capable model across 12+ OpenRouter models.",
     "category": "Solana / Blockchain"
   },
   {
@@ -1040,13 +1040,13 @@
   {
     "slug": "agent-orchestration/agent-self-scheduling",
     "name": "agent-self-scheduling",
-    "description": "Make an AI agent run on a schedule, loop, or interval \u2014 cron, heartbeats, recurring autonomous checks. Use for \"run every N minutes\", \"schedule a task\", \"run on a loop\", \"heartbeat\". Covers external clocks (Claude Code, Codex, Pi) vs Hermes' built-in scheduler.",
+    "description": "Make an AI agent run on a schedule, loop, or interval — cron, heartbeats, recurring autonomous checks. Use for \"run every N minutes\", \"schedule a task\", \"run on a loop\", \"heartbeat\". Covers external clocks (Claude Code, Codex, Pi) vs Hermes' built-in scheduler.",
     "category": "Dev Tools / Agents"
   },
   {
     "slug": "agent-orchestration/codex-subagent",
     "name": "codex-subagent",
-    "description": "Launch OpenAI Codex CLI as a subagent (ChatGPT subscription auth, no API key). Use when delegating a self-contained coding task to Codex from another agent \u2014 parallel implementation work, a second opinion, or an independent verification pass.",
+    "description": "Launch OpenAI Codex CLI as a subagent (ChatGPT subscription auth, no API key). Use when delegating a self-contained coding task to Codex from another agent — parallel implementation work, a second opinion, or an independent verification pass.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1058,13 +1058,13 @@
   {
     "slug": "agent-orchestration/goal-loop",
     "name": "goal-loop",
-    "description": "Explain and write effective instructions for the `/goal` feature \u2014 the persistent self-checking agent loop (plan \u2192 act \u2192 test \u2192 review \u2192 iterate), available in agents like Codex, Claude Code, and Hermes Agent. Use when the user mentions `/goal`, \"goal loop\", \"Ralph loop\", wants to kick off a long-running autonomous agent run, asks how to write a goal prompt, or wants a one-paragraph goal instruction drafted.",
+    "description": "Explain and write effective instructions for the `/goal` feature — the persistent self-checking agent loop (plan → act → test → review → iterate), available in agents like Codex, Claude Code, and Hermes Agent. Use when the user mentions `/goal`, \"goal loop\", \"Ralph loop\", wants to kick off a long-running autonomous agent run, asks how to write a goal prompt, or wants a one-paragraph goal instruction drafted.",
     "category": "Dev Tools / Agents"
   },
   {
     "slug": "agent-orchestration/run-deep-swe",
     "name": "run-deep-swe",
-    "description": "Score any AI model on the DeepSWE coding-agent benchmark via the OpenRouter API. Use when the user wants an independent, reproducible coding-agent eval \u2014 \"run DeepSWE\", \"benchmark this model on DeepSWE\", \"score model X on the coding benchmark\", \"test a model via OpenRouter on DeepSWE\", or to verify vendor-reported coding scores. Covers setup, the OpenRouter wiring for mini-swe-agent, single-task / subset / full 113-task runs, and leaderboard submission.",
+    "description": "Score any AI model on the DeepSWE coding-agent benchmark via the OpenRouter API. Use when the user wants an independent, reproducible coding-agent eval — \"run DeepSWE\", \"benchmark this model on DeepSWE\", \"score model X on the coding benchmark\", \"test a model via OpenRouter on DeepSWE\", or to verify vendor-reported coding scores. Covers setup, the OpenRouter wiring for mini-swe-agent, single-task / subset / full 113-task runs, and leaderboard submission.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1106,7 +1106,7 @@
   {
     "slug": "anthropic-skills/xlsx",
     "name": "xlsx",
-    "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path \u2014 even casually (like \"the xlsx in my downloads\") \u2014 and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
+    "description": "Use this skill any time a spreadsheet file is the primary input or output. This means any task where the user wants to: open, read, edit, or fix an existing .xlsx, .xlsm, .csv, or .tsv file (e.g., adding columns, computing formulas, formatting, charting, cleaning messy data); create a new spreadsheet from scratch or from other data sources; or convert between tabular file formats. Trigger especially when the user references a spreadsheet file by name or path — even casually (like \"the xlsx in my downloads\") — and wants something done to it or produced from it. Also trigger for cleaning or restructuring messy tabular data files (malformed rows, misplaced headers, junk data) into proper spreadsheets. The deliverable must be a spreadsheet file. Do NOT trigger when the primary deliverable is a Word document, HTML report, standalone Python script, database pipeline, or Google Sheets API integration, even if tabular data is involved.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1118,13 +1118,13 @@
   {
     "slug": "cheshire-agent-reputation-registry",
     "name": "cheshire-agent-reputation-registry",
-    "description": "Post and query ERC-8004 reputation feedback for Cheshire agents on Robinhood Chain via CheshireAgentReputationRegistry. Use for giveFeedback, revokeFeedback, appendResponse, getSummary, and client lists. Requires identity registry 0x7036\u2026c950. Source: CheshireAgentReputationRegistry.sol.",
+    "description": "Post and query ERC-8004 reputation feedback for Cheshire agents on Robinhood Chain via CheshireAgentReputationRegistry. Use for giveFeedback, revokeFeedback, appendResponse, getSummary, and client lists. Requires identity registry 0x7036…c950. Source: CheshireAgentReputationRegistry.sol.",
     "category": "Dev Tools / Agents"
   },
   {
     "slug": "cheshire-agent-validation-registry",
     "name": "cheshire-agent-validation-registry",
-    "description": "ERC-8004 validation request/response flow for Cheshire agents on Robinhood Chain via CheshireAgentValidationRegistry. Use for validationRequest, validationResponse, getValidationStatus, getSummary. Operators request; named validators respond (0\u2013100 score). Source: CheshireAgentValidationRegistry.sol.",
+    "description": "ERC-8004 validation request/response flow for Cheshire agents on Robinhood Chain via CheshireAgentValidationRegistry. Use for validationRequest, validationResponse, getValidationStatus, getSummary. Operators request; named validators respond (0–100 score). Source: CheshireAgentValidationRegistry.sol.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1142,7 +1142,7 @@
   {
     "slug": "create-agent-tui",
     "name": "create-agent-tui",
-    "description": "Scaffolds a complete agent TUI in TypeScript using @openrouter/agent \u2014 like create-react-app for terminal agents. Generates a customizable terminal interface with three input styles, four tool display modes, ASCII banners, streaming output, session persistence, and configurable tools. Use when building an agent, creating a TUI, scaffolding an agent project, or building a coding assistant.",
+    "description": "Scaffolds a complete agent TUI in TypeScript using @openrouter/agent — like create-react-app for terminal agents. Generates a customizable terminal interface with three input styles, four tool display modes, ASCII banners, streaming output, session persistence, and configurable tools. Use when building an agent, creating a TUI, scaffolding an agent project, or building a coding assistant.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1184,7 +1184,7 @@
   {
     "slug": "engineering/code-review",
     "name": "code-review",
-    "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes \u2014 Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
+    "description": "Review the changes since a fixed point (commit, branch, tag, or merge-base) along two axes — Standards (does the code follow this repo's documented coding standards?) and Spec (does the code match what the originating issue/PRD asked for?). Runs both reviews in parallel sub-agents and reports them side by side. Use when the user wants to review a branch, a PR, work-in-progress changes, or asks to \"review since X\".",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1208,13 +1208,13 @@
   {
     "slug": "engineering/triage",
     "name": "triage",
-    "description": "Move issues and external PRs through a state machine of triage roles \u2014 categorise, verify, grill if needed, and write agent-ready briefs.",
+    "description": "Move issues and external PRs through a state machine of triage roles — categorise, verify, grill if needed, and write agent-ready briefs.",
     "category": "Dev Tools / Agents"
   },
   {
     "slug": "engineering/wayfinder",
     "name": "wayfinder",
-    "description": "Plan a huge chunk of work \u2014 more than one agent session can hold \u2014 as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
+    "description": "Plan a huge chunk of work — more than one agent session can hold — as a shared map of investigation tickets on your issue tracker, and resolve them one at a time until the way to the destination is clear.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1250,7 +1250,7 @@
   {
     "slug": "improve-animations",
     "name": "improve-animations",
-    "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code \u2014 it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
+    "description": "Survey a codebase's animation and motion code as a senior motion advisor, then produce a prioritized audit and self-contained implementation plans for other agents (or cheaper models) to execute. Read-only on source code — it plans improvements, it does not apply them. Use when the user asks to \"improve the animations\", \"audit the motion\", \"make this app feel better\", or wants a roadmap of animation fixes rather than a review of a single diff.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1262,7 +1262,7 @@
   {
     "slug": "in-progress/wizard",
     "name": "wizard",
-    "description": "Generate an interactive bash wizard that walks a human through a manual procedure \u2014 third-party setup, a one-off migration, an A\u2192B state transition \u2014 opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets.",
+    "description": "Generate an interactive bash wizard that walks a human through a manual procedure — third-party setup, a one-off migration, an A→B state transition — opening URLs, capturing values, confirming each step, and writing .env files and GitHub Actions secrets.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1340,7 +1340,7 @@
   {
     "slug": "productivity/writing-great-skills",
     "name": "writing-great-skills",
-    "description": "Reference for writing and editing skills well \u2014 the vocabulary and principles that make a skill predictable.",
+    "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1352,7 +1352,7 @@
   {
     "slug": "research-and-web/pi-web-search",
     "name": "pi-web-search",
-    "description": "ONLY for Pi Agents \u2014 all other agents have their own web tools. How Pi accesses the web via the pi-web-access package \u2014 search, fetch URLs/PDFs/YouTube/GitHub. Use whenever a Pi task needs current info, docs, news, prices, or content from a specific URL.",
+    "description": "ONLY for Pi Agents — all other agents have their own web tools. How Pi accesses the web via the pi-web-access package — search, fetch URLs/PDFs/YouTube/GitHub. Use whenever a Pi task needs current info, docs, news, prices, or content from a specific URL.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1382,7 +1382,7 @@
   {
     "slug": "skill-authoring/effective-agent-skills",
     "name": "effective-agent-skills",
-    "description": "How to write effective agent skills \u2014 what to do, what not to do, anatomy, progressive disclosure, design patterns, anti-patterns, testing, security. Read this whenever a skill (Claude Skill, Agent Skill, SKILL.md) is being created, edited, reviewed, or debugged. Use when the user says \"create a skill\", \"new skill\", \"update this skill\", \"improve a skill\", \"why isn't my skill triggering\", or anything else involving authoring or editing SKILL.md files.",
+    "description": "How to write effective agent skills — what to do, what not to do, anatomy, progressive disclosure, design patterns, anti-patterns, testing, security. Read this whenever a skill (Claude Skill, Agent Skill, SKILL.md) is being created, edited, reviewed, or debugged. Use when the user says \"create a skill\", \"new skill\", \"update this skill\", \"improve a skill\", \"why isn't my skill triggering\", or anything else involving authoring or editing SKILL.md files.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1406,7 +1406,7 @@
   {
     "slug": "stripe",
     "name": "stripe",
-    "description": "Install and use the official Stripe Claude Code plugin (stripe@claude-plugins-official), connect Stripe MCP (mcp.stripe.com), and implement modern Stripe payments with Checkout Sessions, PaymentIntents, SetupIntents, and Billing \u2014 never legacy Charges. Use when building Stripe checkout, subscriptions, webhooks, Connect, restricted keys, test cards, or running /plugin install stripe@claude-plugins-official / /explain-error / /test-cards.",
+    "description": "Install and use the official Stripe Claude Code plugin (stripe@claude-plugins-official), connect Stripe MCP (mcp.stripe.com), and implement modern Stripe payments with Checkout Sessions, PaymentIntents, SetupIntents, and Billing — never legacy Charges. Use when building Stripe checkout, subscriptions, webhooks, Connect, restricted keys, test cards, or running /plugin install stripe@claude-plugins-official / /explain-error / /test-cards.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1418,13 +1418,13 @@
   {
     "slug": "thinking-and-docs/prompt-me",
     "name": "prompt-me",
-    "description": "Prompt the user with pointed questions to extract what is in his head about a project \u2014 remaining work, what is being avoided, what really matters, what does not. Use when the user says \"prompt me\", \"ask me questions\", or wants the agent to figure out priorities by questioning him.",
+    "description": "Prompt the user with pointed questions to extract what is in his head about a project — remaining work, what is being avoided, what really matters, what does not. Use when the user says \"prompt me\", \"ask me questions\", or wants the agent to figure out priorities by questioning him.",
     "category": "Dev Tools / Agents"
   },
   {
     "slug": "thinking-and-docs/short",
     "name": "short",
-    "description": "Manually-invoked skill that forces the agent to compress its current answer \u2014 strip filler, simplify wording, and cut length while keeping the substance. Use when the user says \"short\", \"shorter\", \"simpler\", \"too long\", \"tl;dr\", or wants a more concise version of the previous response.",
+    "description": "Manually-invoked skill that forces the agent to compress its current answer — strip filler, simplify wording, and cut length while keeping the substance. Use when the user says \"short\", \"shorter\", \"simpler\", \"too long\", \"tl;dr\", or wants a more concise version of the previous response.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1466,7 +1466,7 @@
   {
     "slug": "writing-great-skills",
     "name": "writing-great-skills",
-    "description": "Reference for writing and editing skills well \u2014 the vocabulary and principles that make a skill predictable.",
+    "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1568,7 +1568,7 @@
   {
     "slug": "google/cloud/agent-platform-eval-flywheel",
     "name": "agent-platform-eval-flywheel",
-    "description": "Measures and improves the quality of AI models and agents on Google Cloud using the Eval Quality Flywheel methodology. Use when evaluating an agent or model, building an eval dataset, picking or writing evaluation metrics, analyzing failures, comparing results before and after a fix, or when guidance is needed on Agent Platform eval methodology \u2014 including dataset schema, LLM-as-judge scoring, and common failure causes. For fine-tuning, use agent-platform-tuning. For general production deployment, use agent-platform-deploy.",
+    "description": "Measures and improves the quality of AI models and agents on Google Cloud using the Eval Quality Flywheel methodology. Use when evaluating an agent or model, building an eval dataset, picking or writing evaluation metrics, analyzing failures, comparing results before and after a fix, or when guidance is needed on Agent Platform eval methodology — including dataset schema, LLM-as-judge scoring, and common failure causes. For fine-tuning, use agent-platform-tuning. For general production deployment, use agent-platform-deploy.",
     "category": "Google / Cloud"
   },
   {
@@ -1640,7 +1640,7 @@
   {
     "slug": "google/cloud/bigquery-bigframes",
     "name": "bigquery-bigframes",
-    "description": "Generates Python code using BigQuery DataFrames (BigFrames), the pandas/scikit-learn-style API over BigQuery. Use when writing BigFrames code or doing pandas-style dataframe/ML work against BigQuery (e.g. in a notebook). Don't use for SQL-first workflows or the google-cloud-bigquery client library \u2014 use bigquery-basics.",
+    "description": "Generates Python code using BigQuery DataFrames (BigFrames), the pandas/scikit-learn-style API over BigQuery. Use when writing BigFrames code or doing pandas-style dataframe/ML work against BigQuery (e.g. in a notebook). Don't use for SQL-first workflows or the google-cloud-bigquery client library — use bigquery-basics.",
     "category": "Google / Cloud"
   },
   {
@@ -1802,7 +1802,7 @@
   {
     "slug": "google/cloud/gke-upgrades",
     "name": "gke-upgrades",
-    "description": "Plans, executes, and validates Google Kubernetes Engine (GKE) cluster upgrades and maintenance operations for both Standard and Autopilot clusters. Produces upgrade plans, pre/post-upgrade checklists, maintenance runbooks with gcloud commands, release channel strategy, and troubleshooting guides. Handles node pool upgrade strategies (surge, blue-green), version compatibility, PDB management, and workload-specific concerns (stateful, GPU, operators). Use this skill whenever the user mentions GKE upgrades, Kubernetes version bumps, node pool maintenance, GKE patching, cluster version management, release channel selection, maintenance windows, surge upgrades, stuck upgrades, or any GKE lifecycle management task \u2014 even casual mentions like \"we need to upgrade our clusters\" or \"plan our next GKE maintenance\" or \"our upgrade is stuck.\" Don't use for GKE cluster creation, application onboarding, general networking/routing setup, or security policy configurations (use gke-basics or relevant GKE skills instead).",
+    "description": "Plans, executes, and validates Google Kubernetes Engine (GKE) cluster upgrades and maintenance operations for both Standard and Autopilot clusters. Produces upgrade plans, pre/post-upgrade checklists, maintenance runbooks with gcloud commands, release channel strategy, and troubleshooting guides. Handles node pool upgrade strategies (surge, blue-green), version compatibility, PDB management, and workload-specific concerns (stateful, GPU, operators). Use this skill whenever the user mentions GKE upgrades, Kubernetes version bumps, node pool maintenance, GKE patching, cluster version management, release channel selection, maintenance windows, surge upgrades, stuck upgrades, or any GKE lifecycle management task — even casual mentions like \"we need to upgrade our clusters\" or \"plan our next GKE maintenance\" or \"our upgrade is stuck.\" Don't use for GKE cluster creation, application onboarding, general networking/routing setup, or security policy configurations (use gke-basics or relevant GKE skills instead).",
     "category": "Google / Cloud"
   },
   {
@@ -1946,31 +1946,31 @@
   {
     "slug": "nvidia/cuopt-multi-objective-exploration",
     "name": "cuopt-multi-objective-exploration",
-    "description": "Trace and interpret the Pareto frontier across competing objectives using repeated single-objective cuOpt solves (weighted-sum and \u03b5-constraint).",
+    "description": "Trace and interpret the Pareto frontier across competing objectives using repeated single-objective cuOpt solves (weighted-sum and ε-constraint).",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
     "slug": "nvidia/cuopt-numerical-optimization-api",
     "name": "cuopt-numerical-optimization-api",
-    "description": "LP, MILP, and QP (beta) with cuOpt \u2014 Python, C, and CLI. Use when the user is solving LP, MILP, or QP with any cuOpt interface.",
+    "description": "LP, MILP, and QP (beta) with cuOpt — Python, C, and CLI. Use when the user is solving LP, MILP, or QP with any cuOpt interface.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
     "slug": "nvidia/cuopt-numerical-optimization-formulation",
     "name": "cuopt-numerical-optimization-formulation",
-    "description": "LP, MILP, QP \u2014 concepts, problem-text parsing, and formulation patterns (parameters, constraints, decisions, objective). Concepts only; no API.",
+    "description": "LP, MILP, QP — concepts, problem-text parsing, and formulation patterns (parameters, constraints, decisions, objective). Concepts only; no API.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
     "slug": "nvidia/cuopt-routing-api-python",
     "name": "cuopt-routing-api-python",
-    "description": "Vehicle routing (VRP, TSP, PDP) with cuOpt \u2014 Python API only. Use when the user is building or solving routing in Python.",
+    "description": "Vehicle routing (VRP, TSP, PDP) with cuOpt — Python API only. Use when the user is building or solving routing in Python.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
     "slug": "nvidia/cuopt-server-api-python",
     "name": "cuopt-server-api-python",
-    "description": "cuOpt REST server \u2014 start server, endpoints, Python/curl client examples. Use when the user is deploying or calling the REST API.",
+    "description": "cuOpt REST server — start server, endpoints, Python/curl client examples. Use when the user is deploying or calling the REST API.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -1982,7 +1982,7 @@
   {
     "slug": "nvidia/cupynumeric-install",
     "name": "cupynumeric-install",
-    "description": "Install and verify cuPyNumeric for Python \u2014 requirements, commands, verification. Source builds are out of scope.",
+    "description": "Install and verify cuPyNumeric for Python — requirements, commands, verification. Source builds are out of scope.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2018,7 +2018,7 @@
   {
     "slug": "nvidia/deepstream-generate-pipeline",
     "name": "deepstream-generate-pipeline",
-    "description": "Build DeepStream GStreamer pipelines interactively. Use when the user asks about pipelines for video/image inference, detection, tracking, or streaming \u2014 including natural phrases like 'pipeline to infer on image', 'run inference on video', 'detect objects in stream', 'save inference output', 'deepstream pipeline', 'gst-launch pipeline', 'process video with detection', 'build a pipeline', or any request involving GStreamer/DeepStream elements (nvinfer, nvstreammux, nvtracker, etc.).",
+    "description": "Build DeepStream GStreamer pipelines interactively. Use when the user asks about pipelines for video/image inference, detection, tracking, or streaming — including natural phrases like 'pipeline to infer on image', 'run inference on video', 'detect objects in stream', 'save inference output', 'deepstream pipeline', 'gst-launch pipeline', 'process video with detection', 'build a pipeline', or any request involving GStreamer/DeepStream elements (nvinfer, nvstreammux, nvtracker, etc.).",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2030,13 +2030,13 @@
   {
     "slug": "nvidia/deepstream-profile-pipeline",
     "name": "deepstream-profile-pipeline",
-    "description": "Profile a DeepStream pipeline with Nsight Systems and derive its configs from the measurement. Use when the user asks for an efficient, performant, or profiled pipeline \u2014 or to benchmark, tune, or measure FPS.",
+    "description": "Profile a DeepStream pipeline with Nsight Systems and derive its configs from the measurement. Use when the user asks for an efficient, performant, or profiled pipeline — or to benchmark, tune, or measure FPS.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
     "slug": "nvidia/deepstream-sop",
     "name": "deepstream-sop",
-    "description": "Use this skill when building, deploying, evaluating, debugging, or measuring latency for the DeepStream SOP Inference Microservice \u2014 a GPU-accelerated FastAPI service that detects whether operators perform assembly-line steps in order via event boundary detection (GEBD) plus VLM classification. Trigger even if the user does not name it: verify operator step sequence, detect missing or out-of-order SOP steps, score factory/work-cell video for procedure compliance, run VLM-based SOP checking on industrial cameras, or call /v1/chat/completions with a file, RTSP, or Basler camera. Also trigger for its internals: SOPVideoProcessor, DeepStream GEBD model (e.g. DDM) via Triton CAPI, nvds_custom_postprocess, Cosmos Reason 1/2 vLLM, SSE streaming, Kafka NvProto/JSON output, Basler/Pylon camera + emulation, Docker compose, chunk-level latency. Do NOT trigger for generic DeepStream pipelines, object detection/tracking, NIM imports, or video summarization.",
+    "description": "Use this skill when building, deploying, evaluating, debugging, or measuring latency for the DeepStream SOP Inference Microservice — a GPU-accelerated FastAPI service that detects whether operators perform assembly-line steps in order via event boundary detection (GEBD) plus VLM classification. Trigger even if the user does not name it: verify operator step sequence, detect missing or out-of-order SOP steps, score factory/work-cell video for procedure compliance, run VLM-based SOP checking on industrial cameras, or call /v1/chat/completions with a file, RTSP, or Basler camera. Also trigger for its internals: SOPVideoProcessor, DeepStream GEBD model (e.g. DDM) via Triton CAPI, nvds_custom_postprocess, Cosmos Reason 1/2 vLLM, SSE streaming, Kafka NvProto/JSON output, Basler/Pylon camera + emulation, Docker compose, chunk-level latency. Do NOT trigger for generic DeepStream pipelines, object detection/tracking, NIM imports, or video summarization.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2210,7 +2210,7 @@
   {
     "slug": "nvidia/jetson-build-source",
     "name": "jetson-build-source",
-    "description": "Use when you need to rebuild the BSP overlay \u2014 DT, OOT modules, or kernel \u2014 from changes under bsp_sources/. Triggers: build bsp, rebuild dtb, rebuild kernel.",
+    "description": "Use when you need to rebuild the BSP overlay — DT, OOT modules, or kernel — from changes under bsp_sources/. Triggers: build bsp, rebuild dtb, rebuild kernel.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2390,7 +2390,7 @@
   {
     "slug": "nvidia/jetson-set-target",
     "name": "jetson-set-target",
-    "description": "Switch the active Jetson target-platform pointer to an existing profile YAML. Use before customize/build/flash to change target; not for authoring profiles \u2014 use jetson-init-target instead.",
+    "description": "Switch the active Jetson target-platform pointer to an existing profile YAML. Use before customize/build/flash to change target; not for authoring profiles — use jetson-init-target instead.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2528,7 +2528,7 @@
   {
     "slug": "nvidia/nemo-mbridge-perf-memory-tuning",
     "name": "nemo-mbridge-perf-memory-tuning",
-    "description": "Techniques for reducing peak GPU memory in Megatron Bridge \u2014 expandable segments, PEFT + SP input re-gather, parallelism resizing, activation recompute, CPU offloading constraints, and common OOM fixes.",
+    "description": "Techniques for reducing peak GPU memory in Megatron Bridge — expandable segments, PEFT + SP input re-gather, parallelism resizing, activation recompute, CPU offloading constraints, and common OOM fixes.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2600,7 +2600,7 @@
   {
     "slug": "nvidia/nemo-retriever",
     "name": "nemo-retriever",
-    "description": "Use when the user wants to search, query, extract, transcribe, describe, quote, filter, or aggregate across documents \u2014 PDFs, scanned forms / images (`.jpg` `.png` `.tiff`), Office (`.docx` `.pptx`), text (`.html` `.txt`), audio (`.mp3` `.wav` `.m4a`), or video (`.mp4` `.mov`). Prefer this over native Read / Grep for multi-file or non-PDF corpora. Not for: editing files, web browsing, single-file plain-text lookups, fine-tuning.",
+    "description": "Use when the user wants to search, query, extract, transcribe, describe, quote, filter, or aggregate across documents — PDFs, scanned forms / images (`.jpg` `.png` `.tiff`), Office (`.docx` `.pptx`), text (`.html` `.txt`), audio (`.mp3` `.wav` `.m4a`), or video (`.mp4` `.mov`). Prefer this over native Read / Grep for multi-file or non-PDF corpora. Not for: editing files, web browsing, single-file plain-text lookups, fine-tuning.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2642,7 +2642,7 @@
   {
     "slug": "nvidia/nemotron-policy-generator",
     "name": "nemotron-policy-generator",
-    "description": "Generates BYO custom safety policies for NVIDIA Nemotron content-safety guardrails \u2014 Nemotron-Content-Safety-Reasoning-4B (text) and multimodal Nemotron-3-Content-Safety. Produces a Markdown policy, JSON taxonomy, and drop-in inference prompts. Maps rough words or an existing policy to V2 categories, adding custom categories or topic-following rules.",
+    "description": "Generates BYO custom safety policies for NVIDIA Nemotron content-safety guardrails — Nemotron-Content-Safety-Reasoning-4B (text) and multimodal Nemotron-3-Content-Safety. Produces a Markdown policy, JSON taxonomy, and drop-in inference prompts. Maps rough words or an existing policy to V2 categories, adding custom categories or topic-following rules.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2654,7 +2654,7 @@
   {
     "slug": "nvidia/nemotron-speech",
     "name": "nemotron-speech",
-    "description": "Routes NVIDIA Nemotron Speech (Riva) NIM tasks \u2014 deploys, runs, and tests ASR, TTS, and NMT NIMs on build.nvidia.com or self-hosted.",
+    "description": "Routes NVIDIA Nemotron Speech (Riva) NIM tasks — deploys, runs, and tests ASR, TTS, and NMT NIMs on build.nvidia.com or self-hosted.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2762,13 +2762,13 @@
   {
     "slug": "nvidia/physicsnemo-discover",
     "name": "physicsnemo-discover",
-    "description": "Official NVIDIA-authored guidance for navigating PhysicsNeMo \u2014 pick the model, datapipe, or example for a SciML/AI4Science task (surrogates, forecasting, downscaling, physics-informed, inverse, generative). Points at existing files via live repo search; never writes code. Do NOT use for installation or environment setup, training-loop or other code authoring/scaffolding, contributor/CI/packaging questions, repo-specific questions in physicsnemo-sym/-cfd/-curator, or general (non-physics) ML/PyTorch.",
+    "description": "Official NVIDIA-authored guidance for navigating PhysicsNeMo — pick the model, datapipe, or example for a SciML/AI4Science task (surrogates, forecasting, downscaling, physics-informed, inverse, generative). Points at existing files via live repo search; never writes code. Do NOT use for installation or environment setup, training-loop or other code authoring/scaffolding, contributor/CI/packaging questions, repo-specific questions in physicsnemo-sym/-cfd/-curator, or general (non-physics) ML/PyTorch.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
     "slug": "nvidia/rag-blueprint",
     "name": "rag-blueprint",
-    "description": "NVIDIA RAG Blueprint \u2014 deploy, configure, troubleshoot, and manage. Handles any RAG action: deploy, install, start, enable, disable, toggle, change, configure, troubleshoot, debug, fix, shutdown, stop, or tear down any RAG feature or service (Agentic RAG, VLM, guardrails, query rewriting, models, search, ingestion, observability, summarization, reasoning, and more).",
+    "description": "NVIDIA RAG Blueprint — deploy, configure, troubleshoot, and manage. Handles any RAG action: deploy, install, start, enable, disable, toggle, change, configure, troubleshoot, debug, fix, shutdown, stop, or tear down any RAG feature or service (Agentic RAG, VLM, guardrails, query rewriting, models, search, ingestion, observability, summarization, reasoning, and more).",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2798,7 +2798,7 @@
   {
     "slug": "nvidia/tao-analyze-gaps-visual-changenet",
     "name": "tao-analyze-gaps-visual-changenet",
-    "description": "Performs gap analysis on NVIDIA TAO VCN Classify (Visual Component Net) experiments by invoking the data-services container (`tao_toolkit.data_services` from `versions.yaml`) directly via `docker run \u2026 gap_analysis vcn_aoi \u2026` \u2014 picks the optimal decision threshold, ranks per-sample weakness, and emits a top-K weakest parquet expanded per-lighting for downstream augmentation. Use when analyzing VCN classification failures, picking SDA augmentation targets, or auditing PASS/NO_PASS boundary cases.",
+    "description": "Performs gap analysis on NVIDIA TAO VCN Classify (Visual Component Net) experiments by invoking the data-services container (`tao_toolkit.data_services` from `versions.yaml`) directly via `docker run … gap_analysis vcn_aoi …` — picks the optimal decision threshold, ranks per-sample weakness, and emits a top-K weakest parquet expanded per-lighting for downstream augmentation. Use when analyzing VCN classification failures, picking SDA augmentation targets, or auditing PASS/NO_PASS boundary cases.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2852,7 +2852,7 @@
   {
     "slug": "nvidia/tao-generate-video-reasoning-annotations",
     "name": "tao-generate-video-reasoning-annotations",
-    "description": "Multi-step video annotation pipeline that turns raw videos into Chain-of-Thought training data \u2014 multi-level captions, structured descriptions, and QA pairs (MCQ, binary, open-ended) with reasoning traces, via VLM/LLM distillation. Use when the user wants to \"create video training data\", \"generate video QA datasets\", \"build CoT reasoning traces from videos\", \"auto-label videos\", or run the video_reasoning_annotation pipeline. Triggers include \"video annotation\", \"video CoT\", \"video QA\", \"chain-of-thought\", \"video captioning pipeline\", \"video distillation\".",
+    "description": "Multi-step video annotation pipeline that turns raw videos into Chain-of-Thought training data — multi-level captions, structured descriptions, and QA pairs (MCQ, binary, open-ended) with reasoning traces, via VLM/LLM distillation. Use when the user wants to \"create video training data\", \"generate video QA datasets\", \"build CoT reasoning traces from videos\", \"auto-label videos\", or run the video_reasoning_annotation pipeline. Triggers include \"video annotation\", \"video CoT\", \"video QA\", \"chain-of-thought\", \"video captioning pipeline\", \"video distillation\".",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2870,7 +2870,7 @@
   {
     "slug": "nvidia/tao-mine-aoi-images",
     "name": "tao-mine-aoi-images",
-    "description": "Runs the DEFT embed-then-mine workflow for VCN AOI iterations \u2014 embeds the gap-analysis target parquet, embeds a source pool, and mines nearest-neighbour source images for downstream augmentation. Use as the immediate next step after `tao-route-visual-changenet-samples` when expanding a real-image augmentation queue from the mining subset.",
+    "description": "Runs the DEFT embed-then-mine workflow for VCN AOI iterations — embeds the gap-analysis target parquet, embeds a source pool, and mines nearest-neighbour source images for downstream augmentation. Use as the immediate next step after `tao-route-visual-changenet-samples` when expanding a real-image augmentation queue from the mining subset.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2888,13 +2888,13 @@
   {
     "slug": "nvidia/tao-run-automl",
     "name": "tao-run-automl",
-    "description": "Run AutoML / hyperparameter optimization (HPO) for NVIDIA TAO networks using AutoMLRunner. Handles algorithm selection (bayesian, hyperband, asha, bohb, llm, hybrid, autoresearch), WandB experiment tracking, job execution on any TAO SDK platform, result interpretation, and per-rec custom evaluation hooks. Use when the user mentions TAO AutoML, hyperparameter optimization, HPO, automl, automl_settings, AutoMLRunner, tao_automl, bayesian search, hyperband, ASHA, LLM-guided search, autoresearch, or wants to tune training hyperparameters for any TAO network. Platform-agnostic \u2014 runs on any SDK (Brev, SLURM, Kubernetes, Docker).",
+    "description": "Run AutoML / hyperparameter optimization (HPO) for NVIDIA TAO networks using AutoMLRunner. Handles algorithm selection (bayesian, hyperband, asha, bohb, llm, hybrid, autoresearch), WandB experiment tracking, job execution on any TAO SDK platform, result interpretation, and per-rec custom evaluation hooks. Use when the user mentions TAO AutoML, hyperparameter optimization, HPO, automl, automl_settings, AutoMLRunner, tao_automl, bayesian search, hyperband, ASHA, LLM-guided search, autoresearch, or wants to tune training hyperparameters for any TAO network. Platform-agnostic — runs on any SDK (Brev, SLURM, Kubernetes, Docker).",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
     "slug": "nvidia/tao-run-automl-deft-pipeline",
     "name": "tao-run-automl-deft-pipeline",
-    "description": "Run the canonical NVIDIA AOI three-phase training pipeline \u2014 Phase 1 AutoML baseline (HPO), Phase 2 DEFT loop (RCA \u2192 SDG \u2192 mining \u2192 plain-train retrain), Phase 3 AutoML refinement on the DEFT-augmented dataset. Use when the user asks to \"run the AOI workflow\", \"fine-tune my PCB AOI model end-to-end\", \"improve my AOI ChangeNet model\", or \"AOI workflow with AutoML\" request \u2014 route here instead of tao-run-deft-aoi directly unless the user explicitly asks for the DEFT loop ONLY (e.g. \"run JUST the DEFT loop\", \"skip AutoML, only DEFT\"). Also handles the same three-phase pattern for non-AOI DEFT applications \u2014 AutoML baseline then DEFT loop warm-started from AutoML's winning HPs then post-DEFT AutoML refinement on the iteration-augmented dataset. Trigger phrases include \"run the AOI workflow\", \"AOI end-to-end\", \"AutoML + DEFT\", \"AutoML then DEFT\", \"tune hyperparameters then DEFT\", \"DEFT with AutoML at both ends\", \"warm-start DEFT\", \"improve my AOI model\".",
+    "description": "Run the canonical NVIDIA AOI three-phase training pipeline — Phase 1 AutoML baseline (HPO), Phase 2 DEFT loop (RCA → SDG → mining → plain-train retrain), Phase 3 AutoML refinement on the DEFT-augmented dataset. Use when the user asks to \"run the AOI workflow\", \"fine-tune my PCB AOI model end-to-end\", \"improve my AOI ChangeNet model\", or \"AOI workflow with AutoML\" request — route here instead of tao-run-deft-aoi directly unless the user explicitly asks for the DEFT loop ONLY (e.g. \"run JUST the DEFT loop\", \"skip AutoML, only DEFT\"). Also handles the same three-phase pattern for non-AOI DEFT applications — AutoML baseline then DEFT loop warm-started from AutoML's winning HPs then post-DEFT AutoML refinement on the iteration-augmented dataset. Trigger phrases include \"run the AOI workflow\", \"AOI end-to-end\", \"AutoML + DEFT\", \"AutoML then DEFT\", \"tune hyperparameters then DEFT\", \"DEFT with AutoML at both ends\", \"warm-start DEFT\", \"improve my AOI model\".",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2918,7 +2918,7 @@
   {
     "slug": "nvidia/tao-run-on-kubernetes",
     "name": "tao-run-on-kubernetes",
-    "description": "Kubernetes execution platform \u2014 submits TAO container jobs as single-pod k8s Jobs with NVIDIA GPU scheduling. Use when running on EKS / GKE / AKS / on-prem clusters with the NVIDIA GPU Operator installed, or when integrating TAO into an existing k8s-native ML platform.",
+    "description": "Kubernetes execution platform — submits TAO container jobs as single-pod k8s Jobs with NVIDIA GPU scheduling. Use when running on EKS / GKE / AKS / on-prem clusters with the NVIDIA GPU Operator installed, or when integrating TAO into an existing k8s-native ML platform.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2984,7 +2984,7 @@
   {
     "slug": "nvidia/tao-train-fast-foundation-stereo",
     "name": "tao-train-fast-foundation-stereo",
-    "description": "Real-time stereo depth estimation using FastFoundationStereo (FFS), the distilled bp2 commercial variant of FoundationStereo. Predicts disparity maps from stereo image pairs with ~10\u00d7 lower latency than full FoundationStereo. Use when training, evaluating, exporting, or running inference for a TAO FastFoundationStereo (FFS) model. Trigger phrases include \"train fast stereo\", \"real-time stereo disparity\", \"FastFoundationStereo\", \"distilled stereo depth\".",
+    "description": "Real-time stereo depth estimation using FastFoundationStereo (FFS), the distilled bp2 commercial variant of FoundationStereo. Predicts disparity maps from stereo image pairs with ~10× lower latency than full FoundationStereo. Use when training, evaluating, exporting, or running inference for a TAO FastFoundationStereo (FFS) model. Trigger phrases include \"train fast stereo\", \"real-time stereo disparity\", \"FastFoundationStereo\", \"distilled stereo depth\".",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -2996,7 +2996,7 @@
   {
     "slug": "nvidia/tao-train-grounding-dino",
     "name": "tao-train-grounding-dino",
-    "description": "Grounding DINO for open-set object detection. Combines DINO-style detection with a BERT text encoder for language-guided detection \u2014 detects objects described by text prompts without a fixed class vocabulary. Use when training, evaluating, exporting, quantizing, or running inference for a TAO Grounding DINO model. Trigger phrases include \"train Grounding DINO\", \"open-vocabulary detection\", \"text-prompted detector\", \"language-guided object detection\".",
+    "description": "Grounding DINO for open-set object detection. Combines DINO-style detection with a BERT text encoder for language-guided detection — detects objects described by text prompts without a fixed class vocabulary. Use when training, evaluating, exporting, quantizing, or running inference for a TAO Grounding DINO model. Trigger phrases include \"train Grounding DINO\", \"open-vocabulary detection\", \"text-prompted detector\", \"language-guided object detection\".",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -3074,7 +3074,7 @@
   {
     "slug": "nvidia/tao-train-pointpillars",
     "name": "tao-train-pointpillars",
-    "description": "PointPillars for 3D object detection from LiDAR point clouds. Encodes point clouds into a pseudo-image via a pillar-based representation, then applies 2D detection \u2014 used in autonomous driving and robotics. Use when training, evaluating, exporting, pruning, retraining, or running inference for a TAO PointPillars model. Trigger phrases include \"train PointPillars\", \"LiDAR 3D detection\", \"point-cloud object detection\", \"pillar-based 3D detector\".",
+    "description": "PointPillars for 3D object detection from LiDAR point clouds. Encodes point clouds into a pseudo-image via a pillar-based representation, then applies 2D detection — used in autonomous driving and robotics. Use when training, evaluating, exporting, pruning, retraining, or running inference for a TAO PointPillars model. Trigger phrases include \"train PointPillars\", \"LiDAR 3D detection\", \"point-cloud object detection\", \"pillar-based 3D detector\".",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -3146,7 +3146,7 @@
   {
     "slug": "nvidia/tilegym-cutile-autotuning",
     "name": "tilegym-cutile-autotuning",
-    "description": "Use when adding, modifying, optimizing, or debugging CuTile autotuning code. Trigger signals: `exhaustive_search` / `replace_hints` / `hints_fn` / `cuda.tile.tune` in code, `autotune` in filenames, or correctness/performance issues in autotuned CuTile kernels. Covers: tune-once/cache/launch pattern, per-architecture configs (sm80\u2013sm120), parameter space design (tile sizes, occupancy, num_ctas), and 7 common pitfalls with solutions.",
+    "description": "Use when adding, modifying, optimizing, or debugging CuTile autotuning code. Trigger signals: `exhaustive_search` / `replace_hints` / `hints_fn` / `cuda.tile.tune` in code, `autotune` in filenames, or correctness/performance issues in autotuned CuTile kernels. Covers: tune-once/cache/launch pattern, per-architecture configs (sm80–sm120), parameter space design (tile sizes, occupancy, num_ctas), and 7 common pitfalls with solutions.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -3182,7 +3182,7 @@
   {
     "slug": "nvidia/vss-deploy-detection-tracking-2d",
     "name": "vss-deploy-detection-tracking-2d",
-    "description": "Use this skill when the user wants to deploy, run, debug, tear down, or call the REST API of the RTVI-CV 2D detection / tracking microservice. Trigger when the user says things like 'deploy rtvi-cv', 'start warehouse 2d', 'add a stream', 'check rtvi-cv health', or 'stop the perception container'. Not for VLM, embedding, or analytics \u2014 use the matching vss-* skill.",
+    "description": "Use this skill when the user wants to deploy, run, debug, tear down, or call the REST API of the RTVI-CV 2D detection / tracking microservice. Trigger when the user says things like 'deploy rtvi-cv', 'start warehouse 2d', 'add a stream', 'check rtvi-cv health', or 'stop the perception container'. Not for VLM, embedding, or analytics — use the matching vss-* skill.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -3194,7 +3194,7 @@
   {
     "slug": "nvidia/vss-deploy-profile",
     "name": "vss-deploy-profile",
-    "description": "Use to select, configure, deploy, verify, debug, or tear down a VSS profile (base, search, lvs, warehouse, edge). Not for standalone microservices \u2014 use the vss-deploy-* skill.",
+    "description": "Use to select, configure, deploy, verify, debug, or tear down a VSS profile (base, search, lvs, warehouse, edge). Not for standalone microservices — use the vss-deploy-* skill.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -3212,13 +3212,13 @@
   {
     "slug": "nvidia/vss-generate-video-report",
     "name": "vss-generate-video-report",
-    "description": "Use this skill when producing a VSS analysis report \u2014 Mode A per-clip VLM, Mode B incident-range via video-analytics. Not for standalone video summarization, real-time alerts or ad-hoc Q&A.",
+    "description": "Use this skill when producing a VSS analysis report — Mode A per-clip VLM, Mode B incident-range via video-analytics. Not for standalone video summarization, real-time alerts or ad-hoc Q&A.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
     "slug": "nvidia/vss-manage-alerts",
     "name": "vss-manage-alerts",
-    "description": "Use for VSS alert workflows \u2014 real-time monitoring, Alert-Bridge subscriptions, Slack notifications, incident queries, camera onboarding. Not for non-alert analytics.",
+    "description": "Use for VSS alert workflows — real-time monitoring, Alert-Bridge subscriptions, Slack notifications, incident queries, camera onboarding. Not for non-alert analytics.",
     "category": "NVIDIA / Accelerated Computing"
   },
   {
@@ -3302,7 +3302,7 @@
   {
     "slug": "research-and-web/online-shopping",
     "name": "online-shopping",
-    "description": "Research any online purchase with DeepAPI \u2014 fair-price checks, best deals, where to buy, shop trust. Load whenever the user is shopping or buying anything online: mentions buying a product, comparing prices, \"is this a good price\", \"where can I get X\", or attaches a product photo or listing screenshot. Research only \u2014 never places orders.",
+    "description": "Research any online purchase with DeepAPI — fair-price checks, best deals, where to buy, shop trust. Load whenever the user is shopping or buying anything online: mentions buying a product, comparing prices, \"is this a good price\", \"where can I get X\", or attaches a product photo or listing screenshot. Research only — never places orders.",
     "category": "Local / Web Services"
   },
   {
@@ -3362,43 +3362,43 @@
   {
     "slug": "huashu-image-upload",
     "name": "huashu-image-upload",
-    "description": "\u6587\u7ae0\u914d\u56fe\u4e00\u952e\u751f\u6210\u5e76\u4e0a\u4f20\u56fe\u5e8a\uff0c\u81ea\u52a8\u63d2\u5165Markdown\u94fe\u63a5\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u914d\u56fe\"\u3001\"\u63d2\u56fe\"\u3001\"\u4e0a\u4f20\u56fe\u7247\"\u3001\"\u6587\u7ae0\u914d\u56fe\"\u65f6\u4f7f\u7528\u3002",
+    "description": "文章配图一键生成并上传图床，自动插入Markdown链接。当用户提到\"配图\"、\"插图\"、\"上传图片\"、\"文章配图\"时使用。",
     "category": "Media / Devices"
   },
   {
     "slug": "huashu-md-to-pdf",
     "name": "huashu-md-to-pdf",
-    "description": "\u5c06 Markdown \u6587\u6863\u8f6c\u6362\u4e3a\u4e13\u4e1a\u7684 PDF \u767d\u76ae\u4e66\uff0c\u91c7\u7528\u82f9\u679c\u8bbe\u8ba1\u98ce\u683c\u3002 \u652f\u6301\u5b8c\u6574\u7684 Markdown \u8bed\u6cd5\uff08\u4ee3\u7801\u5757\u3001\u8868\u683c\u3001\u5f15\u7528\u3001\u5217\u8868\u7b49\uff09\u3002 \u81ea\u52a8\u751f\u6210\u5c01\u9762\u3001\u76ee\u5f55\u3001\u9875\u7709\u9875\u811a\u3002 \u4f7f\u7528\u573a\u666f\uff1a\u6280\u672f\u6587\u6863\u3001\u767d\u76ae\u4e66\u3001\u6559\u7a0b\u3001\u62a5\u544a\u7b49\u9700\u8981\u4e13\u4e1a\u6392\u7248\u7684 Markdown \u6587\u6863\u3002",
+    "description": "将 Markdown 文档转换为专业的 PDF 白皮书，采用苹果设计风格。 支持完整的 Markdown 语法（代码块、表格、引用、列表等）。 自动生成封面、目录、页眉页脚。 使用场景：技术文档、白皮书、教程、报告等需要专业排版的 Markdown 文档。",
     "category": "Media / Devices"
   },
   {
     "slug": "huashu-speech-coach",
     "name": "huashu-speech-coach",
-    "description": "\u6f14\u8bb2\u4e0e\u5206\u4eab\u6559\u7ec3\u3002\u57fa\u4e8ePatrick Winston\uff08MIT AI\u6559\u6388\uff09\u7684How to Speak\u65b9\u6cd5\u8bba\uff0c\u5e2e\u52a9\u51c6\u5907\u7ebf\u4e0b\u57f9\u8bad\u3001\u6280\u672f\u5206\u4eab\u3001B\u7ad9\u6559\u7a0b\u89c6\u9891\u7b49\u6f14\u8bb2\u573a\u666f\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u6f14\u8bb2\"\u3001\"\u5206\u4eab\"\u3001\"\u57f9\u8bad\"\u3001\"\u8bb2\u8bfe\"\u3001\"PPT\u6f14\u8bb2\"\u3001\"\u5f00\u573a\"\u3001\"\u7ed3\u5c3e\"\u3001\"\u5982\u4f55\u8bb2\"\u3001\"\u6f14\u8bb2\u7ed3\u6784\"\u65f6\u4f7f\u7528\u6b64\u6280\u80fd\u3002",
+    "description": "演讲与分享教练。基于Patrick Winston（MIT AI教授）的How to Speak方法论，帮助准备线下培训、技术分享、B站教程视频等演讲场景。当用户提到\"演讲\"、\"分享\"、\"培训\"、\"讲课\"、\"PPT演讲\"、\"开场\"、\"结尾\"、\"如何讲\"、\"演讲结构\"时使用此技能。",
     "category": "Media / Devices"
   },
   {
     "slug": "huashu-video-check",
     "name": "huashu-video-check",
-    "description": "\u57fa\u4e8eMrBeast\u7b56\u7565\u68c0\u67e5\u89c6\u9891\u6807\u9898\u3001\u5c01\u9762\u548c\u5f00\u5934\u94a9\u5b50\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u89c6\u9891\u6807\u9898\"\u3001\"\u5c01\u9762\u56fe\"\u3001\"\u70b9\u51fb\u7387\"\u3001\"CTR\"\u3001\"\u89c2\u770b\u65f6\u957f\"\u65f6\u4f7f\u7528\u3002",
+    "description": "基于MrBeast策略检查视频标题、封面和开头钩子。当用户提到\"视频标题\"、\"封面图\"、\"点击率\"、\"CTR\"、\"观看时长\"时使用。",
     "category": "Media / Devices"
   },
   {
     "slug": "huashu-video-outline",
     "name": "huashu-video-outline",
-    "description": "\u5feb\u901f\u751f\u62102-3\u4e2a\u89c6\u9891\u5927\u7eb2\u65b9\u6848\uff0c\u542b\u6807\u9898\u3001\u5c01\u9762\u5efa\u8bae\u548c\u7ed3\u6784\u8bbe\u8ba1\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u89c6\u9891\u5927\u7eb2\"\u3001\"\u89c6\u9891\u7ed3\u6784\"\u3001\"\u811a\u672c\u5927\u7eb2\"\u3001\"\u89c6\u9891\u9009\u9898\"\u65f6\u4f7f\u7528\u3002",
+    "description": "快速生成2-3个视频大纲方案，含标题、封面建议和结构设计。当用户提到\"视频大纲\"、\"视频结构\"、\"脚本大纲\"、\"视频选题\"时使用。",
     "category": "Media / Devices"
   },
   {
     "slug": "huashu-wechat-image",
     "name": "huashu-wechat-image",
-    "description": "\u4e3a\u5fae\u4fe1\u516c\u4f17\u53f7\u6587\u7ae0\u751f\u6210\u9ad8\u8d28\u91cf\u914d\u56fe\u3002\u652f\u6301\u5c01\u9762\u56fe\uff082.35:1\uff09\u3001\u6b63\u6587\u63d2\u56fe\uff0816:9/4:3\uff09\u3001\u4fe1\u606f\u56fe\u3002\u63d0\u4f9b\u4e24\u6761\u8def\u5f84\uff1aAI\u751f\u6210\uff08\u89c6\u89c9\u521b\u610f\u578b\uff09\u548cHTML\u6e32\u67d3\uff08\u6587\u5b57\u7cbe\u786e\u578b\uff09\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u516c\u4f17\u53f7\u914d\u56fe\"\u3001\"\u516c\u4f17\u53f7\u5c01\u9762\"\u3001\"\u6587\u7ae0\u914d\u56fe\"\u3001\"\u6b63\u6587\u63d2\u56fe\"\u3001\"\u516c\u4f17\u53f7\u56fe\u7247\"\u65f6\u4f7f\u7528\u6b64\u6280\u80fd\u3002",
+    "description": "为微信公众号文章生成高质量配图。支持封面图（2.35:1）、正文插图（16:9/4:3）、信息图。提供两条路径：AI生成（视觉创意型）和HTML渲染（文字精确型）。当用户提到\"公众号配图\"、\"公众号封面\"、\"文章配图\"、\"正文插图\"、\"公众号图片\"时使用此技能。",
     "category": "Media / Devices"
   },
   {
     "slug": "huashu-xhs-image",
     "name": "huashu-xhs-image",
-    "description": "\u4e3a\u5c0f\u7ea2\u4e66\u7b14\u8bb0\u751f\u6210\u9ad8\u8d28\u91cf\u914d\u56fe\u3002\u9ed8\u8ba4AI\u751f\u6210\uff08Gemini\uff09\uff0c\u4ec5\u7cbe\u786e\u6570\u636e\u8868\u683c\u7528HTML\u515c\u5e95\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u5c0f\u7ea2\u4e66\u914d\u56fe\"\u3001\"\u5c0f\u7ea2\u4e66\u5c01\u9762\"\u3001\"\u5c0f\u7ea2\u4e66\u56fe\u7247\"\u3001\"\u505a\u5f20\u5c0f\u7ea2\u4e66\u56fe\"\u3001\"\u7b14\u8bb0\u914d\u56fe\"\u65f6\u4f7f\u7528\u6b64\u6280\u80fd\u3002",
+    "description": "为小红书笔记生成高质量配图。默认AI生成（Gemini），仅精确数据表格用HTML兜底。当用户提到\"小红书配图\"、\"小红书封面\"、\"小红书图片\"、\"做张小红书图\"、\"笔记配图\"时使用此技能。",
     "category": "Media / Devices"
   },
   {
@@ -3440,7 +3440,7 @@
   {
     "slug": "research-and-web/youtube-transcript",
     "name": "youtube-transcript",
-    "description": "Use whenever the user needs the transcript of a YouTube video \u2014 fetching, extracting, downloading, or pulling captions/subtitles/transcript text from a YouTube URL. Triggers on \"get the transcript\", \"transcript of this video\", \"pull the captions\", \"download subtitles\", \"what does this YouTube video say\". Primary path is DeepAPI (go to deepapi.co to get an API key); yt-dlp is the local fallback.",
+    "description": "Use whenever the user needs the transcript of a YouTube video — fetching, extracting, downloading, or pulling captions/subtitles/transcript text from a YouTube URL. Triggers on \"get the transcript\", \"transcript of this video\", \"pull the captions\", \"download subtitles\", \"what does this YouTube video say\". Primary path is DeepAPI (go to deepapi.co to get an API key); yt-dlp is the local fallback.",
     "category": "Media / Devices"
   },
   {
@@ -3476,7 +3476,7 @@
   {
     "slug": "summarize",
     "name": "summarize",
-    "description": "Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for \u201ctranscribe this YouTube/video\u201d).",
+    "description": "Summarize or extract text/transcripts from URLs, podcasts, and local files (great fallback for “transcribe this YouTube/video”).",
     "category": "Media / Devices"
   },
   {
@@ -3494,25 +3494,25 @@
   {
     "slug": "youtube-clipper",
     "name": "youtube-clipper",
-    "description": "YouTube \u89c6\u9891\u667a\u80fd\u526a\u8f91\u5de5\u5177\u3002\u4e0b\u8f7d\u89c6\u9891\u548c\u5b57\u5e55\uff0cAI \u5206\u6790\u751f\u6210\u7cbe\u7ec6\u7ae0\u8282\uff08\u51e0\u5206\u949f\u7ea7\u522b\uff09\uff0c \u7528\u6237\u9009\u62e9\u7247\u6bb5\u540e\u81ea\u52a8\u526a\u8f91\u3001\u7ffb\u8bd1\u5b57\u5e55\u4e3a\u4e2d\u82f1\u53cc\u8bed\u3001\u70e7\u5f55\u5b57\u5e55\u5230\u89c6\u9891\uff0c\u5e76\u751f\u6210\u603b\u7ed3\u6587\u6848\u3002 \u4f7f\u7528\u573a\u666f\uff1a\u5f53\u7528\u6237\u9700\u8981\u526a\u8f91 YouTube \u89c6\u9891\u3001\u751f\u6210\u77ed\u89c6\u9891\u7247\u6bb5\u3001\u5236\u4f5c\u53cc\u8bed\u5b57\u5e55\u7248\u672c\u65f6\u3002 \u5173\u952e\u8bcd\uff1a\u89c6\u9891\u526a\u8f91\u3001YouTube\u3001\u5b57\u5e55\u7ffb\u8bd1\u3001\u53cc\u8bed\u5b57\u5e55\u3001\u89c6\u9891\u4e0b\u8f7d\u3001clip video",
+    "description": "YouTube 视频智能剪辑工具。下载视频和字幕，AI 分析生成精细章节（几分钟级别）， 用户选择片段后自动剪辑、翻译字幕为中英双语、烧录字幕到视频，并生成总结文案。 使用场景：当用户需要剪辑 YouTube 视频、生成短视频片段、制作双语字幕版本时。 关键词：视频剪辑、YouTube、字幕翻译、双语字幕、视频下载、clip video",
     "category": "Media / Devices"
   },
   {
     "slug": "agent-orchestration/cmux",
     "name": "cmux",
-    "description": "MUST be read ANY time you interact with cmux in ANY way \u2014 listing/inspecting/creating/closing cmux workspaces, panes, or surfaces; reading or capturing pane/screen output; sending input or keys to a pane/surface; delegating to, polling, or checking on other agents running in cmux panes/surfaces; building or rearranging terminal layout; cmux browser automation; sending notifications/flashes/status/progress to the sidebar; editing cmux settings; or integrating an agent with cmux hooks. If your command starts with `cmux ` or touches a cmux workspace/pane/surface/agent, read this FIRST. Triggers on \"cmux\", \"in this workspace\", \"this pane\", \"the other agent\", \"delegate to\", \"check on the agent\", \"send to the pane\". macOS only (14.0+).",
+    "description": "MUST be read ANY time you interact with cmux in ANY way — listing/inspecting/creating/closing cmux workspaces, panes, or surfaces; reading or capturing pane/screen output; sending input or keys to a pane/surface; delegating to, polling, or checking on other agents running in cmux panes/surfaces; building or rearranging terminal layout; cmux browser automation; sending notifications/flashes/status/progress to the sidebar; editing cmux settings; or integrating an agent with cmux hooks. If your command starts with `cmux ` or touches a cmux workspace/pane/surface/agent, read this FIRST. Triggers on \"cmux\", \"in this workspace\", \"this pane\", \"the other agent\", \"delegate to\", \"check on the agent\", \"send to the pane\". macOS only (14.0+).",
     "category": "Productivity / Messaging"
   },
   {
     "slug": "agent-orchestration/handoff",
     "name": "agent-orchestration-handoff",
-    "description": "Compact the current conversation into a single, detailed handoff message \u2014 everything that happened, why it happened, and what's left \u2014 output in a code block so it can be copy-pasted into a fresh agent session. Use when hitting context limits, switching focus, ending a work session, or partitioning a task across fresh contexts.",
+    "description": "Compact the current conversation into a single, detailed handoff message — everything that happened, why it happened, and what's left — output in a code block so it can be copy-pasted into a fresh agent session. Use when hitting context limits, switching focus, ending a work session, or partitioning a task across fresh contexts.",
     "category": "Productivity / Messaging"
   },
   {
     "slug": "anthropic-skills/pptx",
     "name": "pptx",
-    "description": "Use this skill any time a .pptx file is involved in any way \u2014 as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
+    "description": "Use this skill any time a .pptx file is involved in any way — as input, output, or both. This includes: creating slide decks, pitch decks, or presentations; reading, parsing, or extracting text from any .pptx file (even if the extracted content will be used elsewhere, like in an email or summary); editing, modifying, or updating existing presentations; combining or splitting slide files; working with templates, layouts, speaker notes, or comments. Trigger whenever the user mentions \"deck,\" \"slides,\" \"presentation,\" or references a .pptx filename, regardless of what they plan to do with the content afterward. If a .pptx file needs to be opened, created, or touched, use this skill.",
     "category": "Productivity / Messaging"
   },
   {
@@ -3542,7 +3542,7 @@
   {
     "slug": "cloudflare-email-service",
     "name": "cloudflare-email-service",
-    "description": "Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing). Use when building email sending (Workers binding or REST API), email routing, Agents SDK email handling, or integrating email into any app \u2014 Workers, Node.js, Python, Go, etc. Also use for email deliverability, SPF/DKIM/DMARC, wrangler email setup, MCP email tools, or when a coding agent needs to send emails. Even for simple requests like \"add email to my Worker\" \u2014 this skill has critical config details.",
+    "description": "Send and receive transactional emails with Cloudflare Email Service (Email Sending + Email Routing). Use when building email sending (Workers binding or REST API), email routing, Agents SDK email handling, or integrating email into any app — Workers, Node.js, Python, Go, etc. Also use for email deliverability, SPF/DKIM/DMARC, wrangler email setup, MCP email tools, or when a coding agent needs to send emails. Even for simple requests like \"add email to my Worker\" — this skill has critical config details.",
     "category": "Productivity / Messaging"
   },
   {
@@ -3632,7 +3632,7 @@
   {
     "slug": "thinking-and-docs/teach",
     "name": "thinking-and-docs-teach",
-    "description": "Teach with concise chat replies and rich lesson docs \u2014 multi-session teaching workspace optimized for thinking and documentation.",
+    "description": "Teach with concise chat replies and rich lesson docs — multi-session teaching workspace optimized for thinking and documentation.",
     "category": "Productivity / Messaging"
   },
   {
@@ -3650,7 +3650,7 @@
   {
     "slug": "animation-vocabulary",
     "name": "animation-vocabulary",
-    "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" \u2192 Pop in; \"the iOS rubber-band scroll\" \u2192 Rubber-banding). Use when the user asks \"what's it called when\u2026\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+    "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
     "category": "Utilities"
   },
   {
@@ -3764,7 +3764,7 @@
   {
     "slug": "engineering/setup-matt-pocock-skills",
     "name": "setup-matt-pocock-skills",
-    "description": "Configure this repo for the engineering skills \u2014 set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
+    "description": "Configure this repo for the engineering skills — set up its issue tracker, triage label vocabulary, and domain doc layout. Run once before first use of the other engineering skills.",
     "category": "Utilities"
   },
   {
@@ -3776,13 +3776,13 @@
   {
     "slug": "engineering/to-spec",
     "name": "to-spec",
-    "description": "Turn the current conversation into a spec and publish it to the project issue tracker \u2014 no interview, just synthesis of what you've already discussed.",
+    "description": "Turn the current conversation into a spec and publish it to the project issue tracker — no interview, just synthesis of what you've already discussed.",
     "category": "Utilities"
   },
   {
     "slug": "engineering/to-tickets",
     "name": "to-tickets",
-    "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker \u2014 edges as text in one file per ticket locally, or native blocking links on a real tracker.",
+    "description": "Break a plan, spec, or the current conversation into a set of tracer-bullet tickets, each declaring its blocking edges, published to the configured tracker — edges as text in one file per ticket locally, or native blocking links on a real tracker.",
     "category": "Utilities"
   },
   {
@@ -3806,103 +3806,103 @@
   {
     "slug": "huashu-article-edit",
     "name": "huashu-article-edit",
-    "description": "\u6807\u51c6\u5316\u6587\u7ae0\u7f16\u8f91\u6d41\u7a0b\uff0c\u786e\u4fdd\u4fee\u6539\u8303\u56f4\u660e\u786e\u3001\u8fdb\u5ea6\u53ef\u8ffd\u8e2a\u3001\u53d8\u66f4\u6709\u8bb0\u5f55\u3002\u5f53\u7528\u6237\u8bf4\"\u7f16\u8f91\u6587\u7ae0\"\u3001\"\u4fee\u6539\u6587\u7ae0\"\u3001\"\u8c03\u6574\u5185\u5bb9\"\u3001\"\u6539\u4e00\u4e0b\u8fd9\u7bc7\"\u65f6\u4f7f\u7528\u6b64\u6280\u80fd\u3002",
+    "description": "标准化文章编辑流程，确保修改范围明确、进度可追踪、变更有记录。当用户说\"编辑文章\"、\"修改文章\"、\"调整内容\"、\"改一下这篇\"时使用此技能。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-article-to-x",
     "name": "huashu-article-to-x",
-    "description": "\u957f\u6587\u7cbe\u7b80\u4e3aX\u5e73\u53f0\u5185\u5bb9\uff08200-500\u5b57\uff09\uff0c\u4fdd\u7559\u6838\u5fc3\u89c2\u70b9\u548c\u4e2a\u4eba\u98ce\u683c\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u8f6c\u5fae\u535a\"\u3001\"\u53d1\u5c0f\u7ea2\u4e66\"\u3001\"\u793e\u4ea4\u5a92\u4f53\"\u3001\"\u7f29\u77ed\u6587\u7ae0\"\u65f6\u4f7f\u7528\u3002",
+    "description": "长文精简为X平台内容（200-500字），保留核心观点和个人风格。当用户提到\"转微博\"、\"发小红书\"、\"社交媒体\"、\"缩短文章\"时使用。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-data-pro",
     "name": "huashu-data-pro",
-    "description": "\u6570\u636e\u5206\u6790\u4e0e\u529e\u516c\u63d0\u6548\u5168\u80fd\u52a9\u624b\u3002\u8986\u76d6\u6570\u636e\u5904\u7406\u3001\u5206\u6790\u6d1e\u5bdf\u3001\u62a5\u544a\u64b0\u5199\u3001PPT\u5236\u4f5c\u3001\u6570\u636e\u53ef\u89c6\u5316\u7684\u7aef\u5230\u7aef\u5de5\u4f5c\u6d41\u3002 \u59cb\u7ec8\u4ece\u4e13\u5bb6\u89c6\u89d2\u51fa\u53d1\uff0c\u5e2e\u7528\u6237\u591a\u60f3\u4e00\u6b65\u3002\u9047\u5230\u4e0d\u786e\u5b9a\u7684\u95ee\u9898\u4e3b\u52a8\u4e0e\u7528\u6237\u786e\u8ba4\u3002 \u652f\u6301\uff1aExcel\u6570\u636e\u5206\u6790\u3001\u6295\u653e\u6570\u636e\u590d\u76d8\u3001ROI\u6d4b\u7b97\u3001\u6570\u636e\u53ef\u89c6\u5316\u3001\u62a5\u544a\u751f\u6210\u3001PPT\u5236\u4f5c\u3001\u516c\u5f0f\u751f\u6210\u3002 \u5f53\u7528\u6237\u63d0\u5230\"\u5206\u6790\u6570\u636e\"\u3001\"\u505a\u62a5\u544a\"\u3001\"\u505aPPT\"\u3001\"Excel\"\u3001\"\u6295\u653e\u5206\u6790\"\u3001\"ROI\"\u3001\"\u590d\u76d8\"\u3001 \"\u5468\u62a5\"\u3001\"\u6708\u62a5\"\u3001\"\u6570\u636e\u5904\u7406\"\u3001\"\u56fe\u8868\"\u3001\"\u53ef\u89c6\u5316\"\u3001\"\u6c47\u62a5\"\u3001\"\u8868\u683c\"\u3001\"\u516c\u5f0f\"\u65f6\u4f7f\u7528\u6b64\u6280\u80fd\u3002",
+    "description": "数据分析与办公提效全能助手。覆盖数据处理、分析洞察、报告撰写、PPT制作、数据可视化的端到端工作流。 始终从专家视角出发，帮用户多想一步。遇到不确定的问题主动与用户确认。 支持：Excel数据分析、投放数据复盘、ROI测算、数据可视化、报告生成、PPT制作、公式生成。 当用户提到\"分析数据\"、\"做报告\"、\"做PPT\"、\"Excel\"、\"投放分析\"、\"ROI\"、\"复盘\"、 \"周报\"、\"月报\"、\"数据处理\"、\"图表\"、\"可视化\"、\"汇报\"、\"表格\"、\"公式\"时使用此技能。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-design",
     "name": "huashu-design",
-    "description": "\u8bbe\u8ba1\u54f2\u5b66\u987e\u95ee\uff0c\u4ece20\u79cd\u98ce\u683c\u4e2d\u63a8\u83503\u4e2a\u65b9\u5411\u5e76\u751f\u6210\u89c6\u89c9Demo\u548cAI\u63d0\u793a\u8bcd\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u8bbe\u8ba1\u98ce\u683c\"\u3001\"\u8bbe\u8ba1\u65b9\u5411\"\u3001\"\u914d\u8272\u65b9\u6848\"\u3001\"\u89c6\u89c9\u98ce\u683c\"\u3001\"\u8bbe\u8ba1\u8bc4\u5ba1\"\u3001\"\u63a8\u8350\u98ce\u683c\"\u65f6\u4f7f\u7528\u3002",
+    "description": "设计哲学顾问，从20种风格中推荐3个方向并生成视觉Demo和AI提示词。当用户提到\"设计风格\"、\"设计方向\"、\"配色方案\"、\"视觉风格\"、\"设计评审\"、\"推荐风格\"时使用。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-douyin-script",
     "name": "huashu-douyin-script",
-    "description": "\u6296\u97f3\u7206\u6b3e\u811a\u672c\u521b\u4f5c\u5de5\u4f5c\u6d41\u3002\u4ece\u7ade\u54c1\u89c6\u9891\u62c6\u89e3\u5230\u811a\u672c\u751f\u6210\u7684\u5b8c\u6574\u6d41\u7a0b\uff1a\u4e0b\u8f7d\u6296\u97f3\u89c6\u9891\u2192Gemini\u89c6\u9891\u5206\u6790\u2192\u7206\u6b3e\u516c\u5f0f\u63d0\u70bc\u2192\u811a\u672c+\u5206\u955c\u751f\u6210\u2192AI\u5473\u5ba1\u6821\u3002 \u5f53\u7528\u6237\u63d0\u5230\"\u6296\u97f3\u811a\u672c\"\u3001\"\u7206\u6b3e\u62c6\u89e3\"\u3001\"\u7ade\u54c1\u5206\u6790\"\u3001\"\u5e26\u8d27\u811a\u672c\"\u3001\"\u5343\u5ddd\u7d20\u6750\"\u3001\"\u79cd\u8349\u811a\u672c\"\u3001\"\u89c6\u9891\u62c6\u89e3\"\u3001\"\u6296\u97f3\u89c6\u9891\u5206\u6790\"\u65f6\u4f7f\u7528\u6b64\u6280\u80fd\u3002",
+    "description": "抖音爆款脚本创作工作流。从竞品视频拆解到脚本生成的完整流程：下载抖音视频→Gemini视频分析→爆款公式提炼→脚本+分镜生成→AI味审校。 当用户提到\"抖音脚本\"、\"爆款拆解\"、\"竞品分析\"、\"带货脚本\"、\"千川素材\"、\"种草脚本\"、\"视频拆解\"、\"抖音视频分析\"时使用此技能。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-info-search",
     "name": "huashu-info-search",
-    "description": "\u591a\u6e20\u9053\u641c\u7d22\u65b0\u4ea7\u54c1\u65b0\u6280\u672f\uff0c\u4ea4\u53c9\u9a8c\u8bc1\u540e\u5b58\u5165\u77e5\u8bc6\u5e93\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u6700\u65b0\u4fe1\u606f\"\u3001\"\u65b0\u4ea7\u54c1\"\u3001\"\u641c\u7d22\u8d44\u6599\"\u3001\"\u67e5\u8d44\u6599\"\u3001\"\u4e86\u89e3XX\"\u65f6\u4f7f\u7528\u3002",
+    "description": "多渠道搜索新产品新技术，交叉验证后存入知识库。当用户提到\"最新信息\"、\"新产品\"、\"搜索资料\"、\"查资料\"、\"了解XX\"时使用。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-material-search",
     "name": "huashu-material-search",
-    "description": "\u641c\u7d22\u4e2a\u4eba\u7d20\u6750\u5e931800+\u6761\u771f\u5b9e\u7ecf\u5386\u548c\u89c2\u70b9\uff0c\u4e3a\u5185\u5bb9\u589e\u52a0\u4eba\u5473\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u4e2a\u4eba\u7ecf\u5386\"\u3001\"\u771f\u5b9e\u6848\u4f8b\"\u3001\"\u7d20\u6750\"\u3001\"\u4eba\u5473\"\u65f6\u4f7f\u7528\u3002",
+    "description": "搜索个人素材库1800+条真实经历和观点，为内容增加人味。当用户提到\"个人经历\"、\"真实案例\"、\"素材\"、\"人味\"时使用。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-prompt-save",
     "name": "huashu-prompt-save",
-    "description": "\u81ea\u52a8\u8bc6\u522bPrompt\u7c7b\u578b\u5e76\u5206\u7c7b\u4fdd\u5b58\uff08\u6280\u672f/\u5185\u5bb9/\u6559\u5b66/\u4ea7\u54c1/\u901a\u7528\uff09\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u4fdd\u5b58prompt\"\u3001\"\u8bb0\u5f55prompt\"\u3001\"\u6574\u7406prompt\"\u65f6\u4f7f\u7528\u3002",
+    "description": "自动识别Prompt类型并分类保存（技术/内容/教学/产品/通用）。当用户提到\"保存prompt\"、\"记录prompt\"、\"整理prompt\"时使用。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-proofreading",
     "name": "huashu-proofreading",
-    "description": "\u4e09\u904d\u5ba1\u6821\u964d\u4f4eAI\u68c0\u6d4b\u7387\uff0c\u8ba9\u6587\u7ae0\u66f4\u6709\u4eba\u5473\u3002\u5f53\u7528\u6237\u63d0\u5230\"AI\u5473\u592a\u91cd\"\u3001\"\u50cfAI\u5199\u7684\"\u3001\"\u964d\u4f4eAI\u68c0\u6d4b\u7387\"\u3001\"\u5ba1\u6821\"\u3001\"\u81ea\u7136\u4e00\u4e9b\"\u65f6\u4f7f\u7528\u3002",
+    "description": "三遍审校降低AI检测率，让文章更有人味。当用户提到\"AI味太重\"、\"像AI写的\"、\"降低AI检测率\"、\"审校\"、\"自然一些\"时使用。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-research",
     "name": "huashu-research",
-    "description": "\u7ed3\u6784\u5316\u7f51\u7edc\u8c03\u7814\u6d41\u7a0b\uff0c\u786e\u4fdd\u8c03\u7814\u6210\u679c\u589e\u91cf\u4fdd\u5b58\u5230\u6587\u4ef6\uff0c\u4e0d\u56e0\u4f1a\u8bdd\u622a\u65ad\u4e22\u5931\u3002\u5f53\u7528\u6237\u8bf4\"\u8c03\u7814\"\u3001\"\u641c\u7d22\u8d44\u6599\"\u3001\"\u5e2e\u6211\u67e5\u4e00\u4e0b\"\u3001\"\u4e86\u89e3\u4e00\u4e0b\"\u3001\"\u6700\u65b0\u4fe1\u606f\"\u65f6\u4f7f\u7528\u6b64\u6280\u80fd\u3002",
+    "description": "结构化网络调研流程，确保调研成果增量保存到文件，不因会话截断丢失。当用户说\"调研\"、\"搜索资料\"、\"帮我查一下\"、\"了解一下\"、\"最新信息\"时使用此技能。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-script-polish",
     "name": "huashu-script-polish",
-    "description": "\u89c6\u9891\u811a\u672c\u53e3\u8bed\u5316\u5ba1\u6821\uff0c\u53bb\u4e66\u9762\u8154\u8ba9\u811a\u672c\u9002\u5408\u8bf4\u51fa\u6765\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u53e3\u8bed\u5316\"\u3001\"\u592a\u4e66\u9762\u4e86\"\u3001\"\u50cf\u8bf4\u8bdd\u4e00\u6837\"\u3001\"\u811a\u672c\u5ba1\u6821\"\u65f6\u4f7f\u7528\u3002",
+    "description": "视频脚本口语化审校，去书面腔让脚本适合说出来。当用户提到\"口语化\"、\"太书面了\"、\"像说话一样\"、\"脚本审校\"时使用。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-slides",
     "name": "huashu-slides",
-    "description": "\u4ece\u5185\u5bb9\u5230\u6210\u54c1PPTX\u7684\u7aef\u5230\u7aef\u6f14\u793a\u6587\u7a3f\u5236\u4f5c\uff0c\u542bAI\u63d2\u753b\u751f\u6210\u548c18\u79cd\u8bbe\u8ba1\u98ce\u683c\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u505aPPT\"\u3001\"\u505a\u5e7b\u706f\u7247\"\u3001\"\u6f14\u793a\u6587\u7a3f\"\u3001\"Keynote\"\u3001\"slides\"\u65f6\u4f7f\u7528\u3002",
+    "description": "从内容到成品PPTX的端到端演示文稿制作，含AI插画生成和18种设计风格。当用户提到\"做PPT\"、\"做幻灯片\"、\"演示文稿\"、\"Keynote\"、\"slides\"时使用。",
     "category": "Utilities"
   },
   {
     "slug": "huashu-topic-gen",
     "name": "huashu-topic-gen",
-    "description": "\u5feb\u901f\u751f\u62103-4\u4e2a\u9009\u9898\u65b9\u5411\uff0c\u542b\u6807\u9898\u3001\u5927\u7eb2\u548c\u4f18\u52a3\u5206\u6790\u3002\u5f53\u7528\u6237\u63d0\u5230\"\u9009\u9898\"\u3001\"\u5199\u4ec0\u4e48\"\u3001\"\u6587\u7ae0\u65b9\u5411\"\u3001\"\u9898\u76ee\u5efa\u8bae\"\u65f6\u4f7f\u7528\u3002",
+    "description": "快速生成3-4个选题方向，含标题、大纲和优劣分析。当用户提到\"选题\"、\"写什么\"、\"文章方向\"、\"题目建议\"时使用。",
     "category": "Utilities"
   },
   {
     "slug": "in-progress/setup-ts-deep-modules",
     "name": "setup-ts-deep-modules",
-    "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module \u2014 implementation hidden in subfolders, reachable only through its entry-point files. User-invoked.",
+    "description": "Wire dependency-cruiser into a TypeScript repo so each package is a deep module — implementation hidden in subfolders, reachable only through its entry-point files. User-invoked.",
     "category": "Utilities"
   },
   {
     "slug": "in-progress/writing-beats",
     "name": "writing-beats",
-    "description": "Writing, exploit \u2014 assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
+    "description": "Writing, exploit — assemble raw material into a journey of beats, grounding each term before a beat leans on it.",
     "category": "Utilities"
   },
   {
     "slug": "in-progress/writing-fragments",
     "name": "writing-fragments",
-    "description": "Writing, explore \u2014 mine raw fragments, no structure yet.",
+    "description": "Writing, explore — mine raw fragments, no structure yet.",
     "category": "Utilities"
   },
   {
     "slug": "in-progress/writing-shape",
     "name": "writing-shape",
-    "description": "Writing, exploit \u2014 shape raw material into an article, paragraph by paragraph.",
+    "description": "Writing, exploit — shape raw material into an article, paragraph by paragraph.",
     "category": "Utilities"
   },
   {
@@ -3914,7 +3914,7 @@
   {
     "slug": "messari-funding-intel",
     "name": "messari-funding-intel",
-    "description": "Funding intelligence workflow using Messari x402. Scans recent rounds, M&A activity, venture funds, and organizations, then synthesizes a VC landscape brief via Messari AI. Total cost ~$0.75\u2013$1.25 USDC per run.",
+    "description": "Funding intelligence workflow using Messari x402. Scans recent rounds, M&A activity, venture funds, and organizations, then synthesizes a VC landscape brief via Messari AI. Total cost ~$0.75–$1.25 USDC per run.",
     "category": "Utilities"
   },
   {
@@ -3944,13 +3944,13 @@
   {
     "slug": "openrouter-oauth",
     "name": "openrouter-oauth",
-    "description": "Implement \"Sign In with OpenRouter\" using OAuth PKCE \u2014 framework-agnostic, no SDK or client registration required. Use when the user wants to add OpenRouter login, authentication, sign-in buttons, OAuth, or AI model inference API keys for browser-based apps. No client registration, no backend, no secrets required.",
+    "description": "Implement \"Sign In with OpenRouter\" using OAuth PKCE — framework-agnostic, no SDK or client registration required. Use when the user wants to add OpenRouter login, authentication, sign-in buttons, OAuth, or AI model inference API keys for browser-based apps. No client registration, no backend, no secrets required.",
     "category": "Utilities"
   },
   {
     "slug": "ops-and-setup/anti-sleep",
     "name": "anti-sleep",
-    "description": "Keep the user's MacBook awake with macOS caffeinate \u2014 prevent sleep, screen dimming, or both, for a set duration or while a process runs. Use when the user says \"don't let my mac sleep\", \"keep the screen on\", \"anti-sleep\", \"caffeinate\", or wants the machine awake overnight / during a long build.",
+    "description": "Keep the user's MacBook awake with macOS caffeinate — prevent sleep, screen dimming, or both, for a set duration or while a process runs. Use when the user says \"don't let my mac sleep\", \"keep the screen on\", \"anti-sleep\", \"caffeinate\", or wants the machine awake overnight / during a long build.",
     "category": "Utilities"
   },
   {
@@ -3962,7 +3962,7 @@
   {
     "slug": "ops-and-setup/setup-help",
     "name": "setup-help",
-    "description": "Walk the user through setting up anything step by step. Use when the user asks for help setting up, configuring, installing, or getting something working \u2014 \"help me set up X\", \"walk me through this\", \"setup-help\". Differentiator: gives one current step at a time, then always lists every remaining setup step after each response.",
+    "description": "Walk the user through setting up anything step by step. Use when the user asks for help setting up, configuring, installing, or getting something working — \"help me set up X\", \"walk me through this\", \"setup-help\". Differentiator: gives one current step at a time, then always lists every remaining setup step after each response.",
     "category": "Utilities"
   },
   {
@@ -4004,7 +4004,7 @@
   {
     "slug": "shadcn",
     "name": "shadcn",
-    "description": "Manages shadcn components and projects \u2014 adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
+    "description": "Manages shadcn components and projects — adding, searching, fixing, debugging, styling, and composing UI, including chat interfaces. Provides project context, component docs, and usage examples. Applies when working with shadcn/ui, component registries, presets, --preset codes, or any project with a components.json file. Also triggers for \"shadcn init\", \"create an app with --preset\", or \"switch to --preset\".",
     "category": "Utilities"
   },
   {
