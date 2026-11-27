@@ -29,10 +29,14 @@
       "merkleLeaf": "sha256-24484a5bb5712efe6da4539a414f93def47042022774308603421bde3b1ae442",
       "sourceRepo": "Solizardking/skillhub-main",
       "commit": "be3de0244dc1a57e323d8160787ebb40fb64930e",
-      "asset": null,
-      "collection": null,
-      "mintSignature": null,
-      "note": "Content hashes are bound. The Metaplex Core asset address is filled after a successful devnet mint with a throwaway keypair (see solana-clawd-ai-training/artifact-registry)."
+      "asset": "AqgYUWRAecwmcutFRnKjPvp629B1YDFTGuV9maxkXeWm",
+      "collection": "2Xkbm5YpDqR1hMXiBa3CQaRg7qgvuhUAPj6E4fDCVaPy",
+      "mintSignature": "26F2DKmGXvsBco27ryeCkPJLBEKfNmHrPT9F8AVgmEuRd5VxfBH4Qnu3G97ysD3A8yH7Vsh4GXKD5LB3zi4PjjoW",
+      "note": "Minted on Solana devnet with a throwaway keypair. zk-clawd-primitives attestation remains pending.",
+      "explorer": {
+        "tx": "https://explorer.solana.com/tx/26F2DKmGXvsBco27ryeCkPJLBEKfNmHrPT9F8AVgmEuRd5VxfBH4Qnu3G97ysD3A8yH7Vsh4GXKD5LB3zi4PjjoW?cluster=devnet",
+        "address": "https://explorer.solana.com/address/AqgYUWRAecwmcutFRnKjPvp629B1YDFTGuV9maxkXeWm?cluster=devnet"
+      }
     },
     {
       "type": "tool",
@@ -42,8 +46,14 @@
       "manifestHash": "sha256-a2977cc1558760d3c42528e1d2b8345440d35aa6902705064db7c2e57e40e6fe",
       "sourceRepo": "Solizardking/skillhub-main",
       "commit": "be3de0244dc1a57e323d8160787ebb40fb64930e",
-      "asset": null,
-      "collection": null
+      "asset": "4jCX4V3rnuL7q8zQ8x9jiK8oNrisENzpyf1PoiUJtqvE",
+      "collection": "2Xkbm5YpDqR1hMXiBa3CQaRg7qgvuhUAPj6E4fDCVaPy",
+      "mintSignature": "3dvPjbNritcdgjMsBMVD7ZLWUjHmbCNunfN4wcnYqA2Aw1Zk6o5D1KGerhv6MNsUZCDqNgyavFCP5f2Cjzo3Jfuc",
+      "explorer": {
+        "tx": "https://explorer.solana.com/tx/3dvPjbNritcdgjMsBMVD7ZLWUjHmbCNunfN4wcnYqA2Aw1Zk6o5D1KGerhv6MNsUZCDqNgyavFCP5f2Cjzo3Jfuc?cluster=devnet",
+        "address": "https://explorer.solana.com/address/4jCX4V3rnuL7q8zQ8x9jiK8oNrisENzpyf1PoiUJtqvE?cluster=devnet"
+      },
+      "note": "Minted on Solana devnet with a throwaway keypair. zk-clawd-primitives attestation remains pending."
     },
     {
       "type": "mcp_server",
@@ -54,8 +64,17 @@
       "manifestHash": "sha256-c326b74073742aaa77c849effabb0ea8eb474efbab905bba6f7590eaabc02004",
       "sourceRepo": "Solizardking/skillhub-main",
       "commit": "be3de0244dc1a57e323d8160787ebb40fb64930e",
-      "asset": null,
-      "collection": null
+      "asset": "XAm3KqhoSGuk1WMJEqNyKRjE8zTZtfPCp1Le5LLjkPo",
+      "collection": "2Xkbm5YpDqR1hMXiBa3CQaRg7qgvuhUAPj6E4fDCVaPy",
+      "mintSignature": "635N22ukLew4fMNr1ugSQQWvsfEBqdToXDSRz5qDghwi2RoxoeyEaux2C8ikZ2STjtbHHQTXAV7q6mmeTkL5ouH5",
+      "explorer": {
+        "tx": "https://explorer.solana.com/tx/635N22ukLew4fMNr1ugSQQWvsfEBqdToXDSRz5qDghwi2RoxoeyEaux2C8ikZ2STjtbHHQTXAV7q6mmeTkL5ouH5?cluster=devnet",
+        "address": "https://explorer.solana.com/address/XAm3KqhoSGuk1WMJEqNyKRjE8zTZtfPCp1Le5LLjkPo?cluster=devnet"
+      },
+      "note": "Minted on Solana devnet with a throwaway keypair. zk-clawd-primitives attestation remains pending."
     }
-  ]
+  ],
+  "collection": "2Xkbm5YpDqR1hMXiBa3CQaRg7qgvuhUAPj6E4fDCVaPy",
+  "authority": "FuGrQ5KbtdcdGDdorYs4xauDTG8yyRZRpPChAwbWUX2k",
+  "updatedAt": "2026-11-27T01:47:24.826Z"
 }
