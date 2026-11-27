@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "remove-animations",
+  "name": "remove-animations",
+  "description": "Find the animations an interface doesn't need and remove them — motion on keyboard actions, high-frequency surfaces, functional data, and decoration with no purpose — then clean up what they leave behind. Edits code, but only to subtract; it never adds or retunes motion. Use when the user says the app \"feels slow\", \"has too much animation\", \"feels over-animated\", wants to \"tone down the motion\", or asks what animations to remove. For finding places that should animate, use find-animation-opportunities; for fixing animations that should stay, use improve-animations or review-animations.",
+  "source": "https://skills.x402.wtf/api/skills/remove-animations/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/remove-animations/metadata.json",
+  "bundleHash": "sha256-4b1d04e72a26864f3b4fb2384ca9b614c5f9858841d1b257eb4208b1762f9eaf",
+  "merkleLeaf": "sha256-f3e4e7e7a0cbd3815a81b01541900df3e9bce87c923a25a8a3f7e16c79ba80f5",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 11555,
+      "sha256": "sha256-228d98a3d05637f2ff8fc2d1c2bd88c14783c8c901105cac39a7ae24a4d3e408"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

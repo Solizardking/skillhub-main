@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "prototype",
+  "name": "prototype",
+  "description": "Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right.",
+  "source": "https://skills.x402.wtf/api/skills/prototype/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/prototype/metadata.json",
+  "bundleHash": "sha256-a00b34b19947fd76a903b445c20df870f52c4dac67132d457139e907719db9e1",
+  "merkleLeaf": "sha256-0c826aebde41974b11e3a92db051f3e8bc697f51c24ac5888d4b259aab405bde",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "PICKER.md",
+      "bytes": 7705,
+      "sha256": "sha256-6c1d7a8d1f34dbc83a2e2068cd49f42107f1d02fb4e80369bb4e978d1e026b8d"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 8095,
+      "sha256": "sha256-30def86c5a5a0794a954b2a046d24c847c7129f316d79892abff73d54d79adc0"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

@@ -5,9 +5,14 @@
   "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/theme-factory/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/theme-factory/metadata.json",
-  "bundleHash": "sha256-8cccbc5dafb2cbf9dcec70ff7519c585f19d1b8328932e11966bb84e34eccc3a",
-  "merkleLeaf": "sha256-a6d8ba2f99e0e3d694095653437c350263f4da06f825649fe941cb6f2a8baa4b",
+  "bundleHash": "sha256-a2db1524f020a7bc5fdc55f0fab302b34fd56d3bb28fd3c3816b494d729a589e",
+  "merkleLeaf": "sha256-a53d4e8648dfc0ecbc1ef92894a0ba9336ad951447ed34feab76b744b8336ce8",
   "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11345,
+      "sha256": "sha256-bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+    },
     {
       "path": "SKILL.md",
       "bytes": 3124,

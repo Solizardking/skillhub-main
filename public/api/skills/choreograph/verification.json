@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "choreograph",
+  "name": "choreograph",
+  "description": "Coordinate several elements that animate together — decide what moves, in what order, how much they overlap, and what stays still — so a group reads as one intentional motion instead of a pile of separate animations. Use when building or fixing a staggered list, a hero entrance, a view swap inside a container, a multi-step flow, an element leaving while its siblings close the gap, a morph between rich states, or any interaction with several moving parts (icon + background + lines, panel + content, items flying into a target). Triggers on — stagger, sequence, choreography, \"one after another\", crossfade, AnimatePresence mode, hero entrance, multi-step, useAnimate, \"feels mechanical\", \"too much going on\", \"feels slow to open\".",
+  "source": "https://skills.x402.wtf/api/skills/choreograph/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/choreograph/metadata.json",
+  "bundleHash": "sha256-1d0d66b3d10aa1e1d27ee789412923fd68bdceb0f6a1d266db4bb8b274fdbc24",
+  "merkleLeaf": "sha256-cbeda44a685ed619a6cd39d51e3240c25704c357cccb257b6eeca2057944b73d",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "RECIPES.md",
+      "bytes": 10079,
+      "sha256": "sha256-c256ff760f42d905b19f97becd2c0caaf40a95b41b49770c973281374c9600cf"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 15666,
+      "sha256": "sha256-0a6802bb2fd5a3993842d48332b8ab56ae5bab369ffa8700f85f6fcff56b8478"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

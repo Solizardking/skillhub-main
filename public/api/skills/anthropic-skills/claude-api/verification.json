@@ -5,9 +5,14 @@
   "description": "Reference for the Claude API / Anthropic SDK — model ids, pricing, params, streaming, tool use, MCP, agents, caching, token counting, model migration. TRIGGER — read BEFORE opening the target file; don't skip because it \"looks like a one-liner\" — whenever: the prompt names Claude/Anthropic in any form (Claude, Anthropic, Fable, Opus, Sonnet, Haiku, `anthropic`, `@anthropic-ai`, `claude-*`, `us.anthropic.*`, `[1m]`); the user asks about an LLM (pricing/model choice/limits/caching) — never answer from memory; OR the task is LLM-shaped with provider unstated (agent/MCP/tool-definition/multi-agent/RAG/LLM-judge/computer-use; generate/summarize/extract/classify/rewrite/converse over NL; debugging refusals/cutoffs/streaming/tool-calls/tokens). SKIP only when another provider is being worked on (overrides all triggers): OpenAI/GPT/Gemini/Llama/Mistral/Cohere/Ollama named in the query; OR `grep -rE 'openai|langchain_openai|google.generativeai|genai|mistralai|cohere|ollama'` over the project hits (run this grep FIRST if no provider named — don't Read the file).",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/claude-api/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/claude-api/metadata.json",
-  "bundleHash": "sha256-d614d3782aba3d4c902ccd589da8b0fc25ddea2f96917ccb12efce0e13672f41",
-  "merkleLeaf": "sha256-0faa44fb0724fb8c0606a0ddeeb9177eaf6bb259abd84eb1634f3abb47a87566",
+  "bundleHash": "sha256-084cd9e9617c36274e7134a3db93d571c7b40b0a1290ff393d761397da0a4d2b",
+  "merkleLeaf": "sha256-952002c171b3778df6792ab3473783cdb8dc411a038883cf8a0a48dab997facb",
   "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11345,
+      "sha256": "sha256-bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+    },
     {
       "path": "SKILL.md",
       "bytes": 73938,

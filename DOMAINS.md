@@ -1,5 +1,78 @@
 # Domains
 
+## Current live (2026-11-27)
+
+The Skill Hub static site in this repo (`public/` after `npm run build:catalog`) is
+**only reachable at [https://clawdcompute.us/skills](https://clawdcompute.us/skills)**
+right now.
+
+| Host | Status | Notes |
+|------|--------|--------|
+| **https://clawdcompute.us/skills/** | **Live** | Cloudflare in front of the Skill Hub `public/` build, mounted under the `/skills/` path. Slightly stale vs `main` (live catalog still includes `1password`; `main` does not). |
+| `skills.clawdcompute.us` | **Not created** | NXDOMAIN. This is the hostname to add so the same catalog is served at the subdomain root. |
+| `skills.clawdcode.net` | Down | CNAME to Render `skillhub-buja.onrender.com`; the service is **suspended** (`503`, `x-render-routing: suspend`). |
+| `skillhub-red.vercel.app` | Down | Vercel `DEPLOYMENT_DISABLED`. |
+| `skills.x402.wtf` | Down | Zone exists on Cloudflare; the `skills` name has no A/AAAA/CNAME. |
+| `skills.x402agent.io` / `hub.x402agent.io` | Down | NXDOMAIN. |
+| `skills.onchainai.fund` | Down | Vercel `DEPLOYMENT_DISABLED`. |
+
+`clawdcompute.us` itself is a Cloudflare zone (registrar Cloudflare, NS
+`craig.ns.cloudflare.com` / `gene.ns.cloudflare.com`). The apex gateway worker is
+[Solizardking/musebook-ai-gateway](https://github.com/Solizardking/musebook-ai-gateway)
+(`musebook-ai-gateway` Worker). The committed worker still has a `/skills` handler
+that would mirror `musebook.trade/api/skills`, but that is **not** what production
+serves at `/skills/` — production serves this repo's static Skill Hub (Pages-style
+headers: `cache-control: public, max-age=0, must-revalidate`).
+
+GitHub `Solizardking/skills` redirects to `themusebook/skills`. That catalog is a
+different, older tree (629 skills) and is **not** what `clawdcompute.us/skills` shows.
+
+### Add `skills.clawdcompute.us` (needs owner approval — do not do this yet)
+
+Do **not** attach this hostname to the `musebook-ai-gateway` Worker. That worker's
+`/api/*` namespace and `/skills` handler are the wrong origin. Attach it to the
+same Cloudflare Pages (or static) project that already serves
+`https://clawdcompute.us/skills/*`, so the subdomain serves `public/` at **`/`**.
+
+Serving at the hostname root is what makes root-relative `/api` and `/assets`
+links work. This branch also switches the catalog HTML to relative links so the
+existing `/skills/` path mount keeps working after the next deploy.
+
+Exact steps after approval:
+
+1. **Cloudflare Dashboard → Pages** (or Workers & Pages) → the Skill Hub project
+   that publishes this repo's `public/` folder. If you need a new project:
+   `wrangler pages project create skillhub` then
+   `wrangler pages deploy public --project-name skillhub` after `npm run build:catalog`.
+2. **Pages → Custom domains → Add** `skills.clawdcompute.us`.
+   Cloudflare will provision the certificate.
+3. **Cloudflare DNS** for `clawdcompute.us` — add a **proxied** (orange-cloud) record:
+   - Type: `CNAME`
+   - Name: `skills`
+   - Target: `<your-pages-project>.pages.dev` (Pages often creates this record
+     for you when you add the custom domain)
+   - Proxy: **ON**
+4. If `/skills*` is today a **more-specific Worker/Pages route** on the apex
+   (`clawdcompute.us/skills*`), add a second route on the **same** Skill Hub
+   project: `skills.clawdcompute.us/*`. Do not add that route to
+   `musebook-ai-gateway`.
+5. Redeploy this repo's `public/` build so the catalog includes the full Emil
+   Kowalski skill set and the relative-path fix.
+6. Verify, after DNS has propagated:
+   ```bash
+   dig +short skills.clawdcompute.us CNAME
+   curl -sI https://skills.clawdcompute.us/ | head
+   curl -sS https://skills.clawdcompute.us/api/skills.json | head -c 200
+   curl -sS https://skills.clawdcompute.us/api/skills/ask-emil/SKILL.md | head
+   ```
+   The subdomain root should show the same Skill Hub as
+   `https://clawdcompute.us/skills/`.
+
+No billing, plan, DNS, or custom-domain change is included in this PR.
+
+---
+
+
 ## Live production (2026-07-15)
 
 | Host | Status | Notes |

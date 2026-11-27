@@ -5,9 +5,14 @@
   "description": "Guidance for distinctive, intentional visual design when building new UI or reshaping an existing one. Helps with aesthetic direction, typography, and making choices that don't read as templated defaults.",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/frontend-design/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/frontend-design/metadata.json",
-  "bundleHash": "sha256-15bf8696337772ebcaaf5b43feffb81d254c7d66c0f3cc64f7595e7edc09f5c6",
-  "merkleLeaf": "sha256-e3fda3c3fb0af1b9dc9cfd8418dacc93e962754758edef7355586aade7dfca10",
+  "bundleHash": "sha256-4eefcb1e962ee0affce4689446ac816393dfd658cde163b1802c9f1881aead8e",
+  "merkleLeaf": "sha256-b6375ecb69be9502f7b21db93c7d537291846c38b793d8835eaea67fdb2b1481",
   "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 10174,
+      "sha256": "sha256-0d542e0c8804e39aa7f37eb00da5a762149dc682d7829451287e11b938e94594"
+    },
     {
       "path": "SKILL.md",
       "bytes": 8260,

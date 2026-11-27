@@ -5,9 +5,14 @@
   "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. You should use this skill when the user asks to create a poster, piece of art, design, or other static piece. Create original visual designs, never copying existing artists' work to avoid copyright violations.",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/canvas-design/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/canvas-design/metadata.json",
-  "bundleHash": "sha256-8b2734a179026b1229b85da5a687b10b212a8ab1b9c1cf8b5d0d2d68ae288359",
-  "merkleLeaf": "sha256-560df0b81f210f538f80a5e5010f89c65fc925cdd5a38ecf2ab2b3165309d0f2",
+  "bundleHash": "sha256-5a1e60977adac16eb5f5cd7148d0242dc451db010ed22a61afed25873eff25c0",
+  "merkleLeaf": "sha256-49b160cb22bd824e8a38ae7188ad1f55a6fe805f995e9613e3853cb4c3d66bf9",
   "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11345,
+      "sha256": "sha256-bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
+    },
     {
       "path": "SKILL.md",
       "bytes": 11939,

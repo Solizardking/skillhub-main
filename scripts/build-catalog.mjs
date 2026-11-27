@@ -17,6 +17,8 @@ const SITE_ALIASES = [
   "https://skills.onchainai.fund",
   "https://skills.clawdcode.net",
   "https://cheshireterminal.ai/skills",
+  "https://clawdcompute.us/skills",
+  "https://skills.clawdcompute.us",
 ];
 /** Hosted upload relay (Node service). Static hosts point publish UI here. */
 const UPLOAD_API_BASE =
@@ -75,6 +77,27 @@ const CATEGORY_OVERRIDES = new Map([
   ["solana-dev", "Solana / Blockchain"],
   ["metaplex-agent", "Solana / Blockchain"],
   ["metaplex/skills/metaplex", "Solana / Blockchain"],
+  // emilkowalski/skills — design-engineering playbooks, not local/web utilities
+  ["animate", "Dev Tools / Agents"],
+  ["animate-expo", "Dev Tools / Agents"],
+  ["animation-performance", "Dev Tools / Agents"],
+  ["animation-vocabulary", "Dev Tools / Agents"],
+  ["apple-design", "Dev Tools / Agents"],
+  ["ask-emil", "Dev Tools / Agents"],
+  ["ask-sonner", "Dev Tools / Agents"],
+  ["break-ui", "Dev Tools / Agents"],
+  ["choreograph", "Dev Tools / Agents"],
+  ["emil-design-eng", "Dev Tools / Agents"],
+  ["find-animation-opportunities", "Dev Tools / Agents"],
+  ["gestures", "Dev Tools / Agents"],
+  ["improve-animations", "Dev Tools / Agents"],
+  ["learn-taste", "Dev Tools / Agents"],
+  ["mobile-native", "Dev Tools / Agents"],
+  ["pick-ui-library", "Dev Tools / Agents"],
+  ["prototype", "Dev Tools / Agents"],
+  ["remove-animations", "Dev Tools / Agents"],
+  ["review-animations", "Dev Tools / Agents"],
+  ["write-swift", "Dev Tools / Agents"],
 ]);
 
 async function main() {
@@ -549,7 +572,9 @@ async function addPublicRootResources(files, skill) {
     if (entry.name === "SKILL.md") continue;
     if (entry.name === "metadata.json" || entry.name === "verification.json") continue;
     if (entry.name.startsWith(".") || PUBLIC_COPY_EXCLUDES.has(entry.name)) continue;
-    if (!PUBLIC_ROOT_RESOURCE_EXTENSIONS.has(path.extname(entry.name).toLowerCase())) continue;
+    const ext = path.extname(entry.name).toLowerCase();
+    const isLicenseNotice = /^(license|notice|copying)(?:\.(md|txt))?$/i.test(entry.name);
+    if (!isLicenseNotice && !PUBLIC_ROOT_RESOURCE_EXTENSIONS.has(ext)) continue;
 
     files.set(`api/skills/${skill.slug}/${entry.name}`, await readFile(path.join(skillDir, entry.name)));
   }
@@ -1646,10 +1671,10 @@ function renderIndexHtml(catalog) {
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Skill Hub</title>
   <link rel="canonical" href="${SITE_URL}/skills">
-  <link rel="icon" href="/favicon.png" type="image/png" sizes="64x64">
-  <link rel="icon" href="/assets/clawd-lobster-logo.png" type="image/png" sizes="192x192">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="icon" href="assets/clawd-lobster-logo.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <meta name="theme-color" content="#05050a">
   <style>
     :root {
@@ -2420,7 +2445,7 @@ function renderIndexHtml(catalog) {
     <header>
       <div class="brand">
         <div class="mark" aria-hidden="true">
-          <img src="/assets/clawd-lobster-logo.png" alt="" width="52" height="52">
+          <img src="assets/clawd-lobster-logo.png" alt="" width="52" height="52">
         </div>
         <div>
           <h1>Skill Hub</h1>
@@ -2428,12 +2453,12 @@ function renderIndexHtml(catalog) {
         </div>
       </div>
       <nav class="actions" aria-label="Hub links">
-        <a class="tool-link primary" href="/skills">Catalog</a>
-        <a class="tool-link" href="/publish">Publish</a>
-        <a class="tool-link" href="/submissions">Submissions</a>
-        <a class="tool-link" id="scannerLink" href="/scanner">Scanner</a>
-        <a class="tool-link" href="/api/skills.json">API</a>
-        <a class="tool-link" href="/.well-known/onchain-skill-registry.json">Registry</a>
+        <a class="tool-link primary" href="./">Catalog</a>
+        <a class="tool-link" href="publish/">Publish</a>
+        <a class="tool-link" href="submissions/">Submissions</a>
+        <a class="tool-link" id="scannerLink" href="scanner/">Scanner</a>
+        <a class="tool-link" href="api/skills.json">API</a>
+        <a class="tool-link" href=".well-known/onchain-skill-registry.json">Registry</a>
         <a class="tool-link" href="https://cheshireterminal.ai/skills" target="_blank" rel="noopener">Cheshire</a>
       </nav>
     </header>
@@ -2451,8 +2476,8 @@ function renderIndexHtml(catalog) {
           <span class="badge">Registry ready</span>
         </div>
         <div class="ops-links">
-          <a class="open-action" href="/api/skills.json">Open API</a>
-          <a class="open-action" href="/.well-known/skills-hub.json">Open manifest</a>
+          <a class="open-action" href="api/skills.json">Open API</a>
+          <a class="open-action" href=".well-known/skills-hub.json">Open manifest</a>
         </div>
       </article>
 
@@ -2473,7 +2498,7 @@ function renderIndexHtml(catalog) {
         <textarea class="creator-output" id="creatorOutput" readonly aria-label="Creator plan"></textarea>
         <div class="creator-actions">
           <button class="copy-action" type="button" id="copyCreator">Copy Plan</button>
-          <a class="open-action" href="/api/skills/skill-creator/SKILL.md">Open Creator Skill</a>
+          <a class="open-action" href="api/skills/skill-creator/SKILL.md">Open Creator Skill</a>
         </div>
       </article>
 
@@ -2487,8 +2512,8 @@ function renderIndexHtml(catalog) {
           <span class="badge">Hashes indexed</span>
         </div>
         <div class="ops-links">
-          <a class="open-action" id="scannerOpsLink" href="/scanner">Open Scanner</a>
-          <a class="open-action" href="/api/verification.json">Open verification API</a>
+          <a class="open-action" id="scannerOpsLink" href="scanner/">Open Scanner</a>
+          <a class="open-action" href="api/verification.json">Open verification API</a>
         </div>
       </article>
     </section>
@@ -2827,7 +2852,7 @@ function renderIndexHtml(catalog) {
             <span class="card-actions">
               <button class="copy-action" type="button" data-install="\${escapeAttr(installCommand(skill.slug))}">Install</button>
               <button class="open-action" type="button" data-tip="\${escapeAttr(skill.slug)}">Tip</button>
-              <a class="open-action" href="/api/skills/\${encodeSkillPath(skill.slug)}/SKILL.md">Open</a>
+              <a class="open-action" href="api/skills/\${encodeSkillPath(skill.slug)}/SKILL.md">Open</a>
             </span>
           </div>
         </article>
@@ -2868,8 +2893,8 @@ function renderIndexHtml(catalog) {
           <pre class="payment-code"><code>\${escapeHtml(snippet)}</code></pre>
           <div class="card-actions">
             <button class="copy-action" type="button" data-copy="\${escapeAttr(snippet)}">Copy React snippet</button>
-            <a class="open-action" href="/integrations/commerce-kit-payment-button.tsx">Open integration file</a>
-            <a class="open-action" href="/api/monetization.json">Open payment registry</a>
+            <a class="open-action" href="integrations/commerce-kit-payment-button.tsx">Open integration file</a>
+            <a class="open-action" href="api/monetization.json">Open payment registry</a>
           </div>
         </div>
       \`;

@@ -1,0 +1,13 @@
+# Cloudflare Pages project for the Skill Hub static site (`public/` after
+# `npm run build:catalog`). This file documents the intended attach point.
+# Do not deploy, add custom domains, or change DNS until the owner approves.
+#
+# Planned custom domain: skills.clawdcompute.us (site at hostname root)
+# Existing path mount:   https://clawdcompute.us/skills/
+#
+# After approval, attach the domain to THIS project, not musebook-ai-gateway.
+# See DOMAINS.md for the exact DNS record and dashboard steps.
+
+name = "skillhub"
+compatibility_date = "2026-11-27"
+pages_build_output_dir = "public"

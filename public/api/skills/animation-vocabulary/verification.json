@@ -5,13 +5,18 @@
   "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
   "source": "https://skills.x402.wtf/api/skills/animation-vocabulary/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/animation-vocabulary/metadata.json",
-  "bundleHash": "sha256-2d151183dde7968537c97c9aeb573f3168b7d5ae77f31a978c96e0cc7e3c8b83",
-  "merkleLeaf": "sha256-a309640cd59891cd6f70796c89d464763210f93c16c729c533b4b715cef30341",
+  "bundleHash": "sha256-35f7bda18feb4890bf5c6f393afa581d2ef0492ea334234cb6654466d7209ac0",
+  "merkleLeaf": "sha256-9dfd427eb7e47dd9d48be5cab5a577736b794b4e084716fb7dce4f703241b07a",
   "files": [
     {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
       "path": "SKILL.md",
-      "bytes": 13128,
-      "sha256": "sha256-d718b48fe3c7898804d588f050a2e266d82c9f5ef51da256c8cb8b5951527757"
+      "bytes": 13363,
+      "sha256": "sha256-42df33f1583483cc441fcd76693b3399148602705d2e9b8a26665d6b1951cd0b"
     }
   ],
   "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",

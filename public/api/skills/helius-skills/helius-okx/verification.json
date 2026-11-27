@@ -5,9 +5,14 @@
   "description": "Build Solana trading and intelligence applications combining OKX DEX aggregation with Helius infrastructure. Integration-only layer — describes when and how to compose OKX tools with Helius tools for swaps, token discovery, smart money signals, meme token analysis, and portfolio intelligence.",
   "source": "https://skills.x402.wtf/api/skills/helius-skills/helius-okx/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/helius-skills/helius-okx/metadata.json",
-  "bundleHash": "sha256-2670378da2d52233bbd5d918250329a9bfb6ae38ca5ba9be36fc7a12d42cfba4",
-  "merkleLeaf": "sha256-b303aef7c94a26babe52d0843c32fa6c2ad98a691482238cd5cbb132ebb96efc",
+  "bundleHash": "sha256-21da00284f05ef1a503893bee2ecde05a435bc334bbfaa63ca499a2bb3dba3c4",
+  "merkleLeaf": "sha256-fd2bd9daa116debc3d8b37a6b7ab07a15e393f60673a536729075139a77f7477",
   "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1067,
+      "sha256": "sha256-dda3b31f3f7ed99173ea85af5741ac703f3aa9b3800be9c0c5f8acee99268d8c"
+    },
     {
       "path": "references/integration-patterns.md",
       "bytes": 14292,

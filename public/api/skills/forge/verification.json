@@ -5,8 +5,8 @@
   "description": "Create cross-platform agent skills from workflow descriptions. Activates when users ask to create an agent, automate a repetitive workflow, create a custom skill, or need advanced agent creation. Triggers on phrases like create agent for, automate workflow, create skill for, every day I have to, daily I need to, turn process into agent, need to automate, create a cross-platform skill, validate this skill, export this skill, migrate this skill. Supports single skills, multi-agent suites, transcript processing, template-based creation, interactive configuration, cross-platform export, and spec validation.",
   "source": "https://skills.x402.wtf/api/skills/forge/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/forge/metadata.json",
-  "bundleHash": "sha256-de56c1616c4fc57815f964879d9633fc3d3688be21e86aa9f448e6bb4864bdeb",
-  "merkleLeaf": "sha256-57ad0306389441840888365944ba02a6b401865a4076d94e70eb67c6ead518b0",
+  "bundleHash": "sha256-8f4c229bb79a5e2aa370c2e7d50ce901900c19c13ed8e3df9ce130e428503b73",
+  "merkleLeaf": "sha256-e1bf04e8a6f9179282b221563220d0be7c23148ce6da76e1e776cddfcc886fae",
   "files": [
     {
       "path": "assets/demo.cast",
@@ -57,6 +57,11 @@
       "path": "LEARNINGS.md",
       "bytes": 1391,
       "sha256": "sha256-ba7fd6068fcacfa017eb247af12c237e38af6e393576693fc9e84a808d15932b"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1078,
+      "sha256": "sha256-7a6c7c83cb02184bcab3ca07a3b72ba8be0ae291325e2695106943de31634a56"
     },
     {
       "path": "README.md",

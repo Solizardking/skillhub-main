@@ -2348,6 +2348,58 @@
       "offchainEnabled": false
     },
     {
+      "slug": "animate",
+      "name": "animate",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "animate-expo",
+      "name": "animate-expo",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "animation-performance",
+      "name": "animation-performance",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "animation-vocabulary",
+      "name": "animation-vocabulary",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "anthropic-skills/algorithmic-art",
       "name": "algorithmic-art",
       "category": "Dev Tools / Agents",
@@ -2426,6 +2478,58 @@
       "offchainEnabled": false
     },
     {
+      "slug": "apple-design",
+      "name": "apple-design",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "ask-emil",
+      "name": "ask-emil",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "ask-sonner",
+      "name": "ask-sonner",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "break-ui",
+      "name": "break-ui",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "cheshire-agent-identity-registry",
       "name": "cheshire-agent-identity-registry",
       "category": "Dev Tools / Agents",
@@ -2454,6 +2558,19 @@
     {
       "slug": "cheshire-agent-validation-registry",
       "name": "cheshire-agent-validation-registry",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "choreograph",
+      "name": "choreograph",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -2660,6 +2777,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "find-animation-opportunities",
+      "name": "find-animation-opportunities",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "find-skills",
       "name": "find-skills",
       "category": "Dev Tools / Agents",
@@ -2675,6 +2805,19 @@
     {
       "slug": "forge",
       "name": "agent-skill-creator",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "gestures",
+      "name": "gestures",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -2777,6 +2920,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "learn-taste",
+      "name": "learn-taste",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "liquidity-planner",
       "name": "liquidity-planner",
       "category": "Dev Tools / Agents",
@@ -2818,6 +2974,19 @@
     {
       "slug": "misc/git-guardrails-claude-code",
       "name": "git-guardrails-claude-code",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "mobile-native",
+      "name": "mobile-native",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -2907,6 +3076,19 @@
       "offchainEnabled": false
     },
     {
+      "slug": "pick-ui-library",
+      "name": "pick-ui-library",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
       "slug": "productivity/handoff",
       "name": "productivity-handoff",
       "category": "Dev Tools / Agents",
@@ -2922,6 +3104,32 @@
     {
       "slug": "productivity/writing-great-skills",
       "name": "writing-great-skills",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "prototype",
+      "name": "prototype",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "remove-animations",
+      "name": "remove-animations",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -3182,6 +3390,19 @@
     {
       "slug": "wrangler",
       "name": "wrangler",
+      "category": "Dev Tools / Agents",
+      "mode": "tip",
+      "merchant": {
+        "name": "Skill Hub",
+        "wallet": ""
+      },
+      "network": "mainnet",
+      "onchainEnabled": false,
+      "offchainEnabled": false
+    },
+    {
+      "slug": "write-swift",
+      "name": "write-swift",
       "category": "Dev Tools / Agents",
       "mode": "tip",
       "merchant": {
@@ -7925,19 +8146,6 @@
       "offchainEnabled": false
     },
     {
-      "slug": "animation-vocabulary",
-      "name": "animation-vocabulary",
-      "category": "Utilities",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
       "slug": "anthropic-skills/brand-guidelines",
       "name": "brand-guidelines",
       "category": "Utilities",
@@ -7979,19 +8187,6 @@
     {
       "slug": "anthropic-skills/theme-factory",
       "name": "theme-factory",
-      "category": "Utilities",
-      "mode": "tip",
-      "merchant": {
-        "name": "Skill Hub",
-        "wallet": ""
-      },
-      "network": "mainnet",
-      "onchainEnabled": false,
-      "offchainEnabled": false
-    },
-    {
-      "slug": "apple-design",
-      "name": "apple-design",
       "category": "Utilities",
       "mode": "tip",
       "merchant": {

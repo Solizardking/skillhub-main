@@ -5,9 +5,14 @@
   "description": "Create or update AgentSkills. Use when designing, structuring, or packaging skills with scripts, references, and assets.",
   "source": "https://skills.x402.wtf/api/skills/skill-creator/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/skill-creator/metadata.json",
-  "bundleHash": "sha256-ef071700eb3df32fbb59dab4666f6c377178af1af07d09e9be53004484507f49",
-  "merkleLeaf": "sha256-31d74e242266d2ced656fe11840715e9e9982f8fa063e9fad5eb4eb945677b3d",
+  "bundleHash": "sha256-2b6aa1b547fa364415e98da47296d5d861ad49fcb5a72425b11f98920734efd0",
+  "merkleLeaf": "sha256-e4639be17929f0ff14fec8bae76b34faaaab7d8cf0a427c237d2845051842aa8",
   "files": [
+    {
+      "path": "license.txt",
+      "bytes": 11358,
+      "sha256": "sha256-cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
     {
       "path": "scripts/init_skill.py",
       "bytes": 13803,

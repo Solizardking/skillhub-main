@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "animate",
+  "name": "animate",
+  "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
+  "source": "https://skills.x402.wtf/api/skills/animate/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/animate/metadata.json",
+  "bundleHash": "sha256-78cd4e13e8f4d4ac754ec4c0aff7dd885aa24db30f8c4770901c4e6ac1b8fb9d",
+  "merkleLeaf": "sha256-6220ba9dbb36b1f3fdd3c35d475f4f0e807962bf49af24f2993d2a8065f6b378",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "RECIPES.md",
+      "bytes": 8060,
+      "sha256": "sha256-129cddcba35dedacd307ef2de7f2c71e6d23efd9c1756dde44168241207581f9"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 12122,
+      "sha256": "sha256-4ce49ea635ec175b45552bae070ea07b2d6aa5367047994250c1c095b71c8585"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

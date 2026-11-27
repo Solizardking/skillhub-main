@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "pick-ui-library",
+  "name": "pick-ui-library",
+  "description": "Pick the library for a frontend task from a curated list — primitives, toasts, drawers, command menus, OTP, numbers, charts, virtualization, drag and drop, state, styling.",
+  "source": "https://skills.x402.wtf/api/skills/pick-ui-library/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/pick-ui-library/metadata.json",
+  "bundleHash": "sha256-84c42b38e79186999a8b0f4fb5024e2803de81a1762846c5ead58b4f8a1c6863",
+  "merkleLeaf": "sha256-3e8423fe01f94c06381efe85732f773f275b8dff380aa89edb718f3247c516d1",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 4699,
+      "sha256": "sha256-db10dc6b2a0c340d873f69e35140ceb3c929e15664b33fcacd1ecb25c5574df3"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

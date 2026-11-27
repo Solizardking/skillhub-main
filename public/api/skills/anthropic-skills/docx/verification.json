@@ -5,9 +5,14 @@
   "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include: any mention of 'Word doc', 'word document', '.docx', or requests to produce professional documents with formatting like tables of contents, headings, page numbers, or letterheads. Also use when extracting or reorganizing content from .docx files, inserting or replacing images in documents, performing find-and-replace in Word files, working with tracked changes or comments, or converting content into a polished Word document. If the user asks for a 'report', 'memo', 'letter', 'template', or similar deliverable as a Word or .docx file, use this skill. Do NOT use for PDFs, spreadsheets, Google Docs, or general coding tasks unrelated to document generation.",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/docx/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/docx/metadata.json",
-  "bundleHash": "sha256-b62112948ab3f8ef70a0f4019da7bb5b0c3303fc7b8c73e0c7af75fd74398aca",
-  "merkleLeaf": "sha256-737829668d79d700cc344679a1ac21270584ae51531ca5e37e924fdab196efd8",
+  "bundleHash": "sha256-855d6d10ab7efeac8d81b64cd2d8ac7c1c862ffb839e3a3e52747306f5d220f0",
+  "merkleLeaf": "sha256-5dc1314e7a4bf141539f7a062913bccb0509174bebfa37e3b7b3e6e8aab731d6",
   "files": [
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1467,
+      "sha256": "sha256-79f6d8f5b427252fa3b1c11ecdbdb6bf610b944f7530b4de78f770f38741cfaa"
+    },
     {
       "path": "scripts/__init__.py",
       "bytes": 1,

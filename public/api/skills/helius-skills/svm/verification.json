@@ -5,9 +5,14 @@
   "description": "Explore Solana's architecture and protocol internals. Covers the SVM execution engine, account model, consensus, transactions, validator economics, data layer, development tooling, and token extensions using the Helius blog, SIMDs, and Agave/Firedancer source code.",
   "source": "https://skills.x402.wtf/api/skills/helius-skills/svm/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/helius-skills/svm/metadata.json",
-  "bundleHash": "sha256-ffa96ffa56b352ae01ad00eca88c60d24112247476d5e7118ab566314dbe7307",
-  "merkleLeaf": "sha256-f7525206c38709aa9709ca7747babd8a95f4a7b1cc560e84ead2042974fbaa86",
+  "bundleHash": "sha256-c42eba69e1b1b31deb3949c92f2bb201c8a8888f1e8cacc2bfd667d62dbf0e69",
+  "merkleLeaf": "sha256-f1d11329a52d140d880bef7389aca47e1d1968fd09574231947b13e121cc7a2c",
   "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1068,
+      "sha256": "sha256-73038fea06251a60c2a585f5235ea1be2b6b4f6851864502a32bc8ac0c115c2c"
+    },
     {
       "path": "references/accounts.md",
       "bytes": 3852,

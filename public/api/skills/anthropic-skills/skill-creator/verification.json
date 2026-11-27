@@ -5,8 +5,8 @@
   "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit, or optimize an existing skill, run evals to test a skill, benchmark skill performance with variance analysis, or optimize a skill's description for better triggering accuracy.",
   "source": "https://skills.x402.wtf/api/skills/anthropic-skills/skill-creator/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/anthropic-skills/skill-creator/metadata.json",
-  "bundleHash": "sha256-ee7bab17c0e288ef59e09f54fe0ad328018a2fa1e38ed7455d42ef5aa7fea966",
-  "merkleLeaf": "sha256-4c377d8df46e5808a9d2265f232158bba01cf95dabbca512143216d9e8b7332b",
+  "bundleHash": "sha256-0a7c6985488afb393ca9cffa8a0b1a7661ad2008484cc7043b3a6dd8d738fca8",
+  "merkleLeaf": "sha256-642cfec392d028e49abd785a6a212a196d222dfffdd644ef7d7ebd714109644a",
   "files": [
     {
       "path": "agents/analyzer.md",
@@ -27,6 +27,11 @@
       "path": "assets/eval_review.html",
       "bytes": 7058,
       "sha256": "sha256-ce477dcc74dc1c0d1d3352646a79167b5a63634e936b1019160025065974e452"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 11345,
+      "sha256": "sha256-bc6b3af2f331cbc7fb0da1344efb2cbe5877a31498b4d70dbc7000f3405a1362"
     },
     {
       "path": "references/schemas.md",

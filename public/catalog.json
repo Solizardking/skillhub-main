@@ -1074,6 +1074,30 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "animate",
+    "name": "animate",
+    "description": "Build an animation from scratch, making the decisions in the order that determines whether it feels right — should it animate at all, what purpose, which tool, which properties, which curve and duration, how it interrupts, how it exits. Writes the implementation. Use when asked to animate something, add motion, make a component feel alive, or build a transition. For critiquing existing motion use review-animations; for auditing a whole codebase use improve-animations.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "animate-expo",
+    "name": "animate-expo",
+    "description": "Build animations in React Native and Expo, making the decisions in the order that determines whether they feel right — should it animate, which thread it runs on, which properties, spring or timing, how the gesture hands off, how it degrades. Writes the implementation with Reanimated, Gesture Handler, Expo Router and expo-haptics. Use when animating anything in an Expo app, adding gestures, sheets, screen transitions, press feedback or haptics, or fixing motion that stutters on device. For web animation use `animate`.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "animation-performance",
+    "name": "animation-performance",
+    "description": "Keep web animations inside the frame budget — animate composite-only properties, keep motion off the main thread when the page is busy, and find the cause when an animation drops frames. Use when an animation is janky, choppy, stutters, or drops frames; when choosing which property to animate; when deciding between CSS and JS animation on performance grounds; or when reaching for `will-change` or GPU layers. For choosing easing, duration, or whether to animate at all use animate; for reviewing motion as a whole use review-animations.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "animation-vocabulary",
+    "name": "animation-vocabulary",
+    "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "anthropic-skills/algorithmic-art",
     "name": "algorithmic-art",
     "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use this when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems. Create original algorithmic art rather than copying existing artists' work to avoid copyright violations.",
@@ -1110,6 +1134,30 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "apple-design",
+    "name": "apple-design",
+    "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "ask-emil",
+    "name": "ask-emil",
+    "description": "Ask which skill or flow fits your situation. A router over the skills in this repo.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "ask-sonner",
+    "name": "ask-sonner",
+    "description": "Guide to Sonner, the React toast library — install and wire up the Toaster, pick the right toast() call, promise and loading toasts, updating, dismissing and persisting toasts, styling, theming and icons, positioning and multiple toasters. Use when working with Sonner or troubleshooting it — toasts that don't appear, appear twice, lose their styles, ignore Tailwind classes, sit behind a modal, or don't follow dark mode.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "break-ui",
+    "name": "break-ui",
+    "description": "Try to break a piece of UI by feeding it worst-case data — long names, unbreakable emails, one-letter names, missing fields, huge counts, zero items, long labels, non-Latin text, emoji, extreme numbers — then render it behind a \"Demo data / Worst case\" toggle and report everything that broke, with the fix for each. Use when the user asks to stress-test, break, or find edge cases in a component or screen, or to \"try the worst case\". For visual design critique use emil-design-eng; for motion use review-animations.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "cheshire-agent-identity-registry",
     "name": "cheshire-agent-identity-registry",
     "description": "Register and operate Cheshire Robinhood agent identities (ERC-721 RHAGENT) via CheshireAgentIdentityRegistry on Robinhood Chain. Use for register(agentURI), agentWallet EIP-712/1271 proofs, metadata, isAuthorized, and ownerOf reads. Source: robinhood-agents/contracts/CheshireAgentIdentityRegistry.sol.",
@@ -1125,6 +1173,12 @@
     "slug": "cheshire-agent-validation-registry",
     "name": "cheshire-agent-validation-registry",
     "description": "ERC-8004 validation request/response flow for Cheshire agents on Robinhood Chain via CheshireAgentValidationRegistry. Use for validationRequest, validationResponse, getValidationStatus, getSummary. Operators request; named validators respond (0–100 score). Source: CheshireAgentValidationRegistry.sol.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "choreograph",
+    "name": "choreograph",
+    "description": "Coordinate several elements that animate together — decide what moves, in what order, how much they overlap, and what stays still — so a group reads as one intentional motion instead of a pile of separate animations. Use when building or fixing a staggered list, a hero entrance, a view swap inside a container, a multi-step flow, an element leaving while its siblings close the gap, a morph between rich states, or any interaction with several moving parts (icon + background + lines, panel + content, items flying into a target). Triggers on — stagger, sequence, choreography, \"one after another\", crossfade, AnimatePresence mode, hero entrance, multi-step, useAnimate, \"feels mechanical\", \"too much going on\", \"feels slow to open\".",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1172,7 +1226,7 @@
   {
     "slug": "emil-design-eng",
     "name": "emil-design-eng",
-    "description": "This skill encodes Emil Kowalski's philosophy on UI polish, component design, animation decisions, and the invisible details that make software feel great.",
+    "description": "Emil Kowalski's design-engineering philosophy for UI polish, component design, animation decisions, and the invisible details that make software feel great. Use when building or reviewing a UI component's interactions and polish (press and hover states, popover origin, tooltip timing, transitions vs keyframes, clip-path techniques, drag details) and no narrower skill fits.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1218,6 +1272,12 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "find-animation-opportunities",
+    "name": "find-animation-opportunities",
+    "description": "Search a codebase or UI for places that don't animate but should, and reject everything that shouldn't. Read-only; it proposes motion with exact values, it does not implement it. Use when the user asks \"what could be animated here?\" or wants to \"make this feel more alive\". For fixing existing animations, use improve-animations or review-animations instead.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "find-skills",
     "name": "find-skills",
     "description": "Helps users discover and install agent skills when they ask questions like \"how do I do X\", \"find a skill for X\", \"is there a skill that can...\", or express interest in extending capabilities. This skill should be used when the user is looking for functionality that might exist as an installable skill.",
@@ -1227,6 +1287,12 @@
     "slug": "forge",
     "name": "agent-skill-creator",
     "description": "Create cross-platform agent skills from workflow descriptions. Activates when users ask to create an agent, automate a repetitive workflow, create a custom skill, or need advanced agent creation. Triggers on phrases like create agent for, automate workflow, create skill for, every day I have to, daily I need to, turn process into agent, need to automate, create a cross-platform skill, validate this skill, export this skill, migrate this skill. Supports single skills, multi-agent suites, transcript processing, template-based creation, interactive configuration, cross-platform export, and spec validation.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "gestures",
+    "name": "gestures",
+    "description": "Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture — drawers, sheets, swipe-to-dismiss toasts and cards, drag-to-reorder, pull-to-refresh, hold-to-confirm — or when a gesture feels laggy, disconnected from the finger, jumps on release, or can't be caught mid-animation. Triggers on — gesture, drag, swipe, fling, sheet, snap points, Vaul, Motion drag props, rubber-band, pull to refresh, hold to delete, touch-action, \"doesn't follow my finger\", \"jumps when I let go\", \"can't grab it mid-animation\".",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1272,6 +1338,12 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "learn-taste",
+    "name": "learn-taste",
+    "description": "Turn a session's design corrections into rules, with their why, in DESIGN.md, a project skill, or a lint check.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "liquidity-planner",
     "name": "liquidity-planner",
     "description": "This skill should be used when the user asks to \"provide liquidity\", \"create LP position\", \"add liquidity to pool\", \"become a liquidity provider\", \"create v3 position\", \"create v4 position\", \"concentrated liquidity\", \"set price range\", or mentions providing liquidity, LP positions, or liquidity pools on Uniswap. Generates deep links to create positions in the Uniswap interface.",
@@ -1293,6 +1365,12 @@
     "slug": "misc/git-guardrails-claude-code",
     "name": "git-guardrails-claude-code",
     "description": "Set up Claude Code hooks to block dangerous git commands (push, reset --hard, clean, branch -D, etc.) before they execute. Use when user wants to prevent destructive git operations, add git safety hooks, or block git push/reset in Claude Code.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "mobile-native",
+    "name": "mobile-native",
+    "description": "Make a web app feel native on a phone — the small CSS and meta-tag fixes that separate \"a website in a browser\" from something that feels installed. Covers sticky hover states, tap highlight flashes, the 100vh bug, inputs that zoom the page, laggy taps, pull-to-refresh hijacking scroll, content under the notch, long-press selecting button text, carousels that scroll the wrong way, mismatched status bars, and the rule that you test on real hardware. Use when a web app is being built for or reviewed on mobile, when something \"works in Chrome but feels wrong on my phone\", when building a PWA, a bottom sheet, a carousel, a full-screen layout, or any touch interaction. For motion itself use animate; for React Native use animate-expo.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1332,6 +1410,12 @@
     "category": "Dev Tools / Agents"
   },
   {
+    "slug": "pick-ui-library",
+    "name": "pick-ui-library",
+    "description": "Pick the library for a frontend task from a curated list — primitives, toasts, drawers, command menus, OTP, numbers, charts, virtualization, drag and drop, state, styling.",
+    "category": "Dev Tools / Agents"
+  },
+  {
     "slug": "productivity/handoff",
     "name": "productivity-handoff",
     "description": "Compact the current conversation into a handoff document for another agent to pick up.",
@@ -1341,6 +1425,18 @@
     "slug": "productivity/writing-great-skills",
     "name": "writing-great-skills",
     "description": "Reference for writing and editing skills well — the vocabulary and principles that make a skill predictable.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "prototype",
+    "name": "prototype",
+    "description": "Build multiple genuinely different versions of a UI piece you describe, rendered behind a visual picker so you can flip through them live and promote the one that feels right.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "remove-animations",
+    "name": "remove-animations",
+    "description": "Find the animations an interface doesn't need and remove them — motion on keyboard actions, high-frequency surfaces, functional data, and decoration with no purpose — then clean up what they leave behind. Edits code, but only to subtract; it never adds or retunes motion. Use when the user says the app \"feels slow\", \"has too much animation\", \"feels over-animated\", wants to \"tone down the motion\", or asks what animations to remove. For finding places that should animate, use find-animation-opportunities; for fixing animations that should stay, use improve-animations or review-animations.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -1461,6 +1557,12 @@
     "slug": "wrangler",
     "name": "wrangler",
     "description": "Cloudflare Workers CLI for deploying, developing, and managing Workers, KV, R2, D1, Vectorize, Hyperdrive, Workers AI, Containers, Queues, Workflows, Pipelines, and Secrets Store. Load before running wrangler commands to ensure correct syntax and best practices. Biases towards retrieval from Cloudflare docs over pre-trained knowledge.",
+    "category": "Dev Tools / Agents"
+  },
+  {
+    "slug": "write-swift",
+    "name": "write-swift",
+    "description": "How to write modern Swift well — modeling with value types, Swift 6 data-race safety and approachable concurrency (@concurrent, main-actor-by-default, actors, task groups), protocols and generics (some vs any), API design, performance and ARC, Swift Testing, macros, and the modern language features agents don't know about yet. Use when writing, reviewing, or migrating Swift, or when a concurrency error, a hang, a data race, a retain cycle, or a performance problem needs fixing.",
     "category": "Dev Tools / Agents"
   },
   {
@@ -3648,12 +3750,6 @@
     "category": "Productivity / Messaging"
   },
   {
-    "slug": "animation-vocabulary",
-    "name": "animation-vocabulary",
-    "description": "Reverse-lookup glossary that turns a vague description of a web animation or motion effect into its exact term (\"the bouncy thing when a popover opens\" → Pop in; \"the iOS rubber-band scroll\" → Rubber-banding). Use when the user asks \"what's it called when…\", or describes a motion effect without knowing its name and wants the right word to prompt an AI or designer with. For naming an effect, not designing or building one.",
-    "category": "Utilities"
-  },
-  {
     "slug": "anthropic-skills/brand-guidelines",
     "name": "brand-guidelines",
     "description": "Applies Anthropic's official brand colors and typography to any sort of artifact that may benefit from having Anthropic's look-and-feel. Use it when brand colors or style guidelines, visual formatting, or company design standards apply.",
@@ -3675,12 +3771,6 @@
     "slug": "anthropic-skills/theme-factory",
     "name": "theme-factory",
     "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reportings, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact that has been creating, or can generate a new theme on-the-fly.",
-    "category": "Utilities"
-  },
-  {
-    "slug": "apple-design",
-    "name": "apple-design",
-    "description": "Apple's approach to interface design and fluid, physical motion, translated for the web. Use when building or reviewing gesture-driven UI, spring animations, drag/swipe/sheet interactions, momentum and interruptible transitions, translucent materials and depth, typography (optical sizing, tracking, leading), reduced-motion, or the design foundations (feedback, spatial consistency, restraint) behind Apple-style interfaces.",
     "category": "Utilities"
   },
   {

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "skill-verification/v1",
+  "slug": "gestures",
+  "name": "gestures",
+  "description": "Build drag, swipe, and sheet interactions that track the finger 1:1 and stay interruptible. Use when building or fixing anything the user drags, swipes, flings, holds, or dismisses with a gesture — drawers, sheets, swipe-to-dismiss toasts and cards, drag-to-reorder, pull-to-refresh, hold-to-confirm — or when a gesture feels laggy, disconnected from the finger, jumps on release, or can't be caught mid-animation. Triggers on — gesture, drag, swipe, fling, sheet, snap points, Vaul, Motion drag props, rubber-band, pull to refresh, hold to delete, touch-action, \"doesn't follow my finger\", \"jumps when I let go\", \"can't grab it mid-animation\".",
+  "source": "https://skills.x402.wtf/api/skills/gestures/SKILL.md",
+  "metadata": "https://skills.x402.wtf/api/skills/gestures/metadata.json",
+  "bundleHash": "sha256-e8f3c2b008e0e9724d0c809f54a28dcbb5634f084d703cfc6af35492603f9012",
+  "merkleLeaf": "sha256-fd768d3dd06260577bd848db12c7d25e045abd69a99fb47129de6b3401217672",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1070,
+      "sha256": "sha256-4ff5bdb7887ec1435c9cab0e8d1a7caee704d894d65c2a008ccc68b1cc2f260b"
+    },
+    {
+      "path": "SKILL.md",
+      "bytes": 8823,
+      "sha256": "sha256-1928c86cce924a2a178ddd156ba5ed0f184665a1f95b549724ffb5ae703e994f"
+    }
+  ],
+  "registry": "https://skills.x402.wtf/.well-known/onchain-skill-registry.json",
+  "solana": {
+    "cluster": "mainnet-beta",
+    "status": "anchor-ready",
+    "registryProgramId": null,
+    "registryPda": null
+  }
+}

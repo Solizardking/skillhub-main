@@ -5,9 +5,14 @@
   "description": "Control Clawd Code via MCP protocol. Trigger with \"plan\" to write a precise execution plan then feed it to Clawd Code. Also supports direct commands, persistent sessions, agent teams, and advanced tool control.",
   "source": "https://skills.x402.wtf/api/skills/openclawd-clawd-code-skill-main/SKILL.md",
   "metadata": "https://skills.x402.wtf/api/skills/openclawd-clawd-code-skill-main/metadata.json",
-  "bundleHash": "sha256-b83023142ff8f7f09673adb57cdb5d767608f39eea3ea13445f843ad1e25de1c",
-  "merkleLeaf": "sha256-30a5830d8d312998aca8e2cf0ef037d232537f0ad9a2ab6518780265c883d607",
+  "bundleHash": "sha256-ea466a92d520375074b65ed7ed68561fcab36eac38a102827926f2da0df3f66e",
+  "merkleLeaf": "sha256-a160bf10afbd1e4f3df9b491f87616d4ac1c2096e1ff9859bc17d9da79d9a8de",
   "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "sha256-1fca2e535455f2a9ce4433d99fbcfec2cc06c6f0a9287662654d2ee3102933e7"
+    },
     {
       "path": "mcp_config.example.json",
       "bytes": 648,
